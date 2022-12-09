@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#aeaeae;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="ic_x12_snack" transform="translate(-1031.175 -150.469)">
+        <path id="Rectangle_2701" data-name="Rectangle 2701" transform="translate(1031.175 150.469)" style="fill:none" d="M0 0h12v12H0z"/>
+        <g id="snack" transform="translate(0 -.43)">
+            <path id="Vector-2" class="cls-2" d="M1031.96 160.5h10.43"/>
+            <path id="Vector-3" class="cls-2" d="M1037.175 154.017v-.617"/>
+            <path id="Path_2646" data-name="Path 2646" class="cls-2" d="M301.258 424.15a4.075 4.075 0 0 0-4.07 4.071c0 .111.006.221.015.33h8.111c.009-.109.015-.219.015-.33a4.075 4.075 0 0 0-4.07-4.071" transform="translate(735.988 -269.977)"/>
+        </g>
+    </g>
+</svg>

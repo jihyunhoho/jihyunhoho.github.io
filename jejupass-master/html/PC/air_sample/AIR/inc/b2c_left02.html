@@ -1,0 +1,121 @@
+
+	<!-- left menu  -->
+	<div id="k1_aside">
+		<!-- btms, htl은 아래 부분만 인클루드 -->
+		<h2 class="k1_menu_btn1" style="display:block;"><em></em>메뉴펼치기<span class="arrow_off"></span></h2>
+		<h2 class="k1_menu_btn1" style="display:none;"><em></em>메뉴닫기<span class="arrow"></span></h2>
+		<div class="k1_left_type2 k1_mt5">
+			<h3 class="tit2">여정 재검색</h3>
+			
+			<div class="cont">
+				<dl class="k1_plancode">
+					<dt>여정</dt>
+					<dd><input type="radio" class="k1_radio" id="initFormCode1" /><label for="initFormCode1">왕복</label></dd>
+					<dd><input type="radio" class="k1_radio" id="initFormCode2" /><label for="initFormCode2">편도</label></dd>
+					<dd><input type="radio" class="k1_radio" id="initFormCode3" /><label for="initFormCode3">다구간</label></dd>
+				</dl>
+				<ul class="k1_plancode2">
+					<li><label for="depcombo">출발도시</label>
+						<select id="depcombo" class="k1_select_border">
+							<option selected="selected" value="ICN">인천</option>
+						</select>
+					</li>
+					<li><label for="arrcity1">도착도시</label>
+						<input id="arrcity1" class="k1_input_text" type="text" readonly="readonly" title="도착도시 선택" value="도쿄" />
+						<a href="" class="k1_detail" title="도착도시선택 레이어 팝업열림">도착도시선택</a>
+					</li>
+					<li><label for="depdt1">출발일자</label>
+						<input id="depdt1" class="k1_input_text" type="text" readonly="readonly" title="출발일자 선택" value="도쿄" />
+						<a href="" class="k1_btn_cal" title="출발일자선택 레이어 팝업열림">출발일자선택</a>
+					</li>
+					<li><label for="arrdt1">도착일자</label>
+						<input id="arrdt1" class="k1_input_text" type="text" readonly="readonly" title="도착일자 선택" value="도쿄" />
+						<a href="" class="k1_btn_cal" title="도착일자선택 레이어 팝업열림">도착일자선택</a>
+						<p><input type="checkbox" class="k1_check k1_mr3" id="chk_openCase" /><label for="chk_openCase">귀국일미지정</label></p>
+					</li>
+				</ul>
+				<ul class="k1_plancode3">
+					<li><label for="adultCount">인원</label>
+						<p>
+						<select id="adultCount" name="adtcount" class="k1_select_border" title="성인 인원 선택">
+							<option value="">성인</option>
+						</select>
+						<select id="childCount" name="chdcount" class="k1_select_border" title="소아 인원 선택">
+							<option value="">성인</option>
+						</select>
+						<select id="infantCount" name="infcount" class="k1_select_border" title="유아 인원 선택">
+							<option value="">성인</option>
+						</select></p>
+					</li>
+					<li><label for="cabinclass">좌석선택</label>
+						<select name="" class="k1_select_border" id="cabinclass">
+							<option value="">비지니스</option>
+						</select>
+					</li>
+					<li><label for="a_1" class="k1_mr12">항공사</label>
+						<select id="a_1" class="k1_select_border">
+							<option selected="selected">전체항공사</option>
+						</select>
+					</li>
+				</ul>
+				<dl class="k1_passenger_type">
+					<dt>승객유형</dt>
+					<dd><input type="checkbox" class="k1_check" id="a_2" /> <label for="a_2" title="외국인근로자">외국인근로자</label></dd>
+					<dd><input type="checkbox" class="k1_check" id="a_3" /> <label for="a_3" title="근로자">근로자</label></dd>					
+					<dd><input type="checkbox" class="k1_check" id="a_4" /> <label for="a_4" title="외국인">외국인</label></dd>
+					<dd><input type="checkbox" class="k1_check" id="a_5" /> <label for="a_5" title="근로자">근로자</label></dd>
+					<dd><input type="checkbox" class="k1_check" id="a_6" /> <label for="a_6" title="외국인이민자요테스트">외국인이민자요테스트</label></dd>
+					<dd><input type="checkbox" class="k1_check" id="a_7" /> <label for="a_7" title="근로자">근로자</label></dd>					
+					<!-- 승객유형 7글자 이상일 시 말줄임표 적용 -->					
+				</dl>
+				<p class="k1_btn_tac">
+					<a href="#" class="k1_btn6"><span class="k1_t12">항공권 검색</span></a>
+				</p>
+			</div>
+			<a href="" class="k1_btn_refresh2">새로고침</a>
+		</div>
+		<div class="k1_left_type2 k1_mt5">
+			<h3 class="tit2">결과 내 재검색</h3>
+			<div class="cont2">
+				<h4 class="k1_mt5">항공사</h4>
+				<ul>
+					<li><input type="checkbox" class="k1_input_check" id="b_1" title="전체" /><label for="b_1">전체</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_2" title="대한항공" /><label for="b_2">대한항공</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_3" title="아시아나항공" /><label for="b_3">아시아나항공</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_4" title="델타항공" /><label for="b_4">델타항공</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_5" title="일본항공" /><label for="b_5">일본항공</label><span class="price">2,000,000</span></li>
+				</ul>
+				<h4>직항/경유</h4>
+				<ul>
+					<li><input type="checkbox" class="k1_input_check" id="b_6" title="전체" /><label for="b_6">전체</label><span class="price">2,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_7" title="직항" /><label for="b_7">직항</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_8" title="1회경유" /><label for="b_8">1회경유</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_9" title="2회 이상 경유" /><label for="b_9">2회 이상 경유</label><span class="price">2,000,000</span></li>
+				</ul>
+				<h4>총 소요시간</h4>
+				<ul>
+					<li><input type="checkbox" class="k1_input_check" id="b_10" title="전체" /><label for="b_10">전체</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_11" title="14~15시간" /><label for="b_11">14~15시간</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_12" title="14~16시간" /><label for="b_12">14~16시간</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_13" title="16~17시간" /><label for="b_13">16~17시간</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_14" title="17~18시간" /><label for="b_14">17~18시간</label><span class="price">2,000,000</span></li>
+				</ul>
+				<h4>운임조건</h4>
+				<ul>
+					<li><input type="checkbox" class="k1_input_check" id="b_15" title="전체" /><label for="b_15">전체</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_16" title="성인" /><label for="b_16">성인</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_17" title="성인2인" /><label for="b_17">성인2인</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_18" title="학생" /><label for="b_18">학생</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_19" title="장애인" /><label for="b_19">장애인</label><span class="price">2,000,000</span></li>
+				</ul>
+				<h4>좌석조건</h4>
+				<ul>
+					<li><input type="checkbox" class="k1_input_check" id="b_20" title="전체" /><label for="b_20">전체</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_21" title="확약" /><label for="b_21">확약</label><span class="price">2,000,000</span></li>
+					<li><input type="checkbox" class="k1_input_check" id="b_22" title="대기" /><label for="b_22">대기</label><span class="price">2,000,000</span></li>
+				</ul>
+			</div>
+		</div>
+		<!-- btms, htl은 여기까지만 인클루드 -->
+	</div>
+	<!-- //left menu -->

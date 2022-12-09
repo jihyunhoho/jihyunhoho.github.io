@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_11939" data-name="사각형 11939" class="cls-1" d="M0 0h24v24H0z"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#63a1ff}
+        </style>
+    </defs>
+    <g id="ic_x48_completion" transform="translate(-1148 -424)">
+        <circle id="타원_128" data-name="타원 128" cx="20" cy="20" r="20" transform="translate(1148 424)" style="fill:#fff"/>
+        <g id="ic_x24_complete" transform="translate(1156 432)" style="clip-path:url(#clip-path)">
+            <path id="패스_21378" data-name="패스 21378" class="cls-1" d="M18 2.5A1.5 1.5 0 1 1 16.5 1 1.5 1.5 0 0 1 18 2.5"/>
+            <path id="패스_21379" data-name="패스 21379" class="cls-1" d="M23 3.5A1.5 1.5 0 1 1 21.5 2 1.5 1.5 0 0 1 23 3.5"/>
+            <path id="패스_21380" data-name="패스 21380" class="cls-1" d="M24 8.5A1.5 1.5 0 1 1 22.5 7 1.5 1.5 0 0 1 24 8.5"/>
+            <path id="패스_21381" data-name="패스 21381" class="cls-1" d="M20.807 12.722 11.3 3.209a2.283 2.283 0 0 0-3.849.843L3.177 17.876a2.379 2.379 0 0 0 2.3 3.025 2.44 2.44 0 0 0 .665-.092l13.824-4.272a2.279 2.279 0 0 0 1.55-2.264 2.237 2.237 0 0 0-.708-1.551M5.574 18.891a.38.38 0 0 1-.472-.266.37.37 0 0 1-.007-.182l1.069-3.46 2.794 2.863zm13.87-4.326a.278.278 0 0 1-.094.069l-8.25 2.548-4.264-4.374 2.515-8.142a.282.282 0 0 1 .358-.177.263.263 0 0 1 .118.078l9.6 9.6a.272.272 0 0 1 .092.2.281.281 0 0 1-.073.2"/>
+        </g>
+    </g>
+</svg>

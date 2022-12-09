@@ -1,0 +1,112 @@
+
+	@import '_mfont';
+	
+	$body_color:#fff;
+
+	//color
+	$default_col:#606060; 
+	
+	$col_g100:#F8F8F8;
+	$col_g200:#EAEAEA;
+	$col_g300:#DADADA;
+	$col_g400:#CACACA;
+	$col_g500:#AEAEAE;
+	$col_g600:#808080;
+	$col_g800:#404040;
+	$col_g900:#202020;
+
+	$col_redP:#ff655b;
+
+	$col_p100:#f4f9ff; //#F9F6FE
+	$col_p200:#e6effe; //#F1EBFF
+	$col_p300:#cde0ff; //#E3D5FF
+	$col_p400:#abccff; //#C5ABF9
+	$col_p500:#85b5ff; //#8F63E6
+	$col_p600:#63a1ff; //#6531CE
+	$col_p800:#2f7bf2; //#2F0D72
+	$col_p900:#1d68dc; //#260b5b
+	$col_primary:#569aff; //#40129C
+
+
+	$col_s100:#F4FCFC;
+	$col_s200:#E5F9F9;
+	$col_s300:#D3F8F9;
+	$col_s400:#94E8E9;
+	$col_s500:#55E3E6;
+	$col_s600:#28DCE1;
+	$col_s800:#009FA2;
+	$col_s900:#00787B;
+	$col_secondary:#00CDD2;
+
+	$col_r100:#FEF6F8;
+	$col_r200:#FCE8EE;
+	$col_r300:#FAD1DD;
+	$col_r400:#F4A4BB;
+	$col_r500:#F28DA9;
+	$col_r600:#EC5F87;
+	$col_r800:#DE1A50;
+	$col_r900:#C90B40;
+	$col_redP:#E83667;	
+
+	$col_white:#fff;
+	$col_black:#000;
+	$col_pointR:#e63668;
+	$col_pointB:#18225c;
+
+	//font
+	$default_font:Pretendard, -apple-system,BlinkMacSystemFont,Open Sans,Helvetica Neue,sans-serif;
+	$fontEXB:NanumSquareR, -apple-system,BlinkMacSystemFont,Open Sans,Helvetica Neue,sans-serif;
+
+	$weight400:400;
+	$weight500:500;
+	$weight600:600;
+	$weight700:700;
+	$weight900:900;
+
+	//url
+	$img_url:"/resource/MO/images";
+
+	//media query size
+	$sizeS:320px;
+	$sizeM:360px;
+	
+	//extend
+	
+	%hidden{overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px !important;clip:rect(0 0 0 0)}
+	%textHidden{overflow:hidden;text-indent:-9999px}
+	%size14{font-size:1.4rem;line-height:1.57}
+	$size11:rem(11px);$size12:rem(12px);$size13:rem(13px);$size14:rem(14px);$size15:rem(15px);$size16:rem(16px);$size18:rem(18px);$size20:rem(20px);$size22:rem(22px);$size24:rem(24px);
+	%pseudo_inab{content:'';display:inline-block;position:absolute}
+	
+	
+	//mixin
+	$font-body: 10px; 
+
+	@function rem($val) { 
+		@return $val/$font-body * 1rem;
+	}
+
+	@mixin prefix($property, $value) {
+		-webkit-#{$property}: $value;
+		-moz-#{$property}: $value;
+		#{$property}: $value;
+	}
+
+	@mixin pseudo($width, $height) {
+		content:'';display:block;position:absolute;top:50%;left:50%;width:$width;height:$height;margin-top:-$height/2;margin-left:-$width/2;
+	}
+
+	@mixin ellipsis($line, $height) {
+		@if ($line == 1) { 
+			overflow: hidden; 
+			text-overflow: ellipsis; 
+			white-space: nowrap; 
+		} @else { 
+			display: -webkit-box; 
+			overflow: hidden; 
+			text-overflow: ellipsis; 
+			-webkit-box-orient: vertical; 
+			-webkit-line-clamp: $line; 
+			height:$height;
+		} 
+	}

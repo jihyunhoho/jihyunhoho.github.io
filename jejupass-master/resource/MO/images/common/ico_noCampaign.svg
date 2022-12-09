@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_11797" data-name="사각형 11797" transform="translate(167 167)" style="fill:#ffdbdb;opacity:.51" d="M0 0h50v50H0z"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#eaeaea}.cls-5{fill:#cacaca}
+        </style>
+    </defs>
+    <g id="ic_x50_campaign" transform="translate(-167 -167)" style="clip-path:url(#clip-path)">
+        <g id="그룹_16598" data-name="그룹 16598" transform="translate(-57 -2)">
+            <circle id="타원_1785" data-name="타원 1785" class="cls-3" cx="6" cy="6" r="6" transform="translate(259 185)"/>
+            <rect id="사각형_12020" data-name="사각형 12020" width="7" height="21" rx="3.5" transform="translate(234 195)" style="fill:#aeaeae"/>
+            <path id="사각형_12018" data-name="사각형 12018" class="cls-5" d="M3 0h2v16H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z" transform="translate(227 183)"/>
+            <path id="사각형_12019" data-name="사각형 12019" class="cls-3" d="M3 0h7v21H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z" transform="translate(232 180)"/>
+            <path id="패스_21410" data-name="패스 21410" class="cls-5" d="m0 0 20-7c1.687-.452 3 1.343 3 3v29c0 1.657-1.189 3.485-3 3L0 21z" transform="translate(242 180.071)"/>
+            <rect id="사각형_12021" data-name="사각형 12021" width="10.873" height="4" rx="2" transform="rotate(-19 668.3 -649.013)" style="fill:#fff"/>
+        </g>
+    </g>
+</svg>

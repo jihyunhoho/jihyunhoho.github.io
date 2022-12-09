@@ -1,0 +1,26 @@
+<svg id="ic_x24_notice" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a82323;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #ec5f87;
+      }
+
+      .cls-3 {
+        fill: #de1a50;
+      }
+
+      .cls-4 {
+        fill: #fad1dd;
+      }
+    </style>
+  </defs>
+  <rect id="container" class="cls-1" width="18" height="18"/>
+  <path id="사각형_3308" data-name="사각형 3308" class="cls-2" d="M7,0H7a7,7,0,0,1,7,7v6a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V7A7,7,0,0,1,7,0Z" transform="translate(2 1)"/>
+  <rect id="사각형_3309" data-name="사각형 3309" class="cls-3" width="16" height="4" rx="1" transform="translate(1 12)"/>
+  <path id="사각형_3310" data-name="사각형 3310" class="cls-4" d="M2,0H2A2,2,0,0,1,4,2V5A0,0,0,0,1,4,5H0A0,0,0,0,1,0,5V2A2,2,0,0,1,2,0Z" transform="translate(7 7)"/>
+</svg>

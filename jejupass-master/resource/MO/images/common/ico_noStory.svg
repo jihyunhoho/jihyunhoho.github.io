@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <style>
+            .cls-5{fill:#fff}
+        </style>
+    </defs>
+    <g id="ic_x50_story" transform="translate(-533 -167)">
+        <g id="그룹_16575" data-name="그룹 16575" transform="translate(-1 -.93)">
+            <path id="패스_21395" data-name="패스 21395" d="M24.062.64a3 3 0 0 1 3.876 0L46 16.953 43.81 25H8.19l-2.184-8.047z" transform="translate(533 169)" style="fill:#aeaeae"/>
+            <rect id="사각형_11973" data-name="사각형 11973" width="32" height="29" rx="4" transform="translate(543 176)" style="fill:#eaeaea"/>
+            <path id="패스_21394" data-name="패스 21394" d="m-4 2 17.674 14.727S15.183 18 16 18s2.3-1.273 2.3-1.273L36 2v26a4 4 0 0 1-4 4H0a4 4 0 0 1-4-4V2z" transform="translate(543 184)" style="fill:#cacaca"/>
+            <rect id="사각형_11974" data-name="사각형 11974" class="cls-5" width="9" height="3" rx="1.5" transform="translate(549 182.5)"/>
+            <rect id="사각형_11975" data-name="사각형 11975" class="cls-5" width="18" height="3" rx="1.5" transform="translate(549 188.5)"/>
+        </g>
+    </g>
+</svg>

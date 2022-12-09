@@ -1,0 +1,320 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>제주패스 - Mobile HTML List</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link href="../guide.css" rel="stylesheet" type="text/css">
+<link href="/resource/MO/css/m_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/MO/css/m_contents.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<section class='guideHeader'>
+	<h1>제주패스 - Mobile HTML List</h1>
+	<nav class="guide">
+		<div class="gnbDep1">
+			<a href="/guide/index.html">Guide</a>
+			<a href="/guide/MO/m_pubList01.html" role="button">Main/공통/기타</a>
+			<a href="/guide/MO/m_pubList02.html" role="button">ESG</a>
+			<a href="/guide/MO/m_pubList03.html" role="button">항공</a>
+			<a href="/guide/MO/m_pubList04.html" role="button">숙박</a>
+			<a href="/guide/MO/m_pubList05.html" role="button">렌트카</a>
+			<a href="/guide/MO/m_pubList06.html" role="button">맛집</a>
+			<a href="/guide/MO/m_pubList07.html" role="button">카페패스</a>
+			<a href="/guide/MO/m_pubList08.html" role="button">트립</a>
+			<a href="/guide/MO/m_pubList09.html" role="button">고객센터</a>
+			<a href="/guide/MO/m_pubList10.html" role="button">이벤트</a>
+			<a href="/guide/MO/m_pubList11.html" role="button">회사소개</a>
+			<a href="/guide/MO/m_pubList12.html" role="button">마이페이지</a>
+		</div>
+		<div class="gnbDep2">
+			<a href="/guide/index.html" role="button">기본규칙</a>
+			<a href="/guide/MO/m_button.html" role="button">Button</a>
+			<a href="/guide/MO/m_form.html" role="button">Form</a>
+			<a href="/guide/MO/m_table.html" role="button">Table</a>
+			<a href="/guide/MO/m_list.html" role="button">Title/Text/List</a>
+			<a href="/guide/MO/m_box.html" role="button">Box</a>
+			<a href="/guide/MO/m_popup.html" role="button">Popup</a>
+			<a href="/guide/MO/m_tab.html" role="button">Tab/Step</a>
+			<a href="/guide/MO/m_layout.html" role="button">Layout</a>
+			<a href="/guide/MO/m_swiper.html" role="button">Swiper</a>
+			<a href="/guide/MO/m_floating.html" role="button">floating button 모음</a>
+			<a href="/guide/MO/m_pattern.html" role="button" target="_blank">Pattern</a>
+		</div>
+	</nav>
+	<div class="topBtn">
+		<a href="/guide/PC/p_button.html">PC Guide</a>
+	</div>
+	
+</section>
+
+<section class="guideContents">
+	
+	<h2 class="guideTit2">Form</h2>
+	
+	<h3 class="guideTit3">Input</h3>
+
+	<input type="text" placeholder="항목명 입력"><br>
+	
+	<input type="text" placeholder="disabled 상태" disabled><br>
+	
+	<input type="text" placeholder="readonly 상태" readonly><br><br>
+
+	<div class="inpFrm inpDeleteAni"><!-- input value값 있을 때 삭제버튼 출력 -->
+		<label for="inpName">성명</label>
+		<span class="inpA">
+			<input type="text" id="inpName" placeholder="실명 입력">
+			<button type="button" class="icDel">삭제</button>
+		</span>
+		<p class="txtInfo">가이드메시지 노출 영역</p>
+	</div>
+	<div class="inpFrm inpDeleteAni inpError"><!-- input data 오류시 inpError 클래스 추가 -->
+		<label for="inpName">항목명</label>
+		<span class="inpA">
+			<input type="text" id="inpName" placeholder="실명 입력">
+			<button type="button" class="icDel">삭제</button>
+		</span>
+		<p class="txtErr">가이드메시지 노출 영역</p>
+	</div>
+	<div class="inpFrm">
+		<label for="inpText">textarea</label> 
+		<span class="inpA inpText">
+			<textarea id="inpText" cols="10" rows="10" placeholder="내용을 입력하세요." title="내용을 입력하세요."></textarea>
+		</span>
+		<p class="textNum">0/100</p>
+	</div>
+
+	<div class="inpFrm">
+		<label for="inpCert">버튼조합</label> 
+		<span class="inpA inpBtns">
+			<input type="text" id="inpCert" placeholder="placeholder값" title="placeholder값">
+			<button type="button" class="btnDefault btnM action">인증하기</button>
+		</span>
+	</div>
+	<br>
+	
+	<div class="inpFrm inpUnitType">
+		<label for="inpPoint" class="titLab">단위</label> 
+		<span class="inpA inpBtns">
+			<input type="text" class="inpPoint" placeholder="기부할 포인트 입력" title="기부할 포인트 입력" value="0">
+			<span class="unit">p</span>
+			<button type="button" class="btnDefault btnM btnLineG">전액사용</button>
+		</span>
+	</div>
+	<br>
+
+	<div class="inpFrm">
+		<label for="inpValue">기본 콤보</label> 
+		<span class="inpA inpFlex">
+			<input type="text" id="inpValue" placeholder="placeholder값" title="placeholder값">
+			<span class="dash">~</span>
+			<input type="text" id="inpValue02" placeholder="placeholder값" title="placeholder값">
+		</span>
+	</div>
+	<br>
+	
+	<div class="addrWrap">
+		<div class="zipSearch">
+			<input type="tel" title="우편번호" readonly>
+			<button type="button" class="btnDefault btnM btnLineG">주소찾기</button>
+		</div>
+		<input type="text" title="주소" readonly>
+		<input type="text" title="상세주소 입력" placeholder="상세주소 입력">
+	</div>
+
+	<div class="searchArea">
+		<input type="text" title="검색어 입력" placeholder="검색어를 입력하세요">
+		<button type="button" class="btnDefault btnL btIco icoSearch">검색</button>
+	</div>
+
+	<div class="searchIcon inpDeleteAni"><!-- input focus시 inpFocus 클래스 추가 -->
+		<input type="search" id="inpSearch" placeholder="검색어를 입력하세요." title="검색어를 입력하세요." class="inpSear">
+		<button type="button" class="icDel">삭제</button>
+	</div>
+	<br><br>
+
+	<div class="inpFrm inpPidNum">
+		<label for="inpPidNum">주민등록번호</label>
+		<span class="inpA">
+			<input type="text" id="inpPidNum" placeholder="YYYY.MM.DD" title="YYYY.MM.DD 형식으로 입력">
+			<span class="dash">-</span>
+			<span class="inpPidAfter">
+				<input type="password" title="주민등록번호 뒤 첫번째 숫자 입력">● ● ● ● ● ●
+			</span>
+		</span>
+	</div>
+
+	<div class="inpFrm inpfileAttach">
+		<label for="inpFile">파일첨부</label>
+		<div class="attachWrap">
+			<input type="file" id="inpFile">
+			<input type="text" class="file" placeholder="문구 문구"  value="">
+			<span class="buttonFile">첨부파일</span>
+		</div>
+
+		<ul class="fileList">
+			<li><a href="#"><span class="txt">가족카드증빙.jpg</span> <span class="volume">40.0KB</span></a><button type="button" class="btIco icDel">삭제</button></li>
+			<li><a href="#"><span class="txt">가족카드증빙가족카드증빙가족카드증빙가족카드증빙가족카드증빙.jpg</span> <span class="volume">40.0KB</span></a><button type="button" class="btIco icDel">삭제</button></li>
+		</ul>
+	</div>
+
+	<h3 class="guideTit3">Raido/Checkbox</h3>
+
+	<h4 class="guideTit4">Raido</h4>
+
+	<span class="frmInp"><input type="radio" id="radDefault"><label for="radDefault"></label></span>
+	<span class="frmInp txt"><input type="radio" id="radtxt01"><label for="radtxt01">기본상태 기본상태 만 25세 미만이실 경우 체크해주세요</label></span><br>
+	<span class="frmInp txt"><input type="radio" id="radtxt02"><label for="radtxt02">만 25세 미만이실 경우 체크해주세요</label></span><br>
+	<span class="frmInp txt"><input type="radio" id="radtxt03" disabled><label for="radtxt03">disabled 상태 만 25세 미만이실 경우 체크해주세요</label></span>
+	<span class="frmInp txt small"><input type="radio" id="radtxt04" required=""><label for="radtxt04">포인트결제</label></span><br>
+	<br><br>
+
+
+	<ul class="frmBox">
+		<li><input type="radio" id="radTotal" name="radSample" checked><label for="radTotal">전체</label></li>
+		<li><input type="radio" id="radSample01" name="radSample"><label for="radSample01">경차/소형</label></li>
+		<li><input type="radio" id="radSample02" name="radSample"><label for="radSample02">준준형</label></li>
+		<li><input type="radio" id="radSample03" name="radSample"><label for="radSample03">중형/대형</label></li>
+		<li><input type="radio" id="radSample04" name="radSample"><label for="radSample04">SUB/승합</label></li>
+	</ul>
+	<br><br>
+
+	<ul class="frmBox boxCol03">
+		<li><input type="radio" id="radTotal02" name="radSample2" checked><label for="radTotal02">전체</label></li>
+		<li><input type="radio" id="radSample05" name="radSample2"><label for="radSample05">경차/소형</label></li>
+		<li><input type="radio" id="radSample06" name="radSample2"><label for="radSample06">준준형</label></li>
+		<li><input type="radio" id="radSample07" name="radSample2"><label for="radSample07">중형/대형</label></li>
+		<li><input type="radio" id="radSample08" name="radSample2"><label for="radSample08">SUB/승합</label></li>
+	</ul>
+	<br><br>
+
+	<ul class="frmBox boxCol04">
+		<li><input type="radio" id="radTotal03" name="radSample3" checked><label for="radTotal03">전체</label></li>
+		<li><input type="radio" id="radSample09" name="radSample3"><label for="radSample09">경차/소형</label></li>
+		<li><input type="radio" id="radSample10" name="radSample3"><label for="radSample10">준준형</label></li>
+		<li><input type="radio" id="radSample11" name="radSample3"><label for="radSample11">중형/대형</label></li>
+		<li><input type="radio" id="radSample12" name="radSample3"><label for="radSample12">SUB/승합</label></li>
+	</ul>
+	<ul class="frmBox frmTog">
+		<li><input type="radio" id="radMale" name="radSex" checked><label for="radMale">남자</label></li>
+		<li><input type="radio" id="radFemale" name="radSex"><label for="radFemale">여자</label></li>
+	</ul>
+	<br>
+
+	<ul class="frmBox frmTogS">
+		<li><input type="radio" id="radMale02" name="radSex02" checked><label for="radMale02">남자</label></li>
+		<li><input type="radio" id="radFemale02" name="radSex02"><label for="radFemale02">여자</label></li>
+	</ul>
+
+	<h4 class="guideTit4">Checkbox</h4>
+
+	<span class="frmInp"><input type="checkbox" id="chksample01"><label for="chksample01"></label></span>
+	<span class="frmInp txt"><input type="checkbox" id="chksample02"><label for="chksample02">기본상태 기본상태 만 25세 미만이실 경우 체크해주세요</label></span><br>
+	<span class="frmInp txt"><input type="checkbox" id="chksample04"><label for="chksample04">만 25세 미만이실 경우 체크해주세요</label></span><br>
+	<span class="frmInp txt"><input type="checkbox" id="chksample03" disabled><label for="chksample03">disabled 상태 만 25세 미만이실 경우 체크해주세요</label></span>
+	<span class="frmInp txt small"><input type="checkbox" id="chk01" required=""><label for="chk01"><em>[필수]</em> 이용약관 동의</label></span>
+	<span class="frmInp txt frmInpS"><input type="checkbox" id="chk01" checked=""><label for="chk01">금일 휴무인 맛집 제외</label></span>
+	<br><br>
+
+	<ul class="frmBox">
+		<li><input type="checkbox" id="chkTotal" name="radSample" checked><label for="chkTotal">전체</label></li>
+		<li><input type="checkbox" id="chkSample01" name="chkSample"><label for="chkSample01">경차/소형</label></li>
+		<li><input type="checkbox" id="chkSample02" name="chkSample"><label for="chkSample02">준준형</label></li>
+		<li><input type="checkbox" id="chkSample03" name="chkSample"><label for="chkSample03">중형/대형</label></li>
+		<li><input type="checkbox" id="chkSample04" name="chkSample"><label for="chkSample04">SUB/승합</label></li>
+	</ul>
+
+	<ul class="frmBox frmBoxS">
+		<li><input type="checkbox" id="chkSam01" name="chkSam" checked><label for="chkSam01">수입차</label></li>
+		<li><input type="checkbox" id="chkSam02" name="chkSam"><label for="chkSam02">렌트카</label></li>
+		<li><input type="checkbox" id="chkSam03" name="chkSam"><label for="chkSam03">애견동반</label></li>
+		<li><input type="checkbox" id="chkSam04" name="chkSam"><label for="chkSam04">금연차량</label></li>
+	</ul>
+
+	<div class="scrollVArea">
+		<ul class="frmBox frmBoxS">
+			<li><input type="checkbox" id="chkSam01" name="chkSam" checked><label for="chkSam01">더 많은 수입차</label></li>
+			<li><input type="checkbox" id="chkSam02" name="chkSam"><label for="chkSam02">렌트카 패키지</label></li>
+			<li><input type="checkbox" id="chkSam03" name="chkSam"><label for="chkSam03">애견동반</label></li>
+			<li><input type="checkbox" id="chkSam04" name="chkSam"><label for="chkSam04">금연차량</label></li>
+		</ul>
+	</div>
+	<br><br>
+
+	<h3 class="guideTit3">selectbox</h3>
+
+	<div class="selectWrap">
+		<select title="정렬순서 선택" data-msg="리스트 선택하세요." data-header="정렬">
+			<option value="01" data-option="" selected>최저가순</option>
+			<option value="02" >리뷰순</option>
+			<option value="03">누적예약순</option>
+			<option value="04">옵션순</option>
+			<option value="05">옵션순옵션순옵션순옵션순옵션순옵션순옵션순옵션순옵션순옵션순옵션순옵션순</option>
+			<option value="06">최저가순</option>
+			<option value="07">리뷰순</option>
+			<option value="08">누적예약순</option>
+		</select>
+	</div>
+
+	<!-- div class="selectWrap">		
+		<button class="ui-selectmenu-button"><span class="ui-selectmenu-text">옵션순옵션순옵션순옵션순옵션순옵션순옵션순옵션순옵션순옵션순옵션순옵션순</span></button>
+		<div class="ui-selectmenu-menu">
+			<h3 class="titSelect">정렬</h3>
+			<div class="selectScroll">
+				<ul class="ui-menu">
+					<li class="ui-menu-item"><a href="#" id="ui-id-3" role="option" class="ui-menu-item-wrapper ui-state-active">list | sample1</a></li>
+					<li class="ui-menu-item"><a id="ui-id-3" role="option" class="ui-menu-item-wrapper">옵션순옵션순옵션순옵션순옵션순옵션순옵션순옵션순옵션순옵션순옵션순옵션순</a></li>
+					<li class="ui-menu-item"><a id="ui-id-3" role="option" class="ui-menu-item-wrapper">list | sample1</a></li>
+					<li class="ui-menu-item"><a id="ui-id-3" role="option" class="ui-menu-item-wrapper">list | sample1</a></li>
+					<li class="ui-menu-item"><a id="ui-id-3" role="option" class="ui-menu-item-wrapper">list | sample1</a></li>
+					<li class="ui-menu-item"><a id="ui-id-3" role="option" class="ui-menu-item-wrapper">list | sample1</a></li>
+					<li class="ui-menu-item"><a id="ui-id-3" role="option" class="ui-menu-item-wrapper">list | sample1</a></li>
+					<li class="ui-menu-item"><a id="ui-id-3" role="option" class="ui-menu-item-wrapper">list | sample1</a></li>
+					<li class="ui-menu-item"><a id="ui-id-3" role="option" class="ui-menu-item-wrapper">list | sample1</a></li>
+					<li class="ui-menu-item"><a id="ui-id-3" role="option" class="ui-menu-item-wrapper">list | sample1</a></li>
+					<li class="ui-menu-item"><a id="ui-id-3" role="option" class="ui-menu-item-wrapper">list | sample1</a></li>
+					<li class="ui-menu-item"><a id="ui-id-3" role="option" class="ui-menu-item-wrapper">list | sample1</a></li>
+					<li class="ui-menu-item"><a id="ui-id-3" role="option" class="ui-menu-item-wrapper">list | sample1</a></li>
+					<li class="ui-menu-item"><a id="ui-id-3" role="option" class="ui-menu-item-wrapper">list | sample1</a></li>
+				</ul>
+			</div>
+			<button type="button" class="closeL">닫기</button>
+		</div>
+		
+		<div class="dimmed"></div>
+	</div -->
+	<br>
+
+	<h3 class="guideTit3">기간선택 달력</h3>
+	<input type="text" name="daterange" value="01/01/2018 - 01/15/2018" style="display:none"/>
+	
+	<div class="k1_calendarMulti multiCalendar" data-options='{"monthLength": 2,"startTxt": "시작","endTxt": "종료"}'></div>
+	<div clas="dimmed" style="display:block"></div>	
+
+	
+</section>
+
+</body>
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="../guide.js"></script>
+<script type="text/javascript" src="/resource/MO/js/moment.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/daterangepicker.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+
+<script type="text/javascript">
+
+	var gnbNO = 0;
+	var snbNO = 2;
+	
+	
+</script>
+
+
+
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>우편번호 검색 | 제주패스</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="/resource/MO/images/favicon/apple_touch_icon.ico">
+<link rel="apple-touch-icon" href="/resource/MO/images/favicon/apple_touch_icon_144.ico">
+<link href="/resource/MO/css/m_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/MO/css/m_contents.min.css" rel="stylesheet" type="text/css">
+<style>
+    .dimmed{display:block}
+    .layPop{display:block}
+</style>
+</head>
+
+<body>
+
+<div class="dimmed"></div>
+<section id="pop_agree-02" class="layPop layFull" tabindex="0">
+	<header>
+		<h2 class="titLay">우편번호 검색</h2>
+	</header>
+	<div class="layContainer" tabindex="0">
+		<div class="layContent agreeCont">
+			<div class="inpFrm inpDeleteAni"><!-- input value값 있을 때 삭제버튼 출력 -->
+				<span class="inpA inpBtns">
+					<input type="text" id="inp_id" placeholder="도로명을 입력해주세요." title="도로명을 입력해주세요.">
+					<button type="button" class="icDel">삭제</button>
+					<button type="button" class="btnDefault btnM action" disabled>검색</button>
+				</span>
+			</div>
+            <p class="desc-13">도로명주소: 도로명을 입력하세요.  예) 중앙로, 불정로432번길</p>
+            <div class="topLine">
+                <p class="addressResult"><em>판교역로</em>의 검색결과</p>
+                <ul class="addressList">
+                    <li>
+                        <span class="frmInp txt small"><input type="radio" id="radtxt01" name="radtxt"><label for="radtxt01">경기도 성남시 분당구 판교역로 152 (백현동, 알파돔
+                            타워) (우 13529)</label></span>
+                    </li>
+                    <li>
+                        <span class="frmInp txt small"><input type="radio" id="radtxt02" name="radtxt"><label for="radtxt02">경기도 성남시 분당구 판교역로 152 (백현동, 알파돔
+                            타워) (우 13529)</label></span>
+                    </li>
+                    <li>
+                        <span class="frmInp txt small"><input type="radio" id="radtxt03" name="radtxt"><label for="radtxt03">경기도 성남시 분당구 판교역로 152 (백현동, 알파돔
+                            타워) (우 13529)</label></span>
+                    </li>
+                </ul>
+            </div>
+		</div>
+		<div class="floatingBtns floatingCase01">
+			<div class="floatingInner">
+				<button type="button" class="btnDefault btnL action" disabled>주소입력</button>
+			</div>
+		</div>
+	</div><!-- //layCont-->
+	<button type="button" class="closeL">팝업 닫기</button>
+</section>
+
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+
+</body>
+</html>

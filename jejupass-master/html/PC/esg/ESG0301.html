@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>기부캠페인 상세</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, user-scalable=no, width=1366">
+<link rel="shortcut icon" type="image/x-icon" href="/resource/PC/images/favicon/favicon.ico">
+<link href="/resource/PC/css/p_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/PC/css/p_contents.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper defaultWrapper"><!-- scrollTop 104이상일때 headFixed 추가 -->
+	<header>
+		<h1 class="topLogo"><a href="#">JEJUPASS</a></h1>
+		<nav>
+			<div class="navList">
+				<h2><a href="#" aria-selected="true">항공</a></h2>
+				<h2><a href="#">렌터카</a></h2>
+				<h2><a href="#">숙박</a></h2>
+				<h2><a href="#">맛집</a></h2>
+				<h2><a href="#">카페패스</a></h2>
+				<h2><a href="#">트립</a></h2>
+			</div>
+			<div class="quickSearchWrap">
+				<button type="button" class="btSearch">빠른검색</button>
+			</div>
+		</nav>
+		<div class="topUtil">
+			<img src="/resource/PC/images/dummy/@util.png" alt="">
+		</div>
+	</header>
+
+	<div id="container" class="container">
+		<div id="contents" class="contents">
+			<!-- 컨텐츠 영역  -->
+			<div class="viewArea">
+                <div class="swiperWrap swiperFraction thumbWrap" data-options='{"loop": false,  "pagination": "fraction"}'>
+                    <button type="button" class="swiper-button-prev">이전</button>
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide"><img src="/resource/pc/images/dummy/@esg_image01.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="/resource/pc/images/dummy/@esg_image01.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="swiper-button-next">다음</button>
+                    <div class="swiper-pagination">
+                        <button type="button" class="swiperMore">더보기</button>
+                    </div>
+                </div>
+                <!-- //swiperWrap -->
+                <div class="infoWrap">
+                    <span class="state apply">진행중</span><!-- 진행중(.apply) 종료(.ended) -->
+                    <h2 class="titDep1">플라스틱으로부터 제주 바다를 지켜요!</h2>
+                    <ul class="txtInfoSet">
+                        <li>
+                            <span class="tit">단체명</span>
+                            <span class="txt">에코임팩트</span>
+                        </li>
+                        <li>
+                            <span class="tit">기간</span>
+                            <span class="txt">2021.07.05 ~ 2021.09.05</span>
+                        </li>
+                        <li>
+                            <span class="tit">리뷰</span>
+                            <span class="txt"><button type="button" class="reply" title="리뷰글">10</button></span>
+                        </li>
+                        <li>
+                            <span class="tit">참여인원</span>
+                            <span class="txt">1200명</span>
+                        </li>
+                    </ul>
+                    <div class="chartArea">
+                        <p class="chart">
+                            <span class="end">3,500,000원 목표</span>
+                            <span class="current" title="현재진행사항"><em>30%</em>600,000원</span>
+                            <span class="bar" style="width:30%"><i class="circle"></i></span><!-- 진행률 -->
+                        </p>
+                    </div>
+                    <div class="btWrap">
+                        <span class="frmLike active"><input type="checkbox" id="chkLike" name="chkLike" title="좋아요"><label for="chkLike">401</label></span>
+                        <!-- 기본: span class="frmLike", 핑크색: span class="frmLike active" -->
+                        <div class="rCont">
+                            <!-- <button type="button" class="btWish">찜하기</button> --><!-- 211230 삭제 -->
+                            <button type="button" class="btShare">공유하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="viewContents viewDonation">
+                <div class="innerCont">
+                    <h3 class="titDep3"><a href="#" role="button" class="btLink01">이 캠페인의 기부랭킹</a></h3>
+                    <div class="colsWrap campRanking">
+                        <div class="donationRank myRank">
+                            <span class="thum"><img src="/resource/PC/images/dummy/@pic_01.png" alt=""></span>
+                            <strong class="name me">김제주</strong>
+                            <span class="txt">50,000p 기부</span>
+                            <em class="rank">4위</em>
+                        </div>
+                        <div class="donationRank">
+                            <span class="thum"><img src="/resource/PC/images/dummy/@pic_02.png" alt=""></span>
+                            <strong class="name">일제주</strong>
+                            <span class="txt">100,000P 기부</span>
+                            <em class="rank gold">1위</em><!-- 랭킹:1위(.gold) 2위(.silver) 3위(.bronze) -->
+                        </div>
+                    </div>
+
+                    <h3 class="titDep3">단체정보</h3>
+                    <div class="hostInfoArea">
+                        <div class="hostInfo">
+                            <div class="info">
+                                <span class="thum"><img src="/resource/PC/images/esg/ico_hostlogo.png" alt=""></span>
+                                <span class="titDep4">에코임팩트</span>
+                                <span class="desc">환경지원 비영리민간단체</span>
+                            </div>
+                            <div class="receipt">기부영수증 발행 가능</div>
+                        </div>
+                        <div class="txtArea">"미래의 아이들을 위해 플라스틱 줄이기 캠페인에 참여해주세요."</div>
+                    </div>
+                    <a href="#" class="btLink icArr">기부영수증 발행 안내</a>    
+                </div>
+
+                <div class="innerCont subTab">
+                    <ul class="tabType01">
+                        <li><a href="#" role="button" aria-selected="true" data-controls="tabContents01">캠페인 스토리</a></li>
+                        <li><a href="#" role="button" aria-selected="false" data-controls="tabContents02">캠페인 비하인드</a></li>
+                        <li><a href="#" role="button" aria-selected="false" data-controls="tabContents03">리뷰(10)</a></li>
+                    </ul>
+                    <div id="tabContents01" class="tabContentWrap tabON">
+                        <div class="tabInner">
+                            <h2 class="hidden">캠페인 스토리</h2>
+                            <h3 class="titDep3">미세 플라스틱으로 고통받는 제주 바다를 구할사람, 바로 당신입니다.</h3>
+                            <h4 class="titDep4">자연의 경고</h4>
+                            <p class="text">‘자연의 경고’, 환경 전문가들이 플라스틱 쓰레기로 뒤덮인 바다를 지칭하는 말입니다. 2017년 유엔은 매해 바다에 
+                                약 100만톤의 쓰레기가 버려지고 있으며, 그중 60~80%는 
+                                플라스틱 쓰레기라고 발표했습니다.</p>
+                            <h4 class="titDep4">플라스틱의 위협</h4>
+                            <p class="text">바다에 자리잡은 플라스틱 쓰레기는 인간 또한 위협합니다. 플라스틱은 인체에 신경독성, 면역독성, 기형유발 등 
+                            치명적인 독성물질로 작용할 수 있기 때문입니다. 우리가 
+                            매일 먹는 소금은 이미 광범위하게 오염되어 전 세계 
+                            90%의 소금에서 미세 플라스틱이 발견되었다고 합니다.</p>
+                            <div class="img"><img src="/resource/pc/images/dummy/@esg_image02.jpg" alt=""></div>
+                            
+                            <h4 class="titDep4">에코임팩트란?</h4>
+                            <p class="text">에코임팩트는 정부와 기업에게 플라스틱 쓰레기 문제 
+                                해결에 대한 근본적인 대책을 촉구합니다. 재활용 중심의 
+                                해결방안을 넘어 획기적으로 일회용 쓰레기를 감소할 수 
+                                있는 공급, 유통 단계에서 제한 정책과 대안을 요구합니다.</p>
+                            <p class="text">개인에게는 제로 웨이스트를 실천할 수 있는 방법에 대한 
+                                전문 오프라인/온라인 강의를 실시하고, 다양한 환경 
+                                콘텐츠를 제공하고 있습니다. 특히 미래의 주역이 될 
+                                대학생들을 대상으로 에코 세계시민 교육 캠페인을 
+                                진행하고 있습니다.</p>
+                            <h4 class="titDep4">에코임팩트의 제로 플라스틱을 위한 발걸음에 함께해주세요.</h4>
+                            <p class="text">감당할 수 없는 플라스틱 쓰레기는 바다로 흘러들어가 
+                                해양동물에게 치명적인 피해를 입히는 등 우리 삶 곳곳을 
+                                침범하고 있습니다. 이러한 비극을 막을 수 있도록 정부와 
+                                기업 그리고 개인, 우리 모두 한 마음으로 플라스틱 문제를 해결해야할 때 입니다.
+                            </p>
+                            
+                            <h3 class="titDep3">기부한 포인트는 이렇게 사용되요!</h3>
+                            <p class="text">홍보비, 운영비를 제외한 기부금액 전액은 ‘에코임팩트‘ 단체에 기부되어 해양 정화 활동비로 사용될 예정입니다.<br>
+                            제주의 해양생물을 위하여 바다에 버려진 플라스틱 쓰레기 약 5t을 수거하고, 바다를 정화하는데에 기부금이 쓰일 예정입니다.</p>
+                            <h4 class="titDep4">기부금 사용계획</h4>
+                            <div class="boxGray">
+                                <dl class="infoSet">
+                                    <dt>해양 정화 활동비</dt><dd>1,000,000원</dd>
+                                </dl>
+                                <dl class="infoSet">
+                                    <dt>홍보비</dt><dd>1,000,000원</dd>
+                                </dl>
+                                <dl class="infoSet">
+                                    <dt>운영, 관리비</dt><dd>500,000원</dd>
+                                </dl>
+                            </div>
+                            <h3 class="titDep3">기부하면 어떤 변화가 생길까요?</h3>
+                            <p class="text">약 5t의 해양 쓰레기를 수거함으로써 깨끗한 제주 바다를 만들 수 있습니다. 제주의 풍부한 바다생태계를 살리는 데도 도움을 줄 수 있습니다. 
+                            또한 다양한 SNS 홍보활동을 통해 플라스틱 오염에 대한  인식을 활성화 시킬 수 있습니다.</p>
+                        </div>
+                    </div><!-- //tabContents01 -->
+                    <div id="tabContents02" class="tabContentWrap">
+                        <h2 class="hidden">캠페인 비하인드</h2>
+                        <div class="tabInner">
+                            <div class="noData noBehind"><!-- 211228 클래스 추가 -->
+                                <p class="tit">캠페인 비하인드 스토리는 <br>캠페인 종료 후 오픈됩니다!</p>
+                                <span class="subTxt">캠페인 비하인드 스토리에서는 캠페인 모금 종료 후 <br>
+                                    실제로 모금액이 어떻게 사용되었고 캠페인 이후 어떤 변화가 <br>
+                                    생겼는지를 확인하실 수 있습니다.</span>
+                            </div>
+                        </div>
+                    </div><!-- //tabContents02 -->
+                    <div id="tabContents03" class="tabContentWrap">
+                        <h2 class="hidden">리뷰</h2>
+                        <div class="inpFrm reviewFrm">
+                            <div class="inpA inpText">
+                                <textarea id="inpText" cols="10" rows="10" placeholder="리뷰를 남겨주세요. (15글자 이상)" title="리뷰글"></textarea>
+                                <p class="textNum">0/100</p>
+                            </div>
+                            <button type="button" class="btnDefault btnL action" disabled>등록</button>
+                        </div>
+                        <ul class="reviewList">
+                            <li>
+                                <div class="reviewSet">
+                                    <span class="thum"><img src="/resource/pc/images/dummy/@pic_01.png" alt=""></span>
+                                    <strong class="name">김제주</strong>
+                                    <em class="date">오늘</em>
+                                </div>
+                                <p class="txt">아이들이 너무 좋아했어요. 내년에 제주도 오면 다시 가고 싶어요. <br>
+                                    어른이 보기에도 재미있는 곳이네요...
+                                </p>
+                                <span class="frmLike"><input type="checkbox" id="chkLike2" title="좋아요"><label for="chkLike2">401</label></span>
+                                <div class="btWrap">
+                                    <button type="button" class="btEdit">수정</button>
+                                    <button type="button" class="btDel">삭제</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="reviewSet">
+                                    <span class="thum"><img src="/resource/pc/images/dummy/@pic_01.png" alt=""></span>
+                                    <strong class="name">김제주</strong>
+                                    <em class="date">오늘</em>
+                                </div>
+                                <p class="txt">아이들이 너무 좋아했어요. 내년에 제주도 오면 다시 가고 싶어요. <br>
+                                    어른이 보기에도 재미있는 곳이네요...
+                                </p>
+                                <span class="frmLike"><input type="checkbox" id="chkLike2" title="좋아요"><label for="chkLike2">401</label></span>
+                            </li>
+                        </ul>
+                        <!-- 2021.12.09 삭제 <div class="btnMors">
+                            <button type="button" class="icoMore">더보기</button>
+                        </div> -->
+                        <!-- 2021.12.09 추가 -->
+                        <div class="pageMove">
+                            <div class="btnView">
+                                <a href="#" role="button" class="prev">이전</a>
+                                <a href="#" role="button" class="num now">1</a>
+                                <a href="#" role="button" class="num">2</a>
+                                <a href="#" role="button" class="num">3</a>
+                                <a href="#" role="button" class="next">다음</a>
+                            </div>
+                        </div>
+                        <!-- //2021.12.09 추가 -->
+                        <!-- noData -->
+                        <div class="noData noReview"><!-- 211228 클래스 추가 -->
+                            <p class="tit">작성된 리뷰가 없습니다.</p>
+                        </div>
+                        <!-- //noData-->
+
+                    </div><!-- //tabContents03 -->
+
+                </div>
+
+                <div id="filterWrap" class="kf_paymentBox floatingCont">
+                    <div class="boxWhite">
+                        <div class="inner"><!-- 12.17 div 추가 -->
+                            <h3 class="titDep3">보유포인트</h3>
+                            <ul class="sideList">
+                                <li><span class="tit">충전 포인트</span><strong class="contR">57,000p</strong></li>
+                                <li><span class="tit">적립 포인트</span><strong class="contR">3,000p</strong></li>
+                                <li class="total"><span class="tit">총 포인트</span><strong class="contR">60,000p</strong></li>
+                            </ul>
+                            <ul class="listType01">
+                                <li><a href="#" class="">마이페이지&gt;내자산&gt;포인트</a>에서 확인 가능합니다.</li>
+                                <li>기부 시 적립 포인트&gt;충전 포인트 순으로 차감됩니다.</li>
+                            </ul>
+                            <p class="minDonate">최소 기부금액: 1,000p</p><!-- 211230 추가 -->
+                            <div class="btnArea">
+                                <button type="button" class="btnDefault btnM btnLineG">포인트 충전하기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floatingBtns">
+						<div class="floatingInner">
+							<button type="button" class="btnDefault btnL action">기부하기</button>
+						</div>
+					</div>
+                </div>
+            </div>
+
+		</div>
+        <!-- //컨텐츠 영역 -->
+	</div><!-- //container -->
+
+	
+
+</section><!-- //wrapper -->
+<footer>
+	<div class="footInner">
+		<img src="/resource/PC/images/dummy/@footer.png" alt="">
+	</div>
+</footer>
+
+<aside>
+	<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+</aside>
+
+<div class="toastPopup" style="display:block"><!-- 토스트팝업 띄울때 display:block 시켜줌.-->
+    <p class="txt">현재까지 <em>23</em>명이 동참했어요!</p>
+</div>
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/PC/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.523" height="12.469" viewBox="0 0 12.523 12.469">
+    <defs>
+        <style>
+            .cls-2,.cls-3{fill:none;stroke:#aeaeae;stroke-linecap:round;stroke-linejoin:round}.cls-2{stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="ic_x12_nosmoking" transform="translate(-182.56 -51.881)">
+        <path id="Rectangle_3003" data-name="Rectangle 3003" transform="translate(182.819 52.115)" style="fill:none" d="M0 0h12v12H0z"/>
+        <g id="nosmoking" transform="translate(-98.748 -361.11)">
+            <path id="Line_40" data-name="Line 40" class="cls-2" transform="translate(292.834 418.864)" d="M0 0v2.625"/>
+            <path id="Line_41" data-name="Line 41" class="cls-2" transform="translate(282.369 414.051)" d="m0 0 10.401 10.348"/>
+            <path id="Path_2626" data-name="Path 2626" class="cls-3" d="M290.68 417.128a1.046 1.046 0 0 1 0-1.386 1.047 1.047 0 0 0 0-1.388" transform="translate(.045)"/>
+            <path id="Path_2627" data-name="Path 2627" class="cls-2" d="M290.2 421.49h.478v-2.625h-1.1" transform="translate(.042)"/>
+            <path id="Path_2628" data-name="Path 2628" class="cls-2" d="M286.794 418.864h-4.425v2.625h5.072"/>
+            <path id="Path_2629" data-name="Path 2629" class="cls-3" d="M292.22 417.128a1.046 1.046 0 0 1 0-1.386 1.047 1.047 0 0 0 0-1.388" transform="translate(.054)"/>
+        </g>
+    </g>
+</svg>

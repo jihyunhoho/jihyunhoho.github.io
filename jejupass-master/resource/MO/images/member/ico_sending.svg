@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff0404;
+        opacity: 0.21;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-4 {
+        fill: #18225c;
+      }
+
+      .cls-5 {
+        fill: #e83667;
+      }
+
+      .cls-6 {
+        fill: #569aff;
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_11810" data-name="사각형 11810" class="cls-1" width="72" height="72" transform="translate(130 165)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_11937" data-name="사각형 11937" class="cls-1" width="72" height="72" transform="translate(10.271 8.734)"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_744" data-name="마스크 그룹 744" class="cls-2" transform="translate(-130 -165)">
+    <g id="제주패스_icon_아웃라인_01" transform="translate(119.729 156.266)">
+      <g id="마스크_그룹_755" data-name="마스크 그룹 755" class="cls-3">
+        <circle id="타원_1729" data-name="타원 1729" class="cls-4" cx="3" cy="3" r="3" transform="translate(35.544 11.754)"/>
+        <circle id="타원_1730" data-name="타원 1730" class="cls-5" cx="3" cy="3" r="3" transform="translate(73.089 47.299)"/>
+        <path id="패스_21361" data-name="패스 21361" class="cls-6" d="M29.229,9.064a5.382,5.382,0,0,1,9.762,0L63.052,55c2.185,4.171.724,9.4-4.881,9.4L34.076,58.144,10.049,64.4C4.1,64.4,2.983,59.174,5.168,55Z" transform="translate(53.524 -10.413) rotate(45)"/>
+        <rect id="사각형_11917" data-name="사각형 11917" class="cls-7" width="5" height="34.708" rx="2.5" transform="translate(63.086 25.222) rotate(45)"/>
+      </g>
+    </g>
+  </g>
+</svg>

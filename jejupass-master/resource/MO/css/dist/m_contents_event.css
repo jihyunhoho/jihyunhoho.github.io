@@ -1,0 +1,184 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url(../fonts/Pretendard-Regular.woff2) format("woff2"), url(../fonts/Pretendard-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"), url(../fonts/Pretendard-SemiBold.woff2) format("woff2"), url(../fonts/Pretendard-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url(../fonts/Pretendard-Bold.woff2) format("woff2"), url(../fonts/Pretendard-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'NanumSquareR';
+  font-weight: 900;
+  font-display: swap;
+  src: local("나눔스퀘어라운드 ExtraBold"), url(../fonts/NanumSquareRoundOTFEB.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url(../fonts/Pretendard-Regular.woff2) format("woff2"), url(../fonts/Pretendard-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"), url(../fonts/Pretendard-SemiBold.woff2) format("woff2"), url(../fonts/Pretendard-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url(../fonts/Pretendard-Bold.woff2) format("woff2"), url(../fonts/Pretendard-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'NanumSquareR';
+  font-weight: 900;
+  font-display: swap;
+  src: local("나눔스퀘어라운드 ExtraBold"), url(../fonts/NanumSquareRoundOTFEB.woff) format("woff");
+}
+
+/*이벤트 리스트(진행, 종료)*/
+.tabType01.event {
+  width: 100vw;
+  margin: 32px 0 0 -20px;
+}
+
+.eventList {
+  margin-top: 32px;
+}
+
+.eventList a {
+  display: block;
+  padding-bottom: 32px;
+}
+
+.eventList a strong {
+  display: block;
+  margin-top: 12px;
+  color: #202020;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.44;
+}
+
+.eventList a span {
+  color: #808080;
+  font-size: 1.4rem;
+  line-height: 1.57;
+}
+
+.eventList a .imgCont {
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+}
+
+.eventList a .imgCont:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.eventList a .imgCont p.roundTxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 76px;
+  height: 32px;
+  margin: -16px 0 0 -38px;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 32px;
+  border: 1px solid #fff;
+  border-radius: 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.eventList li:last-child a {
+  padding-bottom: 20px;
+}
+
+/*진행 중 이벤트 상세*/
+.contTit.event .date {
+  margin-top: 4px;
+  color: #808080;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+/*이벤트(당첨자 발표)*/
+.listCont.event {
+  margin-top: -12px;
+}
+
+.listCont.event li:first-child a > p {
+  font-weight: 600;
+}
+
+/*이벤트(당첨자 발표 상세)*/
+.infoArea.event .eventTit {
+  margin-bottom: 24px;
+}
+
+.infoArea.event p {
+  margin: 0;
+}
+
+.infoArea.event table {
+  margin-bottom: 24px;
+  border-top: 1px solid #EAEAEA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #202020;
+  font-size: 1.5rem;
+}
+
+.infoArea.event table tr {
+  height: 47px;
+  line-height: 47px;
+  text-align: center;
+}
+
+.infoArea.event table tr td {
+  width: 33.333%;
+  border-bottom: 1px solid #EAEAEA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #202020;
+}
+
+.infoArea.event table tr td:first-child {
+  width: 25%;
+  font-weight: 600;
+  background: #F8F8F8;
+}
+
+.infoArea.event table tr td:not(:last-child) {
+  border-right: 1px solid #EAEAEA;
+}
+
+.infoArea.event .centerTxt {
+  margin: 20px 0;
+}

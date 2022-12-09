@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no" />
+<title>여정선택 - 여행으로 연결되는 더 큰 세상! 토파스 항공예약</title>
+<link href="/air/css/kfx/mbl/airA.css" rel="stylesheet" type="text/css">
+<!-- <script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../../js/common_mbl.js"></script> -->
+</head>
+<body>
+<div id="k1_container">
+	<jsp:include page="/AIR/MBL/inc/mbl_header.html" />
+
+	<section>
+
+		<!-- 메인 이벤트 영역 / 배너이미지 크기는 width:640px 이상 권장 / height:제한없음-->
+		<div class="k1_main_evnt">
+			<a href="#none"><img src="/air/wfw/imgs/mbl/common/tmp_img_event.jpg" alt="이벤트이미지" /></a>
+		</div>
+		<!-- k1_main_evnt  -->
+
+		<div class="k1_quick_search">
+			<div class="k1_ariline_sch">
+				<ul class="k1_tab t2"><!--t2~t5 탭메뉴수-->
+					<li class="active"><a href="#none">한국출발</a></li>
+					<li><a href="#none">해외출발</a></li>
+				</ul>
+				<ul class="k1_tab chk t3"><!--chk 선택형 탭-->
+					<li><a href="#none">편도</a></li>
+					<li class="active"><a href="#none"><span class="k1_icon"></span>왕복</a></li>
+					<li><a href="#none">다구간</a></li>
+				</ul>
+
+				<ul class="k1_flight_panel">
+					<li class="k1_area departure">
+						<span class="txt">
+							<strong>서울/인천</strong>
+							ICN
+						</span>
+						<span class="arr"></span>
+					</li>
+					<li><span class="k1_icon i2"></span></li><!--i1 편도, i2 왕복, i3 다구간-->
+					<li class="k1_area destination">
+						<span class="txt">
+							<strong>상트페테르부르크</strong>
+							LED
+						</span>
+						<span class="arr"></span>
+					</li>
+				</ul>
+
+				<ul class="k1_flight_date">
+					<li>
+						<a href="#k1_flight_date" class="k1_calendar_btn">출발일<span class="k1_icon"></span></a>
+						<span class="date">
+							<strong>08.05</strong>
+							수요일
+						</span>
+					</li>
+					<li>
+						<a href="#k1_flight_date" class="k1_calendar_btn">귀국일<span class="k1_icon"></span></a>
+						<span class="date">
+							<strong>08.22</strong>
+							토요일
+						</span>
+					</li>
+				</ul>
+
+				<div class="k1_calendar_wrap" style="display:none;">
+					<div class="k1_sel_month">
+						<a href="#none" class="prev">이전</a>
+						2015.08
+						<a href="#none" class="next">다음</a>
+					</div>
+
+					<table class="k1_board_mcal">
+						<tr>
+							<th>일</th>
+							<th>월</th>
+							<th>화</th>
+							<th>수</th>
+							<th>목</th>
+							<th>금</th>
+							<th>토</th>
+						</tr>
+						<tr>
+							<td><a href="#none" class="undate sun">26</a></td>
+							<td><a href="#none" class="undate">27</a></td>
+							<td><a href="#none" class="undate">28</a></td>
+							<td><a href="#none" class="undate">29</a></td>
+							<td><a href="#none" class="undate">30</a></td>
+							<td><a href="#none" class="undate">31</a></td>
+							<td><a href="#none">1</a></td>
+						</tr>
+						<tr>
+							<td><a href="#none" class="sun">2</a></td>
+							<td class="flight anchor">
+								<a href="#none">
+									3
+									<span class="txt">출발</span>
+								</a>
+							</td><!--anchor 출발일/귀국일-->
+							<td class="flight"><a href="#none">4</a></td><!--flight 예약일구간-->
+							<td class="flight"><a href="#none">5</a></td>
+							<td class="flight"><a href="#none">6</a></td>
+							<td class="flight"><a href="#none">7</a></td>
+							<td class="flight"><a href="#none">8</a></td>
+						</tr>
+						<tr>
+							<td class="flight"><a href="#none" class="sun">9</a></td>
+							<td class="flight"><a href="#none">10</a></td>
+							<td class="flight"><a href="#none">11</a></td>
+							<td class="flight"><a href="#none">12</a></td>
+							<td class="flight anchor">
+								<a href="#none">
+									13
+									<span class="txt">귀국</span>
+								</a>
+							</td>
+							<td><a href="#none">14</a></td>
+							<td><a href="#none">15</a></td>
+						</tr>
+						<tr>
+							<td><a href="#none" class="sun">16</a></td>
+							<td><a href="#none">17</a></td>
+							<td><a href="#none">18</a></td>
+							<td><a href="#none">19</a></td>
+							<td><a href="#none">20</a></td>
+							<td class="today">
+								<a href="#">
+									<strong>21</strong>
+									<span class="txt">오늘</span>
+								</a>
+							</td><!--today 오늘-->
+							<td><a href="#none">22</a></td>
+						</tr>
+						<tr>
+							<td><a href="#none" class="sun">23</a></td>
+							<td><a href="#none">24</a></td>
+							<td><a href="#none">25</a></td>
+							<td><a href="#none">26</a></td>
+							<td><a href="#none">27</a></td>
+							<td><a href="#none">28</a></td>
+							<td><a href="#none">29</a></td>
+						</tr>
+						<tr>
+							<td><a href="#none" class="sun">30</a></td>
+							<td><a href="#none">31</a></td>
+							<td><a href="#none" class="undate">1</a></td>
+							<td><a href="#none" class="undate">2</a></td>
+							<td><a href="#none" class="undate">3</a></td>
+							<td><a href="#none" class="undate">4</a></td>
+							<td><a href="#none" class="undate">5</a></td>
+						</tr>
+					</table>
+					<div class="k1_btn_wrap">
+						<a href="#none" class="k1_btn k1_calendar_close">닫기</a>
+					</div>
+				</div><!--// k1_calendar_wrap -->
+
+				<div class="k1_grid k1_bg_light_gray1">
+					<div class="k1_custom_chk k1_ar">
+						<input type="checkbox" id="k1_undesignated" name="k1_undesignated" />
+						<label for="k1_undesignated">귀국일 미지정</label>
+					</div>
+					<ul class="k1_passenger">
+						<li>
+							<span class="caption">
+								성인
+								<span class="desc">만 12세 이상</span>
+							</span>
+							<span class="setting">
+								<a href="#none" class="minus"><span class="k1_icon"></span></a><input type="tel" id="passenger1" name="passenger1" maxlength="2" class="num" value="8" /><a href="#none" class="plus"><span class="k1_icon"></span></a>
+							</span>
+						</li>
+						<li>
+							<span class="caption">
+								소아
+								<span class="desc">만 2세 ~ 만 11세</span>
+							</span>
+							<span class="setting">
+								<a href="#none" class="minus"><span class="k1_icon"></span></a><input type="tel" id="passenger2" name="passenger2" maxlength="2" class="num" value="1" /><a href="#none" class="plus"><span class="k1_icon"></span></a>
+							</span>
+						</li>
+						<li>
+							<span class="caption">
+								유아
+								<span class="desc">만 24개월 미만</span>
+							</span>
+							<span class="setting">
+								<a href="#none" class="minus"><span class="k1_icon"></span></a><input type="tel" id="passenger3" name="passenger3" maxlength="2" class="num" value="2" /><a href="#none" class="plus"><span class="k1_icon"></span></a>
+							</span>
+						</li>
+					</ul>
+					<div class="k1_custom_sel k1_mgt10">
+						<select  name="" class="k1_w100pct">
+							<option>일반석</option>
+							<option>프리미엄일반석</option>
+							<option>비지니스석</option>
+							<option>일등석</option>
+						</select>
+					</div>
+					<div class="k1_btn_wrap">
+						<a href="#none" class="k1_btn max dark"><span class="k1_icon search"></span>항공권검색</a>
+					</div>
+				</div><!--// k1_grid -->
+			</div><!--// k1_ariline_sch -->
+		</div><!--// k1_quick_search -->
+
+		<div class="k1_grid k1_bg_light_gray1">
+			<h3><span class="k1_icon file"></span>최근 검색 기록</h3>
+			<!-- repeat unit -->
+			<div class="k1_rp_search_record">
+				<div class="k1_fl k1_w50pct">
+					<div class="k1_from_to">
+						<div class="from"><span class="cl"></span>서울/인천</div>
+						<div class="to">	<span class="cr"></span>홍콩</div>
+					</div>
+				</div>
+				<div class="k1_fr k1_w50pct">
+					<strong>2015.07.30 ~ 2015.08.03</strong>
+					왕복, 성인2 소아1, 유아1 <span class="k1_status min point">일반석</span>
+				</div>
+			</div>
+			<!--// repeat unit -->
+			<div class="k1_rp_search_record">
+				<div class="k1_fl k1_w50pct">
+					<div class="k1_from_to">
+						<div class="from"><span class="cl"></span>서울/인천</div>
+						<div class="to">	<span class="cr"></span>로스엔젤레스</div>
+					</div>
+				</div>
+				<div class="k1_fr k1_w50pct">
+					<strong>2015.08.30 ~ 2015.10.03</strong>
+					왕복, 성인4, 소아1, 유아2 <span class="k1_status min green">프리미엄일반석</span>
+				</div>
+			</div>
+			<div class="k1_rp_search_record">
+				<div class="k1_fl k1_w50pct">
+					<div class="k1_from_to">
+						<div class="from"><span class="cl"></span>서울/인천</div>
+						<div class="to">	<span class="cr"></span>부에노스아이레스</div>
+					</div>
+				</div>
+				<div class="k1_fr k1_w50pct">
+					<strong>2015.08.30 ~ 2015.10.03</strong>
+					왕복, 성인1, 소아1, 유아0 <span class="k1_status min">비지니스석</span>
+				</div>
+			</div>
+		</div><!--// k1_grid -->
+	</section>
+	
+	<jsp:include page="/AIR/MBL/inc/mbl_footer.html" />
+	<jsp:include page="/AIR/MBL/inc/mbl_side.html" />
+	<div class="k1_slide_blind" style="display:none;"></div>
+</div><!--// k1_container -->
+</body>
+</html>

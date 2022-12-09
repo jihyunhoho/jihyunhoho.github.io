@@ -1,0 +1,134 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>제주패스</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="/resource/MO/images/favicon/apple_touch_icon.ico">
+<link rel="apple-touch-icon" href="/resource/MO/images/favicon/apple_touch_icon_144.ico">
+<link href="/air/css/kfx/mbl/airA.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_commonAIR.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_contentsAIR.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_contents_air.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper airWrapper">
+	
+	<!-- jsp:include page="/inc/MO/header.html" / -->
+	
+	<header>
+		<button type="button" class="btPrev">이전</button>
+		<h1 class="titDep1">탑승객 목록</h1>
+	</header>
+
+	<div id="container" class="container">
+		
+		<p class="pageTit">기존에 저장된 탑승객 목록을<br>편집해주세요.</p>
+		
+		<span class="kf_subTxt">기존에 저장된 탑승객 목록을 삭제하거나 목록순서를 변경할 수 있습니다.</span>
+
+		<!-- 편집 모드 -->
+		<div class="kf_listControls">
+			<span class="frmInp frmTotal"><input type="checkbox" id="chk_listTotal"><label for="chk_listTotal"><span class="false">전체선택</span><span class="true">선택해제</span></label></span>
+			<div class="kf_contRight">
+				<button type="button" class="btTxt">선택삭제</button>
+			</div>
+		</div>
+		<!-- //편집 모드 -->
+
+		<ul id="sortable" class="kf_passengerList ui-sortable">
+			<li class="frmInp ui-state-default">
+				<input type="checkbox" id="chkpassen01">
+				<label class="kf_passenBox" for="chkpassen01">
+					<span class="name">홍길동</span>
+					<div class="info">
+						<span>1977.07.07</span>
+						<span>남자</span>
+						<span>한국</span>
+					</div>
+				</label>
+				<button type="button" class="btIco icoEdit">위치편집</button>
+			</li>
+			<li class="frmInp ui-state-default">
+				<input type="checkbox" id="chkpassen02">
+				<label class="kf_passenBox" for="chkpassen02">
+					<span class="name">선우정아</span>
+					<div class="info">
+						<span>1977.07.07</span>
+						<span>여자</span>
+						<span>한국</span>
+					</div>
+				</label>
+				<button type="button" class="btIco icoEdit">위치편집</button>
+			</li>
+			<li class="frmInp ui-state-default">
+				<input type="checkbox" id="chkpassen03">
+				<label class="kf_passenBox" for="chkpassen03">
+					<span class="name">조정석</span>
+					<div class="info">
+						<span>1977.07.07</span>
+						<span>남자</span>
+						<span>한국</span>
+					</div>
+				</label>
+				<button type="button" class="btIco icoEdit">위치편집</button>
+			</li>
+			<li class="frmInp ui-state-default">
+				<input type="checkbox" id="chkpassen04">
+				<label class="kf_passenBox" for="chkpassen04">
+					<span class="name">유연석</span>
+					<div class="info">
+						<span>1977.07.07</span>
+						<span>남자</span>
+						<span>한국</span>
+					</div>
+				</label>
+				<button type="button" class="btIco icoEdit">위치편집</button>
+			</li>
+		</ul>
+		
+
+	</div><!-- //container -->
+
+	<div class="floatingBtns floatingCase01">
+		<div class="floatingInner">
+			<button type="button" class="btnDefault btnL action">완료</button>
+		</div>
+	</div>		
+
+</section><!-- //wrapper -->
+<footer>
+	<img src="/resource/MO/images/dummy/@footer.png" alt="">
+</footer>
+
+<aside>
+	<div class="asideRight">
+		<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+	</div>
+	
+</aside>
+
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+<!-- script>
+	$( function() {
+	  $( "#sortable" ).sortable();
+	  //$( "#sortable" ).disableSelection();
+	} );
+	</script -->
+
+</body>
+</html>

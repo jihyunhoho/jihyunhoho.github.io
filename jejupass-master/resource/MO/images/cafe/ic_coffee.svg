@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+    <g data-name="Group 5489" transform="translate(-.035 -.035)">
+        <path data-name="Rectangle 2923" d="M1 0h14a1 1 0 0 1 1 1v11a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V1a1 1 0 0 1 1-1z" transform="translate(3.035 5.035)" style="fill:#6531ce"/>
+        <g data-name="Rectangle 2924" style="stroke:#6531ce;stroke-width:2px;fill:none">
+            <path d="M0 0h5a2 2 0 0 1 2 2v4a4 4 0 0 1-4 4H0V0z" style="stroke:none" transform="translate(16.035 7.035)"/>
+            <path d="M2 1h3a1 1 0 0 1 1 1v4a3 3 0 0 1-3 3H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" style="fill:none" transform="translate(16.035 7.035)"/>
+        </g>
+        <rect data-name="Rectangle 2925" width="16" height="2" rx="1" transform="translate(3.035 21.035)" style="fill:#260b5b"/>
+        <rect data-name="Rectangle 83" width="3" height="3" rx="1.5" transform="translate(1.035 1.035)" style="fill:#e83667"/>
+    </g>
+</svg>

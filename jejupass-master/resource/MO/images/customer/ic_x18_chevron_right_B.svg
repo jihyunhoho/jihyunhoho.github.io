@@ -1,0 +1,18 @@
+<svg id="ic_x18_chevron_right" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #202020;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_205" data-name="Rectangle 205" class="cls-1" width="18" height="18"/>
+  <path id="Vector_82" data-name="Vector 82" class="cls-2" d="M0,0,6,6,0,12" transform="translate(6.5 3.5)"/>
+</svg>

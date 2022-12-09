@@ -1,0 +1,954 @@
+@charset "utf-8";
+
+@import '_pbase', '_pfont';
+
+/* 렌터카 */
+
+//렌터카 메인
+.rentcarMainContests{
+    &.contents{padding:0 !important}
+    .titDep2{margin-top:104px;text-align:center}
+}
+.kf_searchFixed.rentcar{margin:64px 0;background-color:$col_g100;
+    .k1_main_search_area{position:relative;padding:0;text-align:center;border:none;background-color:$col_white;z-index:100;
+        &:before{content:'';display:block;position:absolute;top:-78px;left:0;width:100%;height:126px;background:#F8F8F8 url(/air/imgs_ibe/kfx/common/bg_mainR.png) repeat-x 0 100%}
+    }
+}
+.swiperRentcar{
+    .swiper-container{
+        .swiper-wrapper{
+            .swiper-slide{padding:24px;border:1px solid $col_g200;border-radius:12px;flex-direction:column;
+                .sort{font-size:rem(12px)}
+                figure{text-align:center}
+                .context{display:flex;margin-top:33px;
+                    .txt{width:100%}
+                    .carName{color:$col_g900;font-size:rem(18px);font-weight:$weight700}
+                    .info{color:$col_g600;
+                        li{display:inline-block;position:relative;
+                            & ~ li{margin-left:6px}
+                            & ~ li:before{content:'';position:absolute;top:4px;left:-6px;width:1px;height:14px;background:$col_g200}
+                        }
+                    }
+                    .price{width:100%;color:$col_g600;text-align:right;
+                        strong{display:block;color:$col_p600;font-size:rem(18px)}
+                    }
+                }
+            }
+            &.myViewRentcar{
+                .swiper-slide.rentcarItem{padding-bottom:0}
+                .swiper-slide.rentcarItem:nth-child(even){margin-left:0}
+            }
+        }
+    }
+}
+
+.loadingPage{position:relative;z-index:10000;
+    .wrap-loading-bar{position:fixed;top:50%;left:50%;transform:translate(-50%, -50%);text-align:center;
+        &:before{content:'';display:block;width:104px;height:104px;margin:0 auto;background:url(#{$img_url}/rentcar/ico_loading.png) no-repeat}
+        h1{display:block;margin-top:24px;color:$body_color;font-size:rem(20px);font-weight:$weight700}
+    }
+    .loadingTxt{position:fixed;bottom:65px;left:50%;transform:translateX(-50%);;width:1136px;padding:22px 32px;background-color:$col_p800;border-radius:12px;color:$body_color;font-size:rem(18px);text-align:center;}
+}
+.rentcar.dimmed{display:block;background-color:$col_primary;opacity:0.9;border-radius:12px;}
+
+//필터
+.kf_quickFixed .kf_schedule_search.rentcar{
+    .filterWrap{height:calc(100vh - 440px)}
+}
+//필터 시간 버튼
+.kf_searchFixed{
+	&.fixed{
+		.k1_main_search_area{
+			.kf_section_fixed{
+				.kf_selBtns{
+					button{
+						&.btTime{
+                            padding-left:30px;
+							&:after{content:'';display:block;position:absolute;top:50%;left:12px;width:12px;height:12px;margin-top:-6px;background:url(#{$img_url}/common/spr_air.png) no-repeat -48px -66px}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//slider 별점
+.ratingSlider{position:relative;margin:24px 0 66px;
+	.ui-slider{margin:0 9px;padding:0 9px;
+		&:after{content:'';display:block;position:absolute;top:0;left:-9px;right:-9px;height:100%;border-radius:24px;background:$col_p100}
+		.ui-slider-range{height:18px;z-index:100}
+		.ui-slider-handle{margin-left:-9px;z-index:102;
+			& + .ui-slider-handle{margin-left:-9px}
+		}
+	}
+    .sliderInfo{margin-top:9px;text-indent:-99999em;
+        > span{display:inline-block;position:relative;width:44px;height:24px;margin-left:-22px;z-index:101;
+            &:after{content:'';position:absolute;top:-25px;left:calc(50% - 4px);width:8px;height:8px;border-radius:50%;background:$col_white}
+            &.rating1{position:absolute;left:0;background:url(#{$img_url}/rentcar/rating01.png) no-repeat 0 0;margin-left:0;
+                &:after{left:5px}
+            }
+            &.rating2{position:absolute;left:25%;background:url(#{$img_url}/rentcar/rating02.png) no-repeat 50% 0}
+            &.rating3{position:absolute;left:50%;background:url(#{$img_url}/rentcar/rating03.png) no-repeat 50% 0}
+            &.rating4{position:absolute;left:75%;background:url(#{$img_url}/rentcar/rating04.png) no-repeat 50% 0}
+            &.rating5{position:absolute;right:0;background:url(#{$img_url}/rentcar/rating05.png) no-repeat 100% 0;
+                &:after{left:inherit;right:5px}
+            }
+        }
+    }
+}
+
+// 렌터카 검색 리스트
+.rentercarList{
+    .rentcarItemGroup{padding:24px;border-radius:16px;background:$col_white;	
+		~ .icoMore{display:block;margin:24px auto 48px}
+		~ .rentcarItemGroup{margin-top:16px}
+	}
+    .summaryInfo{display:none;
+        &Inner{display:flex;padding:9px 20px 10px;border-radius:8px;background:rgba($col_g900,.8);box-sizing:border-box;
+            position:fixed;top:106px;right:calc(50% - 568px);width:848px;height:40px;font-size:0;z-index:1;
+            > span{display:inline-block;font-size:rem(14px);color:$col_white;line-height:1.57;
+                &.carName{flex:2 5}
+                &.priceInfo{flex:3 5;text-align:right}
+            }
+        }
+    }
+    .rentcarItem{display:flex;align-items:center;justify-content:center;padding:19px 20px 20px;border-radius:12px;background:$col_g100;
+        .carName{width:220px;text-align:right;color:$col_g900;font-size:rem(20px);
+			> span{display:inline-block;font-size:rem(20px);color:$col_g900;line-height:1.2;font-weight:$weight700;text-align:left}
+            ~ .btnTool{margin-left:5px;vertical-align:1px}
+        }
+        figure{margin:0 40px}
+    }
+    .linkChallenge{display:block;position:relative;height:56px;margin-top: 24px;padding:19px 0 18px;font-size:rem(16px);color:$col_white;line-height:1.44;text-align:center;border-radius:12px;background:#64cfd9;
+        &:after{content:'';position:absolute;top:calc(50% - 5px);right:30px;width:12px;height:12px;background:url(#{$img_url}/common/spr_ico.png) no-repeat -256px 0;transform:rotate(180deg)}
+    }
+	.rentcarStoreList{margin:16px 0;
+		.rentcarStore{position:relative;margin-top:16px;border:1px solid $col_g200;border-radius:16px;
+            & > input{position:absolute;top:0;left:0;opacity:0;font-size:0}
+            & > label{display:inline-block;width:750px;padding:32px 24px}
+            
+            &.chkON{border-color:$col_p400;box-shadow:0 8px 12px 0 rgba(0, 0, 0, 0.05);}
+
+            .firstPlace{display:block;margin-bottom:16px;font-size:rem(16px);color:$col_p600;font-weight:$weight600;line-height:1;
+                &:before{content:'';display:inline-block;width:18px;height:18px;margin-right:4px;background:url(#{$img_url}/common/ico_best.png) no-repeat;vertical-align:-3px}
+            }
+			.rentcarInfo{display:inline-block;width:65%;
+				.store{display:inline-block;color:$col_g900;font-size:rem(18px);vertical-align:middle;font-weight:$weight700;}
+				.conUtil{display:inline-block;vertical-align:middle;
+					.icoScore{//padding-left:24px;
+                        color:$col_g800;font-size:rem(18px);font-weight:$weight600;
+						&::before{width:20px;height:20px;margin-top:-11px;background:url(#{$img_url}/rentcar/ico_star.png) no-repeat;vertical-align:-1px;}
+						i{margin-left:5px;color:$col_g600;font-weight:$weight400}
+					}
+				}
+				.info{margin-top:11px;font-size:rem(14px);color:$col_g600;
+					li{display:inline-block;font-size:rem(14px);color:$col_g600;
+						~ li{position:relative;margin-left:9px;
+							&:before{content:'';position:absolute;top:4px;left:-6px;width:1px;height:12px;background:$col_g200}
+						}
+					}
+				}
+			}
+			.rentcarPrice{position:absolute;bottom:35px;right:24px;
+				.price{display:inline-block;margin-right:16px;color:$col_g900;font-size:rem(20px);font-weight:$weight700;line-height:48px;vertical-align:middle;
+				}
+				.btnDefault{vertical-align: middle}
+			}
+		}
+	}	
+    .icoMore.moreNone:after{background:url(#{$img_url}/common/ico_more_less.png) no-repeat}
+	.bannerType{display:block}
+}
+.optStatue{display:flex;margin:16px 0 0;width:100%;flex-wrap:wrap;
+    > span{flex:0 106px;margin:8px 4px 0;height:32px;color:$col_g500;border:1px solid $col_g100;border-radius:20px;background:$col_g100;font-size:rem(14px);font-weight:$weight400;line-height:32px;text-align:center;box-sizing:border-box;
+        &.on{color:$col_p600;border-color:$col_p600;background-color:$col_white}
+    }
+}
+.rentcarItem{
+	> .info{width:220px;
+		span{font-size:rem(16px);color:$col_g600;
+			&:before{content:'';display:inline-block;width:12px;height:12px;margin-right:6px}
+			&.seat:before{background:url(#{$img_url}/common/spr_air.png) no-repeat -34px -66px}
+			&.fuel:before{background:url(#{$img_url}/common/ico_fuel.png) no-repeat}
+			&.year:before{background:url(#{$img_url}/common/spr_air.png) no-repeat -20px -66px}
+			~ span{margin-left:12px}
+		}
+	}
+}
+
+//검색 결과 없음
+.noData.rentcar .tit{background-image:url(#{$img_url}/common/bg_noData_rentcar.png)}
+
+.myViewRentcar{
+    .rentcarItem{float:left;position:relative;width:560px;margin-bottom:21px;padding:32px 24px 0;border-radius:12px;border:1px solid $col_g200;
+        &:nth-child(even){margin-left:16px;}
+        figure{display:inline-block;width:200px;height:61.7px;vertical-align:top;
+            img {width:100%}
+        }
+        .carData{display:inline-block;margin-left:32px;
+            .carName{display:block;margin-bottom:5px;font-size:rem(18px);font-weight:$weight700;color:$col_g900}//margin-bottom:8px;
+            .store{display:inline-block;color:$col_g800;font-weight:$weight600}
+            .conUtil{display:inline-block;margin-left:5px;//margin-left:8px;
+                .icoScore{color:$col_g800;font-weight:$weight600;vertical-align:middle;}
+                .icoScore i{margin-left:5px;color:$col_g600;font-weight:$weight400;}
+            }
+            > .info{margin-top:5px;color:$col_g600;//margin-top:8px;
+                li{display:inline-block;color:$col_g600;
+                    ~ li{position:relative;margin-left:6px;
+                        &:before{content:'';position:absolute;top:4px;left:-4px;width:1px;height:14px;background:$col_g200}
+                    }
+                }
+            }
+        }
+        .price{position:absolute;top:32px;right:24px;font-size:rem(18px);font-weight:$weight700;color:$col_g900}
+        .rentTime{margin:32px -24px 0;height:56px;line-height:56px;padding:0 20px;font-size:rem(14px);color:$col_g600;background:$col_g100;border-radius:0 0 12px 12px;
+            .timeFlag{float:right;height:24px;line-height:24px;margin-top:16px;padding:0 8px;color:$col_white;font-size:rem(12px);background:$col_p500;border-radius:40px}
+        }
+    }
+}
+
+//렌터카 상세
+.detailPage{position:relative;
+    .floatingCont{
+        &.floatingRentcar{top:0;}
+        &.fixedPayment{top:96px;max-height:913px;min-height:629px}
+        &.filterFoot{top:auto;max-height:913px;min-height:629px}
+    }
+
+    .viewTab{margin-top:-16px}
+    .tabContentWrap{
+        .titArea{position:relative;margin-bottom:16px;
+            .btLink.icArr.light{position:absolute;top:0;right:0;}
+        }
+        .titDep4{margin-top:32px}
+        .tblH{text-align:center;
+            th.on{background-color:$col_p100}
+            th.on, td.on{color:$col_p600}
+            tbody{
+                th{font-weight:$weight400;}
+            }
+        }
+        .frmBox.rentcar{margin:12px -4px -4px;
+            li{flex:0 124px;margin:4px;padding:0}
+        }
+        .compMap{margin-top:16px}
+        .mapInfo{display:flex;margin-top:32px;
+            .mapInfoList{position:relative;
+                &:first-child{width:544px;margin:0;border:0}
+                &+.mapInfoList{padding-left:24px}
+                &+.mapInfoList:before{content:'';display:block;position:absolute;top:0;bottom:12px;left:0;width:1px;background-color:$col_g200}
+                li{display:flex;position:relative;margin:8px 0;
+                    &:first-child{margin-top:0}
+                    .title{min-width:90px;margin-right:24px;color:$col_g900;font-weight:$weight700}
+                    .text{position:relative;
+                        .btLink.icArr{padding:0;font-weight:$weight500;color:$default_col;text-decoration:underline;
+                            &:after{right:-15px}
+                        }
+                    }
+                }
+            }
+        }
+        .notiText{margin:16px 0 11px;padding:16px 20px;color:$col_g600;font-size:rem(14px);background:$col_g100;border-radius:8px;text-align:center}
+    }
+    .viewContents.rentcar{display:block;position:relative;min-height:1000px;
+
+    }
+    .optStatue{
+        > span{flex:0 122px}
+    }
+    .borderTop{margin-top:32px;border-top:1px dotted $col_g200;
+        .listType01{margin-top:12px;
+            li{line-height:1.38;}
+        }
+    }
+    .tblH{margin-top:16px;
+        td{vertical-align:middle}
+        .borderL{border-left:1px solid $col_g200}
+    }
+    .scoreGroup{margin-top:16px;
+
+    }
+}
+
+.detailRentcar{width:848px;;background:$body_color;border-radius:16px; //display:flex;
+    & + & {margin-top:24px}
+    .rentcarItem{padding:40px 0 32px;text-align:center; //width:430px;
+        .titWrap{
+            .carName{display:inline-block;font-size:rem(20px);font-weight:$weight700;color:$col_g900}
+            .btnShape{width:24px;height:24px;font-size:0;text-indent:-9999em;vertical-align:-4px;
+                &:before{content:'';display:inline-block;width:24px;height:24px;background:url(#{$img_url}/rentcar/ico_share.png)no-repeat}
+            }
+        }
+        .info{margin-top:16px;width:100%}
+        figure{margin-top:24px}
+        .tip{margin-top:33px;font-size:rem(14px);line-height:20px;color:$col_g500}
+    }
+    .frmColGroup{display:flex;
+       justify-content:center;
+        &.noDataCar{align-items:center}
+        .frmInp{width:283px;height:348px;padding:32px 18px;text-align:center;
+            .stitle{display:inline-block;width:235px;height:32px;color:$col_p500;font-size:rem(13px);line-height:32px;background:$col_p100;border-radius:10px;}
+            .title{display:block;margin-top:20px;color:$col_g800;font-weight:$weight600;line-height:1.44;}
+            .price{margin-top:4px;font-size:rem(20px);color:$col_g800;font-weight:$weight700;line-height:1.15}
+            .info{height:64px;margin-top:12px;
+                li{color:$col_g600;font-size:rem(14px);line-height:1.43;
+                    &:before{content:'';display:inline-block;width:2px;height:2px;margin-right:5px;border-radius:100%;background-color:#707070;vertical-align:middle;}
+                }
+            }
+            .btLink.icArr{margin-top:20px;color:$col_g800;line-height:1.63;}
+            .cancelTime{display:block;color:$col_g600;font-size:rem(14px)}
+            label{position:initial;padding:0;
+                &:before{top:auto;left:50%;bottom:32px;margin-left:-11px}
+                &:after{top:auto;left:50%;bottom:39px;margin-left:-4px}
+            }
+            &.chkON{padding:31px 17px;border:1px solid $col_p300;border-radius:16px;box-shadow:0 8px 16px 0(rgba(32,32,32,0.08));
+                .title{color:$col_p600}
+                .price{color:$col_p600}
+            }
+        }
+    }
+}
+
+.infoTypeIco{display:flex;margin:16px 0;
+    > li{display:flex;flex:1;text-align:center;align-items:center;justify-content:center;
+        figure{display:inline-block;width:72px;height:72px;padding-top:20px;border-radius:50%;background:$col_g100;box-sizing:border-box;
+            img{width:32px;height:32px}
+        }
+        .txt{display:inline-block;margin-left:20px;text-align:left;
+            .title{margin-top:10px;color:$col_g900;font-weight:$weight600}
+            .desc{display:block}
+        }
+    }
+}
+.superReservation{margin:24px 0 8px;padding:24px;background:#fcf9f1;border-radius:12px;
+    .btLink.icArr{width:100%;padding-left:0;font-size:rem(16px);font-weight:$weight700;
+        &:before{content:'';display:inline-block;width:18px;height:18px;margin-right:6px;background:url(#{$img_url}/common/ico_super.png) no-repeat 0 0;vertical-align:-4px}
+    }
+    p{margin-top:5px;font-size:rem(14px)}
+}
+
+.floatingRentcar{
+    .titDep3{margin:0 -24px 28px;padding:0 24px 16px;border-bottom:1px dotted $col_g200}
+    .titDesc{font-size:rem(14px);}
+    .addService{display:block;margin-top:24px;color:$col_p600;font-size:rem(14px);font-weight:$weight600;}
+    .borderTop{margin:32px -24px 0;padding:32px 24px 0;border-top:1px dotted $col_g200}
+    .rentcarList{margin-top:12px;
+        li{margin:8px 0;background-color:$col_g100;border-radius:8px;
+            &:first-child{margin-top:0;}
+            &:last-child{margin-bottom:0;}
+            & > a{position:relative;padding:16px;
+                > span{position:relative;
+                    &:after{content:'';display:inline-block;width:12px;height:7px;margin-left:15px;background:url(#{$img_url}/common/spr_ico.png) no-repeat 0 -53px;transform:rotate(270deg);vertical-align:2px}
+                }
+            }
+        }
+        li.select{background-color:$col_p100}
+        a{display:flex}
+        .tit{width:100%;font-size:rem(14px);font-weight:$weight600;color:$col_g800}
+        .option{width:100%;font-size:rem(14px);text-align:right;color:$col_g500}
+        .select .option{font-weight:$weight600;color:$col_p600}
+    }
+    .sideList.guideInfo{margin-top:32px !important}
+    .cardBtn{margin-top:12px;text-align:right;
+        .btLink.btLine{padding:0;
+            & + .btLink.btLine:before{content:'';display:inline-block;width:1px;height:14px;margin:0 8px 0 4px;background-color:$col_g200;vertical-align:middle;}
+        }
+    }
+    .btLink.btLine{text-align:right;color:$col_g600}
+    .totalPay{
+        .topView{position:relative;
+            .tit{color:$col_g900;font-size:rem(16px);font-weight:$weight600;
+                em{color:$col_p600;font-size:rem(16px);font-weight:$weight600}
+            }
+            .btLink{position:absolute;bottom:0;right:0;padding:0}
+        }
+        .detail{display:flex;justify-content:space-between;
+            &.pointArea{height:48px;margin-top:16px;border:dotted $col_g200;border-width:1px 0 1px 0;
+                .txt,.num{display:block;width:100%;color:$col_g800;font-size:rem(14px);font-weight:$weight600;line-height:48px}
+                .num{text-align:right}
+            }
+            .tit{width:100%;font-weight:$weight600;color:$col_g900}
+            .pay{font-weight:$weight700;color:$col_g900}
+            .pay.total{font-size:rem(18px);color:$col_p600}
+            .cardBtn{display:block;width:100%;margin:0;
+                a{padding:0}
+            }
+            &.small{display:flex;justify-content:space-between;margin-top:16px;
+                .tit{font-size:rem(14px);color:$col_g800}
+                .pay{font-size:rem(14px);font-weight:$weight600;color:$col_g800}
+            }
+        }
+    }
+    .guideInfo{margin:34px -30px 0;padding:30px 30px 0;border-top:1px dotted $col_g200;background:0;
+        .titGuide + p{font-size:rem(14px)}
+    }
+    .detailInfo{
+        &.typeB{padding-top:10px;
+            > li{margin-top:8px;
+                > .tit{font-weight:$weight400}
+            }
+        }
+        > li{overflow:hidden;clear:both;margin-top:12px;
+            > .tit{float:left;color:$col_g800;font-size:rem(14px);font-weight:$weight600}
+            > .num{float:right;display:flex;
+                span{display:inline-block;width:48px;font-size:rem(14px);
+                    &:first-child{text-align:center}
+                    &:last-child{text-align:right}
+                }
+            }
+            ul{clear:both;
+                li{overflow:hidden;padding-top:8px;
+                    .txt{position:relative;padding-left:12px;float:left;font-size:rem(14px);
+                        &:before{content:'';position:absolute;top:3px;left:0;width:5px;height:6px;border:solid $col_g300;border-width:0 0 1px 1px}
+                        span{color:$col_p600;font-size:rem(14px);font-weight:$weight600}
+                    }
+                    .num{float:right;display:flex;
+                        span{display:inline-block;width:48px;color:$col_r600;font-size:rem(14px);font-weight:$weight600;
+                            &:first-child{text-align:center}
+                            &:last-child{text-align:right}
+                        }    
+                    }
+                }
+            }
+        } 
+    }
+    .centerBox{height:40px;margin-top:24px;color:$col_g800;font-size:rem(14px);font-weight:$weight600;border-radius:8px;background:$col_g100;text-align:center;line-height:40px} 
+    .detailBox{padding:16px 0;margin-top:20px;border-radius:8px;background:$col_p100;text-align:center;
+        .tit{display:inline-block;position:relative;padding-left:22px;color:$col_g800;font-weight:$weight700;
+            &:after{content:'';position:absolute;top:2px;left:0;width:18px;height:18px;background:url(#{$img_url}/common/ic_18_point.png) no-repeat}
+            & + p{color:$col_g600;font-size:rem(14px);
+                span{font-size:rem(14px);font-weight:$weight600}
+            }
+        }
+    }
+    .detailList{margin-top:7px;
+        li{display:flex;position:relative;margin-top:13px;
+            &:before{content:'';display:inline-block;position:absolute;top:5px;left:0;width:8px;height:9px;border:solid $col_g300;border-width:0 0 1px 1px;}
+            .tit{width:100%;margin:0 16px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+            .pay{text-align:right;font-weight:$weight600;color:$col_g800}
+        }
+        &.discount{
+            .pay{color:$col_redP}
+        }
+        &.small{margin-top:3px;
+            li{
+                &:before{top:5px;width:5px;height:6px}
+            }
+            .tit{margin:0 12px;font-size:rem(14px);color:$col_g800;
+                em{display:inline-block;margin-right:4px;font-size:rem(14px);font-weight:$weight600;
+                    &.coupon{color:$col_redP}
+                    &.point{color:$col_p600}
+                }
+            }
+            .pay{font-size:rem(14px);font-weight:$weight600;color:$col_g800}
+        }
+    }
+    .infoText{display:block;margin-top:16px;padding:16px;color:$col_g600;font-size:rem(14px);text-align:center;border-radius:8px;background-color:$col_g100}
+    .btnArea{margin-top:32px;padding-top:24px;border-top:1px dotted $col_g200;
+        .btnDefault.btnL.btnLineP{display:block;width:100%;font-size:rem(16px);}
+    }
+    .k1_passenger{margin-top:16px;
+        & + .addService{padding-top:16px;border-top:1px dotted $col_g200;}
+        .addService + &{padding-top:16px;border-top:1px dotted $col_g200;}
+
+        li{position:relative;padding-top:16px;border-top:1px dotted $col_g200;
+            &:before{content:'';display:block;position:absolute;top:23px;right:0;width:10px;height:10px;background:url(#{$img_url}/common/spr_ico.png) no-repeat -1px -13px;}
+        }
+        .tipWraper{padding-right:20px;
+            .tit{font-size:rem(14px);font-weight:$weight500;}
+        }
+        .settingBox{display:flex;justify-content:space-between;align-items:center;margin-top:12px;
+            .price{color:$col_g900;font-weight:$weight700;}
+            .setting{position:relative;top:auto;right:auto}
+        }
+    }
+}
+
+.viewContents.rentcarReservation{padding-top:0;
+    .boxWhite{
+        &:nth-child(2){z-index:4}
+        &:nth-child(3){z-index:3}
+    }
+    .floatingCont{
+        &.floatingRentcar{top:0;
+            &.fixedPayment{top:96px}
+            &.filterFoot{top:auto}
+        }
+    }
+}
+.rentcarInfo{
+    .carLink{display:block;
+        &:after{content:'';display:block;position:absolute;top:42px;right:34px;width:10px;height:18px;background:url(#{$img_url}/common/spr_ico.png) no-repeat -373px -33px}
+        .titDep3{display:inline-block;margin-bottom:16px !important;padding:0 !important;border-bottom: 0 !important}
+    }
+    .flagWrap{display:inline-block;margin-left:8px;vertical-align:top}
+    .basicInfo{
+        .info{display:inline-block;margin-bottom:16px;
+            li{display:inline-block;color:$col_g600;
+                ~ li{position:relative;margin-left:8px;
+                    &:before{content:'';position:absolute;top:6px;left:-6px;width:1px;height:14px;background:$col_g200}
+                }
+            }
+        }
+        .storeName{display:block;margin-right:5px;font-weight:$weight600;color:$col_g800}
+    }
+}
+
+.reservationForm{margin-bottom:8px;
+    input[type=text], input[type=password], input[type=tel], input[type=number], input[type=search], input[type=date], input[type=email] {display:block;width:100%;height:48px;padding:0 15px;color:#606060;font-size:inherit;font-family:inherit;line-height:48px;border-radius:8px;border:1px solid #EAEAEA;background:#fff}
+    .inpFrm .inpA input[type=text], .inpFrm .inpA input[type=password], .inpFrm .inpA input[type=tel], .inpFrm .inpA input[type=email]{display:block;width:100%}
+
+    .titArea{position:relative;
+        &:first-child{margin:0 !important}
+        .btLink.icArr.light{position:absolute;top:0;right:0}
+        .frmInp.txt.small{position:absolute;top:3px;right:0}
+    }
+    .titDep3{margin-bottom:24px !important;padding-bottom:16px !important;
+        .ress{display:inline-block;font-size:rem(14px);color:$col_p600;margin-left:8px;
+            &:before{content:'*';display:inline-block}
+        }
+    }
+    .inpFrm{margin-top:16px}
+    .inpFrm .titLab{flex:0 0 128px}
+    .frmBox.frmTog{width:245px}
+    .select-group.birth{
+        .selectWrap{flex:auto;width:244px}
+        .selectWrap+.selectWrap{flex:auto;width:198px;margin-left:8px;}
+    }
+    
+    .titDep4{margin-top:26px}
+    .titDesc{margin-top:12px}
+    .tblV{margin-top:16px;color:$col_g800;
+        th{font-weight:$weight600;text-align:center}
+        td{position:relative;font-weight:$weight400;
+            .frmInp.txt.small{
+                label{display:inline-block;font-size:0}
+            }
+        }
+        .pointColor{color:$col_p600}
+        .disableColor{color:$col_g500}
+    }
+    .btnM.btnLineP{width:100%;margin-top:32px;font-size:rem(16px)}
+    .tabType02{margin-top:32px}
+    .linkGroup{margin-top:24px;text-align:center;font-size:0;
+        .btLink{padding:0;text-decoration:underline}
+        .btLink ~ .btLink:before{content:''; display:inline-block;margin:0 8px;width:1px;height:12px;background:$col_g200;vertical-align:-2px}
+    }
+    
+    .toggleCont{
+        .inpFrm{margin-top:16px;}
+    }
+    .rentcarBanner{overflow:hidden;display:block;position:relative;margin:16px auto;z-index:1;
+        figure{
+            img{border-radius:16px;}
+        }
+    }
+}
+.additionalService{
+    &.acctAging{margin:0;padding:0;background-color:#fff;
+        li{margin-top:8px;font-size:rem(18px);font-weight:$weight700;}
+    }
+    
+    &.toggleList{
+        .toggleBtn{height:64px;padding:0 56px 0 24px;border:1px solid $col_g200;border-radius:12px;line-height:64px;
+            &[aria-expanded=true]{border:0;border-radius:12px 12px 0 0;background-color:$col_g100;
+                & + .toggleCont{position:relative;padding:24px;border-radius:0 0 12px 12px;background-color:$col_g100;
+                    &:before{content:'';display:block;position:absolute;top:0;left:0;width:731px;margin:0 24px;border-top:1px dotted $col_g200;}
+                }
+            }
+        }
+    }
+    .addServiceSelect{display:flex;justify-content:space-around;margin-bottom:16px;
+        
+        .inpFrm{margin-top:0;width:432px;
+            & + .inpFrm{width:199px}
+            .selectWrap{z-index:11;}
+        }
+        .btnDefault.btnM.btnLineP{width:88px;margin:0}
+
+    }
+    .selectWrap{width:100%;border-radius:12px;background-color:$body_color;
+        .ui-selectmenu-button{
+            span{border-radius:12px;background-color:$body_color;color:$default_col;font-weight:$weight500;}
+        }
+        .ui-selectmenu-menu{
+            .ui-menu>li>.ui-menu-item-wrapper{color:$default_col;font-size:rem(16px);font-weight:$weight500;}
+        }
+    }
+    .imgSelect{
+        figure{overflow:hidden;position:relative;border-radius:8px;width:173px;height:130px;background:$col_white}
+        input{
+            + label{padding-left:0;margin-bottom:0;
+                &:after,&:before{display:none}
+                .brandName{display:block;height:36px;margin-top:12px;font-size:rem(14px);color:$col_g600;line-height:1.43;}
+                .price{display:block;margin-top:8px;color:$col_g900;font-weight:$weight600}
+            }
+            &:checked + label{
+                figure:after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba($col_primary,.6)}
+                &:after{content:'';display:block;top:56px;left:78px;margin:0;width:18px;height:18px;background:url(#{$img_url}/common/spr_ico.png) no-repeat -279px -31px;}
+            }
+        }
+    }
+}
+
+.beware{padding:24px;margin-top:16px;background:$col_r100;border-radius:12px;
+    
+    .careful{width:100%;margin-top:-3px;padding:0;font-weight:$weight700;color:$col_g900;
+        &:before{content:'';display:inline-block;width:18px;height:18px;margin-right:6px;background: url(#{$img_url}/common/ico_topBanner.png) no-repeat 0 0;vertical-align:-3px}
+    }
+    p{display:block;margin-top:12px;font-size:rem(14px);line-height:1.71;}
+}
+.detailCont{
+    .rentcarBanner{margin-top:32px;display:block;overflow:hidden;
+        figure{position:relative;overflow:hidden;border-radius:16px;
+            img{position:relative;left:50%;margin-left:-568px}
+        }
+    }
+    .tabContRentcar{margin-top:40px}
+    .titDep4{margin-top:40px;line-height:1.44;}
+    .titDesc{margin-top:12px;line-height:1.63;}
+    
+    .infoBox{margin-top:24px;border:1px solid $col_g200;border-radius:12px;
+        .title{display:block;padding:24px 0;text-align:center;
+            em{color:$col_p600;font-weight:$weight600;}
+        }
+        .grayBox{padding:33px 25px 32px;background-color:$col_g100;border-radius:0;
+            .listType02{margin-top:0;color:$col_g800;font-weight:$weight600;line-height:1.63;}
+            .listType01{margin-top:0;
+                li{margin-top:7px;font-size:rem(14px);line-height:1.57;
+                    &:before{top:9px}
+                }
+            }
+        }
+    }
+}
+
+.rentPayProd{   
+    .titDep3{margin-bottom:24px !important;padding-bottom:16px !important} 
+    .titDep3.borderTop{margin:25px 0 0 !important;padding:24px 0 0 !important;border-top:1px dotted $col_g200;border-bottom:0 !important}
+    .listTbl{
+        li{display:flex;margin-top:12px;
+            &:first-child{margin-top:0}
+            em{width:100%;
+                .btDel{display:inline-block;position:relative;width:16px;height:16px;margin-left:4px;background:$col_g500;text-indent:-9999em;border-radius:50%;vertical-align:-4px;
+                    &:before{content:'';position:absolute;top:4px;right:7px;width:2px;height:8px;background:$col_white;transform:rotate(45deg)}
+                    &:after{content:'';position:absolute;top:4px;right:7px;width:2px;height:8px;background:$col_white;transform:rotate(-45deg)}
+                }
+            }
+            span{text-align:right}
+            em,span{font-weight:$weight600 !important;color:$col_g800}
+            &.total{margin-top:25px;padding-top:24px;border-top:1px dotted $col_g200;
+                em, span{font-size:rem(20px);font-weight:$weight700 !important}
+            }
+            
+        }
+    }
+}
+
+.agreeBox {margin-top:16px;padding:22px 24px 24px;background:$col_g100;border-radius:12px;
+    .frmInp{margin-top:12px;
+        &:first-child{margin-top:0}
+        label{display:inline-block}
+        &.txt.frmInpS label:after{top:8px}
+    }    
+    .termsList{margin-top:21px;padding-top:21px;border-top:1px dotted $col_g300}
+    .btLink.icArr.light{display:inline-block;position:absolute;top:-5px;right:-5px;width:34px;height:34px;
+        &:after{right:0;left:auto;margin-top:-4px}
+    }
+}
+
+// 렌더카 예약 완료
+.wrapper{
+	&.completeWrapper{
+		.container{
+			.contents{
+				.boxCompCont.rentcar{
+					.inner{padding-right:224px;
+						.status{display:block;font-size:rem(14px);color:$col_p600;font-weight:$weight700}
+						.carName{display:block;font-size:rem(18px);color:$col_g900}
+						> figure{position:absolute;top:40px;right:24px;width:200px;height:62px;
+							img{width:100%}
+						}
+						.info{margin-top:3px;font-size:rem(14px);color:$col_g600;
+							li{display:inline-block;font-size:rem(14px);color:$col_g600;
+								~ li{position:relative;margin-left:9px;
+									&:before{content:'';position:absolute;top:4px;left:-6px;width:1px;height:12px;background:$col_g200}
+								}
+							}
+						}
+					}
+				}
+				.completeRentcar{margin-top:32px;
+					.reservationNum{display:flex;margin:24px 0 16px;padding:19px 24px;border-radius:12px;background:$col_g100;justify-content:space-between;
+						em{display:inline-block;padding-top:2px;color:$col_g600}
+						span{display:block;color:$col_g900;font-size:rem(18px);font-weight:$weight700}
+					}
+					.toggleList{	
+						.acctItem{margin-bottom:12px;border:1px solid $col_g200;border-radius: 12px;
+							.toggleBtn{display:flex;height:63px;padding:0 52px 0 24px;align-items:center;justify-content:space-between;font-size:rem(18px);line-height:63px;
+								&:after{right:24px;margin-top:-5px}
+								.title{color:$col_g900;font-weight:$weight700}
+								.summary{color:$col_p600;font-weight:$weight700}
+							}
+							.toggleCont{margin:0 24px 18px;
+								.listTbl{padding-top:18px;border-top:1px dashed $col_g200;
+									li{display:flex;padding:6px 0;justify-content:space-between;
+										em{flex:1;color:$col_g800;font-weight:$weight600;
+											.desc{display:block;font-size:rem(14px);color:$col_g600}
+										}
+										.pointColor{color:$col_p600;font-weight:$weight600}
+										.warningColor{color:$col_redP}
+										> span{text-align:right;color:$col_g600}
+									}
+									+ .listTbl{margin-top:18px}
+								}
+								.compMap{margin:0;padding-top:24px;border-top:1px dashed $col_g200}
+								.mapInfoList{margin-top:16px;
+									li{display:flex;padding:8px 0;
+										.title{min-width:112px;margin-right:40px;color:$col_g800;font-weight:$weight600}
+									}
+								}
+								.notiText{margin:8px 0 24px;padding:13px 20px 14px;color:$col_g600;font-size:rem(14px);background:$col_g100;border-radius:8px;text-align:center}
+							}
+						}						
+					}
+				}
+			}
+		}
+	}
+}
+
+//알림 레이어
+aside{z-index:10;
+	button.btNoti{position:relative;display:block;margin-bottom:8px;
+		&:after{background:url(#{$img_url}/common/ico_noti.png) no-repeat}
+	}
+}
+.notiView{display:none;position:absolute;right:72px;bottom:32px;width:1136px;padding:21px 24px;background:rgba($col_g900,.9);z-index:9999;border-radius:12px;
+    .title{color:$col_white;font-weight:$weight700;
+        &:before{content:'';display:inline-block;width:18px;height:18px;margin-right:5px;background:url(#{$img_url}/common/ico_noti02.png) no-repeat;vertical-align:-4px}
+    }
+    .context{margin-top:7px;font-size:rem(14px);color:$col_g300}
+    .btClose{position:absolute;top:24px;right:24px;width:12px;height:12px;margin:0;background:none;border-radius:0;
+        &:before{content:'';position:absolute;top:-2px;right:5px;width:2px;height:14px;background:$col_white;transform:rotate(45deg)}
+        &:after{content:'';position:absolute;top:-2px;left:5px;width:2px;height:14px;margin:0;background:$col_white;transform:rotate(-45deg)}
+    }
+}
+
+//렌터카 제휴사 안내
+.partnerList{display:flex;flex-wrap:wrap;margin:-8px;
+    li{flex:0 272px;margin:8px;padding:56px 24px 47px;border-radius:12px;background-color:#fff;text-align:center;
+        .tit{display:block;margin-top:32px;color:$col_g900;font-weight:$weight700}
+        .tel{display:block;margin-top:12px;font-size:rem(14px)}
+    }
+}
+
+//렌터카 팝업
+.rantcarInfo{
+    .titDep4{margin-top:32px;
+        &:first-child{margin-top:0}
+        ~ p{margin-top:12px}
+    }
+    .grayBox{margin-top:32px;text-align:center;
+        em{font-size:rem(18px);color:$col_g800;font-weight:$weight700;
+            > span{font-size:rem(18px);color:$col_p600;font-weight:$weight700}
+            ~ p{margin-top:12px;color:$col_g600}
+        }
+    }
+    .listType01{margin-top:12px}
+    .tblH{margin-top:24px;
+        tbody{
+            th{text-align:left;
+				b{display:block;color:$col_g800}
+			}
+            td{text-align:center;vertical-align:middle;				
+				&.pointColor{color:$col_p600}
+				&.warningColor{color:$col_redP}
+                &.limitColor{color:$col_secondary}
+			}
+        }
+        ~ .titDep4{margin:32px 0 12px}
+        &.type02{
+            tbody{
+                th{text-align:center}
+            }
+        }
+    }
+    .tblH + .listType01{margin-top:24px}
+    .titDep4 ~ .titDep4{margin-top:32px}
+
+    .termsInfo{margin-top:24px;font-weight:$weight600;text-align:right}
+
+    .guideInfo.voucher{padding:0;
+		&:before{margin: 32px -24px 24px}
+		.useInfo{margin-bottom:0}
+	}
+
+    .rentcarItemGroup{padding-bottom:16px;
+        .rentcarItem{//margin-bottom:-40px;
+            text-align:center;
+            .carName{display:inline-block;font-size:rem(22px);color:$col_g900;line-height:1.2;font-weight:$weight700;
+                ~ .btnTool{margin-left:5px;vertical-align:1px}
+            }
+            .info{margin:12px auto 0;width:100%;
+                & + .info{margin-top:0}
+                span{position:relative;font-size:rem(14px);color:$col_g600;
+                    & ~ span:before{content:'';position:absolute;top:2px;left:-6px;width:1px;height:12px;background:$col_g200}
+                    & ~ span{margin:0 6px;padding:0}
+                }
+            }
+            figure{margin-top:32px} 
+        }
+        .detailInfo{margin:30px 0 24px;
+            .title{display:block;font-size:rem(18px);color:$col_g900;font-weight:$weight700}
+            .sGroup ~ .sGroup{margin-top:24px;padding-top:24px;border-top:1px dotted $col_g300}
+            .listTbl{
+                li{display:flex;margin-top:16px;
+                    em{width:100%;color:$col_g800;font-weight:$weight600}
+                    span{width:100%;text-align:right;}
+                }
+            }
+            .cafepassInfo{padding:24px;margin-top:24px;background:#fcf9f1;border-radius:12px;
+                .btLink.icArr{display:block;width:100%;padding:0;font-weight:$weight700;
+                    &:before{content:'';display:inline-block;width:18px;height:18px;margin-right:6px;background:url(#{$img_url}/common/ico_cafe.png) no-repeat 0 0;vertical-align:-4px}
+                }
+                p{margin-top:12px;font-size:rem(14px)}
+            }
+        }
+    }
+    .listType01+.btnDefault.btnL.action{margin-top:32px;width:100%}
+    .guideInfo.voucher{padding:0}
+    .swiperWrap .swiper-wrapper .swiper-slide{flex-direction:column;
+        .txt{width:432px;margin-top:24px}
+    }
+
+    .infoBoxLined{margin-top:32px;padding:20px;border:1px solid $col_g200;border-radius:8px;text-align:center;
+        .tit{color:$col_g800}
+        .txt{color:$col_g600}
+    }
+    .pointBox{display:flex;justify-content:space-between;margin-top:8px;padding:16px 20px;font-size:0;background-color:$col_p100;border-radius:8px;
+        .tit{color:$col_g900}
+        .txt{color:$col_p600;font-weight:$weight700;text-align:right}
+    }
+    .agreeText{margin:32px 0 16px;color:$col_g900;font-size:rem(18px);font-weight:$weight600;text-align:center}
+
+    .boxList{margin-top:24px;
+        li{position:relative;margin-top:12px;padding:25px 32px 24px 88px;background-color:$col_g100;border-radius:12px;
+            &:before{content:'';display:inline-block;position:absolute;top:25px;left:32px;width:32px;height:32px;background:url(#{$img_url}/rentcar/ico_terms.png) no-repeat 0 0;background-size:auto 32px}
+            p{display:inline-block;color:$col_g800;font-weight:$weight600;vertical-align:middle}
+        }
+        li+li{
+            &:before{background-position:-32px 0;}
+        }
+        li+li+li{
+            &:before{background-position:-64px 0;}
+        }
+        li+li+li+li{
+            &:before{background-position:-96px 0;}
+        }
+    }
+    .btnList{margin-top:32px;
+        .btLink.icArr.light{display:block;margin-top:8px;padding:20px;border:1px solid $col_g200;border-radius:8px;font-size:rem(16px);
+            &:after{right:20px;/*width:6px;height:6px;margin-top:-3px;margin-left:-3px;border-color:$col_g500*/}
+        }
+    }
+    .titDep4{
+        > span{color:$col_primary;font-size:rem(18px);font-weight:$weight700;}
+    }
+    .shuttleInfo{
+        li{display:flex;margin-top:16px;
+            strong{width:78px;color:$col_g800}
+        }
+    }
+    .shuttleStep{margin-top:32px;padding-top:32px;border-top:1px dotted $col_g200;
+        li{position:relative;height:100%;margin-left:8px;padding:0 0 32px 16px;border-left:1px dotted $col_primary;
+            &:before{content:'';display:inline-block;}
+            &:last-child{padding-bottom:0;border-left:0}
+
+            .step{display:block;margin-top:-28px;color:$col_primary;font-weight:$weight700;
+                &:before{content:'';display:inline-block;position:absolute;top:0;left:-8px;width:16px;height:16px;margin-right:8px;background:url(#{$img_url}/rentcar/shuttle.png) no-repeat}
+            }
+            p{margin-top:16px}
+            figure{margin-top:16px;
+                img{border-radius:8px;}
+            }
+        }
+    }
+}
+
+//약관
+.tabContenWrap + .listTerms > li:first-child{margin-top:0}
+.listTerms{margin-left:13px;
+    & > li{margin-top:12px;
+        &:before{content:'';display:inline-block;margin-left:-13px}
+        p{
+            & + ul{margin-top:5px}
+        }
+        .listType03{margin-top:3px 0 0 12px}
+    }
+    .tabContentWrap .titDep4 ~ .titDep4{margin-top:32px}
+    
+    .tblV{margin-top:12px}
+    .tblH{margin-top:12px;
+        &.scroll{overflow-x:auto;}
+    }
+}
+.listNumber{margin-left:10px;counter-reset:number 0;
+    & > li{display:inline-block;position:relative;margin-left:8px;list-style:none;text-indent:-8px;
+        &:before{content:counter(number) '. ';counter-increment:number 1;display:inline-block;margin-right:4px;text-align:center;vertical-align:middle}
+    }
+
+    &.circle{margin-left:0;counter-reset:circle 0;
+        & > li{margin:0 5px 0 20px;text-indent:-22px;
+            &:before{content:counter(circle);counter-increment:circle 1;border:1px solid $default_col;border-radius:100%;width:16px;height:16px;font-size:rem(10px);text-indent:0}
+        }
+    }
+    .info{margin-left:8px;
+        li{text-indent:0;}
+    }
+}
+
+.listDash{margin-left:12px;
+    & > li{text-indent:-5px;
+        &:before{content:'- ';display:inline-block;margin-right:4px}
+    }
+}
+.listCircle{margin-left:12px;
+    & > li{position:relative;text-indent:-8px;
+        &:before{content:'';display:inline-block;margin-right:4px;border:1px solid $default_col;border-radius:100%;width:5px;height:5px;vertical-align:2px}
+    }
+    &.full > li{
+        &:before{background:$col_g900;border:1px solid $col_g900}
+        .pointColor{color:$col_pointR}
+    }
+}
+.listHangul{margin-left:28px;
+    & > li{
+        &:before{content:'';margin-left:-28px}
+    }
+    & > li > .listCircle.full{margin-left:0}
+}
+.listStorage{margin-left:12px}
+.titDep4 + p + .listCircle.full {margin-top:10px}
+.titDep4 + .listCircle.full > li{margin-top:12px}
+
+.bulType01{display:block;margin-top:12px;
+    &:before{content:'※ ';display:inline-block}
+    & + .listNumber.circle{margin-left:8px;
+        & > li{margin-right:8px;}
+    }
+}
+
+.ruleData{margin-top:10px}
+
+// 렌터카 결제완료
+.completePanel{
+    .message.rentcar{background:url(#{$img_url}/common/bg_comp_rentcar.png) no-repeat 50% 0 !important}
+}
+
+.noData{
+    &.noCar{
+        .tit{background-image:url(#{$img_url}/rentcar/ic_x50_noData_r.png)}
+    }
+}

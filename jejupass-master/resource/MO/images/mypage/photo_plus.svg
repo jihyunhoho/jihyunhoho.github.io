@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #eaeaea;
+      }
+
+      .cls-3 {
+        opacity: 0;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #aeaeae;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="btn_plus" data-name="btn plus" transform="translate(-44 -137)">
+    <circle id="타원_99" data-name="타원 99" class="cls-1" cx="12" cy="12" r="12" transform="translate(44 137)"/>
+    <circle id="타원_94" data-name="타원 94" class="cls-2" cx="10" cy="10" r="10" transform="translate(46 139)"/>
+    <g id="ic_x12_edit" transform="translate(50 143)">
+      <rect id="container" class="cls-3" width="12" height="12"/>
+      <path id="Vector" class="cls-4" d="M1,6.4,0,10,3.613,9,10,2.61,7.391,0Z" transform="translate(1 1)"/>
+    </g>
+  </g>
+</svg>

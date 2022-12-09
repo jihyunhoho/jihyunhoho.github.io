@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #aeaeae;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        opacity: 0;
+      }
+    </style>
+  </defs>
+  <g id="ic_x24_btn_view_less" data-name="ic_x24_btn_view less" transform="translate(-235 -1361)">
+    <circle id="Ellipse_114" data-name="Ellipse 114" class="cls-1" cx="12" cy="12" r="12" transform="translate(235 1361)"/>
+    <g id="ic_x12_more" transform="translate(241 1367)">
+      <rect id="container" class="cls-2" width="12" height="12"/>
+      <rect id="사각형_2612" data-name="사각형 2612" class="cls-3" width="2" height="12" rx="1" transform="translate(0 7) rotate(-90)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,2667 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>제주패스</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, width=1366"><!-- 10.29 추가 -->
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" type="image/x-icon" href="/resource/PC/images/favicon/favicon.ico">
+<link href="/resource/PC/css/p_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/PC/css/p_contents.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper mainWrapper">
+	<div class="mainTopbanner">
+		<div class="bandBanner_info">
+			<a href="#"><span>제주도 사회적 거리두기  4단계 상향에 따른 렌터카 대여 안내</span></a>
+		</div>
+		<button type="button" class="btn_close">삭제</button>
+	</div>
+	<header>
+		<h1 class="topLogo"><a href="#">JEJUPASS</a></h1>
+		<nav>
+			<div class="navList">
+				<h2><a href="#" aria-selected="true">항공</a></h2>
+				<h2><a href="#">렌터카</a></h2>
+				<h2><a href="#">숙박</a></h2>
+				<h2><a href="#">맛집</a></h2>
+				<h2><a href="#">카페패스</a></h2>
+				<h2><a href="#">트립</a></h2>
+			</div>
+			<div class="quickSearchWrap">
+				<button type="button" class="btSearch">빠른검색</button>
+				<div class="laySearch">
+					<div class="quickSearchList">
+						<ul class="searchBtns quickSearchScript">
+							<li class="btAir"><a href="#" aria-selected="true" aria-controls="lay_airSearch">항공검색</a></li>
+							<li class="btRent"><a href="#" aria-selected="false" aria-controls="lay_rentSearch">렌터카검색</a></li>
+							<li class="btStay"><a href="#" aria-selected="false" aria-controls="lay_staySearch">숙박검색</a></li>
+							<li class="btCafe"><a href="#" aria-selected="false" aria-controls="lay_foodSearch">맛집/카페검색</a></li>
+							<li class="btTrip"><a href="#" aria-selected="false" aria-controls="lay_tripSearch">트립검색</a></li>
+						</ul>
+						<div id="lay_airSearch" class="k1_section_multi section_air sectionON">
+							<div class="kf_innergray">
+								<div class="kf_flightInner selectON"><!-- 버튼 클릭시 selectON 클래스 추가-->
+									<ul class="k1_flight_panel">
+										<li class="k1_area departure">
+											<p class="tit">출발</p>
+											<button type="button" aria-expanded="false" aria-controls="kf_departure"><strong>김포김포김포김포</strong><span class="engName">GMP</span></button>
+										</li>
+										<li class="k1_area destination">
+											<p class="tit">도착</p>
+											<button type="button" aria-expanded="false"aria-controls="kf_arrival">어디로 떠나시나요?</button>
+											<button type="button" aria-expanded="false" style="display:none"><strong>김포</strong><span class="engName">GMP</span></button>
+										</li>
+									</ul>
+									<button type="button" class="k1_icon i2">출발지와 도착지 바꾸기</button>
+								</div>
+			
+								<div class="kf_flightInner kf_flightDate">
+									<ul class="k1_flight_panel">
+										<li class="k1_area">
+											<p class="tit">탑승일</p>
+											<button type="button" aria-expanded="false">탑승일을 선택하세요.</button>
+											<button type="button" aria-expanded="false" style="display:none"><strong>22.07.09(목)</strong></button>
+										</li>
+									</ul>
+								</div>
+			
+								<div class="kf_flightInner kf_flightInfo">
+									<ul class="k1_flight_panel">
+										<li class="k1_area">
+											<p class="tit">인원 및 좌석등급</p>
+											<button type="button" aria-expanded="false"><strong>성인2, 일반석</strong></button>
+										</li>
+									</ul>
+								</div>
+								<button type="submit" class="k1_btn_price_search">검색</button>
+							</div>
+
+							<!-- 항공 검색 -->
+							<div class="kf_innerWhite">
+								<div class="kf_laySearch">
+									<div class="kf_inner">
+										<!-- 출발지 검색 -->
+										<div id="kf_departure" class="kf_search kf_departure searchON">
+											<div class="kf_area areaTit">
+												<h3 class="titDep2">출발지를<br>선택해주세요</h3>
+												<!-- button type="button" class="btnDefault btnS icoArr">다구간 조회</button --><!-- 11.12삭제 -->
+											</div>
+											<div class="kf_area">
+												<button type="button" class="btLocation"><strong>김포</strong><span class="engName">GMP</span></button><!-- 클릭시 inpBlock 버튼 추가 -->
+												<div class="searchIcon inpDeleteAni">
+													<input type="text" placeholder="도시 또는 공항 이름으로 검색" title="출발지 도시 또는 공항 이름으로 검색" class="inpSear" onfocus="focusin()">
+													<button type="button" class="btIco icDel">삭제</button>
+												</div>
+												<div class="kf_scrollArea scriptScroll"><!-- 디자인 스크롤 영역-->
+													<ul class="k1_destination_list">
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">서울</em></strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="kf_area kf_areaSel">
+												<div class="kf_scrollArea scriptScroll"><!-- 디자인 스크롤 영역-->
+													<div class="kf_interBanner type02">
+														<h3 class="titDep4">어디든 Everywhere </h3>
+														<a href="#">최고 가성비 여행지를 둘러보세요.</a>
+													</div>
+				
+													<div class="k1_flight_list">
+														<h3 class="titDep4">국내</h3>
+														<ul class="k1_country_list">
+															<li>
+																<input type="radio" id="radDestination01" name="radDestination">
+																<label for="radDestination01">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_jeju.jpg" alt=""></figure>제주
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination02" name="radDestination">
+																<label for="radDestination02">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_kimpo.jpg" alt=""></figure>김포
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination03" name="radDestination">
+																<label for="radDestination03">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_kunsan.jpg" alt=""></figure>군산
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination04" name="radDestination">
+																<label for="radDestination04">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_kwangju.jpg" alt=""></figure>광주
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination05" name="radDestination">
+																<label for="radDestination05">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_daegu.jpg" alt=""></figure>대구
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination06" name="radDestination">
+																<label for="radDestination06">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_pusan.jpg" alt=""></figure>부산
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination07" name="radDestination">
+																<label for="radDestination07">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_ryusu.jpg" alt=""></figure>여수
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination08" name="radDestination">
+																<label for="radDestination08">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_incheon.jpg" alt=""></figure>인천
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination09" name="radDestination">
+																<label for="radDestination09">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_wonju.jpg" alt=""></figure>원주
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination10" name="radDestination">
+																<label for="radDestination10">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_ulsan.jpg" alt=""></figure>울산
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination11" name="radDestination">
+																<label for="radDestination11">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_jinju.jpg" alt=""></figure>진주
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination12" name="radDestination">
+																<label for="radDestination12">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_cheongju.jpg" alt=""></figure>청주
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination13" name="radDestination">
+																<label for="radDestination13">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_pohang.jpg" alt=""></figure>포항
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination14" name="radDestination">
+																<label for="radDestination14">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_muan.jpg" alt=""></figure>무안
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination15" name="radDestination">
+																<label for="radDestination15">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_yangyang.jpg" alt=""></figure>양양
+																</label>
+															</li>
+														</ul>
+													</div>
+				
+													<ul class="toggleList toggleCityList">
+														<li class="acctItem">
+															<button type="button" class="toggleBtn" aria-expanded="false">동남아</button>
+															<div class="toggleCont">
+																<ul class="frmBox frmChkAni">
+																	<li><input type="radio" id="radEastAsia01" name="radinternational"><label for="radEastAsia01">다낭</label></li>
+																	<li><input type="radio" id="radEastAsia02" name="radinternational"><label for="radEastAsia02">방콕</label></li>
+																	<li><input type="radio" id="radEastAsia03" name="radinternational"><label for="radEastAsia03">홍콩</label></li>
+																	<li><input type="radio" id="radEastAsia04" name="radinternational"><label for="radEastAsia04">타이베이</label></li>
+																	<li><input type="radio" id="radEastAsia05" name="radinternational"><label for="radEastAsia05">호치민시</label></li>
+																	<li><input type="radio" id="radEastAsia06" name="radinternational"><label for="radEastAsia06">마닐라</label></li>
+																	<li><input type="radio" id="radEastAsia07" name="radinternational"><label for="radEastAsia07">세부</label></li>
+																	<li><input type="radio" id="radEastAsia08" name="radinternational"><label for="radEastAsia08">하노이</label></li>
+																	<li><input type="radio" id="radEastAsia09" name="radinternational"><label for="radEastAsia09">싱가포르</label></li>
+																	<li><input type="radio" id="radEastAsia10" name="radinternational"><label for="radEastAsia10">코타키나발루</label></li>
+																	<li><input type="radio" id="radEastAsia11" name="radinternational"><label for="radEastAsia11">나트랑</label></li>
+																	<li><input type="radio" id="radEastAsia12" name="radinternational"><label for="radEastAsia12">쿠알라룸프르</label></li>
+																</ul>
+															</div>
+														</li>
+														<li class="acctItem">
+															<button type="button" class="toggleBtn" aria-expanded="false">일본</button>
+															<div class="toggleCont">
+																<ul class="frmBox frmChkAni">
+																	<li><input type="radio" id="radJapan01" name="radinternational"><label for="radJapan01">오사카</label></li>
+																	<li><input type="radio" id="radJapan02" name="radinternational"><label for="radJapan02">도쿄(나리타)</label></li>
+																	<li><input type="radio" id="radJapan03" name="radinternational"><label for="radJapan03">도쿄(하네다)</label></li>
+																	<li><input type="radio" id="radJapan04" name="radinternational"><label for="radJapan04">후쿠오카</label></li>
+																	<li><input type="radio" id="radJapan05" name="radinternational"><label for="radJapan05">오키나와</label></li>
+																	<li><input type="radio" id="radJapan06" name="radinternational"><label for="radJapan06">삿포로</label></li>
+																</ul>
+															</div>
+														</li>
+														<li class="acctItem">
+															<button type="button" class="toggleBtn" aria-expanded="false">중국</button>
+															<div class="toggleCont">
+																<ul class="frmBox frmChkAni">
+																	<li><input type="radio" id="radChina01" name="radinternational"><label for="radChina01">상하이</label></li>
+																	<li><input type="radio" id="radChina02" name="radinternational"><label for="radChina02">청도</label></li>
+																	<li><input type="radio" id="radChina03" name="radinternational"><label for="radChina03">광저우</label></li>
+																	<li><input type="radio" id="radChina04" name="radinternational"><label for="radChina04">베이징</label></li>
+																	<li><input type="radio" id="radChina05" name="radinternational"><label for="radChina05">연길</label></li>
+																	<li><input type="radio" id="radChina06" name="radinternational"><label for="radChina06">심천</label></li>
+																</ul>
+															</div>
+														</li>
+														<li class="acctItem">
+															<button type="button" class="toggleBtn" aria-expanded="false">미주</button>
+															<div class="toggleCont">
+																<ul class="frmBox frmChkAni">
+																	<li><input type="radio" id="radAmerica01" name="radinternational"><label for="radAmerica01">로스앤젤레스</label></li>
+																	<li><input type="radio" id="radAmerica02" name="radinternational"><label for="radAmerica02">호롤룰루(하와이)</label></li>
+																	<li><input type="radio" id="radAmerica03" name="radinternational"><label for="radAmerica03">뉴욕</label></li>
+																	<li><input type="radio" id="radAmerica04" name="radinternational"><label for="radAmerica04">밴쿠버</label></li>
+																	<li><input type="radio" id="radAmerica05" name="radinternational"><label for="radAmerica05">샌프란시스코</label></li>
+																	<li><input type="radio" id="radAmerica06" name="radinternational"><label for="radAmerica06">토론토</label></li>
+																</ul>
+															</div>
+														</li>
+														<li class="acctItem">
+															<button type="button" class="toggleBtn" aria-expanded="false">유럽</button>
+															<div class="toggleCont">
+																<ul class="frmBox frmChkAni">
+																	<li><input type="radio" id="radEurope01" name="radinternational"><label for="radEurope01">파리</label></li>
+																	<li><input type="radio" id="radEurope02" name="radinternational"><label for="radEurope02">런던</label></li>
+																	<li><input type="radio" id="radEurope03" name="radinternational"><label for="radEurope03">블라디보스토크</label></li>
+																	<li><input type="radio" id="radEurope04" name="radinternational"><label for="radEurope04">로마</label></li>
+																	<li><input type="radio" id="radEurope05" name="radinternational"><label for="radEurope05">프라하</label></li>
+																	<li><input type="radio" id="radEurope06" name="radinternational"><label for="radEurope06">바르셀로나</label></li>
+																</ul>
+															</div>
+														</li>
+														<li class="acctItem">
+															<button type="button" class="toggleBtn" aria-expanded="false">대양주</button>
+															<div class="toggleCont">
+																<ul class="frmBox frmChkAni">
+																	<li><input type="radio" id="radOcean01" name="radinternational"><label for="radOcean01">괌</label></li>
+																	<li><input type="radio" id="radOcean02" name="radinternational"><label for="radOcean02">시드니</label></li>
+																	<li><input type="radio" id="radOcean03" name="radinternational"><label for="radOcean03">멜버른</label></li>
+																	<li><input type="radio" id="radOcean04" name="radinternational"><label for="radOcean04">브리즈번</label></li>
+																	<li><input type="radio" id="radOcean05" name="radinternational"><label for="radOcean05">사이판</label></li>
+																	<li><input type="radio" id="radOcean06" name="radinternational"><label for="radOcean06">오클랜드</label></li>
+																</ul>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- //출발지 검색 -->
+				
+										<!-- 도착지 검색 -->
+										<div id="kf_arrival" class="kf_search kf_arrival">
+											<div class="kf_area areaTit">
+												<h3 class="titDep2">도착지를<br>선택해주세요</h3>
+												<button type="button" class="btnDefault btnS icoArr">다구간 조회</button>
+											</div>
+											<div class="kf_area">
+												<div class="searchIcon inpDeleteAni">
+													<input type="text" placeholder="도시 또는 공항 이름으로 검색" title="도착지 도시 또는 공항 이름으로 검색" class="inpSear">
+													<button type="button" class="btIco icDel">삭제</button>
+												</div>
+												<div class="kf_scrollArea scriptScroll"><!-- 디자인 스크롤 영역-->
+													<ul class="k1_destination_list">
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">서울</em></strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" role="button">
+																<strong class="destName"><em class="resultTxt">여</em>수</strong>
+																<div class="infoAirport">
+																	<strong>김포국제공항</strong><span>대한민국</span><span class="engCode">GMP</span>
+																</div>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											
+											<div class="kf_area kf_areaSel">
+												<div class="kf_scrollArea scriptScroll"><!-- 디자인 스크롤 영역-->
+													<div class="kf_interBanner type02">
+														<h3 class="titDep4">어디든 Everywhere </h3>
+														<a href="#">최고 가성비 여행지를 둘러보세요.</a>
+													</div>
+				
+													<div class="k1_flight_list">
+														<h3 class="titDep4">국내</h3>
+														<ul class="k1_country_list">
+															<li>
+																<input type="radio" id="radDestination001" name="radinternational_arr">
+																<label for="radDestination001">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_jeju.jpg" alt=""></figure>제주
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination002" name="radinternational_arr">
+																<label for="radDestination002">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_kimpo.jpg" alt=""></figure>김포
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination003" name="radinternational_arr">
+																<label for="radDestination003">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_kunsan.jpg" alt=""></figure>군산
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination004" name="radinternational_arr">
+																<label for="radDestination004">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_kwangju.jpg" alt=""></figure>광주
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination005" name="radinternational_arr">
+																<label for="radDestination005">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_daegu.jpg" alt=""></figure>대구
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination006" name="radinternational_arr">
+																<label for="radDestination006">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_pusan.jpg" alt=""></figure>부산
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination007" name="radinternational_arr">
+																<label for="radDestination007">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_ryusu.jpg" alt=""></figure>여수
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination008" name="radinternational_arr">
+																<label for="radDestination008">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_incheon.jpg" alt=""></figure>인천
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination009" name="radinternational_arr">
+																<label for="radDestination009">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_wonju.jpg" alt=""></figure>원주
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination100" name="radinternational_arr">
+																<label for="radDestination100">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_ulsan.jpg" alt=""></figure>울산
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination101" name="radinternational_arr">
+																<label for="radDestination101">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_jinju.jpg" alt=""></figure>진주
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination102" name="radinternational_arr">
+																<label for="radDestination102">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_cheongju.jpg" alt=""></figure>청주
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination103" name="radinternational_arr">
+																<label for="radDestination103">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_pohang.jpg" alt=""></figure>포항
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination104" name="radinternational_arr">
+																<label for="radDestination104">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_muan.jpg" alt=""></figure>무안
+																</label>
+															</li>
+															<li>
+																<input type="radio" id="radDestination105" name="radinternational_arr">
+																<label for="radDestination105">
+																	<figure><img src="/air/imgs_ibe/kfx/air/img_yangyang.jpg" alt=""></figure>양양
+																</label>
+															</li>
+														</ul>
+													</div>
+				
+													<ul class="toggleList toggleCityList">
+														<li class="acctItem">
+															<button type="button" class="toggleBtn" aria-expanded="true">동남아</button>
+															<div class="toggleCont">
+																<ul class="frmBox frmChkAni">
+																	<li><input type="radio" id="radEastAsia001" name="radinternational_arr"><label for="radEastAsia001">다낭</label></li>
+																	<li><input type="radio" id="radEastAsia002" name="radinternational_arr"><label for="radEastAsia002">방콕</label></li>
+																	<li><input type="radio" id="radEastAsia003" name="radinternational_arr"><label for="radEastAsia003">홍콩</label></li>
+																	<li><input type="radio" id="radEastAsia004" name="radinternational_arr"><label for="radEastAsia004">타이베이</label></li>
+																	<li><input type="radio" id="radEastAsia005" name="radinternational_arr"><label for="radEastAsia005">호치민시</label></li>
+																	<li><input type="radio" id="radEastAsia006" name="radinternational_arr"><label for="radEastAsia006">마닐라</label></li>
+																	<li><input type="radio" id="radEastAsia007" name="radinternational_arr"><label for="radEastAsia007">세부</label></li>
+																	<li><input type="radio" id="radEastAsia008" name="radinternational_arr"><label for="radEastAsia008">하노이</label></li>
+																	<li><input type="radio" id="radEastAsia009" name="radinternational_arr"><label for="radEastAsia009">싱가포르</label></li>
+																	<li><input type="radio" id="radEastAsia100" name="radinternational_arr"><label for="radEastAsia100">코타키나발루</label></li>
+																	<li><input type="radio" id="radEastAsia101" name="radinternational_arr"><label for="radEastAsia101">나트랑</label></li>
+																	<li><input type="radio" id="radEastAsia102" name="radinternational_arr"><label for="radEastAsia102">쿠알라룸프르</label></li>
+																</ul>
+															</div>
+														</li>
+														<li class="acctItem">
+															<button type="button" class="toggleBtn" aria-expanded="false">일본</button>
+															<div class="toggleCont">
+																<ul class="frmBox frmChkAni">
+																	<li><input type="radio" id="radJapan001" name="radinternational_arr"><label for="radJapan001">오사카</label></li>
+																	<li><input type="radio" id="radJapan002" name="radinternational_arr"><label for="radJapan002">도쿄(나리타)</label></li>
+																	<li><input type="radio" id="radJapan003" name="radinternational_arr"><label for="radJapan003">도쿄(하네다)</label></li>
+																	<li><input type="radio" id="radJapan004" name="radinternational_arr"><label for="radJapan004">후쿠오카</label></li>
+																	<li><input type="radio" id="radJapan005" name="radinternational_arr"><label for="radJapan005">오키나와</label></li>
+																	<li><input type="radio" id="radJapan006" name="radinternational_arr"><label for="radJapan006">삿포로</label></li>
+																</ul>
+															</div>
+														</li>
+														<li class="acctItem">
+															<button type="button" class="toggleBtn" aria-expanded="false">중국</button>
+															<div class="toggleCont">
+																<ul class="frmBox frmChkAni">
+																	<li><input type="radio" id="radChina001" name="radinternational_arr"><label for="radChina001">상하이</label></li>
+																	<li><input type="radio" id="radChina002" name="radinternational_arr"><label for="radChina002">청도</label></li>
+																	<li><input type="radio" id="radChina003" name="radinternational_arr"><label for="radChina003">광저우</label></li>
+																	<li><input type="radio" id="radChina004" name="radinternational_arr"><label for="radChina004">베이징</label></li>
+																	<li><input type="radio" id="radChina005" name="radinternational_arr"><label for="radChina005">연길</label></li>
+																	<li><input type="radio" id="radChina006" name="radinternational_arr"><label for="radChina006">심천</label></li>
+																</ul>
+															</div>
+														</li>
+														<li class="acctItem">
+															<button type="button" class="toggleBtn" aria-expanded="false">미주</button>
+															<div class="toggleCont">
+																<ul class="frmBox frmChkAni">
+																	<li><input type="radio" id="radAmerica001" name="radinternational_arr"><label for="radAmerica001">로스앤젤레스</label></li>
+																	<li><input type="radio" id="radAmerica002" name="radinternational_arr"><label for="radAmerica002">호롤룰루(하와이)</label></li>
+																	<li><input type="radio" id="radAmerica003" name="radinternational_arr"><label for="radAmerica003">뉴욕</label></li>
+																	<li><input type="radio" id="radAmerica004" name="radinternational_arr"><label for="radAmerica004">밴쿠버</label></li>
+																	<li><input type="radio" id="radAmerica005" name="radinternational_arr"><label for="radAmerica005">샌프란시스코</label></li>
+																	<li><input type="radio" id="radAmerica006" name="radinternational_arr"><label for="radAmerica006">토론토</label></li>
+																</ul>
+															</div>
+														</li>
+														<li class="acctItem">
+															<button type="button" class="toggleBtn" aria-expanded="false">유럽</button>
+															<div class="toggleCont">
+																<ul class="frmBox frmChkAni">
+																	<li><input type="radio" id="radEurope001" name="radinternational_arr"><label for="radEurope001">파리</label></li>
+																	<li><input type="radio" id="radEurope002" name="radinternational_arr"><label for="radEurope002">런던</label></li>
+																	<li><input type="radio" id="radEurope003" name="radinternational_arr"><label for="radEurope003">블라디보스토크</label></li>
+																	<li><input type="radio" id="radEurope004" name="radinternational_arr"><label for="radEurope004">로마</label></li>
+																	<li><input type="radio" id="radEurope005" name="radinternational_arr"><label for="radEurope005">프라하</label></li>
+																	<li><input type="radio" id="radEurope006" name="radinternational_arr"><label for="radEurope006">바르셀로나</label></li>
+																</ul>
+															</div>
+														</li>
+														<li class="acctItem">
+															<button type="button" class="toggleBtn" aria-expanded="false">대양주</button>
+															<div class="toggleCont">
+																<ul class="frmBox frmChkAni">
+																	<li><input type="radio" id="radOcean001" name="radinternational_arr"><label for="radOcean001">괌</label></li>
+																	<li><input type="radio" id="radOcean002" name="radinternational_arr"><label for="radOcean002">시드니</label></li>
+																	<li><input type="radio" id="radOcean003" name="radinternational_arr"><label for="radOcean003">멜버른</label></li>
+																	<li><input type="radio" id="radOcean004" name="radinternational_arr"><label for="radOcean004">브리즈번</label></li>
+																	<li><input type="radio" id="radOcean005" name="radinternational_arr"><label for="radOcean005">사이판</label></li>
+																	<li><input type="radio" id="radOcean006" name="radinternational_arr"><label for="radOcean006">오클랜드</label></li>
+																</ul>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- //도착지 검색 -->
+				
+										<!-- 항공편 날짜 선택 -->
+										<div id="kf_date" class="kf_search kf_date">
+											<div class="kf_area areaTit">
+												<h3 class="titDep2">항공편 날짜를 <br>선택하세요</h3>
+												<button type="button" class="btnDefault btnS icoArr layPopBtn" data-id="pop_onBoarding">캘린더 이용방법 보기</button>
+											</div>
+											<div class="kf_area kf_areaDate">
+												<div class="swiperWrap swiperCalendar" data-options='{"loop": true, "Spacebetween": 8, "view" : 2}'>
+													<button type="button" class="swiper-button-prev">이전</button>	
+													<div class="swiper-container">
+														<ul class="swiper-wrapper">
+															<li class="swiper-slide">
+																<div class="k1_calendar_wrap">
+																	<div class="k1_sel_month">2021년 9월</div>
+																	<table class="k1_board_mcal">
+																		<thead>							
+																			<tr>
+																				<th>일</th>
+																				<th>월</th>
+																				<th>화</th>
+																				<th>수</th>
+																				<th>목</th>
+																				<th>금</th>
+																				<th>토</th>
+																				
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td class="sun off">29</td>
+																				<td class="off">30</td>
+																				<td class="off">31</td>
+																				<td><a href="#" role="button">1</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">2</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">3</a><span class="price">10.5만</span></td>
+																				<td class="sat"><a href="#" role="button">4</a><span class="price">10.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">5</a><span class="price">10.5만</span></td>
+																				<td class="today"><a href="#" role="button">6</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">7</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">8</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">9</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">10</a><span class="price">10.5만</span></td>
+																				<td class="sat"><a href="#" role="button">11</a><span class="price">19.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">12</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">13</a><span class="price">5만</span></td>
+																				<td><a href="#" role="button">14</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">15</a><span class="price">10.5만</span></td>
+																				<td class="start"><a href="#" role="button">16</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+																				<td class="range"><a href="#" role="button">17</a><span class="price">10.5만</span></td>
+																				<td class="sat range"><a href="#" role="button">18</a><span class="price">19.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun range"><a href="#" role="button">19</a><span class="price">10.5만</span></td>
+																				<td class="end"><a href="#" role="button">20</a><span class="txt">도착</span><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">21</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">22</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">23</a><span class="price">10.5만</span></td>
+																				<td class="start"><a href="#" role="button">24</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+																				<td class="sat"><a href="#" role="button">25</a><span class="price">19.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">26</a><span class="price">10.5만</span></td>
+																				<td class="start end"><a href="#" role="button">27</a><span class="txt">당일 왕복</span><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">28</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">29</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">30</a><span class="price">10.5만</span></td>
+																				<td class="off"><a href="#" role="button">1</a><span class="price">10.5만</span></td>
+																				<td class="sat off"><a href="#" role="button">2</a><span class="price">88.5만</span></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</li>
+															<li class="swiper-slide">
+																<div class="k1_calendar_wrap">
+																	<div class="k1_sel_month">2021년 10월</div>
+																	<table class="k1_board_mcal">
+																		<thead>							
+																			<tr>
+																				<th>일</th>
+																				<th>월</th>
+																				<th>화</th>
+																				<th>수</th>
+																				<th>목</th>
+																				<th>금</th>
+																				<th>토</th>
+																				
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td class="sun off">29</td>
+																				<td class="off">30</td>
+																				<td class="off">31</td>
+																				<td><a href="#" role="button">1</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">2</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">3</a><span class="price">10.5만</span></td>
+																				<td class="sat"><a href="#" role="button">4</a><span class="price">10.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">5</a><span class="price">10.5만</span></td>
+																				<td class="today"><a href="#" role="button">6</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">7</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">8</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">9</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">10</a><span class="price">10.5만</span></td>
+																				<td class="sat"><a href="#" role="button">11</a><span class="price">19.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">12</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">13</a><span class="price">5만</span></td>
+																				<td><a href="#" role="button">14</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">15</a><span class="price">10.5만</span></td>
+																				<td class="start"><a href="#" role="button">16</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+																				<td class="range"><a href="#" role="button">17</a><span class="price">10.5만</span></td>
+																				<td class="sat range"><a href="#" role="button">18</a><span class="price">19.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun range"><a href="#" role="button">19</a><span class="price">10.5만</span></td>
+																				<td class="end"><a href="#" role="button">20</a><span class="txt">도착</span><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">21</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">22</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">23</a><span class="price">10.5만</span></td>
+																				<td class="start"><a href="#" role="button">24</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+																				<td class="sat"><a href="#" role="button">25</a><span class="price">19.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">26</a><span class="price">10.5만</span></td>
+																				<td class="start end"><a href="#" role="button">27</a><span class="txt">당일 왕복</span><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">28</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">29</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">30</a><span class="price">10.5만</span></td>
+																				<td class="off"><a href="#" role="button">1</a><span class="price">10.5만</span></td>
+																				<td class="sat off"><a href="#" role="button">2</a><span class="price">88.5만</span></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</li>
+															<li class="swiper-slide">
+																<div class="k1_calendar_wrap">
+																	<div class="k1_sel_month">2021년 11월</div>
+																	<table class="k1_board_mcal">
+																		<thead>							
+																			<tr>
+																				<th>일</th>
+																				<th>월</th>
+																				<th>화</th>
+																				<th>수</th>
+																				<th>목</th>
+																				<th>금</th>
+																				<th>토</th>
+																				
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td class="sun off">29</td>
+																				<td class="off">30</td>
+																				<td class="off">31</td>
+																				<td><a href="#" role="button">1</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">2</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">3</a><span class="price">10.5만</span></td>
+																				<td class="sat"><a href="#" role="button">4</a><span class="price">10.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">5</a><span class="price">10.5만</span></td>
+																				<td class="today"><a href="#" role="button">6</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">7</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">8</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">9</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">10</a><span class="price">10.5만</span></td>
+																				<td class="sat"><a href="#" role="button">11</a><span class="price">19.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">12</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">13</a><span class="price">5만</span></td>
+																				<td><a href="#" role="button">14</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">15</a><span class="price">10.5만</span></td>
+																				<td class="start"><a href="#" role="button">16</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+																				<td class="range"><a href="#" role="button">17</a><span class="price">10.5만</span></td>
+																				<td class="sat range"><a href="#" role="button">18</a><span class="price">19.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun range"><a href="#" role="button">19</a><span class="price">10.5만</span></td>
+																				<td class="end"><a href="#" role="button">20</a><span class="txt">도착</span><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">21</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">22</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">23</a><span class="price">10.5만</span></td>
+																				<td class="start"><a href="#" role="button">24</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+																				<td class="sat"><a href="#" role="button">25</a><span class="price">19.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">26</a><span class="price">10.5만</span></td>
+																				<td class="start end"><a href="#" role="button">27</a><span class="txt">당일 왕복</span><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">28</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">29</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">30</a><span class="price">10.5만</span></td>
+																				<td class="off"><a href="#" role="button">1</a><span class="price">10.5만</span></td>
+																				<td class="sat off"><a href="#" role="button">2</a><span class="price">88.5만</span></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</li>
+															<li class="swiper-slide">
+																<div class="k1_calendar_wrap">
+																	<div class="k1_sel_month">2021년 12월</div>
+																	<table class="k1_board_mcal">
+																		<thead>							
+																			<tr>
+																				<th>일</th>
+																				<th>월</th>
+																				<th>화</th>
+																				<th>수</th>
+																				<th>목</th>
+																				<th>금</th>
+																				<th>토</th>
+																				
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td class="sun off">29</td>
+																				<td class="off">30</td>
+																				<td class="off">31</td>
+																				<td><a href="#" role="button">1</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">2</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">3</a><span class="price">10.5만</span></td>
+																				<td class="sat"><a href="#" role="button">4</a><span class="price">10.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">5</a><span class="price">10.5만</span></td>
+																				<td class="today"><a href="#" role="button">6</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">7</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">8</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">9</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">10</a><span class="price">10.5만</span></td>
+																				<td class="sat"><a href="#" role="button">11</a><span class="price">19.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">12</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">13</a><span class="price">5만</span></td>
+																				<td><a href="#" role="button">14</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">15</a><span class="price">10.5만</span></td>
+																				<td class="start"><a href="#" role="button">16</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+																				<td class="range"><a href="#" role="button">17</a><span class="price">10.5만</span></td>
+																				<td class="sat range"><a href="#" role="button">18</a><span class="price">19.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun range"><a href="#" role="button">19</a><span class="price">10.5만</span></td>
+																				<td class="end"><a href="#" role="button">20</a><span class="txt">도착</span><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">21</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">22</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">23</a><span class="price">10.5만</span></td>
+																				<td class="start"><a href="#" role="button">24</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+																				<td class="sat"><a href="#" role="button">25</a><span class="price">19.5만</span></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">26</a><span class="price">10.5만</span></td>
+																				<td class="start end"><a href="#" role="button">27</a><span class="txt">당일 왕복</span><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">28</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">29</a><span class="price">10.5만</span></td>
+																				<td><a href="#" role="button">30</a><span class="price">10.5만</span></td>
+																				<td class="off"><a href="#" role="button">1</a><span class="price">10.5만</span></td>
+																				<td class="sat off"><a href="#" role="button">2</a><span class="price">88.5만</span></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<button type="button" class="swiper-button-next">다음</button>
+												</div>
+											</div>
+										</div>
+										<!-- //항공편 날짜 선택 -->
+
+										<!-- 탑승인원과 좌석 등급 선택 -->
+										<div id="kf_date" class="kf_search kf_level">
+											<div class="kf_area areaTit">
+												<h3 class="titDep2">탑승인원과 좌석 <br>등급을 선택하세요</h3>
+											</div>
+											<div class="kf_area kf_areaNum">
+												<h4 class="titDep4">탑승인원</h4>
+												<ul class="k1_passenger">
+													<li>
+														<span class="caption">성인<span class="desc">만 13세 이상</span></span>
+														<span class="setting">
+															<button type="button" class="minus"><span class="k1_icon">감소</span></button>
+															<input type="text" id="passenger1" name="passenger1" maxlength="2" class="num" value="8">
+															<button type="button" class="plus"><span class="k1_icon">증가</span>
+														
+													</button></span></li>
+													<li>
+														<span class="caption">소아<span class="desc">만 2세 ~ 만 12세</span></span>
+														<span class="setting">
+															<button type="button" class="minus"><span class="k1_icon">감소</span></button>
+															<input type="text" id="passenger1" name="passenger1" maxlength="2" class="num" value="2">
+															<button type="button" class="plus"><span class="k1_icon">증가</span>
+														
+													</button></span></li>
+													<li>
+														<span class="caption">유아<span class="desc">만 2세 미만, 보호자와 동반 착석</span></span>
+														<span class="setting">
+															<button type="button" class="minus" disabled=""><span class="k1_icon">감소</span></button>
+															<input type="text" id="passenger1" name="passenger1" maxlength="2" class="num" value="0">
+															<button type="button" class="plus"><span class="k1_icon">증가</span>
+														
+													</button></span></li>
+												</ul>
+												<div class="acctAging">
+													<div class="inpFrm inpDeleteAni">
+														<label for="inpCalc" class="titLab">소아/유아 나이계산기</label> 
+														<span class="inpA inpBtns">
+															<input type="text" id="inpCalc" placeholder="YYYY.MM.DD" title="YYYY.MM.DD 형태로 생년월일 입력">
+															<button type="button" class="btIco icDel">삭제</button>
+															<button type="button" class="btnDefault btnM btnLineG">계산</button>
+														</span>
+													</div>
+													<!-- 에러시 -->
+													<!-- div class="inpFrm inpDeleteAni inpError">
+														<label for="inpCalc" class="titLab">소아/유아 나이계산기</label> 
+														<span class="inpA inpBtns">
+															<input type="text" id="inpCalc" placeholder="YYYY.MM.DD" title="YYYY.MM.DD 형태로 생년월일 입력">
+															<button type="button" class="btIco icDel">삭제</button>
+															<button type="button" class="btnDefault btnM btnLineG">계산</button>
+														</span>
+													</div>
+													<p class="txtErr">생년월일을 바르게 입력해주세요.</p -->
+
+													<ul class="listType01">
+														<li>국내선 가는 날 (2021.08.18) 기준 유아입니다.</li>
+														<li>국내선 오는 날 (2021.08.19) 기준 유아입니다.</li>
+													</ul>
+													<div class="txtInfo">
+														<p class="listType02 small">소아/유아 나이계산은 항공사별 정책이 다릅니다. 정확한 내용은 항공사에 문의 바랍니다.</p>
+													</div>
+													
+												</div>
+											</div>
+											<div class="kf_area kf_areaLevel">
+												<h4 class="titDep4">좌석등급</h4>
+												<ul class="frmBox">
+													<li><input type="radio" id="radseatLevel01" name="radseatLevel"><label for="radseatLevel01">전체</label></li>
+													<li><input type="radio" id="radseatLevel02" name="radseatLevel"><label for="radseatLevel02">비즈니스석</label></li>
+												</ul>
+											</div>
+										</div>	
+										<!-- //탑승인원과 좌석 등급 선택 -->
+				
+									</div>
+								</div>
+							</div>
+							<!-- //항공 검색 -->
+						</div>
+						<div id="lay_rentSearch" class="k1_section_multi section_rent">
+
+							<div class="kf_innergray">
+								<div class="kf_flightInner kf_rentcarDate selectON"><!-- 버튼 클릭시 selectON 클래스 추가-->
+									<ul class="k1_flight_panel">
+										<li class="k1_area ">
+											<p class="tit">대여/반납일</p>
+											<button type="button">대여/반납일을 선택해주세요.</button>
+											<button type="button" style="display:none"><strong>22.08.18(목) ~ 22.08.20(금)</strong></button>
+										</li>
+									</ul>
+								</div>
+			
+								<div class="kf_flightInner kf_rentcarTime">
+									<ul class="k1_flight_panel">
+										<li class="k1_area">
+											<p class="tit">대여/반납 시간</p>
+											<button type="button" ><strong>09:00 ~ 09:00 (36시간)</strong></button>
+										</li>
+									</ul>
+								</div>
+			
+								<div class="kf_flightInner kf_rentcarCondition">
+									<ul class="k1_flight_panel">
+										<li class="k1_area">
+											<p class="tit">차량조건</p>
+											<button type="button" aria-expanded="false"><strong>전체, 완전자차</strong></button> <!-- 2021.12.07 수정 -->
+										</li>
+									</ul>
+								</div>
+			
+								<div class="kf_flightInner kf_rentcarDriver">
+									<ul class="k1_flight_panel">
+										<li class="k1_area">
+											<p class="tit">운전자조건</p>
+											<button type="button" aria-expanded="false"><strong>만 26세이상, 2년이상</strong></button> <!-- 2021.12.07 수정 -->
+										</li>
+									</ul>
+								</div>
+								<button type="submit" class="k1_btn_price_search">검색</button>
+							</div>
+
+							<div class="kf_innerWhite">
+								<div class="kf_laySearch">
+									<div class="kf_inner">
+				
+										<!-- 대여/반납일 선택 -->
+										<div id="kf_date" class="kf_search kf_date searchON">
+											<div class="kf_area areaTit">
+											<h3 class="titDep2">대여/반납일을 <br>선택해주세요</h3>
+											</div>
+											<div class="kf_area kf_areaDate kf_areaCalendar">
+												<div class="swiperWrap swiperCalendar" data-options='{"loop": true, "Spacebetween": 8, "view" : 2}'>
+													<button type="button" class="swiper-button-prev">이전</button>	
+													<div class="swiper-container">
+														<ul class="swiper-wrapper">
+															<li class="swiper-slide">
+																<div class="k1_calendar_wrap">
+																	<div class="k1_sel_month">2021년 9월</div>
+																	<table class="k1_board_mcal">
+																		<thead>							
+																			<tr>
+																				<th>일</th>
+																				<th>월</th>
+																				<th>화</th>
+																				<th>수</th>
+																				<th>목</th>
+																				<th>금</th>
+																				<th>토</th>
+																				
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td class="sun off">29</td>
+																				<td class="off">30</td>
+																				<td class="off">31</td>
+																				<td><a href="#" role="button">1</a></td>
+																				<td><a href="#" role="button">2</a></td>
+																				<td><a href="#" role="button">3</a></td>
+																				<td class="sat"><a href="#" role="button">4</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">5</a></td>
+																				<td class="today"><a href="#" role="button">6</a></td>
+																				<td><a href="#" role="button">7</a></td>
+																				<td><a href="#" role="button">8</a></td>
+																				<td><a href="#" role="button">9</a></td>
+																				<td><a href="#" role="button">10</a></td>
+																				<td class="sat"><a href="#" role="button">11</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">12</a></td>
+																				<td><a href="#" role="button">13</a><span class="price">5만</span></td>
+																				<td><a href="#" role="button">14</a></td>
+																				<td><a href="#" role="button">15</a></td>
+																				<td class="start"><a href="#" role="button">16</a><span class="txt">대여</span></td>
+																				<td class="range"><a href="#" role="button">17</a></td>
+																				<td class="sat range"><a href="#" role="button">18</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun range"><a href="#" role="button">19</a></td>
+																				<td class="end"><a href="#" role="button">20</a><span class="txt">반납</span></td>
+																				<td><a href="#" role="button">21</a></td>
+																				<td><a href="#" role="button">22</a></td>
+																				<td><a href="#" role="button">23</a></td>
+																				<td><a href="#" role="button">24</a></td>
+																				<td class="sat"><a href="#" role="button">25</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">26</a></td>
+																				<td><a href="#" role="button">27</a></td>
+																				<td><a href="#" role="button">28</a></td>
+																				<td><a href="#" role="button">29</a></td>
+																				<td><a href="#" role="button">30</a></td>
+																				<td class="off"><a href="#" role="button">1</a></td>
+																				<td class="sat off"><a href="#" role="button">2</a></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</li>
+															<li class="swiper-slide">
+																<div class="k1_calendar_wrap">
+																	<div class="k1_sel_month">2021년 10월</div>
+																	<table class="k1_board_mcal">
+																		<thead>							
+																			<tr>
+																				<th>일</th>
+																				<th>월</th>
+																				<th>화</th>
+																				<th>수</th>
+																				<th>목</th>
+																				<th>금</th>
+																				<th>토</th>
+																				
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td class="sun off">29</td>
+																				<td class="off">30</td>
+																				<td class="off">31</td>
+																				<td><a href="#" role="button">1</a></td>
+																				<td><a href="#" role="button">2</a></td>
+																				<td><a href="#" role="button">3</a></td>
+																				<td class="sat"><a href="#" role="button">4</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">5</a></td>
+																				<td class="today"><a href="#" role="button">6</a></td>
+																				<td><a href="#" role="button">7</a></td>
+																				<td><a href="#" role="button">8</a></td>
+																				<td><a href="#" role="button">9</a></td>
+																				<td><a href="#" role="button">10</a></td>
+																				<td class="sat"><a href="#" role="button">11</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">12</a></td>
+																				<td><a href="#" role="button">13</a><span class="price">5만</span></td>
+																				<td><a href="#" role="button">14</a></td>
+																				<td><a href="#" role="button">15</a></td>
+																				<td class="start"><a href="#" role="button">16</a></td>
+																				<td class="range"><a href="#" role="button">17</a></td>
+																				<td class="sat range"><a href="#" role="button">18</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun range"><a href="#" role="button">19</a></td>
+																				<td><a href="#" role="button">20</a></td>
+																				<td><a href="#" role="button">21</a></td>
+																				<td><a href="#" role="button">22</a></td>
+																				<td><a href="#" role="button">23</a></td>
+																				<td><a href="#" role="button">24</a></td>
+																				<td class="sat"><a href="#" role="button">25</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">26</a></td>
+																				<td><a href="#" role="button">27</a></td>
+																				<td><a href="#" role="button">28</a></td>
+																				<td><a href="#" role="button">29</a></td>
+																				<td><a href="#" role="button">30</a></td>
+																				<td class="off"><a href="#" role="button">1</a></td>
+																				<td class="sat off"><a href="#" role="button">2</a></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</li>
+															<li class="swiper-slide">
+																<div class="k1_calendar_wrap">
+																	<div class="k1_sel_month">2021년 11월</div>
+																	<table class="k1_board_mcal">
+																		<thead>							
+																			<tr>
+																				<th>일</th>
+																				<th>월</th>
+																				<th>화</th>
+																				<th>수</th>
+																				<th>목</th>
+																				<th>금</th>
+																				<th>토</th>
+																				
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td class="sun off">29</td>
+																				<td class="off">30</td>
+																				<td class="off">31</td>
+																				<td><a href="#" role="button">1</a></td>
+																				<td><a href="#" role="button">2</a></td>
+																				<td><a href="#" role="button">3</a></td>
+																				<td class="sat"><a href="#" role="button">4</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">5</a></td>
+																				<td class="today"><a href="#" role="button">6</a></td>
+																				<td><a href="#" role="button">7</a></td>
+																				<td><a href="#" role="button">8</a></td>
+																				<td><a href="#" role="button">9</a></td>
+																				<td><a href="#" role="button">10</a></td>
+																				<td class="sat"><a href="#" role="button">11</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">12</a></td>
+																				<td><a href="#" role="button">13</a><span class="price">5만</span></td>
+																				<td><a href="#" role="button">14</a></td>
+																				<td><a href="#" role="button">15</a></td>
+																				<td class="start"><a href="#" role="button">16</a></td>
+																				<td class="range"><a href="#" role="button">17</a></td>
+																				<td class="sat range"><a href="#" role="button">18</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun range"><a href="#" role="button">19</a></td>
+																				<td><a href="#" role="button">20</a></td>
+																				<td><a href="#" role="button">21</a></td>
+																				<td><a href="#" role="button">22</a></td>
+																				<td><a href="#" role="button">23</a></td>
+																				<td><a href="#" role="button">24</a></td>
+																				<td class="sat"><a href="#" role="button">25</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">26</a></td>
+																				<td><a href="#" role="button">27</a></td>
+																				<td><a href="#" role="button">28</a></td>
+																				<td><a href="#" role="button">29</a></td>
+																				<td><a href="#" role="button">30</a></td>
+																				<td class="off"><a href="#" role="button">1</a></td>
+																				<td class="sat off"><a href="#" role="button">2</a></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</li>
+															<li class="swiper-slide">
+																<div class="k1_calendar_wrap">
+																	<div class="k1_sel_month">2021년 12월</div>
+																	<table class="k1_board_mcal">
+																		<thead>							
+																			<tr>
+																				<th>일</th>
+																				<th>월</th>
+																				<th>화</th>
+																				<th>수</th>
+																				<th>목</th>
+																				<th>금</th>
+																				<th>토</th>
+																				
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td class="sun off">29</td>
+																				<td class="off">30</td>
+																				<td class="off">31</td>
+																				<td><a href="#" role="button">1</a></td>
+																				<td><a href="#" role="button">2</a></td>
+																				<td><a href="#" role="button">3</a></td>
+																				<td class="sat"><a href="#" role="button">4</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">5</a></td>
+																				<td class="today"><a href="#" role="button">6</a></td>
+																				<td><a href="#" role="button">7</a></td>
+																				<td><a href="#" role="button">8</a></td>
+																				<td><a href="#" role="button">9</a></td>
+																				<td><a href="#" role="button">10</a></td>
+																				<td class="sat"><a href="#" role="button">11</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">12</a></td>
+																				<td><a href="#" role="button">13</a><span class="price">5만</span></td>
+																				<td><a href="#" role="button">14</a></td>
+																				<td><a href="#" role="button">15</a></td>
+																				<td class="start"><a href="#" role="button">16</a></td>
+																				<td class="range"><a href="#" role="button">17</a></td>
+																				<td class="sat range"><a href="#" role="button">18</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun range"><a href="#" role="button">19</a></td>
+																				<td><a href="#" role="button">20</a></td>
+																				<td><a href="#" role="button">21</a></td>
+																				<td><a href="#" role="button">22</a></td>
+																				<td><a href="#" role="button">23</a></td>
+																				<td><a href="#" role="button">24</a></td>
+																				<td class="sat"><a href="#" role="button">25</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">26</a></td>
+																				<td><a href="#" role="button">27</a></td>
+																				<td><a href="#" role="button">28</a></td>
+																				<td><a href="#" role="button">29</a></td>
+																				<td><a href="#" role="button">30</a></td>
+																				<td class="off"><a href="#" role="button">1</a></td>
+																				<td class="sat off"><a href="#" role="button">2</a></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<button type="button" class="swiper-button-next">다음</button>
+												</div>
+											</div>
+										</div>
+										<!-- //대여/반납일 선택 -->
+
+										<!-- 대여/반납 시간 선택 -->
+										<div id="kf_time" class="kf_search kf_time">
+											<div class="kf_area areaTit">
+											<h3 class="titDep2">대여/반납 시간을 <br>선택해주세요</h3>
+											</div>
+											<div class="kf_area kf_areaTime01">
+												<h3 class="titDep4">대여시간</h3>
+												<div class="selectWrap">
+													<select title="대여시간 선택" data-height="160px">
+														<option value="01" selected>09:00</option>
+														<option value="02">10:00</option>
+														<option value="03">11:00</option>
+														<option value="04">12:00</option>
+														<option value="05">13:00</option>
+														<option value="06">14:00</option>
+														<option value="07">15:00</option>
+														<option value="08">16:00</option>
+														<option value="08">17:00</option>
+														<option value="08">18:00</option>
+														<option value="08">19:00</option>
+														<option value="08">20:00</option>
+														<option value="08">21:00</option>
+														<option value="08">22:00</option>
+														<option value="08">23:00</option>
+														<option value="08">24:00</option>
+														<option value="08">01:00</option>
+														<option value="08">02:00</option>
+														<option value="08">03:00</option>
+														<option value="08">04:00</option>
+														<option value="08">05:00</option>
+														<option value="08">06:00</option>
+														<option value="08">07:00</option>
+														<option value="08">08:00</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="kf_area kf_areaTime02">
+												<h3 class="titDep4">반납시간</h3>
+												<div class="selectWrap">
+													<select title="대여시간 선택" data-height="160px">
+														<option value="01">09:00</option>
+														<option value="02">10:00</option>
+														<option value="03">11:00</option>
+														<option value="04">12:00</option>
+														<option value="05">13:00</option>
+														<option value="06">14:00</option>
+														<option value="07">15:00</option>
+														<option value="08">16:00</option>
+														<option value="08">17:00</option>
+														<option value="08" selected>18:00</option>
+														<option value="08">19:00</option>
+														<option value="08">20:00</option>
+														<option value="08">21:00</option>
+														<option value="08">22:00</option>
+														<option value="08">23:00</option>
+														<option value="08">24:00</option>
+														<option value="08">01:00</option>
+														<option value="08">02:00</option>
+														<option value="08">03:00</option>
+														<option value="08">04:00</option>
+														<option value="08">05:00</option>
+														<option value="08">06:00</option>
+														<option value="08">07:00</option>
+														<option value="08">08:00</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<!-- //대여/반납 시간 선택 -->
+
+										<!-- 차량조건 선택 -->
+										<div id="kf_carCondition" class="kf_search kf_carCondition">
+											<div class="kf_area areaTit">
+											<h3 class="titDep2">원하는 차량 조건을 <br>선택해주세요</h3>
+											</div>
+											<div class="kf_area kf_areaCondition01">
+												<h3 class="titDep4">차종</h3>
+												<ul class="frmBox boxCol03">
+													<li><input type="radio" id="radCarkind01" name="radCarkind" checked><label for="radCarkind01">전체</label></li>
+													<li><input type="radio" id="radCarkind02" name="radCarkind"><label for="radCarkind02">경차/소형</label></li>
+													<li><input type="radio" id="radCarkind03" name="radCarkind"><label for="radCarkind03">준준형</label></li>
+													<li><input type="radio" id="radCarkind04" name="radCarkind"><label for="radCarkind04">수입</label></li>
+													<li><input type="radio" id="radCarkind05" name="radCarkind"><label for="radCarkind05">승합</label></li>
+													<li><input type="radio" id="radCarkind06" name="radCarkind"><label for="radCarkind06">SUV/RV</label></li>
+													<li><input type="radio" id="radCarkind07" name="radCarkind"><label for="radCarkind07">중/대형</label></li>
+													<li><input type="radio" id="radCarkind08" name="radCarkind"><label for="radCarkind08">전기</label></li>
+												</ul>
+											</div>
+
+											<div class="kf_area kf_areaCondition02">
+												<h3 class="titDep4">보험</h3>
+												<ul class="frmBox">
+													<li><input type="radio" id="radCarInsu01" name="radCarkind"><label for="radCarInsu01">일반자차</label></li>
+													<li><input type="radio" id="radCarInsu02" name="radCarkind" checked><label for="radCarInsu02">완전자차</label></li>
+													<li><input type="radio" id="radCarInsu03" name="radCarkind"><label for="radCarInsu03">부분무제한</label></li>
+													<li class="superInsu"><input type="radio" id="radCarInsu04" name="radCarkind"><label for="radCarInsu04"><img src="/resource/PC/images/common/ico_super.png" alt="">슈퍼무제한</label></li>
+												</ul>
+											</div>
+										</div>
+										<!-- //차량조건 선택 -->
+
+										<!-- 운전자조건 선택 -->
+										<div id="kf_driverCondition" class="kf_search kf_driverCondition">
+											<div class="kf_area areaTit">
+											<h3 class="titDep2">운전자 연령/경력을 <br>선택해주세요</h3>
+											</div>
+											<div class="kf_area kf_areaCondition03">
+												<h3 class="titDep4">운전자 연령</h3>
+												<ul class="frmBox">
+													<li><input type="radio" id="radCarAge01" name="radCarAge" checked><label for="radCarAge01">만 21세~25세</label></li>
+													<li><input type="radio" id="radCarAge02" name="radCarAge"><label for="radCarAge02">만 25세 이상</label></li>
+												</ul>
+											</div>
+
+											<div class="kf_area kf_areaCondition04">
+												<h3 class="titDep4">경력</h3>
+												<ul class="frmBox boxCol03">
+													<li><input type="radio" id="radCarCarrer01" name="radCarCarrer"><label for="radCarCarrer01">1년 미만</label></li>
+													<li><input type="radio" id="radCarCarrer02" name="radCarCarrer" checked><label for="radCarCarrer02">2년 미만</label></li>
+													<li><input type="radio" id="radCarCarrer03" name="radCarCarrer"><label for="radCarCarrer03">2년 이상</label></li>
+												</ul>
+											</div>
+										</div>
+										<!-- //운전자조건 선택 -->
+				
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="lay_staySearch" class="k1_section_multi section_stay">
+
+							<div class="kf_innergray">
+								<div class="kf_flightInner kf_stayDestination selectON"><!-- 버튼 클릭시 selectON 클래스 추가-->
+									<ul class="k1_flight_panel">
+										<li class="k1_area ">
+											<p class="tit">여행지</p>
+											<button type="button">여행지를 선택하세요.</button>
+											<button type="button" style="display:none"><strong>제주특별자치도, 한국</strong></button>
+										</li>
+									</ul>
+								</div>
+
+								<div class="kf_flightInner kf_stayDate">
+									<ul class="k1_flight_panel">
+										<li class="k1_area ">
+											<p class="tit">숙박일</p>
+											<button type="button">여행일정을 선택해주세요.</button>
+											<button type="button" style="display:none"><strong>22.08.18(목) ~ 22.08.20(금)</strong></button>
+										</li>
+									</ul>
+								</div>
+
+								<div class="kf_flightInner kf_stayNumber">
+									<ul class="k1_flight_panel">
+										<li class="k1_area ">
+											<p class="tit">인원과 객실수</p>
+											<button type="button">인원, 객실수를 선택하세요.</button>
+											<button type="button" style="display:none"><strong>성인 2명, 객실 1</strong></button>
+										</li>
+									</ul>
+								</div>
+								<button type="submit" class="k1_btn_price_search">검색</button>
+							</div>
+
+							<div class="kf_innerWhite">
+								<div class="kf_laySearch">
+									<div class="kf_inner">
+										<!-- 여행지 검색 -->
+										<div id="kf_staySearch" class="kf_search kf_staySearch searchON">
+											<div class="kf_area areaTit">
+												<h3 class="titDep2">여행지를 <br>선택해주세요</h3>
+											</div>
+											<div class="kf_area kf_destinationList scriptScroll"><!-- 디자인 스크롤 영역-->
+												<div class="searchIcon inpDeleteAni staySearch">
+													<input type="text" title="상호명 혹은 키워드를 입력하세요." placeholder="상호명 혹은 키워드를 입력하세요." class="inpSear">
+													<button type="button" class="btIco icDel">삭제</button>
+												</div>
+												<div class="kf_scrollArea">
+													<h3 class="hidden">검색결과</h3>
+													<ul class="quick_resultList">
+														<li class="location"><a href="#">
+															<strong class="txt"><em>제주</em>도 전체</strong>
+															<span class="city">한국</span>
+														</a></li>
+														<li class="location"><a href="#">
+															<strong class="txt"><em>제주</em>도/서귀포시</strong>
+															<span class="city"><em>제주</em>시, 한국</span>
+														</a></li>
+														<li class="stay"><a href="#">
+															<strong class="txt">그랜드 조선 <em>제주</em></strong>
+															<span class="city">서귀포 시, 한국</span>
+														</a></li>
+														<li class="keyword"><a href="#">
+															<strong class="txt">스테이 쿠이디</strong>
+															<span class="city"><em>제주</em>시 돌담길</span>
+														</a></li>
+														<li class="hotplace"><a href="#">
+															<strong class="txt"><em>제주</em>테디베어뮤지엄</strong>
+															<span class="city">서귀포시, 한국</span>
+														</a></li>
+														<li class="location"><a href="#">
+															<strong class="txt"><em>제주</em> 특별자치시도</strong>
+															<span class="city"><em>제주</em>시, 한국</span>
+														</a></li>
+														<li class="location"><a href="#">
+															<strong class="txt"><em>제주</em> 특별자치시도</strong>
+															<span class="city"><em>제주</em>시, 한국</span>
+														</a></li>
+														<li class="stay"><a href="#">
+															<strong class="txt">그랜드 조선 <em>제주</em></strong>
+															<span class="city">서귀포 시, 한국</span>
+														</a></li>
+														<li class="keyword"><a href="#">
+															<strong class="txt">스테이 쿠이디</strong>
+															<span class="city"><em>제주</em>시 돌담길</span>
+														</a></li>
+														<li class="hotplace"><a href="#">
+															<strong class="txt"><em>제주</em>테디베어뮤지엄</strong>
+															<span class="city">서귀포시, 한국</span>
+														</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- //여행지 검색 -->
+
+										<!-- 숙박일 선택 -->
+										<div id="kf_stayDate" class="kf_search kf_stayDate">
+											<div class="kf_area areaTit">
+												<h3 class="titDep2">숙박일을 <br>선택해주세요</h3>
+											</div>
+											<div class="kf_area kf_areaDate kf_areaCalendar">
+												<div class="swiperWrap swiperCalendar" data-options='{"loop": true, "Spacebetween": 8, "view" : 2}'>
+													<button type="button" class="swiper-button-prev">이전</button>	
+													<div class="swiper-container">
+														<ul class="swiper-wrapper">
+															<li class="swiper-slide">
+																<div class="k1_calendar_wrap">
+																	<div class="k1_sel_month">2021년 9월</div>
+																	<table class="k1_board_mcal">
+																		<thead>							
+																			<tr>
+																				<th>일</th>
+																				<th>월</th>
+																				<th>화</th>
+																				<th>수</th>
+																				<th>목</th>
+																				<th>금</th>
+																				<th>토</th>
+																				
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td class="sun off">29</td>
+																				<td class="off">30</td>
+																				<td class="off">31</td>
+																				<td><a href="#" role="button">1</a></td>
+																				<td><a href="#" role="button">2</a></td>
+																				<td><a href="#" role="button">3</a></td>
+																				<td class="sat"><a href="#" role="button">4</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">5</a></td>
+																				<td class="today"><a href="#" role="button">6</a></td>
+																				<td><a href="#" role="button">7</a></td>
+																				<td><a href="#" role="button">8</a></td>
+																				<td><a href="#" role="button">9</a></td>
+																				<td><a href="#" role="button">10</a></td>
+																				<td class="sat"><a href="#" role="button">11</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">12</a></td>
+																				<td><a href="#" role="button">13</a><span class="price">5만</span></td>
+																				<td><a href="#" role="button">14</a></td>
+																				<td><a href="#" role="button">15</a></td>
+																				<td class="start"><a href="#" role="button">16</a><span class="txt">체크인</span></td>
+																				<td class="range"><a href="#" role="button">17</a></td>
+																				<td class="sat range"><a href="#" role="button">18</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun range"><a href="#" role="button">19</a></td>
+																				<td class="end"><a href="#" role="button">20</a><span class="txt">체크아웃</span></td>
+																				<td><a href="#" role="button">21</a></td>
+																				<td><a href="#" role="button">22</a></td>
+																				<td><a href="#" role="button">23</a></td>
+																				<td><a href="#" role="button">24</a></td>
+																				<td class="sat"><a href="#" role="button">25</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">26</a></td>
+																				<td><a href="#" role="button">27</a></td>
+																				<td><a href="#" role="button">28</a></td>
+																				<td><a href="#" role="button">29</a></td>
+																				<td><a href="#" role="button">30</a></td>
+																				<td class="off"><a href="#" role="button">1</a></td>
+																				<td class="sat off"><a href="#" role="button">2</a></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</li>
+															<li class="swiper-slide">
+																<div class="k1_calendar_wrap">
+																	<div class="k1_sel_month">2021년 10월</div>
+																	<table class="k1_board_mcal">
+																		<thead>							
+																			<tr>
+																				<th>일</th>
+																				<th>월</th>
+																				<th>화</th>
+																				<th>수</th>
+																				<th>목</th>
+																				<th>금</th>
+																				<th>토</th>
+																				
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td class="sun off">29</td>
+																				<td class="off">30</td>
+																				<td class="off">31</td>
+																				<td><a href="#" role="button">1</a></td>
+																				<td><a href="#" role="button">2</a></td>
+																				<td><a href="#" role="button">3</a></td>
+																				<td class="sat"><a href="#" role="button">4</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">5</a></td>
+																				<td class="today"><a href="#" role="button">6</a></td>
+																				<td><a href="#" role="button">7</a></td>
+																				<td><a href="#" role="button">8</a></td>
+																				<td><a href="#" role="button">9</a></td>
+																				<td><a href="#" role="button">10</a></td>
+																				<td class="sat"><a href="#" role="button">11</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">12</a></td>
+																				<td><a href="#" role="button">13</a></td>
+																				<td><a href="#" role="button">14</a></td>
+																				<td><a href="#" role="button">15</a></td>
+																				<td class="start"><a href="#" role="button">16</a></td>
+																				<td class="range"><a href="#" role="button">17</a></td>
+																				<td class="sat range"><a href="#" role="button">18</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun range"><a href="#" role="button">19</a></td>
+																				<td><a href="#" role="button">20</a></td>
+																				<td><a href="#" role="button">21</a></td>
+																				<td><a href="#" role="button">22</a></td>
+																				<td><a href="#" role="button">23</a></td>
+																				<td><a href="#" role="button">24</a></td>
+																				<td class="sat"><a href="#" role="button">25</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">26</a></td>
+																				<td><a href="#" role="button">27</a></td>
+																				<td><a href="#" role="button">28</a></td>
+																				<td><a href="#" role="button">29</a></td>
+																				<td><a href="#" role="button">30</a></td>
+																				<td class="off"><a href="#" role="button">1</a></td>
+																				<td class="sat off"><a href="#" role="button">2</a></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</li>
+															<li class="swiper-slide">
+																<div class="k1_calendar_wrap">
+																	<div class="k1_sel_month">2021년 11월</div>
+																	<table class="k1_board_mcal">
+																		<thead>							
+																			<tr>
+																				<th>일</th>
+																				<th>월</th>
+																				<th>화</th>
+																				<th>수</th>
+																				<th>목</th>
+																				<th>금</th>
+																				<th>토</th>
+																				
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td class="sun off">29</td>
+																				<td class="off">30</td>
+																				<td class="off">31</td>
+																				<td><a href="#" role="button">1</a></td>
+																				<td><a href="#" role="button">2</a></td>
+																				<td><a href="#" role="button">3</a></td>
+																				<td class="sat"><a href="#" role="button">4</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">5</a></td>
+																				<td class="today"><a href="#" role="button">6</a></td>
+																				<td><a href="#" role="button">7</a></td>
+																				<td><a href="#" role="button">8</a></td>
+																				<td><a href="#" role="button">9</a></td>
+																				<td><a href="#" role="button">10</a></td>
+																				<td class="sat"><a href="#" role="button">11</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">12</a></td>
+																				<td><a href="#" role="button">13</a></td>
+																				<td><a href="#" role="button">14</a></td>
+																				<td><a href="#" role="button">15</a></td>
+																				<td class="start"><a href="#" role="button">16</a></td>
+																				<td class="range"><a href="#" role="button">17</a></td>
+																				<td class="sat range"><a href="#" role="button">18</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun range"><a href="#" role="button">19</a></td>
+																				<td><a href="#" role="button">20</a></td>
+																				<td><a href="#" role="button">21</a></td>
+																				<td><a href="#" role="button">22</a></td>
+																				<td><a href="#" role="button">23</a></td>
+																				<td><a href="#" role="button">24</a></td>
+																				<td class="sat"><a href="#" role="button">25</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">26</a></td>
+																				<td><a href="#" role="button">27</a></td>
+																				<td><a href="#" role="button">28</a></td>
+																				<td><a href="#" role="button">29</a></td>
+																				<td><a href="#" role="button">30</a></td>
+																				<td class="off"><a href="#" role="button">1</a></td>
+																				<td class="sat off"><a href="#" role="button">2</a></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</li>
+															<li class="swiper-slide">
+																<div class="k1_calendar_wrap">
+																	<div class="k1_sel_month">2021년 12월</div>
+																	<table class="k1_board_mcal">
+																		<thead>							
+																			<tr>
+																				<th>일</th>
+																				<th>월</th>
+																				<th>화</th>
+																				<th>수</th>
+																				<th>목</th>
+																				<th>금</th>
+																				<th>토</th>
+																				
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td class="sun off">29</td>
+																				<td class="off">30</td>
+																				<td class="off">31</td>
+																				<td><a href="#" role="button">1</a></td>
+																				<td><a href="#" role="button">2</a></td>
+																				<td><a href="#" role="button">3</a></td>
+																				<td class="sat"><a href="#" role="button">4</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">5</a></td>
+																				<td class="today"><a href="#" role="button">6</a></td>
+																				<td><a href="#" role="button">7</a></td>
+																				<td><a href="#" role="button">8</a></td>
+																				<td><a href="#" role="button">9</a></td>
+																				<td><a href="#" role="button">10</a></td>
+																				<td class="sat"><a href="#" role="button">11</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">12</a></td>
+																				<td><a href="#" role="button">13</a></td>
+																				<td><a href="#" role="button">14</a></td>
+																				<td><a href="#" role="button">15</a></td>
+																				<td class="start"><a href="#" role="button">16</a></td>
+																				<td class="range"><a href="#" role="button">17</a></td>
+																				<td class="sat range"><a href="#" role="button">18</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun range"><a href="#" role="button">19</a></td>
+																				<td><a href="#" role="button">20</a></td>
+																				<td><a href="#" role="button">21</a></td>
+																				<td><a href="#" role="button">22</a></td>
+																				<td><a href="#" role="button">23</a></td>
+																				<td><a href="#" role="button">24</a></td>
+																				<td class="sat"><a href="#" role="button">25</a></td>
+																			</tr>
+																			<tr>
+																				<td class="sun"><a href="#" role="button">26</a></td>
+																				<td><a href="#" role="button">27</a></td>
+																				<td><a href="#" role="button">28</a></td>
+																				<td><a href="#" role="button">29</a></td>
+																				<td><a href="#" role="button">30</a></td>
+																				<td class="off"><a href="#" role="button">1</a></td>
+																				<td class="sat off"><a href="#" role="button">2</a></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<button type="button" class="swiper-button-next">다음</button>
+												</div>
+											</div>
+										</div>
+										<!-- //숙박일 선택 -->
+
+										<!-- 인원과 객실수 선택  -->
+										<div id="kf_serchPersons" class="kf_search kf_serchPersons">
+											<div class="kf_area areaTit">
+												<h3 class="titDep2">인원과 객실수를 <br>선택해주세요</h3>
+											</div>
+											<div class="kf_area kf_persons">
+												<div class="scriptScroll">
+													<!-- 객실추가 repeat -->
+													<div class="passengerArea">
+														<h3 class="titDep4">객실1</h3>
+														<ul class="k1_passenger">
+															<li>
+																<span class="caption">성인<span class="desc">만 12세 이상</span></span>
+																<span class="setting">
+																	<button type="button" class="minus">감소</button>
+																	<input type="tel" class="num" value="8" title="인원수 입력">
+																	<button type="button" class="plus">증가</button>
+																</span>
+															</li>
+															<li>
+																<span class="caption">아동<span class="desc">체크인 시점에 만 0~11세 미만</span></span>
+																<span class="setting">
+																	<button type="button" class="minus">감소</button>
+																	<input type="tel" class="num" value="8" title="인원수 입력">
+																	<button type="button" class="plus">증가</button>
+																</span>
+															</li>
+														</ul>
+													</div>
+													<!-- //객실추가 repeat -->
+
+													<!-- 객실추가 repeat -->
+													<div class="passengerArea">
+														<h3 class="titDep4">객실2</h3>
+														<ul class="k1_passenger">
+															<li>
+																<span class="caption">성인<span class="desc">만 12세 이상</span></span>
+																<span class="setting">
+																	<button type="button" class="minus">감소</button>
+																	<input type="tel" class="num" value="8" title="인원수 입력">
+																	<button type="button" class="plus">증가</button>
+																</span>
+															</li>
+															<li>
+																<span class="caption">아동<span class="desc">체크인 시점에 만 0~11세 미만</span></span>
+																<span class="setting">
+																	<button type="button" class="minus">감소</button>
+																	<input type="tel" class="num" value="8" title="인원수 입력">
+																	<button type="button" class="plus">증가</button>
+																</span>
+															</li>
+														</ul>
+														<button type="button" class="btDel">삭제</button>
+													</div>
+													<!-- //객실추가 repeat -->
+
+													<!-- 객실추가 repeat -->
+													<div class="passengerArea">
+														<h3 class="titDep4">객실3</h3>
+														<ul class="k1_passenger">
+															<li>
+																<span class="caption">성인<span class="desc">만 12세 이상</span></span>
+																<span class="setting">
+																	<button type="button" class="minus">감소</button>
+																	<input type="tel" class="num" value="8" title="인원수 입력">
+																	<button type="button" class="plus">증가</button>
+																</span>
+															</li>
+															<li>
+																<span class="caption">아동<span class="desc">체크인 시점에 만 0~11세 미만</span></span>
+																<span class="setting">
+																	<button type="button" class="minus">감소</button>
+																	<input type="tel" class="num" value="8" title="인원수 입력">
+																	<button type="button" class="plus">증가</button>
+																</span>
+															</li>
+														</ul>
+														<button type="button" class="btDel">삭제</button>
+													</div>
+													<!-- //객실추가 repeat -->
+												</div>
+												<div class="btnShadow">
+													<button type="button" class="btnDefault btnM btnLineP">+ 객실 추가</button>
+												</div>
+											</div>
+										</div>
+										<!-- //인원과 객실수 선택 -->
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div id="lay_foodSearch" class="k1_section_multi section_food">
+
+							<div class="kf_innergray">
+								<div class="kf_flightInner kf_food">
+									<div class="inpFrm inpDeleteAni">
+										<label for="inpFood" class="hidden">맛집 검색어 입력</label>
+										<span class="inpA">
+											<input type="text" id="inpFood" title="맛집을 검색해주세요.">
+											<button type="button" class="btIco icDel">삭제</button>
+										</span>
+										<button type="submit" class="btnDefault btIco icoSearch colPoint">검색</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- 카페 검색 -->
+							<div class="kf_innerWhite">
+								<div class="kf_laySearch">
+									<div class="kf_inner">
+										
+										<div id="kf_search_cafe" class="kf_search kf_search_cafe searchON">
+											<div class="kf_area areaTit">
+												<h3 class="titDep2">찾으시는 맛집, 카페를 <br>선택해주세요</h3><!-- 10.25 텍스트 수정 -->
+											</div>
+											<div class="kf_area">
+												
+												<div class="kf_scrollArea scriptScroll"><!-- 디자인 스크롤 영역-->
+													<div class="wordArea recent">
+														<h4 class="titDep4">최근 검색어</h4>
+														<ul class="wordList">
+															<li><a href="#">#오션뷰</a><button type="button" class="icoDel">삭제</button></li>
+															<li><a href="#">#오션뷰오션뷰</a><button type="button" class="icoDel">삭제</button></li>
+															<li><a href="#">#월정리</a><button type="button" class="icoDel">삭제</button></li>
+															<li><a href="#">#오션뷰오션뷰</a><button type="button" class="icoDel">삭제</button></li>
+															<li><a href="#">#월정리</a><button type="button" class="icoDel">삭제</button></li>
+														</ul>
+														<button type="button" class="btDel">전체삭제</button>
+													</div>
+													<div class="wordArea">
+														<h4 class="titDep4">테마로 검색</h4>
+														<ul class="wordList tagList">
+															<li><a href="#">#분위기 좋은</a></li>
+															<li><a href="#">#오션뷰</a></li>
+															<li><a href="#">#책 읽기 좋은</a></li>
+															<li class="selON"><a href="#">#사진 찍기 좋은</a></li>
+															<li><a href="#">#흑돼지패스</a></li>
+															<li><a href="#">#분위기 좋은</a></li>
+															<li><a href="#">#오션뷰</a></li>
+															<li><a href="#">#책 읽기 좋은</a></li>
+															<li><a href="#">#사진 찍기 좋은</a></li>
+															<li><a href="#">#흑돼지패스</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="kf_area kf_cafeLocal">
+												<h3 class="titDep4">지역으로 검색</h3>
+												<!-- 20211129 : 전체/지도검색(추가) -->
+												<ul class="localList selTotal">
+													<li class="total">
+														<input type="checkbox" id="radcafeLocalAll">
+														<label for="radcafeLocalAll">
+															<figure><img src="/resource/MO/images/food/img_localAll.jpg" alt=""></figure>전체
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal01">
+														<label for="radcafeLocal01">
+															<figure><img src="/resource/MO/images/food/img_local01.jpg" alt=""></figure>제주시내
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal02">
+														<label for="radcafeLocal02">
+															<figure><img src="/resource/MO/images/food/img_local02.jpg" alt=""></figure>조천·함덕
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal03">
+														<label for="radcafeLocal03">
+															<figure><img src="/resource/MO/images/food/img_local03.jpg" alt=""></figure>구좌·월정
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal04">
+														<label for="radcafeLocal04">
+															<figure><img src="/resource/MO/images/food/img_local04.jpg" alt=""></figure>애월
+														</label>
+													</li>					
+													<li>
+														<input type="checkbox" id="radcafeLocal05">
+														<label for="radcafeLocal05">
+															<figure><img src="/resource/MO/images/food/img_local05.jpg" alt=""></figure>한림·협재
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal06">
+														<label for="radcafeLocal06">
+															<figure><img src="/resource/MO/images/food/img_local06.jpg" alt=""></figure>서귀포·중문
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal07">
+														<label for="radcafeLocal07">
+															<figure><img src="/resource/MO/images/food/img_local07.jpg" alt=""></figure>표선·남원
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal08">
+														<label for="radcafeLocal08">
+															<figure><img src="/resource/MO/images/food/img_local08.jpg" alt=""></figure>상신·섭지코지
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal09">
+														<label for="radcafeLocal09">
+															<figure><img src="/resource/MO/images/food/img_local09.jpg" alt=""></figure>안덕·대정
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal10">
+														<label for="radcafeLocal10">
+															<figure><img src="/resource/MO/images/food/img_local10.jpg" alt=""></figure>한경·저지
+														</label>
+													</li>
+												</ul>
+												<a href="#" class="mapSearch">지도검색</a>
+												<!-- //20211129 : 전체/지도검색(추가) -->
+											</div>
+										</div>
+														
+									</div>
+								</div>
+							</div>
+							<!-- //카페 검색 -->
+						</div>
+
+						<div id="lay_cafeSearch" class="k1_section_multi section_cafe">
+
+							<div class="kf_innergray">
+								<div class="kf_flightInner kf_cafe">
+									<div class="inpFrm inpDeleteAni">
+										<label for="inpCafe" class="hidden">카페 상호명 혹은 키워드 입력</label>
+										<span class="inpA">
+											<input type="text" id="inpCafe" title="상호명 혹은 키워드를 입력하세요.">
+											<button type="button" class="btIco icDel">삭제</button>
+										</span>
+										<button type="submit" class="btnDefault btIco icoSearch colPoint">검색</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- 카페 검색 -->
+							<div class="kf_innerWhite">
+								<div class="kf_laySearch">
+									<div class="kf_inner">
+										
+										<div id="kf_search_cafe" class="kf_search kf_search_cafe searchON">
+											<div class="kf_area areaTit">
+												<h3 class="titDep2">카페패스 가맹점을 <br>선택해주세요</h3>
+											</div>
+											<div class="kf_area">
+												
+												<div class="kf_scrollArea scriptScroll"><!-- 디자인 스크롤 영역-->
+													<div class="wordArea recent">
+														<h4 class="titDep4">최근 검색어</h4>
+														<ul class="wordList">
+															<li><a href="#">#오션뷰</a><button type="button" class="icoDel">삭제</button></li>
+															<li><a href="#">#오션뷰오션뷰</a><button type="button" class="icoDel">삭제</button></li>
+															<li><a href="#">#월정리</a><button type="button" class="icoDel">삭제</button></li>
+															<li><a href="#">#오션뷰오션뷰</a><button type="button" class="icoDel">삭제</button></li>
+															<li><a href="#">#월정리</a><button type="button" class="icoDel">삭제</button></li>
+														</ul>
+														<button type="button" class="btDel">전체삭제</button>
+													</div>
+													<div class="wordArea">
+														<h4 class="titDep4">테마로 검색</h4>
+														<ul class="wordList tagList">
+															<li><a href="#">#분위기 좋은</a></li>
+															<li><a href="#">#오션뷰</a></li>
+															<li><a href="#">#책 읽기 좋은</a></li>
+															<li class="selON"><a href="#">#사진 찍기 좋은</a></li>
+															<li><a href="#">#흑돼지패스</a></li>
+															<li><a href="#">#분위기 좋은</a></li>
+															<li><a href="#">#오션뷰</a></li>
+															<li><a href="#">#책 읽기 좋은</a></li>
+															<li><a href="#">#사진 찍기 좋은</a></li>
+															<li><a href="#">#흑돼지패스</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="kf_area kf_cafeLocal">
+												<h3 class="titDep4">지역으로 검색</h3>
+												<!-- 20211129 : 전체/지도검색(추가) -->
+												<ul class="localList selTotal">
+													<li class="total">
+														<input type="checkbox" id="radcafeLocalAll">
+														<label for="radcafeLocalAll">
+															<figure><img src="/resource/MO/images/food/img_localAll.jpg" alt=""></figure>전체
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal01">
+														<label for="radcafeLocal01">
+															<figure><img src="/resource/MO/images/food/img_local01.jpg" alt=""></figure>제주시내
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal02">
+														<label for="radcafeLocal02">
+															<figure><img src="/resource/MO/images/food/img_local02.jpg" alt=""></figure>조천·함덕
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal03">
+														<label for="radcafeLocal03">
+															<figure><img src="/resource/MO/images/food/img_local03.jpg" alt=""></figure>구좌·월정
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal04">
+														<label for="radcafeLocal04">
+															<figure><img src="/resource/MO/images/food/img_local04.jpg" alt=""></figure>애월
+														</label>
+													</li>					
+													<li>
+														<input type="checkbox" id="radcafeLocal05">
+														<label for="radcafeLocal05">
+															<figure><img src="/resource/MO/images/food/img_local05.jpg" alt=""></figure>한림·협재
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal06">
+														<label for="radcafeLocal06">
+															<figure><img src="/resource/MO/images/food/img_local06.jpg" alt=""></figure>서귀포·중문
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal07">
+														<label for="radcafeLocal07">
+															<figure><img src="/resource/MO/images/food/img_local07.jpg" alt=""></figure>표선·남원
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal08">
+														<label for="radcafeLocal08">
+															<figure><img src="/resource/MO/images/food/img_local08.jpg" alt=""></figure>상신·섭지코지
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal09">
+														<label for="radcafeLocal09">
+															<figure><img src="/resource/MO/images/food/img_local09.jpg" alt=""></figure>안덕·대정
+														</label>
+													</li>
+													<li>
+														<input type="checkbox" id="radcafeLocal10">
+														<label for="radcafeLocal10">
+															<figure><img src="/resource/MO/images/food/img_local10.jpg" alt=""></figure>한경·저지
+														</label>
+													</li>
+												</ul>
+												<a href="#" class="mapSearch">지도검색</a>
+												<!-- //20211129 : 전체/지도검색(추가) -->
+											</div>
+										</div>
+														
+									</div>
+								</div>
+							</div>
+							<!-- //카페 검색 -->
+						</div>
+
+						<div id="lay_tripSearch" class="k1_section_multi section_trip">
+							<div class="kf_innergray">
+								<div class="kf_flightInner kf_hotSpot">
+									<div class="inpFrm inpDeleteAni">
+										<label for="inpCafe" class="hidden">핫스팟 지역 키워드 입력</label>
+										<span class="inpA">
+											<input type="text" id="inpCafe" title="핫스팟 지역 키워드 입력">
+											<button type="button" class="btIco icDel">삭제</button>
+										</span>
+										<button type="submit" class="btnDefault btIco icoSearch colPoint">검색</button>
+									</div>
+								</div>
+							</div>
+							<!-- 트립 검색 -->
+							<div class="kf_innerWhite">
+								<div class="kf_laySearch">
+									<div class="kf_inner">
+										<!-- 트립 검색 -->
+										<div id="kf_trip" class="kf_search kf_trip searchON">
+											<div class="kf_area areaTit">
+												<h3 class="titDep2">셀럽과 함께 <br>핫스팟을 즐겨보세요</h3>
+											</div>
+											<div class="kf_area">
+												
+												<div class="kf_scrollArea scriptScroll"><!-- 디자인 스크롤 영역-->
+													<ul class="quickTripList">
+														<!-- repeat -->
+														<li class="tripCase01"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase02"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase03"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase04 movie"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase05"><a href="#"><img src="/resource/MO/images/dummy/@img_trip02.jpg" alt=""></a></li>
+														<li class="tripCase06"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase07"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase08"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase09"><a href="#"><img src="/resource/MO/images/dummy/@img_trip02.jpg" alt=""></a></li>
+														<li class="tripCase10"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase11"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase12"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase13"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase14"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<!-- //repeat -->
+														<li class="tripCase01"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase02"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase03"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase04 movie"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase05"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase06"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase07"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase08"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase09"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase10"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase11"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase12"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase13"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+														<li class="tripCase14"><a href="#"><img src="/resource/MO/images/dummy/@img_trip01.jpg" alt=""></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- //트립 검색 -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>				
+
+					
+					<button type="button" class="closeL">검색닫기</button>
+					<div class="dimmed"></div>
+				</div>
+				
+			</div>
+		</nav>
+		<div class="topUtil">
+			<img src="/resource/PC/images/dummy/@util.png" alt="">
+		</div>
+	</header>
+
+	<div id="container" class="container">
+		<div class="k1_main_search_area">
+			<div class="k1_search_are_spot">
+				<div class="k1_section_multi section_rent">
+					<div class="kf_flightInner kf_rentcarDate"><!-- 버튼 클릭시 selectON 클래스 추가-->
+						<ul class="k1_flight_panel">
+							<li class="k1_area">
+								<p class="tit">대여/반납일</p>
+								<button type="button" ><strong>22.08.18(목) ~ 22.08.20(금)</strong></button>
+							</li>
+						</ul>
+					</div>
+
+					<div class="kf_flightInner kf_rentcarTime">
+						<ul class="k1_flight_panel">
+							<li class="k1_area">
+								<p class="tit">대여/반납 시간</p>
+								<button type="button" ><strong>09:00 ~ 09:00 (36시간)</strong></button>
+							</li>
+						</ul>
+					</div>
+
+					<div class="kf_flightInner kf_rentcarCondition">
+						<ul class="k1_flight_panel">
+							<li class="k1_area">
+								<p class="tit">차량조건</p>
+								<button type="button" aria-expanded="false"><strong>전체, 완전자차</strong></button> <!-- 2021.12.07 수정 -->
+							</li>
+						</ul>
+					</div>
+
+					<div class="kf_flightInner kf_rentcarDriver">
+						<ul class="k1_flight_panel">
+							<li class="k1_area">
+								<p class="tit">운전자조건</p>
+								<button type="button" aria-expanded="false"><strong>만 26세이상, 2년이상</strong></button> <!-- 2021.12.07 수정 -->
+							</li>
+						</ul>
+					</div>
+					<button type="submit" class="k1_btn_price_search">검색</button>
+				</div>
+			</div>
+		</div>
+        <div id="contents" class="contents rentcarMainContests">
+			<!-- 컨텐츠 영역  -->
+			<h3 class="titDep2">추천 최저가 차량</h3>
+			<div class="swiperWrap swiperRentcar" data-options='{"loop": true, "Spacebetween": 16, "view" : 3}'>
+				<div class="swiper-container">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<a href="#" role="button">
+                                <span class="sort">경&middot;소형</span>
+                                <figure><img src="/resource/PC/images/dummy/@car_img2.png" alt=""></figure>
+                                <div class="context">
+									<span class="txt">
+										<em class="carName">올 뉴 말리부</em>
+										<ul class="info">
+											<li>4인승</li>
+											<li>휘발유</li>
+										</ul>
+									</span>
+                                    <span class="price"><strong>56,000원~</strong>일반자차 포함가</span>
+                                </div>
+                            </a>
+						</li>
+                        <li class="swiper-slide">
+							<a href="#" role="button">
+                                <span class="sort">경&middot;소형</span>
+                                <figure><img src="/resource/PC/images/dummy/@car_img2.png" alt=""></figure>
+                                <div class="context">
+									<span class="txt">
+										<em class="carName">올 뉴 말리부</em>
+										<ul class="info">
+											<li>4인승</li>
+											<li>휘발유</li>
+										</ul>
+									</span>
+                                    <span class="price"><strong>56,000원~</strong>일반자차 포함가</span>
+                                </div>
+                            </a>
+						</li>
+                        <li class="swiper-slide">
+							<a href="#" role="button">
+                                <span class="sort">경&middot;소형</span>
+                                <figure><img src="/resource/PC/images/dummy/@car_img2.png" alt=""></figure>
+                                <div class="context">
+									<span class="txt">
+										<em class="carName">올 뉴 말리부</em>
+										<ul class="info">
+											<li>4인승</li>
+											<li>휘발유</li>
+										</ul>
+									</span>
+                                    <span class="price"><strong>56,000원~</strong>일반자차 포함가</span>
+                                </div>
+                            </a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" role="button">
+                                <span class="sort">경&middot;소형</span>
+                                <figure><img src="/resource/PC/images/dummy/@car_img2.png" alt=""></figure>
+                                <div class="context">
+									<span class="txt">
+										<em class="carName">올 뉴 말리부</em>
+										<ul class="info">
+											<li>4인승</li>
+											<li>휘발유</li>
+										</ul>
+									</span>
+                                    <span class="price"><strong>56,000원~</strong>일반자차 포함가</span>
+                                </div>
+                            </a>
+						</li>
+                        <li class="swiper-slide">
+							<a href="#" role="button">
+                                <span class="sort">경&middot;소형</span>
+                                <figure><img src="/resource/PC/images/dummy/@car_img2.png" alt=""></figure>
+                                <div class="context">
+									<span class="txt">
+										<em class="carName">올 뉴 말리부</em>
+										<ul class="info">
+											<li>4인승</li>
+											<li>휘발유</li>
+										</ul>
+									</span>
+                                    <span class="price"><strong>56,000원~</strong>일반자차 포함가</span>
+                                </div>
+                            </a>
+						</li>
+                        <li class="swiper-slide">
+							<a href="#" role="button">
+                                <span class="sort">경&middot;소형</span>
+                                <figure><img src="/resource/PC/images/dummy/@car_img2.png" alt=""></figure>
+                                <div class="context">
+									<span class="txt">
+										<em class="carName">올 뉴 말리부</em>
+										<ul class="info">
+											<li>4인승</li>
+											<li>휘발유</li>
+										</ul>
+									</span>
+                                    <span class="price"><strong>56,000원~</strong>일반자차 포함가</span>
+                                </div>
+                            </a>
+						</li>
+					</ul>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+			<h3 class="titDep2">오늘 본 차량</h3>
+			<div class="swiperWrap swiperRentcar" data-options='{"loop": true, "Spacebetween": 16, "view" : 2}'>
+				<div class="swiper-container">
+					<ul class="swiper-wrapper myViewRentcar">
+						<li class="swiper-slide rentcarItem">
+							<a href="#" role="button">
+                                <figure><img src="/resource/PC/images/dummy/@car.png" alt=""></figure>
+								<div class="carData">
+									<em class="carName">올 뉴 말리부</em>
+									<span class="store">퍼스트제주트래블모빌리티</span>
+									<div class="conUtil">
+										<span class="icoScore" title="평균 평점">4.7<i title="리뷰 갯수">(1,307)</i></span>
+									</div>
+									<ul class="info">
+										<li>준중형</li>
+										<li>4인승</li>
+										<li>휘발유</li>
+										<li>일반자차</li>
+									</ul>
+								</div>
+								<span class="price">56,000원</span>
+								<div class="rentTime">21.01.02(수) 09:00 ~ 21.02.02(목) 09:00 <span class="timeFlag">24시간</span></div>							
+                            </a>
+						</li>
+                        <li class="swiper-slide rentcarItem">
+							<a href="#" role="button">
+                                <figure><img src="/resource/PC/images/dummy/@car.png" alt=""></figure>
+								<div class="carData">
+									<em class="carName">올 뉴 말리부</em>
+									<span class="store">퍼스트제주트래블모빌리티</span>
+									<div class="conUtil">
+										<span class="icoScore" title="평균 평점">4.7<i title="리뷰 갯수">(1,307)</i></span>
+									</div>
+									<ul class="info">
+										<li>준중형</li>
+										<li>4인승</li>
+										<li>휘발유</li>
+										<li>일반자차</li>
+									</ul>
+								</div>
+								<span class="price">56,000원</span>
+								<div class="rentTime">21.01.02(수) 09:00 ~ 21.02.02(목) 09:00 <span class="timeFlag">24시간</span></div>							
+                            </a>
+						</li>
+						<li class="swiper-slide rentcarItem">
+							<a href="#" role="button">
+                                <figure><img src="/resource/PC/images/dummy/@car.png" alt=""></figure>
+								<div class="carData">
+									<em class="carName">올 뉴 말리부</em>
+									<span class="store">퍼스트제주트래블모빌리티</span>
+									<div class="conUtil">
+										<span class="icoScore" title="평균 평점">4.7<i title="리뷰 갯수">(1,307)</i></span>
+									</div>
+									<ul class="info">
+										<li>준중형</li>
+										<li>4인승</li>
+										<li>휘발유</li>
+										<li>일반자차</li>
+									</ul>
+								</div>
+								<span class="price">56,000원</span>
+								<div class="rentTime">21.01.02(수) 09:00 ~ 21.02.02(목) 09:00 <span class="timeFlag">24시간</span></div>							
+                            </a>
+						</li>
+						<li class="swiper-slide rentcarItem">
+							<a href="#" role="button">
+                                <figure><img src="/resource/PC/images/dummy/@car.png" alt=""></figure>
+								<div class="carData">
+									<em class="carName">올 뉴 말리부</em>
+									<span class="store">퍼스트제주트래블모빌리티</span>
+									<div class="conUtil">
+										<span class="icoScore" title="평균 평점">4.7<i title="리뷰 갯수">(1,307)</i></span>
+									</div>
+									<ul class="info">
+										<li>준중형</li>
+										<li>4인승</li>
+										<li>휘발유</li>
+										<li>일반자차</li>
+									</ul>
+								</div>
+								<span class="price">56,000원</span>
+								<div class="rentTime">21.01.02(수) 09:00 ~ 21.02.02(목) 09:00 <span class="timeFlag">24시간</span></div>							
+                            </a>
+						</li>
+						<li class="swiper-slide rentcarItem">
+							<a href="#" role="button">
+                                <figure><img src="/resource/PC/images/dummy/@car.png" alt=""></figure>
+								<div class="carData">
+									<em class="carName">올 뉴 말리부</em>
+									<span class="store">퍼스트제주트래블모빌리티</span>
+									<div class="conUtil">
+										<span class="icoScore" title="평균 평점">4.7<i title="리뷰 갯수">(1,307)</i></span>
+									</div>
+									<ul class="info">
+										<li>준중형</li>
+										<li>4인승</li>
+										<li>휘발유</li>
+										<li>일반자차</li>
+									</ul>
+								</div>
+								<span class="price">56,000원</span>
+								<div class="rentTime">21.01.02(수) 09:00 ~ 21.02.02(목) 09:00 <span class="timeFlag">24시간</span></div>							
+                            </a>
+						</li>
+					</ul>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+			<h3 class="titDep2">제주패스 프로모션</h3>
+			<div class="swiperWrap swiperDefault swiperEvent" data-options='{"loop": true, "autoplay": 3000, "Spacebetween": 16, "view" : 3}'>
+				<div class="swiper-container">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<a href="#" class="bannerType">
+								<figure><img src="/resource/PC/images/dummy/@promotion01.png" alt=""></figure>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" class="bannerType">
+								<figure><img src="/resource/PC/images/dummy/@promotion02.png" alt=""></figure>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" class="bannerType">
+								<figure><img src="/resource/PC/images/dummy/@promotion03.png" alt=""></figure>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" class="bannerType">
+								<figure><img src="/resource/PC/images/dummy/@promotion01.png" alt=""></figure>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" class="bannerType">
+								<figure><img src="/resource/PC/images/dummy/@promotion02.png" alt=""></figure>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" class="bannerType">
+								<figure><img src="/resource/PC/images/dummy/@promotion03.png" alt=""></figure>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="swiper-pagination">
+					<div class="btAutoplays">
+						<button type="button" class="btStop">정지</button>
+						<button type="button" class="btPlay">재생</button>
+					</div>
+				</div>	
+			</div>
+			<!-- //컨텐츠 영역 -->
+
+		</div>
+	</div><!-- //container -->
+
+	
+
+</section><!-- //wrapper -->
+<footer>
+	<div class="footInner">
+		<img src="/resource/PC/images/dummy/@footer.png" alt="">
+	</div>
+</footer>
+
+<aside>
+	<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+</aside>
+
+<section id="pop_onLoading" class="loadingPage rentcar" tabindex="0">
+	<div class="wrap-loading-bar">
+		<h1>렌터카를 검색중입니다.</h1>
+	</div>	
+	<p class="loadingTxt">관리자가 입력한 테스트 노출 영역</p>
+</section>
+
+<div class="dimmed rentcar"></div>
+
+<script type="text/javascript" src="/resource/pc/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/p_common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Path_21448" data-name="Path 21448" class="cls-1" d="M15.5 0C24.06 0 31 8.94 31 17.5c0 11.051 5.628 11.4 5.628 17.285 0 1.735-1.721 3.805-5.136 3.805H-.139c-2.736 0-4.622-1.995-4.691-3.805C-5.054 28.974 0 28.979 0 17.5 0 8.94 6.94 0 15.5 0z" transform="translate(513 1147.41)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#cacaca}.cls-3{fill:#aeaeae}
+        </style>
+    </defs>
+    <g id="Group_16610" data-name="Group 16610" transform="translate(-503 -1143)">
+        <g id="Group_16611" data-name="Group 16611" transform="translate(-.614 1)">
+            <rect id="Rectangle_12053" data-name="Rectangle 12053" class="cls-3" width="7" height="8" rx="3.5" transform="translate(525 1143)"/>
+            <circle id="Ellipse_1790" data-name="Ellipse 1790" class="cls-3" cx="6" cy="6" r="6" transform="translate(522 1180)"/>
+            <path id="Path_21447" data-name="Path 21447" class="cls-1" d="M15.5 0C25.708 0 31 8.94 31 17.5c0 11.051 5.628 11.4 5.628 17.285 0 1.735-1.721 3.805-5.136 3.805H-.139c-2.736 0-4.622-1.995-4.691-3.805C-5.054 28.974 0 28.979 0 17.5 0 8.94 5.292 0 15.5 0z" transform="translate(513 1147.41)"/>
+            <g id="Mask_Group_762" data-name="Mask Group 762" style="clip-path:url(#clip-path)">
+                <rect id="Rectangle_12052" data-name="Rectangle 12052" width="31" height="4" rx="2" transform="translate(522 1173)" style="fill:#eaeaea"/>
+            </g>
+            <path id="Path_21449" data-name="Path 21449" class="cls-1" d="M508.735 1166.232a1.5 1.5 0 0 1-1.5-1.4 19.961 19.961 0 0 1 1.56-9.477 14.756 14.756 0 0 1 2.736-4.243c.274-.287.37-.382.46-.467l.06-.058a1.5 1.5 0 1 1 2.133 2.11l-.122.12c-.037.035-.112.107-.364.371l-.014.015c-.4.413-3.934 4.24-3.454 11.429a1.5 1.5 0 0 1-1.4 1.6h-.095z" transform="translate(-.574)"/>
+            <path id="Path_21449-2" data-name="Path 21449" class="cls-1" d="M513.075 1166.232a1.5 1.5 0 0 0 1.5-1.4 19.961 19.961 0 0 0-1.56-9.477 14.756 14.756 0 0 0-2.736-4.243 12.12 12.12 0 0 0-.46-.467l-.059-.058a1.5 1.5 0 1 0-2.133 2.11l.122.12c.037.035.112.107.364.371l.014.015c.4.413 3.934 4.24 3.454 11.429a1.5 1.5 0 0 0 1.4 1.6h.094z" transform="translate(35.764)"/>
+        </g>
+    </g>
+</svg>

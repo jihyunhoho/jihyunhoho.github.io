@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="31">
+    <defs>
+        <style>
+            .cls-3{opacity:0;fill:#fff}.cls-4{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="ic_x36_arrow" transform="translate(-1698 -750)">
+        <g id="그룹_13879" data-name="그룹 13879" transform="translate(1702.027 752)" style="opacity:.77">
+            <g id="ic_x12_chevron_right" transform="rotate(90 11.47 9.47)">
+                <path id="패스_17151" data-name="패스 17151" class="cls-4" d="m0 0 8.034 8.034L0 16.066" transform="translate(7.821 2.437)"/>
+            </g>
+            <g id="ic_x12_chevron_right-2" data-name="ic_x12_chevron_right" transform="rotate(90 6.443 14.498)">
+                <path id="패스_17152" data-name="패스 17152" class="cls-4" d="m0 0 8.034 8.034L0 16.066" transform="translate(7.764 2.437)"/>
+            </g>
+        </g>
+    </g>
+</svg>

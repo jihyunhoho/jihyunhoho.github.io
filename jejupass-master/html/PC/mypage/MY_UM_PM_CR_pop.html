@@ -1,0 +1,206 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>카드등록 | 제주패스</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, user-scalable=no, width=1366">
+<link rel="shortcut icon" type="image/x-icon" href="/resource/PC/images/favicon/favicon.ico">
+<link href="/resource/PC/css/p_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/PC/css/p_contents.min.css" rel="stylesheet" type="text/css">
+<style>
+    .layPop{display: block}
+    .dimmed{display: block;opacity: 1}
+</style>
+</head>
+
+<body>
+
+<section id="pop_cardInp" class="layPop layerM" tabindex="0">
+	<header>
+		<h2 class="titLay">카드등록</h2>
+	</header>
+	<div class="layContainer scriptScroll" tabindex="0">
+		<!-- 20211230 상단 tab 추가, 개인-CVC input 삭제, 법인 영역 추가 -->
+		<ul class="tabType01 tabBasics">
+			<li><a href="#" role="button" class="tabCont" aria-selected="true" data-controls="tabContents01">개인</a></li>
+			<li><a href="#" role="button" class="tabCont" aria-selected="false" data-controls="tabContents02">법인</a></li>
+		</ul>
+		<p class="pageTit pageTitP">카드정보를 정확히 입력해주세요</p>	
+		<div id="tabContents01" class="tabContentWrap tabON">
+			<ul class="inpCard">
+				<li>
+					<div class="inpFrm">
+						<label for="inpCard" class="titLab">카드번호</label>
+						<div class="inputWrapper">
+							<span class="inpA">
+								<input type="text" id="inpCard">
+							</span>	
+							<span class="inpA">
+								<input type="text" id="inpCard">
+							</span>	
+							<span class="inpA">
+								<input type="text" id="inpCard">
+							</span>	
+							<span class="inpA">
+								<input type="text" id="inpCard">
+							</span>	
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="inpFrm inpDeleteAni">
+						<label for="cardCom" class="titLab">카드사</label>
+						<span class="inpA">
+							<input type="text" id="cardCom" placeholder="신한카드" title="카드사를 입력해주세요">
+							<button type="button" class="icDel">삭제</button>
+						</span>
+					</div>
+				</li>
+				<li>
+					<div class="inpFrm inpDeleteAni">
+						<label for="deadLine" class="titLab">유효기간</label>
+						<span class="inpA">
+							<input type="text" id="deadLine" placeholder="MMYY" title="유효기간을 입력해주세요">
+							<button type="button" class="icDel">삭제</button>
+						</span>
+					</div>
+					<p class="txtErr">유효기간을 정확히 입력해주세요.</p>
+				</li>
+				<li>
+					<div class="inpFrm inpDeleteAni">
+						<label for="pwNum" class="titLab">비밀번호</label>
+						<span class="inpA">
+							<input type="text" id="pwNum" placeholder="앞 2자리" title="앞 2자리">
+							<button type="button" class="icDel">삭제</button>
+						</span>
+					</div>
+					<p class="txtErr">카드 비밀번호 앞 2자리를 정확히 입력해주세요.</p>
+				</li>
+				<li>
+					<div class="inpFrm inpDeleteAni">
+						<label for="birthNum" class="titLab">생년월일</label>
+						<span class="inpA">
+							<input type="text" id="birthNum" placeholder="YYYMMDD(예시: 901030)" title="YYYMMDD(예시: 901030)">
+							<button type="button" class="icDel">삭제</button>
+						</span>
+					</div>
+					<p class="txtErr">6자리 생년월일를 정확히 입력해주세요.</p>
+				</li>
+			</ul>
+			<div class="grayBox agree forPop">
+				<span class="frmInp txt large"><input type="checkbox" id="chkAll"><label for="chkAll">카드사 서비스 이용약관</label></span>
+				<ul class="agreeList">
+					<li>
+						<span class="frmInp txt frmInpS">
+							<input type="checkbox" id="chk01" required><label for="chk01"><em>[필수]</em> 카드사 서비스 이용약관</label>
+							<a href="#" role="button" class="viewBtn layPopBtn" data-id="pop_agree-01"><i class="hidden">내용보기</i></a>
+						</span>
+					</li>
+					<li>
+						<span class="frmInp txt frmInpS">
+							<input type="checkbox" id="chk02" required><label for="chk02" ><em>[필수]</em> 개인정보 수집&middot;이용 및 제3자 정보제공 동의</label>
+							<a href="#" role="button" class="viewBtn layPopBtn" data-id="pop_agree-02"><i class="hidden">내용보기</i></a>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>	
+		<div id="tabContents02" class="tabContentWrap">
+			<ul class="inpCard">
+				<li>
+					<div class="inpFrm">
+						<label for="inpCard" class="titLab">카드번호</label>
+						<div class="inputWrapper">
+							<span class="inpA">
+								<input type="text" id="inpCard">
+							</span>	
+							<span class="inpA">
+								<input type="text" id="inpCard">
+							</span>	
+							<span class="inpA">
+								<input type="text" id="inpCard">
+							</span>	
+							<span class="inpA">
+								<input type="text" id="inpCard">
+							</span>	
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="inpFrm inpDeleteAni">
+						<label for="deadLine" class="titLab">유효기간</label>
+						<span class="inpA">
+							<input type="text" id="deadLine" placeholder="MMYY" title="유효기간을 입력해주세요">
+							<button type="button" class="icDel">삭제</button>
+						</span>
+					</div>
+					<p class="txtErr">유효기간을 정확히 입력해주세요.</p>
+				</li>
+				<li>
+					<div class="inpFrm">
+						<label for="inpBsCard" class="titLab">사업자번호</label>
+						<div class="inputWrapper">
+							<span class="inpA type03">
+								<input type="text" id="inpBsCard">
+							</span>	
+							<span class="inpA type03">
+								<input type="text" id="inpBsCard">
+							</span>	
+							<span class="inpA type03">
+								<input type="text" id="inpBsCard">
+							</span>	
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="inpFrm inpDeleteAni">
+						<label for="pwNum" class="titLab">비밀번호</label>
+						<span class="inpA">
+							<input type="text" id="pwNum" placeholder="앞 2자리" title="앞 2자리">
+							<button type="button" class="icDel">삭제</button>
+						</span>
+					</div>
+					<p class="txtErr">카드 비밀번호 앞 2자리를 정확히 입력해주세요.</p>
+				</li>
+			</ul>
+			<div class="grayBox agree forPop">
+				<span class="frmInp txt large"><input type="checkbox" id="chkAll"><label for="chkAll">카드사 서비스 이용약관</label></span>
+				<ul class="agreeList">
+					<li>
+						<span class="frmInp txt frmInpS">
+							<input type="checkbox" id="chk01" required><label for="chk01"><em>[필수]</em> 카드사 서비스 이용약관</label>
+							<a href="#" role="button" class="viewBtn layPopBtn" data-id="pop_agree-01"><i class="hidden">내용보기</i></a>
+						</span>
+					</li>
+					<li>
+						<span class="frmInp txt frmInpS">
+							<input type="checkbox" id="chk02" required><label for="chk02" ><em>[필수]</em> 개인정보 수집&middot;이용 및 제3자 정보제공 동의</label>
+							<a href="#" role="button" class="viewBtn layPopBtn" data-id="pop_agree-02"><i class="hidden">내용보기</i></a>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>	
+		<!-- //20211230 상단 tab 추가, 개인-CVC input 삭제, 법인 영역 추가 -->
+	</div><!-- //layContainer-->
+	<div class="btnArea">
+		<button type="button" class="btnDefault btnL action">등록</button>
+	</div>
+	<button type="button" class="closeL">팝업 닫기</button>
+
+</section>
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/PC/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_common.js"></script>
+
+
+</body>
+</html>

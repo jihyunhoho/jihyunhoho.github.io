@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no" />
+<title>로딩화면 - 여행으로 연결되는 더 큰 세상! 토파스 항공예약</title>
+<link href="/air/css/kfx/mbl/airA.css" rel="stylesheet" type="text/css">
+<!-- <script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../../js/common_mbl.js"></script> -->
+</head>
+<body>
+<input type="button" value="click" id="test"  title="팝업창확인하기"/>
+<div id="test2" style="display: none;">
+    <img src="/air/wfw/imgs/mbl/common/image_906157.gif" alt="로딩중입니다" />
+</div>
+    <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.66.0-2013.10.09/jquery.blockUI.min.js"></script>
+    <script>
+        $('#test').click(function (){
+            var blockStyle = {
+                backgroundColor : "#FFF",
+                opacity : 0.5,
+                cursor : "wait"
+            };
+            var style = {
+                width: '150px',
+                left: '50%',
+                top: '50%',
+				border:'none',
+//				margin-left:'-60px'
+				backgroundColor: 'none',
+				margin: '-60px 0px 0px -75px'
+
+            };
+
+            // $.uiBlockByJq("test", {
+            //     css : style,
+            //     overlayCSS : blockStyle
+            // });
+
+            $.blockUI({
+                message : '<img src="/air/wfw/imgs/mbl/airA/logo/loading_logo.png" alt="기업로고" width="150" style="margin-bottom:20px" ><img src="/air/wfw/imgs/mbl/airA/common/loding_spinner_02.gif" alt="로딩중입니다" width="32">',
+                css : style,
+                overlayCSS : blockStyle
+            });
+        });
+    </script>
+</body>
+</html>

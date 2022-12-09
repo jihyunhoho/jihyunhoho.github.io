@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #eaeaea;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="ic_x50_alertnotice" transform="translate(-233 -526)">
+    <rect id="사각형_2870" data-name="사각형 2870" class="cls-1" width="50" height="50" transform="translate(233 526)"/>
+    <g id="notice">
+      <circle id="Ellipse_113" data-name="Ellipse 113" class="cls-2" cx="25" cy="25" r="25" transform="translate(233 526)"/>
+      <rect id="Rectangle_178" data-name="Rectangle 178" class="cls-3" width="6" height="15" rx="3" transform="translate(255 540)"/>
+      <rect id="Rectangle_179" data-name="Rectangle 179" class="cls-3" width="6" height="6" rx="3" transform="translate(255 557)"/>
+    </g>
+  </g>
+</svg>

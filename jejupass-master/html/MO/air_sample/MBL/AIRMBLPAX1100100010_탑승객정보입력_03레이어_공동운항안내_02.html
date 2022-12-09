@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no" />
+<title>탑승객정보입력(레이어_공동운항안내) - 여행으로 연결되는 더 큰 세상! 토파스 항공예약</title>
+<link href="/air/css/kfx/mbl/airA.css" rel="stylesheet" type="text/css">
+<!-- <script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../../js/common_mbl.js"></script> -->
+</head>
+<body>
+<div id="k1_container">
+	<jsp:include page="/AIR/MBL/inc/mbl_header.html" />
+
+	<section>
+		<div class="k1_top_panel">
+			<ul>
+				<li class="back"><a href="#none" class="k1_btn"><span class="k1_icon back"></span>이전</a></li>
+				<li class="bread_crumb"><span>탑승객 정보입력</span></li>
+			</ul>
+		</div>
+		<div class="k1_grid k1_bg_light_gray1 k1_pdt20">
+			<h3><span class="k1_icon subscriber"></span>예약자 정보</h3>
+			<table class="k1_box">
+				<colgroup>
+					<col class="k1_w_basis" />
+					<col />
+				</colgroup>
+				<tr>
+					<th>성명</th>
+					<td>
+						<span class="k1_custom_ipt"><input type="text"  name=""  title="성명 입력" /></span>
+					</td>
+				</tr>
+				<tr>
+					<th>이메일</th>
+					<td>
+						<span class="k1_custom_ipt"><input type="text"  name="" title="이메일 주소 입력" /></span>
+					</td>
+				</tr>
+				<tr>
+					<th>휴대폰</th>
+					<td>
+						<ul class="linear">
+							<li class="k1_w33pct">
+								<span class="k1_custom_sel">
+									<select  name="" class="k1_w100pct">
+										<option>010</option>
+										<option>011</option>
+										<option>016</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</span>
+							</li>
+							<li class="k1_w33pct">
+								<span class="k1_custom_ipt"><input type="tel"  name="" maxlength="4" /></span>							
+							</li>
+							<li class="k1_w33pct">
+								<span class="k1_custom_ipt"><input type="tel"  name="" maxlength="4" /></span>							
+							</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+
+			<h3 class="k1_mgt20"><span class="k1_icon passenger"></span>탑승객 정보</h3>
+			<table class="k1_box">
+				<caption><img src="../../images/ico/adult.gif" alt="성인" />성인 1</caption>
+				<colgroup>
+					<col class="k1_w_basis" />
+					<col />
+				</colgroup>
+				<tr>
+					<th>영문성명</th>
+					<td>
+						<ul class="linear">
+							<li class="k1_w50pct">
+								<span class="k1_custom_ipt"><input type="text"  name="" placeholder="예: HONG" title="영문 성 입력" /></span>
+							</li>
+							<li class="k1_w50pct">
+								<span class="k1_custom_ipt"><input type="text"  name="" placeholder="예: GILDONG" title="영문 이름 입력" /></span>						
+							</li>
+						</ul>
+						
+					</td>
+				</tr>
+				<tr>
+					<th>생년월일</th>
+					<td>
+						<ul class="linear">
+							<li class="k1_w33pct">
+								<span class="k1_custom_sel">
+									<select  name="" class="k1_w100pct">
+										<option>년</option>
+										<option>1981</option>
+									</select>
+								</span>
+							</li>
+							<li class="k1_w33pct">
+								<span class="k1_custom_sel">
+									<select  name="" class="k1_w100pct">
+										<option>월</option>
+										<option>01</option>
+										<option>12</option>
+									</select>
+								</span>					
+							</li>
+							<li class="k1_w33pct">
+								<span class="k1_custom_sel">
+									<select  name="" class="k1_w100pct">
+										<option>일</option>
+										<option>01</option>
+										<option>31</option>
+									</select>
+								</span>						
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th>성별</th>
+					<td>
+						<span class="k1_custom_rad">
+							<input type="radio" id="rad1_1" name="rad1" />
+							<label for="rad1_1">남성</label>
+						</span>
+						<span class="k1_custom_rad">
+							<input type="radio" id="rad1_2" name="rad1" />
+							<label for="rad1_2">여성</label>
+						</span>						
+					</td>
+				</tr>
+			</table>
+
+			<h3 class="k1_mgt20"><span class="k1_icon rule"></span>예약규정</h3>
+			<div class="k1_reservation_rule">
+				<ul class="k1_tab t5"><!--t2~t5 탭메뉴수-->
+					<li class="tab01 active">
+						<a href="#none" class="tab01_view_btn">
+							<span class="k1_icon_min anchor"></span>
+							일반규정
+						</a>
+					</li>
+					<li class="tab02">
+						<a href="#none" class="tab02_view_btn">
+							<span class="k1_icon_min anchor"></span>
+							운임규정
+						</a>
+					</li>
+					<li class="tab03">
+						<a href="#none" class="tab03_view_btn">
+							<span class="k1_icon_min anchor"></span>
+							환불규정
+						</a>
+					</li>
+					<li class="tab04">
+						<a href="#none" class="tab04_view_btn">
+							<span class="k1_icon_min anchor"></span>
+							결제규정
+						</a>
+					</li>
+					<li class="tab05">
+						<a href="#none" class="tab05_view_btn">
+							<span class="k1_icon_min anchor"></span>
+							개인정보<br />취급방침
+						</a>
+					</li>
+				</ul>
+				<div class="k1_tabview tab01">
+					<div class="k1_scrolls">
+						<span class="k1_clr222"><strong>항공약관</strong></span>
+						<span class="k1_clr222">▶ 결제관련</span><br />
+						- 항공사 결제시한 까지 결제가 이루어 지지 않으면 예약이 자동 취소될 수 있으며 이에 대해 책임은 고객님께 있습니다.<br />
+						- 마이페이지의 결제시한은 항공사 결제시한에 의해 변경될 수 있으며 결제시한 이후에는 요금이 인상될수 있습니다.<br />
+						- 예약 후 결제시한이 토,일 또는 공휴일일 경우에는 발권업무를 하지 않으므로 미리 확인하시어 당일 15시까지 결제요청해주시기 바랍니다.<br /> 
+						- 업무시간:평일 09:00-18:00,토요일 09:00-13:00<br /> 
+						- 해외발행카드와 제3자 카드는 결제가 불가능합니다. 
+					</div>
+				</div>
+			</div><!--// k1_reservation_rule -->
+			<div class="k1_agreement">
+				<div class="k1_fl">
+					<div class="k1_custom_chk">
+						<input type="checkbox" id="chk1" name="chk1" />
+						<label for="chk1">일반규정에 동의함</label>
+					</div>
+				</div>
+				<div class="k1_fr">
+					<div class="k1_custom_chk dark">
+						<input type="checkbox" id="chk2" name="chk2" />
+						<label for="chk2">전체동의</label>
+					</div>
+				</div>
+			</div>
+			<div class="k1_btn_wrap">
+				<a href="#none" class="k1_btn max dark"><span class="k1_icon ticket"></span>예약하기</a>
+			</div>
+		</div><!--// k1_grid -->
+	</section>
+
+	<jsp:include page="/AIR/MBL/inc/mbl_footer.html" />
+	<jsp:include page="/AIR/MBL/inc/mbl_side.html" />	
+	<div class="k1_slide_blind"></div>
+</div><!--// k1_container -->
+<div id="k1_pop01" class="k1_pop_wrap" style="display:none;">
+	<div class="k1_pop">
+		<h3>
+			비자여부
+			<a href="#" class="k1_btn close_btn"><span class="k1_icon_min pop-close"></span></a>
+		</h3>
+		<div class="cont">
+			<ul>
+				<li>
+					<strong>
+						선택하신 도시는 VISA가 반드시 필요한 곳입니다.<br />
+						아래 사항을 점검해 주십시오.
+					</strong>
+				</li>
+				<li class="ord">
+					<span class="k1_num n1"></span>
+					VISA 필요 여부를 반드시 점검해 주시기 바랍니다.
+				</li>
+				<li class="ord">
+					<span class="k1_num n2"></span>
+					VISA의 유효기간을 반드시 확인해 주시기 바랍니다.
+				</li>
+			</ul>
+		</div>
+	</div>
+</div><!--// k1_pop_wrap -->
+
+<div id="k1_pop02" class="k1_pop_wrap">
+	<div class="k1_pop">
+		<h3>
+			공동운항 안내
+			<a href="#" class="k1_btn close_btn"><span class="k1_icon_min pop-close"></span></a>
+		</h3>
+		<div class="cont">
+			<ul>
+				<li>
+					<strong>
+						해당 항공편은 공동운항편입니다.
+						<span class="desc">* 진에어 항공기로 운항하는 대한항공/진에어 공동운항편 입니다..</span>
+					</strong>
+				</li>
+				<li class="ord">
+					<span class="k1_num n1"></span>
+					공동운항편 탑승수속은 실제 운항항공사인 진에어 카운터를 이용해 주시기 바라며, 운항 항공사 규정에 따라 탑승수속 마감 시간이 상이할 수 있으니 반드시 사전에 확인해 주시기 바랍니다.
+				</li>
+				<li class="ord">
+					<span class="k1_num n2"></span>
+					공동운항편 제반 서비스는 양사간 협의 하에 제공되나, 기본적으로 진에어 기준을 따릅니다.
+				</li>
+				<li>
+					<strong>
+					</strong>
+				</li>
+			</ul>
+			<ul class="k1_mgt15">
+				<li>* 사전좌석 배정 서비스 미운영, 아기바구니 제공 불가</li>
+				<li>* 라운지 미제공, 물 외 음료 유료 제공</li>
+				<li>* 진에어 수속 카운터에서 마일리지 적립 불가: 예약 직후 My항공권에서 마일리지 번호 입력을 당부 드립니다.</li>
+				<li>* 반드시 항공편 상세정보(비행 상세정보)를 확인 후 예약해 주시기 바랍니다.</li>
+			</ul>
+			
+			<div class="k1_btn_wrap">
+				<div class="k1_fl k1_w50pct">
+					<a href="#none" class="k1_btn max dark">확인</a>
+				</div>
+				<div class="k1_fr k1_w50pct">
+					<a href="#none" class="k1_btn max">취소</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div><!--// k1_pop_wrap -->
+</body>
+</html>

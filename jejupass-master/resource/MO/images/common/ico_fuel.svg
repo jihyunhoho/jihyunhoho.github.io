@@ -1,0 +1,15 @@
+<svg id="ic_x12_oil_solid" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #cacaca;
+      }
+    </style>
+  </defs>
+  <path id="Vector" class="cls-1" d="M0,0H12V12H0Z"/>
+  <path id="Vector-2" data-name="Vector" class="cls-2" d="M4.5,0S0,4.735,0,7.636A4.446,4.446,0,0,0,4.5,12,4.446,4.446,0,0,0,9,7.636C9,4.735,4.5,0,4.5,0Z" transform="translate(1)"/>
+</svg>

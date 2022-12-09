@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+    <path style="fill:none" d="M0 0h18v18H0z"/>
+    <path d="M3.3 1.648A1.648 1.648 0 1 1 1.648 0 1.648 1.648 0 0 1 3.3 1.648z" transform="translate(7.352 5.704)" style="fill:#aeaeae"/>
+    <path data-name="Vector" d="M10.989 5.494c0 4.945-5.494 8.791-5.494 8.791S0 10.439 0 5.494a5.494 5.494 0 0 1 10.989 0z" transform="translate(3.506 1.858)" style="stroke:#aeaeae;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+</svg>

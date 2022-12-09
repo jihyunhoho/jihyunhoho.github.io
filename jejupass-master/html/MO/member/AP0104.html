@@ -1,0 +1,167 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>회원가입(정보입력) | 제주패스</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="/resource/MO/images/favicon/apple_touch_icon.ico">
+<link rel="apple-touch-icon" href="/resource/MO/images/favicon/apple_touch_icon_144.ico">
+<link href="/resource/MO/css/m_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/MO/css/m_contents.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper defaultWrapper">
+	<header>
+		<button type="button" class="btPrev">이전</button>
+		<h1 class="titDep1">회원가입</h1>
+	</header>
+
+	<div id="container" class="container">
+		<fieldset class="signFrm">
+			<legend>회원가입 정보입력</legend>
+			<div class="inpFrm inpDeleteAni"><!-- input value값 있을 때 삭제버튼 출력 -->
+				<label for="inp_id">아이디(이메일)</label>
+				<span class="inpA inpBtns">
+					<input type="email" id="inp_id" placeholder="example@jejupass.com" title="example@jejupass.com">
+					<button type="button" class="icDel">삭제</button>
+					<button type="button" class="btnDefault btnM action" disabled>중복확인</button>
+				</span>
+				<p class="txtInfo">아이디(이메일)을 입력해주세요.</p>
+			</div>
+			<!-- 20211020 : 카페패스(삭제) -->
+			<div class="inpFrm inpDeleteAni"><!-- input value값 있을 때 삭제버튼 출력 -->
+				<label for="inp_pwd">비밀번호</label>
+				<span class="inpA">
+					<input type="password" id="inp_pwd" placeholder="영문, 숫자, 특수문자 8 ~ 16자 이내" title="영문, 숫자, 특수문자 8 ~ 16자 이내"><!-- 20211130 : 문구(변경) -->
+					<button type="button" class="icDel">삭제</button>
+				</span>
+				<p class="txtInfo">비밀번호를 입력해주세요.</p>
+				<p class="txtErr">최소 8자 이상 입력해주세요.</p><!-- 20211130 : 문구(변경) -->
+			</div>
+			<div class="inpFrm inpDeleteAni inpError"><!-- input data 오류시 inpError 클래스 추가 -->
+				<label for="inp_repwd">비밀번호 확인</label>
+				<span class="inpA">
+					<input type="password" id="inp_repwd" placeholder="확인을 위해 한번 더 입력해주세요." title="확인을 위해 한번 더 입력해주세요.">
+					<button type="button" class="icDel">삭제</button>
+				</span>
+			</div>
+		</fieldset>
+		<fieldset class="signFrm topLine">
+			<legend>정보입력</legend>
+			<div class="inpFrm">
+				<label for="inp_name">이름</label>
+				<span class="inpA">
+					<input type="text" id="inp_name" value="김제주" disabled>
+				</span>
+			</div>
+			<div class="inpFrm">
+				<span class="label_tit">생년월일</span>
+				<div class="select-group birth">
+					<div class="selectWrap">
+						<!-- 1931~2002(1990:Default) -->
+						<select title="생년" data-msg="년" data-header="년도">
+							<option value="1931">1931</option><option value="1932">1932</option><option value="1933">1933</option><option value="1934">1934</option><option value="1935">1935</option>
+							<option value="1990" selected>1990</option>
+							<option value="2002">2000</option><option value="2002">2001</option><option value="2002">2002</option>
+						</select>
+					</div>
+					<div class="selectWrap">
+						
+						<select title="생월" data-msg="월" data-header="월">
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option>
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option>
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+					</div>
+					<div class="selectWrap">
+						<select title="생일" data-msg="일" data-header="일">
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option>
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option>
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="inpFrm">
+				<label for="inp_phnum">휴대전화번호</label>
+				<span class="inpA">
+					<input type="tel" id="inp_phnum" value="01012345678" disabled>
+				</span>
+			</div>
+			<div class="inpFrm">
+				<span class="label_tit">성별</span>
+				<ul class="frmBox frmTog">
+					<li><input type="radio" id="radMale" name="radSex" checked><label for="radMale">남자</label></li>
+					<li><input type="radio" id="radFemale" name="radSex"><label for="radFemale">여자</label></li>
+				</ul>
+			</div>
+		</fieldset>
+		<button type="button" class="btnDefault btnL action" disabled>확인</button><!-- 12.02 클래스 추가 -->
+		<button type="button" class="btnDefault btnL btDisabled">확인</button>
+	</div><!-- //container -->
+
+</section><!-- //wrapper -->
+<footer>
+	<img src="/resource/MO/images/dummy/@footer.png" alt="">
+</footer>
+
+<aside>
+	<div class="asideRight">
+		<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+	</div>
+</aside>
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+
+</body>
+</html>

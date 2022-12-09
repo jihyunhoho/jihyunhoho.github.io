@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* icon : flight, calendar, search, condition, login, file, caution, ... */
+.k1_icon{display:inline-block;width:22px;height:22px;background-image:url(/air/wfw/imgs/mbl/airB/ico/icon.png);background-repeat:no-repeat;background-size:110px 176px;vertical-align:top;}
+.k1_icon.airplane{margin:-3px -2px 0 0;background-position:-44px 0;}
+.k1_icon.file{margin:-5px 6px 0 0;background-position:0 -66px;}
+.k1_icon.caution{margin:-5px 4px -1px 0;background-position:-22px -66px;}
+.k1_icon.subscriber{margin:-5px 6px 0 0;background-position:-44px -66px;}
+.k1_icon.passenger{margin:-5px 6px 0 0;background-position:-66px -66px;}
+.k1_icon.rule{margin:-5px 6px 0 0;background-position:-88px -66px;}
+.k1_icon.cost{width:44px;margin:-5px -6px 0 -10px;background-position:-22px -110px;}
+.k1_icon.schedule{margin:-5px 6px 0 0;background-position:0 -110px;}
+.k1_icon.check{margin:-5px 6px 0 0;background-position:-66px -110px;}
+.k1_icon.rsv-details{margin:-5px 6px 0 0;background-position:0 -132px;}
+.k1_icon.visa{margin:-5px 6px 0 0;background-position:-22px -132px;}
+.k1_icon.paper{margin:-5px 6px 0 0;background-position:-44px -132px;}
+.k1_icon.pay{margin:-5px 6px 0 0;background-position:-66px -132px;}
+.k1_icon.issue-ticket{margin:-5px 6px 0 0;background-position:-88px -132px;}
+.k1_icon.card{background-position:0 -154px;}
+.k1_icon.cash{background-position:-22px -154px;}
+.k1_icon.cancel{margin:-5px 2px 0 0;background-position:-88px -154px;}
+.k1_icon.complete{width:44px;background-position:-22px -88px;}
+.k1_icon.srch{width:20px; height:20px;background-position:-26px -48px;}
+
+
+/* minimum icon : clock, airplane, ... */
+.k1_icon_min{display:inline-block;width:15px;height:15px;background-image:url(/air/wfw/imgs/mbl/airB/ico/icon-min.png);background-repeat:no-repeat;background-size:120px 15px;vertical-align:top;}
+.k1_icon_min.time{margin-right:3px;}
+.k1_icon_min.air{background-position:-15px 0;}
+.k1_icon_min.anchor{background-position:-45px 0;}
+
+/* numbering */
+.k1_num{display:inline-block;width:13px;height:13px;background-image:url(/air/wfw/imgs/mbl/ico/num.png);background-repeat:no-repeat;background-size:26px;vertical-align:top;}
+.k1_num.n2{background-position:-13px 0;}
+.k1_num.n3{background-position:0px -13px;}
+.k1_num.n4{background-position:-13px -13px;}
+.k1_num.n5{background-position:0px -26px;}
+.k1_num.n6{background-position:-13px -26px;}
+.k1_num.n7{background-position:0px -39px;}
+.k1_num.n8{background-position:-13px -39px;}
+.k1_num.n9{background-position:0px -52px;}
+.k1_num.n10{background-position:-13px -52px;}
+
+/* interval icon */
+.k1_sch_info_panel .k1_from_to{display:inline-block;width:70px;height:9px;margin-left:25px;background-image:url(/air/wfw/imgs/mbl/airB/common/from-to.png);background-repeat:no-repeat;background-size:70px 9px;vertical-align:top;}
+
+/*로딩애니메이션*/
+@-webkit-keyframes ex {
+    0% {left:0;}
+    100% {left:100%;}
+}
+@keyframes ex {
+    0% {left:0;}
+    100% {left: 100%;}
+}
+.ico-plane {-webkit-animation: 3s ex infinite;animation: 3s ex infinite;}
+
+/*card icon*/
+.card img{height:17px}

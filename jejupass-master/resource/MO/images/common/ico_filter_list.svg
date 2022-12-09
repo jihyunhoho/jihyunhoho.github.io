@@ -1,0 +1,22 @@
+<svg id="ic_x12_filter_list" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        opacity: 0;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_2611" data-name="Rectangle 2611" class="cls-1" width="12" height="12"/>
+  <g id="icon_list" transform="translate(1 1)">
+    <rect id="Rectangle_1146" data-name="Rectangle 1146" class="cls-2" width="2" height="2" rx="1"/>
+    <rect id="Rectangle_1147" data-name="Rectangle 1147" class="cls-2" width="7" height="2" rx="1" transform="translate(3.5)"/>
+    <rect id="Rectangle_2651" data-name="Rectangle 2651" class="cls-2" width="2" height="2" rx="1" transform="translate(0 4)"/>
+    <rect id="Rectangle_2652" data-name="Rectangle 2652" class="cls-2" width="7" height="2" rx="1" transform="translate(3.5 4)"/>
+    <rect id="Rectangle_2653" data-name="Rectangle 2653" class="cls-2" width="2" height="2" rx="1" transform="translate(0 8)"/>
+    <rect id="Rectangle_2654" data-name="Rectangle 2654" class="cls-2" width="7" height="2" rx="1" transform="translate(3.5 8)"/>
+  </g>
+</svg>

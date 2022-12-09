@@ -1,0 +1,502 @@
+@charset "utf-8";
+
+@import '_mbase', '_mfont';
+
+/* 공통 결제 */
+.togglePayment{
+	> .acctItem{border-bottom:1px solid $col_g200;
+		> .toggleBtn{height:61px;padding:0 38px 0 0;text-align:right;
+			&:after{margin-top:-5px}
+			.tit{float:left;color:$col_g900;font-size:rem(18px);font-weight:$weight700;line-height:61px}
+			.payContR{color:$col_g900;font-size:rem(18px);font-weight:$weight700;line-height:61px}
+			&[aria-expanded=true]{
+				&:after{margin-top:-3px}
+				.payContR{display:none}
+			}
+		}
+		.toggleCont{border-top:1px dashed $col_g200;}
+		&.paySale{
+			.toggleBtn .payContR{color:$col_redP}
+		}
+		.saleCont{padding:18px 0;
+			input{font-weight:$weight600}
+			> .titPay{display:block;margin:24px 0 8px;color:$col_g800;font-size:rem(14px);font-weight:$weight600;line-height:1.14;
+				&:first-child{margin-top:0}
+				.subCont{display:inline-block;padding-left:8px;color:$col_g600;font-size:rem(14px);
+					a{text-decoration:underline}
+				}
+			}
+			.inpBtns{display:flex;
+				.btnDefault{flex:0 0 72px;margin-left:6px}
+				& + .frmInp{margin-top:11px}
+				&.inpPoint{position:relative;
+					input{padding-right:30px;text-align:right}
+					.unit{position:absolute;top:13px;right:106px;font-weight:$weight600}
+					.btnDefault{flex:0 0 84px;}
+				}
+			}
+			
+		}
+		&.payPrice{
+			.toggleBtn .payContR{color:$col_p600}
+		}
+	}
+	.btnsPayEtc{position:relative;margin:0 -12px;padding:15px 0;font-size:0;
+		&:before{content:'';display:block;position:absolute;top:0;left:12px;right:12px;border-top:1px dashed $col_g200;}
+		.btLink02{font-weight:$weight600;
+			em{color:$col_p600;}
+			& + .btLink02{padding-left:25px;
+				&:before{content:'';display:block;position:absolute;top:50%;left:12px;width:1px;height:14px;margin-top:-6px;background:$col_g200} 
+			}
+		}
+	}
+}
+.kf_payList{padding:20px 0 0;
+	> li{display:flex;margin-top:12px;width:100%;
+		&:first-child{margin-top:0}
+		.tit, .contR{width:100%;color:$col_g800;font-weight:$weight600;line-height:1.2}
+		.tit{width:50%;
+			.btDel{@extend %textHidden;position:relative;width:18px;height:18px;margin-left:4px;vertical-align:-2px;
+				&:after{@include pseudo(18px,18px);background:url(#{$img_url}/common/spr_ico.svg) no-repeat -66px -54px}
+			}
+		}
+		strong.contR{padding-bottom:0;font-weight:$weight400;text-align:right;}
+		&.total{margin-top:16px;padding:18px 0;border-top:1px dashed $col_g300;
+			.tit{color:$col_g900;font-size:rem(16px);font-weight:$weight700}
+			.contR{color:$col_g900;font-size:rem(16px);font-weight:$weight700}
+		}
+	}	
+	& + .btnArea{margin-top:24px}
+	&.type02{margin-top:24px;padding-top:23px;border-top:1px dashed $col_g300;
+		> li{
+			.tit{width:200%}
+			.contR{font-weight:$weight600;
+				&.balance{color:$col_p600}
+			}
+		}
+	}
+	&.typeSub{
+		> li{display:block;text-align:right;margin-top:12px;
+			&:first-child{margin-top:0}
+			.tit{display:inline-block;float:left;width:auto;color:$col_g800;font-weight:$weight600}
+			.contR{display:inline-block;width:auto;color:$col_g800;font-weight:$weight600}
+			&.kf_total{margin-top:15px;border-top:1px dashed $col_g200;
+				.tit, .contR{color:$col_g800;font-size:rem(16px);font-weight:$weight700;line-height:56px}
+			}
+		}
+	}
+	.kf_payDetail{display:block;margin-top:10px;text-align:left;
+		> li{position:relative;padding-left:12px;text-align:right;
+			&:before{content:'';display:block;position:absolute;top:3px;left:0;width:5px;height:6px;border:solid $col_g300;border-width:0 0 1px 1px}
+			.tit, .contR{display:inline-block;color:$col_g600;font-size:rem(14px);font-weight:$weight400}
+			.tit{float:left}
+		}
+	}
+	&.kf_pointList{
+		> li{
+			.tit{width:100%;
+				*{vertical-align:middle}
+				.toolTip{position:relative;display:inline-block;margin-left:7px;padding:0 5px;border-radius:6px;height:20px;line-height:20px;color:$col_p300;font-size:rem(12px);font-weight:$weight600;background:$col_primary;
+					em{display:inline-block;padding-left:3px;color:$col_white}
+					&:before{content:'';display:block;position:absolute;top:50%;left:-2px;width:6px;height:6px;margin-top:-4px;border-radius:2px;background:$col_primary;@include prefix(transform,rotate(45deg) skew(-3deg, -3deg));}
+				}
+			}
+			.contR{font-weight:$weight600}
+			&.total{
+				.contR{color:$col_p600;font-weight:$weight700}
+			}
+		}
+	}
+	& + .guideInfo{margin:16px 0;
+		&:before{content:'';display:block;position:absolute;top:-17px;left:0;width:100%;height:1px;background:$col_g200}
+	}
+}
+.kf_selPayment{
+	> li{padding:20px 0;border-top:1px dashed $col_g200;
+		&:first-child{border-top:none}
+		.frmInp{
+			label{color:$col_g900;font-size:rem(16px);font-weight:$weight600}
+			&[aria-expanded=true] + .payDetailCont{display:block;margin:0 -20px}
+		}
+		.grayBox{position:relative;margin-top:16px;padding:17px 16px;
+			p.listType02{margin-top:0}
+			.btLink{position:absolute;top:50%;right:11px;margin-top:-18px;color:$col_g900;font-weight:$weight600}
+			.tit{margin-bottom:9px;font-weight:$weight600}
+			.txt{color:$col_g600;font-size:rem(14px)}
+		}
+		.payDetailCont{display:none;
+			.swiperAccount{margin:16px 0 0;padding:0 64px;
+				// .kf_applyCont{height:calc(100% - 98px)}
+			}
+			.payInstallment{padding:16px 64px 0}
+		}
+	}
+}
+.swiperAccount{margin:16px -20px -24px;padding:0 44px 24px;//padding:0 63px;
+	.swiper-wrapper{position:static;}
+	.swiper-container{width:100%;padding:0;
+		.swiper-slide{flex-direction:column;overflow:visible;transform:none}
+	}
+	.kf_cardWrap{position:relative;color:$col_white;//height:144px;
+		img{border-radius:12px;box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.08)}
+		.acctName{position:absolute;top:20px;left:20px;color:rgba($col_white, 0.8);font-size:rem(13px)}
+		.kf_accountInfo{position:absolute;left:20px;bottom:20px;color:$col_white;
+			.bankName{display:block;color:$col_white;}
+			.bankAccountNum{color:$col_white;font-size:rem(16px)}
+		}
+	}
+	.selectWrap{margin-top:16px;transform:none;
+		.ui-selectmenu-menu{transform:none;}
+	}
+	.kf_applyCont{display:flex;width:100%;height:100%;padding-top:26px;border-radius:12px;border:1px solid $col_g200;text-align:center;align-items:center;justify-content:center;background:$col_g100;flex-direction:column;background:$col_white;//height:148px;
+		strong, span{display:block}
+		strong{position:relative;padding-top:40px;color:$col_g800;
+			&:before{@include pseudo(26px,26px);top:-1px;margin-top:0;background:url(#{$img_url}/common/spr_ico.svg) no-repeat -50px 0}
+		}
+		span{color:$col_g600;font-size:rem(14px)}
+	}
+	&.swiperPointCharge{padding:0 63px}
+}
+
+.downloadWrap{overflow:hidden;position:relative;padding-right:45px;border-radius:8px;background:$col_g100;
+	&:before{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;border:1px solid $col_g200;border-radius:8px;box-sizing:border-box}
+	.link{position:absolute;top:0;right:0;width:45px;height:100%;display:block;border-left:1px dashed $col_g200;background:url(#{$img_url}/common/bg_arr01.svg) no-repeat 50% 50%;font-size:0;		
+		&:after,&:before{content:'';display:block;position:absolute;left:-6px;width:12px;height:12px;border:1px solid $col_g200;border-radius:50%;background:$col_white;z-index:100;box-sizing:border-box}
+		&:before{top:-6px;}
+		&:after{bottom:-6px;}
+		
+	}
+	.tit{@include ellipsis(1, auto);padding:0 85px 0 16px;color:$col_g900;font-size:rem(16px);font-weight:$weight700;line-height:54px;}
+	span.link .tit{color:$col_g500}
+	.kf_couponNum{position:absolute;top:50%;right:60px;margin-top:-10px;color:$col_p600;font-size:rem(16px);font-weight:700}
+	&.downChange{
+		.kf_couponNum{color:$col_redP}
+		.link{background-image:url(#{$img_url}/common/bg_change.svg)}
+	}
+	&.downNone{
+		.kf_couponNum{color:$col_g600}
+		.link{pointer-events:none;}
+	}
+}
+
+.kf_pointCharge{margin-top:32px;border:1px solid $col_g200;border-radius:8px;
+	.kf_titPay{margin-top:24px;padding-top:22px;border-top:1px dashed $col_g200;color:$col_g800;font-weight:$weight600}
+	> .acctItem{
+		.toggleBtn{height:56px;padding:0 20px;color:$col_g900;font-size:rem(16px);line-height:56px;border-radius:8px;background:$col_white;
+			em{color:$col_p600}
+			&[aria-expanded=true]{font-size:rem(16px);background:$col_g100;}
+			.layChargeTip{position:absolute;top:-6px;left:16px;height:20px;padding:0 17px 0 8px;color:$col_white;font-size:rem(12px);font-weight:$weight600;line-height:20px;border-radius:6px;background:$col_p500;
+				&:before{content:'';display:block;position:absolute;bottom:-2px;left:50%;width:4px;height:4px;margin-left:-3px;background:$col_p500;@include prefix(transform,rotate(45deg));}
+				&:after{content:'';display:block;position:absolute;right:8px;top:50%;width:4px;height:4px;margin-top:-4px;border:2px solid $col_p400;border-width:2px 2px 0 0;@include prefix(transform,rotate(45deg));}
+			}
+		}
+		.toggleCont{border-top:1px dashed $col_g200;background:$col_g100;
+			.inner{padding:23px 20px;
+				.kf_accountList{
+					> li{
+						.tit, .contR{color:$col_g800;font-weight:$weight600}
+						.tit{width:200%}
+						.balance{color:$col_p600}
+					}
+				}
+			}
+		}
+	}
+	
+}
+.kf_chargePay{position:relative;margin-top:0;
+	.subCont a{color:$col_redP}
+	label{display:inline-block;position:absolute;top:14px;left:16px;margin:0;font-size:rem(15px);z-index:10}
+	.inpA{
+		input{padding:0 30px 0 75px;text-align:right;
+			&::-webkit-input-placeholder{font-size:rem(15px)}
+			&:-ms-input-placeholder{color:$col_g400;font-size:rem(15px);font-weight:400}
+			&::-ms-input-placeholder{color:$col_g400;font-size:rem(15px);font-weight:400}
+			&::placeholder{color:$col_g400;font-size:rem(15px);font-weight:400}
+		}
+		.unit{position:absolute;top:13px;right:16px;}
+	}
+	.kf_priceBtns{display:flex;margin:8px -2px 0;width:94%;
+		.inpPay{position:relative;flex:0 0 23%;height:32px;margin:0 2px;padding:0;font-size:rem(14px);border:1px solid $col_g300;border-radius:32px;text-align:center;background:$col_white}
+		.btIco{position:relative;flex:0 0 32px;height:32px;padding:0}
+	}
+}
+
+.grayBox.loginInfo{position:relative;padding:17px 16px;
+	p.listType02{margin-top:0}
+	.btLink{position:absolute;top:50%;right:11px;margin-top:-18px;color:$col_g900;font-weight:$weight600}
+	.tit{margin-bottom:9px;font-weight:$weight600}
+	.txt{color:$col_g600;font-size:rem(14px)}
+}
+
+.kf_line{position:relative;min-height:9px;margin:32px -20px 0;border-top:1px solid $col_g200;
+	&:before{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:8px;background:$col_g100}
+	& + [class^=titDep]{margin-top:32px}
+}
+
+.simplePayList{display:flex;padding:0 20px;margin-top:12px;flex-wrap:wrap;
+	> li{position:relative;flex:0 0 calc(100% / 3);padding:4px;
+		input{position:absolute;top:20px;left:20px;
+			&:checked + label{border-color:$col_p300;background:$col_p100;
+				span{color:$col_p600;font-weight:$weight600}
+			}
+		}
+		label{display:flex;height:96px;border:1px solid $col_g200;border-radius:8px;text-align:center;flex-direction:column;align-items:center;justify-content:center;
+			figure img{width:auto;height:32px}
+		}
+	}
+}
+
+[class^=titDep]{
+	&.kf_line{margin-top:32px;margin-bottom:0;padding:39px 20px 16px 20px}
+}
+
+
+//할인쿠폰(L)
+.kf_couponListL{margin-top:15px;
+	>li{position:relative;margin-top:12px;background:$col_white;
+		&:first-child{margin-top:0}
+		input{position:absolute;top:20px;left:20px;z-index:1;
+			&:checked + label{
+				&:before{border-color:$col_p400;}
+				.inner{
+					&:before, &:after{border-color:$col_p400}
+				}				
+				.chkArea{border-color:$col_p400;background:$col_p100;
+					&:after{border-color:$col_p600}
+				}
+			}
+			&:disabled + label .inner{
+				*{opacity:0.6}
+				.typePoint{opacity:1;color:$col_redP;
+					&:before{background-position:-16px -54px}
+				}
+			}
+			&[type=radio]{
+				& + label{
+					.chkArea{
+						&:after{@include pseudo(22px,22px);left:auto;right:17px;border:1px solid $col_g300;border-radius:50%;background:$col_white;transform:none;z-index:1}
+						&:before{@include pseudo(8px,8px);left:auto;right:25px;margin-top:-3px;border-radius:50%;background:$col_g300;z-index:2}
+					}
+				}
+				&:checked + label{
+					.chkArea{
+						&:after{border-color:$col_p600;background-color:$col_p600}
+						&:before{background:$col_white}
+					}
+				}			
+			}			
+		}
+		
+		label{overflow:hidden;position:relative;display:block;border-radius:16px;z-index:2;
+			&:before{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;border-radius:16px;border:1px solid $col_g200;z-index:2;box-sizing:border-box}
+			.inner{position:relative;padding:20px 70px 20px 20px;
+				&:before{content:'';display:block;position:absolute;top:-8px;right:52px;width:16px;height:16px;border:1px solid $col_g200;border-radius:50%;background:$col_white;z-index:2}
+				&:after{content:'';display:block;position:absolute;bottom:-8px;right:52px;width:16px;height:16px;border:1px solid $col_g200;border-radius:50%;background:$col_white;z-index:2}
+			}
+			.flagList{margin-bottom:10px;}
+			strong.titCoupon{@include ellipsis(2, auto);margin-bottom:8px;padding:0;color:$col_g900;font-size:rem(20px);border:none;line-height:1.2}
+			.txtTerm{font-size:rem(14px)}
+			.couponInfo{margin-top:12px;color:$col_g600;font-size:rem(13px);line-height:1.4}
+			.chkArea{position:absolute;top:1px;right:1px;display:block;width:60px;height:calc(100% - 2px);border-left:1px dashed $col_g200;border-radius:0 16px 16px 0;background:$col_white;z-index:1;
+				&:after{@include pseudo(11px,6px);border:solid $col_g400;border-width:0 0 2px 2px;@include prefix(transform,rotate(-45deg) skewY(3deg));}
+			}
+			.typePoint{color:$col_redP;
+				&:before{background-position:-16px -54px}
+			}
+		}
+	}
+}
+
+
+//쿠폰리스트
+.couponList{
+	>li{overflow:hidden;position:relative;margin-top:12px;background:$col_white;
+		&:first-child{margin-top:0}
+		.couponCont{position:relative;display:block;overflow:hidden;
+			&:before, &:after{content:'';display:block;position:absolute;right:50px;width:16px;height:15px;border-radius:50%;border:1px solid $col_p400;background:$col_white;z-index:10}
+			&:before{top:-8px}
+			&:after{bottom:-8px}
+			.inner{overflow:hidden;position:relative;padding:20px 70px 20px 20px;border:1px solid $col_p400;border-radius:16px;z-index:1;
+				&:after{content:'';display:block;position:absolute;top:0;right:0;bottom:0;width:58px;border-left:1px dashed $col_p400;background:$col_p100 url(#{$img_url}/common/bi_logo_v.svg) no-repeat 50% 50%;z-index:1}
+				strong.titCoupon{@include ellipsis(2, auto);margin-bottom:8px;padding:0;color:$col_g900;font-size:rem(20px);border:none;line-height:1.2}
+				.txtTerm{display:block;font-size:rem(14px)}
+				.couponInfo{margin-top:16px;color:$col_g600;font-size:rem(13px);line-height:1.4}
+			}
+		}
+		.btDown{@extend %textHidden;position:absolute;top:2px;right:2px;bottom:2px;width:57px;border-radius:0 20px 20px 0;background:$col_p100;z-index:1;
+			&:after{@include pseudo(24px,24px);left:auto;right:20px;margin-left:0;background:url(#{$img_url}/common/spr_coupon.svg) no-repeat -104px 0}
+			
+		}
+		input{position:absolute;top:20px;left:20px;z-index:1;			
+			&:checked{
+				& + label.couponCont{
+					&:before, &:after{border-color:$col_p400}
+					.inner{border-color:$col_p400;
+						&:after{border-color:$col_p400;background-color:$col_p100}
+						&:before{background-position:-26px 0}
+					}
+				}
+			}
+			&:disabled{
+				& + label.couponCont .inner{
+					*{opacity:0.6;}
+					p.listType02.typePoint{opacity:1;color:$col_redP;
+						&:before{background-position:-16px -54px}
+					}
+				}				
+			}
+			&[type=checkbox]{
+				& + label.couponCont .inner{
+					&:before{background-position:-52px 0}
+				}
+				&:checked + label .inner:before{background-position:-78px 0}
+			}
+		}
+		label.couponCont{
+			&:before, &:after{border-color:$col_g200}
+			.inner{border-color:$col_g200;
+				&:before{@include pseudo(24px,24px);left:auto;right:20px;margin-left:0;background:url(#{$img_url}/common/spr_coupon.svg) no-repeat;z-index:10}	
+				&:after{border-color:$col_g200;background-color:$col_white;background-image:none;z-index:1}
+			}
+		}
+	}
+	p.listType02 + &{margin-top:15px}
+}
+
+//사용가능 포인트
+.pop_pointList{
+	.grayBox{
+		.kf_payList.kf_payListP{margin-top:0;padding:0;border:none;
+			li:first-child{margin-top:0}
+			>li{
+				.tit, .contR{color:$col_g800;font-size:rem(15px);font-weight:$weight600}
+				&.kf_total{margin-top:16px;padding-top:16px;border-top:1px solid $col_g200;
+					.tit{color:$col_g900;font-size:rem(16px);font-weight:$weight700}
+					.contR{color:$col_p600;font-size:rem(16px);font-weight:$weight700}
+				}
+			}
+		}
+		& + .listType01{margin-top:10px;
+			> li{margin-top:8px;letter-spacing:-0.03em;
+				.linkPoint{color:$col_p600;text-decoration:underline}
+			}
+		}
+	}
+}
+
+// 포인트사용_포인트안내_P, 포인트상세_P
+.pop_pointInfo{
+    .titDesc + h3.titDep5{margin-top:32px}
+
+    .infoSet{
+        .tit{color:$col_g800;font-weight:$weight600;}
+    }
+    .listType01{
+        li{
+            .pur{color:$col_p600}
+            .uLine:after{background-color:$col_p600}
+        }
+    }
+}
+.pointList{display:flex;justify-content:center;margin:16px 8px 0;text-align:center;
+    li{display:flex;flex-direction:column;justify-content:center;align-items:center;margin:0 10px;
+        .tit{display:flex;flex-direction:column;justify-content:center;align-items:center;width:80px;height:80px;border-radius:100%;font-size:rem(13px);line-height:1;
+            b{display:block;margin-bottom:1px;font-size:rem(22px);font-weight:$weight700;line-height:26px;}
+        }
+        .infoFlag{width:64px;height:20px;margin-top:12px;padding:1px 0;color:$body_color;font-size:rem(12px);}
+    }
+    .purple{
+        .tit{background-color:$col_p100;color:$col_p800}
+        .infoFlag{background-color:$col_p800}
+    }
+    .red{
+        .tit{background-color:$col_r100;color:$col_redP}
+        .infoFlag{background-color:$col_redP}
+    }
+    .gray{
+        .tit{background-color:$col_g100;color:$col_g800}
+        .infoFlag{background-color:$col_g600}
+    }
+}
+
+//포인트 충전
+.kf_pointChargeWrap{margin:32px -20px 0;padding:32px 20px;background:$col_g100;
+	
+	.kf_titPay{margin:24px 0 16px;padding-top:22px;border-top:1px dashed $col_g200;color:$col_g800;font-weight:$weight600}
+	.swiperAccount{padding:0 63px 24px;}//margin:0 -20px
+	& + .bannerType{margin:32px 0}
+}
+
+//카드할인 및 무이자 할부안내
+.cardsaleInfoList{
+	> li{display:flex;padding:18px 0;border-top:1px dashed $col_g200;align-items:center;justify-content:center;
+		&:first-child{border-top:none}
+		figure{flex:0 0 124px;text-align:center;
+			img{width:100px;}
+		}
+		.saleInfo{width:100%;padding-left:20px;align-items:center;
+			strong{display:block;color:$col_g900}
+		}
+	}
+}
+
+// 계좌연결 - 제주PAY 연결하기
+.payConnection{margin-top:32px;
+    .kf_cardWrap{display:block;position:relative;width:248px;height:144px;margin:24px auto 0;color:$col_white;
+		img{border-radius:12px;box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.08)}
+		.acctName{position:absolute;top:20px;left:20px;color:rgba($col_white, 0.8);font-size:rem(13px)}
+		.kf_accountInfo{position:absolute;left:20px;bottom:20px;color:$col_white;
+			.bankName{display:block;color:$col_white;font-weight:$weight600;text-align:left}
+			.bankAccountNum{color:$col_white;font-size:rem(16px);font-weight:$weight600}
+		}
+	}
+}
+
+// 계좌연결 - 은행선택
+.layContainer{
+    .layContent{
+        .pageTit+.frmBox.boxCol03{margin-top:32px}
+    }
+}
+
+// 계좌연결 - 번호입력
+.bankArea{margin-top:32px;
+    .bank{margin-bottom:20px;padding:16px;border-radius:12px;background-color:$col_g100;
+        figure{content:'';display:inline-block;width:40px;height:24px;vertical-align:middle}
+        .tit{color:$col_g800;font-size:rem(16px);font-weight:$weight600}
+    }
+}
+
+// 계좌연결 - 이용동의
+.inpFrm.inpDeleteAni.number{
+    & + .guideInfo.boxType01{margin-top:82px;padding:24px;
+        .txt{color:$col_p600;text-align:center}
+    }
+    .inpA{
+        input{font-weight:$weight600}
+    }
+}
+
+// 계좌연결 - ARS인증
+.layPop.layFull.pop_account_ars{
+    .layContainer{
+        .layContent{display:flex;align-items:center;justify-content:center}
+    }
+}
+.arsWrap{height:460px;
+    .arsInner{position:absolute;bottom:0;left:0;width:100%;height:460px;text-align:center;
+        &:before{content:'';display:block;width:72px;height:72px;margin:0 auto 40px;}
+        &.step1:before{background:url(#{$img_url}/common/img_ars1.png) no-repeat;background-size:72px auto}
+        &.step2:before{background:url(#{$img_url}/common/img_ars2.png) no-repeat;background-size:72px auto}
+		&.step3:before{background:url(#{$img_url}/common/img_ars3.png) no-repeat;background-size:72px auto}
+        &.end:before{display:none}
+        .payConnection{margin-bottom:40px}
+        .titDep3 + .phoneTxt{margin-top:-4px}
+        .phoneNum{display:inline-block;margin:8px 0 24px;padding:12px 24px;border-radius:8px;background-color:$col_g100;color:$col_g900;font-size:rem(18px);font-weight:$weight600;}
+        .phoneTxt{font-size:rem(16px)}
+        .guideInfo.boxType01{margin-top:54px;padding:24px;
+            .txt{color:$col_p600}
+        }
+    }
+}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24.943" viewBox="0 0 24 24.943">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #92621b;
+      }
+
+      .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        stroke: #643f09;
+      }
+    </style>
+  </defs>
+  <g id="ic_x24_alarm_color" transform="translate(-81 -273.057)">
+    <path id="Vector" class="cls-1" d="M0,0H24V24H0Z" transform="translate(81 274)"/>
+    <g id="alarm">
+      <path id="Vector-2" data-name="Vector" class="cls-2" d="M8.311,16.622A8.311,8.311,0,1,0,0,8.311,8.311,8.311,0,0,0,8.311,16.622Z" transform="translate(84.688 279.583)"/>
+      <path id="Vector-3" data-name="Vector" class="cls-3" d="M0,0V4.564L3.222,7.786" transform="translate(93 283.445)"/>
+      <path id="Vector-4" data-name="Vector" class="cls-4" d="M0,2.211,3.1,0" transform="matrix(0.819, 0.574, -0.574, 0.819, 92.367, 275)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>항공 예약상세 - 제주패스</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" type="image/x-icon" href="/resource/PC/images/favicon/favicon.ico">
+<link href="/air/css/kfx/airA.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/p_commonAir.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/p_contentsAir.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/p_contents_air.min.css" rel="stylesheet" type="text/css">
+<style>
+	
+</style>
+</head>
+
+<body style="overflow:hidden;">
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper lnbWrapper">
+	<header>
+		<h1 class="topLogo"><a href="#">JEJUPASS</a></h1>
+		<nav>
+			<img src="/resource/PC/images/dummy/@navi.png" alt="">
+		</nav>
+		<div class="topUtil">
+			<img src="/resource/PC/images/dummy/@util.png" alt="">
+		</div>
+	</header>
+
+	<div id="container" class="container">
+		<div id="snb" class="snb"><img src="/resource/PC/images/dummy/@snb.png" alt=""></div>
+		<div id="contents" class="contents">
+			<!-- 컨텐츠 영역  -->
+			<h2 class="titDep2 titLine">발권상세</h2>
+
+			<a href="#" class="layPopBtn" data-id="pop_mapView">지도로 검색 팝업 보기</a>
+
+			<div class="btnArea btnAreaFull marT32">
+				<button type="button" class="btnDefault btnL action">다음단계</button>
+			</div>
+			
+
+			<!-- //컨텐츠 영역 -->
+
+		</div>
+	</div><!-- //container -->
+
+	
+
+</section><!-- //wrapper -->
+<footer>
+	<div class="footInner">
+		<img src="/resource/PC/images/dummy/@footer.png" alt="">
+	</div>
+</footer>
+
+<aside>
+	<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+</aside>
+
+<!-- 지도로 검색 팝업 -->
+<section id="pop_mapView" class="layPop layerMap" tabindex="0">
+	<div class="layContainer">
+		<div class="leftCont scriptScroll">
+			<h2 class="titDep2">지도로 검색</h2>
+
+			<h3 class="titDep3">여행일정</h3>
+
+			<ul class="searchCondList">
+				<li>
+					<p class="tit">출발</p>
+					<div class="k1_quick_search">
+						<ul class="k1_flight_panel">
+							<li class="k1_area departure">
+								<button type="button" class=""><strong>서울</strong><span class="engName">GMP</span></button><!-- 클릭 시 k1_inpBlock 클래스 추가 -->
+								<input type="text" title="출발지 입력">
+							</li>
+							<li class="k1_area destination">
+								<button type="button"><strong>여수</strong><span class="engName">RSU</span></button>
+								<input type="text" title="도착지 입력">
+							</li>
+						</ul>
+						<button type="button" class="k1_icon i2">출발지와 도착지 바꾸기</button>
+					</div>
+				</li>
+				<li>
+					<label for="inpDate" class="tit">탑승일</label>
+					<div class="inpA">
+						<input type="text" id="inpDate" readonly class="layPopBtn" data-id="pop_checkDate" placeholder="탑승일을 선택해주세요">
+					</div>
+				</li>
+				<li>
+					<p class="tit">출발</p>
+					<div class="fp_slideArea">
+						<div class="slideValue">
+							<span class="minValue">최소 20,000원</span>
+							<span class="maxValue">최대 300,000원</span>
+						</div>
+						<div id="slider-range" class="slider" data-options='{"range": true, "min": 20000, "max": 300000, "step": 10000, "values": [50000, 100000], "text":"원" }'></div>
+						<div class="fp_slideInp">
+							<input type="text" class="amount" readonly>
+							<span class="dash">~</span>
+							<input type="text" class="amount" readonly>
+						</div>
+					</div>
+				</li>
+				<li>
+					<label for="inpSeat" class="tit">인원 및 좌석등급</label>
+					<div class="inpA">
+						<input type="text" id="inpSeat" readonly class="layPopBtn" data-id="pop_seatLevel" placeholder="인원 및 탑승일을 선택해주세요">
+					</div>
+				</li>
+			</ul>
+
+			<h3 class="titDep3">출발 요일</h3>
+			<p class="listType02 small">요일은 1개 이상 선택할 수 있어요.</p>
+
+			<ul class="frmBox boxCol03">
+				<li><input type="checkbox" id="chkDays01" name="chkDays" checked><label for="chkDays01">일요일</label></li>
+				<li><input type="checkbox" id="chkDays02" name="chkDays"><label for="chkDays02">월요일</label></li>
+				<li><input type="checkbox" id="chkDays03" name="chkDays"><label for="chkDays03">화요일</label></li>
+				<li><input type="checkbox" id="chkDays04" name="chkDays"><label for="chkDays04">수요일</label></li>
+				<li><input type="checkbox" id="chkDays05" name="chkDays"><label for="chkDays05">목요일</label></li>
+				<li><input type="checkbox" id="chkDays06" name="chkDays"><label for="chkDays06">금요일</label></li>
+				<li><input type="checkbox" id="chkDays07" name="chkDays"><label for="chkDays07">토요일</label></li>
+			</ul>
+			
+		</div>
+
+		<div class="mapCont">
+			
+			<div class="mapArea"><img src="/resource/PC/images/dummy/@img_map2.jpg" alt=""></div>
+
+			<div class="viewListWrap" style="position:absolute;top:635px;left:571px">
+				<button type="button" class="btView"><span class="city">베이징</span><strong class="price">420,000원</strong></button>
+			</div>
+		</div>
+	</div>
+	<button type="button" class="closeL">팝업 닫기</button>
+</section>
+<!-- //지도로 검색 팝업 -->
+<!-- 여행지 보기 팝업 -->
+<section id="pop_listMapSelect" class="layerMapList" tabindex="0">
+	<div class="titSearch">
+		<p class="tit"><strong>후쿠오카</strong><span class="country">일본</span></p>
+		<figure><img src="/air/imgs_ibe/kfx/mbl/dummy/@img_searchImg.jpg" alt=""></figure>
+	</div>
+	<div class="layContainer scriptScroll">
+		<ul class="listSearch">
+			<li class="noData">
+				<p class="tit">더 이상 결과가 없습니다.</p>
+			</li>
+			<li>
+				<a href="#">
+					<strong class="date">21.12.13(월) ~ 21.12.16(목)</strong>
+					<p class="price">최저가<strong>100,951원~</strong></p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<strong class="date">21.12.13(월) ~ 21.12.16(목)</strong>
+					<p class="price">최저가<strong>888,951원~</strong></p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<strong class="date">21.12.13(월) ~ 21.12.18(목)</strong>
+					<p class="price">최저가<strong>1,888,951원~</strong></p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<strong class="date">21.12.13(월) ~ 21.12.16(목)</strong>
+					<p class="price">최저가<strong>100,951원~</strong></p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<strong class="date">21.12.13(월) ~ 21.12.16(목)</strong>
+					<p class="price">최저가<strong>888,951원~</strong></p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<strong class="date">21.12.13(월) ~ 21.12.18(목)</strong>
+					<p class="price">최저가<strong>2,00,951원~</strong></p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<strong class="date">21.12.13(월) ~ 21.12.16(목)</strong>
+					<p class="price">최저가<strong>10,951원~</strong></p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<strong class="date">21.12.13(월) ~ 21.12.16(목)</strong>
+					<p class="price">최저가<strong>10,951원~</strong></p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<strong class="date">21.12.13(월) ~ 21.12.16(목)</strong>
+					<p class="price">최저가<strong>10,951원~</strong></p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<strong class="date">21.12.13(월) ~ 21.12.16(목)</strong>
+					<p class="price">최저가<strong>10,951원~</strong></p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<strong class="date">21.12.13(월) ~ 21.12.16(목)</strong>
+					<p class="price">최저가<strong>10,951원~</strong></p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<strong class="date">21.12.13(월) ~ 21.12.16(목)</strong>
+					<p class="price">최저가<strong>10,951원~</strong></p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<strong class="date">21.12.13(월) ~ 21.12.16(목)</strong>
+					<p class="price">최저가<strong>10,951원~</strong></p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<strong class="date">21.12.13(월) ~ 22.12.16(목)</strong>
+					<p class="price">최저가<strong>100,951원~</strong></p>
+				</a>
+			</li>
+		</ul>
+	</div><!-- //layContainer -->
+	<button type="button" class="closeL">팝업 닫기</button>
+</section>
+<!-- //여행지 보기 팝업 -->
+
+<!-- 탑승일 선택 팝업 -->
+<section id="pop_checkDate" class="layPop layerM pop_checkDate" tabindex="0">
+	<header>
+		<h2 class="titLay">탑승일</h2>
+	</header>
+
+	<div class="layContainer scriptScroll" tabindex="0">
+		<div class="swiperWrap swiperCalendar swiperCalendarP">
+			<button type="button" class="swiper-button-prev">이전</button>	
+			<div class="swiper-container">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide">
+						<div class="k1_calendar_wrap">
+							<div class="k1_sel_month">2021년 9월</div>
+							<table class="k1_board_mcal">
+								<thead>							
+									<tr>
+										<th>일</th>
+										<th>월</th>
+										<th>화</th>
+										<th>수</th>
+										<th>목</th>
+										<th>금</th>
+										<th>토</th>
+										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="sun off">29</td>
+										<td class="off">30</td>
+										<td class="off">31</td>
+										<td><a href="#" role="button">1</a><span class="price">170만</span></td>
+										<td><a href="#" role="button">2</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">3</a><span class="price">10.5만</span></td>
+										<td class="sat"><a href="#" role="button">4</a><span class="price">10.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun"><a href="#" role="button">5</a><span class="price">10.5만</span></td>
+										<td class="today"><a href="#" role="button">6</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">7</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">8</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">9</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">10</a><span class="price">10.5만</span></td>
+										<td class="sat"><a href="#" role="button">11</a><span class="price">19.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun"><a href="#" role="button">12</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">13</a><span class="price">5만</span></td>
+										<td><a href="#" role="button">14</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">15</a><span class="price">10.5만</span></td>
+										<td class="start"><a href="#" role="button">16</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+										<td class="range"><a href="#" role="button">17</a><span class="price">10.5만</span></td>
+										<td class="sat range"><a href="#" role="button">18</a><span class="price">19.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun range"><a href="#" role="button">19</a><span class="price">10.5만</span></td>
+										<td class="end"><a href="#" role="button">20</a><span class="txt">도착</span><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">21</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">22</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">23</a><span class="price">10.5만</span></td>
+										<td class="start"><a href="#" role="button">24</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+										<td class="sat"><a href="#" role="button">25</a><span class="price">19.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun"><a href="#" role="button">26</a><span class="price">10.5만</span></td>
+										<td class="start end"><a href="#" role="button">27</a><span class="txt">당일 왕복</span><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">28</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">29</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">30</a><span class="price">10.5만</span></td>
+										<td class="off"><a href="#" role="button">1</a><span class="price">10.5만</span></td>
+										<td class="sat off"><a href="#" role="button">2</a><span class="price">88.5만</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li class="swiper-slide">
+						<div class="k1_calendar_wrap">
+							<div class="k1_sel_month">2021년 10월</div>
+							<table class="k1_board_mcal">
+								<thead>							
+									<tr>
+										<th>일</th>
+										<th>월</th>
+										<th>화</th>
+										<th>수</th>
+										<th>목</th>
+										<th>금</th>
+										<th>토</th>
+										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="sun off">29</td>
+										<td class="off">30</td>
+										<td class="off">31</td>
+										<td><a href="#" role="button">1</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">2</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">3</a><span class="price">10.5만</span></td>
+										<td class="sat"><a href="#" role="button">4</a><span class="price">10.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun"><a href="#" role="button">5</a><span class="price">10.5만</span></td>
+										<td class="today"><a href="#" role="button">6</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">7</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">8</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">9</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">10</a><span class="price">10.5만</span></td>
+										<td class="sat"><a href="#" role="button">11</a><span class="price">19.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun"><a href="#" role="button">12</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">13</a><span class="price">5만</span></td>
+										<td><a href="#" role="button">14</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">15</a><span class="price">10.5만</span></td>
+										<td class="start"><a href="#" role="button">16</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+										<td class="range"><a href="#" role="button">17</a><span class="price">10.5만</span></td>
+										<td class="sat range"><a href="#" role="button">18</a><span class="price">19.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun range"><a href="#" role="button">19</a><span class="price">10.5만</span></td>
+										<td class="end"><a href="#" role="button">20</a><span class="txt">도착</span><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">21</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">22</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">23</a><span class="price">10.5만</span></td>
+										<td class="start"><a href="#" role="button">24</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+										<td class="sat"><a href="#" role="button">25</a><span class="price">19.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun"><a href="#" role="button">26</a><span class="price">10.5만</span></td>
+										<td class="start end"><a href="#" role="button">27</a><span class="txt">당일 왕복</span><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">28</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">29</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">30</a><span class="price">10.5만</span></td>
+										<td class="off"><a href="#" role="button">1</a><span class="price">10.5만</span></td>
+										<td class="sat off"><a href="#" role="button">2</a><span class="price">88.5만</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li class="swiper-slide">
+						<div class="k1_calendar_wrap">
+							<div class="k1_sel_month">2021년 11월</div>
+							<table class="k1_board_mcal">
+								<thead>							
+									<tr>
+										<th>일</th>
+										<th>월</th>
+										<th>화</th>
+										<th>수</th>
+										<th>목</th>
+										<th>금</th>
+										<th>토</th>
+										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="sun off">29</td>
+										<td class="off">30</td>
+										<td class="off">31</td>
+										<td><a href="#" role="button">1</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">2</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">3</a><span class="price">10.5만</span></td>
+										<td class="sat"><a href="#" role="button">4</a><span class="price">10.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun"><a href="#" role="button">5</a><span class="price">10.5만</span></td>
+										<td class="today"><a href="#" role="button">6</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">7</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">8</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">9</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">10</a><span class="price">10.5만</span></td>
+										<td class="sat"><a href="#" role="button">11</a><span class="price">19.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun"><a href="#" role="button">12</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">13</a><span class="price">5만</span></td>
+										<td><a href="#" role="button">14</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">15</a><span class="price">10.5만</span></td>
+										<td class="start"><a href="#" role="button">16</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+										<td class="range"><a href="#" role="button">17</a><span class="price">10.5만</span></td>
+										<td class="sat range"><a href="#" role="button">18</a><span class="price">19.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun range"><a href="#" role="button">19</a><span class="price">10.5만</span></td>
+										<td class="end"><a href="#" role="button">20</a><span class="txt">도착</span><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">21</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">22</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">23</a><span class="price">10.5만</span></td>
+										<td class="start"><a href="#" role="button">24</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+										<td class="sat"><a href="#" role="button">25</a><span class="price">19.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun"><a href="#" role="button">26</a><span class="price">10.5만</span></td>
+										<td class="start end"><a href="#" role="button">27</a><span class="txt">당일 왕복</span><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">28</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">29</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">30</a><span class="price">10.5만</span></td>
+										<td class="off"><a href="#" role="button">1</a><span class="price">10.5만</span></td>
+										<td class="sat off"><a href="#" role="button">2</a><span class="price">88.5만</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li class="swiper-slide">
+						<div class="k1_calendar_wrap">
+							<div class="k1_sel_month">2021년 12월</div>
+							<table class="k1_board_mcal">
+								<thead>							
+									<tr>
+										<th>일</th>
+										<th>월</th>
+										<th>화</th>
+										<th>수</th>
+										<th>목</th>
+										<th>금</th>
+										<th>토</th>
+										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="sun off">29</td>
+										<td class="off">30</td>
+										<td class="off">31</td>
+										<td><a href="#" role="button">1</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">2</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">3</a><span class="price">10.5만</span></td>
+										<td class="sat"><a href="#" role="button">4</a><span class="price">10.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun"><a href="#" role="button">5</a><span class="price">10.5만</span></td>
+										<td class="today"><a href="#" role="button">6</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">7</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">8</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">9</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">10</a><span class="price">10.5만</span></td>
+										<td class="sat"><a href="#" role="button">11</a><span class="price">19.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun"><a href="#" role="button">12</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">13</a><span class="price">5만</span></td>
+										<td><a href="#" role="button">14</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">15</a><span class="price">10.5만</span></td>
+										<td class="start"><a href="#" role="button">16</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+										<td class="range"><a href="#" role="button">17</a><span class="price">10.5만</span></td>
+										<td class="sat range"><a href="#" role="button">18</a><span class="price">19.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun range"><a href="#" role="button">19</a><span class="price">10.5만</span></td>
+										<td class="end"><a href="#" role="button">20</a><span class="txt">도착</span><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">21</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">22</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">23</a><span class="price">10.5만</span></td>
+										<td class="start"><a href="#" role="button">24</a><span class="txt">출발</span><span class="price">10.5만</span></td>
+										<td class="sat"><a href="#" role="button">25</a><span class="price">19.5만</span></td>
+									</tr>
+									<tr>
+										<td class="sun"><a href="#" role="button">26</a><span class="price">10.5만</span></td>
+										<td class="start end"><a href="#" role="button">27</a><span class="txt">당일 왕복</span><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">28</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">29</a><span class="price">10.5만</span></td>
+										<td><a href="#" role="button">30</a><span class="price">10.5만</span></td>
+										<td class="off"><a href="#" role="button">1</a><span class="price">10.5만</span></td>
+										<td class="sat off"><a href="#" role="button">2</a><span class="price">88.5만</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<button type="button" class="swiper-button-next">다음</button>
+		</div>
+	</div><!-- //layContainer-->
+	<div class="btnArea">
+		<button type="button" class="btnDefault btnL action">왕복</button>
+	</div>
+	<button type="button" class="closeL">팝업 닫기</button>
+
+</section>
+<!-- //탑승일 선택 팝업 -->
+
+<!-- 인원 및 좌석등급 팝업 -->
+<section id="pop_seatLevel" class="layPop layerM pop_seatLevel" tabindex="0">
+	<header>
+		<h2 class="titLay">탑승일</h2>
+	</header>
+
+	<div class="layContainer scriptScroll" tabindex="0">
+		<h4 class="titDep4">탑승인원</h4>
+		<ul class="k1_passenger">
+			<li>
+				<span class="caption">성인<span class="desc">만 13세 이상</span></span>
+				<span class="setting">
+					<button type="button" class="minus"><span class="k1_icon">감소</span></button>
+					<input type="text" id="passenger1" name="passenger1" maxlength="2" class="num" value="8">
+					<button type="button" class="plus"><span class="k1_icon">증가</span>
+				
+			</button></span></li>
+			<li>
+				<span class="caption">소아<span class="desc">만 2세 ~ 만 12세</span></span>
+				<span class="setting">
+					<button type="button" class="minus"><span class="k1_icon">감소</span></button>
+					<input type="text" id="passenger1" name="passenger1" maxlength="2" class="num" value="2">
+					<button type="button" class="plus"><span class="k1_icon">증가</span>
+				
+			</button></span></li>
+			<li>
+				<span class="caption">유아<span class="desc">만 2세 미만, 보호자와 동반 착석</span></span>
+				<span class="setting">
+					<button type="button" class="minus" disabled=""><span class="k1_icon">감소</span></button>
+					<input type="text" id="passenger1" name="passenger1" maxlength="2" class="num" value="0">
+					<button type="button" class="plus"><span class="k1_icon">증가</span>
+				
+			</button></span></li>
+		</ul>
+		<div class="acctAging">
+			<div class="inpFrm inpDeleteAni">
+				<label for="inpCalc" class="titLab">소아/유아 나이계산기</label> 
+				<span class="inpA inpBtns">
+					<input type="text" id="inpCalc" placeholder="YYYY.MM.DD" title="YYYY.MM.DD 형태로 생년월일 입력">
+					<button type="button" class="btIco icDel">삭제</button>
+					<button type="button" class="btnDefault btnM btnLineG">계산</button>
+				</span>
+			</div>
+			<!-- 에러시 -->
+			<!-- div class="inpFrm inpDeleteAni inpError">
+				<label for="inpCalc" class="titLab">소아/유아 나이계산기</label> 
+				<span class="inpA inpBtns">
+					<input type="text" id="inpCalc" placeholder="YYYY.MM.DD" title="YYYY.MM.DD 형태로 생년월일 입력">
+					<button type="button" class="btIco icDel">삭제</button>
+					<button type="button" class="btnDefault btnM btnLineG">계산</button>
+				</span>
+			</div>
+			<p class="txtErr">생년월일을 바르게 입력해주세요.</p -->
+
+			<ul class="listType01">
+				<li>국내선 가는 날 (2021.08.18) 기준 유아입니다.</li>
+				<li>국내선 오는 날 (2021.08.19) 기준 유아입니다.</li>
+			</ul>
+			<div class="txtInfo">
+				<p class="listType02 small">소아/유아 나이계산은 항공사별 정책이 다릅니다. 정확한 내용은 항공사에 문의 바랍니다.</p>
+			</div>
+		</div>
+		<h4 class="titDep4">좌석등급</h4>
+		<ul class="frmBox">
+			<li><input type="radio" id="radseatLevel01" name="radseatLevel"><label for="radseatLevel01">일반석</label></li>
+			<li><input type="radio" id="radseatLevel02" name="radseatLevel"><label for="radseatLevel02">프리미엄석</label></li>
+			<li><input type="radio" id="radseatLevel03" name="radseatLevel"><label for="radseatLevel03">비즈니스석</label></li>
+			<li><input type="radio" id="radseatLevel04" name="radseatLevel"><label for="radseatLevel04">일등석</label></li>
+		</ul>
+	</div><!-- //layContainer-->
+	<div class="btnArea">
+		<button type="button" class="btnDefault btnL action">확인</button>
+	</div>
+</div>	
+<!-- //탑승인원과 좌석 등급 선택 -->
+	</div>
+	<button type="button" class="closeL">팝업 닫기</button>
+</section>
+<!-- //인원 및 좌석등급 팝업 -->
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/pc/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/p_common.js"></script>
+
+</body>
+</html>

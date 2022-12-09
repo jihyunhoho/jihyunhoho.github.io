@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <style>
+            .cls-3{fill:#569aff}
+        </style>
+    </defs>
+    <g id="ic_x24_championship_cup" data-name="ic_x24_championship cup" transform="translate(-265 -688)">
+        <g id="그룹_16538" data-name="그룹 16538">
+            <path id="사각형_11890" data-name="사각형 11890" transform="translate(272.5 697)" style="fill:#1d68dc" d="M0 0h3v7H0z"/>
+            <path id="Union_42" data-name="Union 42" class="cls-3" d="M-912.5-2038.5c.472 0 1-.719 1-1.682v-2.318h-2v2.318c0 .963.528 1.682 1 1.682m0 1.5c-1.381 0-2.5-1.425-2.5-3.182V-2043a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v2.818c0 1.758-1.119 3.182-2.5 3.182z" transform="translate(1181 2735.5)"/>
+            <path id="Union_43" data-name="Union 43" class="cls-3" d="M-912.5-2038.5c.472 0 1-.719 1-1.682v-2.318h-2v2.318c0 .963.528 1.682 1 1.682m0 1.5c-1.381 0-2.5-1.425-2.5-3.182V-2043a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v2.818c0 1.758-1.119 3.182-2.5 3.182z" transform="translate(1192 2735.5)"/>
+            <path id="합치기_41" data-name="합치기 41" class="cls-3" d="M-915-2037.5q0-.253.022-.5H-915v-6a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v6h-.022q.022.247.022.5a5.5 5.5 0 0 1-5.5 5.5 5.5 5.5 0 0 1-5.5-5.5z" transform="translate(1183.5 2734)"/>
+            <path id="사각형_11892" data-name="사각형 11892" class="cls-3" d="M2 0h4a2 2 0 0 1 2 2H0a2 2 0 0 1 2-2z" transform="translate(270 703)"/>
+            <path id="Star_1" data-name="Star 1" d="M2.621 1.128a.4.4 0 0 1 .758 0l.282.838a.4.4 0 0 0 .368.272l.884.024a.4.4 0 0 1 .24.711l-.734.592a.4.4 0 0 0-.134.42l.256.907a.4.4 0 0 1-.619.433l-.688-.5a.4.4 0 0 0-.469 0l-.688.5a.4.4 0 0 1-.619-.433l.256-.907a.4.4 0 0 0-.134-.42l-.733-.591a.4.4 0 0 1 .24-.711l.884-.024a.4.4 0 0 0 .368-.272z" transform="translate(271 692.5)" style="fill:#fff"/>
+            <g id="사각형_11893" data-name="사각형 11893" transform="translate(268 689)" style="stroke:#1d68dc;fill:#fff">
+                <rect width="12" height="2" rx="1" style="stroke:none"/>
+                <rect x=".5" y=".5" width="11" height="1" rx=".5" style="fill:none"/>
+            </g>
+        </g>
+    </g>
+</svg>

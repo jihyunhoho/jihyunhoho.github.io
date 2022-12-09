@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>제주패스 :: 통합 관리자</title>
+<link href="/admin/css/admin.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/admin/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/admin/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_common.js"></script>
+<script type="text/javascript" src="/resource/PC/js/swiper.min.js"></script>
+<script type="text/javascript" src="/admin/js/admin_script.js"></script>
+</head>
+
+<body>
+
+<div id="popWrapper" class="popWrapper">
+	<header>
+		<h2 class="titPop">숙소 사진</h2>
+	</header>
+
+	<div class="popContainer" tabindex="0">
+
+		<h3 class="titDep2">숙소 사진 관리</h3>
+		<div class="photoView">
+			<div class="photoArea2">
+				<div class="swiperWrap viewSwiper" data-options='{"pagination": "fraction"}'>
+                    <button type="button" class="swiper-button-prev">이전</button>
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide"><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></li>
+							<li class="swiper-slide"><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></li>
+							<li class="swiper-slide"><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></li>
+                            <li class="swiper-slide"><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="swiper-button-next">다음</button>
+                    <div class="swiper-pagination">
+                        
+                    </div>
+                </div>
+			</div>
+			<div class="photoInfo">
+				<table class="selectSearch">
+					<colgroup><col style="width:25%"><col style="width:auto"></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">사진 구분</th>
+							<td>
+								<span class="frmInp"><input type="radio" id="radPhoto01" name="photoLebel" checked><label for="radPhoto01">객실</label></span>
+								<span class="frmInp"><input type="radio" id="radPhoto02" name="photoLebel"><label for="radPhoto02">숙소</label></span>
+								<span class="frmInp"><input type="radio" id="radPhoto03" name="photoLebel"><label for="radPhoto03">편의/부대시설</label></span>
+								<span class="frmInp"><input type="radio" id="radPhoto04" name="photoLebel"><label for="radPhoto04">식사 공간/장소 </label></span>
+								<span class="frmInp"><input type="radio" id="radPhoto05" name="photoLebel"><label for="radPhoto05">주변 명소</label></span>
+								<span class="frmInp"><input type="radio" id="radPhoto06" name="photoLebel"><label for="radPhoto06">기타</label></span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">사용 여부</th>
+							<td>
+								<span class="frmInp"><input type="radio" id="radUse01" name="used_accept"><label for="radUse01">사용</label></span>
+								<span class="frmInp"><input type="radio" id="radUse02" name="used_accept"><label for="radUse02">미사용</label></span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">사진 설명</th>
+							<td><input type="text" value="객실 전경 사진" style="width:100%"></td>
+						</tr>
+						<tr>
+							<th scope="row">이미지</th>
+							<td>filename01.jpg</td>
+						</tr>
+						<tr>
+							<th scope="row">이미지 Alt 값</th>
+							<td><input type="text" value="[제주신라호텔] 객실 전경" style="width:100%"></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="btnArea">
+					<button type="submit" class="btnDefault btnL action">사진 등록</button>
+				</div>
+			</div>
+		</div>
+
+		<ul class="tabTypeCont tabBasics vspace">
+			<li><a href="#" data-controls="tabCont01" aria-selected="true">전체(60)</a></li>
+			<li><a href="#"data-controls="tabCont02">객실(12)</a></li>
+			<li><a href="#">편의/부대시설(12)</a></li>
+			<li><a href="#">식사 공간/장소(12)</a></li>
+			<li><a href="#">주변 명소((12)</a></li>
+			<li><a href="#">기타(12)</a></li>
+		</ul>
+
+		<div id="tabCont01" class="tabContentWrap tabON">
+			<ul class="photoList">
+				<li>
+					<figure><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></figure>
+					<button type="submit" class="btnDefault btnS action">대표이미지</button>
+					<button type="button" class="del">삭제</button>
+				</li>
+				<li>
+					<figure><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></figure>
+					<button type="submit" class="btnDefault btnS">대표이미지</button>
+					<button type="button" class="del">삭제</button>
+				</li>
+				<li>
+					<figure><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></figure>
+					<button type="submit" class="btnDefault btnS">대표이미지</button>
+					<button type="button" class="del">삭제</button>
+				</li>
+				<li>
+					<figure><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></figure>
+					<button type="submit" class="btnDefault btnS">대표이미지</button>
+					<button type="button" class="del">삭제</button>
+				</li>
+				<li>
+					<figure><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></figure>
+					<button type="submit" class="btnDefault btnS">대표이미지</button>
+					<button type="button" class="del">삭제</button>
+				</li>
+				<li>
+					<figure><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></figure>
+					<button type="submit" class="btnDefault btnS">대표이미지</button>
+					<button type="button" class="del">삭제</button>
+				</li>
+				<li>
+					<figure><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></figure>
+					<button type="submit" class="btnDefault btnS">대표이미지</button>
+					<button type="button" class="del">삭제</button>
+				</li>
+				<li>
+					<figure><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></figure>
+					<button type="submit" class="btnDefault btnS">대표이미지</button>
+					<button type="button" class="del">삭제</button>
+				</li>
+				<li>
+					<figure><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></figure>
+					<button type="submit" class="btnDefault btnS">대표이미지</button>
+					<button type="button" class="del">삭제</button>
+				</li>
+			</ul>
+		</div>
+
+		<div id="tabCont02" class="tabContentWrap">
+			텝2
+		</div>
+
+		<div class="btnAreaP">
+			<button type="submit" class="btnDefault btnL action">변경사항 저장</button>
+		</div>
+	</div><!-- //popContainer -->
+
+	<button type="button" class="closeP" onclick="window.close();">닫기</button>
+</div>
+</body>
+</html>

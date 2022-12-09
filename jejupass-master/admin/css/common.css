@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,div,figure,article,header,nav,footer{margin:0;padding:0;box-sizing:border-box}
+body,input,textarea,select,button,table,th,td{color:#666;font-family:"Malgun Gothic","맑은 고딕",돋움, Dotum,굴림,Gulim;font-size:14px;line-height:1.5}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-family:"Malgun Gothic","맑은 고딕",돋움, Dotum,굴림,Gulim}
+img,fieldset{border:0}
+textarea{-webkit-border-radius:0;-webkit-appearance:none;resize:none}
+ul,ol{list-style:none}
+ul:after, ol:after{content:"";display:block;clear:both;zoom:1}
+em,address{font-style:normal}
+input,select{vertical-align:middle}
+table{width:100%; border-collapse:separate;border-spacing:0}
+hr,legend{display:none}
+caption{visibility:hidden;overflow:hidden;position:static;top:0;left:0;width:0;height:0;font-size:0;line-height:0}
+strong, b{font-weight:600}
+button{border:none;background:none;cursor:pointer}
+
+a{color:#666;text-decoration:none}
+a:hover{text-decoration:underline}
+a{box-sizing:border-box}
+
+a, button{cursor:pointer}
+
+/* common */
+.hidden{visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-height:0}
+
+.tleft{text-align:left !important}
+.tright{text-align:right !important}
+.tcenter{text-align:center !important}
+
+.colPoint01{color:#f28329 !important}
+
+/* layout */
+html, body, #wrapper{height:100%}
+body > #wrapper{height:auto;min-height:100%}
+
+.wrapper{position:relative;z-index:10}
+.container:before{content:'';display:block;position:absolute;top:-71px;left:0;width:100%;height:281px;background:url(../image/common/bg_body01.jpg) no-repeat;background-size:cover;z-index:100}
+header{position:relative;height:71px;text-align:center;border-bottom:1px solid #504b47;z-index:10000}
+header .inner{width:1080px;margin:0 auto}
+
+.container{position:relative;padding-bottom:180px;text-align:center;z-index:100}
+.wideCont .inner{overflow:hidden;width:1080px;margin:0 auto;text-align:left}
+.contWhite{background:#fff}
+.contGrey{background:#f7f5f3}
+.contLine{border-top:1px solid #ddd}
+.greyType01, .whiteType01{padding-bottom:100px}
+
+footer{position:relative;height:180px;margin:-181px auto 0;border-top:1px solid #ddd;text-align:center;background:#fff;z-index:100}
+
+/* title */
+.titDep1, .titDep2, .titDep3{line-height:1}
+.titDep1{position:relative;height:210px;padding-top:73px;color:#fff;font-size:36px;letter-spacing:-2px;text-align:center;z-index:100}
+.titDep2{margin:70px 0 20px;color:#262626;font-size:23px;font-weight:600;letter-spacing:-1px}
+.titDep1 span{display:block;margin-top:15px;font-size:14px;color:rgba(255,255,255,0.6);letter-spacing:-1px}
+
+.titArea{position:relative}
+.titArea .titDep2{display:inline-block}
+.titArea .txtNess{position:absolute;bottom:20px;right:0}
+.txtNess span{color:#f38d42}
+.txtNum{font-size:13px;text-align:right}
+.titArea .txtNum{position:absolute;bottom:20px;right:0}
+.txtNum b{color:#f38d42}
+
+.titArea + [class*="tbl"]{margin-top:0}
+.titLine{padding-bo ttom:20px;border-bottom:1px solid #494844}
+
+/* button */
+.btnFont{position:relative;overflow:visible;margin:0;padding:0;display:-moz-inline-stack;display:inline-block;text-align:center;white-space:nowrap;vertical-align:middle;box-sizing:border-box;border-radius:3px}
+
+.btnS{height:36px;padding:0 15px;color:#fff;font-size:13px;line-height:36px;border-radius:0;background:#3c3b37}
+.btnM{min-width:90px;height:42px;padding:0 12px;color:#262626;line-height:42px;background:#e2ded2}
+.btnL{min-width:160px;height:50px;padding:0 20px;color:#262626;font-size:16px;line-height:50px;background:#e2ded2}
+
+.btnGrey{color:#fff;background:#e2ded2}
+.btnWhite{color:#262626;border:1px solid #ddd;background:#fff}
+
+[class*="icoF_"] *{vertical-align:middle}
+[class*="icoF_"]:before{content:'';display:inline-block;background:url(../image/common/spr_icon.png) no-repeat}
+.icoF_plus:before{width:12px;height:12px;margin:0 9px 0 -1px}
+.icoF_del{overflow:hidden;text-indent:-9999px;padding:0;width:36px}
+.icoF_del:before{position:absolute;top:11px;left:11px;width:12px;height:12px;background-position:-12px 0}
+.icoF_reset, .icoF_open{padding:0 10px;color:#262626;line-height:23px;backgroun d:pink}
+.icoF_reset:after, .icoF_open:after{content:'';display:inline-block;background:url(../image/common/spr_icon.png) no-repeat}
+.icoF_reset:after{width:15px;height:16px;margin:0 0 -2px 10px;background-position:-72px 0}
+.icoF_open:after{width:14px;height:16px;margin:0 0 -2px 10px;background-position:-87px 0}
+
+[class*="icon_"]{overflow:hidden;text-indent:-9999px;border:1px solid #ddd;border-radius:0}
+[class*="icon_"] *{vertical-align:middle}
+[class*="icon_"]:after{content:'';display:block;position:absolute;background:url(../image/common/spr_icon.png) no-repeat}
+.icon_view01, .icon_view02{width:36px;height:36px}
+.icon_view01:after, .icon_view02:after{top:10px;left:10px;width:14px;height:14px}
+.icon_view01:after{background-position:-108px 0}
+.icon_view02:after{background-position:-122px 0}
+
+.icoEdit{padding:0 50px 0 15px;color:#fff;font-size:13px;line-height:40px;border-radius:40px;background:rgba(0,0,0,0.3)}
+.icoEdit:after{content:'';display:block;position:absolute;top:0;right:0;width:40px;height:40px;border-radius:40px;background:rgba(0,0,0,0.5) url(../image/common/spr_icon.png) no-repeat -136px 0}
+.searchBtn{position:relative;display:inline-block}
+.searchBtn:after{content:'';display:block;position:absolute;top:8px;left:89px;width:1px;height:10px;background:#ccc}
+.viewSelect{display:inline-block}
+
+.action{color:#262626 !important;background:#fec413}
+
+.btnArea{margin-top:50px;text-align:center}
+
+/* Form */
+input::-webkit-input-placeholder{color:#666}
+input[type=text],input[type=password]{height:36px;padding:0 12px;color:#262626;line-height:36px;border:1px solid #ddd;outline:none}
+input[type=text]:focus,input[type=password]:focus{border-color:#fed042}
+input[type=text]:read-only, input[type=password]:read-only, input[type=text]:disabled, input[type=password]:disabled{background:#eee}
+input[type=text]:disabled::-webkit-input-placeholder{color:#bbb}
+.inpW{position:relative;display:inline-block;min-height:24px}
+.inpW *{vertical-align:top}
+input[type=radio], input[type=checkbox]{width:24px;height:24px;opacity:0}
+.inpW label{display:inline-block;margin-left:6px;line-height:24px;cursor:pointer}
+.inpW label:before{content:'';display:block;position:absolute;top:0;left:3px;width:24px;height:24px;border:2px solid #ddd;border-radius:24px;background:#fff;box-sizing:border-box}
+.inpW input + label:after{content:'';position:absolute;top:50%}
+.inpW input[type=radio] + label:after{left:10px;width:10px;height:10px;margin-top:-5px;border-radius:10px;background:#bbb}
+.inpW input[type=checkbox] + label:after{left:9px;width:10px;height:6px;margin-top:-5px;border:solid #bbb;border-width:0 0 2px 2px;transform:rotate(312deg)}
+.inpW input:checked + label:before{border-color:#fec413;background:#fec413}
+.inpW input[type=radio]:checked + label:after{background:#fff}
+.inpW input[type=checkbox]:checked + label:after{border-color:#fff}
+.inpW input:disabled + label{color:#888}
+.inpW input:disabled + label:before{border-color:#ddd;background:#f5f5f5}
+
+.selectBox{position:relative;display:inline-block;box-sizing:border-box}
+.selectBox select{display:none}
+.selectBox .tit{position:relative;display:block;height:36px;padding:0 12px;border:1px solid #ddd;line-height:34px}
+.selectBox .tit:after{content:'';display:block;position:absolute;top:50%;right:12px;width:0;height:0;margin-top:-2px;border:solid transparent;border-width:5px 4px 0 4px;border-top-color:#3c3b37}
+.selectBox .tit.on:after{transform:rotate(180deg)}
+.selectBox a:hover{text-decoration:none}
+.selectBox .tit span{display:block}
+.maskDiv_wddo{margin-top:-1px;padding:7px 0;border:1px solid #ddd;background:#fff;box-sizing:content-box}
+.selectBox .overcon{display:none;width:100%}
+.selectBox .overcon li a{display:block;height:25px;padding:0 12px;line-height:25px}
+.selectBox .overcon li a:hover{background:#f3f0ed}
+.jspContainer{overflow:hidden;position:relative;}
+.jspPane{overflow:hidden;position:absolute}
+.jspVerticalBar{position:absolute;top:5px;right:5px;width:10px;height:100%}
+.jspHorizontalBar{width:0;height:0}
+.jspTrack{position:relative;background:#e9eaef}
+.jspDrag{position:relative;background:#707684;top:0;left:0;cursor:pointer}
+.jspCapTop{height:0px}
+.jspCapBottom{display:block;height:10px}
+
+.attachFile{display:inline-block;position:relative}
+.attachFile input[type=text]:read-only, .attachFile input[type=text]:focus{width:280px;border-color:#ddd;background:#fff}
+.attachFile .del{position:relative;overflow:hidden;text-indent:-9999px;position:absolute;top:1px;right:93px;width:34px;height:34px}
+.attachFile .del:before, .attachFile .del:after{content:'';display:block;position:absolute;top:17px;left:11px;width:12px;height:2px;border-radius:2px;background:#999}
+.attachFile .del:before{transform:rotate(45deg)}
+.attachFile .del:after{transform:rotate(135deg)}
+.attachFile input[type=file]{position:absolute;top:0;left:284px;width:86px;height:36px;line-height:36px;opacity:0;cursor:pointer}
+.attachFile+ .txtInfo{margin-left:22px}
+
+/* table */
+table[class*="tbl"]{margin-top:20px;border-top:1px solid #3c3b37}
+[class*="tbl"] th, [class*="tbl"] td{height:71px;padding:18px 20px;border-bottom:1px solid #ccc;border-left:1px solid #ddd}
+[class*="tbl"] th{color:#433b2b;font-weight:normal;background:#f3f0ed}
+[class*="tbl"] th:first-child, [class*="tbl"] td:first-child{border-left:none}
+
+.tblH td{text-align:center}
+.tblV th{text-align:left}
+
+.paging{margin-top:40px;text-align:center}
+.paging *{vertical-align:middle}
+.paging a, .paging b, .paging button{display:inline-block;width:26px;height:26px;line-height:26px;font-weight:normal}
+.paging a, .paging b{margin:0 5px;border-radius:26px}
+.paging a:hover{color:#262626;background:#fec413}
+.paging button{position:relative;overflow:hidden;text-indent:-9999px;margin-left:1px}
+.paging button:after{content:'';display:block;position:absolute;top:8px;left:6px;height:6px;width:12px;height:11px;background:url(../image/common/spr_icon.png) no-repeat -24px 0}
+.paging button.prev:after{background-position:-36px 0}
+.paging button.next:after{background-position:-48px 0}
+.paging button.last:after{background-position:-60px 0}
+.paging button.prev{margin-right:10px}
+.paging button.next{margin-left:10px}
+.paging b{color:#262626;;background:#fec413}
+
+/* tab */
+.tabType1{position:relative;width:1080px;height:42px;margin:-42px auto 0;z-index:100}
+.tabType1 li{float:left;margin-right:6px}
+.tabType1 li a{display:block;min-width:132px;padding:0 20px;color:#fff;line-height:42px;text-align:center;background:#41403c}
+.tabType1 li.on a{color:#262626;background:#fec413}
+.tabType1 li.like a:before{content:'';display:inline-block;width:15px;height:13px;margin:0 6px 2px 0;vertical-align:middle;background:url(../image/common/spr_icon.png) no-repeat -177px 0}
+.tabType1 li.like.on a:before{background-position:-192px 0}
+
+.tabType2{display:table;width:100%;table-layout:fixed}
+.tabType2:after{display:none}
+.tabType2 li{display:table-cell}
+.tabType2 li a{position:relative;display:block;height:44px;color:#717171;line-height:44px;text-align:center;border:solid #ddd;border-width:1px 1px 1px 0}
+.tabType2 li:first-child a{border-left:1px solid #ddd}
+.tabType2 li.on{background:#fec413}
+.tabType2 li.on a{color:#262626}
+.tabType2 li.on a:after{content:'';display:block;position:absolute;top:-1px;left:-1px;width:100%;height:42px;border:1px solid #fec413}
+
+/* list */
+.listDot li{margin-top:3px}
+.listDot li:first-child{margin-top:0}
+.listDot li, p.listDot{position:relative;padding:0 0 0 11px;line-height:1.8}
+.listDot li:before, p.listDot:before{content:'';display:block;position:absolute;top:11px;left:0;width:4px;height:4px;border-radius:4px;background:#3c3b37}
+.txtInfo{display:inline-block;position:relative;font-size:13px}
+.txtInfo:before{content:'';display:inline-block;width:1px;height:10px;margin-right:25px;background:#ddd}
+
+/* layer popup */
+.popLayer{position:fixed;top:50%;left:50%;border-radius:5px;background:#fff;z-index:9999}
+.popLayer .layCont{position:relative;padding:30px;border:none;z-index:1000}
+
+.popLayer .titPop{height:57px;color:#262626;font-size:18px;font-weight:600;line-height:57px;text-align:center;border-radius:5px 5px 0 0;background:#f3f0ed}
+.popLayer .close{overflow:hidden;text-indent:-9999px;position:absolute;top:0;right:-64px;width:49px;height:41px}
+.popLayer .close:before, .popLayer .close:after{content:'';display:block;position:absolute;top:19px;left:5px;width:40px;height:1px;background:rgba(255,255,255,0.7)}
+.popLayer .close:before{transform:rotate(45deg)}
+.popLayer .close:after{transform:rotate(135deg)}
+.w780{width:780px;margin-left:-390px}
+.w420{width:420px;margin-left:-210px}
+
+.popTab{overflow:hidden;border-radius:5px 5px 0 0}
+.popTab li{position:relative;float:left;width:50%;height:55px;padding:0;text-align:center;overflow:hidden}
+.popTab li a{position:relative;display:block;font-size:16px;line-height:55px;text-align:center;background:#f3f0ed;z-index:100}
+.popTab li.on a{color:#262626;background:#fff}
+.popTab li:after{content:'';display:block;position:absolute;top:-5px;left:-5px;width:10px;height:65px;background:#e8e2dc;transform:rotate(170deg);z-index:1000}
+.popTab li.on:after{display:none}
+.popTab li:first-child:after{left:auto;right:-5px;transform:rotate(10deg)}
+.dimmed{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:100}
+
+/* board */
+.boardList{border-top:1px solid #3c3b37}
+.boardList *{vertical-align:middle}
+.boardList th, .boardList td{padding:13px 15px;border-bottom:1px solid #ddd;text-align:center}
+.boardList th{color:#433b2b;background:#f3f0ed}
+.boardList a:hover{color:#ee6500}
+.ico_imp{display:inline-block;overflow:hidden;text-indent:-9999px;width:16px;height:15px;background:url(../image/common/spr_icon.png) no-repeat -207px 0}
+.file_attach{display:inline-block;position:relative;overflow:hidden;text-indent:-9999px;width:17px;height:18px;margin-left:3px}
+.file_attach:before{content:'';display:block;position:absolute;top:0;left:5px;width:7px;height:18px;background:url(../image/common/spr_icon.png) no-repeat -223px 0}
+
+/* box */
+.boxGrey{background:#f7f6f3}
+.boxSearch01{padding:50px 0;text-align:center}
+
+/* pattern */
+.itemNess{display:inline-block;position:relative;padding-left:3px;color:#f38d42}
+.itemNess:after{content:'필수항목';display:inline-block;text-indent:-9999px}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="ic_x18_login" transform="translate(0 .436)">
+        <g id="Group_16880" data-name="Group 16880" transform="translate(1.153 1.077)">
+            <g id="Group_16879" data-name="Group 16879" transform="translate(0 4.867)">
+                <path id="Path_22679" data-name="Path 22679" class="cls-2" d="M1.445 5.782h9.883" transform="translate(-1.445 -3.179)"/>
+                <path id="Path_22680" data-name="Path 22680" d="m6 3.855 2.6 2.6L6 9.059" transform="translate(1.873 -3.855)" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px"/>
+            </g>
+            <path id="Path_22682" data-name="Path 22682" class="cls-2" d="M307.318 86.992v-1.67a2.131 2.131 0 0 1 2.22-2.026h8.7a2.131 2.131 0 0 1 2.222 2.026V96.3a2.13 2.13 0 0 1-2.222 2.024h-8.7a2.129 2.129 0 0 1-2.22-2.024v-1.67" transform="translate(-304.71 -83.296)"/>
+        </g>
+    </g>
+</svg>

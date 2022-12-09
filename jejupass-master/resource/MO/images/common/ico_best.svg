@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6531ce;
+        stroke: #707070;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #1d68dc;
+      }
+
+      .cls-3 {
+        fill: #569aff;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="ic_x18_reputation" transform="translate(-36 -438)">
+    <g id="container" class="cls-1" transform="translate(36 438)">
+      <rect class="cls-5" width="18" height="18"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="17" height="17"/>
+    </g>
+    <g id="ic_reputation" transform="translate(-3 -3)">
+      <path id="패스_2613" data-name="패스 2613" class="cls-2" d="M0,0H10V10L5.025,8.267,0,10Z" transform="translate(43 449)"/>
+      <circle id="타원_83" data-name="타원 83" class="cls-3" cx="7" cy="7" r="7" transform="translate(41 441)"/>
+      <path id="Star_1" data-name="Star 1" class="cls-4" d="M4.336,1.974a.7.7,0,0,1,1.327,0l.431,1.281a.7.7,0,0,0,.645.477L8.1,3.769a.7.7,0,0,1,.42,1.245l-1.136.915a.7.7,0,0,0-.234.735l.395,1.4a.7.7,0,0,1-1.084.757L5.41,8.061a.7.7,0,0,0-.821,0L3.541,8.82a.7.7,0,0,1-1.084-.757l.395-1.4a.7.7,0,0,0-.234-.735L1.481,5.013A.7.7,0,0,1,1.9,3.769l1.359-.037a.7.7,0,0,0,.645-.477Z" transform="translate(43 443)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,837 @@
+@charset "utf-8";
+
+@import '_mbase', '_mfont';
+
+/* 숙박 */
+
+//숙박 메인
+.swiperStay .photoList{flex-wrap:inherit}
+.staySearch{margin-top:32px;
+    &.searchIcon:before{width:18px;height:18px;margin-top:-9px;background-position:-140px -26px}
+    &.inpFocus:before{background-position:-220px -26px}
+}
+.themeSearch{height:183px;padding:32px 0 0 20px;margin:32px -20px 0;background:url(#{$img_url}/stay/bg_theme.png) no-repeat 0 0/cover;box-sizing:border-box;
+    .scrollVArea{overflow-y:hidden;width:calc(100% + 20px);padding-right:0;box-sizing:border-box}
+    .tagList{width:130%;height:96px;margin-top:-8px;font-size:0;
+        .tagItem{display:inline-block;height:40px;padding:0 16px;margin:8px 8px 0 0;color:$col_g600;font-size:rem(14px);line-height:40px;border:1px solid $col_g200;background:$col_white;box-sizing:border-box;border-radius:20px}
+    }
+}
+.recentlyFavorite{
+    .swiperWrap .swiper-pagination{position:static}
+}
+.typeRanking{
+    ul{counter-reset:section;
+        li{padding-top:1px;
+            &:before{content:counter(section);counter-increment:section;position:absolute;top:0;left:-1px;width:22px;height:24px;padding-left:1px;color:$col_white;font-size:rem(12px);font-weight:$weight900;text-align:center;background:url(#{$img_url}/common/bg_ranking.svg) no-repeat;z-index:100;box-sizing:border-box}
+            +li+li+li:before{background-image:url(#{$img_url}/common/bg_ranking_low.svg)}
+        }
+    }
+    .tagList{margin-top:2px}
+    ~ .bannerType{margin-top:48px}
+}
+.stayStory{position:relative;margin:32px -20px 0;padding:40px 20px 0;
+    &:before{content:'';position:absolute;top:0;left:0;width:100%;height:8px;background:$col_g100;border-top:1px solid $col_g200}
+    .tabWrap{
+        .tabTypeR>li>a{min-width:109px}
+        button:before{width:65px}
+    }
+    .photoList .listCont{flex:0 0 auto; 
+        > a{position:relative;width:100%;border-radius:12px;
+            &:after{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to bottom, rgba($col_black, 0) 48%, $col_black);z-index:1}
+            figure{border-radius:12px}
+        }
+        .title{@include ellipsis(2, auto);position:absolute;bottom:22px;left:24px;font-size:rem(18px);color:$col_white;font-weight:$weight600;box-sizing:border-box;z-index:2}
+    }
+    .bannerType{margin-top:48px}
+    ~ .titDep3{margin-top:48px}
+}
+
+.tripSelect.type2{height:28px;
+	.inner{padding-left:0;padding-right:0;}
+	.selArea01{line-height:1}
+	.selArea01>span{position:relative;display:inline-block;height:16px;padding-left:20px;font-size:rem(13px);line-height:16px;vertical-align:top;}
+	.scrollVArea{margin:0;}
+	.frmBox{margin-top:10px;}
+	&.selBox{height:50px;}
+}
+
+//숙박상세
+.stayTab{
+	
+	.tabContentWrap>.tabInner {
+		.titDep4{margin:30px 0 12px;}
+		img{border-radius:8px;}
+		p.text{margin-bottom:12px;}
+	}
+	
+}
+
+.swiperWrap .swiper-paging{z-index:1;}
+
+.locationDepth{font-size:0;margin-top:5px;
+	&:before{display:none}
+	span{position:relative;display:inline-block;padding-left:12px;font-size:rem(14px);color:$col_g600;line-height:1;
+		&:first-child{padding-left:0;
+			&:before{display:none}
+		}
+		// &:before{content:'';display:block;position:absolute;top:50%;left:1px;width:7px;height:7px;margin-top:-3px;border:solid $col_g500;border-width:1px 1px 0 0;@include prefix(transform,rotate(45deg))}
+		&:before{content:'';display:block;position:absolute;top:50%;left:0;margin-top:-6px;width:12px;height:12px;background:url(#{$img_url}/common/ico_deptharr.svg) no-repeat}
+	}
+	+.txt{margin-top:0}
+	.conUtil &{
+		span:after{display:none}
+	}
+	+span{margin-top:6px}
+}
+.stayInfo{
+	.conUtil{
+		.grade{display:inline-block;vertical-align:middle;margin-left:8px;
+			&:after{left:0;top:50%;margin-top:-6px;}
+		}
+		.btLink01{
+			&.locationDepth{padding-left:0;margin:0;
+				&:before{display:none}
+				>span{padding-left:20px;text-decoration:underline;
+					&:first-child{padding-left:0}
+					&:before{left:4px}
+					&:after{display:none}
+				}
+			}
+		}
+	}
+}
+.listCont{
+	>a{
+		.locationDepth{margin-top:4px;
+			+.grade{display:block;margin-top:4px;color:$col_g600;font-size:rem(13px)}
+		}
+	}
+}
+.compNoteBox.atMid{margin-top:32px}
+.stayReviewAll{
+	.listNum{margin-top:-32px}
+}
+.stayCoupon{
+	.couponList{padding:0}
+}
+.stayMap{
+	.mapSrcBt{position:absolute;top:0;right:0;color:$col_g600;font-size:rem(14px);font-weight:$weight600;
+		&:after{border-color:$col_g600}
+	}
+}
+
+.reviewOps{
+	.selOption{position:relative;display:inline-block;height:48px;vertical-align:top;white-space:nowrap;
+		input{position:absolute;right:5px;top:5px;
+			&:checked + label:after{right:2px}
+		}
+		label{position:relative;display:block;height:48px;padding:0 41px 0 11px;color:$col_g900;font-size:rem(14px);line-height:48px;
+			&:before{content:'';display:block;position:absolute;top:50%;right:0;width:32px;height:18px;margin-top:-9px;border-radius:18px;background:$col_p600}
+			&:after{content:'';display:block;position:absolute;top:50%;right:16px;width:14px;height:14px;margin-top:-7px;border-radius:50%;background:$col_white;transition:0.3s}
+		}
+	}
+}
+
+//숙박리스트
+.photoList.resultList:first-child{margin-top:0}
+.stayInfo{display:block;
+	.tit{margin-top:16px;color:$col_g900;font-size:rem(18px);font-weight:$weight700}
+	.txt{margin-top:12px;
+		button.btLink{padding: 3px 5px;
+			font-weight: 400;
+			color: #202020;}
+	}
+	// .hashtag span{color:$col_g600}
+	// .conUtil{
+	// 	&.link{font-size:0;
+	// 		span{position:relative;color:$col_g600;font-size:rem(14px);
+	// 			margin:0 8px 0 0;padding:0 10px 0 0;
+	// 			&:after{content:'';position:absolute;top:50%;left:auto;right:0;margin-top:-6px;width:1px;height:12px;background:$col_g200;}
+	// 			&:last-child{margin:0;padding:0;
+	// 				&:after{content:none}
+	// 			}
+	// 			&.icoScore{padding-left:18px;}
+	// 		}
+	// 	}
+	// 	.btLink01{padding:0 14px 0 0;
+	// 		&:after{border-color: $default_col;}
+	// 	}
+	// } 
+}
+.price-info{position:relative;margin-top:10px;display:flex;justify-content:space-between;align-items:flex-end;
+	.salePrice{display:block;color:$col_p600;font-size:rem(14px);font-weight:$weight600}
+	.date{color:$col_g600;font-size:rem(14px)}
+	.price{color:$col_g900;font-size:rem(18px);}
+}
+.titArea{
+	.detailBt{position:absolute;top:-2px;right:0;font-weight:$weight600}
+}
+.hashtag{margin:15px 0 -8px 0;line-height:1.3;font-size:0;
+	a{display:inline-block;padding:8px 12px;margin:0 8px 8px 0;font-size:rem(14px);color:$col_g600;letter-spacing:-0.24px;line-height:1;border-radius:20px;border:1px solid $col_g200}
+}
+.convenience{margin-top:-10px;display:flex;flex-wrap:wrap;
+	
+	li{width:20%;margin-top:20px;align-items:center;justify-content:center;flex-direction:column;text-align:center;
+		img{width:30px;display:inline-block;margin:0 auto}
+		span{position:relative;display:block;margin-top:4px;font-size:rem(13px);line-height:1.3;
+			
+			//&:before{content:"";display:block;position:absolute;top:0;left:50%;margin-left:-15px;width:30px;height:30px;background:url(#{$img_url}/stay/m_spr_stay_icon.png) no-repeat 0 0 /300px auto}
+			//&.coffeepot:before{background-position:0 0}/*커피포트*/
+            &.liquor:before{background-position:-30px 0}/*주류*/
+            &.aircon:before{background-position:-60px 0}/*에어컨*/
+            &.animal:before{background-position:-90px 0}/*반려동물 동반 가능*/
+            &.bar:before{background-position:-120px 0}/*바(bar)*/
+            &.barbecue:before{background-position:-150px 0}/*바베큐*/
+            &.bathrobe:before{background-position:-180px 0}/*(샤워)가운*/
+            &.bathtub:before{background-position:-210px 0}/*욕조*/
+            &.bed_one:before{background-position:-240px 0}/*침대1*/
+            &.bed_two:before{background-position:-270px 0}/*침대2*/
+            &.bedding:before{background-position:0 -30px}/*침구*/
+            &.bidet:before{background-position:-30px -30px}/*비데*/
+            &.braille:before{background-position:-60px -30px}/*점자 표지 제공*/
+            &.breakfast:before{background-position:-90px -30px}/*조식포함*/
+            &.calendar:before{background-position:-120px -30px}/*달력*/
+            &.casino:before{background-position:-150px -30px}/*카지노*/
+            &.checkin:before{background-position:-180px -30px}/*24시 상시 체크인*/
+            &.cleaning:before{background-position:-210px -30px}/*청소 서비스*/
+            &.concierge:before{background-position:-240px -30px}/*컨시어지*/
+            &.cvs:before{background-position:-270px -30px}/*편의점*/
+            &.curtain:before{background-position:0 -60px}/*암막커튼*/
+            &.desk24:before{background-position:-30px -60px}/*24시 프론트데스크*/
+            &.disinfection_kitchen{background-position:-60px -60px}/*주방 및 식기류 소독*/
+            &.disinfection_room:before{background-position:-90px -60px}/*객실 소독*/
+            &.drier:before{background-position:-120px -60px}/*헤어 드라이어*/
+            &.dry:before{background-position:-150px -60px}/*드라이클리닝*/
+            &.elevator:before{background-position:-180px -60px}/*엘리베이터*/
+            &.farm:before{background-position:-210px -60px}/*농장*/
+            &.fire_alarm:before{background-position:-240px -60px}/*화재경보기*/
+            &.fire_extinguisher:before{background-position:-270px -60px}/*소화기*/
+            &.first_aidkit:before{background-position:0 -90px}/*구급상자*/
+            &.fitness:before{background-position:-30px -90px}/*피트니스*/
+            &.food_delivery:before{background-position:-60px -90px}/*음식 배달*/
+            &.wifi_high:before{background-position:-90px -90px}/*초고속 와이파이*/
+            &.wifi:before{background-position:-120px -90px}/*무료 와이파이*/
+            &.garden:before{background-position:-150px -90px}/*정원*/
+            &.hairshop:before{background-position:-180px -90px}/*헤어샵*/
+            &.hand_sanitizer:before{background-position:-210px -90px}/*손 소독제*/
+            &.hanger:before{background-position:-240px -90px}/*옷걸이*/
+            &.heating:before{background-position:-270px -90px}/*난방시설*/
+            &.hygiene:before{background-position:0 -120px}/*위생인증*/
+            &.jacuzzi:before{background-position:-30px -120px}/*자쿠지*/
+            &.karaoke:before{background-position:-60px -120px}/*노래방*/
+            &.kids_pool:before{background-position:-90px -120px}/*키즈풀*/
+            &.library:before{background-position:-120px -120px}/*도서관*/
+            &.limited:before{background-position:-150px -120px}/*인원제한*/
+            &.lobby:before{background-position:-180px -120px}/*로비*/
+            &.lock:before{background-position:-210px -120px}/*객실 잠금장치*/
+            &.lounge:before{background-position:-240px -120px}/*라운지*/
+            &.mask:before{background-position:-270px -120px}/*마스크필수*/
+            &.non-smoking:before{background-position:0 -150px}/*금연*/
+            &.olle:before{background-position:-30px -150px}/*올레길*/
+            &.parking_lot:before{background-position:-60px -150px}/*주차장*/
+            &.pickup_airport:before{background-position:-90px -150px}/*공항 픽업 서비스*/
+            &.pool:before{background-position:-120px -150px}/*수영장*/
+            &.reception:before{background-position:-150px -150px}/*리셉션*/
+            &.reception24:before{background-position:-180px -150px}/*24시 리셉션*/
+            &.refrigerator:before{background-position:-210px -150px}/*냉장고*/
+            &.rentacar:before{background-position:-240px -150px}/*렌터카*/
+            &.restaurant:before{background-position:-270px -150px}/*레스토랑*/
+            &.room_service:before{background-position:0 -180px}/*룸서비스*/
+            &.safe:before{background-position:-30px -180px}/*안전금고*/
+            &.sauna:before{background-position:-60px -180px}/*사우나*/
+            &.sea_road:before{background-position:-90px -180px}/*바닷길*/
+            &.self_checkin:before{background-position:-120px -180px}/*셀프 체크인*/
+            &.shampoo:before{background-position:-150px -180px}/*샴푸*/
+            &.shower_gel:before{background-position:-180px -180px}/*샤워젤*/
+            &.shuttle_service:before{background-position:-210px -180px}/*셔틀 서비스*/
+            &.signature_menu:before{background-position:-240px -180px}/*시그니처 메뉴*/
+            &.smoking:before{background-position:-270px -180px}/*흡연*/
+            &.sofa:before{background-position:0 -210px}/*소파*/
+            &.spa:before{background-position:-30px -210px}/*스파*/
+            &.taxi:before{background-position:-60px -210px}/*택시 서비스*/
+            &.telephone:before{background-position:-90px -210px}/*전화기*/
+            &.terrace:before{background-position:-120px -210px}/*테라스*/
+            &.themepark:before{background-position:-150px -210px}/*테마파크*/
+            &.thermometer:before{background-position:-180px -210px}/*체온계*/
+            &.thermometer_measure:before{background-position:-210px -210px}/*체온측정*/
+            &.toothbruch:before{background-position:-240px -210px}/*치약&칫솔*/
+            &.towel:before{background-position:-210px -210px}/*수건*/
+            &.traditional_food:before{background-position:0 -240px}/*전통음식*/
+            &.travelbag_storage:before{background-position:-30px -240px}/*여행 가방 보관 서비스*/
+            &.tv:before{background-position:-60px -240px}/*TV*/
+            &.valet_parking:before{background-position:-90px -240px}/*발렛파킹*/
+            &.waitingroom:before{background-position:-120px -240px}/*대기실*/
+            &.warm_water:before{background-position:-150px -240px}/*온수*/
+            &.washing:before{background-position:-180px -240px}/*세탁 서비스*/
+            &.washing_machine:before{background-position:-210px -240px}/*세탁기*/
+            &.waterpark:before{background-position:-240px -240px}/*워터파크*/
+            &.wheelchair:before{background-position:-270px -240px}/*휠체어*/
+            &.wired:before{background-position:0 -270px}/*유선 인터넷*/
+            &.work_space:before{background-position:-30px -270px}/*업무 공간*/
+            &.yard:before{background-position:-60px -270px}/*마당*/
+			&.coin_laundry:before{background-position:-90px -270px}/*코인세탁실*/
+            &.indoor_pool:before{background-position:-120px -270px}/*실내수영장*/
+            &.outdoor_pool:before{background-position:-150px -270px}/*실외수영장*/
+            &.infinity_pool:before{background-position:-180px -270px}/*인피니티풀*/
+			
+		}
+	}
+	+.titDep4{margin-top:40px}
+}
+.storyInfo{margin:32px -20px 0; padding:32px 20px 40px;background-color:$col_g100;
+	li.listCont{margin:0;border-radius:8px;background:$col_white;
+		figure{border-radius:0;}
+		.info{position:relative;padding:0 20px 50px;
+			.conUtil{position:absolute;bottom:20px;right:20px;line-height:0}
+		}
+	}
+	li.listCont.type2{background:none;border-radius:0;
+		figure{border-radius:8px;}
+		.info{padding:0;
+			.conUtil{position:relative;bottom:auto;right:auto;margin-top:10px;}
+		}
+	}
+	.btLink01{padding:0px 18px 0 0;color:$col_g900;
+		&:after{width:8px;height:8px;margin-top:-5px;border:solid $col_g900;border-width:2px 2px 0 0;@include prefix(transform,rotate(45deg));}
+	}
+	
+	.swiperWrap.swiperColumn3{
+		.swiper-container{width:calc(100% - 103px)} 
+	}
+}
+.storyInfo2{padding:32px 0px 0px;
+	.info .txt span{display:inline-block;position:relative;
+			& + span{margin-left:7px;padding-left:7px;
+				&:after{content:'';display:block;position:absolute;top:5px;left:0;width:1px;height:12px;background:$col_g200}
+		}
+	}
+	.typeTrip li.listCont{margin-top:0;}
+	.titArea{
+		.stayCollectBt{position:absolute;top:0;right:0;font-weight:$weight600}
+	}
+	.storyCont &{padding-top:40px}
+	&.recInfo{
+		.info{
+			.tit+.briefTxt{color:$col_g600;font-size:rem(14px)}
+			.conUtil{margin-top:0}
+		}
+	}
+}
+.storyInfo + .photoList {margin-top:40px;}
+.bannerType + .storyInfo{margin-top:48px;padding-top:40px}
+
+.storyList{
+	li{overflow:hidden;padding:20px;background:$col_white;border-radius:8px;
+		+li{margin-top:12px}
+		a{overflow:hidden;display:block;
+			>*{float:left}
+		}
+		figure{overflow:hidden;width:120px;border-radius:8px;
+			img{width:100%;}
+		}
+		.info{width:calc(100% - 120px);padding-left:20px;
+			.tit{color:$col_g900;font-size:rem(15px);font-weight:$weight600;}
+			.tagWrap{margin-top:3px}
+			.conUtil{margin-top:6px}
+		}
+	}
+}
+
+.compInfo{
+	&.type02{
+		dt{width:124px;
+			+dd{max-width:calc(100% - 124px)}
+		}
+	}
+}
+
+//객실리스트
+.roomList{
+	> li:not(:first-child){padding-top:40px;}
+	> li:first-child{padding-top:24px}
+	.titWrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;
+		.rightArea .btLink01{color:$col_g600;font-size:rem(14px);
+			&:after{border-color:$col_g600;margin-top:-5px;}
+		}
+	}
+	.roomImg{overflow:hidden;height:164px;border-radius:8px;display:flex;justify-content:center;align-items:center;font-size:0;}
+	.roomSubCont{margin-top:12px;padding:20px;border-radius:12px;background:$col_white;
+		.titDep5{
+			.btLink01{padding:0 14px 0 0}
+		}
+		.flagList{margin:0 0 8px;}
+		.acctAging01{margin-top:20px;
+			.toggleBtn{border:1px solid $col_g200;border-radius:8px;font-size:rem(16px);height:56px;display:flex;align-items:center;
+				> strong{display:inline-block;width:80px;color:$col_g900;}
+				> span{display:inline-block;color:$col_g500;@include ellipsis(1, auto);}
+				&:after{right:20px;margin-top:-5px;}
+			}
+			.toggleCont{display:none;padding:0 20px 18px;background:$col_g100;border:0;border-radius:0 0 8px 8px;
+				.listType01>li{margin-top:8px;}
+				.listType01>li:first-child{margin-top:0;}
+			}
+			.toggleBtn[aria-expanded=true]{
+				background:$col_g100;border:0;border-radius:8px 8px 0 0;
+				> span {display:none;}
+				& +.toggleCont{display:block;}
+			}
+		}
+	}
+}
+.roominfo01{margin-top:10px;
+	>span{display:block;margin-top:6px;padding-left:24px;position:relative;font-size:rem(14px);color:$col_g600;line-height:1;
+		&::before{content:'';display:block;width:12px;height:12px;position:absolute;top:1px;left:0;}
+		&.ico-num:before{background:url(#{$img_url}/common/ico_num.svg) no-repeat}
+		&.ico-smoke:before{background:url(#{$img_url}/common/ico_nosmoking.svg) no-repeat}
+		&.ico-room:before{background:url(#{$img_url}/common/ico_bed.svg) no-repeat}
+		&.ico-snack:before{background:url(#{$img_url}/common/ico_snack.svg) no-repeat}
+		&.ico-num{
+			>span{position:relative;padding-left:6px;margin-left:6px;font-size:rem(14px);color:$col_g600;line-height:1;
+				&:before{content:'';display:inline-block;position:absolute;top:50%;left:0;margin-top:-6px;width:1px;height:12px;background:$col_g200;}
+			}
+		}
+	}
+}
+.roominfo02{margin-top:20px;padding:10px 0 15px;border:solid $col_g100;border-width:1px 0;
+	.btLink02{padding-left:0;font-weight:$weight600}
+	.btLink02 + .price-info{margin-top:1px;}
+	.noRefundTxt{padding:5px 0;color:$col_redP;font-size:rem(14px);font-weight:$weight600}
+	.noRefundTxt + .price-info{margin-top:1px}
+}
+.roombaseInfo {
+	[class^=titDep]{margin:40px 0 11px;}
+	.sTit{margin:20px 0 11px;color:$col_g800;font-weight:$weight600}
+	.titDep4 + .sTit{margin-top:0}
+	.titDep5{margin-top:20px;color:$col_g800;}
+	.titDep4 + .titDep5{margin-top:0px;}
+	p.text{margin-top:8px;line-height:1.8}
+	.listType01>li{margin-top:8px;color:$default_col}
+}
+.roundBox{padding:20px;border-radius:12px;background:$col_white;}
+.roundBoxGray{position:relative;display:inline-block;padding:20px;width:100%;border-radius:8px;background:$col_g100;
+	&.halfLine{position:relative;
+		&:before{content:'';display:block;position:absolute;top:0;left:50%;width:1px;height:100%;background:$col_white;z-index:1}
+		.days{position:relative;z-index:2}
+	}
+}
+.roundBoxPur{padding:20px;border-radius:8px;background:$col_p100;}
+
+//객실상세
+.cancelTxt{color:$col_g800;font-size:rem(14px);text-align:center;
+	strong{display:inline-block;margin-right:8px;font-weight:$weight600;}
+}
+.cancelRule{margin-top:18px;padding:20px;font-size:0;background:$col_white;border-radius:12px;
+	.bar{position:relative;height:12px;background:$col_p100;border-radius:6px;
+		span{position:absolute;top:0;left:0;width:64%;height:100%;background:$col_p500;border-radius:6px}
+	}
+	>span{position:relative;display:inline-block;margin-top:-9px;font-size:rem(12px);line-height:1;
+		&:before{content:'';display:block;width:6px;height:6px;margin-bottom:9px;border-radius:50%;background:$col_white}
+		em{display:block;margin-bottom:4px;font-weight:$weight600}
+		&.today{width:48%;
+			&:before{margin-left:3px;background:$col_primary}
+		}
+		&.endDay{width:26%;color:$col_primary;text-align:center;
+			&:before{margin:0 auto 9px}
+			em{color:$col_p600}
+		}
+		&.inDay{width:24%;text-align:right;
+			&:before{margin-left:auto}
+		}
+	}
+	&.stayToday{
+		.bar span{width:100%}
+		>span.today{width:50%}
+		>span.inDay{width:49%;color:$col_primary;
+			em{color:$col_p600}
+		}
+	}
+}
+
+//취소규정
+.cancelFeeBox{position:relative;padding:24px 25px;margin:16px 0 12px;background:$col_g100;border-radius:12px;
+    &:before{content:'';display:block;position:absolute;left:130px;top:35px;width:1px;height:74%;background:$col_g300;}
+    li{overflow:hidden;
+        +li{margin-top:27px}
+        >div{float:left}
+        .date{width:102px;padding-right:20px;font-size:rem(14px);font-weight:$weight600;text-align:right;
+            span{display:block;color:$col_g600;font-size:rem(14px);text-align:right;}
+            +.txt{margin-left:0}
+        }
+        .txt{position:relative;width:calc(100% - 102px);padding-left:27px;margin-left:102px;color:$col_g900;font-weight:$weight600;
+            &:before{@include pseudo(7px,7px);top:6px;left:0;margin:0;border-radius:50%;background:$col_g500;box-sizing:border-box;}
+            .per{display:inline-block;margin-left:5px;color:$col_g900;}
+        }
+        .cancelFeeTxt{display:block;color:$col_g600;font-size:rem(14px);
+            em{color:$col_p600;font-size:rem(14px);}
+        }
+        &:nth-child(1), &:nth-child(5){
+            .txt:before{border:1px solid $col_g600;background:$col_white}
+        }
+    }
+    ~.listType01+.titDep4{display:block;margin:32px 0 16px}
+    ~ol{
+        li{margin-top:12px}
+        +.listType01{margin-top:12px}
+    }
+}
+.statuteList{
+	.stayDaysTxt{color:$col_g800;
+		span{color:$col_g800;font-weight:$weight600}
+		.stayDaysSet{position:absolute;top:-5px;right:0;color:$col_g600;font-weight:$weight600}
+	}
+}
+
+//숙소예약
+.bgGrayArea{margin:0 -20px;padding:32px 20px;background:$col_g100;
+	.roundBoxGray{margin:20px 0;}
+}
+.reservWrap{
+	.titDep4{
+		em{display:block;color:$col_p600}
+	}
+	.price-info{margin-top:0}
+}
+.reservationForm{
+	&.stayReserv{
+		.titDep4{margin-top:32px}
+		.payGuide{padding-top:32px;margin-top:32px;border-top:1px dashed $col_g300;}
+		.tblInfo{margin-top:0;
+			// &.payGuide{position:relative;margin-top:64px;
+			// 	&:before{content:'';display:block;position:absolute;top:-32px;left:0;right:0;border-top:1px dashed $col_g300;}
+			// }
+			p.listType02{margin-top:0}
+		}
+	}
+	.frmInp.txt.small{float:right;
+		+.inpFrm{margin-top:40px}
+	}
+	.termsLink{color:$col_g900;font-weight:$weight700;text-decoration:underline}
+	.stayGuestInfo{position:relative;
+		+.stayGuestInfo{margin-top:32px;border-top:1px dashed $col_g300}
+		.delBt{position:absolute;top:35px;right:0;font-weight:$weight600}
+	}
+}
+.icoAdd{
+	&:before{content:'';display:inline-block;width:12px;height:12px;margin-right:6px;background:url(#{$img_url}/common/ico_plus.svg) no-repeat;}
+}
+.checkInOut{display:flex;flex-direction:row;justify-content:space-around;align-items:center;text-align:center;
+	em{display:block;font-size:rem(13px);color:$col_g600;}
+	strong{display:block;font-size:rem(16px);color:$col_g900;}
+	span{display:block;font-size:rem(14px);color:$col_g900;}
+	.days{padding:9px 14px;border-radius:20px;background:$col_white;font-weight:$weight600;font-size:rem(14px);color:$col_g900;line-height:1;
+		&.reserved{color:$col_white;background:$col_p600}
+	}
+}
+.stayComp{
+	.stayResv{
+		.checkInOut{
+			strong{font-size:1.8rem;}
+			.days{background:#e6effe;color:$col_p600}
+		}
+	}
+	.resvInfo{margin:32px -20px 0;padding:12px 20px 20px;background:$col_g100;border-radius:8px;
+		li{margin-top:8px;display:flex; justify-content:flex-start;
+			span{flex:1 0 auto;width:80px;font-size:rem(14px)}
+			span.txt{flex:1 1 100%;color:$col_g900;text-align:right;
+				&.col01{color:$col_p600 !important}
+			}
+		}
+	}
+	.subtxt{margin-top:10px;color:$col_g600;font-size:1.3rem;}
+	// + .btnArea{margin-top:50px;}
+}
+.boxCompCont{
+	&.stayComp{margin-top:-60px;
+		.subtxt{margin:10px -20px 0}
+	}
+}
+
+.compInfo{
+	dd{width:100%; a{display:inline-block;}}
+}
+.completePanel{
+	.message{
+		&.stayMess{background-image:url(#{$img_url}/stay/ico_stay_reservation_complete.svg)}
+	}
+}
+
+//숙박 규정 및 제한 사항
+.stayTermsList{
+	li{color:$default_col;
+		em{color:$col_g900;font-weight:$weight600}
+		&.caution{color:$col_p600}
+	}
+}
+
+//취소규정
+.statuteList{
+    dt{padding:32px 0 12px 0;color:$col_g900;font-size:rem(16px);font-weight:$weight700;line-height:1.2;
+        &:first-child{padding-top:0}
+    }
+    dd{padding:0;color:$default_col;font-size:rem(15px)}
+    .listType01 li{color:$default_col;margin-top:10px;
+        &:first-child{margin-top:0}
+    }
+    .olList li{padding:0;margin-top:10px;
+        &:before{content:none}
+    }
+    .txtTit{display:block;padding:20px 0 10px 0;color:$col_g800;
+        &:first-child{padding-top:0;}
+    }
+}
+
+//완료페이지
+.completePanel{
+    .message.stayMess{background:url(#{$img_url}/common/ic_stay_complete.svg) no-repeat 50% 0}
+}
+
+//필터
+.layPop.layBtm.popFilter{
+	.layContainer{margin-top:0}
+	.tabWrap{padding:7px 0 0 0;margin:0}
+	.iSuper{display:inline-block;width:18px;height:18px;margin-right:6px;background:url(#{$img_url}/common/ico_super.svg) no-repeat;vertical-align:-3px;}
+    .inlineForm{font-size:0;
+        .selectWrap{display:inline-block;width:calc((100% - 20px) / 2)}
+        .dash{display:inline-block;width:20px;text-align:center;color:$col_g400}
+    }
+	.tabType02{margin:0;padding:0 8px;border-bottom:1px solid $col_g200;background:$col_white;
+		> li{display:inline-block;
+			a{position:relative;display:block;height:47px;padding:0 12px;color:$col_g600;font-size:rem(16px);line-height:47px;text-align:center;
+				&[aria-selected=true]{color:$col_p600;font-weight:$weight700;
+					&:after{content:'';display:block;position:absolute;bottom:0;left:12px;right:12px;height:2px;border-radius:2px;background:$col_p600;z-index:1000}
+				}
+			}
+		}
+	}
+	.titDep4{padding-top:32px}
+	.titDep6{margin:32px 0 12px;}
+	.titDep4+.titDep6{margin-top:16px;}
+	.frmList{margin-top:0;}
+	.fp_slideArea .fp_slideInp input:read-only{background:$col_g100;}
+	.frmGrade{
+		label{padding-left:10px;display:flex;justify-content:center;align-items:center;
+			&:after{content:'';display:inline-block;width:22px;height:20px;background:url(#{$img_url}/common/ico_star_gray.svg) no-repeat;}
+		}
+		input:checked + label:after{background-image:url(#{$img_url}/common/ico_star1.svg);background-size:18px;}
+	} 
+	.gradeMWrap{padding:0 10px 30px 0;
+		.gradeMarke{ width:100%;position:absolute;padding-top:28px;margin:0 -9px;
+			em{position:absolute;display:inline-block;width:48px;height:24px;margin-left:-24px;@extend %textHidden;background:url(#{$img_url}/common/ico_star1.svg) no-repeat center;}
+			em:nth-of-type(1){background-image:url(#{$img_url}/common/ico_star1.svg);left:0%;}
+			em:nth-of-type(2){background-image:url(#{$img_url}/common/ico_star2.svg);left:25%;}
+			em:nth-of-type(3){background-image:url(#{$img_url}/common/ico_star3.svg);left:50%;}
+			em:nth-of-type(4){background-image:url(#{$img_url}/common/ico_star4.svg);left:75%;}
+			em:nth-of-type(5){background-image:url(#{$img_url}/common/ico_star5.svg);left:100%;}
+		}
+	}
+}
+.bgLine{position:relative;min-height:9px;margin:32px -20px 0;border-top:1px solid $col_g200;
+	&:before{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:8px;background:$col_g100}
+}
+
+//스토리
+.container{
+	&.themeStory{
+		.tabTypeR.purple{position:static;margin-top:16px}
+	}
+}
+.storyVisual{position:relative;margin:-12px -20px 0;
+	.frmInp.like{
+		label{color:$col_white;
+			&:before{background-image:url(#{$img_url}/common/ico_like_w.svg)}
+		}
+		input:checked+label:before{background:transparent url(#{$img_url}/common/spr_ico.svg) no-repeat -150px 0}
+	}
+	img{width:100%;}
+	.visualTxt{position:absolute;bottom:25px;left:20px;
+		.smallTit{color:$col_white;font-size:rem(16px)}
+		strong{display:block;color:$col_white;margin-top:10px;font-size:rem(24px)}
+	}
+	&:before{content:'';display:block;position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%;background:linear-gradient(to bottom, rgba(0,0,0,0), $col_black);opacity:.5}
+	&.type02{
+		&:before{background:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.6));}
+		.visualSrc{position:absolute;bottom:20px;right:20px;font-size:rem(14px);color:$col_white;}
+		.frmInp.like{position:absolute;bottom:13px;left:20px;
+			label{color:$col_white;
+				&:before{background-image:url(#{$img_url}/common/ico_like_w.svg)}
+			}
+			input:checked+label:before{background:transparent url(#{$img_url}/common/spr_ico.svg) no-repeat -150px 0}
+		}
+	}
+	~.offerArea.storyInfo{margin:40px -20px -64px}
+}
+.storyCont{padding-top:32px;
+	.titDesc{font-size:rem(14px);text-align:center;}
+	.titDep2{margin-top:7px;text-align:center;}
+	.disc{margin-top:24px;text-align:center;
+		+.disc{margin-top:16px}
+	}
+	.flagBox{position:relative;margin-top:40px;text-align:center;
+		span{position:relative;display:inline-block;height:40px;padding:10px 16px 12px;color:$col_white;font-size:rem(14px);font-weight:$weight600;background:$col_p400;border-radius:20px;}
+		&:before{content:'';display:block;position:absolute;top:50%;left:0;width:100%;height:1px;background:$col_g200}
+	}
+	.storyPointBox{text-align:center;
+		.pointTit{display:block;margin-top:32px;color:$col_g900;font-size:rem(18px);font-weight:$weight700;text-align:center;}
+		.stayPoint{display:inline-block;position:relative;margin-top:8px;padding-left:20px;color:$col_g900;font-size:rem(16px);font-weight:$weight700;
+			&:before{@include pseudo(18px,18px);left:0;margin-left:0;background:url(#{$img_url}/common/ico_location.svg) no-repeat}
+		}
+		.pointNum{display:inline-block;width:32px;height:32px;margin:24px auto 32px;padding:2px 6px;color:$col_p600;font-size:rem(18px);font-weight:$weight700;background:$col_p200;border-radius:8px;}
+		em{font-size:rem(16px);display:block;color:$col_g800;font-weight:$weight600;}
+	}
+	.contImg{overflow:hidden;margin-top:32px;border-radius:8px;
+		+p{margin-top:20px;text-align:left}
+	}
+	.contVid{overflow:hidden;display:block;margin-top:48px;border-radius:8px;
+		.thumb{position:relative;
+			&:before{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:$col_g900;opacity:0.2}
+			&:after{@include pseudo(40px,40px);background:url(#{$img_url}/common/ico_play.svg) no-repeat}
+		}
+		.vidTit{display:flex;align-items:center;padding:16px 20px;font-size:0;background:$col_g100;
+			.profile{width:36px;height:36px;}
+			p{display:inline-block;width:calc(100% - 36px);padding-left:6px;color:$col_g900;font-size:rem(15px);font-weight:$weight600}
+		}
+	}
+	.contGallery{overflow:hidden;margin:0 -4px;padding:48px 0 32px;border-bottom:1px dashed $col_g300;
+		figure{float:left;padding:4px;
+			>div{overflow:hidden;border-radius:8px;}
+		}
+		.bigImg{width:73%}
+		.squareImg{width:27%;}
+		.cinemaImg{width:50%;}
+	}
+
+	.stayBox{margin-top:48px;font-size:0;border:1px solid $col_g200;border-radius:8px;
+		>a{display:block;position:relative;padding:20px;
+			&:after{content:'';display:block;position:absolute;top:24px;right:20px;width:12px;height:12px;background:url(#{$img_url}/common/spr_ico.svg) no-repeat -14px -72px}
+		}
+		figure{display:inline-block;overflow:hidden;width:120px;height:90px;border-radius:8px}
+		.info{display:inline-block;width:calc(100% - 120px);padding-left:20px;;vertical-align:top;text-align:left;
+			strong{display:block;font-size:rem(16px);color:$col_g900}
+			address,.descTxt{margin-top:7px;font-size:rem(14px)}
+			.grade{display:inline-block;color:$col_g600;font-size:rem(13px)}
+			.briefLocation{margin-top:5px;color:$col_g600;font-size:rem(14px);line-height:1}
+		}
+		.priceInfo{display:flex;justify-content:space-between;align-items:center;margin-top:17px;padding-top:17px;border-top:1px dashed $col_g300;
+			.period{font-size:rem(14px);color:$col_g600}
+			.price{font-size:rem(18px);color:$col_p600;font-weight:$weight700}
+		}
+	}
+	.keywordBox{margin-top:48px;
+		.hashtag a{padding:12px 16px;}
+	}
+}
+.storyStayList{overflow:hidden;margin:-32px -20px 0;padding:32px 14px;
+	li{float:left;width:50%;padding:0 6px;
+		+li+li{margin-top:12px}
+		a{overflow:hidden;display:block;background:$col_white;border-radius:8px;}
+		.briefInfo{padding:20px;
+			span{font-size:rem(16px);line-height:1;}
+			.name{color:$col_g900;font-weight:$weight600}
+			.price{display:block;margin-top:5px;color:$col_p600;font-weight:$weight700}
+		}
+	}
+}
+.recAllList{
+	li{border:1px solid $col_g200;border-radius:8px;
+		a{display:block;position:relative;padding:20px;font-size:0;
+			&:after{content:'';display:block;position:absolute;top:24px;right:20px;width:12px;height:12px;background:url(#{$img_url}/common/spr_ico.svg) no-repeat -14px -72px}
+		}
+		figure{display:inline-block;overflow:hidden;width:120px;height:90px;border-radius:8px}
+		.info{display:inline-block;width:calc(100% - 120px);padding-left:20px;;vertical-align:top;text-align:left;
+			a{display:block;padding:0 14px 0 0;font-size:rem(16px);color:$col_g900;font-weight:$weight700}
+			address,.descTxt{margin-top:7px;font-size:rem(14px)}
+			.grade{display:inline-block;color:$col_g600;font-size:rem(13px)}
+			.briefLocation{margin-top:5px;color:$col_g600;font-size:rem(14px);line-height:1}
+		}
+		.priceInfo{display:flex;justify-content:space-between;align-items:center;margin-top:17px;padding-top:17px;border-top:1px dashed $col_g300;
+			.period{font-size:rem(14px);color:$col_g600}
+			.price{font-size:rem(18px);color:$col_p600;font-weight:$weight700}
+		}
+		+li{margin-top:12px}
+	}
+}
+.storyKeyword{
+	li{position:relative;
+		&:before{content:'';display:block;position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.05)}
+		+li{margin-top:24px}
+		a{position:relative;overflow:hidden;display:block;border-radius:12px;
+			&:before{content:'';display:block;position:absolute;top:50%;left:0;right:0;bottom:0;background:linear-gradient(to bottom, rgba(64, 18, 156, 0), $col_black)}
+		}
+		.storyBriefCont{position:absolute;left:24px;bottom:20px;
+			.storyContTit{font-size:rem(20px);color:$col_white}
+			.conUtil .likeNum{color:$col_white;font-size:rem(14px)}
+			.tagWrap .tag{color:$col_white;opacity:.8}
+		}
+	}
+}
+
+.noData{
+	&.noStay{
+		p.txt:before{background:url(#{$img_url}/stay/ic_x50_noData_s.svg) no-repeat;border-radius:0}	
+	}
+	&.noReview{
+		p.txt:before{background:url(#{$img_url}/common/ic_x50_noReview.svg) no-repeat;border-radius:0}
+	}
+}
+
+//모든이미지 보기
+/*.allViewFnct{padding-top:102px !important;
+	.tabWrap.tabScript{position:fixed;z-index:101;top:56px;width:100%;}
+	.tabContentWrap{display:block;}
+	.tabContentWrap .titDep4{margin-top:30px;}
+	.tabON:before {
+		content: "";
+		display: block;
+		height: 102px;
+		margin-top: -102px;
+		visibility: hidden;
+	}
+}*/
+
+//예상 적립금
+.titArea.specialBnf{position:relative;margin-top:32px;
+	.btLink01{position:absolute;top:-2px;right:0}
+	.titDep4 em{color:$col_p600}
+}
+.expectPoint{overflow:hidden;padding-bottom:20px;border-radius:12px;border:1px solid $col_g200;
+	.lineGroup{margin:12px 19px 0;font-size:0;
+		&:first-child{margin:0;padding:18px;background:$col_g100;
+			.title{font-size:rem(16px);color:$col_g800;font-weight:$weight700;
+				&:before{display:none}
+			}
+			.point{width:35%;font-size:rem(16px);color:$col_g800;font-weight:$weight700}
+		}
+		&.pointBenefit{margin-top:8px;
+			.title{color:$default_col;font-size:rem(14px);font-weight:$weight400;
+				&:before{content:'';display:inline-block;width:5px;height:6px;margin-right:6px;border:solid $col_g300;border-width:0 0 1px 1px;vertical-align:5px}
+			}
+			.point{color:$col_redP;font-size:rem(14px);font-weight:$weight600}
+		}
+		&.type02{
+			.title{font-weight:$weight400}
+		}
+	}
+	.title{display:inline-block;width:65%;color:$col_g800;font-weight:$weight600;}
+	.point{display:inline-block;width:11%;font-size:rem(14px);text-align:right;
+		+.point{width:16%;margin-left:8%}
+	}
+	.txtP{display:inline-block;color:$col_p600;font-size:rem(14px);font-weight:$weight600;margin-right:4px}
+	+.pointBenefitLink{display:block;padding:20px;margin-top:16px;background:$col_p100;border-radius:12px;
+		&:before{content:'';display:inline-block;width:18px;height:18px;margin-right:4px;background:url(#{$img_url}/common/ic_18_point.svg) no-repeat;vertical-align:middle}
+		&:after{top:30px;right:20px}
+		p{margin-top:10px;
+            em{color:$col_g800;font-weight:$weight600}
+        }
+	}
+	.benefitTxt{padding:10px 0;margin:20px 20px 12px;color:$col_p600;font-size:rem(14px);font-weight:$weight600;text-align:center;background:$col_p100;border-radius:8px;}
+}
+
+// 360이하
+@media screen and (max-width:$sizeM) {
+	
+}
+
+// 320이하
+@media screen and (max-width:$sizeS) {
+	
+}

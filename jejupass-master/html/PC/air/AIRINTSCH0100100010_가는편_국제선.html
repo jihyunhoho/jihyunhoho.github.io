@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>제주패스</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, width=1366"><!-- 10.29 추가 -->
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" type="image/x-icon" href="/resource/PC/images/favicon/favicon.ico">
+<link href="/air/css/kfx/airA.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/p_commonAir.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/p_contentsAir.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/p_contents_air.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper airWrapper">
+	<header>
+		<h1 class="topLogo"><a href="#">JEJUPASS</a></h1><!-- 11.05 SEO를 위한 태그 수정 -->
+		<nav>
+			<!-- 11.05 SEO를 위한 태그 수정 -->
+			<div class="navList">
+				<h2><a href="#" arial-selected="true">항공</a></h2>
+				<h2><a href="#">렌터카</a></h2>
+				<h2><a href="#">숙박</a></h2>
+				<h2><a href="#">맛집</a></h2>
+				<h2><a href="#">카페패스</a></h2>
+				<h2><a href="#">트립</a></h2>
+			</div>
+			<!-- //11.05 SEO를 위한 태그 수정 -->
+			<div class="quickSearchWrap">
+				<button type="button" class="btSearch">빠른검색</button>
+				
+			</div>
+		</nav>
+		<div class="topUtil">
+			<img src="/resource/PC/images/dummy/@util.png" alt="">
+		</div>
+	</header>
+
+	<div id="container" class="container">
+		
+		<div id="contents" class="contents">
+			<!-- 컨텐츠 영역  -->		
+			<div class="kf_airFixed kf_searchFixed">
+				<div class="k1_main_search_area">
+					<div class="k1_search_are_spot">
+						<div class="k1_section_multi">
+							<div class="kf_flightInner selectON"><!-- 버튼 클릭시 selectON 클래스 추가-->
+								<ul class="k1_flight_panel">
+									<li class="k1_area departure">
+										<p class="tit">출발</p>
+										<button type="button" aria-expanded="false" aria-controls="kf_departure"><strong>인천</strong><span class="engName">ICN</span></button>
+									</li>
+									<li class="k1_area destination">
+										<p class="tit">도착</p>
+										<button type="button" aria-expanded="false"><strong>부에노스 아이레스</strong><span class="engName">EZE</span></button>
+									</li>
+								</ul>
+								<button type="button" class="k1_icon i2">편도</button>
+							</div>
+		
+							<div class="kf_flightInner kf_flightDate">
+								<ul class="k1_flight_panel">
+									<li class="k1_area">
+										<p class="tit">탑승일</p>
+										<button type="button" ><strong>22.07.09(목) ~ 22.08.29(목)</strong></button>
+									</li>
+								</ul>
+							</div>
+		
+							<div class="kf_flightInner kf_flightInfo">
+								<ul class="k1_flight_panel">
+									<li class="k1_area">
+										<p class="tit">인원 및 좌석등급</p>
+										<button type="button" aria-expanded="false"><strong>성인2, 일반석</strong></button>
+									</li>
+								</ul>
+							</div>
+							<button type="submit" class="k1_btn_price_search">변경</button>
+						</div>
+						<div class="kf_section_fixed">
+							<strong class="titSel">선택한 여정</strong>
+							<div class="kf_selBtns">
+								<button type="button" class="btPlan"><span>김포</span><span>푸에르토 프린세사</span></button>
+								<button type="button" class="btDate">21.08.21 (토) ~ 21.08.23 (월)</button>
+								<button type="button" class="btSeat">성인1명, 일반석</button>
+							</div>
+							<button type="button" class="btIco icoReset">재검색</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h2 class="titDep3">왕복 항공편</h2>
+			<div class="kf_airFixed kf_quickFixed">
+				<div class="tabBox tabSorting">
+					<strong class="tit">빠른정렬</strong>
+					<ul id="tabAhcnor" class="frmBox frmBoxS">
+						<li><button type="button" aria-selected="true" aria-controls="anchorDaybreak">새벽</button></li>
+						<li><button type="button" aria-selected="true" aria-controls="anchorMorning">오전</button></li>
+						<li><button type="button" aria-selected="false" aria-controls="anchorAfterNoon">오후</button></li>
+						<li><button type="button" aria-selected="false" aria-controls="anchorEvening">저녁</button></li>
+						<li class="sorting"><input type="checkbox" id="chkSorting" name="chkSorting" checked=""><label for="chkSorting">저가순</label></li>
+						<li class="etc"><button type="button" class="layPopBtn" data-id="pop_priceChange">가격변동알림</button></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="k1_schedule_search kf_schedule_search">
+				<div id="filterWrap" class="filterWrap"><!-- footer가 올시 filterFoot 추가 -->
+					<div class="toggleList filterSorting">
+						<div class="acctItem">
+							<button type="button" class="toggleBtn" aria-expanded="false">정렬</button>
+							<div class="toggleCont">
+								<span class="frmInp small txt"><input type="radio" id="radSorting01" name="radSorting" checked><label for="radSorting01">출발시간 이른 순</label></span>
+								<span class="frmInp small txt"><input type="radio" id="radSorting02" name="radSorting"><label for="radSorting02">출발시간 늦은 순</label></span>
+								<span class="frmInp small txt"><input type="radio" id="radSorting03" name="radSorting"><label for="radSorting03">가격 낮은 순</label></span>
+								<span class="frmInp small txt"><input type="radio" id="radSorting04" name="radSorting"><label for="radSorting04">가격 높은 순</label></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="filterSelectWrap">
+						<p class="tit">필터</p>
+						<div class="scriptScroll">
+							<ul class="toggleList">
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="false">항공사</button>
+									<div class="toggleCont">
+										<!-- 12.24 추가 -->
+										<ul class="frmBox frmAirline frmScript selTotal">
+											<li class="total"><input type="checkbox" id="chkAirlime_Total" name="chkAirline" checked=""><label for="chkAirlime_Total"><img src="/air/imgs_ibe/kfx/mbl/air/air_total.png" alt="항공사 전체"><span>전체</span></label></li>
+											<li><input type="checkbox" id="chkAirline06" name="chkAirline"><label for="chkAirline06"><img src="/air/imgs_ibe/kfx/mbl/air/va.png" alt="벨류 얼라이언스"><span>벨류 얼라이언스</span></label></li>
+											<li><input type="checkbox" id="chkAirline07" name="chkAirline"><label for="chkAirline07"><img src="/air/imgs_ibe/kfx/mbl/air/sky.png" alt="캐세이퍼시픽항공"><span>스카이팀</span></label></li>
+											<li><input type="checkbox" id="chkAirlime_Mix" name="chkAirline"><label for="chkAirlime_Mix"><img src="/air/imgs_ibe/kfx/mbl/air/star.png" alt="항공사 전체"><span>스타 얼라이언스</span></label></li>
+										</ul>
+										<!-- //12.24 추가 -->
+										<span class="frmInp small txt"><input type="checkbox" id="checkAirline01" name="checkAirline" checked><label for="checkAirline01"><img src="/air/wfw/imgs/mbl/logo/air/KE.png" alt="대한항공">대한항공</label></span>								
+										<span class="frmInp small txt"><input type="checkbox" id="checkAirline02" name="checkAirline"><label for="checkAirline02"><img src="/air/wfw/imgs/mbl/logo/air/LJ.png" alt="대한항공">진에어</label></span>	
+										<span class="frmInp small txt"><input type="checkbox" id="checkAirline03" name="checkAirline"><label for="checkAirline03"><img src="/air/wfw/imgs/mbl/logo/air/KE.png" alt="대한항공">대한항공</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="checkAirline04" name="checkAirline"><label for="checkAirline04"><img src="/air/wfw/imgs/mbl/logo/air/KE.png" alt="대한항공">대한항공</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="checkAirline05" name="checkAirline"><label for="checkAirline05"><img src="/air/wfw/imgs/mbl/logo/air/KE.png" alt="대한항공">대한항공</label></span>
+									</div>
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="false">출발시간</button>
+									<div class="toggleCont">
+										<span class="frmInp small txt"><input type="checkbox" id="radStartTime01" name="radStartTime"><label for="radStartTime01">종일 00:00~24:00</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="radStartTime02" name="radStartTime"><label for="radStartTime02">오전 06:00~12:00</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="radStartTime03" name="radStartTime"><label for="radStartTime03">오후 12:00~18:00</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="radStartTime04" name="radStartTime"><label for="radStartTime04">야간 18:00~00:00</label></span>
+									</div>
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="false">좌석종류</button>
+									<div class="toggleCont">
+										<span class="frmInp small txt"><input type="radio" id="radSeat01" name="radSeat"><label for="radSeat01">일반석</label></span>
+										<span class="frmInp small txt"><input type="radio" id="radSeat02" name="radSeat"><label for="radSeat02">프리미엄석</label></span>
+										<span class="frmInp small txt"><input type="radio" id="radSeat03" name="radSeat"><label for="radSeat03">비즈니스석</label></span>
+										<span class="frmInp small txt"><input type="radio" id="radSeat04" name="radSeat"><label for="radSeat04">일등석</label></span>
+									</div>
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="false">가격</button>
+									<div class="toggleCont">
+										<div class="fp_slideArea">
+											<div class="slideValue">
+												<span class="minValue">최소 20,000원</span>
+												<span class="maxValue">최대 300,000원</span>
+											</div>
+											<div id="slider-range" class="slider" data-options='{"range": true, "min": 20000, "max": 300000, "step": 10000, "values": [50000, 100000], "text":"원" }'></div>
+											<div class="fp_slideInp">
+												<input type="text" class="amount" readonly>
+												<span class="dash">~</span>
+												<input type="text" class="amount" readonly>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="false">기타옵션</button>
+									<div class="toggleCont toggleEtc">
+										<span class="frmInp small txt"><input type="checkbox" id="checkEtc01" name="checkEtc"><label for="checkEtc01">친환경 항공편<span>이산화탄소 배출량이 낮은 항공편</span></label></span>								
+										<!-- span class="frmInp small txt"><input type="checkbox" id="checkEtc02" name="checkEtc"><label for="checkEtc02">변경 가능한 항공권만</label></span --><!-- 12.13 삭제 -->
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<button type="button" class="btIco icoReset">초기화</button>
+					</div>
+
+					<div class="filterBtns">
+						<button type="button" class="btnDefault btnL action">적용</button>
+					</div>
+				</div>
+				<div class="kf_scheculeList kf_scheculeList_inter">
+					<div class="kf_schNum">총 <strong>2785</strong>개의 항공권</div>
+					<ul class="k1_sch_result toggleList toggleAirList">
+						<li id="anchorDaybreak" class="anchor"></li>
+						<li>
+							<div class="k1_al">
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/CO.png" alt="유나이티드항공"><strong>유나이티드항공</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>INC</span></li>
+										<li><strong class="time">07:05</strong><span>EZE</span></li>
+									</ul>
+									<em class="addDay">+2일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 27시간</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/7C.png" alt="제주에어"><strong>제주에어</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>GMP</span></li>
+										<li><strong class="time">07:05</strong><span>CJU</span></li>
+									</ul>
+									<em class="addDay">+3일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 45시간 45분</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>								
+							</div>
+
+							<div class="kf_btm">
+								<div class="flagList">
+									<span class="flag envi">친환경 항공편</span>
+									<span class="flag">삼성카드청구할인</span>
+									<span class="flag">무료취소</span>
+								</div>
+								<div class="btnArea">
+									<a href="#" role="button" class="btLink layPopBtn" data-id="pop_airDetail">항공편 세부정보</a>
+								</div>
+
+								<div class="price-info">
+									<strong class="priceInfo">8,035,900원~</strong>									
+									<div class="k1_price">
+										<span class="seat">잔여 4석~</span>
+										<span class="totalPrice">총 2인 <em>71,800원</em></span>
+									</div>
+								</div>
+
+								<button type="button" class="btnDefault btnM">예약</button>
+							</div>
+
+						</li>
+						<li id="anchorMorning" class="anchor"></li>
+						<li>
+							<div class="k1_al">
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/CO.png" alt="유나이티드항공"><strong>유나이티드항공</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>INC</span></li>
+										<li><strong class="time">07:05</strong><span>EZE</span></li>
+									</ul>
+									<em class="addDay">+2일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 27시간</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/7C.png" alt="제주에어"><strong>제주에어</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>GMP</span></li>
+										<li><strong class="time">07:05</strong><span>CJU</span></li>
+									</ul>
+									<em class="addDay">+3일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 45시간 45분</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>								
+							</div>
+
+							<div class="kf_btm">
+								<div class="flagList">
+									<span class="flag envi">친환경 항공편</span>
+									<span class="flag">삼성카드청구할인</span>
+									<span class="flag">무료취소</span>
+								</div>
+								<div class="btnArea">
+									<a href="#" role="button" class="btLink layPopBtn" data-id="pop_airDetail">항공편 세부정보</a>
+								</div>
+
+								<div class="price-info">
+									<strong class="priceInfo">8,035,900원~</strong>									
+									<div class="k1_price">
+										<span class="seat">잔여 4석~</span>
+										<span class="totalPrice">총 2인 <em>71,800원</em></span>
+									</div>
+								</div>
+
+								<button type="button" class="btnDefault btnM">예약</button>
+							</div>
+
+						</li>
+						<li>
+							<div class="k1_al">
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/CO.png" alt="유나이티드항공"><strong>유나이티드항공</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>INC</span></li>
+										<li><strong class="time">07:05</strong><span>EZE</span></li>
+									</ul>
+									<em class="addDay">+2일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 27시간</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/7C.png" alt="제주에어"><strong>제주에어</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>GMP</span></li>
+										<li><strong class="time">07:05</strong><span>CJU</span></li>
+									</ul>
+									<em class="addDay">+3일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 45시간 45분</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>								
+							</div>
+
+							<div class="kf_btm">
+								<div class="flagList">
+									<span class="flag envi">친환경 항공편</span>
+									<span class="flag">삼성카드청구할인</span>
+									<span class="flag">무료취소</span>
+								</div>
+								<div class="btnArea">
+									<a href="#" role="button" class="btLink layPopBtn" data-id="pop_airDetail">항공편 세부정보</a>
+								</div>
+
+								<div class="price-info">
+									<strong class="priceInfo">8,035,900원~</strong>									
+									<div class="k1_price">
+										<span class="seat">잔여 4석~</span>
+										<span class="totalPrice">총 2인 <em>71,800원</em></span>
+									</div>
+								</div>
+
+								<button type="button" class="btnDefault btnM">예약</button>
+							</div>
+
+						</li>
+						<li id="anchorAfterNoon" class="anchor"></li>
+						<li>
+							<div class="k1_al">
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/CO.png" alt="유나이티드항공"><strong>유나이티드항공</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>INC</span></li>
+										<li><strong class="time">07:05</strong><span>EZE</span></li>
+									</ul>
+									<em class="addDay">+2일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 27시간</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/7C.png" alt="제주에어"><strong>제주에어</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>GMP</span></li>
+										<li><strong class="time">07:05</strong><span>CJU</span></li>
+									</ul>
+									<em class="addDay">+3일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 45시간 45분</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>								
+							</div>
+
+							<div class="kf_btm">
+								<div class="flagList">
+									<span class="flag envi">친환경 항공편</span>
+									<span class="flag">삼성카드청구할인</span>
+									<span class="flag">무료취소</span>
+								</div>
+								<div class="btnArea">
+									<a href="#" role="button" class="btLink layPopBtn" data-id="pop_airDetail">항공편 세부정보</a>
+								</div>
+
+								<div class="price-info">
+									<strong class="priceInfo">8,035,900원~</strong>									
+									<div class="k1_price">
+										<span class="seat">잔여 4석~</span>
+										<span class="totalPrice">총 2인 <em>71,800원</em></span>
+									</div>
+								</div>
+
+								<button type="button" class="btnDefault btnM">예약</button>
+							</div>
+
+						</li>
+						<li>
+							<div class="k1_al">
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/CO.png" alt="유나이티드항공"><strong>유나이티드항공</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>INC</span></li>
+										<li><strong class="time">07:05</strong><span>EZE</span></li>
+									</ul>
+									<em class="addDay">+2일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 27시간</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/7C.png" alt="제주에어"><strong>제주에어</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>GMP</span></li>
+										<li><strong class="time">07:05</strong><span>CJU</span></li>
+									</ul>
+									<em class="addDay">+3일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 45시간 45분</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>								
+							</div>
+
+							<div class="kf_btm">
+								<div class="flagList">
+									<span class="flag envi">친환경 항공편</span>
+									<span class="flag">삼성카드청구할인</span>
+									<span class="flag">무료취소</span>
+								</div>
+								<div class="btnArea">
+									<a href="#" role="button" class="btLink layPopBtn" data-id="pop_airDetail">항공편 세부정보</a>
+								</div>
+
+								<div class="price-info">
+									<strong class="priceInfo">8,035,900원~</strong>									
+									<div class="k1_price">
+										<span class="seat">잔여 4석~</span>
+										<span class="totalPrice">총 2인 <em>71,800원</em></span>
+									</div>
+								</div>
+
+								<button type="button" class="btnDefault btnM">예약</button>
+							</div>
+
+						</li>
+						<li class="banner">
+							<a href="#" class="bannerType">
+								<figure><img src="/resource/PC/images/dummy/@img_banner03.jpg" alt=""></figure>
+							</a>
+						</li>
+						<li id="anchorEvening" class="anchor"></li>
+						<li>
+							<div class="k1_al">
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/CO.png" alt="유나이티드항공"><strong>유나이티드항공</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>INC</span></li>
+										<li><strong class="time">07:05</strong><span>EZE</span></li>
+									</ul>
+									<em class="addDay">+2일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 27시간</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/7C.png" alt="제주에어"><strong>제주에어</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>GMP</span></li>
+										<li><strong class="time">07:05</strong><span>CJU</span></li>
+									</ul>
+									<em class="addDay">+3일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 45시간 45분</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>								
+							</div>
+
+							<div class="kf_btm">
+								<div class="flagList">
+									<span class="flag envi">친환경 항공편</span>
+									<span class="flag">삼성카드청구할인</span>
+									<span class="flag">무료취소</span>
+								</div>
+								<div class="btnArea">
+									<a href="#" role="button" class="btLink layPopBtn" data-id="pop_airDetail">항공편 세부정보</a>
+								</div>
+
+								<div class="price-info">
+									<strong class="priceInfo">8,035,900원~</strong>									
+									<div class="k1_price">
+										<span class="seat">잔여 4석~</span>
+										<span class="totalPrice">총 2인 <em>71,800원</em></span>
+									</div>
+								</div>
+
+								<button type="button" class="btnDefault btnM">예약</button>
+							</div>
+
+						</li>
+						<li>
+							<div class="k1_al">
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/CO.png" alt="유나이티드항공"><strong>유나이티드항공</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>INC</span></li>
+										<li><strong class="time">07:05</strong><span>EZE</span></li>
+									</ul>
+									<em class="addDay">+2일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 27시간</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/7C.png" alt="제주에어"><strong>제주에어</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>GMP</span></li>
+										<li><strong class="time">07:05</strong><span>CJU</span></li>
+									</ul>
+									<em class="addDay">+3일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 45시간 45분</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>								
+							</div>
+
+							<div class="kf_btm">
+								<div class="flagList">
+									<span class="flag envi">친환경 항공편</span>
+									<span class="flag">삼성카드청구할인</span>
+									<span class="flag">무료취소</span>
+								</div>
+								<div class="btnArea">
+									<a href="#" role="button" class="btLink layPopBtn" data-id="pop_airDetail">항공편 세부정보</a>
+								</div>
+
+								<div class="price-info">
+									<strong class="priceInfo">8,035,900원~</strong>									
+									<div class="k1_price">
+										<span class="seat">잔여 4석~</span>
+										<span class="totalPrice">총 2인 <em>71,800원</em></span>
+									</div>
+								</div>
+
+								<button type="button" class="btnDefault btnM">예약</button>
+							</div>
+
+						</li>
+						<li>
+							<div class="k1_al">
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/CO.png" alt="유나이티드항공"><strong>유나이티드항공</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>INC</span></li>
+										<li><strong class="time">07:05</strong><span>EZE</span></li>
+									</ul>
+									<em class="addDay">+2일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 27시간</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>
+								<div class="kf_inter">
+									<div class="air">
+										<strong class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/7C.png" alt="제주에어"><strong>제주에어</strong></strong>
+									</div>
+									<ul class="time-info">
+										<li><strong class="time">06:15</strong><span>GMP</span></li>
+										<li><strong class="time">07:05</strong><span>CJU</span></li>
+									</ul>
+									<em class="addDay">+3일</em>
+									<div class="kf_interInfo">
+										<span>2회 경유 45시간 45분</span>
+										<span class="cargo">위탁 20kg x 2</span>
+									</div>
+								</div>								
+							</div>
+
+							<div class="kf_btm">
+								<div class="flagList">
+									<span class="flag envi">친환경 항공편</span>
+									<span class="flag">삼성카드청구할인</span>
+									<span class="flag">무료취소</span>
+								</div>
+								<div class="btnArea">
+									<a href="#" role="button" class="btLink layPopBtn" data-id="pop_airDetail">항공편 세부정보</a>
+								</div>
+
+								<div class="price-info">
+									<strong class="priceInfo">8,035,900원~</strong>									
+									<div class="k1_price">
+										<span class="seat">잔여 4석~</span>
+										<span class="totalPrice">총 2인 <em>71,800원</em></span>
+									</div>
+								</div>
+
+								<button type="button" class="btnDefault btnM">예약</button>
+							</div>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- //컨텐츠 영역 -->
+
+		</div>
+	</div><!-- //container -->
+
+	
+
+</section><!-- //wrapper -->
+<footer>
+	<div class="footInner">
+		<img src="/resource/PC/images/dummy/@footer.png" alt="">
+	</div>
+</footer>
+
+<aside>
+	<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+</aside>
+
+<!-- 가격변동알림 팝업 -->
+<section id="pop_priceChange" class="layPop layerS popAlram" tabindex="0">
+	<div class="layContainer" tabindex="0">
+		<p class="titAlram">
+			해당 항공편의 가격 변동이 될 경우 <br>알림을 받으시겠습니까?
+		</p>
+		<span class="alramTxt">가격변동 알림 기능을 설정하시면 해당 항로에 <br>가격 변동이 있을 경우 알려드립니다.</span>
+
+		<div class="btnArea">
+			<button type="button" class="btnDefault btnS btnLineG layPopBtn" data-id="pop_priceChangeEdit">가격변동 알림내역 편집</button>
+		</div>
+
+	</div><!-- //layContainer-->
+	<div class="btnArea">
+		<button type="button" class="btnDefault btnM">취소</button>
+		<button type="button" class="btnDefault btnM action">알림 받기</button>
+	</div>
+	<button type="button" class="closeL">팝업 닫기</button>
+
+</section>
+<!-- //가격변동알림 팝업 -->
+
+<!-- 가격변동 알림내역 편집 팝업 -->
+<section id="pop_priceChangeEdit" class="layPop layerM popPriceEdit" tabindex="0">
+	<header>
+		<h2 class="titLay">가격변동 알림내역 편집</h2>
+	</header>
+	<div class="layContainer scriptScroll" tabindex="0">
+		<p class="pageTit pageTitP">더 이상 알림 받고 싶지 않은 내역을 <br>목록에서 삭제해주세요</p>
+		<span class="subTxt">가격변동 알림 목록 중 항공편의 기간(탑승일)이 지난 내역은 <br>해당 목록에서 자동으로 삭제됩니다.</span>
+		
+		<div class="list_controls">
+			<span class="frmInp frmTotal"><input type="checkbox" id="chk_listTotal"><label for="chk_listTotal"><span class="false">전체선택</span><span class="true">선택해제</span></label></span>
+			<div class="contRight">
+				<button type="button" class="btTxt">선택삭제</button>
+			</div>
+		</div>
+
+		<ul class="kf_passengerList kf_alramList">
+			<li class="frmInp">
+				<input type="checkbox" id="chkpassen01">
+				<label class="kf_passenBox" for="chkpassen01">
+					<div class="k1_from_to">
+						<div class="from">김포 GMP</div>
+						<div class="to">제주 CJU</div>
+					</div>
+
+					<div class="k1_fr">
+						<strong>2021.08.18(수) ~ 2021.08.19(목)</strong>
+						<span class="k1_status">승객 20명</span><span class="k1_status min point">일반석</span>
+					</div>
+				</label>
+			</li>
+			<li class="frmInp">
+				<input type="checkbox" id="chkpassen02">
+				<label class="kf_passenBox" for="chkpassen02">
+					<div class="k1_from_to i2"><!-- 편도 -->
+						<div class="from">김포 GMP</div>
+						<div class="to">제주 CJU</div>
+					</div>
+
+					<div class="k1_fr">
+						<strong>2021.08.18(수) ~ 2021.08.19(목)</strong>
+						<span class="k1_status">승객 20명</span><span class="k1_status min point">일반석</span>
+					</div>
+				</label>
+			</li>
+			<li class="frmInp">
+				<input type="checkbox" id="chkpassen03">
+				<label class="kf_passenBox" for="chkpassen03">
+					<div class="k1_from_to">
+						<div class="from">김포 GMP</div>
+						<div class="to">제주 CJU</div>
+					</div>
+
+					<div class="k1_fr">
+						<strong>2021.08.18(수) ~ 2021.08.19(목)</strong>
+						<span class="k1_status">승객 20명</span><span class="k1_status min point">일반석</span>
+					</div>
+				</label>
+			</li>
+			<li class="frmInp">
+				<input type="checkbox" id="chkpassen04">
+				<label class="kf_passenBox" for="chkpassen04">
+					<div class="k1_from_to i2"><!-- 편도 -->
+						<div class="from">인천 ICN</div>
+						<div class="to">부에노스아이레스 EZE</div>
+					</div>
+
+					<div class="k1_fr">
+						<strong>2021.08.18(수) ~ 2021.08.19(목)</strong>
+						<span class="k1_status">승객 2명</span><span class="k1_status min point">비즈니스석</span>
+					</div>
+				</label>
+			</li>
+		</ul>
+
+	</div><!-- //layContainer-->
+	<div class="btnArea">
+		<button type="button" class="btnDefault btnM action">완료</button>
+	</div>
+	<button type="button" class="closeL">팝업 닫기</button>
+
+</section>
+<!-- //가격변동 알림내역 편집 팝업 -->
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/pc/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/p_common.js"></script>
+
+</body>
+</html>

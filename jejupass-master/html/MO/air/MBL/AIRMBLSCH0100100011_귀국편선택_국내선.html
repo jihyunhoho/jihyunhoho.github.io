@@ -1,0 +1,692 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>제주패스</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="/resource/MO/images/favicon/apple_touch_icon.ico">
+<link rel="apple-touch-icon" href="/resource/MO/images/favicon/apple_touch_icon_144.ico">
+<link href="/air/css/kfx/mbl/airA.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_commonAIR.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_contentsAIR.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_contents_air.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper airWrapper">
+	
+	<!-- jsp:include page="/inc/MO/header.html" / -->
+	
+	<header>
+		<button type="button" class="btPrev">이전</button>
+		<h1 class="titDep1 titAir">김포<span class="icTrip">왕복여정</span>제주</h1>
+		<div class="menuWrap">
+			<button type="button" class="btNav">메뉴</button>
+		</div>
+	</header>
+
+	<div id="container" class="container k1_bg_light_gray1">
+		<div class="tripSelect">
+			<div class="inner">
+				<div class="selArea01">
+					<button type="button" class="btDate">2021.08.21 (토) ~ 08.23 (월)</button>
+					<button type="button" class="btSeat">성인2명, 프리미엄석</button>
+				</div>
+				<ul class="frmBox frmBoxS">
+					<!-- 10.06 수정 -->
+					<li><button type="button" aria-selected="true" aria-controls="anchorMorning">오전</button></li>
+					<li><button type="button" aria-selected="false" aria-controls="anchorAfterNoon">오후</button></li>
+					<li><button type="button" aria-selected="false"aria-controls="anchorEvening">저녁</button></li>
+					<li class="sorting"><input type="checkbox" id="chkSorting" name="chkSorting" checked><label for="chkSorting">저가순</label></li>
+					<!-- //10.06 수정 -->
+				</ul>
+			</div>
+		</div>
+
+		<div class="k1_sch_result kf_back_select">
+			<div class="k1_al">
+				<p class="titBack">선택한 가는 편</p>
+				<div class="air">
+					<span class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/AP_OZ03.gif" alt="아시아나항공"><strong>아시아나항공</strong></span>
+					<span>OZ8901</span>
+					<span>B737-900</span>
+				</div>
+				<ul class="time-info">
+					<li><strong class="time">06:15</strong><span>김포 GMP</span></li>
+					<li><strong class="time">07:05</strong><span>제주 CJU</span></li>
+				</ul>
+				<div class="price-info">
+					<span class="totalNum">총 2인</span>
+					<div class="k1_price">
+						<strong class="totalPrice">71,800원</strong>
+					</div>
+				</div>
+				<button type="button" class="icreSelect">재검색</button>
+			</div>
+			
+		</div>
+
+		<h2 class="titDep4 titSche01">김포 오는편</h2><!-- 12.14 로 삭제 -->
+		<div id="anchorMorning"></div><!-- 10.06 추가 -->
+		<!-- repeat unit -->
+		<div class="k1_sch_result toggleList toggleAct">
+			<div class="flagList">
+				<span class="flag">삼성카드청구할인</span>
+				<span class="flag">무료취소</span>
+			</div>
+			<div class="k1_al">
+				<div class="air">
+					<span class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/AP_OZ03.gif" alt="아시아나항공"><strong>아시아나항공</strong></span>
+					<span>OZ8901</span>
+					<span>B737-900</span>
+				</div>
+				<ul class="time-info">
+					<li><strong class="time">06:15</strong><span>김포 GMP</span></li>
+					<li><strong class="time">07:05</strong><span>제주 CJU</span></li>
+				</ul>
+				<div class="price-info">
+					<span class="seat">잔여 4석~</span>
+					<div class="k1_price">
+						<em class="priceInfo">35,900원~</em>
+						<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="icoMore toggleBtn" aria-expanded="false"><span class="false">가격 더보기</span><span class="true">가격 접기</span></button>
+			<div class="toggleCont priceMore">
+				<ul class="priceList">
+					<li>
+						<div class="inner">
+							<strong class="tit">특가운임</strong>
+							<span class="kp_seat">잔여 3석</span>
+							<div class="baggageList">
+								<span>기내 10kg</span>
+								<span>위탁 15kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">35,900원~</em>
+								<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button><!-- 10.12 버튼명 수정 -->
+					</li>
+					<li>
+						<div class="inner">
+							<strong class="tit">할인운임</strong>
+							<span class="kp_seat">잔여 10석</span>
+							<div class="baggageList">
+								<span>기내 10kg</span>
+								<span>위탁 15kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">35,900원~</em>
+								<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					<li>
+						<div class="inner">
+							<strong class="tit">정상운임</strong>
+							<span class="kp_seat">잔여 15석</span>
+							<div class="baggageList">
+								<span>기내 15kg</span>
+								<span>위탁 20kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">106,900원~</em>
+								<strong class="totalPrice">총 4인 <em>427,600원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					<li class="kf_pricePrestise">
+						<div class="inner">
+							<strong class="tit">프리스티지석</strong>
+							<span class="kp_seat">잔여 15석</span>
+							<div class="baggageList">
+								<span>기내 15kg</span>
+								<span>위탁 20kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">106,900원~</em>
+								<strong class="totalPrice">총 4인 <em>427,600원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+				</ul>
+				<div class="btnArea">
+					<a href="#" role="button" class="btLink layPopBtn" data-id="pop_airDetail">항공편 세부정보</a>
+					<!-- a href="#" role="button" class="btLink layPopBtn" data-id="pop_priceGuide">운임규정 및 취소 규정안내</a -->
+				</div>
+			</div>			
+			
+		</div>
+		<!--// repeat unit -->
+
+		<!-- repeat unit -->
+		<div class="k1_sch_result toggleList">
+			<div class="flagList">
+				<span class="flag envi">친환경 항공편</span>
+				<span class="flag">무료취소</span>
+			</div>
+			<div class="k1_al">
+				<a href="#" class="link"><!-- 10.12 링크 추가 -->
+					<div class="air">
+						<span class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/KE.png" alt="대한항공"><strong>대한항공</strong></span>
+						<span>KE120</span>
+						<span>B737-900</span>
+					</div>
+					<ul class="time-info">
+						<li><strong class="time">06:30</strong><span>김포 GMP</span></li>
+						<li><strong class="time">07:25</strong><span>제주 CJU</span></li>
+					</ul>
+					<div class="price-info">
+						<span class="seat">잔여 9석~</span>
+						<div class="k1_price">
+							<em class="priceInfo">99,000원~</em>
+							<strong class="totalPrice">총 5인 <em>495,000원</em></strong>
+						</div>
+					</div>
+				</a>
+			</div>
+			<button type="button" class="icoMore toggleBtn" aria-expanded="false"><span class="false">가격 더보기</span><span class="true">가격 접기</span></button>
+			<div class="toggleCont priceMore">
+				<ul class="priceList">
+					<li>
+						<div class="inner">
+							<strong class="tit">특가운임</strong>
+							<span class="kp_seat">잔여 3석</span>
+							<div class="baggageList">
+								<span>기내 10kg</span>
+								<span>위탁 15kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">35,900원~</em>
+								<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					<li>
+						<div class="inner">
+							<strong class="tit">할인운임</strong>
+							<span class="kp_seat">잔여 10석</span>
+							<div class="baggageList">
+								<span>기내 10kg</span>
+								<span>위탁 15kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">35,900원~</em>
+								<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					<li>
+						<div class="inner">
+							<strong class="tit">정상운임</strong>
+							<span class="kp_seat">잔여 15석</span>
+							<div class="baggageList">
+								<span>기내 15kg</span>
+								<span>위탁 20kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">106,900원~</em>
+								<strong class="totalPrice">총 4인 <em>427,600원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					
+				</ul>
+				<div class="btnArea">
+					<a href="#" role="button" class="btLink layPopBtn" data-id="pop_airDetail">항공편 세부정보</a>
+					<!-- a href="#" role="button" class="btLink layPopBtn" data-id="pop_priceGuide">운임규정 및 취소 규정안내</a -->
+				</div>
+			</div>
+			
+		</div>
+		<!--// repeat unit -->
+
+		<div id="anchorAfterNoon"></div><!-- 10.06 추가 -->
+		<!-- repeat unit -->
+		<div class="k1_sch_result toggleList">
+			<div class="flagList">
+				<span class="flag">삼성카드청구할인</span>
+			</div>
+			<div class="k1_al">
+				<a href="#" class="link"><!-- 10.12 링크 추가 -->
+					<div class="air">
+						<span class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/7C.png" alt="제주항공"><strong>제주항공</strong></span>
+						<span>OZ8901</span>
+						<span>B737-900</span>
+					</div>
+					<ul class="time-info">
+						<li><strong class="time">12:15</strong><span>김포 GMP</span></li>
+						<li><strong class="time">13:05</strong><span>제주 CJU</span></li>
+					</ul>
+					<div class="price-info">
+						<span class="seat">잔여 4석~</span>
+						<div class="k1_price">
+							<em class="priceInfo">35,900원~</em>
+							<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+						</div>
+					</div>
+				</a>
+			</div>
+			<button type="button" class="icoMore toggleBtn" aria-expanded="false"><span class="false">가격 더보기</span><span class="true">가격 접기</span></button>
+			<div class="toggleCont priceMore">
+				<ul class="priceList">
+					<li>
+						<div class="inner">
+							<strong class="tit">특가운임</strong>
+							<span class="kp_seat">잔여 3석</span>
+							<div class="baggageList">
+								<span>기내 10kg</span>
+								<span>위탁 15kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">35,900원~</em>
+								<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					<li>
+						<div class="inner">
+							<strong class="tit">할인운임</strong>
+							<span class="kp_seat">잔여 10석</span>
+							<div class="baggageList">
+								<span>기내 10kg</span>
+								<span>위탁 15kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">35,900원~</em>
+								<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					<li>
+						<div class="inner">
+							<strong class="tit">정상운임</strong>
+							<span class="kp_seat">잔여 15석</span>
+							<div class="baggageList">
+								<span>기내 15kg</span>
+								<span>위탁 20kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">3,106,900원~</em>
+								<strong class="totalPrice">총 4인 <em>1,827,600원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					
+				</ul>
+				<div class="btnArea">
+					<a href="#" role="button" class="btLink layPopBtn" data-id="pop_airDetail">항공편 세부정보</a>
+					<!-- a href="#" role="button" class="btLink layPopBtn" data-id="pop_priceGuide">운임규정 및 취소 규정안내</a -->
+				</div>
+			</div>
+			
+			
+		</div>
+		<!--// repeat unit -->
+
+		<!-- repeat unit -->
+		<div class="k1_sch_result toggleList">
+			<div class="flagList">
+				<span class="flag envi">친환경 항공편</span>
+				<span class="flag">삼성카드청구할인</span>
+				<span class="flag">무료취소</span>
+			</div>
+			<div class="k1_al">
+				<a href="#" class="link"><!-- 10.12 링크 추가 -->
+					<div class="air">
+						<span class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/AP_OZ03.gif" alt="아시아나항공"><strong>아시아나항공</strong></span>
+						<span>OZ8901</span>
+						<span>B737-900</span>
+					</div>
+					<ul class="time-info">
+						<li><strong class="time">06:15</strong><span>김포 GMP</span></li>
+						<li><strong class="time">07:05</strong><span>제주 CJU</span></li>
+					</ul>
+					<div class="price-info">
+						<span class="seat">잔여 4석~</span>
+						<div class="k1_price">
+							<em class="priceInfo">35,900원~</em>
+						</div>
+					</div>
+				</a>
+			</div>
+			<button type="button" class="icoMore toggleBtn" aria-expanded="false"><span class="false">가격 더보기</span><span class="true">가격 접기</span></button>
+			<div class="toggleCont priceMore">
+				<ul class="priceList">
+					<li>
+						<div class="inner">
+							<strong class="tit">특가운임</strong>
+							<span class="kp_seat">잔여 3석</span>
+							<div class="baggageList">
+								<span>기내 10kg</span>
+								<span>위탁 15kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">35,900원~</em>
+								<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					<li>
+						<div class="inner">
+							<strong class="tit">할인운임</strong>
+							<span class="kp_seat">잔여 10석</span>
+							<div class="baggageList">
+								<span>기내 10kg</span>
+								<span>위탁 15kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">35,900원~</em>
+								<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					<li>
+						<div class="inner">
+							<strong class="tit">정상운임</strong>
+							<span class="kp_seat">잔여 15석</span>
+							<div class="baggageList">
+								<span>기내 15kg</span>
+								<span>위탁 20kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">106,900원~</em>
+								<strong class="totalPrice">총 4인 <em>427,600원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					<li class="kf_pricePrestise">
+						<div class="inner">
+							<strong class="tit">프리스티지석</strong>
+							<span class="kp_seat">잔여 15석</span>
+							<div class="baggageList">
+								<span>기내 15kg</span>
+								<span>위탁 20kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">106,900원~</em>
+								<strong class="totalPrice">총 4인 <em>427,600원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+				</ul>
+				<div class="btnArea">
+					<a href="#" role="button" class="btLink layPopBtn" data-id="pop_airDetail">항공편 세부정보</a>
+					<!-- a href="#" role="button" class="btLink layPopBtn" data-id="pop_priceGuide">운임규정 및 취소 규정안내</a -->
+				</div>
+			</div>	
+			
+			
+		</div>
+		<!--// repeat unit -->
+
+		<div id="anchorEvening"></div><!-- 10.06 추가 -->
+		<!-- repeat unit -->
+		<div class="k1_sch_result toggleList">
+			<div class="flagList">
+				<span class="flag envi">친환경 항공편</span>
+				<span class="flag">삼성카드청구할인</span>
+				<span class="flag">무료취소</span>
+			</div>
+			<div class="k1_al">
+				<a href="#" class="link"><!-- 10.12 링크 추가 -->
+					<div class="air">
+						<span class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/AP_OZ03.gif" alt="아시아나항공"><strong>아시아나항공</strong></span>
+						<span>OZ8901</span>
+						<span>B737-900</span>
+					</div>
+					<ul class="time-info">
+						<li><strong class="time">18:15</strong><span>김포 GMP</span></li>
+						<li><strong class="time">20:05</strong><span>제주 CJU</span></li>
+					</ul>
+					<div class="price-info">
+						<span class="seat">잔여 4석~</span>
+						<div class="k1_price">
+							<em class="priceInfo">35,900원~</em>
+							<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+						</div>
+					</div>
+				</a>
+			</div>
+			<button type="button" class="icoMore toggleBtn" aria-expanded="false"><span class="false">가격 더보기</span><span class="true">가격 접기</span></button>
+			<div class="toggleCont priceMore">
+				<ul class="priceList">
+					<li>
+						<div class="inner">
+							<strong class="tit">특가운임</strong>
+							<span class="kp_seat">잔여 3석</span>
+							<div class="baggageList">
+								<span>기내 10kg</span>
+								<span>위탁 15kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">35,900원~</em>
+								<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					<li>
+						<div class="inner">
+							<strong class="tit">할인운임</strong>
+							<span class="kp_seat">잔여 10석</span>
+							<div class="baggageList">
+								<span>기내 10kg</span>
+								<span>위탁 15kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">35,900원~</em>
+								<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					<li>
+						<div class="inner">
+							<strong class="tit">정상운임</strong>
+							<span class="kp_seat">잔여 15석</span>
+							<div class="baggageList">
+								<span>기내 15kg</span>
+								<span>위탁 20kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">106,900원~</em>
+								<strong class="totalPrice">총 4인 <em>427,600원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					<li class="kf_pricePrestise">
+						<div class="inner">
+							<strong class="tit">프리스티지석</strong>
+							<span class="kp_seat">잔여 15석</span>
+							<div class="baggageList">
+								<span>기내 15kg</span>
+								<span>위탁 20kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">106,900원~</em>
+								<strong class="totalPrice">총 4인 <em>427,600원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+				</ul>
+				<div class="btnArea">
+					<a href="#" role="button" class="btLink layPopBtn" data-id="pop_airDetail">항공편 세부정보</a>
+					<!-- a href="#" role="button" class="btLink layPopBtn" data-id="pop_priceGuide">운임규정 및 취소 규정안내</a -->
+				</div>
+			</div>	
+			
+			
+		</div>
+		<!--// repeat unit -->
+
+		<a href="#" class="bannerType type02">
+			<figure><img src="/resource/MO/images/dummy/@img_banner01.jpg" alt="EVENT - 제주 항공권 초특가 보장 - 항공권과 숙박까지 함께 예약하면 추가할인 !"></figure>
+		</a>
+
+		<!-- repeat unit -->
+		<div class="k1_sch_result toggleList">
+			<div class="flagList">
+				<span class="flag envi">친환경 항공편</span>
+				<span class="flag">삼성카드청구할인</span>
+				<span class="flag">무료취소</span>
+			</div>
+			<div class="k1_al">
+				<a href="#" class="link"><!-- 10.12 링크 추가 -->
+					<div class="air">
+						<span class="thumb"><img src="/air/wfw/imgs/mbl/logo/air/AP_OZ03.gif" alt="아시아나항공"><strong>아시아나항공</strong></span>
+						<span>OZ8901</span>
+						<span>B737-900</span>
+					</div>
+					<ul class="time-info">
+						<li><strong class="time">06:15</strong><span>김포 GMP</span></li>
+						<li><strong class="time">07:05</strong><span>제주 CJU</span></li>
+					</ul>
+					<div class="price-info">
+						<span class="seat">잔여 4석~</span>
+						<div class="k1_price">
+							<em class="priceInfo">35,900원~</em>
+							<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+						</div>
+					</div>
+				</a>
+			</div>
+			<button type="button" class="icoMore toggleBtn" aria-expanded="false"><span class="false">가격 더보기</span><span class="true">가격 접기</span></button>
+			<div class="toggleCont priceMore">
+				<ul class="priceList">
+					<li>
+						<div class="inner">
+							<strong class="tit">특가운임</strong>
+							<span class="kp_seat">잔여 3석</span>
+							<div class="baggageList">
+								<span>기내 10kg</span>
+								<span>위탁 15kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">35,900원~</em>
+								<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					<li>
+						<div class="inner">
+							<strong class="tit">할인운임</strong>
+							<span class="kp_seat">잔여 10석</span>
+							<div class="baggageList">
+								<span>기내 10kg</span>
+								<span>위탁 15kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">35,900원~</em>
+								<strong class="totalPrice">총 2인 <em>71,800원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					<li>
+						<div class="inner">
+							<strong class="tit">정상운임</strong>
+							<span class="kp_seat">잔여 15석</span>
+							<div class="baggageList">
+								<span>기내 15kg</span>
+								<span>위탁 20kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">106,900원~</em>
+								<strong class="totalPrice">총 4인 <em>427,600원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+					<li class="kf_pricePrestise">
+						<div class="inner">
+							<strong class="tit">프리스티지석</strong>
+							<span class="kp_seat">잔여 15석</span>
+							<div class="baggageList">
+								<span>기내 15kg</span>
+								<span>위탁 20kg</span>
+							</div>
+							<div class="k1_price">
+								<em class="priceInfo">106,900원~</em>
+								<strong class="totalPrice">총 4인 <em>427,600원</em></strong>
+							</div>
+						</div>
+						<button type="button" class="btnDefault btnS">예약</button>
+					</li>
+				</ul>
+				<div class="btnArea">
+					<a href="#" role="button" class="btLink layPopBtn" data-id="pop_airDetail">항공편 세부정보</a>
+					<!-- a href="#" role="button" class="btLink layPopBtn" data-id="pop_priceGuide">운임규정 및 취소 규정안내</a -->
+				</div>
+			</div>	
+			
+			
+		</div>
+		<!--// repeat unit -->
+
+	</div><!-- //container -->
+
+	<div class="floatingBtns floatingCase05">
+		<div class="floatingInner">
+			<div class="sortingArea">
+				<div class="selectWrap selectSorting">
+					<select title="정렬순서 선택" data-header="정렬">
+						<option value="01">출발시간 이른 순</option>
+						<option value="02">출발시간 늦은 순</option>
+						<option value="03">가격 낮은 순</option>
+						<option value="04">가격 높은 순</option>
+					</select>
+				</div>
+				<button type="button" class="btFilter layPopBtn" data-id="pop_airFilter">필터</button>
+			</div>
+		</div>
+	</div>		
+
+</section><!-- //wrapper -->
+<footer>
+	<img src="/resource/MO/images/dummy/@footer.png" alt="">
+</footer>
+
+<aside>
+	<div class="asideRight">
+		<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+	</div>
+	
+</aside>
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+
+
+</body>
+</html>

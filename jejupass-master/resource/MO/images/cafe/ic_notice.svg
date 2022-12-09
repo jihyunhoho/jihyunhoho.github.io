@@ -1,0 +1,15 @@
+<svg id="ic_x40_notice" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+    <defs>
+        <style>
+            .cls-6{fill:none;stroke:#cacaca;stroke-linecap:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="ic_x40_notice-2" data-name="ic_x40_notice" transform="translate(4.036 5)">
+        <rect id="Rectangle_3353" data-name="Rectangle 3353" width="6" height="6" rx="3" transform="translate(12.964 24)" style="fill:#e83667"/>
+        <path id="Union_81" data-name="Union 81" d="M1 23a1 1 0 0 1-1-1v-1a3 3 0 0 1 2-2.829V11a11 11 0 0 1 22 0v7.171A3 3 0 0 1 26 21v1a1 1 0 0 1-1 1z" transform="translate(2.964 4)" style="fill:#6531ce"/>
+        <rect id="Rectangle_3356" data-name="Rectangle 3356" width="6" height="6" rx="3" transform="translate(12.964)" style="fill:#260b5b"/>
+        <path id="Rectangle_3357" data-name="Rectangle 3357" d="M0 0h8a1 1 0 0 1 1 1 1 1 0 0 1-1 1H0V0z" transform="translate(4.964 20)" style="fill:#8f63e6"/>
+        <path id="Path_2734" data-name="Path 2734" class="cls-6" d="M8700.762 611.7a10.03 10.03 0 0 0-3.726 6.863" transform="translate(-8697.036 -607.2)"/>
+        <path id="Path_2735" data-name="Path 2735" class="cls-6" d="M8697.035 611.7a10.03 10.03 0 0 1 3.726 6.863" transform="translate(-8670.035 -607.2)"/>
+    </g>
+</svg>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>POI(리뷰전체보기) | 제주패스</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="/resource/MO/images/favicon/apple_touch_icon.ico">
+<link rel="apple-touch-icon" href="/resource/MO/images/favicon/apple_touch_icon_144.ico">
+<link href="/resource/MO/css/m_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/MO/css/m_contents.min.css" rel="stylesheet" type="text/css">
+<style>
+  .layPop{display:block !important;}
+</style>
+</head>
+
+<body>
+
+<section id="pop_poiReview" class="layPop layFull" tabindex="0"><!--20211229 id 수정-->
+  <header>
+    <h2 class="titLay tCenter">리뷰<em>(30)</em></h2>
+  </header>
+
+  <div class="layContainer" tabindex="0">
+    <div class="layContent">
+		<div class="viewTab">
+			<div class="tabWrap tabScript fixed">
+				<button type="button" class="prev"><span>이전</span></button>
+				<ul class="tabType01">
+					<li><a href="#" role="button" aria-selected="true">전체</a></li>
+					<li><a href="#" role="button" aria-selected="false">맛집</a></li>
+					<li><a href="#" role="button" aria-selected="false">카페패스</a></li>
+					<li><a href="#" role="button" aria-selected="false">트립</a></li>
+					<li><a href="#" role="button" aria-selected="false">숙소</a></li>
+				</ul>
+				<button type="button" class="next"><span>다음</span></button>
+			</div>
+			<div class="listNum poiSelect">
+				<div class="listNumBtns">
+					<div class="selectWrap">
+						<select title="정렬순서 선택" data-msg="최신 순" data-header="정렬">
+							<option value="01" selected>최신 순</option>
+							<option value="02">좋아요 순</option>
+							<option value="03">별점 높은 순</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="tabContents01" class="tabContentWrap tabON">
+			<h2 class="hidden">전체 리뷰</h2>
+			<div class="grayList PoiView">
+				<div class="review poiReview">
+					<ul class="reviewList allView"><!--20211207 도민, 여행자 플래그 삭제-->
+						<li>
+							<div class="reviewBox">
+								<div class="reviewSet">
+									<span class="thum"><img src="/resource/MO/images/dummy/@pic_36x36-01.png" alt=""></span>
+									<strong class="name">김제주</strong>
+									<!--span class="infoFlag local">도민</span-->
+								</div>
+								<div class="reviewSet setPoi">
+									<div class="sortingList">
+										<span class="icoCate food"><i class="hidden">맛집&middot;카페</i></span>
+										<p class="name">제이학센</p>
+										<p class="distance">2.4km</p>
+									</div>
+									<div class="starArea">
+										<div class="rating"><div class="ratingOn" style="width:80%"></div></div>
+										<em class="date">2021.01.30</em>
+									</div>
+								</div>
+								<p class="txt">
+									아이들이 너무 좋아했어요. 내년에 제주도 오면 다시 
+									가고 싶어요.<br> 
+									어른이 보기에도 재미있는 곳이네요...<button type="button" class="btLink">더보기</button>
+								</p>
+								<div class="imgInfo"><img src="/resource/MO/images/dummy/@poi_review01.png" alt=""></div>
+								<div class="txtInfo">
+									<span class="frmInp like"><input type="checkbox" id="chkLike11"><label for="chkLike11">401</label></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="reviewBox">
+								<div class="reviewSet">
+									<span class="thum"><img src="/resource/MO/images/dummy/@pic_36x36-01.png" alt=""></span>
+									<strong class="name">김제주</strong>
+									<!--span class="infoFlag local">도민</span-->
+								</div>
+								<div class="reviewSet setPoi">
+									<div class="sortingList">
+										<span class="icoCate pass"><i class="hidden">카페패스</i></span>
+										<p class="name">스누피가든</p>
+										<p class="distance">2.4km</p>
+									</div>
+									<div class="starArea">
+										<div class="rating"><div class="ratingOn" style="width:80%"></div></div>
+										<em class="date">2021.01.30</em>
+									</div>
+								</div>
+								<p class="txt">
+									아이들이 너무 좋아했어요. 내년에 제주도 오면 다시 
+									가고 싶어요.
+								</p>
+								<div class="txtInfo">
+									<span class="frmInp like"><input type="checkbox" id="chkLike12"><label for="chkLike12">401</label></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="reviewBox">
+								<div class="reviewSet">
+									<span class="thum"><img src="/resource/MO/images/dummy/@pic_36x36-01.png" alt=""></span>
+									<strong class="name">김제주</strong>
+									<!--span class="infoFlag traveler">여행자</span-->
+								</div>
+								<div class="reviewSet setPoi">
+									<div class="sortingList">
+										<span class="icoCate pass"><i class="hidden">카페패스</i></span>
+										<p class="name">델문도</p>
+										<p class="distance">2.4km</p>
+									</div>
+									<div class="starArea">
+										<div class="rating"><div class="ratingOn" style="width:80%"></div></div>
+										<em class="date">2021.01.30</em>
+									</div>
+								</div>
+								<p class="txt">
+									아이들이 너무 좋아했어요. 내년에 제주도 오면 다시 가고 싶어요. <br>
+									어른이 보기에도 재미있는 곳이네요... 
+									<button type="button" class="btLink">더보기</button>
+								</p>
+								<!-- 20211229 구조 변경-->
+								<div class="imgInfo type02">
+									<ul>
+										<li>
+											<a href="#" role="button">
+												<figure><img src="/resource/MO/images/dummy/@pic_food_93x93-01.png"></figure>
+											</a>
+										</li>
+										<li>
+											<a href="#" role="button">
+												<figure><img src="/resource/MO/images/dummy/@pic_food_93x93-02.png"></figure>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- //20211229 구조 변경-->
+								<div class="txtInfo">
+									<span class="frmInp like"><input type="checkbox" id="chkLike13" checked><label for="chkLike13">401</label></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="moreBtn">
+						<button type="button" class="icoMore">더보기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="tabContents02" class="tabContentWrap">
+			<h2 class="hidden">여행자 리뷰</h2>
+			<div class="tabInner">여행자</div>
+		</div>
+		<div id="tabContents03" class="tabContentWrap">
+			<h2 class="hidden">도민 리뷰</h2>
+			<div class="tabInner">도민</div>
+		</div>
+		
+    </div>
+  </div><!-- //layCont-->
+  <button type="button" class="closeL">팝업 닫기</button>
+
+</section>
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+
+
+</body>
+</html>

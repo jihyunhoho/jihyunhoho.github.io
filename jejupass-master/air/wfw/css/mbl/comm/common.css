@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/* basis */
+html{height:100%;font-size:62.5%/*@size: 16px × 62.5% = 10px*/;-webkit-text-size-adjust:none;/*vertical&horizantal same font size(iPhone);*/}
+body{height:100%;margin:0;font-size:1.2rem/*@12px*/;font-family:Dotum,Helvetica,sans-serif;color:#666; background-color:#F3F3F3}
+body{-webkit-overflow-scrolling: touch; overflow-scrolling: touch; -webkit-transform: translateZ(0px);}
+div{line-height:1;}
+img{height:auto;border:0;}
+ul,dl{margin:0;padding:0;list-style:none;}
+li,dt,dd{margin:0;}
+a{outline:none;color:#666;text-decoration:none;}
+h1,h2,h3,h4{margin:0;padding:0;}
+
+/* android body font size setting */
+*{max-height:1000000px;}
+
+/* align */
+.k1_al{text-align:left !important;}
+.k1_ac{text-align:center !important;}
+.k1_ar{text-align:right !important;}
+.k1_vat{vertical-align:top !important}
+
+/* float&clear */
+.k1_fl{float:left !important;}
+.k1_fr{float:right !important;}
+.k1_cb{clear:both !important;}
+.k1_clear:after{content:"";display:block;clear:both;}
+
+/* form&control */
+form{margin:0;}
+input{-webkit-border-radius:0;-webkit-appearance:none;outline:none;}
+input[type=text], input[type=password], input[type=number], input[type=tel]{height:34px;border:1px solid #ccc;font-family:Dotum,Helvetica,sans-serif;font-size:1.2rem;color:#666;line-height:1;}
+input[type=checkbox]{outline:none;margin:0 1px -1px 1px;}
+select{display:inline-block;outline:none;border:1px solid #ccc;height:38px;padding:0 52px 0 17px;border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;background-color:#fff;background-image:url(/resource/MO/wfw/imgs/mbl/common/select.png);background-position:right top;background-repeat:no-repeat;background-size:38px 38px;font-family:Dotum,Helvetica,sans-serif;font-size:1.28rem;text-overflow:ellipsis;appearance:none;-webkit-appearance:none;-moz-appearance:none;vertical-align:top;}
+.k1_custom_ipt{overflow:hidden;display:block;border:1px solid #ccc;padding:0 20px;background-color:#fff;}
+.k1_custom_ipt_at{margin:7px 5px 0px}
+.k1_custom_chk{display:block;position:relative;min-height:17px;font-size:1.02rem;color:#222;}
+.k1_custom_chk input[type=checkbox]:checked + label{background-position:0 0;}
+.k1_custom_chk.k1_ar{padding:10px 0 13px;}
+.k1_custom_chk.k1_ar label{display:inline-block;position:static;margin-left:-20px;}
+.k1_custom_chk.k1_ac label{display:inline-block;position:static;margin-left:0px;}
+.k1_custom_chk.dark label{background-position:0 -68px;}
+.k1_custom_chk.dark input[type=checkbox]:checked + label{background-position:0 -51px;}
+.k1_custom_chk.bdr{margin-top:15px;padding-top:15px;border-top:1px dotted #666;}
+input[type=checkbox]{outline:none;margin:0 1px -1px 1px;}
+.k1_custom_rad{position:relative;min-height:17px;font-size:1.02rem;color:#222;}
+.k1_custom_rad input[type=radio]{position:absolute;left:0;z-index:-1;}
+.k1_custom_rad input[type=radio]{border:none;background:none;}
+.k1_custom_rad input[type=radio]:checked + label{background-position:0 0;}
+
+/*tab*/
+.k1_tabview{padding:13px 20px;border:1px solid #ccc;background-color:#fff;}
+.k1_tabview .k1_scrolls{overflow:auto;height:152px;font-size:0.85rem;line-height:1.3;}
+.k1_tabview .k1_scrolls strong{display:block;margin-bottom:6px;font-size:1.02rem;}
+
+/* air image&text */
+.k1_air_name{font-size:1.19rem;font-weight:bold;color:#333;line-height:1.7rem;}
+.k1_air_name *{vertical-align:middle;}
+.k1_air_name img{width:17px;margin-right:8px;}
+
+/* width */
+.k1_w_basis{width:64px;}
+.k1_w80{width:80px !important}
+.k1_w100{width:100px !important}
+.k1_w100pct{width:100% !important}
+.k1_w75pct{width:75%;}
+.k1_w70pct{width:70%;}
+.k1_w60pct{width:60%;}
+.k1_w50pct{width:50%;}
+.k1_w33pct{width:33.3333333% !important}
+.k1_w30pct{width:30%;}
+.k1_w25pct{width:25%;}
+.k1_w20pct{width:20%;}
+
+/* margin&padding */
+.k1_mgt0{margin-top:0px !important;}
+.k1_mgt5{margin-top:5px !important;}
+.k1_mgt10{margin-top:10px !important;}
+.k1_mgt15{margin-top:15px !important;}
+.k1_mgt20{margin-top:20px !important;}
+.k1_mgt25{margin-top:25px !important;}
+.k1_mgb5{margin-bottom:5px !important;}
+.k1_mgb10{margin-bottom:10px !important;}
+.k1_mgb15{margin-bottom:15px !important;}
+.k1_mgl5{margin-left:5px !important;}
+.k1_pdt20{padding-top:20px !important;}
+.k1_pdl15{padding-left:15px !important}
+.k1_mgr5{margin-right:5px !important;}
+.k1_pd10{padding:10px !important}
+.k1_mgl25 {margin-left:25px !important;}
+.k1_mgr25 {margin-right:25px !important;}
+.k1_pdb0 {padding-bottom:0 !important;}
+
+/* 2021.05.27. upsell 추가 */
+.k1_p3 {padding:3px !important;}
+.k1_ml5 {margin-left:5px !important;}
+
+/*textarea*/
+textarea{border:1px solid #CCCCCC; padding:3%; width:94%}
+
+/*inline input type text*/
+input.k1_inline_input{height:22px;}
+
+/*항공사로고*/
+img.k1_air_logo{width:20px; vertical-align:bottom}
+
+.k1_position{position:relative;}
+
+/*메인이벤트이미지 171024 esleee*/
+div.k1_main_evnt{text-align:center;}
+div.k1_main_evnt img{width:100%;max-width:640px;vertical-align:top}
+
+
+/* 2021.05.27. upsell 추가 */
+/* 배경색 */
+.k1_bgDeB {background-color:#235bb9 !important;}
+/* 폰트사이즈 */
+.k1_font11 {font-size:11px !important;}
+/* 폰트색상 */
+.k1_ColorW {color:#fff !important;}
+/* 보더 */
+.k1_borRa5 {border-radius:5px !important;}

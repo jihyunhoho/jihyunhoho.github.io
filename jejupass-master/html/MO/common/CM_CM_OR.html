@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>제주패스</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="/resource/MO/images/favicon/apple_touch_icon.ico">
+<link rel="apple-touch-icon" href="/resource/MO/images/favicon/apple_touch_icon_144.ico">
+<link href="/resource/MO/css/m_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/MO/css/m_contents.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper defaultWrapper">
+	<header>
+		<button type="button" class="btPrev">이전</button>
+		<h1 class="titDep1">결제</h1>
+	</header>
+
+	<div id="container" class="container">
+		<ul class="toggleList togglePayment">
+			<li class="acctItem">
+				<button type="button" class="toggleBtn" aria-expanded="false"><span class="tit">주문상품</span><strong class="payContR">150,000원</strong>
+				</button>
+				<div class="toggleCont">
+					<ul class="kf_payList">
+						<li><span class="tit">상품명</span><strong class="contR">100,000원</strong></li>
+						<li><span class="tit">옵션<button type="button" class="btDel">삭제</button></span><strong class="contR">50,000원</strong></li>
+						<li class="total"><span class="tit">주문금액</span><strong class="contR">150,000원</strong></li>
+					</ul>
+					<!-- 렌터카 결제 -->
+					<ul class="kf_payList">
+						<li><span class="tit">렌트카 요금</span><strong class="contR">100,000원</strong></li>
+						<li><span class="tit">추가 자차보험</span><strong class="contR">100,000원</strong></li>
+						<li><span class="tit">옵션1 요금<button type="button" class="btDel">삭제</button></span><strong class="contR">50,000원</strong></li>
+						<li><span class="tit">옵션2 요금<button type="button" class="btDel">삭제</button></span><strong class="contR">50,000원</strong></li>
+						<li class="total"><span class="tit">주문금액</span><strong class="contR">150,000원</strong></li>
+					</ul>
+					<div class="guideInfo boxType01">
+						<h4 class="titGuide">즉시 결제 하셔야 예약이 완료됩니다.</h4>
+						<p class="txt">예약과 동시에 결제가 진행됩니다. 시간이 경과될 경우, 차량예약 불가하거나 요금이 변동될 수 있습니다.</p>
+					</div>
+					<!-- //렌터카 결제 -->
+				</div>
+			</li>
+			<li class="acctItem paySale">
+				<button type="button" class="toggleBtn" aria-expanded="false"><span class="tit">할인/혜택</span><strong class="payContR">54,000원</strong></button>
+				<div class="toggleCont">
+					<div class="saleCont">
+						<h3 class="titPay">쿠폰</h3>
+						<!-- 로그인 전 -->
+						<div class="grayBox loginInfo">
+							<p class="listType02 small">로그인이 필요한 서비스입니다.</p>
+							<a href="#" role="button" class="btLink">로그인하기</a>
+						</div>
+
+						<!-- 사용가능 쿠폰이 있는 경우 -->
+						<div class="downloadWrap">
+							<p class="tit">사용가능 쿠폰</p>
+							<strong class="kf_couponNum">10개</strong>
+							<a href="#" role="button" class="link layPopBtn" data-id="pop_couponList">보기</a>
+						</div>
+
+						<!-- 사용가능 쿠폰이 없는 경우 -->
+						<div class="downloadWrap downNone">
+							<p class="tit">사용가능 쿠폰</p>
+							<strong class="kf_couponNum">0개</strong>
+							<a href="#" role="button" class="link layPopBtn" data-id="pop_couponList">보기</a>
+						</div>
+						<!-- 쿠폰 적용 후 -->
+						<div class="downloadWrap">
+							<p class="tit">사용가능 쿠폰</p>
+							<strong class="kf_couponNum">10개</strong>
+							<a href="#" role="button" class="link layPopBtn" data-id="pop_couponList">보기</a>
+						</div>
+						<div class="downloadWrap downChange">
+							<p class="tit">제주패스 웰컴패키지 제주패스 웰컴패키지</p>
+							<strong class="kf_couponNum">20,000원</strong>
+							<a href="#" role="button" class="link layPopBtn" data-id="pop_couponList">변경</a>
+						</div>
+						<!-- //쿠폰 적용 후 -->
+
+						<label for="inpCode" class="titPay">프로모션코드</label>
+						<span class="inpBtns">
+							<input type="text" id="inpCode" placeholder="프로모션 코드를 입력하세요." title="프로모션 코드를 입력하세요.">
+							<button type="button" class="btnDefault btnM btnLineG">적용</button>
+						</span>
+
+						<!-- 항공 전용 쿠폰 -->
+						<!-- 2021.12.02 삭제 <h3 class="titPay">항공전용 쿠폰</h3> -->
+
+						<!-- //항공 전용 쿠폰 -->
+
+						<!-- 2021.12.02 삭제 <h3 class="titPay">이용권</h3> -->
+
+						<!-- 렌터카 이용권이 있는 경우 -->
+						<label for="inpPoint" class="titPay">렌터카 이용권<span class="subCont">보유금액 : 27,000원</span></label>
+						<span class="inpBtns inpPoint">
+							<input type="text" id="inpCode" placeholder="사용할 금액을 입력하세요." title="사용할 금액 입력" value="0">
+							<span class="unit">원</span>
+							<button type="button" class="btnDefault btnM btnLineG">전액사용</button>
+						</span>
+						<span class="frmInp txt small"><input type="checkbox" id="chkUseRentcar"><label for="chkUseRentcar">항상 전액사용</label></span>			
+						<!-- 렌터카 이용권이 있는 경우 -->
+						
+						<label for="inpPoint" class="titPay">포인트 사용<span class="subCont">사용가능 : <a href="#" class="layPopBtn" data-id="pop_usePoint">27,000p</a></span></label>
+						<span class="inpBtns inpPoint">
+							<input type="text" id="inpCode" placeholder="사용할 포인트를 입력하세요." title="사용 포인트 입력" value="12,000">
+							<span class="unit">P</span>
+							<button type="button" class="btnDefault btnM btnLineG">전액사용</button>
+						</span>
+						<span class="frmInp txt small"><input type="checkbox" id="chkUsePoint"><label for="chkUsePoint">항상 전액사용</label></span>
+
+						<div class="toggleList kf_pointCharge">
+							<div class="acctItem">
+								<button type="button" class="toggleBtn" aria-expanded="false">부족한 <em>12,000p</em> 충전 후 결제<a href="#" class="layChargeTip">최대 3%적립</a></button>
+								<div class="toggleCont">
+									<div class="inner">
+										<div class="inpFrm kf_chargePay">
+											<label for="inpChargePrice">충전금액</label>
+											<span class="inpA">
+												<input type="tel" id="inpChargePrice" placeholder="충전금액을 선택해주세요.">
+											</span>
+											<div class="kf_priceBtns">
+												<button type="button" class="inpPay">+1만</button>
+												<button type="button" class="inpPay">+5만</button>
+												<button type="button" class="inpPay">+10만</button>
+												<button type="button" class="inpPay">+50만</button>
+												<button type="button" class="btIco icoChange">금액 재설정</button>
+											</div>
+											<p class="listType02 small">최소 5만원 단위/ 1,988,000원 한도 내 충전가능</p>
+										</div>
+										<p class="kf_titPay">연결계좌</p>
+										<div class="swiperWrap swiperGap swiperAccount" data-options='{"Spacebetween": 16}'>
+											<div class="swiper-container">
+												<ul class="swiper-wrapper">
+													<li class="swiper-slide">
+														<div class="kf_cardWrap">
+															<img src="/resource/MO/images/common/card_shinhan.png" alt="신한은행 카드 이미지">
+															<p class="acctName">홍길동</p>
+															<div class="kf_accountInfo">
+																<span class="bankName">신한은행</span>
+																<strong class="bankAccountNum">110-12235-222112218</strong>
+															</div>
+														</div>
+													</li>
+													<li class="swiper-slide">
+														<a href="#" role="button" class="kf_applyCont">
+															<strong>충전계좌 등록</strong>
+															<span>본인 명의 계좌만 등록 가능</span>
+														</a>
+													</li>
+												</ul>
+											<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+										</div>
+										<ul class="kf_payList type02">
+											<li><span class="tit">사용 충전포인트</span><strong class="contR">100,000p</strong></li>
+											<li><span class="tit">사용 후 잔액 충전포인트</span><strong class="contR balance">50,000p</strong></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="acctItem payPrice">
+				<button type="button" class="toggleBtn" aria-expanded="false"><span class="tit">최종결제 금액</span><strong class="payContR">150,000원</strong>
+				</button>
+				<div class="toggleCont">
+					<ul class="kf_payList typeSub">
+						<li><span class="tit">주문금액</span><strong class="contR">100,000원</strong>
+							<ul class="kf_payDetail">
+								<li><span class="tit">상품명</span><strong class="contR">100,000원</strong></li>
+								<li><span class="tit">추가옵션명</span><strong class="contR">100,000원</strong></li>
+							</ul>
+							
+						</li>
+						<li><span class="tit">할인/혜택</span><strong class="contR pointR">100,000원</strong>
+							<ul class="kf_payDetail">
+								<li><span class="tit">쿠폰</span><strong class="contR pointR">-6,000원</strong></li>
+								<li><span class="tit">프로모션코드</span><strong class="contR pointR">94,000원</strong></li>
+								<li><span class="tit">이용권</span><strong class="contR pointR">94,000원</strong></li>
+								<li><span class="tit">포인트</span><strong class="contR pointR">94,000원</strong></li>
+							</ul>
+						</li>
+						<li class="kf_total"><span class="tit">결제금액</span><strong class="contR">94,000원</strong></li>
+					</ul>
+				</div>
+			</li>
+			<li class="acctItem">
+				<button type="button" class="toggleBtn" aria-expanded="false"><span class="tit">결제수단</span><strong class="payContR">제주PAY</strong>
+				</button>
+				<div class="toggleCont">
+					<ul class="kf_selPayment frmAcctList">
+						<li>
+							<span class="frmInp txt small inpAcct" aria-expanded="false"><input type="radio" id="radPay" name="radPayMethod"><label for="radPay">제주PAY</label></span>
+							<div class="payDetailCont">
+								<div class="swiperWrap swiperGap swiperAccount" data-options='{"Spacebetween": 16}'>
+									<div class="swiper-container">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide">
+												<div class="kf_cardWrap">
+													<img src="/resource/MO/images/common/card_samsung.png" alt="삼성카드 이미지">
+													<!-- 카드 이미지
+													<img src="/resource/MO/images/common/card_kb.png" alt="KB국민은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_ibk.png" alt="IBK기업은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_nh.png" alt="NH농협은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_shinhan.png" alt="신한은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_citi.png" alt="한국씨티은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_sc.png" alt="SC제일은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_woori.png" alt="우리은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_kakao.png" alt="카카오뱅크 이미지">
+													<img src="/resource/MO/images/common/card_k.png" alt="케이뱅크 이미지">
+													<img src="/resource/MO/images/common/card_keb.png" alt="KEB하나은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_bnk.png" alt="BNK경남은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_kj.png" alt="광주은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_dgb.png" alt="DGB대구은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_busan.png" alt="BNK부산은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_kdb.png" alt="산업은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_sh.png" alt="수협 이미지">
+													<img src="/resource/MO/images/common/card_epost.png" alt="우체국 이미지">
+													<img src="/resource/MO/images/common/card_jb.png" alt="전북은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_jeju.png" alt="제주은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_mg.png" alt="MG새마을금고 이미지">
+													<img src="/resource/MO/images/common/card_cu.png" alt="신협은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_sbi.png" alt="SBI저축은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_sb.png" alt="저축은행 카드 이미지">
+													<img src="/resource/MO/images/common/card_samsung.png" alt="삼성카드 이미지">
+													<img src="/resource/MO/images/common/card_lotte.png" alt="롯데카드 이미지">
+													<img src="/resource/MO/images/common/card_hyundai.png" alt="현대카드 이미지">
+													<img src="/resource/MO/images/common/card_stock.png" alt="증권사 카드 이미지">
+													-->
+													<p class="acctName">홍길동</p>
+													<div class="kf_accountInfo">
+														<span class="bankName">삼성카드</span>
+														<strong class="bankAccountNum">110-12235-222112218</strong>
+													</div>
+												</div>
+											</li>
+											<li class="swiper-slide">
+												<div class="kf_cardWrap">
+													<img src="/resource/MO/images/common/card_lotte.png" alt="롯데카드 이미지">
+													<p class="acctName">홍길동</p>
+													<div class="kf_accountInfo">
+														<span class="bankName">롯데카드</span>
+														<strong class="bankAccountNum">110-12235-222112218</strong>
+													</div>
+												</div>
+											</li>
+											<li class="swiper-slide">
+												<div class="kf_cardWrap">
+													<img src="/resource/MO/images/common/card_hyundai.png" alt="현대카드 이미지">
+													<p class="acctName">홍길동</p>
+													<div class="kf_accountInfo">
+														<span class="bankName">현대카드</span>
+														<strong class="bankAccountNum">110-12235-222112218</strong>
+													</div>
+												</div>
+											</li>
+											<li class="swiper-slide">
+												<a href="#" role="button" class="kf_applyCont">
+													<strong>제주PAY 추가</strong>
+													<span>본인 명의 카드, 계좌만 추가 가능</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- 카드할부 선택 영역 -->
+								<div class="payInstallment">
+									<div class="selectWrap">
+										<select title="카드할부 선택" data-header="카드할부 선택">
+											<option>일시불</option>
+											<option>3개월</option>
+											<option>5개월</option>
+											<option>6개월</option>
+										</select>
+									</div>
+									<p class="listType02 small">할부는 50,000원 이상부터 적용됩니다.</p>
+								</div>
+								<!-- //카드할부 선택 영역 -->
+							</div>
+						</li>
+						<li>
+							<span class="frmInp txt small inpAcct" aria-expanded="true"><input type="radio" id="radSimple" name="radPayMethod" checked><label for="radSimple">간편결제</label></span>
+							<div class="payDetailCont">
+								<ul class="simplePayList">
+									<li>
+										<input type="radio" id="radSimple01" name="radSimple" checked>
+										<label for="radSimple01">
+											<figure><img src="/resource/MO/images/common/img_samsungpay.png" alt="삼성페이"></figure><span>삼성페이</span>
+										</label>
+									</li>
+									<li>
+										<input type="radio" id="radSimple02" name="radSimple">
+										<label for="radSimple02">
+											<figure><img src="/resource/MO/images/common/img_cacaopay.png" alt="카카오페이"></figure><span>카카오페이</span>
+										</label>
+									</li>
+									<li>
+										<input type="radio" id="radSimple3" name="radSimple">
+										<label for="radSimple3">
+											<figure><img src="/resource/MO/images/common/img_toss.png" alt="토스"></figure><span>토스</span>
+										</label>
+									</li>
+									<li>
+										<input type="radio" id="radSimple4" name="radSimple">
+										<label for="radSimple4">
+											<figure><img src="/resource/MO/images/common/img_payco.png" alt="페이코"></figure><span>페이코</span>
+										</label>
+									</li>
+									<li>
+										<input type="radio" id="radSimple5" name="radSimple">
+										<label for="radSimple5">
+											<figure><img src="/resource/MO/images/common/img_lpay.png" alt="엘페이"></figure><span>엘페이</span>
+										</label>
+									</li>
+									<li>
+										<input type="radio" id="radSimple6" name="radSimple">
+										<label for="radSimple6">
+											<figure><img src="/resource/MO/images/common/img_naverpay.png" alt="네이버페이"></figure><span>네이버페이</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<span class="frmInp txt small inpAcct" aria-expanded="true"><input type="radio" id="radNormal" name="radPayMethod" checked><label for="radNormal">일반결제</label></span>
+						</li>
+					</ul>
+					<!-- 12.24 추가 -->
+					<div class="btnsPayEtc">
+						<a href="#" role="button" class="btLink02 layPopBtn" data-id="pop_cardSaleInfo">카드할인 및 무이자할부 안내</a>
+						<a href="#" role="button" class="btLink02">롯데카드 <em>5% 청구할인</em></a>
+					</div>
+					<!-- //12.24 추가 -->
+				</div>
+			</li>
+			<li class="acctItem">
+				<button type="button" class="toggleBtn" aria-expanded="false"><span class="tit">적립포인트</span><strong class="payContR">최대 1,050p</strong>
+				</button>
+				<div class="toggleCont">
+					<ul class="kf_payList kf_pointList">
+						<li><span class="tit">기본적립<span class="toolTip">충전포인트<em>5%</em></span></span><strong class="contR">750p</strong></li>
+						<li><span class="tit">리뷰</span><strong class="contR">최대 300p</strong></li>
+						<li class="total">
+							<span class="tit">총 적립 포인트</span>
+							<strong class="contR">최대 1,050p</strong></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+
+		<div class="kf_line"></div>
+		<h4 class="titDep4">약관동의</h4>
+		<div class="grayBox agree">
+			<span class="frmInp txt large"><input type="checkbox" id="chkAll"><label for="chkAll">전체 약관 동의</label></span>
+			<ul class="agreeList">
+				<li>
+					<span class="frmInp txt small">
+						<input type="checkbox" id="chk01"><label for="chk01"><em>[필수]</em> 대여 규정 및 약관 동의</label>
+						<button type="button" class="viewBtn layPopBtn" data-id="pop_agree01"><i class="hidden">내용보기</i></button>
+					</span>
+				</li>
+				<li>
+					<span class="frmInp txt small">
+						<input type="checkbox" id="chk02"><label for="chk02"><em>[필수]</em> 개인정보 수집·이용 및 제3자 정보제공</label>
+						<button type="button" class="viewBtn layPopBtn" data-id="pop_agree02"><i class="hidden">내용보기</i></button>
+					</span>
+				</li>
+				<li>
+					<span class="frmInp txt small">
+						<input type="checkbox" id="chk03"><label for="chk03"><em>[필수]</em> 결제진행약관</label>
+						<button type="button" class="viewBtn layPopBtn" data-id="pop_agree03"><i class="hidden">내용보기</i></button>
+					</span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="btnArea">
+			<button type="button" class="btnDefault btnL action">96,000원 결제</button>
+		</div>
+	</div><!-- //container -->
+
+	<div class="floatingBtns floatingCase01">
+		<div class="floatingInner">
+			<button type="button" class="btnDefault btnL action">96,000원 결제</button>
+		</div>
+	</div>
+
+</section><!-- //wrapper -->
+<footer>
+	<img src="/resource/MO/images/dummy/@footer.png" alt="">
+</footer>
+
+<aside>
+	<div class="asideRight">
+		<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+	</div>
+</aside>
+
+<!-- 카드할인 및 무이자 할부안내 팝업 12.24 추가-->
+<section id="pop_cardSaleInfo" class="layPop layFull" tabindex="0">
+	<header>
+		<h2 class="titLay">카드할인 및 무이자 할부안내</h2>
+	</header>
+
+	<div class="layContainer" tabindex="0">
+		<div class="layContent">
+            <ul class="cardsaleInfoList">
+				<li>
+					<figure><img src="/resource/MO/images/common/img_cardLogo_shinhan.png" alt="신한카드"></figure>
+					<div class="saleInfo">
+						<span>5만원 이상, 제주PAY 결제시</span>
+						<strong>2~7개월 무이자 할부</strong>
+					</div>
+				</li>
+				<li>
+					<figure><img src="/resource/MO/images/common/img_cardLogo_samsung.png" alt="삼성카드"></figure>
+					<div class="saleInfo">
+						<span>5만원 이상, 제주PAY 결제시</span>
+						<strong>2~7개월 무이자 할부</strong>
+					</div>
+				</li>
+				<li>
+					<figure><img src="/resource/MO/images/common/img_cardLogo_hyundai.png" alt="현대카드"></figure>
+					<div class="saleInfo">
+						<span>5만원 이상, 제주PAY 결제시</span>
+						<strong>2~7개월 무이자 할부</strong>
+					</div>
+				</li>
+				<li>
+					<figure><img src="/resource/MO/images/common/img_cardLogo_kbcard.png" alt="KB국민카드"></figure>
+					<div class="saleInfo">
+						<span>5만원 이상, 제주PAY 결제시</span>
+						<strong>2~7개월 무이자 할부</strong>
+					</div>
+				</li>
+				<li>
+					<figure><img src="/resource/MO/images/common/img_cardLogo_woori.png" alt="우리카드"></figure>
+					<div class="saleInfo">
+						<span>5만원 이상, 제주PAY 결제시</span>
+						<strong>2~7개월 무이자 할부</strong>
+					</div>
+				</li>
+				<li>
+					<figure><img src="/resource/MO/images/common/img_cardLogo_nh.png" alt="NH농협카드"></figure>
+					<div class="saleInfo">
+						<span>5만원 이상, 제주PAY 결제시</span>
+						<strong>2~7개월 무이자 할부</strong>
+					</div>
+				</li>
+				<li>
+					<figure><img src="/resource/MO/images/common/img_cardLogo_hana.png" alt="하나카드"></figure>
+					<div class="saleInfo">
+						<span>5만원 이상, 제주PAY 결제시</span>
+						<strong>2~7개월 무이자 할부</strong>
+					</div>
+				</li>
+				<li>
+					<figure><img src="/resource/MO/images/common/img_cardLogo_citi.png" alt="씨티카드"></figure>
+					<div class="saleInfo">
+						<span>5만원 이상, 제주PAY 결제시</span>
+						<strong>2~7개월 무이자 할부</strong>
+					</div>
+				</li>
+				<li>
+					<figure><img src="/resource/MO/images/common/img_cardLogo_ibk.png" alt="IBK기업은행카드"></figure>
+					<div class="saleInfo">
+						<span>5만원 이상, 제주PAY 결제시</span>
+						<strong>2~7개월 무이자 할부</strong>
+					</div>
+				</li>
+				<li>
+					<figure><img src="/resource/MO/images/common/img_cardLogo_lotte.png" alt="롯데카드"></figure>
+					<div class="saleInfo">
+						<span>5만원 이상, 제주PAY 결제시</span>
+						<strong>2~7개월 무이자 할부</strong>
+					</div>
+				</li>
+				<li>
+					<figure><img src="/resource/MO/images/common/img_cardLogo_post.png" alt="우체국"></figure>
+					<div class="saleInfo">
+						<span>5만원 이상, 제주PAY 결제시</span>
+						<strong>2~7개월 무이자 할부</strong>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="floatingBtns floatingCase01">
+			<div class="floatingInner">
+				<button type="button" class="btnDefault btnL action">닫기</button>
+			</div>
+		</div>
+	</div><!-- //layContainer-->
+	<button type="button" class="closeL">팝업 닫기</button>
+</section>
+<!-- //카드할인 및 무이자 할부안내 팝업 12.24 추가-->
+
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+
+</body>
+</html>

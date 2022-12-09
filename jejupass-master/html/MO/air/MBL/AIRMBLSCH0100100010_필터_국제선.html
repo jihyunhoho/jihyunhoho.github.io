@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>제주패스</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="/resource/MO/images/favicon/apple_touch_icon.ico">
+<link rel="apple-touch-icon" href="/resource/MO/images/favicon/apple_touch_icon_144.ico">
+<link href="/air/css/kfx/mbl/airA.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_commonAIR.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_contentsAIR.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_contents_air.min.css" rel="stylesheet" type="text/css">
+<style>
+	.layPop{display:block !important;bottom:0 !important}
+	.dimmed{display:block !important}
+</style>
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper airWrapper">
+	
+	<header>
+		<button type="button" class="btPrev">이전</button>
+		<h1 class="titDep1 titAir">김포<span class="icTrip">왕복여정</span>제주</h1>
+		<div class="menuWrap">
+			<button type="button" class="btNav">메뉴</button>
+		</div>
+	</header>
+
+	<div id="container" class="container">
+		<div class="tripSelect">
+			<div class="selArea01">
+				<button type="button" class="btDate">2021.08.21 (토) ~ 08.23 (월)</button>
+				<button type="button" class="btSeat">성인2명, 프리미엄석</button>
+			</div>
+			<ul class="frmBox frmBoxS">
+				<li class="sorting"><input type="checkbox" id="chkSorting" name="chkSorting" checked><label for="chkSorting">저가순</label></li>
+				<li><input type="radio" id="chkTimes03" name="chkTimes"><label for="chkTimes03">오전</label></li>
+				<li><input type="radio" id="chkTimes04" name="chkTimes"><label for="chkTimes04">오후</label></li>
+				<li><input type="radio" id="chkTimes05" name="chkTimes"><label for="chkTimes05">저녁</label></li>
+			</ul>			
+		</div>
+
+		<div class="k1_message_panel">
+			<div class="message">
+				<strong>선택한 여정으로 검색된 <br>항공권이 없습니다.</strong>
+				<span>다른 여정으로 검색해주세요.</span>
+			</div>
+		</div>
+
+	</div><!-- //container -->
+
+	<div class="floatingBtns floatingCase02">
+		<div class="floatingInner">
+			<button type="button" class="btnDefault btnL btIco icoReset">재검색</button>
+			<button type="button" class="btnDefault btnL action">항공권 검색</button>
+		</div>
+	</div>	
+
+</section><!-- //wrapper -->
+<footer>
+	<img src="/resource/MO/images/dummy/@footer.png" alt="">
+</footer>
+
+<aside>
+	<div class="asideRight">
+		<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+	</div>
+	
+</aside>
+
+<!-- 필터 팝업 -->
+<section id="pop_quickSearch" class="layPop layBtm popFilter" tabindex="0" >
+	<div class="tabWrap tabScript">
+		<button type="button" class="prev"><span>이전</span></button>
+		<ul class="tabType02">
+			<li><a href="#ahchorAirline" role="button" aria-selected="true">항공사</a></li>
+			<li><a href="#anchorTime" role="button" aria-selected="false">출발시간</a></li>
+			<li><a href="#anchorSeat" role="button" aria-selected="false">좌석종류 및 가격</a></li>
+			<li><a href="#anchorVia" role="button" aria-selected="false">경유</a></li><!-- 11.19 경유 탭 추가 -->
+			<li><a href="#anchorEtc" role="button" aria-selected="false">기타</a></li>
+		</ul>
+		<button type="button" class="next"><span>다음</span></button>
+	</div>
+
+	<div class="layContainer" tabindex="0">
+		<!-- 항공편 출발지/도착지 선택 -->
+		
+		<div class="layContent">
+			<h3 class="titDep4" id="ahchorAirline">항공사</h3>
+			
+			<ul class="frmBox frmAirline frmScript selTotal">
+				<li class="total"><input type="checkbox" id="chkAirlime_Total" name="chkAirline" checked><label for="chkAirlime_Total"><img src="/air/imgs_ibe/kfx/mbl/air/air_total.png" alt="항공사 전체"><span>항공사 전체</span></label></li>
+				<li><input type="checkbox" id="chkAirline06" name="chkAirline"><label for="chkAirline06"><img src="/air/imgs_ibe/kfx/mbl/air/va.png" alt="벨류 얼라이언스"><span>벨류 얼라이언스</span></label></li>
+				<li><input type="checkbox" id="chkAirline07" name="chkAirline"><label for="chkAirline07"><img src="/air/imgs_ibe/kfx/mbl/air/sky.png" alt="캐세이퍼시픽항공"><span>스카이팀</span></label></li>
+				<li><input type="checkbox" id="chkAirlime_Mix" name="chkAirline"><label for="chkAirlime_Mix"><img src="/air/imgs_ibe/kfx/mbl/air/star.png" alt="항공사 전체"><span>스타 얼라이언스</span></label></li>
+			</ul>
+
+			<ul class="frmBox frmAirline frmAirlineInter">
+				<li><input type="checkbox" id="chkAirline01" name="chkAirline"><label for="chkAirline01"><img src="/air/wfw/imgs/mbl/logo/air/KE.png" alt="대한항공"><span>대한항공</span></label></li>
+				<li><input type="checkbox" id="chkAirline02" name="chkAirline"><label for="chkAirline02"><img src="/air/wfw/imgs/mbl/logo/air/AP_OZ03.gif" alt="아시아나항공"><span>아시아나항공</span></label></li>
+				<li><input type="checkbox" id="chkAirline03" name="chkAirline"><label for="chkAirline03"><img src="/air/wfw/imgs/mbl/logo/air/7C.png" alt="제주항공"><span>제주항공</span></label></li>
+				<li><input type="checkbox" id="chkAirline04" name="chkAirline"><label for="chkAirline04"><img src="/air/wfw/imgs/mbl/logo/air/AP_LJ03.gif" alt="진에어"><span>진에어</span></label></li>
+				<li class="total"><input type="checkbox" id="chkAirlime_Mix" name="chkAirline"><label for="chkAirlime_Mix"><img src="/air/imgs_ibe/kfx/mbl/air/air_total.png" alt="항공사 전체"><span>항공사 조합</span></label></li>
+			</ul>
+
+			<div class="kf_line"></div>
+			<h3 class="titDep4" id="anchorTime">출발시간</h3>
+			
+			<ul class="frmBox frmTime frmScript">
+				<li class="total"><input type="checkbox" id="chkTime_Total" name="chkTime" checked><label for="chkTime_Total">종일<span>00:00-24:00</span></label></li>
+				<li><input type="checkbox" id="chkTime01" name="chkTime"><label for="chkTime01">새벽<span>00:00-06:00</span></label></li>
+				<li><input type="checkbox" id="chkTime01" name="chkTime"><label for="chkTime01">오전<span>06:00-12:00</span></label></li>
+				<li><input type="checkbox" id="chkTime02" name="chkTime"><label for="chkTime02">오후<span>12:00-18:00</span></label></li>
+				<li><input type="checkbox" id="chkTime03" name="chkTime"><label for="chkTime03">야간<span>18:00-00:00</span></label></li>
+			</ul>
+
+			<div class="kf_line"></div>
+			<h3 class="titDep4" id="anchorSeat">좌석종류 및 가격</h3>
+
+			<h4 class="titDep6">좌석종류</h4>
+			
+			<!-- 국제선 좌석종류 -->
+			<ul class="frmBox frmScript selTotal">
+				<li><input type="checkbox" id="chkSeat04" name="chkSeat"><label for="chkSeat04">일반석</label></li>
+				<li><input type="checkbox" id="chkSeat05" name="chkSeat"><label for="chkSeat05">프리미엄석</label></li>
+				<li><input type="checkbox" id="chkSeat06" name="chkSeat"><label for="chkSeat06">비즈니스석</label></li>
+				<li><input type="checkbox" id="chkSeat07" name="chkSeat"><label for="chkSeat07">일등석</label></li>
+			</ul>
+			<!-- //국제선 좌석종류 -->
+
+			<h4 class="titDep6">가격</h4>
+			<div class="fp_slideArea">
+				<div class="slideValue">
+					<span class="minValue">최소 20,000원</span>
+					<span class="maxValue">최대 300,000원</span>
+				</div>
+				<div id="slider-range" class="slider" data-options='{"range": true, "min": 20000, "max": 300000, "step": 10000, "values": [50000, 100000], "text":"원" }'></div><!-- 10.12 : 클래스 추가 및 옵션값 수정 -->
+				<div class="fp_slideInp">
+					<input type="text" class="amount" readonly>
+					<span class="dash">~</span>
+					<input type="text" class="amount" readonly>
+				</div>
+			</div>
+
+			<div class="kf_line"></div>
+			<h3 class="titDep4" id="anchorVia">경유</h3>
+
+			<ul class="frmList">
+				<li class="frmInp txt"><input type="checkbox" id="chkVia01"><label for="chkVia01">직항<span class="txtEtc">24,300원</span></label></li>
+				<li class="frmInp txt"><input type="checkbox" id="chkVia03"><label for="chkVia03">1회 경유<span class="txtEtc">없음</span></label></li>
+				<li class="frmInp txt"><input type="checkbox" id="chkVia04"><label for="chkVia04">2회 경유<span class="txtEtc">없음</span></label></li>
+			</ul>
+
+			<div class="kf_line"></div>
+			<h3 class="titDep4" id="anchorEtc">기타</h3>
+			
+			<ul class="frmList">
+				<li class="frmInp txt"><input type="checkbox" id="chkEtc01"><label for="chkEtc01">친환경 항공편<span class="txtEtc">이산화탄소 배출량이 낮은 항공편만 보기</span></label></li>
+				<!-- li class="frmInp txt"><input type="checkbox" id="chkEtc02"><label for="chkEtc02">변경 가능한 항공권만 보기</label></li --><!-- 12.13 삭제 -->
+			</ul>
+			
+
+		</div><!-- //layContent -->
+
+		<div class="floatingBtns floatingCase02">
+			<div class="floatingInner">
+				<button type="reset" class="btnDefault btnL btIco icoReset">초기화</button>
+				<button type="submit" class="btnDefault btnL action">항공권 검색</button>
+			</div>
+		</div>
+		
+	</div><!-- //layCont-->
+	<button type="button" class="closeL">팝업 닫기</button>
+
+</section>
+<!-- //필터 팝업 -->
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+</body>
+</html>

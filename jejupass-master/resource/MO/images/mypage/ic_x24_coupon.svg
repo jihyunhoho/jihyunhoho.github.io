@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+    <path data-name="Rectangle 2710" style="fill:none" d="M0 0h24v24H0z"/>
+    <g transform="translate(-26.763 -27.556)">
+        <path d="M0 1.778A1.778 1.778 0 0 1 1.778 0h20.443A1.778 1.778 0 0 1 24 1.778v1.7a1.111 1.111 0 0 0 0 2.178v1.659a1.111 1.111 0 0 0 0 2.178v1.661a1.111 1.111 0 0 0 0 2.178v1.78a1.778 1.778 0 0 1-1.778 1.778H1.778A1.778 1.778 0 0 1 0 15.11v-1.78a1.111 1.111 0 0 0 .889-1.089A1.111 1.111 0 0 0 0 11.153v-1.66A1.111 1.111 0 0 0 .889 8.4 1.111 1.111 0 0 0 0 7.315V5.654a1.111 1.111 0 0 0 .889-1.089A1.111 1.111 0 0 0 0 3.477z" transform="translate(26.764 31.056)" style="fill:#6896ff"/>
+        <rect data-name="Rectangle 152" width="17.564" height="10.808" rx="4" transform="translate(29.98 34.096)" style="fill:#3664cf"/>
+        <text data-name="%" transform="translate(39.063 42)" style="fill:#fff;font-size:7px;font-family:Pretendard-SemiBold,Pretendard;font-weight:600;letter-spacing:-.02em"><tspan x="-2.16" y="0">P</tspan></text>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #2f343b;
+        stroke-linecap: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="ic_x12_mapview" transform="translate(-324 -825)">
+    <rect id="사각형_3099" data-name="사각형 3099" class="cls-1" width="18" height="18" transform="translate(324 825)"/>
+    <path id="패스_2706" data-name="패스 2706" class="cls-2" d="M3.043,0V3.043H0" transform="translate(330.718 831.718) rotate(180)"/>
+    <path id="패스_2707" data-name="패스 2707" class="cls-2" d="M3.043,0V3.043H0" transform="translate(335.282 831.718) rotate(-90)"/>
+    <path id="패스_2708" data-name="패스 2708" class="cls-2" d="M3.043,0V3.043H0" transform="translate(335.282 836.282)"/>
+    <path id="패스_2709" data-name="패스 2709" class="cls-2" d="M3.043,0V3.043H0" transform="translate(330.718 836.282) rotate(90)"/>
+  </g>
+</svg>

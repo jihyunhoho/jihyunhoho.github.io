@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>제휴문의/가맹점신청(숙박) | 제주패스</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="/resource/MO/images/favicon/apple_touch_icon.ico">
+<link rel="apple-touch-icon" href="/resource/MO/images/favicon/apple_touch_icon_144.ico">
+<link href="/resource/MO/css/m_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/MO/css/m_contents.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper defaultWrapper">
+	<header>
+		<button type="button" class="btPrev">이전</button>
+		<h1 class="titDep1">가맹점/제휴신청</h1>
+	</header>
+
+	<div id="container" class="container">
+		<h2 class="pageTit partner">제주패스와 함께하실<br>가맹점을 찾습니다</h2>
+		<fieldset class="askFrm">
+			<legend>가맹점/제휴신청 정보입력</legend>
+			<div class="inpFrm">
+				<span class="label_tit">카테고리</span><small>*필수</small>
+				<div class="selectWrap"><!--20211019 option 변경-->
+					<select title="카테고리 선택" data-msg="선택하세요." data-header="카테고리">
+						<option value="01" data-option="">숙박</option>
+						<option value="02">맛집</option>
+						<option value="03">카페패스</option>
+						<option value="04">트립</option>
+					</select>
+				</div>
+			</div>
+			<div class="inpFrm">
+				<span class="label_tit">업종</span><small>*필수</small>
+				<div class="selectWrap stay"><!--20211019 option 변경-->
+					<select title="카테고리 선택" data-msg="선택해주세요." data-header="업종">
+						<option value="01" data-option="">호텔</option>
+						<option value="02">모텔</option>
+						<option value="03">민박</option>
+						<option value="04">펜션</option>
+						<option value="05">글램핑</option>
+					</select>
+				</div>
+			</div>
+			<div class="inpFrm">
+				<label for="inpConame">업체명</label><small>*필수</small>
+				<span class="inpA">
+					<input type="text" id="inpConame" placeholder="업체명을 입력해주세요." title="업체명을 입력해주세요.">
+				</span>
+			</div>
+			<div class="inpFrm">
+				<label for="inpName">담당자 이름</label><small>*필수</small>
+				<span class="inpA">
+					<input type="text" id="inpName" placeholder="담당자 이름을 입력해주세요." title="담당자 이름을 입력해주세요.">
+				</span>
+			</div>
+			<div class="inpFrm">
+				<label for="inpNum">휴대전화</label><small>*필수</small><!--20211019 label명 변경-->
+				<span class="inpA">
+					<input type="tel" id="inpNum" placeholder="-없이 번호만 입력해주세요." title="-없이 번호만 입력해주세요.">
+				</span>
+			</div>
+			<div class="inpFrm">
+				<label for="inpAddress">주소</label><small>*필수</small>
+				<span class="inpA">
+					<input type="text" id="inpAddress" placeholder="주소를 상세히 입력해주세요." title="주소를 상세히 입력해주세요.">
+				</span>
+			</div>
+			<div class="inpFrm"><!--20211021 textarea로 변경, 최대글자수 변경-->
+				<label for="inpAskP">문의사항</label>
+				<span class="inpA inpText">
+					<textarea id="inpAskP" cols="10" rows="10" placeholder="문의사항을 입력해주세요.(최대 500자)" title="문의사항을 입력해주세요.(최대 500자)"></textarea>
+				</span>
+				<p class="textNum">0/500</p>
+			</div>
+			<div class="guideInfo boxType01">
+				<h4 class="titGuide">가맹점 제휴조건</h4>
+				<p>가맹점으로 제휴된 업체는 제주패스 앱 사용자에게 할인 또는 서비스를 필수 제공해야 합니다. 제휴에 따른 가맹비는 별도로 부과되지 않습니다.</p>
+				<a href="tel:1544-0445">*고객센터: 1544-0445</a>
+			</div>
+			<!--20211019 placeholder 텍스트 변경-->
+			<div class="btnArea">
+				<button type="button" class="btnDefault btnL action">신청하기</button><!--20211206 텍스트 변경-->
+			</div>
+			
+		</fieldset><!--20211101 문구 수정-->	
+	</div><!-- //container -->
+
+	
+
+</section><!-- //wrapper -->
+<footer>
+	<img src="/resource/MO/images/dummy/@footer.png" alt="">
+</footer>
+
+<aside>
+	<div class="asideRight">
+		<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+	</div>
+</aside>
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+
+</body>
+</html>

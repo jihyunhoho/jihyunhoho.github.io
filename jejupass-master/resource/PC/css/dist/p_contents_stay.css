@@ -1,0 +1,2535 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url(../fonts/Pretendard-Regular.woff2) format("woff2"), url(../fonts/Pretendard-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"), url(../fonts/Pretendard-SemiBold.woff2) format("woff2"), url(../fonts/Pretendard-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url(../fonts/Pretendard-Bold.woff2) format("woff2"), url(../fonts/Pretendard-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'NanumSquareR';
+  font-weight: 900;
+  font-display: swap;
+  src: local("나눔스퀘어라운드 ExtraBold"), url(../fonts/NanumSquareRoundOTFEB.woff) format("woff");
+}
+
+.swiperMytrip .swiper-slide .del, .stayDetailList > li .toggleBtn {
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url(../fonts/Pretendard-Regular.woff2) format("woff2"), url(../fonts/Pretendard-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"), url(../fonts/Pretendard-SemiBold.woff2) format("woff2"), url(../fonts/Pretendard-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url(../fonts/Pretendard-Bold.woff2) format("woff2"), url(../fonts/Pretendard-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'NanumSquareR';
+  font-weight: 900;
+  font-display: swap;
+  src: local("나눔스퀘어라운드 ExtraBold"), url(../fonts/NanumSquareRoundOTFEB.woff) format("woff");
+}
+
+/* 숙박 */
+.mainContents .stayloginAfter .titDep2 {
+  margin-top: 0;
+}
+
+.mainContents .themeSearch .titDep2 {
+  margin: 0;
+}
+
+.swiperMytrip .swiper-slide {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #EAEAEA;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.swiperMytrip .swiper-slide > a {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.swiperMytrip .swiper-slide .k1_from_to {
+  width: 100%;
+  height: 64px;
+  padding: 0 24px;
+  background: #F8F8F8;
+}
+
+.swiperMytrip .swiper-slide .k1_from_to > div {
+  position: relative;
+  display: inline-block;
+  color: #404040;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+.swiperMytrip .swiper-slide .k1_from_to > div.to {
+  padding-left: 29px;
+}
+
+.swiperMytrip .swiper-slide .k1_from_to > div.to:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+  background: url(/resource/PC/images/common/spr_air.png) no-repeat -64px 0;
+}
+
+.swiperMytrip .swiper-slide .k1_from_to.i2 .to:before {
+  background-position: -82px 0;
+}
+
+.swiperMytrip .swiper-slide .k1_fr {
+  padding: 22px 24px;
+  float: none;
+}
+
+.swiperMytrip .swiper-slide .k1_fr strong {
+  display: block;
+  color: #808080;
+  font-weight: 400;
+}
+
+.swiperMytrip .swiper-slide .k1_fr span {
+  display: inline-block;
+  position: relative;
+  color: #808080;
+  line-height: 1.18;
+}
+
+.swiperMytrip .swiper-slide .k1_fr span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 8px;
+  width: 1px;
+  height: 14px;
+  background: #EAEAEA;
+}
+
+.swiperMytrip .swiper-slide .k1_fr span.min {
+  padding-left: 17px;
+}
+
+.swiperMytrip .swiper-slide .del {
+  position: absolute;
+  top: 16px;
+  right: 6px;
+  width: 32px;
+  height: 32px;
+}
+
+.swiperMytrip .swiper-slide .del:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  margin-left: -6px;
+  background: url(/resource/PC/images/common/spr_ico.png) no-repeat;
+}
+
+.swiperMytrip + .titDep2 {
+  margin-top: 104px;
+}
+
+.themeSearch {
+  position: relative;
+  width: 100vw;
+  height: 350px;
+  margin: 100px 0 104px;
+  margin-left: calc(-50vw + 568px);
+  padding: 80px 0 0 0;
+  text-align: center;
+  background: #f8f7f6 url(/resource/PC/images/stay/bg_stayMain.png) no-repeat 50% 0;
+}
+
+.themeSearch .inner {
+  width: 1136px;
+  margin: 24px auto 0;
+}
+
+.themeSearch .inner .tagList {
+  font-size: 0;
+}
+
+.themeSearch .inner .tagList .tagItem {
+  display: inline-block;
+  height: 56px;
+  margin: 8px;
+  padding: 0 20px;
+  color: #808080;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 54px;
+  border-radius: 56px;
+  border: 1px solid #EAEAEA;
+  background: #fff;
+}
+
+.swiperEventBanner {
+  padding-bottom: 8px;
+}
+
+.swiperEventBanner .swiper-container {
+  border-radius: 16px;
+}
+
+.swiperEventBanner .swiper-container .swiper-slide .bannerType {
+  border-radius: 0;
+}
+
+.swiperEventBanner [class^=swiper-button] {
+  margin-top: -42px;
+}
+
+.swiperRanking [class^=swiper-button] {
+  margin-top: -80px;
+}
+
+.swiperRanking .stayRankingList {
+  counter-reset: section;
+}
+
+.swiperRanking .stayRankingList > .swiper-slide {
+  position: relative;
+}
+
+.swiperRanking .stayRankingList > .swiper-slide:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #EAEAEA;
+  border-radius: 12px;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.swiperRanking .stayRankingList > .swiper-slide > .link {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0 24px 24px;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.swiperRanking .stayRankingList > .swiper-slide > .link:before {
+  content: counter(section);
+  counter-increment: section;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  width: 48px;
+  height: 48px;
+  background: url(/resource/PC/images/common/bg_ranking.png) no-repeat;
+  color: #fff;
+  font-family: NanumSquareR, -apple-system, BlinkMacSystemFont, Open Sans, Helvetica Neue, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 900;
+  line-height: 44px;
+  text-align: center;
+  z-index: 2;
+}
+
+.swiperRanking .stayRankingList > .swiper-slide > .link figure {
+  overflow: hidden;
+  position: relative;
+  height: 276px;
+  margin: 0 -24px;
+}
+
+.swiperRanking .stayRankingList > .swiper-slide > .link figure img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.swiperRanking .stayRankingList > .swiper-slide > .link figure img:hover {
+  -webkit-transform: scale(1.1) translate(-45%, -45%);
+  transform: scale(1.1) translate(-45%, -45%);
+}
+
+.swiperRanking .stayRankingList > .swiper-slide > .link .titDep4 {
+  display: block;
+  margin: 22px 0 0 0;
+  text-align: left;
+}
+
+.swiperRanking .stayRankingList > .swiper-slide > .link .keywords {
+  margin: 4px 0;
+}
+
+.swiperRanking .stayRankingList > .swiper-slide > .link .keywords span {
+  display: inline-block;
+  padding-right: 3px;
+}
+
+.swiperRanking .stayRankingList > .swiper-slide > .link .starClass {
+  display: inline-block;
+}
+
+.swiperRanking .stayRankingList > .swiper-slide > .link .locationDepth {
+  display: inline-block;
+  position: relative;
+  margin-left: 3px;
+  padding-left: 8px;
+}
+
+.swiperRanking .stayRankingList > .swiper-slide > .link .locationDepth:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 12px;
+  margin-top: -6px;
+  background: #EAEAEA;
+}
+
+.swiperRanking .stayRankingList > .swiper-slide:nth-child(n+4) > .link:before {
+  background-image: url(/resource/PC/images/common/bg_ranking_low.png);
+}
+
+/* 숙박 */
+.mapSearch {
+  float: right;
+  position: relative;
+  padding-left: 22px;
+  color: #202020;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.mapSearch:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+  margin-left: -9px;
+  left: 0;
+  margin-left: 0;
+  background: url(/resource/PC/images/common/ico_mapsearch.png) no-repeat;
+}
+
+.stayList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0 -8px;
+}
+
+.stayList > li {
+  padding: 0 8px;
+  width: 50%;
+}
+
+.stayList > li + li + li {
+  margin-top: 48px;
+}
+
+.stayList > li .swiperWrap {
+  overflow: hidden;
+  position: relative;
+  height: 288px;
+  border-radius: 12px;
+}
+
+.stayList > li .swiperWrap .swiper-slide {
+  position: relative;
+  width: 100%;
+  height: 288px;
+}
+
+.stayList > li .swiperWrap .swiper-slide img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.stayList > li .swiperWrap:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-image: linear-gradient(269deg, #000 99%, #000 99%, rgba(0, 0, 0, 0) 1%);
+  opacity: .09;
+}
+
+.stayList > li a {
+  display: block;
+  margin-top: 24px;
+}
+
+.stayList > li a .titDep4 {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.stayList > li a .locationDepth {
+  margin-top: 8px;
+}
+
+.stayList > li a .stayInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12px;
+}
+
+.stayList > li a .stayInfo span {
+  width: 50%;
+}
+
+.stayList > li a .stayInfo .txt {
+  float: left;
+  color: #808080;
+}
+
+.stayList > li a .stayInfo .price {
+  float: right;
+  color: #202020;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.stayList > li a .stayInfo:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.stayList > li a .flagList {
+  margin-top: 16px;
+}
+
+.stayList > li .sumTxt {
+  margin-top: 14px;
+  color: #808080;
+}
+
+.stayBanner {
+  padding: 23px 0 26px;
+  margin: 16px 0;
+  border-radius: 16px;
+  background: #1249c9;
+}
+
+.stayBanner > * {
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+}
+
+.stayBanner .smallTxt {
+  font-size: 1.2rem;
+  opacity: .6;
+}
+
+.stayBanner strong {
+  display: block;
+  margin-top: 12px;
+  font-size: 1.8rem;
+}
+
+.stayBanner .txt {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.boxWhite.offerArea {
+  position: relative;
+  padding-top: 40px;
+}
+
+.boxWhite.offerArea .titDep4 {
+  margin-bottom: 18px;
+}
+
+.boxWhite.offerArea .contDesc {
+  position: absolute;
+  top: 44px;
+  right: 32px;
+  font-size: 1.2rem;
+  opacity: .7;
+}
+
+.staySorting {
+  padding: 16px 32px;
+  border: 1px solid #EAEAEA;
+}
+
+.staySorting .tabTypeR .sorting {
+  float: right;
+}
+
+.staySorting .tabTypeR .sorting .selOption {
+  vertical-align: middle;
+}
+
+.staySorting .tabTypeR .sorting:before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 32px;
+  margin-right: 12px;
+  background: #EAEAEA;
+  vertical-align: middle;
+}
+
+.stay-info li {
+  position: relative;
+  padding-left: 18px;
+  line-height: 1;
+}
+
+.stay-info li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  margin-left: -6px;
+  left: 0;
+  margin-left: 0;
+  background: url(/resource/PC/images/common/spr_stay.png) no-repeat;
+}
+
+.stay-info li.person span {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.stay-info li.person span:before {
+  content: '';
+  display: inline-block;
+  margin: 1px 6px;
+  width: 1px;
+  height: 12px;
+  background: #EAEAEA;
+  vertical-align: middle;
+}
+
+.stay-info li.person:before {
+  background-position: 0 0;
+}
+
+.stay-info li.smoking:before {
+  background-position: -12px 0;
+}
+
+.stay-info li.bed:before {
+  background-position: -24px 0;
+}
+
+.stay-info li.snack:before {
+  background-position: -36px 0;
+}
+
+.stayDetailList {
+  margin-top: 16px;
+}
+
+.stayDetailList .stay_sch_result {
+  position: relative;
+}
+
+.stayDetailList .stay_sch_result + .stay_sch_result {
+  border-top: 1px dashed #EAEAEA;
+}
+
+.stayDetailList > li {
+  overflow: hidden;
+  position: relative;
+  margin-top: 12px;
+  border: 1px solid #EAEAEA;
+  border-radius: 12px;
+}
+
+.stayDetailList > li:first-child {
+  margin-top: 0;
+}
+
+.stayDetailList > li .titArea {
+  position: relative;
+  height: 56px;
+  padding: 0 24px;
+  background: #F8F8F8;
+}
+
+.stayDetailList > li .titArea .titDep4 {
+  line-height: 56px;
+}
+
+.stayDetailList > li .stay_detailCont {
+  overflow: hidden;
+  position: relative;
+  padding: 32px 24px;
+}
+
+.stayDetailList > li .stay_detailCont .btLink.icArr {
+  padding: 0 14px 0 0;
+}
+
+.stayDetailList > li .stay_detailCont .btLink.icArr strong {
+  color: #202020;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.stayDetailList > li .stay_detailCont .btnArea {
+  position: absolute;
+  top: 32px;
+  right: 24px;
+  margin: 0;
+}
+
+.stayDetailList > li .stay_detailCont .btnArea .btnDefault {
+  max-width: 88px;
+  margin: 0;
+  padding: 0 17px;
+}
+
+.stayDetailList > li .stay_detailCont .stay-info {
+  overflow: hidden;
+  padding: 10px 0 24px;
+  border-bottom: 1px dashed #EAEAEA;
+}
+
+.stayDetailList > li .stay_detailCont .stay-info li {
+  float: left;
+  color: #808080;
+  font-size: 1.4rem;
+}
+
+.stayDetailList > li .stay_detailCont .stay-info li.person span {
+  color: #808080;
+  font-size: 1.4rem;
+}
+
+.stayDetailList > li .stay_detailCont .stay-info li + li {
+  margin-left: 12px;
+}
+
+.stayDetailList > li .stay_detailCont .price-info {
+  position: absolute;
+  top: 32px;
+  right: 128px;
+  text-align: right;
+  font-size: 0;
+}
+
+.stayDetailList > li .stay_detailCont .price-info strong {
+  display: block;
+  color: #202020;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.stayDetailList > li .stay_detailCont .price-info span {
+  font-size: 1.4rem;
+  color: #808080;
+}
+
+.stayDetailList > li .stay_detailCont .price-info .noRefund {
+  color: #E83667;
+  font-weight: 600;
+}
+
+.stayDetailList > li .stay_detailCont .price-info .noRefund:after {
+  content: '';
+  display: inline-block;
+  margin: 0 8px;
+  width: 1px;
+  height: 14px;
+  background: #EAEAEA;
+  vertical-align: middle;
+}
+
+.stayDetailList > li .stay_detailCont .flagList {
+  margin: 20px 0 0;
+}
+
+.stayDetailList > li .stay_detailCont .cancelFee {
+  color: #808080;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.stayDetailList > li .stay_detailCont .bonusBenefit {
+  color: #AEAEAE;
+  font-size: 1.4rem;
+}
+
+.stayDetailList > li .stay_detailCont .bonusBenefit span {
+  display: inline-block;
+  margin-right: 12px;
+  color: #404040;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.stayDetailList > li .stay_detailCont .bonusBenefit:before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  margin: 0 8px;
+  background: #EAEAEA;
+  vertical-align: middle;
+}
+
+.stayDetailList > li .stay_detailCont .fRight {
+  float: right;
+  padding-right: 20px;
+  margin-top: -24px;
+  font-size: 0;
+}
+
+.stayDetailList > li .stay_detailCont .fRight > * {
+  display: inline-block;
+}
+
+.stayDetailList > li .toggleBtn {
+  position: absolute;
+  top: 120px;
+  right: 20px;
+  width: 185px;
+  height: 30px;
+}
+
+.stayDetailList > li .toggleBtn:after {
+  content: '';
+  position: absolute;
+  left: auto;
+  right: 8px;
+  margin-top: -3px;
+}
+
+.stayDetailList > li .toggleCont {
+  padding: 0 24px 20px;
+}
+
+.stayDetailList > li .toggleCont .listType01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 8px;
+  background: #F8F8F8;
+}
+
+.stayDetailList > li .toggleCont .listType01 li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.stayDetailList > li .toggleCont .listType01 li + li + li {
+  margin-top: 12px;
+}
+
+.locationDepth {
+  font-size: 0;
+}
+
+.locationDepth span {
+  display: inline-block;
+  position: relative;
+  padding-right: 16px;
+}
+
+.locationDepth span:last-child {
+  padding-right: 0;
+}
+
+.locationDepth span:last-child:before {
+  display: none;
+}
+
+.locationDepth span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  margin-top: -6px;
+  width: 12px;
+  height: 12px;
+  background: url(/resource/PC/images/common/ico_deptharr01.png) no-repeat;
+}
+
+.conUtil .locationDepth span:after {
+  display: none;
+}
+
+.conUtil .locationDepth span:before {
+  right: 0;
+}
+
+.conUtil .locationDepth > span {
+  padding-left: 0;
+  padding-right: 12px;
+}
+
+.locationDepth + .starClass:before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  margin: 0 8px;
+  background: #EAEAEA;
+  vertical-align: middle;
+}
+
+.locationDepth.light > span {
+  padding-right: 12px;
+}
+
+.locationDepth.light > span:last-child {
+  padding-right: 0;
+}
+
+.locationDepth.light > span:before {
+  right: 0;
+  opacity: .5;
+}
+
+.restList {
+  overflow: hidden;
+  margin: 0 -8px;
+}
+
+.restList li {
+  float: left;
+  width: 25%;
+  padding: 0 8px;
+}
+
+.restList li figure {
+  overflow: hidden;
+  margin-bottom: 16px;
+  border-radius: 12px;
+}
+
+.restList li figure img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.restList li figure img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.restList li .summaryCon {
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.restList li .summaryCon > * {
+  float: left;
+}
+
+.restList li .summaryCon .locationDepth span {
+  padding-right: 18px;
+}
+
+.restList li .summaryCon .locationDepth span:last-child {
+  padding-right: 0;
+}
+
+.restList li .summaryCon .locationDepth span:before {
+  right: 0;
+  margin-top: -9px;
+  width: 18px;
+  height: 18px;
+  background-image: url(/resource/PC/images/common/ico_deptharr02.png);
+}
+
+.stayBasicInfo .listType01 + .titDep4 {
+  margin-top: 32px;
+}
+
+.stayBasicInfo .compNoteBox {
+  padding-top: 32px;
+  margin-top: 32px;
+  border-top: 1px dashed #EAEAEA;
+}
+
+.stayBasicInfo .compInfoWrap .compInfo:nth-of-type(2) dt {
+  width: 156px;
+}
+
+.stayBasicInfo .compInfoWrap .compInfo dt {
+  width: 124px;
+}
+
+.stayBasicInfo .compInfoWrap .compInfo dd {
+  margin-left: 124px;
+}
+
+.facilityWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.facilityWrap + .facilityWrap {
+  padding-top: 32px;
+  margin-top: 32px;
+  border-top: 1px dashed #EAEAEA;
+}
+
+.facilityWrap strong {
+  min-width: 104px;
+  font-size: 1.8rem;
+  color: #202020;
+}
+
+.facilityWrap ul {
+  overflow: hidden;
+  margin: -12px;
+}
+
+.facilityWrap ul li {
+  float: left;
+  position: relative;
+  width: 100px;
+  margin: 12px;
+  color: #404040;
+  text-align: center;
+  /*커피포트*/
+  /*주류*/
+  /*에어컨*/
+  /*반려동물 동반 가능*/
+  /*바(bar)*/
+  /*바베큐*/
+  /*(샤워)가운*/
+  /*욕조*/
+  /*침대1*/
+  /*침대2*/
+  /*침구*/
+  /*비데*/
+  /*점자 표지 제공*/
+  /*조식포함*/
+  /*달력*/
+  /*카지노*/
+  /*24시 상시 체크인*/
+  /*청소 서비스*/
+  /*컨시어지*/
+  /*편의점*/
+  /*암막커튼*/
+  /*24시 프론트데스크*/
+  /*주방 및 식기류 소독*/
+  /*객실 소독*/
+  /*헤어 드라이어*/
+  /*드라이클리닝*/
+  /*엘리베이터*/
+  /*농장*/
+  /*화재경보기*/
+  /*소화기*/
+  /*구급상자*/
+  /*피트니스*/
+  /*음식 배달*/
+  /*초고속 와이파이*/
+  /*무료 와이파이*/
+  /*정원*/
+  /*헤어샵*/
+  /*손 소독제*/
+  /*옷걸이*/
+  /*난방시설*/
+  /*위생인증*/
+  /*자쿠지*/
+  /*노래방*/
+  /*키즈풀*/
+  /*도서관*/
+  /*인원제한*/
+  /*로비*/
+  /*객실 잠금장치*/
+  /*라운지*/
+  /*마스크필수*/
+  /*금연*/
+  /*올레길*/
+  /*주차장*/
+  /*공항 픽업 서비스*/
+  /*수영장*/
+  /*리셉션*/
+  /*24시 리셉션*/
+  /*냉장고*/
+  /*렌터카*/
+  /*레스토랑*/
+  /*룸서비스*/
+  /*안전금고*/
+  /*사우나*/
+  /*바닷길*/
+  /*셀프 체크인*/
+  /*샴푸*/
+  /*샤워젤*/
+  /*셔틀 서비스*/
+  /*시그니처 메뉴*/
+  /*흡연*/
+  /*소파*/
+  /*스파*/
+  /*택시 서비스*/
+  /*전화기*/
+  /*테라스*/
+  /*테마파크*/
+  /*체온계*/
+  /*체온측정*/
+  /*치약&칫솔*/
+  /*수건*/
+  /*전통음식*/
+  /*여행 가방 보관 서비스*/
+  /*TV*/
+  /*발렛파킹*/
+  /*대기실*/
+  /*온수*/
+  /*세탁 서비스*/
+  /*세탁기*/
+  /*워터파크*/
+  /*휠체어*/
+  /*유선 인터넷*/
+  /*업무 공간*/
+  /*마당*/
+  /*코인세탁실*/
+  /*실내수영장*/
+  /*실외수영장*/
+  /*인피니티풀*/
+}
+
+.facilityWrap ul li img {
+  width: 30px;
+  margin-bottom: 8px;
+}
+
+.facilityWrap ul li span {
+  display: block;
+  color: #404040;
+}
+
+.facilityWrap ul li.coffeepot:before {
+  background-position: 0 0;
+}
+
+.facilityWrap ul li.liquor:before {
+  background-position: -30px 0;
+}
+
+.facilityWrap ul li.aircon:before {
+  background-position: -60px 0;
+}
+
+.facilityWrap ul li.animal:before {
+  background-position: -90px 0;
+}
+
+.facilityWrap ul li.bar:before {
+  background-position: -120px 0;
+}
+
+.facilityWrap ul li.barbecue:before {
+  background-position: -150px 0;
+}
+
+.facilityWrap ul li.bathrobe:before {
+  background-position: -180px 0;
+}
+
+.facilityWrap ul li.bathtub:before {
+  background-position: -210px 0;
+}
+
+.facilityWrap ul li.bed_one:before {
+  background-position: -240px 0;
+}
+
+.facilityWrap ul li.bed_two:before {
+  background-position: -270px 0;
+}
+
+.facilityWrap ul li.bedding:before {
+  background-position: 0 -30px;
+}
+
+.facilityWrap ul li.bidet:before {
+  background-position: -30px -30px;
+}
+
+.facilityWrap ul li.braille:before {
+  background-position: -60px -30px;
+}
+
+.facilityWrap ul li.breakfast:before {
+  background-position: -90px -30px;
+}
+
+.facilityWrap ul li.calendar:before {
+  background-position: -120px -30px;
+}
+
+.facilityWrap ul li.casino:before {
+  background-position: -150px -30px;
+}
+
+.facilityWrap ul li.checkin:before {
+  background-position: -180px -30px;
+}
+
+.facilityWrap ul li.cleaning:before {
+  background-position: -210px -30px;
+}
+
+.facilityWrap ul li.concierge:before {
+  background-position: -240px -30px;
+}
+
+.facilityWrap ul li.cvs:before {
+  background-position: -270px -30px;
+}
+
+.facilityWrap ul li.curtain:before {
+  background-position: 0 -60px;
+}
+
+.facilityWrap ul li.desk24:before {
+  background-position: -30px -60px;
+}
+
+.facilityWrap ul li.disinfection_kitchen {
+  background-position: -60px -60px;
+}
+
+.facilityWrap ul li.disinfection_room:before {
+  background-position: -90px -60px;
+}
+
+.facilityWrap ul li.drier:before {
+  background-position: -120px -60px;
+}
+
+.facilityWrap ul li.dry:before {
+  background-position: -150px -60px;
+}
+
+.facilityWrap ul li.elevator:before {
+  background-position: -180px -60px;
+}
+
+.facilityWrap ul li.farm:before {
+  background-position: -210px -60px;
+}
+
+.facilityWrap ul li.fire_alarm:before {
+  background-position: -240px -60px;
+}
+
+.facilityWrap ul li.fire_extinguisher:before {
+  background-position: -270px -60px;
+}
+
+.facilityWrap ul li.first_aidkit:before {
+  background-position: 0 -90px;
+}
+
+.facilityWrap ul li.fitness:before {
+  background-position: -30px -90px;
+}
+
+.facilityWrap ul li.food_delivery:before {
+  background-position: -60px -90px;
+}
+
+.facilityWrap ul li.wifi_high:before {
+  background-position: -90px -90px;
+}
+
+.facilityWrap ul li.wifi:before {
+  background-position: -120px -90px;
+}
+
+.facilityWrap ul li.garden:before {
+  background-position: -150px -90px;
+}
+
+.facilityWrap ul li.hairshop:before {
+  background-position: -180px -90px;
+}
+
+.facilityWrap ul li.hand_sanitizer:before {
+  background-position: -210px -90px;
+}
+
+.facilityWrap ul li.hanger:before {
+  background-position: -240px -90px;
+}
+
+.facilityWrap ul li.heating:before {
+  background-position: -270px -90px;
+}
+
+.facilityWrap ul li.hygiene:before {
+  background-position: 0 -120px;
+}
+
+.facilityWrap ul li.jacuzzi:before {
+  background-position: -30px -120px;
+}
+
+.facilityWrap ul li.karaoke:before {
+  background-position: -60px -120px;
+}
+
+.facilityWrap ul li.kids_pool:before {
+  background-position: -90px -120px;
+}
+
+.facilityWrap ul li.library:before {
+  background-position: -120px -120px;
+}
+
+.facilityWrap ul li.limited:before {
+  background-position: -150px -120px;
+}
+
+.facilityWrap ul li.lobby:before {
+  background-position: -180px -120px;
+}
+
+.facilityWrap ul li.lock:before {
+  background-position: -210px -120px;
+}
+
+.facilityWrap ul li.lounge:before {
+  background-position: -240px -120px;
+}
+
+.facilityWrap ul li.mask:before {
+  background-position: -270px -120px;
+}
+
+.facilityWrap ul li.non-smoking:before {
+  background-position: 0 -150px;
+}
+
+.facilityWrap ul li.olle:before {
+  background-position: -30px -150px;
+}
+
+.facilityWrap ul li.parking_lot:before {
+  background-position: -60px -150px;
+}
+
+.facilityWrap ul li.pickup_airport:before {
+  background-position: -90px -150px;
+}
+
+.facilityWrap ul li.pool:before {
+  background-position: -120px -150px;
+}
+
+.facilityWrap ul li.reception:before {
+  background-position: -150px -150px;
+}
+
+.facilityWrap ul li.reception24:before {
+  background-position: -180px -150px;
+}
+
+.facilityWrap ul li.refrigerator:before {
+  background-position: -210px -150px;
+}
+
+.facilityWrap ul li.rentacar:before {
+  background-position: -240px -150px;
+}
+
+.facilityWrap ul li.restaurant:before {
+  background-position: -270px -150px;
+}
+
+.facilityWrap ul li.room_service:before {
+  background-position: 0 -180px;
+}
+
+.facilityWrap ul li.safe:before {
+  background-position: -30px -180px;
+}
+
+.facilityWrap ul li.sauna:before {
+  background-position: -60px -180px;
+}
+
+.facilityWrap ul li.sea_road:before {
+  background-position: -90px -180px;
+}
+
+.facilityWrap ul li.self_checkin:before {
+  background-position: -120px -180px;
+}
+
+.facilityWrap ul li.shampoo:before {
+  background-position: -150px -180px;
+}
+
+.facilityWrap ul li.shower_gel:before {
+  background-position: -180px -180px;
+}
+
+.facilityWrap ul li.shuttle_service:before {
+  background-position: -210px -180px;
+}
+
+.facilityWrap ul li.signature_menu:before {
+  background-position: -240px -180px;
+}
+
+.facilityWrap ul li.smoking:before {
+  background-position: -270px -180px;
+}
+
+.facilityWrap ul li.sofa:before {
+  background-position: 0 -210px;
+}
+
+.facilityWrap ul li.spa:before {
+  background-position: -30px -210px;
+}
+
+.facilityWrap ul li.taxi:before {
+  background-position: -60px -210px;
+}
+
+.facilityWrap ul li.telephone:before {
+  background-position: -90px -210px;
+}
+
+.facilityWrap ul li.terrace:before {
+  background-position: -120px -210px;
+}
+
+.facilityWrap ul li.themepark:before {
+  background-position: -150px -210px;
+}
+
+.facilityWrap ul li.thermometer:before {
+  background-position: -180px -210px;
+}
+
+.facilityWrap ul li.thermometer_measure:before {
+  background-position: -210px -210px;
+}
+
+.facilityWrap ul li.toothbrush:before {
+  background-position: -240px -210px;
+}
+
+.facilityWrap ul li.towel:before {
+  background-position: -210px -210px;
+}
+
+.facilityWrap ul li.traditional_food:before {
+  background-position: 0 -240px;
+}
+
+.facilityWrap ul li.travelbag_storage:before {
+  background-position: -30px -240px;
+}
+
+.facilityWrap ul li.tv:before {
+  background-position: -60px -240px;
+}
+
+.facilityWrap ul li.valet_parking:before {
+  background-position: -90px -240px;
+}
+
+.facilityWrap ul li.waitingroom:before {
+  background-position: -120px -240px;
+}
+
+.facilityWrap ul li.warm_water:before {
+  background-position: -150px -240px;
+}
+
+.facilityWrap ul li.washing:before {
+  background-position: -180px -240px;
+}
+
+.facilityWrap ul li.washing_machine:before {
+  background-position: -210px -240px;
+}
+
+.facilityWrap ul li.waterpark:before {
+  background-position: -240px -240px;
+}
+
+.facilityWrap ul li.wheelchair:before {
+  background-position: -270px -240px;
+}
+
+.facilityWrap ul li.wired:before {
+  background-position: 0 -270px;
+}
+
+.facilityWrap ul li.work_space:before {
+  background-position: -30px -270px;
+}
+
+.facilityWrap ul li.yard:before {
+  background-position: -60px -270px;
+}
+
+.facilityWrap ul li.coin_laundry:before {
+  background-position: -90px -270px;
+}
+
+.facilityWrap ul li.indoor_pool:before {
+  background-position: -120px -270px;
+}
+
+.facilityWrap ul li.outdoor_pool:before {
+  background-position: -150px -270px;
+}
+
+.facilityWrap ul li.infinity_pool:before {
+  background-position: -180px -270px;
+}
+
+.facilityWrap .listType01 {
+  margin-top: 0;
+}
+
+.photoReview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -6px;
+}
+
+.photoReview li {
+  overflow: hidden;
+  margin: 0 6px;
+  border-radius: 12px;
+}
+
+.photoReview li a {
+  display: block;
+}
+
+.photoReview li img {
+  width: 100%;
+}
+
+.photoReview li.viewMore {
+  position: relative;
+}
+
+.photoReview li.viewMore:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  margin-top: -50%;
+  margin-left: -50%;
+  background: #202020;
+  opacity: .5;
+}
+
+.photoReview li.viewMore span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.useInfo .listType01 {
+  margin-top: 16px;
+}
+
+.useInfo .listType01 + .titDep4 {
+  margin-top: 32px;
+}
+
+.mapInfo {
+  position: relative;
+}
+
+.mapInfo .mapSearch {
+  float: none;
+  position: absolute;
+  top: 32px;
+  right: 0;
+}
+
+.mapInfo .locationDepth {
+  margin-top: 13px;
+}
+
+.mapInfo .offerArea > .titDep4 {
+  margin: 32px 0 16px;
+}
+
+/* 숙박 - 객실 상세 팝업 */
+.roomDetailPop {
+  font-size: 0;
+}
+
+.roomDetailPop .viewSwiper, .roomDetailPop .roomInfo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.roomDetailPop .viewSwiper {
+  width: 356px;
+}
+
+.roomDetailPop .viewSwiper .swiper-container {
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.roomDetailPop .viewSwiper .swiper-container .swiper-slide img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.roomDetailPop .viewSwiper .swiper-container .swiper-slide img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.roomDetailPop .viewSwiper .swiper-paging {
+  bottom: 20px;
+}
+
+.roomDetailPop .roomInfo {
+  width: calc(100% - 356px);
+  padding-left: 50px;
+}
+
+.roomDetailPop .stay-info li {
+  font-size: 1.6rem;
+}
+
+.roomDetailPop .stay-info {
+  margin-top: 20px;
+  padding-bottom: 32px;
+}
+
+.roomDetailPop .stay-info li {
+  padding-left: 28px;
+}
+
+.roomDetailPop .stay-info li + li {
+  margin-top: 12px;
+}
+
+.roomDetailPop .stay-info li.person span:before {
+  margin: 1px 8px;
+}
+
+.roomDetailPop .price-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 0;
+  border: solid #EAEAEA;
+  border-width: 1px 0;
+}
+
+.roomDetailPop .price-info .allPrice {
+  font-size: 0;
+}
+
+.roomDetailPop .price-info .allPrice > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.roomDetailPop .price-info .allPrice .saleTxt {
+  margin-right: 16px;
+  color: #63a1ff;
+  font-weight: 600;
+}
+
+.roomDetailPop .price-info .allPrice strong {
+  color: #202020;
+  font-size: 2.6rem;
+  font-family: NanumSquareR, -apple-system, BlinkMacSystemFont, Open Sans, Helvetica Neue, sans-serif;
+  font-weight: 900;
+}
+
+.roomDetailPop .btnArea {
+  padding: 0;
+}
+
+.roomDetailPop .grayArea {
+  position: relative;
+  margin-top: 32px;
+}
+
+.roomDetailPop .grayArea > * {
+  float: left;
+  width: 50%;
+}
+
+.roomDetailPop .grayArea:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.roomDetailPop .convenienceInfo .facilityWrap strong {
+  min-width: 150px;
+}
+
+.roomDetailPop .convenienceInfo .facilityWrap ul {
+  width: calc(100% - 150px);
+}
+
+.roomDetailPop .grayArea + .facilityWrap > * {
+  vertical-align: middle;
+}
+
+.timeChk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.timeChk:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: #F8F8F8;
+}
+
+.timeChk .timeBox span {
+  display: block;
+  color: #808080;
+  font-size: 1.6rem;
+}
+
+.timeChk .timeBox span + span {
+  margin-top: 5px;
+}
+
+.timeChk .timeBox .date {
+  color: #202020;
+  font-weight: 700;
+}
+
+.timeChk .timeBox .time {
+  color: #202020;
+}
+
+.timeChk .term {
+  position: relative;
+  padding: 7px 16px 6px;
+  color: #63a1ff;
+  font-weight: 600;
+  background: #e6effe;
+  border-radius: 100px;
+  line-height: 1.2;
+}
+
+.cancelBox {
+  background: #fff;
+  border-radius: 12px;
+}
+
+.cancelBox .cancelTxt {
+  position: relative;
+  color: #404040;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-bottom: 18px;
+}
+
+.cancelBox .cancelTxt:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -24px;
+  right: -24px;
+  height: 1px;
+  background: #F8F8F8;
+}
+
+.cancelBox .cancelTxt strong {
+  display: inline-block;
+  margin-right: 8px;
+  color: #202020;
+  font-weight: 600;
+}
+
+.cancelBox .cancelRule {
+  margin-top: 18px;
+  font-size: 0;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.cancelBox .cancelRule .bar {
+  position: relative;
+  height: 12px;
+  background: #f4f9ff;
+  border-radius: 6px;
+}
+
+.cancelBox .cancelRule .bar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 237px;
+  height: 100%;
+  background: #85b5ff;
+  border-radius: 6px;
+}
+
+.cancelBox .cancelRule > span {
+  position: relative;
+  display: inline-block;
+  margin-top: -9px;
+  color: #808080;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.cancelBox .cancelRule > span:before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin-bottom: 9px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.cancelBox .cancelRule > span em {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.cancelBox .cancelRule > span.today {
+  width: 51%;
+}
+
+.cancelBox .cancelRule > span.today:before {
+  margin-left: 3px;
+  background: #569aff;
+}
+
+.cancelBox .cancelRule > span.endDay {
+  width: 19%;
+  color: #569aff;
+  text-align: center;
+}
+
+.cancelBox .cancelRule > span.endDay:before {
+  margin: 0 auto 9px;
+}
+
+.cancelBox .cancelRule > span.endDay em {
+  color: #63a1ff;
+}
+
+.cancelBox .cancelRule > span.inDay {
+  width: 30%;
+  text-align: right;
+}
+
+.cancelBox .cancelRule > span.inDay:before {
+  margin-left: auto;
+}
+
+.cancelBox .cancelRule.stayToday .bar span {
+  width: 100%;
+}
+
+.cancelBox .cancelRule.stayToday > span.today {
+  width: 50%;
+}
+
+.cancelBox .cancelRule.stayToday > span.inDay {
+  width: 49%;
+  color: #569aff;
+}
+
+.cancelBox .cancelRule.stayToday > span.inDay em {
+  color: #63a1ff;
+}
+
+.timeCont .timeChk {
+  width: 430px;
+  padding: 37px 0;
+  margin-top: 16px;
+}
+
+.cancelCont .cancelBox {
+  width: 430px;
+  padding: 18px 24px;
+  margin-top: 16px;
+}
+
+.cancelCont {
+  position: relative;
+  padding-left: 24px;
+  border-left: 1px solid #EAEAEA;
+}
+
+.cancelCont .detailBt {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  color: #808080;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.guideInfo.borderT {
+  position: relative;
+  margin: 32px -24px 0;
+  padding: 32px 24px;
+  border: 0;
+}
+
+.guideInfo.borderT:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #F8F8F8;
+  border-top: 1px solid #EAEAEA;
+}
+
+/* 취소 규정(L) */
+.cancelFeeBox {
+  position: relative;
+  padding: 24px 25px;
+  margin: 16px 0 12px;
+  background: #F8F8F8;
+  border-radius: 12px;
+}
+
+.cancelFeeBox:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 130px;
+  top: 35px;
+  width: 1px;
+  height: 268px;
+  background: #DADADA;
+}
+
+.cancelFeeBox li {
+  overflow: hidden;
+}
+
+.cancelFeeBox li + li {
+  margin-top: 27px;
+}
+
+.cancelFeeBox li > div {
+  float: left;
+}
+
+.cancelFeeBox li .date {
+  width: 102px;
+  padding-right: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.cancelFeeBox li .date span {
+  display: block;
+  color: #808080;
+  font-size: 1.4rem;
+  text-align: right;
+}
+
+.cancelFeeBox li .date + .txt {
+  margin-left: 0;
+}
+
+.cancelFeeBox li .txt {
+  position: relative;
+  padding-left: 27px;
+  margin-left: 102px;
+  color: #202020;
+  font-weight: 600;
+}
+
+.cancelFeeBox li .txt:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  margin-top: -3.5px;
+  margin-left: -3.5px;
+  top: 6px;
+  left: 0;
+  margin: 0;
+  border-radius: 50%;
+  background: #AEAEAE;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cancelFeeBox li .txt span {
+  color: #202020;
+}
+
+.cancelFeeBox li .cancelFeeTxt {
+  display: block;
+  color: #808080;
+  font-size: 1.4rem;
+}
+
+.cancelFeeBox li .cancelFeeTxt em {
+  color: #63a1ff;
+  font-size: 1.4rem;
+}
+
+.cancelFeeBox li:nth-child(1) .txt:before, .cancelFeeBox li:nth-child(5) .txt:before {
+  border: 1px solid #808080;
+  background: #fff;
+}
+
+.cancelFeeBox ~ .listType01 + .titDep4 {
+  display: block;
+  margin: 32px 0 16px;
+}
+
+.cancelFeeBox ~ ol li {
+  margin-top: 12px;
+}
+
+.cancelFeeBox ~ ol + .listType01 {
+  margin-top: 12px;
+}
+
+.stayDaysTxt {
+  color: #404040;
+  margin-top: 12px;
+}
+
+.stayDaysTxt span {
+  color: #404040;
+  font-weight: 600;
+}
+
+.stayDaysSet {
+  position: absolute;
+  top: 35px;
+  right: 24px;
+  color: #808080;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/*숙박 규정 및 제한 사항(L)*/
+.stayTermsList li {
+  color: #606060;
+}
+
+.stayTermsList li em {
+  color: #202020;
+  font-weight: 600;
+}
+
+.stayTermsList li.caution {
+  color: #63a1ff;
+}
+
+/* 숙소 모아 보기(L) */
+.stayCollectList {
+  overflow: hidden;
+}
+
+.stayCollectList li {
+  float: left;
+  width: 50%;
+  padding: 0 6px;
+}
+
+.stayCollectList li + li + li {
+  margin-top: 12px;
+}
+
+.stayCollectList li a {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  padding-top: 157px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.stayCollectList li a img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.stayCollectList li a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.stayCollectList li .briefInfo {
+  position: relative;
+  padding: 20px;
+  z-index: 10;
+  background: #fff;
+}
+
+.stayCollectList li .briefInfo span {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.stayCollectList li .briefInfo .name {
+  color: #202020;
+  font-weight: 600;
+}
+
+.stayCollectList li .briefInfo .price {
+  display: block;
+  margin-top: 5px;
+  color: #63a1ff;
+  font-weight: 700;
+}
+
+/* 숙소 예약 */
+.reservationForm.stayReserv .titDep4 {
+  margin-top: 0;
+}
+
+.reservationForm.stayReserv .frmInp.txt.small {
+  position: absolute;
+  top: 35px;
+  right: 32px;
+}
+
+.reservationForm.stayReserv .frmInp.txt.small label {
+  color: #606060;
+}
+
+.reservationForm.stayReserv .stayGuestInfo {
+  overflow: hidden;
+  position: relative;
+  padding: 19px 24px;
+  border: 1px solid #EAEAEA;
+  border-radius: 12px;
+}
+
+.reservationForm.stayReserv .stayGuestInfo + .stayGuestInfo {
+  margin-top: 12px;
+}
+
+.reservationForm.stayReserv .stayGuestInfo .titDep5 {
+  margin: -19px -24px 59px;
+  padding: 19px 24px;
+  background: #F8F8F8;
+}
+
+.reservationForm.stayReserv .stayGuestInfo .frmInp.txt.small {
+  top: 80px;
+  right: 24px;
+}
+
+.reservationForm.stayReserv .stayGuestInfo .delBt {
+  position: absolute;
+  top: 21px;
+  right: 24px;
+  color: #808080;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.reservationForm.stayReserv .guestAdd {
+  position: relative;
+  padding-bottom: 32px;
+  border-bottom: 1px dashed #EAEAEA;
+}
+
+.reservationForm.stayReserv .guestAdd button:before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -212px 0;
+}
+
+.reservationForm.stayReserv .guideInfo.boxType01 {
+  margin-top: 32px;
+  padding: 24px;
+  border: none;
+  background: #f4f9ff;
+}
+
+.floatingCont.floatingStay .stayProduct {
+  margin: 32px -24px 28px;
+  padding: 0 24px 32px;
+  color: #202020;
+  font-weight: 600;
+  border-bottom: 1px dashed #EAEAEA;
+}
+
+.floatingCont.floatingStay .stayProduct span {
+  display: block;
+  font-size: 1.4rem;
+}
+
+.floatingCont.floatingStay .boxWhite .titDep3 {
+  margin: 0 -24px 0;
+  padding: 0 24px 16px;
+}
+
+.floatingCont.floatingStay .sideList {
+  margin: 0 -24px 32px;
+  padding: 0 24px 28px;
+  border-bottom: 1px dashed #EAEAEA !important;
+}
+
+.floatingCont.floatingStay .sideList li {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.floatingCont.floatingStay .sideList li .tit {
+  width: auto;
+  font-size: 1.4rem;
+}
+
+.floatingCont.floatingStay .sideList li .contR {
+  width: auto;
+  color: #404040;
+  font-size: 1.4rem;
+}
+
+.floatingCont.floatingStay .sideList li .contR span {
+  display: block;
+  color: #808080;
+  font-size: 1.4rem;
+}
+
+.floatingCont.floatingStay .guideBox {
+  margin: 32px -24px 32px;
+  padding: 0 24px 32px;
+  border-bottom: 1px dashed #EAEAEA;
+}
+
+.floatingCont.floatingStay .listType02.small {
+  color: #606060;
+}
+
+.floatingCont.floatingStay .stayRuleLink {
+  display: inline-block;
+  margin: 12px 0 0 16px;
+  color: #808080;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.floatingCont.floatingStay .price-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.floatingCont.floatingStay .price-info .period {
+  color: #202020;
+  font-weight: 600;
+}
+
+.floatingCont.floatingStay .price-info .totalPrice {
+  color: #63a1ff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* 숙박 예약 완료 */
+.boxCompCont.stayReservComp .timeChk:before {
+  display: none;
+}
+
+.boxCompCont.stayReservComp .timeChk .timeBox .date {
+  font-size: 2rem;
+}
+
+.boxCompCont.stayReservComp .timeChk .term {
+  padding: 10px 24px;
+  color: #63a1ff;
+}
+
+.grayBox.stayComp {
+  margin: 32px 0;
+  padding: 24px;
+}
+
+.grayBox.stayComp .sideList > li .tit {
+  color: #606060;
+  font-weight: 400;
+}
+
+.grayBox.stayComp .sideList > li .contR {
+  font-weight: 600;
+}
+
+.grayBox.stayComp .sideList > li .contR.compNum {
+  color: #63a1ff;
+  font-weight: 700;
+}
+
+.compTxt {
+  margin: 12px 0 32px;
+  color: #808080;
+}
+
+.compInfoBox .stayPriceInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 21px 16px 0 0;
+  padding-top: 19px;
+  border-top: 1px dashed #DADADA;
+}
+
+.compInfoBox .stayPriceInfo .txt {
+  color: #808080;
+}
+
+.compInfoBox .stayPriceInfo .priceTxt {
+  color: #63a1ff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.wrapper.completeWrapper .container .completePanel .message.stay {
+  background: url(/resource/PC/images/common/bg_comp_stay.png) no-repeat 50% 0;
+}
+
+.noData.noStay .tit {
+  background-image: url(/resource/PC/images/stay/ic_x50_noData_s.png);
+}
+
+.noData.noReview .tit {
+  background-image: url(/resource/PC/images/common/ic_x50_noReview.png);
+}
+
+/* 예상 적립금 */
+.expectPoint {
+  margin-top: 16px;
+}
+
+.expectPoint .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px dashed #EAEAEA;
+}
+
+.expectPoint .detail .tit {
+  font-weight: 600;
+  color: #202020;
+}
+
+.expectPoint .detail .tit em {
+  color: #569aff;
+  font-weight: 600;
+}
+
+.expectPoint .detail .pay {
+  font-weight: 700;
+  color: #202020;
+}
+
+.expectPoint .detail .pay.total {
+  font-size: 1.8rem;
+  color: #63a1ff;
+}
+
+.expectPoint .detail .cardBtn {
+  display: block;
+  margin: 0;
+  text-align: right;
+}
+
+.expectPoint .detail .cardBtn a {
+  padding: 0;
+}
+
+.expectPoint .detail.small .tit, .expectPoint .detail.small .pay {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #404040;
+}
+
+.expectPoint .detailList {
+  margin-top: 7px;
+}
+
+.expectPoint .detailList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 16px;
+}
+
+.expectPoint .detailList li.case {
+  padding-left: 12px;
+  margin-top: 10px;
+}
+
+.expectPoint .detailList li.case:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 5px;
+  height: 6px;
+  border: solid #DADADA;
+  border-width: 0 0 1px 1px;
+}
+
+.expectPoint .detailList li.case .tit {
+  color: #606060;
+  font-weight: 400;
+}
+
+.expectPoint .detailList li.case .tit em {
+  color: #63a1ff;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.expectPoint .detailList li.case .pay {
+  color: #E83667;
+  font-weight: 600;
+}
+
+.expectPoint .detailList li .tit {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 78%;
+          flex: 0 1 78%;
+  color: #404040;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.expectPoint .detailList li .pay {
+  width: 11%;
+  text-align: right;
+  font-size: 1.4rem;
+}
+
+.expectPoint .detailList li .pay + .pay {
+  margin-left: 40px;
+}
+
+.expectPoint .detailList.type02 li {
+  margin-top: 12px;
+}
+
+.expectPoint .detailList.type02 li .tit {
+  font-weight: 400;
+}
+
+.expectPoint .benefitTxt {
+  padding: 12px 0;
+  margin-top: 24px;
+  color: #404040;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  background: #F8F8F8;
+  border-radius: 8px;
+}
+
+.expectPoint .pointBenefit {
+  display: block;
+  padding: 24px;
+  margin: 24px 0 32px;
+  color: #404040;
+  font-size: 15px;
+  font-weight: 700;
+  background: #f4f9ff;
+  border-radius: 8px;
+}
+
+.expectPoint .pointBenefit:before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+  background: url(/resource/PC/images/common/ico_point.png) no-repeat;
+  vertical-align: middle;
+}
+
+.expectPoint .pointBenefit:after {
+  top: 27px;
+  right: 24px;
+}
+
+.expectPoint .pointBenefit p {
+  font-size: 1.4rem;
+  margin-top: 12px;
+}
+
+.expectPoint .pointBenefit p em {
+  color: #404040;
+  font-size: 1.4rem;
+  font-weight: 600;
+}

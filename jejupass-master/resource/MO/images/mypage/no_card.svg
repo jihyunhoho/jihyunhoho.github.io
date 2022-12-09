@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        opacity: 0.1;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #aeaeae;
+      }
+
+      .cls-4 {
+        fill: #cacaca;
+      }
+
+      .cls-5 {
+        fill: #eaeaea;
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_12075" data-name="Rectangle 12075" class="cls-1" width="50" height="50" transform="translate(163 441)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_763" data-name="Mask Group 763" class="cls-2" transform="translate(-163 -441)">
+    <g id="Group_16623" data-name="Group 16623" transform="translate(-207 -763.818)">
+      <rect id="Rectangle_12071" data-name="Rectangle 12071" class="cls-3" width="41.975" height="20" rx="3" transform="matrix(0.966, -0.259, 0.259, 0.966, 373.584, 1217.682)"/>
+      <rect id="Rectangle_12072" data-name="Rectangle 12072" class="cls-4" width="48" height="35" rx="3" transform="translate(371 1217)"/>
+      <rect id="Rectangle_12073" data-name="Rectangle 12073" class="cls-5" width="48" height="8" transform="translate(371 1223)"/>
+      <rect id="Rectangle_12074" data-name="Rectangle 12074" class="cls-6" width="9" height="9" rx="3" transform="translate(376 1238)"/>
+    </g>
+  </g>
+</svg>

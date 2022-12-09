@@ -1,0 +1,58 @@
+<svg id="Group_16169" data-name="Group 16169" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        opacity: 0;
+      }
+
+      .cls-4 {
+        fill: #18225c;
+      }
+
+      .cls-5 {
+        fill: #569aff;
+      }
+
+      .cls-6 {
+        fill: #85b5ff;
+      }
+
+      .cls-7 {
+        fill: #f4f9ff;
+      }
+
+      .cls-8 {
+        fill: #e83667;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_11557" data-name="Rectangle 11557" class="cls-1" width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="Group_16174" data-name="Group 16174" class="cls-2">
+    <g id="Group_16173" data-name="Group 16173">
+      <g id="Group_16172" data-name="Group 16172" class="cls-2">
+        <g id="Group_16171" data-name="Group 16171" class="cls-3">
+          <g id="Group_16170" data-name="Group 16170">
+            <g id="Group_16169-2" data-name="Group 16169" class="cls-2">
+              <rect id="Rectangle_11553" data-name="Rectangle 11553" class="cls-4" width="32" height="32"/>
+            </g>
+          </g>
+        </g>
+        <path id="Path_18122" data-name="Path 18122" class="cls-5" d="M23,28H9a3,3,0,0,1-3-3V14a3,3,0,0,1,3-3H23a3,3,0,0,1,3,3V25a3,3,0,0,1-3,3"/>
+        <path id="Path_18123" data-name="Path 18123" class="cls-6" d="M26,17H6a2,2,0,0,1-2-2V11A2,2,0,0,1,6,9H26a2,2,0,0,1,2,2v4a2,2,0,0,1-2,2"/>
+        <rect id="Rectangle_11555" data-name="Rectangle 11555" class="cls-7" width="2" height="19" transform="translate(15 9)"/>
+        <path id="Path_18124" data-name="Path 18124" class="cls-4" d="M13,4a2,2,0,1,1-2,2,2,2,0,0,1,2-2"/>
+        <path id="Path_18125" data-name="Path 18125" class="cls-8" d="M19,4a2,2,0,1,1-2,2,2,2,0,0,1,2-2"/>
+      </g>
+    </g>
+  </g>
+</svg>

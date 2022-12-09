@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B2C_Mobile_HTML Index</title>
+
+</head>
+<body>
+<style type="text/css">
+body{font-size:11px; font-family:'nanum gothic','malgun gothic', dotum, tahoma; letter-spacing:0px}
+.tit {width:1500px; height:30px; font-size:18px; font-weight:bold; margin:20px 0; text-align:center;}
+table {width:1500px; padding:0px; border-spacing:0px; border:0px; word-break:break-all; table-layout:fixed; overflow:hidden} /*필요시 border-collapse:collapse;*/
+table {border:1px solid #ddd; border-bottom:none; border-right:none}
+table th,
+table td{padding:5px 5px; border-right:1px solid #ccc; border-bottom:1px solid #ccc; font-size:12px;}
+table th{padding:10px 5px; border-top:1px solid #999;border-bottom:1px solid #999;border-right:1px solid #999;background:#ddd;}
+.fnt24{font-size:24px}
+a:link {color: red; text-decoration:none; font-weight:bold;}
+a:visited{color: red; text-decoration:none;}
+a:active {color: red; text-decoration:none;}
+.font_01 {font-weight:bold; color:#00f;}
+</style>
+<!-- <script type="text/javascript">
+$(document).ready(function(){
+	$("a").attr("target","_blank");
+/*	$(".pageNo").each(function(idx){
+		$(this).html(parseInt(idx+1));
+	});
+	
+	$("tr.htmlList:even").css("background","#e6e6fa");*/
+	
+});
+
+</script> -->
+<div class="tit">B2C_Mobile_HTML Index</div>
+<table style="border:1px solid #888;">
+	<colgroup>
+	<col width="120"/><!-- 그룹명 -->
+	<col width="320"/><!-- 화면명 -->
+	<col width="200"/><!-- 화면ID -->
+	<col width="60"/><!-- 디렉토리 -->
+	<col width="400"/><!--파일명  -->
+	<col width="200"/><!--  설명-->
+	<col width="100"/><!-- SB_No -->
+	</colgroup>
+	<tr>
+		<th colspan="2">화면명</th>
+		<th>화면ID</th>
+		<th>디렉토리</th>
+		<th>파일명</th>
+		<th>설명</th>
+		<th>SB_NO</th>
+	</tr>
+	<!--여정선택 Start -->
+	<tr class="htmlList">
+		<td rowspan="4">여정선택</td>
+		<td>01.국제선</td>
+		<td rowspan="2">AIRMBLTRP0100100010</td>
+		<td rowspan="2">AIR/MBL</td>
+		<td>
+			<a href="./MBL/AIRMBLTRP0100100010.html">AIRMBLTRP0100100010.html</a><br/>
+			<a href="./MBL/AIRMBLTRP0100100010_국제선해외출발.html">AIRMBLTRP0100100010_국제선해외출발.html</a><br/>
+			<a href="./MBL/AIRMBLTRP0100100010_국제선국내출발.html">AIRMBLTRP0100100010_국제선국내출발.html</a><br/>
+			<a href="./MBL/AIRMBLTRP0100100010_국제선왕복귀국일미지정.html">AIRMBLTRP0100100010_국제선왕복귀국일미지정.html</a><br/>
+			<a href="./MBL/AIRMBLTRP0100100010_국제선편도.html">AIRMBLTRP0100100010_국제선편도.html</a><br/>
+			<a href="./MBL/AIRMBLTRP0100100010_국제선다구간.html">AIRMBLTRP0100100010_국제선다구간.html</a><br/>
+		</td>
+		<td class="font_01">150903_추가<br />150911_추가<br />150914_추가<br />150917_수정<br />151001_수정<br />151015_수정</td>
+		<td></td>
+	</tr>
+	<tr class="htmlList">
+		<td>01.국내선</td>
+		<td><a href="./MBL/AIRMBLTRP0100100010_국내선편도.html">AIRMBLTRP0100100010_국내선편도.html</a><br />
+		<a href="./MBL/AIRMBLTRP0100100010_국내선왕복.html">AIRMBLTRP0100100010_국내선왕복.html</a></td>
+		<td class="font_01">150917_수정<br />151020_수정</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>01.달력검색(1개월)-팝업</td>
+		<td>AIRMBLTRP0100010060</td>
+		<td>AIR/MBL</td>
+		<td><a href="/html/MO/air/MBL/AIRMBLTRP0100010060.html">AIRMBLTRP0100010060.html</a></td>
+		<td class="font_01">150915_수정</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>01.도시검색-팝업(최초로딩,주요도시부분)</td>
+		<td>AIRMBLTRP0100010070</td>
+		<td >AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLTRP0100010070.html">AIRMBLTRP0100010070.html</a></td>
+		<td class="font_01">150914_추가</td>
+		<td></td>
+	</tr>
+	<!--여정선택 End -->
+	<!--요금 스케줄 Start -->
+	<tr class="htmlList">
+		<td rowspan="6">요금 스케줄</td>
+		<td>02.운임조회목록</td>
+		<td rowspan="2">AIRMBLSCH0100100010</td>
+		<td rowspan="2">AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLSCH0100100010.html">AIRMBLSCH0100100010.html</a><br />
+		<a href="./MBL/운임상세팝업.html">운임상세팝업.html</a><br />
+		<a href="./MBL/AIRMBLSCH0100100010_조회결과없음.html">AIRMBLSCH0100100010_조회결과없음.html</a></td>
+		<td class="font_01">150917_수정<br />151001_수정&추가<br />151005_추가</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>ㄴ상세조건</td>
+		<td>
+			<a href="./MBL/AIRMBLSCH0100100010_상세조건_01직항경유.html">AIRMBLSCH0100100010_상세조건_01직항경유.html</a><br/>
+			<a href="./MBL/AIRMBLSCH0100100010_상세조건_02좌석상태.html">AIRMBLSCH0100100010_상세조건_02좌석상태.html</a><br/>
+			<a href="./MBL/AIRMBLSCH0100100010_상세조건_03항공사.html">AIRMBLSCH0100100010_상세조건_03항공사.html</a><br/>
+			<a href="./MBL/AIRMBLSCH0100100010_상세조건_04요금조건.html">AIRMBLSCH0100100010_상세조건_04요금조건.html</a>
+		</td>
+		<td class="font_01">150915_수정</td>
+		<td></td>
+	</tr>
+	<!-- <tr class="htmlList">
+		<td>ㄴ재검색</td>
+		<td>AIRMBLSCH0100100010_재검색.html</td>
+		<td>----------------------</td>
+		<td></td>
+	</tr> -->
+	<tr class="htmlList">
+		<td>03.스케줄선택화면</td>
+		<td >AIRMBLSCH0100100011</td>
+		<td >AIR/MBL</td>
+		<td>
+			<a href="./MBL/AIRMBLSCH0100100011_귀국편선택.html">AIRMBLSCH0100100011_귀국편선택.html</a><br /><br />
+			<a href="./MBL/AIRMBLSCH0100100011_출국편선택.html">AIRMBLSCH0100100011_출국편선택.html</a><br />
+			<a href="./MBL/AIRMBLSCH0100100011_다구간(3여정).html">AIRMBLSCH0100100011_다구간(3여정).html</a><br />
+			<a href="./MBL/AIRMBLSCH0100100011_다구간(4여정).html">AIRMBLSCH0100100011_다구간(4여정).html</a><br />
+			<a href="./MBL/AIRMBLSCH0100100011_출국편선택_국내선.html">AIRMBLSCH0100100011_출국편선택_국내선.html</a><br />
+			<a href="./MBL/AIRMBLSCH0100100011_귀국편선택_국내선.html">AIRMBLSCH0100100011_귀국편선택_국내선.html</a>
+		</td>
+		<td class="font_01">150917_수정<br /><span class="font_04">*160711_국토부 제정안에 따른 수정</span><br /><br />150923_추가<br />151001_수정<br />151020_추가</td>
+		<td>　</td>
+	</tr>
+	<!--<tr class="htmlList">
+		<td>ㄴ왕복</td>
+		<td>AIRMBLSCH0100100011_왕복.html</td>
+		<td>----------------------</td>
+		<td></td>
+	</tr>
+	<tr class="htmlList">
+		<td>ㄴ편도</td>
+		<td>AIRMBLSCH0100100011_편도.html</td>
+		<td>----------------------</td>
+		<td></td>
+	</tr>
+	<tr class="htmlList">
+		<td>ㄴ다구간</td>
+		<td>AIRMBLSCH0100100011_다구간.html</td>
+		<td>----------------------</td>
+		<td></td>
+	</tr>
+	<tr class="htmlList">
+		<td>04.할인항공조회(도시별)</td>
+		<td>AIRMBLSCH0100100030</td>
+		<td>AIR/MBL</td>
+		<td>AIRMBLSCH0100100030.html</td>
+		<td>　</td>
+		<td>　</td>
+	</tr>-->
+	<tr class="htmlList">
+		<td>04.요금규정조회-팝업</td>
+		<td>AIRMBLSCH0100100070</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLSCH0100100070.html">AIRMBLSCH0100100070.html</a><br />
+		<a href="./MBL/AIRMBLSCH0100100070_01.html">AIRMBLSCH0100100070_01.html</a></td>
+		<td class="font_01">150923_수정<br />150923_추가<br />151001_수정<br />151022_수정</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>04.비행상세정보조회-팝업</td>
+		<td>AIRMBLSCH0100110080</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLSCH0100110080.html">AIRMBLSCH0100110080.html</a></td>
+		<td class="font_01">150911_추가</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>항공사별초과수하물정보-팝업</td>
+		<td>AIRMBLSCH0100110090</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLSCH0100110090.html">AIRMBLSCH0100110090.html</a></td>
+		<td class="font_01">*160726_국토부 제정안에 따른 추가</td>
+		<td>　</td>
+	</tr>
+	<!-- <tr class="htmlList">
+		<td>08.국내선요금스케쥴조회<br>
+			: 1A(KE), AWD(OZ), JinAir
+		</td>
+		<td>AIRMBLSCH0100100090</td>
+		<td>AIR/MBL</td>
+		<td>AIRMBLSCH0100100090.html</td>
+		<td>　</td>
+		<td>　</td>
+	</tr> -->
+	<!--요금 스케줄 End -->
+	<!-- <tr class="htmlList">
+		<td>이벤트</td>
+		<td>06.이벤트기획전</td>
+		<td>AIRMBLSCH0100100041</td>
+		<td>AIR/MBL</td>
+		<td>
+			AIRMBLSCH0100100041.html
+		</td>
+		<td>　</td>
+		<td>　</td>
+	</tr> -->
+	<tr class="htmlList">
+		<td>탑승자정보입력</td>
+		<!-- <td>09.탑승객정보입력 (선택내역확인)</td>
+		<td>AIRMBLPAX1100100020</td>
+		<td>AIR/MBL</td>
+		<td>
+			AIRMBLPAX1100100020.html
+		</td>
+		<td class="font_01"></td>
+		<td>　</td> -->
+		<td>09.탑승객정보입력 (초기로딩)</td>
+		<td>AIRMBLPAX1100100010</td>
+		<td>AIR/MBL</td>
+		<td>
+			
+			<a href="./MBL/AIRMBLPAX1100100010_탑승객정보입력_01성인.html">AIRMBLPAX1100100010_탑승객정보입력_01성인.html</a><br />
+			<a href="./MBL/AIRMBLPAX1100100010_탑승객정보입력_02성인소아유아.html">AIRMBLPAX1100100010_탑승객정보입력_02성인소아유아.html</a><br />
+			<a href="./MBL/AIRMBLPAX1100100010_탑승객정보입력_03레이어_공동운항안내.html">AIRMBLPAX1100100010_탑승객정보입력_03레이어_공동운항안내.html</a><br />
+			<a href="./MBL/AIRMBLPAX1100100010_탑승객정보입력_03레이어_공동운항안내_02.html">AIRMBLPAX1100100010_탑승객정보입력_03레이어_공동운항안내_02.html</a><br />
+			<a href="./MBL/AIRMBLPAX1100100010_탑승객정보입력_03레이어_비자안내.html">AIRMBLPAX1100100010_탑승객정보입력_03레이어_비자안내.html</a><br />
+			<a href="./MBL/AIRMBLPAX1100100010_탑승객정보입력_03레이어_비자안내_02.html">AIRMBLPAX1100100010_탑승객정보입력_03레이어_비자안내_02.html</a><br />
+			<a href="./MBL/AIRMBLPAX1100100010_탑승객정보입력_03레이어_예약전안내사항.html">AIRMBLPAX1100100010_탑승객정보입력_03레이어_예약전안내사항.html</a><br />			
+			<a href="./MBL/결제전안내사항.html">결제전안내사항.html</a><br />
+			<a href="./MBL/AIRMBLPAX1100100010_탑승객정보입력_01성인_국내선.html">AIRMBLPAX1100100010_탑승객정보입력_01성인_국내선.html</a>
+		</td>
+		<td class="font_01">150908_추가<br />150923_추가<br />151001_수정<br />151014_추가<br />151020_추가<br />151022_수정</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>선택내역확인</td>
+		<td>09.탑승객정보입력 (선택내역확인)</td>
+		<td>AIRMBLPAX1100100020</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLPAX1100100020_01성인.html">AIRMBLPAX1100100020_01성인.html</a><br /><br />
+		<a href="./MBL/AIRMBLPAX1100100020_02성인소아유아.html">AIRMBLPAX1100100020_02성인소아유아.html</a><br />
+		<a href="./MBL/AIRMBLPAX1100100020_01성인_국내선.html">AIRMBLPAX1100100020_01성인_국내선.html</a></td>
+		<td class="font_01">150909_추가<br /><span class="font_04">*160711_국토부 제정안에 따른 수정</span><br />151001_수정<br />151020_추가<br />151022_수정</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>예약완료</td>
+		<td>10.항공예약완료</td>
+		<td>AIRMBLRSV0100100010</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLRSV0100100010.html">AIRMBLRSV0100100010.html</a></td>
+		<td class="font_01">150917_수정<br />151001_수정<br />151022_수정</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>예약완료 목록조회</td>
+		<td>11.예약목록조회<br>
+			(Tab:전체/국제선항공/국내선항공/호텔/에어텔)
+		</td>
+		<td>AIRMBLLST0100000010</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLLST0100000010.html">AIRMBLLST0100000010.html</a></td>
+		<td class="font_01">150921_추가<br />151001_수정</td>
+		<td>　</td>
+	</tr>
+	<!--예약상세 Start -->
+	<tr class="htmlList">
+		<td rowspan="10">예약상세</td>
+		<td>12.예약상세</td>
+		<td>AIRMBLMYP0100100010</td>
+		<td>AIR/MBL</td>
+		<td>
+			<a href="./MBL/AIRMBLMYP0100100010.html">AIRMBLMYP0100100010.html</a><br />
+			<a href="./MBL/AIRMBLMYP0100100010_02예약번호.html">AIRMBLMYP0100100010_02예약번호.html</a><br />
+			<a href="./MBL/AIRMBLMYP0100100010_03탑승객정보.html">AIRMBLMYP0100100010_03탑승객정보.html</a><br />
+			<a href="./MBL/AIRMBLMYP0100100010_04총액운임.html">AIRMBLMYP0100100010_04총액운임.html</a><br />
+			<a href="./MBL/AIRMBLMYP0100100010_05스케줄.html">AIRMBLMYP0100100010_05스케줄.html</a><br />
+			<a href="./MBL/AIRMBLMYP0100100010_02예약번호_취소.html">AIRMBLMYP0100100010_02예약번호_취소.html</a><br />
+			<a href="./MBL/AIRMBLMYP0100100010_06온라인상담및처리내역.html">AIRMBLMYP0100100010_06온라인상담및처리내역.html</a><br />
+			<a href="./MBL/환불목록_레이어.html">환불목록_레이어.html</a><br />
+			<a href="./MBL/안내문구_레이어.html">안내문구_레이어.html</a><br />
+			<a href="./MBL/AIRMBLMYP1110110410.html">AIRMBLMYP1110110410.html</a>
+		</td>
+		<td class="font_01">150917_수정<br />151001_수정<br />151022_수정<br /><br /><span class="font_04">*160712_국토부 제정안에 따른 수정</span><br /><br /><br />160609_추가<br />160706_추가(팩스예약전송확인)</td>
+		<td></td>
+	</tr>
+	<tr class="htmlList">
+		<td>12.여권비자정보화면</td>
+		<td>AIRMBLMYP0100100020</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLMYP0100100020.html">AIRMBLMYP0100100020.html</a><br />
+		<a href="./MBL/AIRMBLMYP0100100020_01여권정보등록및변경.html">AIRMBLMYP0100100020_01여권정보등록및변경.html</a><br />
+		<a href="./MBL/AIRMBLMYP0100100020_02현지연락처등록및변경.html">AIRMBLMYP0100100020_02현지연락처등록및변경.html</a></td>
+		<td class="font_01">150921_수정<br />151022_수정</td>
+		<td></td>
+	</tr>
+	<tr class="htmlList">
+		<td>12.마일리지정보(등록) - 팝업</td>
+		<td>AIRMBLMYP1110110040</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLMYP1110110040.html">AIRMBLMYP1110110040.html</a></td>
+		<td class="font_01">150917_수정</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>12.증빙서류(조회) - 레이어팝업</td>
+		<td>AIRMBLMYP1110110050</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLMYP0100100050증빙서류_01리스트.html">AIRMBLMYP0100100050증빙서류_01리스트.html</a><br />
+		<a href="./MBL/AIRMBLMYP0100100050증빙서류_02증빙서류등록.html">AIRMBLMYP0100100050증빙서류_02증빙서류등록.html</a><br />
+		<a href="./MBL/AIRMBLMYP0100100050증빙서류_03카드증빙서류추가.html">AIRMBLMYP0100100050증빙서류_03카드증빙서류추가.html</a></td>
+		<td class="font_01">150921_수정</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>12.온라인상담하기 – 팝업 : DB</td>
+		<td>AIRMBLMYP1100010060</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLMYP1100010060.html">AIRMBLMYP1100010060.html</a></td>
+		<td class="font_01">150923_수정</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>12.스케쥴변경요청(조회)-팝업 :
+			DB
+		</td>
+		<td>AIRMBLMYP1110110320</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLMYP1110110320.html">AIRMBLMYP1110110320.html</a></td></td>
+		<td class="font_01">150923_추가<br />151022_수정</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>12.탑승객 영문철자 변경요청(조회)
+			: DB
+		</td>
+		<td>AIRMBLMYP1110110360</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLMYP1110110360.html">AIRMBLMYP1110110360.html</a><br />
+		<a href="./MBL/AIRMBLMYP1110110360_영문철자변경요청.html">AIRMBLMYP1110110360_영문철자변경요청.html</a></td>
+		<td class="font_01">150917_수정<br />150923_추가<br />151022_수정</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>12.탑승객 취소요청(조회) - 팝업
+			: DB (추가설계)
+		</td>
+		<td>AIRMBLMYP1110110370</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLMYP1110110370.html">AIRMBLMYP1110110370.html</a></td>
+		<td class="font_01">150923_추가<br />151008_수정</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>12.탑승객 예약 취소(팝업)
+		</td>
+		<td>AIRMBLMYP1110110370</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLPAY0100100050.html">AIRMBLPAY0100100050.html</a></td>
+		<td class="font_01">160512_추가</td>
+		<td>　</td>
+	</tr>
+	<!-- <tr class="htmlList">
+		<td>12.예약 취소 : 1A, 1B,
+			AWD, JinAir, DB
+		</td>
+		<td>AIRMBLMYP1110110380</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLMYP1110110380.html">AIRMBLMYP1110110380.html</a></td>
+		<td class="font_01">150923_추가<br />151008_수정</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>12.카드증빙서류 추가(조회) -
+			팝업 : DB (추가설계)
+		</td>
+		<td>AIRMBLMYP1110110390</td>
+		<td>AIR/MBL</td>
+		<td>AIRMBLMYP1110110390.html</td>
+		<td>----------------------</td>
+		<td>　</td>
+	</tr> -->
+	<tr class="htmlList">
+		<td>12.발권완료화면</td>
+		<td>AIRMBLPAY0100100040</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLPAY0100100040.html">AIRMBLPAY0100100040.html</a></td>
+		<td class="font_01">150917_수정<br />151022_수정</td>
+		<td></td>
+	</tr>
+	<!--예약상세 End -->
+	<!--결제/발권 Start -->
+	<tr class="htmlList">
+		<td rowspan="2">결제/발권</td>
+		<td>12.결제하기(자동발권, 결제요청,
+			은행송금)(Radio Option)
+		</td>
+		<td>AIRMBLPAY1110100010</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLPAY1110100010결제하기_01신용카드.html">AIRMBLPAY1110100010결제하기_01신용카드.html</a><br />
+		<!-- <a href="./MBL/AIRMBLPAY1110100010결제하기_02현금결제.html">AIRMBLPAY1110100010결제하기_02현금결제.html</a><br /> -->
+		<a href="./MBL/AIRMBLPAY1110100010결제하기_03은행송금.html">AIRMBLPAY1110100010결제하기_03은행송금.html</a><br />
+		<a href="./MBL/AIRMBLPAY1110100010결제하기_항공권결제규정_레이어.html">AIRMBLPAY1110100010결제하기_항공권결제규정_레이어.html </a><br />
+		<a href="./MBL/AIRMBLPAY1110100010결제하기_항공권사전좌석및기타서비스신청안내_레이어.html">AIRMBLPAY1110100010결제하기_항공권사전좌석및기타서비스신청안내_레이어.html</a><br />
+		<a href="./MBL/AIRMBLPAY1110100010결제하기_결제방법선택유의사항_레이어.html">AIRMBLPAY1110100010결제하기_결제방법선택유의사항_레이어.html</a></td>
+		<td class="font_01">150923_수정<br />150923_추가<br />151001_수정&추가</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>12.결제완료(자동발권, 결제요청,은행송금)
+		</td>
+		<td>AIRMBLPAY0100100011</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLPAY0100100011결제완료(신용카드).html">AIRMBLPAY0100100011결제완료(신용카드).html</a><br />
+		<a href="./MBL/AIRMBLPAY0100100011결제완료(은행송금).html">AIRMBLPAY0100100011결제완료(은행송금).html</a></td>
+		<td class="font_01">150923_추가</td>
+		<td>　</td>
+	</tr>
+	<!-- <tr class="htmlList">
+		<td>12.항공 이티켓(여정표) 인쇄 –
+			팝업 (별도 브라우저로 Open)
+		</td>
+		<td>AIRMBLPRT0100110010</td>
+		<td>AIR/MBL</td>
+		<td>AIRMBLPRT0100110010.html</td>
+		<td>　</td>
+		<td>　</td>
+	</tr>	 -->
+	<tr class="htmlList">
+		<td rowspan="3">기타</td>
+		<td>14.로딩화면</td>
+		<td>AIRMBLETC0100100010</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLETC0100100010.html">AIRMBLETC0100100010.html</a><br />
+		<a href="./MBL/AIRMBLETC0100100010_로딩바.html">AIRMBLETC0100100010_로딩바.html</a><br />
+		<a href="./MBL/AIRMBLETC0100100010_로딩바_다구간2.html">AIRMBLETC0100100010_로딩바_다구간2.html</a><br />
+		<a href="./MBL/AIRMBLETC0100100010_로딩바_다구간3.html">AIRMBLETC0100100010_로딩바_다구간3.html</a><br />
+		<a href="./MBL/AIRMBLETC0100100010_로딩바_다구간4.html">AIRMBLETC0100100010_로딩바_다구간4.html</a><br />
+		<a href="./MBL/AIRMBLETC0100100010_스플래시.html">AIRMBLETC0100100010_스플래시.html</a></td>
+		<td class="font_01">150903_추가<br />150923_추가<br />151005_추가<br />151021_추가<br />151028_수정</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>15.에러안내화면</td>
+		<td>AIRMBLETC0100100020</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLETC0100100020.html">AIRMBLETC0100100020.html</td>
+		<td class="font_01">151020_추가</td>
+		<td>　</td>
+	</tr>
+	<tr class="htmlList">
+		<td>16.네이버 연동 서비스(랜딩페이지)</td>
+		<td>AIRMBLSCH0100100080</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRMBLSCH0100100080.html">AIRMBLSCH0100100080.html</td>
+		<td class="font_01">160216_추가</td>
+		<td>　</td>
+	</tr>
+	<!-- <tr class="htmlList">
+		<td>스카이스캐너 연동 서비스(별도 화면
+			없음)
+		</td>
+		<td>　</td>
+		<td>　</td>
+		<td>　</td>
+		<td>　</td>
+		<td>　</td>
+	</tr> -->
+	<tr class="htmlList">
+		<td>로그인</td>
+		<td>17.로그인 화면</td>
+		<td>AIRAAASCH0100110090</td>
+		<td>AIR/MBL</td>
+		<td><a href="./MBL/AIRAAASCH0100110090_99.html">AIRAAASCH0100110090_99.html</a><br />
+		<a href="./MBL/AIRAAASCH0100110090_99_마이페이지접근시.html">AIRAAASCH0100110090_99_마이페이지접근시.html</a><br />
+		<a href="./MBL/AIRAAASCH0100110090_99_비회원예약확인.html">AIRAAASCH0100110090_99_비회원예약확인.html</a><br />
+		<a href="./MBL/COMAAALGN0100000010.html">COMAAALGN0100000010.html</a></td>
+		<td class="font_01">150908_추가<br />151001_수정&추가<br />151020_수정<br />160513_추가</td>
+		<td>　</td>
+	</tr>
+	<!-- <tr class="htmlList">
+		<td>17.비회원 예약조회</td>
+		<td>AIRAAASCH0100110090</td>
+		<td>AIR/MBL</td>
+		<td>AIRAAASCH0100110090_98.html</td>
+		<td>　</td>
+		<td>　</td>
+	</tr> -->
+</table>
+
+
+
+</body>
+</html>

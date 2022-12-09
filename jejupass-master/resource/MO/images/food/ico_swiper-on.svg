@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70">
+    <defs>
+        <filter id="a" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="5" result="blur"/>
+            <feFlood flood-opacity=".2"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g style="filter:url(#a)">
+        <circle data-name="Ellipse 1" cx="20" cy="20" r="20" transform="rotate(90 22.5 32.5)" style="fill:#202020"/>
+    </g>
+    <path data-name="Path 5" d="m4917.572-259 4.5 4.5 4.5-4.5" transform="rotate(90 2332.954 -2558.618)" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px"/>
+    <path data-name="Path 6" d="M188.5 672.252v-8.829" transform="rotate(90 430.294 272.294)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px"/>
+</svg>

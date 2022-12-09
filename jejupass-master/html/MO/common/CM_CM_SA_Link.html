@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>제주패스</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="/resource/MO/images/favicon/apple_touch_icon.ico">
+<link rel="apple-touch-icon" href="/resource/MO/images/favicon/apple_touch_icon_144.ico">
+<link href="/resource/MO/css/m_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/MO/css/m_contents.min.css" rel="stylesheet" type="text/css">
+<style>
+	.layPop, .dimmed{display:block !important}
+</style>
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper defaultWrapper">
+	<header>
+		<button type="button" class="btPrev">이전</button>
+		<h1 class="titDep1">결제</h1>
+	</header>
+
+	<div id="container" class="container">
+		
+	</div><!-- //container -->
+
+	<div class="floatingBtns floatingCase01">
+		<div class="floatingInner">
+			<button type="button" class="btnDefault btnL action">96,000원 결제</button>
+		</div>
+	</div>
+
+</section><!-- //wrapper -->
+<footer>
+	<img src="/resource/MO/images/dummy/@footer.png" alt="">
+</footer>
+
+<aside>
+	<div class="asideRight">
+		<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+	</div>
+</aside>
+
+<!-- 포인트 충전 팝업-->
+<section id="pop_pointCharge" class="layPop layFull pop_pointCharge" tabindex="0">
+	<header>
+		<h2 class="titLay">포인트 충전</h2>
+	</header>
+
+	<div class="layContainer" tabindex="0">
+		<div class="layContent">
+			
+			<p class="pageTit">충전금액을 선택해 주세요</p>
+			<span class="subTit">첫 충전이시네요!<br>10,000원의 지급혜택을 확인하세요.</span>
+
+			<div class="kf_pointChargeWrap">
+				<div class="inpFrm kf_chargePay">
+					<label for="inpChargePrice">충전금액</label>
+					<span class="inpA">
+						<input type="tel" id="inpChargePrice" placeholder="충전금액을 선택해주세요." value="0">
+						<span class="unit">원</span>
+					</span>
+					<div class="kf_priceBtns">
+						<button type="button" class="inpPay">+5만</button>
+						<button type="button" class="inpPay">+10만</button>
+						<button type="button" class="inpPay">+50만</button>
+						<button type="button" class="inpPay">+100만</button>
+						<button type="button" class="btIco icoChange">금액 재설정</button>
+					</div>
+					<p class="listType02 small">최소 5만원 단위/ 1,988,000원 한도 내 충전가능</p>
+				</div>
+
+				<p class="kf_titPay">연결계좌</p>
+				<div class="swiperWrap swiperGap swiperAccount" data-options='{"Spacebetween": 16}'>
+					<div class="swiper-container">
+						<ul class="swiper-wrapper">
+							<!-- 2021.12.07 이미지명 수정 -->
+							<li class="swiper-slide">
+								<div class="kf_cardWrap">
+									<img src="/resource/MO/images/common/card_shinhan.png" alt="신한은행 이미지">
+									<!-- 은행 이미지
+									<img src="/resource/MO/images/common/card_kb.png" alt="KB국민은행 이미지">
+									<img src="/resource/MO/images/common/card_ibk.png" alt="IBK기업은행 이미지">
+									<img src="/resource/MO/images/common/card_nh.png" alt="NH농협은행 이미지">
+									<img src="/resource/MO/images/common/card_shinhan.png" alt="신한은행 이미지">
+									<img src="/resource/MO/images/common/card_citi.png" alt="한국씨티은행 이미지">
+									<img src="/resource/MO/images/common/card_sc.png" alt="SC제일은행 이미지">
+									<img src="/resource/MO/images/common/card_woori.png" alt="우리은행 이미지">
+									<img src="/resource/MO/images/common/card_kakao.png" alt="카카오뱅크 이미지">
+									<img src="/resource/MO/images/common/card_k.png" alt="케이뱅크 이미지">
+									<img src="/resource/MO/images/common/card_keb.png" alt="KEB하나은행 이미지">
+									<img src="/resource/MO/images/common/card_bnk.png" alt="BNK경남은행 이미지">
+									<img src="/resource/MO/images/common/card_kj.png" alt="광주은행 이미지">
+									<img src="/resource/MO/images/common/card_dgb.png" alt="DGB대구은행 이미지">
+									<img src="/resource/MO/images/common/card_busan.png" alt="BNK부산은행 이미지">
+									<img src="/resource/MO/images/common/card_kdb.png" alt="산업은행 이미지">
+									<img src="/resource/MO/images/common/card_sh.png" alt="수협 이미지">
+									<img src="/resource/MO/images/common/card_epost.png" alt="우체국 이미지">
+									<img src="/resource/MO/images/common/card_jb.png" alt="전북은행 이미지">
+									<img src="/resource/MO/images/common/card_jeju.png" alt="제주은행 이미지">
+									<img src="/resource/MO/images/common/card_mg.png" alt="MG새마을금고 이미지">
+									<img src="/resource/MO/images/common/card_cu.png" alt="신협은행 이미지">
+									<img src="/resource/MO/images/common/card_sbi.png" alt="SBI저축은행 이미지">
+									<img src="/resource/MO/images/common/card_sb.png" alt="저축은행 이미지">
+									<img src="/resource/MO/images/common/card_toss.png" alt="토스뱅크 이미지">
+									-->
+									<p class="acctName">홍길동</p>
+									<div class="kf_accountInfo">
+										<span class="bankName">신한은행</span>
+										<strong class="bankAccountNum">110-12235-222112218</strong>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="kf_cardWrap">
+									<img src="/resource/MO/images/common/card_kb.png" alt="국민은행 이미지">
+									<p class="acctName">홍길동</p>
+									<div class="kf_accountInfo">
+										<span class="bankName">국민은행</span>
+										<strong class="bankAccountNum">110-12235-222112218</strong>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="kf_cardWrap">
+									<img src="/resource/MO/images/common/card_woori.png" alt="우리은행 이미지">
+									<p class="acctName">홍길동</p>
+									<div class="kf_accountInfo">
+										<span class="bankName">우리은행</span>
+										<strong class="bankAccountNum">110-12235-222112218</strong>
+									</div>
+								</div>
+							</li>
+							<!-- //2021.12.07 이미지명 수정 -->
+							<li class="swiper-slide">
+								<a href="#" role="button" class="kf_applyCont">
+									<strong>충전계좌 등록</strong>
+									<span>본인 명의 계좌만 등록 가능</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<a href="#" class="bannerType bannerTop">
+				<figure><img src="/resource/MO/images/dummy/@img_banner03.jpg" alt="EVENT - 지금 멤버십 가입, 결제하면 5%할인! - 로그인하고, 결제만 해도 3%할인"></figure>
+			</a>
+
+			<div class="guideInfo grayLine">
+				<h3 class="titGuide">이용안내</h3>
+				<ul class="listType01">
+					<li>충전포인트란 제주패스 상품을 구입하실 수 있도록 미리 충전해둔 구매용 결제수단입니다.</li>
+					<li>입금용 전용계좌는 신한은행 고정계좌가 제공됩니다.</li>
+					<li>신한은행 고객님 충전 이체 수수료는 무료 입니다.</li>
+				</ul>
+			</div>
+
+			<div class="btnArea">
+				<button type="button" class="btnDefault btnL action">50,000원 충전</button>
+			</div>
+
+		</div>
+		
+	</div><!-- //layCont-->
+	<button type="button" class="closeL">팝업 닫기</button>
+
+</section>
+<!-- //포인트 충전 팝업-->
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+
+</body>
+</html>

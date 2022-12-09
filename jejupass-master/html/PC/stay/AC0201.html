@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>숙박 검색리스트 | 제주패스</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, width=1366"><!-- 10.29 추가 -->
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" type="image/x-icon" href="/resource/PC/images/favicon/favicon.ico">
+<link href="/resource/PC/css/p_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/PC/css/p_contents.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper defaultWrapper">
+	<header>
+		<h1 class="topLogo"><a href="#">JEJUPASS</a></h1><!-- 11.05 SEO를 위한 태그 수정 -->
+		<nav>
+			<div class="navList">
+				<h2><a href="#">항공</a></h2>
+				<h2><a href="#">렌터카</a></h2>
+				<h2><a href="#" arial-selected="true">숙박</a></h2>
+				<h2><a href="#">맛집</a></h2>
+				<h2><a href="#">카페패스</a></h2>
+				<h2><a href="#">트립</a></h2>
+			</div>
+			<div class="quickSearchWrap">
+				<button type="button" class="btSearch">빠른검색</button>
+				
+			</div>
+		</nav>
+		<div class="topUtil">
+			<img src="/resource/PC/images/dummy/@util.png" alt="">
+		</div>
+	</header>
+
+	<div id="container" class="container bgGray">
+		
+		<div id="contents" class="contents">
+			<!-- 컨텐츠 영역  -->
+			<div class="kf_airFixed kf_searchFixed">
+				<div class="k1_main_search_area">
+					<div class="k1_search_are_spot">
+						<div class="k1_section_multi section_stay">
+							<div class="kf_flightInner kf_stayDestination selectON"><!-- 버튼 클릭시 selectON 클래스 추가-->
+                                <ul class="k1_flight_panel">
+									<li class="k1_area">
+										<p class="tit">여행지</p>
+										<button type="button" ><strong>제주특별자치도, 한국</strong></button>
+									</li>
+								</ul>
+							</div>
+		
+							<div class="kf_flightInner kf_flightDate">
+								<ul class="k1_flight_panel">
+									<li class="k1_area">
+										<p class="tit">숙박일</p>
+										<button type="button" ><strong>21.08.18(수) ~ 21.08.20(금)</strong></button>
+									</li>
+								</ul>
+							</div>
+		
+							<div class="kf_flightInner kf_flightInfo">
+								<ul class="k1_flight_panel">
+									<li class="k1_area">
+										<p class="tit">인원과 객실수</p>
+										<button type="button" aria-expanded="false"><strong>성인 2명, 객실 1</strong></button>
+									</li>
+								</ul>
+							</div>
+							<button type="submit" class="k1_btn_price_search">검색</button>
+						</div>
+						<div class="kf_section_fixed">
+							<strong class="titSel">선택한 여정</strong>
+							<div class="kf_selBtns">
+								<button type="button">제주특별자치도, 한국</button>
+								<button type="button" class="btDate">21.07.07(수) 09:00 ~ 21.07.08(목) 09:00</button>
+								<button type="button" class="btSeat">성인1명, 객실1</button>
+							</div>
+							<button type="button" class="btIco icoReset">재검색</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="kf_airFixed kf_quickFixed">
+				<div class="tabBox">
+					<strong class="tit">테마 키워드</strong>
+					<div class="tabWrap tabScript">
+						<button type="button" class="prev"><span>이전</span></button>
+						<ul class="tabTypeR">
+							<li><a href="#" role="button" aria-selected="true">전체</a></li>
+							<li><a href="#" role="button" aria-selected="false">#둘이서</a></li>
+							<li><a href="#" role="button" aria-selected="false">#재생프로젝트 숙소</a></li>
+							<li><a href="#" role="button" aria-selected="false">#마당이 있는 돌담집</a></li>
+							<li><a href="#" role="button" aria-selected="false">#재생프로젝트숙소</a></li>
+							<li><a href="#" role="button" aria-selected="false">#아이와 함께</a></li>
+							<li><a href="#" role="button" aria-selected="false">#반려견과 함께</a></li>
+							<li><a href="#" role="button" aria-selected="false">#오션뷰</a></li>
+							<li><a href="#" role="button" aria-selected="false">#마당 있는 숙소</a></li>
+							<li><a href="#" role="button" aria-selected="false">기타</a></li>
+						</ul>
+						<button type="button" class="next"><span>다음</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="k1_schedule_search kf_schedule_search">
+				<div id="filterWrap" class="filterWrap"><!-- footer가 올시 filterFoot 추가 -->
+					<div class="toggleList filterSorting">
+						<div class="acctItem">
+							<button type="button" class="toggleBtn" aria-expanded="false">정렬</button>
+							<div class="toggleCont">
+								<span class="frmInp small txt"><input type="radio" id="radSorting01" name="radSorting" checked><label for="radSorting01">추천순</label></span>
+								<span class="frmInp small txt"><input type="radio" id="radSorting02" name="radSorting"><label for="radSorting02">가격 낮은 순</label></span>
+								<span class="frmInp small txt"><input type="radio" id="radSorting03" name="radSorting"><label for="radSorting03">가격 높은 순</label></span>
+								<span class="frmInp small txt"><input type="radio" id="radSorting04" name="radSorting"><label for="radSorting04">낮은 성급 순</label></span>
+								<span class="frmInp small txt"><input type="radio" id="radSorting05" name="radSorting"><label for="radSorting05">높은 성급 순</label></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="filterSelectWrap">
+						<p class="tit">필터</p>
+						<div class="scriptScroll">
+							<ul class="toggleList">
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="false">숙소유형</button>
+									<div class="toggleCont">
+										<span class="frmInp small txt"><input type="checkbox" id="stayTypeAll" name="stayType"><label for="stayTypeAll">전체</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayType01" name="stayType" checked><label for="stayType01">호텔</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayType02" name="stayType"><label for="stayType02">펜션</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayType03" name="stayType"><label for="stayType03">독채</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayType04" name="stayType"><label for="stayType04">골프텔</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayType05" name="stayType"><label for="stayType05">풀빌라</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayType06" name="stayType"><label for="stayType06">한옥</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayType07" name="stayType"><label for="stayType07">모텔</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayType08" name="stayType"><label for="stayType08">게스트하우스</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayType09" name="stayType"><label for="stayType09">캠핑·글램핑</label></span>
+									</div>
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="false">가격 범위</button>
+									<div class="toggleCont">
+										<div class="fp_slideArea">
+											<div class="slideValue">
+												<span class="minValue">최소 0원</span>
+												<span class="maxValue">최대 900,000원</span>
+											</div>
+											<div id="slider-range" class="slider" data-options='{"range": true, "min": 20000, "max": 300000, "step": 10000, "values": [50000, 100000], "text":"원" }'></div>
+											<div class="fp_slideInp">
+												<input type="text" class="amount" readonly>
+												<span class="dash">~</span>
+												<input type="text" class="amount" readonly>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="false">호텔 등급</button>
+									<div class="toggleCont">
+										<span class="frmInp small txt"><input type="checkbox" id="stayClass01" name="stayClass"><label for="stayClass01">1성급</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayClass02" name="stayClass"><label for="stayClass02">2성급</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayClass03" name="stayClass"><label for="stayClass03">3성급</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayClass04" name="stayClass"><label for="stayClass04">4성급</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayClass05" name="stayClass"><label for="stayClass05">5성급</label></span>
+									</div>
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="false">평점</button>
+									<div class="toggleCont">
+										<span class="frmInp small txt"><input type="radio" id="stayGrade01" name="stayGrade"><label for="stayGrade01">5.0 최고 좋음</label></span>
+										<span class="frmInp small txt"><input type="radio" id="stayGrade02" name="stayGrade"><label for="stayGrade02">4.5 매우 좋음</label></span>
+										<span class="frmInp small txt"><input type="radio" id="stayGrade03" name="stayGrade"><label for="stayGrade03">4.0 좋음</label></span>
+										<span class="frmInp small txt"><input type="radio" id="stayGrade04" name="stayGrade"><label for="stayGrade04">3.5 보통 이상</label></span>
+										<span class="frmInp small txt"><input type="radio" id="stayGrade05" name="stayGrade"><label for="stayGrade05">3.0 상태 양호</label></span>
+									</div>
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="false">편의시설 및 서비스</button>
+									<div class="toggleCont toggleEtc">
+										<span class="frmInp small txt"><input type="checkbox" id="staySrv01" name="staySrv"><label for="staySrv01">Wi-Fi</label></span>								
+										<span class="frmInp small txt"><input type="checkbox" id="staySrv02" name="staySrv"><label for="staySrv02">스파·사우나</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="staySrv03" name="staySrv"><label for="staySrv03">온천</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="staySrv04" name="staySrv"><label for="staySrv04">수영장</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="staySrv05" name="staySrv"><label for="staySrv05">레스토랑</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="staySrv06" name="staySrv"><label for="staySrv06">라운지</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="staySrv07" name="staySrv"><label for="staySrv07">피트니스</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="staySrv08" name="staySrv"><label for="staySrv08">편의점</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="staySrv09" name="staySrv"><label for="staySrv09">노래방</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="staySrv10" name="staySrv"><label for="staySrv10">골프장</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="staySrv11" name="staySrv"><label for="staySrv11">스키장</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="staySrv12" name="staySrv"><label for="staySrv12">세탁시설</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="staySrv13" name="staySrv"><label for="staySrv13">24시 프론트</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="staySrv14" name="staySrv"><label for="staySrv14">짐 보관 서비스</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="staySrv15" name="staySrv"><label for="staySrv15">다국어 지원</label></span>
+									</div>
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="false">객실 내 시설</button>
+									<div class="toggleCont toggleEtc">
+										<span class="frmInp small txt"><input type="checkbox" id="stayFacility01" name="stayFacility"><label for="stayFacility01">객실 스파</label></span>								
+										<span class="frmInp small txt"><input type="checkbox" id="stayFacility02" name="stayFacility"><label for="stayFacility02">미니바</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayFacility03" name="stayFacility"><label for="stayFacility03">Wi-Fi</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayFacility04" name="stayFacility"><label for="stayFacility04">욕실용품</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayFacility05" name="stayFacility"><label for="stayFacility05">TV</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayFacility06" name="stayFacility"><label for="stayFacility06">에어컨</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayFacility07" name="stayFacility"><label for="stayFacility07">냉장고</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayFacility08" name="stayFacility"><label for="stayFacility08">객실샤워실</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayFacility09" name="stayFacility"><label for="stayFacility09">욕조</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayFacility10" name="stayFacility"><label for="stayFacility10">드라이기</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayFacility11" name="stayFacility"><label for="stayFacility11">다리미</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayFacility12" name="stayFacility"><label for="stayFacility12">전기밥솥</label></span>
+									</div>
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="false">기타 시설</button>
+									<div class="toggleCont toggleEtc">
+										<span class="frmInp small txt"><input type="checkbox" id="stayEtc01" name="stayEtc"><label for="stayEtc01">조식포함</label></span>								
+										<span class="frmInp small txt"><input type="checkbox" id="stayEtc02" name="stayEtc"><label for="stayEtc02">무료주차</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayEtc03" name="stayEtc"><label for="stayEtc03">객실내취사</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayEtc04" name="stayEtc"><label for="stayEtc04">반려동물동반</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayEtc05" name="stayEtc"><label for="stayEtc05">객실내흡연</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayEtc06" name="stayEtc"><label for="stayEtc06">발렛파킹</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayEtc07" name="stayEtc"><label for="stayEtc07">금연</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayEtc08" name="stayEtc"><label for="stayEtc08">프린터사용</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayEtc09" name="stayEtc"><label for="stayEtc09">픽업가능</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayEtc10" name="stayEtc"><label for="stayEtc10">카드결제</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayEtc11" name="stayEtc"><label for="stayEtc11">장애인편의시설</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="stayEtc12" name="stayEtc"><label for="stayEtc12">세미나·회의실</label></span>
+
+									</div>
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="false">기타 옵션</button>
+									<div class="toggleCont toggleEtc">
+										<span class="frmInp small txt"><input type="checkbox" id="checkEtc01" name="checkEtc"><label for="checkEtc01">취소 수수료 없음<span>무료 취소가 가능한 숙소만 표시</span></label></span>								
+										<span class="frmInp small txt"><input type="checkbox" id="checkEtc02" name="checkEtc"><label for="checkEtc02">친환경 숙소<span>빈집 재생 프로젝트 숙소만 표시</span></label></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<button type="button" class="btIco icoReset">초기화</button>
+					</div>
+
+					<div class="filterBtns">
+						<button type="button" class="btnDefault btnL action">적용</button>
+					</div>
+				</div>
+				<div class="sch_result">
+					<div class="kf_schNum">총 <strong>94</strong>건
+						<a href="#" class="layPopBtn mapSearch" data-id="pop_mapView">지도검색</a>
+					</div>
+					<div class="boxWhite">
+						<ul class="stayList">
+							<li>
+								<div class="swiperWrap swiperFraction" data-options='{"pagination": "fraction"}'>
+									<button type="button" class="swiper-button-prev">이전</button>	
+									<div class="swiper-container">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+										</ul>
+									</div>
+									<button type="button" class="swiper-button-next">다음</button>
+									<div class="swiper-pagination"></div>	
+								</div>
+								<a href="#">
+									<strong class="titDep4">하루나의 뜰</strong>
+									<div class="conUtil">
+										<span class="likeNum" title="좋아요 갯수">401</span>
+										<span class="icoScore" title="평균 평점">4.7<i title="리뷰 갯수">(1,307)</i></span>
+										<span class="starClass" title="등급">4.5성급</span>
+									</div>
+									<p class="locationDepth">
+										<span>대한민국</span>
+										<span>제주도</span>
+										<span>제주시</span>
+									</p>
+									<p class="sumTxt">숲 속에 있는듯 한 제주내음 가득한 돌담집</p>
+									<!-- <div class="stayInfo">
+										<span class="txt">1박, 세금포함</span>
+										<span class="price">450,000원~</span>
+									</div>
+									<div class="flagList">
+										<span class="flag jejuOnly">JEJUPASS 단독</span>
+										<span class="flag special">특가</span>
+										<span class="flag hot">HOT</span>
+									</div> -->
+								</a>
+							</li>
+							<li>
+								<div class="swiperWrap swiperFraction" data-options='{"pagination": "fraction"}'>
+									<button type="button" class="swiper-button-prev">이전</button>	
+									<div class="swiper-container">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+										</ul>
+									</div>
+									<button type="button" class="swiper-button-next">다음</button>
+									<div class="swiper-pagination"></div>	
+								</div>
+								<a href="#">
+									<strong class="titDep4">일일시호</strong>
+									<div class="conUtil">
+										<span class="likeNum" title="좋아요 갯수">307</span>
+										<span class="icoScore" title="평균 평점">4.5<i title="리뷰 갯수">(1,307)</i></span>
+										<span class="starClass" title="등급">3.5성급</span>
+									</div>
+									<p class="locationDepth">
+										<span>대한민국</span>
+										<span>제주도</span>
+										<span>제주시</span>
+									</p>
+									<p class="sumTxt">숲 속에 있는듯 한 제주내음 가득한 돌담집</p>
+									<!-- <div class="stayInfo">
+										<span class="txt">1박, 세금포함</span>
+										<span class="price">300,000원~</span>
+									</div>
+									<div class="flagList">
+										<span class="flag jejuOnly">JEJUPASS 단독</span>
+										<span class="flag special">특가</span>
+										<span class="flag hot">HOT</span>
+									</div> -->
+								</a>
+							</li>
+							<li>
+								<div class="swiperWrap swiperFraction" data-options='{"pagination": "fraction"}'>
+									<button type="button" class="swiper-button-prev">이전</button>	
+									<div class="swiper-container">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+										</ul>
+									</div>
+									<button type="button" class="swiper-button-next">다음</button>
+									<div class="swiper-pagination"></div>	
+								</div>
+								<a href="#">
+									<strong class="titDep4">크랭블루스테이</strong>
+									<div class="conUtil">
+										<span class="likeNum" title="좋아요 갯수">401</span>
+										<span class="icoScore" title="평균 평점">4.7<i title="리뷰 갯수">(1,307)</i></span>
+										<span class="starClass" title="등급">3.5성급</span>
+									</div>
+									<p class="locationDepth">
+										<span>대한민국</span>
+										<span>제주도</span>
+										<span>제주시</span>
+									</p>
+									<div class="stayInfo">
+										<span class="txt">1박, 세금포함</span>
+										<span class="price">450,000원~</span>
+									</div>
+									<div class="flagList">
+										<span class="flag jejuOnly">JEJUPASS 단독</span>
+										<span class="flag special">특가</span>
+										<span class="flag hot">HOT</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<div class="swiperWrap swiperFraction" data-options='{"pagination": "fraction"}'>
+									<button type="button" class="swiper-button-prev">이전</button>	
+									<div class="swiper-container">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+										</ul>
+									</div>
+									<button type="button" class="swiper-button-next">다음</button>
+									<div class="swiper-pagination"></div>	
+								</div>
+								<a href="#">
+									<strong class="titDep4">스테이 수망일기</strong>
+									<div class="conUtil">
+										<span class="likeNum" title="좋아요 갯수">307</span>
+										<span class="icoScore" title="평균 평점">4.5<i title="리뷰 갯수">(1,307)</i></span>
+										<span class="starClass" title="등급">4성급</span>
+									</div>
+									<p class="locationDepth">
+										<span>대한민국</span>
+										<span>제주도</span>
+										<span>제주시</span>
+									</p>
+									<div class="stayInfo">
+										<span class="txt">1박, 세금포함</span>
+										<span class="price">550,000원~</span>
+									</div>
+									<div class="flagList">
+										<span class="flag jejuOnly">JEJUPASS 단독</span>
+										<span class="flag special">특가</span>
+										<span class="flag hot">HOT</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<div class="swiperWrap swiperFraction" data-options='{"pagination": "fraction"}'>
+									<button type="button" class="swiper-button-prev">이전</button>	
+									<div class="swiper-container">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+										</ul>
+									</div>
+									<button type="button" class="swiper-button-next">다음</button>
+									<div class="swiper-pagination"></div>	
+								</div>
+								<a href="#">
+									<strong class="titDep4">밤편지</strong>
+									<div class="conUtil">
+										<span class="likeNum" title="좋아요 갯수">401</span>
+										<span class="icoScore" title="평균 평점">4.7<i title="리뷰 갯수">(1,307)</i></span>
+										<span class="starClass" title="등급">4.5성급</span>
+									</div>
+									<p class="locationDepth">
+										<span>대한민국</span>
+										<span>제주도</span>
+										<span>제주시</span>
+									</p>
+									<div class="stayInfo">
+										<span class="txt">1박, 세금포함</span>
+										<span class="price">250,000원~</span>
+									</div>
+									<div class="flagList">
+										<span class="flag jejuOnly">JEJUPASS 단독</span>
+										<span class="flag special">특가</span>
+										<span class="flag hot">HOT</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<div class="swiperWrap swiperFraction" data-options='{"pagination": "fraction"}'>
+									<button type="button" class="swiper-button-prev">이전</button>	
+									<div class="swiper-container">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+										</ul>
+									</div>
+									<button type="button" class="swiper-button-next">다음</button>
+									<div class="swiper-pagination"></div>	
+								</div>
+								<a href="#">
+									<strong class="titDep4">명원일기</strong>
+									<div class="conUtil">
+										<span class="likeNum" title="좋아요 갯수">307</span>
+										<span class="icoScore" title="평균 평점">4.5<i title="리뷰 갯수">(1,307)</i></span>
+										<span class="starClass" title="등급">4.5성급</span>
+									</div>
+									<p class="locationDepth">
+										<span>대한민국</span>
+										<span>제주도</span>
+										<span>제주시</span>
+									</p>
+									<div class="stayInfo">
+										<span class="txt">1박, 세금포함</span>
+										<span class="price">360,000원~</span>
+									</div>
+									<div class="flagList">
+										<span class="flag jejuOnly">JEJUPASS 단독</span>
+										<span class="flag special">특가</span>
+										<span class="flag hot">HOT</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- div class="stayBanner">
+						<p class="smallTxt">오직 JEJUPASS에서만! </p>
+						<strong>도순돌담집에서의 하룻밤</strong>
+						<p class="txt">제주내음 물씬나는 #빈집프로젝트 숙소</p>
+					</div -->
+					<a href="#" class="bannerType">
+						<figure><img src="/resource/PC/images/dummy/@img_banner03.jpg" alt="EVENT - 지금 멤버십 가입, 결제하면 5% 할인! - 로그인 하고, 결제만 해도 3%할인"></figure>
+					</a>
+					<div class="boxWhite offerArea">
+						<h4 class="titDep4">이 집에서의 하루 어때요?</h4>
+						<span class="contDesc">JEJUPASS STORY</span>
+						<div class="swiperWrap otherStory" data-options='{"pagination": "bullets", "Spacebetween": 12, "view": 3, "group": 3}'>
+							<div class="swiper-container">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<a href="#">
+											<figure><img src="/resource/PC/images/dummy/@stay_img04.jpg" alt=""></figure>
+											<strong class="titDep5">돌담, 바다내음 그리고 꿈같은 풍경 제주 숲속 작은집에서의 하룻밤</strong>
+											<p class="tagWrap"><span class="tag">#애월</span><span class="tag">#돌담집</span><span class="tag">#감성숙소</span></p>
+											<span class="likeNum" title="좋아요 갯수">401</span>
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="#">
+											<figure><img src="/resource/PC/images/dummy/@stay_img04.jpg" alt=""></figure>
+											<strong class="titDep5">벽 안에 담길 즐거움을 마음 속 깊이 품어본다. 까사벽락재에서의 하루</strong>
+											<p class="tagWrap"><span class="tag">#서귀포</span><span class="tag">#감성숙소</span><span class="tag">#사계절온수풀</span></p>
+											<span class="likeNum" title="좋아요 갯수">401</span>
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="#">
+											<figure><img src="/resource/PC/images/dummy/@stay_img04.jpg" alt=""></figure>
+											<strong class="titDep5">나만 알고 싶은 남쪽 끝 숨은 보석 제주숙소</strong>
+											<p class="tagWrap"><span class="tag">#제주감성숙소</span><span class="tag">#마운틴뷰숙소</span><span class="tag">#마당이있는</span></p>
+											<span class="likeNum" title="좋아요 갯수">401</span>
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="#">
+											<figure><img src="/resource/PC/images/dummy/@stay_img04.jpg" alt=""></figure>
+											<strong class="titDep5">돌담, 바다내음 그리고 꿈같은 풍경 제주 숲속 작은집에서의 하룻밤</strong>
+											<p class="tagWrap"><span class="tag">#애월</span><span class="tag">#돌담집</span><span class="tag">#감성숙소</span></p>
+											<span class="likeNum" title="좋아요 갯수">401</span>
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="#">
+											<figure><img src="/resource/PC/images/dummy/@stay_img04.jpg" alt=""></figure>
+											<strong class="titDep5">벽 안에 담길 즐거움을 마음 속 깊이 품어본다. 까사벽락재에서의 하루</strong>
+											<p class="tagWrap"><span class="tag">#서귀포</span><span class="tag">#감성숙소</span><span class="tag">#사계절온수풀</span></p>
+											<span class="likeNum" title="좋아요 갯수">401</span>
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="#">
+											<figure><img src="/resource/PC/images/dummy/@stay_img04.jpg" alt=""></figure>
+											<strong class="titDep5">나만 알고 싶은 남쪽 끝 숨은 보석 제주숙소</strong>
+											<p class="tagWrap"><span class="tag">#제주감성숙소</span><span class="tag">#마운틴뷰숙소</span><span class="tag">#마당이있는</span></p>
+											<span class="likeNum" title="좋아요 갯수">401</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="swiper-pagination"></div>	
+						</div>
+					</div>
+					<div class="boxWhite">
+						<ul class="stayList">
+							<li>
+								<div class="swiperWrap swiperFraction" data-options='{"pagination": "fraction"}'>
+									<button type="button" class="swiper-button-prev">이전</button>	
+									<div class="swiper-container">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+										</ul>
+									</div>
+									<button type="button" class="swiper-button-next">다음</button>
+									<div class="swiper-pagination"></div>	
+								</div>
+								<a href="#">
+									<strong class="titDep4">하루나의 뜰</strong>
+									<div class="conUtil">
+										<span class="likeNum" title="좋아요 갯수">401</span>
+										<span class="icoScore" title="평균 평점">4.7<i title="리뷰 갯수">(1,307)</i></span>
+										<span class="starClass" title="등급">4.5성급</span>
+									</div>
+									<p class="locationDepth">
+										<span>대한민국</span>
+										<span>제주도</span>
+										<span>제주시</span>
+									</p>
+									<div class="stayInfo">
+										<span class="txt">1박, 세금포함</span>
+										<span class="price">450,000원~</span>
+									</div>
+									<div class="flagList">
+										<span class="flag jejuOnly">JEJUPASS 단독</span>
+										<span class="flag special">특가</span>
+										<span class="flag hot">HOT</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<div class="swiperWrap swiperFraction" data-options='{"pagination": "fraction"}'>
+									<button type="button" class="swiper-button-prev">이전</button>	
+									<div class="swiper-container">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+										</ul>
+									</div>
+									<button type="button" class="swiper-button-next">다음</button>
+									<div class="swiper-pagination"></div>	
+								</div>
+								<a href="#">
+									<strong class="titDep4">하루나의 뜰</strong>
+									<div class="conUtil">
+										<span class="likeNum" title="좋아요 갯수">401</span>
+										<span class="icoScore" title="평균 평점">4.7<i title="리뷰 갯수">(1,307)</i></span>
+										<span class="starClass" title="등급">4.5성급</span>
+									</div>
+									<p class="locationDepth">
+										<span>대한민국</span>
+										<span>제주도</span>
+										<span>제주시</span>
+									</p>
+									<div class="stayInfo">
+										<span class="txt">1박, 세금포함</span>
+										<span class="price">450,000원~</span>
+									</div>
+									<div class="flagList">
+										<span class="flag jejuOnly">JEJUPASS 단독</span>
+										<span class="flag special">특가</span>
+										<span class="flag hot">HOT</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<div class="swiperWrap swiperFraction" data-options='{"pagination": "fraction"}'>
+									<button type="button" class="swiper-button-prev">이전</button>	
+									<div class="swiper-container">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+										</ul>
+									</div>
+									<button type="button" class="swiper-button-next">다음</button>
+									<div class="swiper-pagination"></div>	
+								</div>
+								<a href="#">
+									<strong class="titDep4">하루나의 뜰</strong>
+									<div class="conUtil">
+										<span class="likeNum" title="좋아요 갯수">401</span>
+										<span class="icoScore" title="평균 평점">4.7<i title="리뷰 갯수">(1,307)</i></span>
+										<span class="starClass" title="등급">4.5성급</span>
+									</div>
+									<p class="locationDepth">
+										<span>대한민국</span>
+										<span>제주도</span>
+										<span>제주시</span>
+									</p>
+									<div class="stayInfo">
+										<span class="txt">1박, 세금포함</span>
+										<span class="price">450,000원~</span>
+									</div>
+									<div class="flagList">
+										<span class="flag jejuOnly">JEJUPASS 단독</span>
+										<span class="flag special">특가</span>
+										<span class="flag hot">HOT</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<div class="swiperWrap swiperFraction" data-options='{"pagination": "fraction"}'>
+									<button type="button" class="swiper-button-prev">이전</button>	
+									<div class="swiper-container">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+										</ul>
+									</div>
+									<button type="button" class="swiper-button-next">다음</button>
+									<div class="swiper-pagination"></div>	
+								</div>
+								<a href="#">
+									<strong class="titDep4">하루나의 뜰</strong>
+									<div class="conUtil">
+										<span class="likeNum" title="좋아요 갯수">401</span>
+										<span class="icoScore" title="평균 평점">4.7<i title="리뷰 갯수">(1,307)</i></span>
+										<span class="starClass" title="등급">4.5성급</span>
+									</div>
+									<p class="locationDepth">
+										<span>대한민국</span>
+										<span>제주도</span>
+										<span>제주시</span>
+									</p>
+									<div class="stayInfo">
+										<span class="txt">1박, 세금포함</span>
+										<span class="price">450,000원~</span>
+									</div>
+									<div class="flagList">
+										<span class="flag jejuOnly">JEJUPASS 단독</span>
+										<span class="flag special">특가</span>
+										<span class="flag hot">HOT</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<div class="swiperWrap swiperFraction" data-options='{"pagination": "fraction"}'>
+									<button type="button" class="swiper-button-prev">이전</button>	
+									<div class="swiper-container">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+										</ul>
+									</div>
+									<button type="button" class="swiper-button-next">다음</button>
+									<div class="swiper-pagination"></div>	
+								</div>
+								<a href="#">
+									<strong class="titDep4">하루나의 뜰</strong>
+									<div class="conUtil">
+										<span class="likeNum" title="좋아요 갯수">401</span>
+										<span class="icoScore" title="평균 평점">4.7<i title="리뷰 갯수">(1,307)</i></span>
+										<span class="starClass" title="등급">4.5성급</span>
+									</div>
+									<p class="locationDepth">
+										<span>대한민국</span>
+										<span>제주도</span>
+										<span>제주시</span>
+									</p>
+									<div class="stayInfo">
+										<span class="txt">1박, 세금포함</span>
+										<span class="price">450,000원~</span>
+									</div>
+									<div class="flagList">
+										<span class="flag jejuOnly">JEJUPASS 단독</span>
+										<span class="flag special">특가</span>
+										<span class="flag hot">HOT</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<div class="swiperWrap swiperFraction" data-options='{"pagination": "fraction"}'>
+									<button type="button" class="swiper-button-prev">이전</button>	
+									<div class="swiper-container">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+											<li class="swiper-slide"><img src="/resource/PC/images/dummy/@stay_img03.jpg" alt=""></li>
+										</ul>
+									</div>
+									<button type="button" class="swiper-button-next">다음</button>
+									<div class="swiper-pagination"></div>	
+								</div>
+								<a href="#">
+									<strong class="titDep4">하루나의 뜰</strong>
+									<div class="conUtil">
+										<span class="likeNum" title="좋아요 갯수">401</span>
+										<span class="icoScore" title="평균 평점">4.7<i title="리뷰 갯수">(1,307)</i></span>
+										<span class="starClass" title="등급">4.5성급</span>
+									</div>
+									<p class="locationDepth">
+										<span>대한민국</span>
+										<span>제주도</span>
+										<span>제주시</span>
+									</p>
+									<div class="stayInfo">
+										<span class="txt">1박, 세금포함</span>
+										<span class="price">450,000원~</span>
+									</div>
+									<div class="flagList">
+										<span class="flag jejuOnly">JEJUPASS 단독</span>
+										<span class="flag special">특가</span>
+										<span class="flag hot">HOT</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="btnMors">
+						<button type="button" class="icoMore">더보기</button>
+					</div>
+				</div>
+				<!-- <div class="noData">
+					<p class="tit">선택한 여정으로 검색된 숙소가 없습니다.<br>다른 여정으로 검색해주세요</p>
+				</div> -->
+			</div>
+			
+			<!-- //컨텐츠 영역 -->
+
+		</div>
+	</div><!-- //container -->
+
+	
+
+</section><!-- //wrapper -->
+<footer>
+	<div class="footInner">
+		<img src="/resource/PC/images/dummy/@footer.png" alt="">
+	</div>
+</footer>
+
+<aside>
+	<a href="#" class="myViewGo" title="내가본 렌트카 리스트 이동"><img src="/resource/PC/images/dummy/@food_368x276-01.png" alt=""><span class="listNum">3</span></a>
+	<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+</aside>
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/pc/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/p_common.js"></script>
+
+</body>
+</html>

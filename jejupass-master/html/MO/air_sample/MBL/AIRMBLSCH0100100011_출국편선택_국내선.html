@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no" />
+<title>스케줄선택화면(출국편선택) - 여행으로 연결되는 더 큰 세상! 토파스 항공예약</title>
+<link href="/air/css/kfx/mbl/airA.css" rel="stylesheet" type="text/css">
+<!-- <script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../../js/common_mbl.js"></script> -->
+</head>
+<body>
+<div id="k1_container">
+	<jsp:include page="/AIR/MBL/inc/mbl_header.html" />
+
+	<section>
+		<div class="k1_top_panel">
+			<ul>
+				<li class="back"><a href="#none" class="k1_btn"><span class="k1_icon back"></span>이전</a></li>
+				<li class="bread_crumb"><span>검색결과</span></li>
+				<li class="condition"><a href="#none" class="k1_btn">출발시간<span class="k1_icon condition"></span></a></li>
+			</ul>
+		</div>
+		
+		<div class="k1_condition_option">
+			<div class="k1_tabview tab01">
+				<a href="#none" class="k1_btn close_btn"><span class="k1_icon_min close"></span>닫기</a>
+				<!-- repeat unit -->
+				<div class="k1_custom_chk k1_w33pct">
+					<input type="checkbox" id="chk1_1" name="chk1_1" />
+					<label for="chk1_1">전체</label>
+				</div>
+				<!-- repeat unit -->
+				<div class="k1_custom_chk k1_w33pct">
+					<input type="checkbox" id="chk1_2" name="chk1_2" checked />
+					<label for="chk1_2">6시</label>
+				</div>
+				<div class="k1_custom_chk k1_w33pct">
+					<input type="checkbox" id="chk1_3" name="chk1_3" />
+					<label for="chk1_3">7시</label>
+				</div>
+				<div class="k1_custom_chk k1_w33pct">
+					<input type="checkbox" id="chk1_4" name="chk1_4" />
+					<label for="chk1_4">8시</label>
+				</div>
+				<div class="k1_custom_chk k1_w33pct">
+					<input type="checkbox" id="chk1_5" name="chk1_5" />
+					<label for="chk1_5">9시</label>
+				</div>
+				<div class="k1_custom_chk k1_w33pct">
+					<input type="checkbox" id="chk1_6" name="chk1_6" />
+					<label for="chk1_6">10시</label>
+				</div>
+			</div><!--// k1_tabview(tab01) -->
+		</div>
+		
+		<div class="k1_sch_info_panel">
+			<ul class="k1_fl k1_w50pct">
+				<li><span class="k1_from_to"></span></li>
+				<li>
+					<span class="txt k1_fnt_15rm">김포</span><span class="txt k1_fnt_15rm">제주</span>
+				</li>
+			</ul>
+			<div class="k1_fr k1_w50pct">
+				<strong>2015.07.30 ~ 2015.08.03</strong>
+				일반석 / 왕복, 성인2 소아1, 유아1 
+			</div>
+		</div>
+
+		<ul class="k1_tab t2"><!--t2~t5 탭메뉴수-->
+			<li class="active"><a href="#none">가는편 선택</a></li>
+			<li><a href="#none">오는편 선택</a></li>
+		</ul>
+
+		<!-- repeat unit -->
+		<table class="k1_sch_result_details">
+			<colgroup>
+				<col class="k1_w50pct" />
+				<col />
+				<col />
+			</colgroup>
+			<tr>
+				<td class="k1_al ">
+					<span class="k1_air_name"><img src="/air/wfw/imgs/mbl/logo/air/KE.png" alt="KE" title="대한항공" class="k1_air_logo">대한항공 KE1201편</span>
+				</td>
+				<td class=""></td>
+				<td class="k1_ar k1_clr_yb_second k1_fnt_15rm k1_bold">
+					174,300원
+				</td>
+			</tr>
+			<tr class="k1_bg_light_gray1 ">
+				<td class="k1_al">
+					<ul class="time-info">
+						<li>2018.02.28(수) </li>
+						<li class="k1_fnt_18rm k1_bold">06:45~07:55</li>
+					</ul>
+				</td>
+				<td>
+				</td>
+				<td class="k1_ar">
+					<ul class="seat-info">
+						<li><strong><span class="card"><img src="/air/wfw/imgs/mbl/ico/ke_wclass.png" alt="앞 좌석과의 거리가 4인치 넓은 일반석" title="앞 좌석과의 거리가 4인치 넓은 일반석"/></span></strong></li>
+						<li><strong>비지니스석 </strong><strong>4석</strong></li>
+						<li><span class="k1_status black"><span class="k1_clr_yb">좌석 OK</span></span></li>
+					</ul>
+				</td>
+			</tr>			
+
+		</table>
+		<!--// repeat unit -->
+
+		<!-- repeat unit -->
+		<table class="k1_sch_result_details">
+			<colgroup>
+				<col class="k1_w50pct" />
+				<col />
+				<col />
+			</colgroup>
+			<tr>
+				<td class="k1_al ">
+					<span class="k1_air_name"><img src="/air/wfw/imgs/mbl/logo/air/KE.png" alt="KE" title="대한항공" class="k1_air_logo">대한항공 KE1201편</span>
+				</td>
+				<td class=""></td>
+				<td class="k1_ar k1_clr_yb_second k1_fnt_15rm k1_bold">
+					174,300원
+				</td>
+			</tr>
+			<tr class="k1_bg_light_gray1 ">
+				<td class="k1_al">
+					<ul class="time-info">
+						<li>2018.02.28(수) </li>
+						<li class="k1_fnt_18rm k1_bold">06:45~07:55</li>
+					</ul>
+				</td>
+				<td>
+				</td>
+				<td class="k1_ar">
+					<ul class="seat-info">
+						<li><strong>비지니스석 </strong><strong>4석</strong></li>
+						<li><span class="k1_status black"><span class="k1_clr_yb">좌석 OK</span></span></li>
+					</ul>
+				</td>
+			</tr>			
+
+		</table>
+		<!--// repeat unit -->
+
+		<!-- repeat unit -->
+		<table class="k1_sch_result_details">
+			<colgroup>
+				<col class="k1_w50pct" />
+				<col />
+				<col />
+			</colgroup>
+			<tr>
+				<td class="k1_al ">
+					<span class="k1_air_name"><img src="/air/wfw/imgs/mbl/logo/air/KE.png" alt="KE" title="대한항공" class="k1_air_logo">대한항공 KE1201편</span>
+				</td>
+				<td class=""></td>
+				<td class="k1_ar k1_clr_yb_second k1_fnt_15rm k1_bold">
+					174,300원
+				</td>
+			</tr>
+			<tr class="k1_bg_light_gray1 ">
+				<td class="k1_al">
+					<ul class="time-info">
+						<li>2018.02.28(수) </li>
+						<li class="k1_fnt_18rm k1_bold">06:45~07:55</li>
+					</ul>
+				</td>
+				<td>
+				</td>
+				<td class="k1_ar">
+					<ul class="seat-info">
+						<li><strong>비지니스석 </strong><strong>4석</strong></li>
+						<li><span class="k1_status black"><span class="k1_clr_yb">좌석 OK</span></span></li>
+					</ul>
+				</td>
+			</tr>			
+
+		</table>
+		<!--// repeat unit -->
+
+
+
+
+		<div class="k1_grid k1_bg_light_gray1 k1_pdt20">
+			<a href="#none" class="k1_btn max"><span class="k1_icon arr_down"></span>더보기<span class="page_cnt">(1/20)</span></a>
+		</div>
+	</section>
+
+	<jsp:include page="/AIR/MBL/inc/mbl_footer.html" />
+	<jsp:include page="/AIR/MBL/inc/mbl_side.html" />
+	<div class="k1_slide_blind" style="display:none;"></div>
+</div><!--// k1_container -->
+</body>
+</html>

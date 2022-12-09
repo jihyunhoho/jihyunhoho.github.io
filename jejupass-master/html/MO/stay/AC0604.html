@@ -1,0 +1,195 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>숙소예약</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="/resource/MO/images/favicon/apple_touch_icon.ico">
+<link rel="apple-touch-icon" href="/resource/MO/images/favicon/apple_touch_icon_144.ico">
+<link href="/resource/MO/css/m_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/MO/css/m_contents.min.css" rel="stylesheet" type="text/css">
+<style>
+	.layPop{display:block !important;bottom:0 !important}
+	.dimmed{display:block !important}
+</style>
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper defaultWrapper">
+
+</section><!-- //wrapper -->
+<footer>
+	<img src="/resource/MO/images/dummy/@footer.png" alt="">
+</footer>
+
+<aside>
+	<div class="asideRight">
+		<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+	</div>
+	
+</aside>
+
+<!-- 필터 팝업 -->
+<section id="pop_quickSearch" class="layPop layBtm popFilter" tabindex="0" >
+	<div class="tabWrap tabScript">
+		<button type="button" class="prev"><span>이전</span></button>
+		<ul class="tabType02">
+			<li><a href="#tabContent01" role="button" aria-selected="true">숙소유형</a></li>
+			<li><a href="#tabContent02" role="button" aria-selected="false">가격범위</a></li>
+			<li><a href="#tabContent03" role="button" aria-selected="false">호텔등급</a></li>
+			<li><a href="#tabContent04" role="button" aria-selected="false">평점</a></li>
+			<li><a href="#tabContent05" role="button" aria-selected="false">편의시설 및 서비스</a></li>
+			<li><a href="#tabContent07" role="button" aria-selected="false">기타</a></li>
+		</ul>
+		<button type="button" class="next"><span>다음</span></button>
+	</div>
+
+	<div class="layContainer" tabindex="0">
+		<div class="layContent">
+			
+			<h3 class="titDep4" id="tabContent01">숙소유형</h3>
+			<!-- 211125 수정 -->
+			<ul class="frmBox boxCol03">
+				<li><input type="checkbox" id="chkTypeAll" name="chkType"><label for="chkTypeAll">전체</label></li>
+				<li><input type="checkbox" id="chkType01" name="chkType"><label for="chkType01">호텔</label></li>
+				<li><input type="checkbox" id="chkType02" name="chkType"><label for="chkType02">펜션</label></li>
+				<li><input type="checkbox" id="chkType03" name="chkType"><label for="chkType03">독채</label></li>
+				<li><input type="checkbox" id="chkType04" name="chkType"><label for="chkType04">골프텔</label></li>
+				<li><input type="checkbox" id="chkType05" name="chkType"><label for="chkType05">풀빌라</label></li>
+				<li><input type="checkbox" id="chkType06" name="chkType"><label for="chkType06">한옥</label></li>
+				<li><input type="checkbox" id="chkType07" name="chkType"><label for="chkType07">모텔</label></li>
+				<li><input type="checkbox" id="chkType08" name="chkType"><label for="chkType08">게스트하우스</label></li>
+				<li><input type="checkbox" id="chkType09" name="chkType"><label for="chkType09">캠핑&middot;글램핑</label></li>
+			</ul>
+			<!-- //211125 수정 -->
+			<div class="bgLine"></div>
+			<h3 class="titDep4" id="tabContent02">가격범위</h3>
+			<div class="fp_slideArea">
+				<div class="slideValue">
+					<span class="minValue">최소</span>
+					<span class="maxValue">최대</span>
+				</div>
+				<div id="slider-range" class="slider" data-options='{"range": true, "min": 20000, "max": 300000, "step": 10000, "values": [50000, 200000], "text":"원" }'></div><!-- 10.12 : 클래스 추가 및 옵션값 수정 -->
+				<div class="fp_slideInp">
+					<input type="text" class="amount" readonly>
+					<span class="dash">~</span>
+					<input type="text" class="amount" readonly>
+				</div>
+			</div>
+
+			<div class="bgLine"></div>
+			<h3 class="titDep4" id="tabContent03">호텔등급</h3>
+			<ul class="frmBox boxCol03 frmGrade">
+				<li><input type="radio" id="chkGrade01" name="chkGrade"><label for="chkGrade01">1</label></li>
+				<li><input type="radio" id="chkGrade02" name="chkGrade"><label for="chkGrade02">2</label></li>
+				<li><input type="radio" id="chkGrade03" name="chkGrade"><label for="chkGrade03">3</label></li>
+				<li><input type="radio" id="chkGrade04" name="chkGrade"><label for="chkGrade04">4</label></li>
+				<li><input type="radio" id="chkGrade05" name="chkGrade"><label for="chkGrade05">5</label></li>
+			</ul>
+
+			<div class="bgLine"></div>
+			<h3 class="titDep4" id="tabContent04">평점</h3>
+			<!-- 211129 수정 -->
+			<!-- <div class="fp_slideArea gradeMWrap">
+				<div id="slider-range" class="slider" data-options='{"range": true, "min": 1, "max": 5, "step": 1, "values": [1, 3], "text":"점" }'>
+					<div class="gradeMarke"><em>1점</em><em>2점</em><em>3점</em><em>4점</em><em>5점</em></div>
+				</div>
+			</div> -->
+			<ul class="frmBox">
+				<li><input type="checkbox" id="chkConv301" name="chkConv3"><label for="chkConv301">5.0 최고 좋음</label></li>
+				<li><input type="checkbox" id="chkConv302" name="chkConv3" checked><label for="chkConv302">4.5 매우 좋음</label></li>
+				<li><input type="checkbox" id="chkConv303" name="chkConv3"><label for="chkConv303">4.0 좋음</label></li>
+				<li><input type="checkbox" id="chkConv304" name="chkConv3"><label for="chkConv304">3.5 보통 이상</label></li>
+				<li><input type="checkbox" id="chkConv305" name="chkConv3"><label for="chkConv305">3.0 상태 양호</label></li>
+			</ul>
+			<!-- //211129 수정 -->
+
+			<div class="bgLine"></div>
+			<h3 class="titDep4" id="tabContent05">편의시설 및 서비스</h3>
+			<h4 class="titDep6">공용시설</h4>
+			<ul class="frmBox boxCol03">
+				<li><input type="checkbox" id="chkConv001" name="chkConv" checked><label for="chkConv001">Wi-Fi</label></li>
+				<li><input type="checkbox" id="chkConv002" name="chkConv" checked><label for="chkConv002">스파&middot;사우나</label></li>
+				<li><input type="checkbox" id="chkConv003" name="chkConv"><label for="chkConv003">수영장</label></li>
+				<li><input type="checkbox" id="chkConv004" name="chkConv"><label for="chkConv004">레스토랑</label></li>
+				<li><input type="checkbox" id="chkConv005" name="chkConv"><label for="chkConv005">라운지</label></li>
+				<li><input type="checkbox" id="chkConv006" name="chkConv"><label for="chkConv006">피트니스</label></li>
+				<li><input type="checkbox" id="chkConv007" name="chkConv"><label for="chkConv007">편의점</label></li>
+				<li><input type="checkbox" id="chkConv008" name="chkConv"><label for="chkConv008">노래방</label></li>
+				<li><input type="checkbox" id="chkConv009" name="chkConv"><label for="chkConv009">온천</label></li>
+				<li><input type="checkbox" id="chkConv010" name="chkConv"><label for="chkConv010">골프장</label></li>
+				<li><input type="checkbox" id="chkConv011" name="chkConv"><label for="chkConv011">스키장</label></li>
+				<li><input type="checkbox" id="chkConv012" name="chkConv"><label for="chkConv012">세탁시설</label></li>
+				<li><input type="checkbox" id="chkConv013" name="chkConv"><label for="chkConv013">24시 프론트</label></li>
+				<li><input type="checkbox" id="chkConv014" name="chkConv"><label for="chkConv014">짐 보관 서비스</label></li>
+				<li><input type="checkbox" id="chkConv015" name="chkConv"><label for="chkConv015">다국어 지원</label></li>
+			</ul>
+			<h4 class="titDep6">객실 내 시설</h4>
+			<ul class="frmBox boxCol03">
+				<li><input type="checkbox" id="chkConv101" name="chkConv1" checked><label for="chkConv101">객실스파</label></li>
+				<li><input type="checkbox" id="chkConv102" name="chkConv1" checked><label for="chkConv102">미니바</label></li>
+				<li><input type="checkbox" id="chkConv103" name="chkConv1"><label for="chkConv103">Wi-Fi</label></li>
+				<li><input type="checkbox" id="chkConv104" name="chkConv1"><label for="chkConv104">용실용품</label></li>
+				<li><input type="checkbox" id="chkConv105" name="chkConv1"><label for="chkConv105">TV</label></li>
+				<li><input type="checkbox" id="chkConv106" name="chkConv1"><label for="chkConv106">에어컨</label></li>
+				<li><input type="checkbox" id="chkConv107" name="chkConv1"><label for="chkConv107">냉장고</label></li>
+				<li><input type="checkbox" id="chkConv108" name="chkConv1"><label for="chkConv108">객실샤워실</label></li>
+				<li><input type="checkbox" id="chkConv109" name="chkConv1"><label for="chkConv109">욕조</label></li>
+				<li><input type="checkbox" id="chkConv110" name="chkConv1"><label for="chkConv110">드라이기</label></li>
+				<li><input type="checkbox" id="chkConv111" name="chkConv1"><label for="chkConv111">다리미</label></li>
+				<li><input type="checkbox" id="chkConv112" name="chkConv1"><label for="chkConv112">전기밥솥</label></li>
+			</ul>
+			<h4 class="titDep6">기타시설</h4>
+			<ul class="frmBox">
+				<li><input type="checkbox" id="chkConv201" name="chkConv2" checked><label for="chkConv201">조식포함</label></li>
+				<li><input type="checkbox" id="chkConv202" name="chkConv2" checked><label for="chkConv202">무료주차</label></li>
+				<li><input type="checkbox" id="chkConv203" name="chkConv2"><label for="chkConv203">객실내취사</label></li>
+				<li><input type="checkbox" id="chkConv204" name="chkConv2"><label for="chkConv204">반려동물동반</label></li>
+				<li><input type="checkbox" id="chkConv205" name="chkConv2"><label for="chkConv205">객실내흡연</label></li>
+				<li><input type="checkbox" id="chkConv206" name="chkConv2"><label for="chkConv206">발렛파킹</label></li>
+				<li><input type="checkbox" id="chkConv207" name="chkConv2"><label for="chkConv207">금연</label></li>
+				<li><input type="checkbox" id="chkConv208" name="chkConv2"><label for="chkConv208">프린터사용</label></li>
+				<li><input type="checkbox" id="chkConv209" name="chkConv2"><label for="chkConv209">픽업가능</label></li>
+				<li><input type="checkbox" id="chkConv210" name="chkConv2"><label for="chkConv210">카드결제</label></li>
+				<li><input type="checkbox" id="chkConv211" name="chkConv2"><label for="chkConv211">장애인 편의시설</label></li>
+				<li><input type="checkbox" id="chkConv212" name="chkConv2"><label for="chkConv212">세마나&middot;회의실</label></li>
+			</ul>
+
+			<div class="bgLine"></div>
+			<h3 class="titDep4" id="tabContent07">기타</h3>
+			
+			<ul class="frmList">
+				<li class="frmInp txt"><input type="checkbox" id="chkEtc01"><label for="chkEtc01">취소 수수료 없음<span class="txtEtc">무료 취소가 가능한 숙소만 표시</span></label></li>
+				<li class="frmInp txt"><input type="checkbox" id="chkEtc02"><label for="chkEtc02">친환경 숙소<span class="txtEtc">빈집 재생 프로젝트 숙소만 표시</span></label></li>
+			</ul>
+			
+
+		</div><!-- //layContent -->
+
+		<div class="floatingBtns floatingCase02">
+			<div class="floatingInner">
+				<button type="reset" class="btnDefault btnL btIco icoReset">초기화</button>
+				<button type="submit" class="btnDefault btnL action">숙소 검색</button>
+			</div>
+		</div>
+		
+	</div><!-- //layCont-->
+	<button type="button" class="closeL">팝업 닫기</button>
+
+</section>
+<!-- //필터 팝업 -->
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+</body>
+</html>

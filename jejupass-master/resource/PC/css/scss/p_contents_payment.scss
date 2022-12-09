@@ -1,0 +1,529 @@
+@charset "utf-8";
+
+@import '_pbase', '_pfont';
+
+// 결제
+.paymentPage{
+    &.viewContents{padding-top:0}
+
+    .inpFrm{
+        &.kf_chargePay{
+            & + .inpFrm.kf_chargePay{margin-left:8px;
+                .inpA{
+                    input{background-color:$body_color;font-weight:$weight700;text-decoration:none;}
+                }
+            }
+            .inpA{
+                input{width:276px;padding:0 16px 0 75px;background-color:$col_g200;text-decoration:underline}
+            }
+        }
+        .titLab{flex:0 0 128px; color:$col_g900;font-weight:$weight700;//margin-right:16px
+        }
+        .inpA{
+            input{display:inline-block;width:560px}
+            .btnLineG{margin-left:4px;vertical-align:middle}
+        }
+    }
+
+    .allPoint{display:block;margin-bottom:16px;text-align:right;
+        .frmInp.txt.frmInpS{display:inline-block;margin-top:10px}
+    }
+
+    .kf_chargePay{
+        .kf_priceBtns{
+            .btIco.icoChange{right:-30px;
+                &:after{background-position:-412px 0}
+            }
+        }
+    }
+    
+}
+.kf_payList{//padding:20px 0 0;
+	> li{display:flex;position:relative;margin-top:12px;width:100%;//justify-content:center;align-items:center;
+        &:after{content:'';display:block;clear:both}
+		&:first-child{margin-top:0}
+        > .inpFrm.inpDeleteAni{flex:1}
+		.tit, .contR{width:100%;color:$col_g800;font-weight:$weight600;line-height:1.2}
+		.tit{width:50%;font-weight:$weight600;
+			.btDel{@extend %textHidden;position:relative;width:18px;height:18px;margin-left:4px;vertical-align:-2px;
+				&:after{@include pseudo(18px,18px);background:url(#{$img_url}/common/spr_ico.png) no-repeat -48px 0}
+			}
+            .toolTip{display:inline-block;position:relative;height:20px;margin-left:7px;padding:0 8px;color:$col_p300;font-size:rem(12px);font-weight:$weight600;line-height:20px;border-radius:6px;background:$col_p800;
+				&:before{content:'';display:block;position:absolute;top:50%;left:-2px;width:4px;height:4px;margin-top:-2px;background:$col_p800;@include prefix(transform,rotate(45deg));}
+                em{color:$body_color;font-size:rem(12px)}
+			}
+		}
+		strong.contR{padding-bottom:0;text-align:right;}
+        &.discountPoint{display:inline-block;
+            &:after{content:'';display:block;clear:both}
+            > .title{float:left;width:128px}
+            > .inpFrm.kf_chargePay{float:left;}
+        }
+		&.total{margin-top:16px;padding:18px 0 0;border-top:1px dotted $col_g200;
+			.tit{color:$col_g800;font-size:rem(20px);font-weight:$weight700}
+			.contR{color:$col_g800;font-size:rem(20px);font-weight:$weight700;
+                &.red{color:$col_redP}
+            }
+            &.save{
+                .contR{color:$col_p600}
+            }
+		}
+	}	
+	// & + .btnArea{margin-top:24px}
+	// &.type02{margin-top:24px;padding-top:23px;border-top:1px dotted $col_g300;
+	// 	> li{
+	// 		.tit{width:200%}
+	// 		.contR{font-weight:$weight600;
+	// 			&.balance{color:$col_p600}
+	// 		}
+	// 	}
+	// }
+	// &.typeSub{
+	// 	> li{display:block;text-align:right;margin-top:12px;
+	// 		&:first-child{margin-top:0}
+	// 		.tit{float:left;width:auto;color:$col_g800;font-weight:$weight600}
+	// 		.contR{display:inline-block;width:auto;color:$col_g800;font-weight:$weight600}
+	// 		&.kf_total{margin-top:15px;border-top:1px dotted $col_g200;
+	// 			.tit, .contR{color:$col_g800;font-size:rem(16px);font-weight:$weight700;line-height:56px}
+	// 		}
+	// 	}
+	// }
+	// .kf_payDetail{display:block;margin-top:10px;text-align:left;
+	// 	> li{position:relative;padding-left:12px;text-align:right;
+	// 		&:before{content:'';display:block;position:absolute;top:3px;left:0;width:5px;height:6px;border:solid $col_g300;border-width:0 0 1px 1px}
+	// 		.tit, .contR{display:inline-block;color:$col_g600;font-size:rem(14px);font-weight:$weight400}
+	// 		.tit{float:left}
+	// 	}
+	// }
+	// &.kf_pointList{
+	// 	> li{
+	// 		.tit{width:100%;
+	// 			*{vertical-align:middle}
+	// 			.toolTip{position:relative;display:inline-block;margin-left:7px;padding:0 5px;border-radius:6px;height:20px;line-height:20px;color:$col_p300;font-size:rem(12px);font-weight:$weight600;background:$col_primary;
+	// 				em{display:inline-block;padding-left:3px;color:$col_white}
+	// 				&:before{content:'';display:block;position:absolute;top:50%;left:-2px;width:6px;height:6px;margin-top:-4px;border-radius:2px;background:$col_primary;@include prefix(transform,rotate(45deg) skew(-3deg, -3deg));}
+	// 			}
+	// 		}
+	// 		.contR{font-weight:$weight600}
+	// 		&.total{
+	// 			.contR{color:$col_p600;font-weight:$weight700}
+	// 		}
+	// 	}
+	// }
+	& + .guideInfo{margin:16px 0;
+		&:before{content:'';display:block;position:absolute;top:-17px;left:0;width:100%;height:1px;background:$col_g200}
+	}
+    .couponList{
+        li{margin-top:16px}
+    }
+}
+
+.grayBox.loginInfo{position:relative;width:656px;padding:17px 16px;
+	p.listType02{margin-top:0}
+	.btLink{position:absolute;top:50%;right:11px;margin-top:-18px;color:$col_g900;font-size:rem(16px);font-weight:$weight600;text-decoration:underline;}
+	.tit{margin-bottom:9px;font-weight:$weight600}
+	.txt{color:$col_g600;font-size:rem(14px)}
+}
+.benefitWrap{position:relative;//margin:16px 0;
+    .title{flex:0 0 128px;height:56px;line-height:56px;color:$col_g900;vertical-align:top;//
+    }
+    .downCoupon{overflow:hidden;position:relative;width:656px;padding-right:45px;border-radius:8px;background:$col_g100;
+        &:before{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;border:1px solid $col_g200;border-radius:8px;box-sizing:border-box}
+        .link{position:absolute;top:0;right:0;width:45px;height:100%;display:block;border-left:1px dotted $col_g200;background:url(#{$img_url}/common/bg_arr01.png) no-repeat 50% 50%;background-size:12px 12px;font-size:0;
+            &:after,&:before{content:'';display:block;position:absolute;left:-6px;width:12px;height:12px;border:1px solid $col_g200;border-radius:50%;background:$col_white;z-index:100;box-sizing:border-box}
+            &:before{top:-6px;}
+            &:after{bottom:-6px;}
+            
+        }
+        .tit{@include ellipsis(1, auto);padding:0 0 0 16px;color:$col_g900;font-size:rem(16px);font-weight:$weight700;line-height:54px;}
+        span.link .tit{color:$col_g500}
+        .kf_couponNum{position:absolute;top:50%;right:60px;margin-top:-10px;color:$col_p600}
+        &.downChange{
+            .kf_couponNum{color:$col_redP}
+            .link{background-image:url(#{$img_url}/common/bg_change.png)}
+        }
+        &.downNone{
+            .kf_couponNum{color:$col_g600}
+            .link{pointer-events:none;}
+        }
+        &.downAir{
+            .tit{padding:0 0 0 16px;
+                span{color:$col_g600;font-size:rem(13px);vertical-align:text-top;
+                    & + span{margin-right:16px;
+                        &:before{content:'';display:inline-block;width:1px;height:12px;margin:0 6px;background-color:$col_g200;vertical-align:middle}
+                    }
+                }
+            }
+            .link{position:absolute;top:0;right:0;width:45px;height:100%;display:block;border-left:1px dotted $col_g200;background:url(#{$img_url}/common/bg_close.png) no-repeat 50% 50%;background-size:12px 12px;font-size:0}
+            .kf_couponNum{color:$col_redP}
+        }
+    }
+    .chargingPoint{display:flex;flex-direction:column;width:100%;margin-top:24px;padding-top:8px;border-top:1px dotted $col_g200;
+        > li{display:flex;margin-top:16px;
+            .title{flex:100%;height:auto;color:$col_g900;line-height:1.5;}
+            .pointTxt{width:100%;color:$col_g800;font-weight:$weight600;text-align:right;
+                &.purple{color:$col_p600}
+            }
+        }
+    }
+}
+
+.kf_pointCharge{margin-top:12px;border:1px solid $col_g200;border-radius:8px;
+	.kf_titPay{margin-top:24px;padding-top:22px;border-top:1px dotted $col_p400;color:$col_g800;font-weight:$weight600;}
+	> .acctItem{
+		.toggleBtn{height:56px;padding:0 20px;color:$col_g900;font-weight:$weight700;line-height:56px;border-radius:8px;background-color:$col_p100;
+			em{color:$col_p600;font-weight:$weight700;}
+			.layChargeTip{display:inline-block;position:relative;height:20px;margin-left:7px;padding:0 17px 0 8px;color:$col_white;font-size:rem(12px);font-weight:$weight600;line-height:20px;border-radius:6px;background:$col_p500;
+				&:before{content:'';display:block;position:absolute;top:50%;left:-2px;width:4px;height:4px;margin-top:-2px;background:$col_p500;@include prefix(transform,rotate(45deg));}
+				&:after{content:'';display:block;position:absolute;right:8px;top:50%;width:4px;height:4px;margin-top:-3px;border:2px solid $col_p400;border-width:2px 2px 0 0;@include prefix(transform,rotate(45deg));}
+			}
+		}
+		.toggleCont{border-top:1px dotted $col_g200;
+			.inner{padding:24px;
+                .benefitWrap{margin:24px 0;padding-top:24px;border-top:1px dotted $col_g200;
+                    &:first-child{margin-top:8px;padding-top:0;border-top:0}
+                }
+                .inpFrm{
+                    &.kf_chargePay{margin-top:16px;
+                        .listType02.small{display:inline-block;margin:0}
+                        .kf_priceBtns{display:inline-block;margin:0 0 0 30px}
+                    }
+                    input{width:618px}
+                }
+                
+				.kf_accountList{
+					> li{
+						.tit, .contR{color:$col_g800;font-weight:$weight600}
+						.tit{width:200%}
+						.balance{color:$col_p600}
+					}
+				}
+                .swiperWrap.swiperAccount{
+                    li{width:248px}
+                    //.kf_cardWrap{width:248px}
+                }
+			}
+		}
+	}	
+}
+
+.kf_selPayment{
+	> li{padding:24px 0;border-top:1px dashed $col_g200;
+		&:first-child{border-top:none}
+		.frmInp.txt{
+			label{font-weight:$weight700}
+			&[aria-expanded=true] + .payDetailCont{display:block}
+		}
+        .frmInp.txt.inpAcct + .grayBox{width:100%}
+        .grayBox + .kf_payList.benefitWrap{margin-top:24px}
+		.grayBox{position:relative;margin-top:16px;padding:17px 16px;
+			p.listType02{margin-top:0}
+			.btLink{position:absolute;top:50%;right:11px;margin-top:-18px;color:$col_g900;font-weight:$weight600}
+			.tit{margin-bottom:9px;font-weight:$weight600}
+			.txt{color:$col_g600;font-size:rem(14px)}
+		}
+		.payDetailCont{display:none;
+			.swiperAccount{margin:16px 0 16px 32px;
+               //.kf_cardWrap{width:248px}
+            }
+			.payInstallment{padding:0 30px;
+                .selectWrap{width:248px;
+                    .ul-selectmenu-button{
+                        span{line-height:40px}
+                    }
+                }
+            }
+		}
+	}
+}
+.btnsPayEtc{position:relative;margin:0 -5px -10px;padding:15px 0 0;font-size:0;
+    &:before{content:'';display:block;position:absolute;top:0;left:5px;right:5px;border-top:1px dashed $col_g200;}
+    .btLink{font-weight:$weight600;
+        em{color:$col_p600;font-size:rem(14px);font-weight:$weight600}
+        & + .btLink{padding-left:25px;
+            &:before{content:'';display:block;position:absolute;top:50%;left:12px;width:1px;height:14px;margin-top:-6px;background:$col_g200} 
+        }
+    }
+}
+
+.simplePayList{display:flex;padding:0 20px;margin-top:12px;flex-wrap:wrap;
+	> li{position:relative;flex:0 0 246px;padding:4px;
+		input{position:absolute;top:20px;left:20px;
+			&:checked + label{border-color:$col_p300;background:$col_p100;
+				span{color:$col_p600;font-weight:$weight600}
+			}
+		}
+		label{display:flex;height:56px;padding:0 32px;border:1px solid $col_g200;border-radius:8px;flex-direction:row;align-items:center;
+			figure{margin-right:40px;
+                img{width:auto;height:32px}
+            }
+		}
+	}
+}
+
+.floatingPayment{
+    &.floatingCont{top:0}
+    &.floatingCont.fixedPayment{top:96px}
+    &.floatingCont.filterFoot{top:auto}
+
+    .titDep3{margin:0 -24px 28px !important;padding:0 24px 16px !important}
+    .titDesc{font-size:rem(14px)}
+    .borderTop{margin:32px -24px 0;padding:12px 24px 0;border-top:1px dotted $col_g200 !important}
+    .rentcarList{margin-top:12px;
+        li{margin:8px 0;padding:16px;background-color:$col_g100;border-radius:8px;
+            &:first-child{margin-top:0;}
+            &:last-child{margin-bottom:0;}
+        }
+        li.select{background-color:$col_p100}
+        a{display:flex;
+            &.btLink.icArr.light:after{margin-top:-4px;margin-left:8px;}
+        }
+        .tit{width:100%;font-size:rem(14px);font-weight:$weight600;color:$col_g800}
+        .option{width:100%;font-size:rem(14px);text-align:right;color:$col_g500}
+        .select .option{font-weight:$weight600;color:$col_p600}
+    }
+    .sideList.guideInfo{margin-top:32px !important}
+    .cardBtn{margin-top:12px;text-align:right;
+        a{padding:0}
+    }
+    .btLink.btLine{text-align:right;color:$col_g600}
+    .totalPay{
+        .detail{display:flex;justify-content:space-between;color:$default_col;
+            .tit{width:100%;color:$col_g900;font-weight:$weight600;line-height:1.75}
+            .pay{color:$col_g900;font-size:rem(18px);font-weight:$weight700;line-height:1.56;
+                &.discount{color:$col_redP}
+                &.total{color:$col_p600;font-size:rem(18px)}
+            }
+        }
+    }
+    .guideInfo{margin:22px -30px 0 !important;padding:30px 30px 0 !important}
+    .detailList{margin-top:7px;
+        li{display:flex;position:relative;margin-top:13px;
+            &:before{content:'';display:inline-block;position:absolute;top:5px;left:0;width:8px;height:9px;border:solid $col_g300;border-width:0 0 1px 1px;}
+            .tit{width:100%;margin:0 16px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+            .pay{text-align:right;font-weight:$weight600;color:$col_g800}
+        }
+        &.discount{
+            .pay{color:$col_redP}
+        }
+    }
+    .infoText{display:block;margin-top:16px;padding:16px;color:$col_g600;font-size:rem(14px);text-align:center;border-radius:8px;background-color:$col_g100}
+}
+
+
+// 쿠폰
+.pop_couponList{
+    .listType02.small{margin-top:0}
+}
+
+// 포인트 충전
+.pop_pointCharge{
+    .pageTit.pageTitP{margin-bottom:0}
+    .pageTit.pageTitP+.subTit{display:block;margin-top:16px}
+    .btIco.icoChange:after{background-position:-412px 0}
+    .guideInfo{position:relative;padding:0;border:0;}
+    .bannerType.bannerTop+.guideInfo{margin:0 -24px;padding:24px;border-top:8px solid $col_g100;
+        &:before{content:'';display:block;position:absolute;top:-8px;left:0;width:100%;height:1px;background-color:$col_g200;}
+    }
+}
+.kf_pointChargeWrap{margin:32px -20px 0;padding:32px 20px;background:$col_g100;	
+	.kf_titPay{margin:24px 0 16px;padding-top:22px;border-top:1px dotted $col_g200;color:$col_g800;font-weight:$weight600}
+	.swiperAccount{padding:0 84px}//padding:0 92px
+	& + .bannerType{display:block;margin:32px 0}
+}
+.kf_chargePay{display:block;position:relative;margin-top:0;
+	.subCont a{color:$col_redP}
+	label{display:inline-block;position:absolute;top:13px;left:16px;margin:0;color:$col_g800;font-size:rem(16px);font-weight:$weight600;z-index:10}
+	.inpA{
+		input{width:100%;padding:0 30px 0 130px;border:1px solid $col_g200;border-radius:8px;text-align:right;line-height:48px;background:#fff;
+			&:-ms-input-placeholder{color:$col_g400;font-weight:$weight400}
+			&::-ms-input-placeholder{color:$col_g400;font-weight:$weight400}
+			&::placeholder{color:$col_g400;font-weight:$weight400}
+		}
+		.unit{position:absolute;top:-2px;right:16px;}
+	}
+	.kf_priceBtns{display:flex;position:relative;margin:12px -2px 0;
+		.inpPay{position:relative;width:62px;height:32px;margin:0 2px;padding:0;font-size:rem(14px);border:1px solid $col_g300;border-radius:32px;text-align:center;background:$col_white}
+		.btIco{position:absolute;top:0;right:0;width:32px;height:32px;}
+	}
+}
+.swiperWrap{
+    &.swiperGap{
+        .swiper-container{overflow:visible}//position:relative;width:calc(100% - 0px)
+    }
+}
+
+.swiperAccount{//margin:16px -20px -24px;padding:0 44px 24px;
+	.swiper-wrapper{position:static;}
+	.swiper-container{
+		.swiper-slide{width:248px}
+	}
+    [class^=swiper-button]{margin-top:-20px}
+	.kf_cardWrap{position:relative;color:$col_white;//height:144px;
+        input{position:absolute;top:20px;left:20px;
+            &:checked + label{
+                &:after{@include pseudo(32px,32px);top:16px;right:16px;left:auto;margin:0;background:url(#{$img_url}/common/spr_ico.png) no-repeat -332px -30px;z-index:1000}
+            }
+        }
+        label{display:block;position:relative}
+		img{width:100%;border-radius:12px;box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.08)}
+		.acctName{position:absolute;top:20px;left:20px;color:rgba($col_white, 0.8);font-size:rem(13px)}
+		.kf_accountInfo{position:absolute;left:20px;bottom:20px;color:$col_white;
+			.bankName{display:block;color:$col_white;font-size:rem(15px)}
+			.bankAccountNum{color:$col_white}
+		}
+	}
+	.selectWrap{margin-top:16px;transform:none;
+		.ui-selectmenu-menu{transform:none;}
+	}
+	.kf_applyCont{display:flex;width:100%;height:100%;border-radius:12px;border:1px solid $col_g200;text-align:center;align-items:center;justify-content:center;background:$col_g100;flex-direction:column;background:$col_g100;//height:148px;
+		strong, span{display:block}
+		strong{position:relative;padding-top:40px;color:$col_g800;
+			&:before{@include pseudo(26px,26px);top:-1px;margin-top:0;background:url(#{$img_url}/common/spr_ico.png) no-repeat -430px 0}
+		}
+		span{color:$col_g600;font-size:rem(14px)}
+	}
+	&.swiperPointCharge{padding:0 63px}
+}
+
+
+// 포인트 사용
+.pop_pointInfo{
+    .titDesc{margin-top:12px}
+    .titDesc + h3.titDep4{margin-top:32px}
+
+    .infoSet{
+        .tit{color:$col_g800;font-weight:$weight600;}
+    }
+    .listType01{
+        li{
+            .pur{color:$col_p600}
+            .uLine:after{background-color:$col_p600}
+        }
+    }
+}
+
+// 포인트 상세
+.pop_pointList{
+	.grayBox{
+        .sideList{
+            >li{
+                .contR{font-weight:$weight600}
+            }
+        }
+    }
+    .listType01{
+        >li{line-height:1.38}
+    }
+}
+
+.pointList{display:flex;justify-content:center;margin:32px 16px 0;text-align:center;
+    li{display:flex;flex-direction:column;justify-content:center;align-items:center;margin:0 22px;
+        .tit{display:flex;flex-direction:column;justify-content:center;align-items:center;width:104px;height:104px;border-radius:100%;font-weight:$weight600;
+            b{display:block;margin-top:5px;font-size:rem(26px);font-weight:$weight700;line-height:0.88;}
+        }
+        .infoFlag{width:96px;height:32px;margin-top:12px;padding:6px 0;border-radius:8px;color:$body_color;font-size:rem(14px);font-weight:$weight600}
+    }
+    .purple{
+        .tit{background-color:$col_p100;color:$col_p800}
+        .infoFlag{background-color:$col_p800}
+    }
+    .red{
+        .tit{background-color:$col_r100;color:$col_redP}
+        .infoFlag{background-color:$col_redP}
+    }
+    .gray{
+        .tit{background-color:$col_g100;color:$col_g800}
+        .infoFlag{background-color:$col_g600}
+    }
+}
+
+// 계좌연결
+// 제주 PAY 연결하기
+.payConnection{margin:32px 0;
+    .kf_cardWrap{display:block;position:relative;width:248px;height:144px;margin:24px auto 0;color:$col_white;
+		img{width:100%;border-radius:12px;box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.08)}
+		.acctName{position:absolute;top:20px;left:20px;color:rgba($col_white, 0.8);font-size:rem(14px)}
+		.kf_accountInfo{position:absolute;left:20px;bottom:20px;color:$col_white;
+			.bankName{display:block;color:$col_white;font-weight:$weight600;text-align:left}
+			.bankAccountNum{color:$col_white;font-weight:$weight600}
+		}
+	}
+}
+
+// 약관동의
+.pop_account_terms{
+    .grayBox.agree{margin-top:32px}
+    .frmInp.txt.large{
+        label:after{top:50%;left:2px}
+    }
+}
+
+// 은행선택
+.pop_account_bank{
+    .frmBox{
+        > li{
+            label{font-size:rem(16px)}
+        }
+    }
+}
+
+// 번호입력
+.pop_account_number{
+    .inpFrm{
+        .titLab{margin-right:16px}
+    }
+}
+.bankArea{margin-top:32px;
+    .bank{margin-bottom:20px;padding:16px;border-radius:12px;background-color:$col_g100;
+        figure{content:'';display:inline-block;width:40px;height:24px;vertical-align:middle}
+        .tit{color:$col_g800;font-size:rem(16px);font-weight:$weight600}
+    }
+}
+
+// 이용동의
+.pop_account_agree{
+    .inpFrm{margin-top:16px;
+        .titLab{margin-right:16px}
+    }
+}
+.inpFrm.inpDeleteAni ~ .guideInfo.boxType01{margin-top:32px;padding:24px;
+    .txt{color:$col_p600;text-align:center}
+}
+
+// 계좌연결 - ARS인증
+.layPop.layFull.pop_account_ars{
+    .layContainer{
+        .layContent{display:flex;align-items:center;justify-content:center}
+    }
+    //.floatingBtns{height:auto;}
+}
+.arsWrap{margin-top:8px;text-align:center;
+    &:before{content:'';display:block;width:72px;height:72px;margin:0 auto 40px;}
+    &.step1:before{background:url(#{$img_url}/common/img_ars1.png) no-repeat}
+    &.step2:before{background:url(#{$img_url}/common/img_ars2.png) no-repeat}
+    &.step3:before{background:url(#{$img_url}/common/img_ars3.png) no-repeat}
+    &.end:before{display:none}
+    .payConnection{margin:0 auto 48px;
+        .kf_cardWrap{margin-top:0}
+    }
+    .titDep3 + .phoneTxt{margin-top:-4px}
+    .phoneNum{display:inline-block;margin:8px 0 24px;padding:12px 24px;border-radius:8px;background-color:$col_g100;color:$col_g900;font-size:rem(18px);font-weight:$weight600;}
+    .guideInfo.boxType01{margin-top:24px;padding:24px;
+        .txt{color:$col_p600}
+    }
+    &.end .guideInfo.boxType01{margin-top:40px}
+}
+
+//카드할인 및 무이자 할부안내
+.cardsaleInfoList{
+	> li{display:flex;padding:18px 0;border-top:1px dashed $col_g200;align-items:center;justify-content:center;
+        &:first-child{border-top:none}
+		figure{flex:0 0 124px;text-align:center;
+			img{width:100px;}
+		}
+		.saleInfo{width:100%;padding-left:20px;align-items:center;
+			strong{display:block;color:$col_g900}
+		}
+	}
+}

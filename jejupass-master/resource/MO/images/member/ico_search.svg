@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff0404;
+        opacity: 0.21;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #18225c;
+      }
+
+      .cls-4 {
+        fill: #569aff;
+      }
+
+      .cls-5 {
+        fill: #e83667;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_11813" data-name="사각형 11813" class="cls-1" width="72" height="72" transform="translate(705.963 412.963)"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_749" data-name="마스크 그룹 749" class="cls-2" transform="translate(-705.963 -412.963)">
+    <g id="그룹_16555" data-name="그룹 16555" transform="translate(-88.037 2.963)">
+      <rect id="사각형_11934" data-name="사각형 11934" class="cls-3" width="19" height="6" rx="3" transform="translate(848.858 459.322) rotate(45)"/>
+      <path id="패스_21368" data-name="패스 21368" class="cls-4" d="M76.6,72.515l-4.13,4.151a2.908,2.908,0,0,1-4.115,0l-4.13-4.151,8.245-8.288,4.13,4.151a2.945,2.945,0,0,1,0,4.137Z" transform="translate(775.711 390.642)"/>
+      <circle id="타원_1762" data-name="타원 1762" class="cls-5" cx="3" cy="3" r="3" transform="translate(850.151 418.05)"/>
+      <rect id="사각형_11935" data-name="사각형 11935" class="cls-4" width="6" height="14" rx="3" transform="translate(823 433)"/>
+      <rect id="사각형_11936" data-name="사각형 11936" class="cls-4" width="6" height="6" rx="3" transform="translate(823 449)"/>
+      <path id="Ellipse_1763" data-name="Ellipse 1763" class="cls-4" d="M29,8A21,21,0,1,0,50,29,21.024,21.024,0,0,0,29,8m0-8A29,29,0,1,1,0,29,29,29,0,0,1,29,0Z" transform="translate(797 415)"/>
+    </g>
+  </g>
+</svg>

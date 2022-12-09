@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+    <defs>
+        <style>
+            .cls-6{fill:none;stroke:#cacaca;stroke-linecap:round;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="ic_x72_notice" transform="translate(-171 -603)">
+        <g id="ic_x40_notice" transform="translate(178.265 612)">
+            <rect id="사각형_2678" data-name="사각형 2678" width="10" height="10" rx="5" transform="translate(23.735 43)" style="fill:#e83667"/>
+            <path id="합치기_36" data-name="합치기 36" d="M1.4 41.4a1 1 0 0 1-1-1v-5a3 3 0 0 1 3-3V19.8a20 20 0 1 1 40 0v12.6a3 3 0 0 1 3 3v5a1 1 0 0 1-1 1z" transform="translate(5.335 7.2)" style="fill:#63a1ff"/>
+            <rect id="사각형_2676" data-name="사각형 2676" width="10" height="10" rx="5" transform="translate(23.735)" style="fill:#18225c"/>
+            <path id="사각형_2681" data-name="사각형 2681" d="M0 0h14.5A1.5 1.5 0 0 1 16 1.5 1.5 1.5 0 0 1 14.5 3H0V0z" transform="translate(8.735 36)" style="fill:#85b5ff"/>
+            <path id="패스_2615" data-name="패스 2615" class="cls-6" d="M8703.036 611.7s-5.685 4.629-6 12" transform="translate(-8695.301 -603.7)"/>
+            <path id="패스_2616" data-name="패스 2616" class="cls-6" d="M8697.035 611.7s5.685 4.629 6 12" transform="translate(-8648.3 -603.7)"/>
+        </g>
+    </g>
+</svg>

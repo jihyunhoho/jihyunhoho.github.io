@@ -1,0 +1,15 @@
+<svg id="ic_x18_fill_in_review" data-name="ic_x18_fill in_review" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:gray;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <path id="container" style="fill:none" d="M0 0h18v18H0z"/>
+    <g id="Group_15344" data-name="Group 15344">
+        <path id="Line_150" data-name="Line 150" class="cls-2" transform="translate(6.25 5.5)" d="M0 0h2"/>
+        <path id="Line_151" data-name="Line 151" class="cls-2" transform="translate(6.25 8.5)" d="M0 0h1.059"/>
+        <path id="Line_152" data-name="Line 152" class="cls-2" transform="translate(6.25 11.5)" d="M0 0h5.06"/>
+        <path id="Line_153" data-name="Line 153" class="cls-2" transform="translate(11.5 1.771)" d="M4.458 0 0 4.729"/>
+        <path id="Path_3274" data-name="Path 3274" class="cls-2" d="M9.866.395h-8.75a.723.723 0 0 0-.723.723L.309 14.755a.723.723 0 0 0 .723.723h10.559a.723.723 0 0 0 .723-.723V6" transform="translate(2.468 1.022)"/>
+    </g>
+</svg>

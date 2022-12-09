@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>1:1 문의 | 제주패스</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="/resource/MO/images/favicon/apple_touch_icon.ico">
+<link rel="apple-touch-icon" href="/resource/MO/images/favicon/apple_touch_icon_144.ico">
+<link href="/resource/MO/css/m_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/MO/css/m_contents.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper defaultWrapper">
+	<header>
+		<button type="button" class="btPrev">이전</button>
+		<h1 class="titDep1">1:1 문의</h1>
+	</header>
+
+	<div id="container" class="container">
+		<h2 class="pageTit ask">문의하실 내용을<br>남겨주세요</h2>
+		<fieldset class="askFrm">
+			<legend>1:1 문의 정보입력</legend>
+			<div class="inpFrm">
+				<span class="label_tit">카테고리</span><small>*필수</small>
+				<div class="selectWrap"><!--20211019 맛집/카페패스 분리-->
+					<select title="카테고리 선택" data-msg="선택하세요." data-header="카테고리">
+						<option value="01" data-option="">항공</option>
+						<option value="02">렌터카</option>
+						<option value="03">숙박</option>
+						<option value="04">맛집</option>
+						<option value="05">카페패스</option>
+						<option value="06">트립</option>
+					</select>
+				</div>
+			</div>
+			<div class="inpFrm">
+				<label for="reserveNum">예약번호</label>
+				<span class="inpA inpBtns">
+					<input type="tel" id="reserveNum">
+					<button type="button" class="btnDefault btnM btnLineG">조회</button>
+				</span>
+			</div>
+			<div class="inpFrm"><!--20211019 placeholder 문구 변경-->
+				<label for="inpName">작성자</label><small>*필수</small><!--20211103 필수옵션으로 변경-->
+				<span class="inpA">
+					<input type="text" id="inpName" placeholder="작성자 이름을 입력해주세요." title="작성자 이름을 입력해주세요."><!--20211101 문구 수정-->
+				</span>
+			</div>
+			<div class="inpFrm"><!--20211019 placeholder 문구 변경-->
+				<label for="inpNum">휴대전화</label><small>*필수</small><!--label명 변경-->
+				<span class="inpA">
+					<input type="tel" id="inpNum" placeholder="-빼고 번호만 입력해주세요." title="-빼고 번호만 입력해주세요."><!--20211101 문구 수정-->
+				</span>
+			</div>
+			<div class="inpFrm">
+				<label for="inpMail">이메일</label><small>*필수</small>
+				<span class="inpA">
+					<input type="text" id="inpMail" placeholder="ID@jejupass.com" title="ID@jejupass.com">
+				</span>
+			</div>
+			<div class="inpFrm">
+				<span class="label_tit">상담구분</span><small>*필수</small>
+				<div class="selectWrap askSelect air">
+					<select title="상담구분 선택" data-msg="선택해주세요." data-header="상담구분"><!--20211101 문구 수정-->
+						<option value="01" data-option="">예약/결제</option>
+						<option value="02">예약변경</option>
+						<option value="03">발권/탑승수속</option>
+						<option value="04">취소/환불</option>
+						<option value="05">기타</option>
+					</select>
+				</div>
+				<div class="selectWrap askSelect rentCar" style="display:none;"><!--카테고리 렌터카일 경우-->
+					<select title="상담구분 선택" data-msg="선택해주세요." data-header="상담구분"><!--20211101 문구 수정-->
+						<option value="01" data-option="">실시간 예약</option>
+						<option value="02">대여안내</option>
+						<option value="03">인수/반납</option>
+						<option value="04">자차보험</option>
+						<option value="05">취소/환불</option>
+						<option value="06">기타</option>
+					</select>
+				</div><!--20211020 렌터카용 selectWrap 추가-->
+			</div>
+			<div class="inpFrm">
+				<label for="inpInfo">문의내용</label><small>*필수</small>
+				<span class="inpA">
+					<input type="text" id="inpInfo" placeholder="제목을 입력해주세요."><!--20211101 문구 수정-->
+				</span>
+				<span class="inpA inpText typeAsk"><!--20211207 class 추가-->
+					<textarea id="inpInfo" cols="10" rows="10" placeholder="내용을 입력해주세요.(최대 3000자)" title="내용을 입력해주세요.(최대 3000자)"></textarea><!--20211101 문구 수정-->
+				</span>
+				<p class="textNum">0/3000</p>
+			</div>
+			<div class="commentGroup"><!--20211117 사진등록 폼 변경-->
+				<h3 class="titDep4">사진 추가 (최대3장)</h3>
+				<p class="subTxt">문의 시 참고해야 할 사진이 있다면 올려주세요.</p>
+				<div class="photoUpload">
+					<span class="fileView inpFrm">
+						<input type="file" id="inpPhoto">
+						<label for="inpPhoto">사진 선택</label>
+					</span>
+					<figure class="fileView">
+						<img src="/resource/MO/images/dummy/@file_106-01.png" alt="">
+						<button type="button" class="btDel">삭제</button>
+					</figure>
+					<figure class="fileView">
+						<img src="/resource/MO/images/dummy/@file_106-02.png" alt="">
+						<button type="button" class="btDel">삭제</button>
+					</figure>
+				</div>
+			</div>
+			<div class="btnArea">
+				<button type="button" class="btnDefault btnL action">작성완료</button>
+			</div>
+			
+		</fieldset>	
+	</div><!-- //container -->
+
+	
+
+</section><!-- //wrapper -->
+<footer>
+	<img src="/resource/MO/images/dummy/@footer.png" alt="">
+</footer>
+
+<aside>
+	<div class="asideRight">
+		<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+	</div>
+</aside>
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+
+</body>
+</html>

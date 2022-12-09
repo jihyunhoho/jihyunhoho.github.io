@@ -1,0 +1,15 @@
+<svg id="ic_x18_info_exmark" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+    <defs>
+        <style>
+            .cls-3{fill:#202020}.cls-4{stroke:none}.cls-5{fill:none}
+        </style>
+    </defs>
+    <g id="ic" transform="translate(.764 .764)">
+        <g id="Ellipse_113" data-name="Ellipse 113" transform="translate(-.763 -.764)" style="stroke:#202020;stroke-width:2px;fill:#fff">
+            <circle class="cls-4" cx="9" cy="9" r="9"/>
+            <circle class="cls-5" cx="9" cy="9" r="8"/>
+        </g>
+        <path id="Rectangle_178" data-name="Rectangle 178" class="cls-3" d="M1 2a1 1 0 0 1 1 1v3.5a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1z" transform="translate(7.237 2.236)"/>
+        <rect id="Rectangle_179" data-name="Rectangle 179" class="cls-3" width="2" height="2" rx="1" transform="translate(7.237 10.736)"/>
+    </g>
+</svg>

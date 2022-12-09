@@ -1,0 +1,74 @@
+@charset "utf-8"; 
+
+/************************************************************************************************************ 
+Basic Style Sheet (for version 4 browsers)	
+version: 0.1
+author: 박수연 과장
+email: suudjin@nate.com
+설명: HTL / 일부 b2c와 동일
+************************************************************************************************************/
+
+
+/************************************************************************************************************
+ popup layout
+************************************************************************************************************/
+.k1_htlpop_container2{overflow-y:scroll; height:638px; padding:10px;}
+.k1_htlpop_yscroll{height:638px; overflow-y:auto;}/*팝업내부스크롤 생성시 필요*/
+
+/************************************************************************************************************
+ layerpopup
+************************************************************************************************************/
+.k1_htl_thumb{position:absolute; top:21px; left:0; padding:3px; background:#cdcccc; border:#b4b4b4 1px solid;}
+.k1_htl_thumb img{border:#fff 1px solid;}
+.k1_htl_w350{width:350px;}
+.k1_htl_layer_txtbox{padding:8px 5px 5px 10px; background:#f7fbff; border:#fff 1px solid; line-height:16px; color:#5e5e5e;}
+.k1_htl_layer_txtbox:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.k1_htl_layer_txtbox span.account{display:block; width:290px; margin-top:-17px; margin-left:35px;}
+.k1_htl_layer_txtbox p.k1_tit_dot2_1{margin:3px 0;}
+.k1_htl_account li{padding:3px 5px 3px 10px; background:url(/air/wfw/imgs/airA/bullet_icon/bul_6px_dot.gif) 0 5px no-repeat; line-height:1.2em;}
+.k1_htl_addlist{margin-top:5px; font-size:12px; line-height:1.2em;}
+.k1_htl_addlist dt{float:left; padding:2px 0 2px 10px; width:35px; background:url(/air/wfw/imgs/airA/bullet_icon/bul_6px_dot.gif) 0 5px no-repeat;}
+.k1_htl_addlist dd{padding:2px 0;}
+
+/************************************************************************************************************
+ 지도layerpopup
+************************************************************************************************************/
+.k1_htl_infopop01{position:absolute; width:350px; height:150px; padding:10px 14px 30px 10px; background:url(/air/wfw/imgs/htlA/popup/bg_pop_layer1.png) no-repeat 0 0; z-index:100;}
+.k1_htl_infopop01:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.k1_htl_infopop01 .k1_photo{float:left; width:130px; line-height:17px;}
+.k1_htl_infopop01 .k1_photo img{border:#7d7d7d 1px solid;}
+.k1_htl_infopop01 .k1_info{float:left; width:210px; padding-left:10px; line-height:14px;}
+.k1_htl_infopop01 .k1_info .h30{height:30px;}
+.k1_htl_infopop01 .k1_htlpop_close2{top:10px; right:15px;}
+.k1_htl_infopop02{position:absolute; width:200px; height:43px; padding:10px 13px 30px 10px; background:url(/air/wfw/imgs/htlA/popup/bg_pop_layer2.png) no-repeat 0 0; z-index:200; line-height:14px;}
+.k1_htl_infopop02 .h30{height:30px;}
+
+.k1_htl_photo img{border:#7d7d7d 1px solid;}
+
+/************************************************************************************************************
+ 바우처출력팝업
+************************************************************************************************************/
+.k1_htl_voucher_add{overflow:hidden; height:38px; background:url(/air/wfw/imgs/bullet/dot_line7.gif) repeat-x 0 bottom;}
+.k1_htl_voucher_add:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.k1_htl_voucher_add h2{float:left; padding:0; background:none;}
+.k1_htl_voucher_add address{float:left; margin-top:3px; padding-left:20px; line-height:14px; color:#393939;}
+.k1_htl_vouchertit {position:relative; height:23px; vertical-align:middle; line-height:17px; color:#393939;}
+.k1_htl_vouchertit h3{text-align:center; font-size:22px; font-weight:bold;}
+.k1_htl_vouchertit p.stit{position:absolute; right:10px; bottom:-2px;}
+.k1_cutline{background:url(/air/wfw/imgs/icon/bg_cut_line.gif) repeat-x 0 center; height:15px; margin:10px 0;}
+.k1_cutline span{display:inline-block; height:15px; width:15px; background:url(/air/wfw/imgs/icon/ico_cut.gif) no-repeat 0 0; text-indent:-1000px;}
+.k1_htl_voucher_list{padding:5px 10px; font-size:11px;}
+.k1_htl_voucher_list dt{padding:5px 0; font-weight:bold; color:#235ba5;}
+.k1_htl_voucher_list dd{padding-left:12px; background:url(/air/wfw/imgs/airA/bullet_icon/bul_arrow5.gif) no-repeat 2px 3px; color:#393939; font-weight:normal; line-height:16px;}
+.k1_htl_voucher_list dd.k1_htl_map{padding:0; margin:0; background:none;}
+.k1_htl_maparea2{background:#fff; border:#a5a5a5 1px solid;}
+
+/************************************************************************************************************
+ 호텔알림_레이어팝업_20150827
+************************************************************************************************************/
+.k1_htl_info_layer {position:absolute; top:68px; left:42%; min-width:208px; max-width:440px; z-index:9999; border:1px solid #e9b425;}
+.k1_htl_pop_area {padding:10px; border-top:0 none; background:#fff; font-family:'나눔고딕','Nanum Gothic'; font-size:11px;}
+.k1_htl_pop_area .htl_tit {font-weight:bold; color:#d99215;}
+.k1_htl_btn_close {position:absolute; display:inline-block; top:13px; right:10px; width:11px; height:11px; background:url(/air/wfw/imgs/htlB/btn/btn_htl_pop_close.gif) no-repeat; font-size:0; cursor:pointer;}
+.k1_htl_pop_edge {position:absolute; top:0; left:30px; width:9px; height:6px; margin:-6px 0 0 -5px; background:url(/air/wfw/imgs/htlB/popup/bg_pop_layer_top.png); font-size:0;}
+.k1_w260 {width:270px !important;}

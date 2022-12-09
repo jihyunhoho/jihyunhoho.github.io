@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>부가서비스</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, user-scalable=no, width=1366">
+<link rel="shortcut icon" type="image/x-icon" href="/resource/PC/images/favicon/favicon.ico">
+<link href="/resource/PC/css/p_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/PC/css/p_contents.min.css" rel="stylesheet" type="text/css">
+<style>
+    .dimmed{display:block !important;opacity:1 !important;}
+    .layPop{display:block !important;}
+  </style>
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+<section id="wrapper" class="wrapper defaultWrapper"><!-- scrollTop 104이상일때 headFixed 추가 -->
+</section><!-- //wrapper -->
+
+<!-- popup -->
+
+<section id="pop_rentcar_service" class="layPop layerM rantcarInfo" tabindex="0">
+	<header>
+		<h2 class="titLay">부가서비스</h2>
+	</header>
+
+	<div class="layContainer scriptScroll" tabindex="0">
+        <ul class="toggleList acctAging additionalService">
+            <li class="acctItem">
+                <button type="button" class="toggleBtn" aria-expanded="false">육아용품<span class="status chk">선택</span></button>
+                <div class="toggleCont">
+                    <div class="inpFrm">
+                        <label for="sel01" class="titLab">유모차</label>
+                        <div class="selectWrap">
+                            <select title="브랜드를 선택해주세요" data-msg="브랜드를 선택해주세요" data-header="정렬" id="sel01">
+                                <option value="01">브랜드1</option>
+                                <option value="02">브랜드2</option>
+                                <option value="03">브랜드3</option>
+                                <option value="04">브랜드4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inpFrm">
+                        <label for="sel02" class="titLab">유모차 종류</label>
+                        <div class="selectWrap">
+                            <select title="종류를 선택해주세요" data-msg="종류를 선택해주세요" data-header="정렬" id="sel02">
+                                <option value="01">유모차 종류1</option>
+                                <option value="02">유모차 종류2</option>
+                                <option value="03">유모차 종류3</option>
+                                <option value="04">유모차 종류4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="divider02"></div>
+                    <div class="inpFrm">
+                        <label for="sel03" class="titLab">카시트</label>
+                        <div class="selectWrap">
+                            <select title="브랜드를 선택해주세요" data-msg="브랜드를 선택해주세요" data-header="정렬" id="sel03">
+                                <option value="01">브랜드1</option>
+                                <option value="02">브랜드2</option>
+                                <option value="03">브랜드3</option>
+                                <option value="04">브랜드4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inpFrm">
+                        <label for="sel02" class="titLab">카시트 종류</label>
+                        <div class="swiperWrap swiperGap imgSelect" data-options='{"Spacebetween": 12, "view" : 2, "group" : 1}'>
+                            <button type="button" class="swiper-button-prev">이전</button>	
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide frmInp">
+                                        <input type="radio" id="rdo01" name="rdo">
+                                        <label for="rdo01">
+                                            <figure><img src="/resource/PC/images/dummy/com_img02.png" alt=""></figure>
+                                            <span class="brandName">ISOFIX 오가닉</span>
+                                            <span class="price">20,000원</span>
+                                        </label>
+                                    </li>
+                                    <li class="swiper-slide frmInp">
+                                        <input type="radio" id="rdo02" name="rdo">
+                                        <label for="rdo02">
+                                            <figure><img src="/resource/PC/images/dummy/com_img02.png" alt=""></figure>
+                                            <span class="brandName">ISOFIX 오가닉</span>
+                                            <span class="price">20,000원</span>
+                                        </label>
+                                    </li>
+                                    <li class="swiper-slide frmInp">
+                                        <input type="radio" id="rdo03" name="rdo">
+                                        <label for="rdo03">
+                                            <figure><img src="/resource/PC/images/dummy/com_img02.png" alt=""></figure>
+                                            <span class="brandName">ISOFIX 오가닉</span>
+                                            <span class="price">20,000원</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button type="button" class="swiper-button-next">다음</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div class="acctItem">
+                <button type="button" class="toggleBtn" aria-expanded="false">차량용품<span class="status">미선택</span></button>
+                <div class="toggleCont">
+                </div>
+            </div>
+            <div class="acctItem">
+                <button type="button" class="toggleBtn" aria-expanded="false">애견보험<span class="status">미선택</span></button>
+                <div class="toggleCont">
+                </div>
+            </div>
+            <div class="acctItem">
+                <button type="button" class="toggleBtn" aria-expanded="false">딜리버리<span class="status">미선택</span></button>
+                <div class="toggleCont">
+                </div>
+            </div>
+        </ul>
+	</div>
+	<div class="btnArea">
+		<button type="button" class="btnDefault btnL action">선택완료</button>
+	</div>
+	<button type="button" class="closeL">팝업 닫기</button>
+</section>
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/PC/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1223 @@
+@charset "utf-8";
+
+@import '_pbase', '_pfont';
+
+@import url(/resource/PC/css/p_contents_payment.min.css); //공통결제
+@import url(/resource/PC/css/p_contents_stay.min.css); //숙박
+@import url(/resource/PC/css/p_contents_rentcar.min.css); //렌터카
+@import url(/resource/PC/css/p_contents_food.min.css); //맛집
+@import url(/resource/PC/css/p_contents_cafe.min.css); //카페패스
+@import url(/resource/PC/css/p_contents_trip.min.css); //트립
+@import url(/resource/PC/css/p_contents_esg.min.css); //ESG
+@import url(/resource/PC/css/p_contents_customer.min.css); //고객센터
+@import url(/resource/PC/css/p_contents_poi.min.css); //POI
+@import url(/resource/PC/css/p_contents_mypage.min.css); //마이페이지
+@import url(/resource/PC/css/p_contents_event.min.css); //이벤트
+@import url(/resource/PC/css/p_contents_comm.min.css); //기타, 회원가입,로그인
+
+.boxGray{padding:16px 20px;border-radius:12px;background-color:$col_g100;}
+
+/* 메인 */
+.quickSearchList.k1_main_search_area{padding:40px 0 0;
+	&:before{padding-bottom:115px}
+	.k1_section_multi{margin-top:0;padding-top:45px;background-color:$body_color}
+}
+.mainTag{display:flex;margin:40px -8px -8px;flex-wrap:wrap;justify-content:center;
+	li{margin:8px;border-radius:40px;background-color:$col_g100;
+		a{display:inline-block;padding:19px 20px 18px;color:$col_g800;font-weight:$weight600;line-height:1.44}
+	}
+}
+.mainCont{margin-top:104px;
+	.mainSignature{margin-left:calc(-50vw + 576px);padding:168px 0;width:100vw;height:680px;background:url(#{$img_url}/main/bg_signature.png) no-repeat 50% 100%;background-size:cover;text-align:center;
+		.titDep2{color:$col_white;line-height:1.38}
+		.desc{margin-top:24px;font-size:rem(20px);color:rgba($col_white, 0.8);line-height:1.4;}
+		figure{margin-top:36px}
+		.btn{display:inline-block;margin-top:32px;padding:0 24px;min-width:146px;height:56px;border:1px solid $col_white;border-radius:12px;color:$col_white;font-size:rem(18px);line-height:56px;}
+	}
+	.mainIcon{display:flex;justify-content:center;margin:32px -34px 0;
+		li{display:flex;position:relative;height:141px;padding:0 34px; 
+			align-items:center;flex-direction:column;
+			a{display:flex;justify-content:center;width:96px;height:96px;
+				border:1px solid $col_p300;border-radius:100%;box-sizing:border-box;box-shadow:0 8px 12px 0 rgba($col_g900, 0.04);
+				&:before{content:'';display:block;margin:32px auto;width:32px;height:32px;background:url(#{$img_url}/main/spr_mainicon.png) no-repeat 0 0;}				
+				span{position:absolute;top:120px;text-align:center;color:$col_g800;font-size:rem(18px);font-weight:$weight600;line-height:1.56;					
+				}
+			}
+			&.insurance a:before{background-position:-32px 0;}
+			&.return a:before{background-position:-64px 0;}
+			&.info a:before{background-position:-96px 0;}
+			&.cancellation a:before{background-position:-128px 0;}
+			&.refund a:before{background-position:-160px 0;}
+		}
+	}
+	.mainNews{display:flex;justify-content:space-between;position:relative;margin-top:56px;padding:40px 40px;
+		&:before{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:140px;background:url(#{$img_url}/main/bg_news.png) no-repeat;}
+		.txt{
+			.titDep3{position:relative;margin:4px 0 11px}
+			.desc{position:relative;margin-top:-8px;color:$col_g600;line-height:1.44;}
+		}
+		.email{position:relative;
+			input[type=text]{height:56px;padding:0 45px 0 15px}
+			.btnDefault.btnL.action{min-width:88px;margin-left:4px}
+		}
+	}
+}
+
+.mainPromotion{
+	.promotionList{margin:-6px 0;
+		li{padding:6px 0;
+			figure{
+				img{border-radius:12px;}
+			}
+		}
+	}
+}
+.swiperMain{
+	.swiper-container{
+		.swiper-wrapper{
+			.swiper-slide{
+				a{position:relative;width:100%;display:block;overflow:hidden;border-radius:12px;
+					&:after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background-image: linear-gradient(to bottom, rgba($col_black,0) 48%, $col_black);opacity:.8;border-radius:16px;}
+					&:hover figure img{transform:scale(1.1)}
+
+					figure{position:relative;width:100%;display:block;height:436px;
+						img{position:absolute;top:0;left:0;width:100%;border-radius:16px;transition:0.5s;transform-origin: center;}
+					}
+					.infoTxt{position:absolute;bottom:36px;left:32px;z-index:1;
+						.tit{display:block;margin-bottom:11px;color:$col_white;font-weight:$weight700;font-size:rem(20px);line-height:1.4}
+						.txt{display:block;color:$col_g100;opacity:.7;
+							& > span{margin-right:5px;color:$col_g100}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* 메인 배너 */
+.mainTopbanner{position:relative;width:100%;height:59px;text-align:center;background:$col_pointB;
+	.bandBanner_info{width:1136px;margin:0 auto;
+		> a{display:block;height:100%;text-align:center;
+			span{position:relative;display:inline-block;height:100%;padding-left:24px;color:$col_white;font-weight:$weight600;line-height:59px;background:url(#{$img_url}/common/ico_topBanner.png) no-repeat 0 50%}
+		}
+	}
+	.btn_close{@extend %textHidden;position:absolute;top:4px;right:0;width:52px;height:52px;
+		&:after{@include pseudo(12px,12px);background:url(#{$img_url}/common/spr_layout.png) no-repeat -69px -26px}
+	}
+	& + header nav .quickSearchWrap .laySearch{top:-59px}
+}
+
+//서브메인
+.mainContents{
+	[class^=titDep]{text-align:center}
+}
+
+/* pattern */
+.frmList{display:flex;margin:0 -10px;font-size:0;flex-wrap:wrap;
+	> li{width:50%;padding:8px 10px;flex-direction:row;vertical-align:top;
+		.inpFrm{display:flex;flex-shrink:0;}
+		.titLab{flex:0 0 112px;vertical-align:top}
+		&.inpFull{width:100%;}
+		.txtInfo{margin-left:112px}
+	}
+}
+
+/* banner */
+.bannerType{overflow:hidden;display:block;font-size:0;border-radius:16px;
+	figure{position:relative;overflow:hidden;border-radius:16px;
+		img{position:relative;left:50%;margin-left:-568px}
+	}
+}
+.swiperWrap.swiperEvent .swiper-wrapper .swiper-slide .bannerType figure img{width:auto;left:0;margin:0}
+
+/* 검색 레이어 */
+.kf_innerWhite{text-align:center;background:$col_white;z-index:99;}
+.kf_laySearch{position:relative;width:1136px;margin:0 auto;
+	.kf_inner{position:relative;z-index:100;background:$col_white;
+		.kf_search{display:none;position:relative;width:1136px;margin:0 auto;text-align:left;font-size:0;
+			&.searchON{display:block}
+			.kf_area{position:relative;display:inline-block;width:424px;height:100%;padding:48px 0 24px 39px;border-right:1px solid $col_g200;vertical-align:top;
+				.btLocation{position:relative;display:block;width:calc(100% - 40px);height:48px;padding:0 50px 0 40px;color:$default_col;font-size:rem(16px);text-align:left;border-radius:8px;border:1px solid $col_g200;
+					&:after{@include pseudo(18px,18px);left:13px;margin-left:0;background:url(#{$img_url}/common/spr_ico.png) no-repeat -28px -30px}
+					strong{color:$col_g800;font-weight:$weight600}
+					.engName{display:inline-block;padding-left:5px;color:$default_col}
+					&.inpBlock{display:none;
+						& + .searchIcon{display:block;
+							&:before{background-position:-28px -30px}
+							&.inpFocus:before{background-position:-47px -30px}
+						}						
+					}
+					& + .searchIcon{display:none}
+				}
+				.searchIcon{margin-right:40px;
+					&:before{background-position:-85px -30px}
+					input{display:block;width:100%}
+					&.inpFocus:before{background-position:-66px -30px}
+				}
+				.titDep4{margin-bottom:22px;font-weight:$weight700}
+				.kf_scrollArea{position:relative;overflow:auto;overflow-x:hidden;height:370px;padding-right:40px}
+				&.areaTit{position:static;width:288px;padding-left:0;					
+					.icoArr{position:absolute;bottom:48px;left:0}
+				}
+				.titDep2{font-family:NanumSquareR;font-weight:$weight900;
+					&:after{content:'';display:inline-block;width:4px;height:4px;margin:0 0 13px 2px;border-radius:50%;background-color:$col_pointR}
+				}
+				&.kf_areaSel{
+					&:after{content:'';display:block;position:absolute;bottom:0;left:0;width:100%;height:48px;z-index:100;
+						background:transparent;
+						background-image: linear-gradient(rgba($col_white,0), $col_white 50%);
+					}
+					.kf_scrollArea{height:418px;}
+				}
+				&.kf_areaDate{width:848px;padding:0 28px}
+				&.kf_areaLevel{padding-right:40px}
+			}
+			
+		}
+	}
+}
+.laySearch{
+	.closeL{@extend %textHidden;position:absolute;top:16px;right:56px;width:64px;height:64px;border-radius:50%;z-index:4;
+		&:after{@include pseudo(24px,24px);background:url(#{$img_url}/common/spr_layout.png) no-repeat -168px 0;}
+	}
+	>.dimmed{display:block;top:165px;opacity:0;z-index:0}
+}
+.quickSearchList{position:relative;padding:63px 0 0;text-align:center;background:$col_g100;z-index:3}
+.searchBtns{display:block;font-size:0;text-align:center;
+	> li{display:inline-block;padding:0 12px 5px;
+		> a{display:block;position:relative;width:80px;height:80px;border-radius:16px;background:$col_white;font-size:0;
+			&:after{@include pseudo(32px,32px);background:url(#{$img_url}/common/spr_layout.png) no-repeat}
+			&[aria-selected=true]{background:$col_p600;box-shadow: 0 8px 16px 0 rgba(35, 0, 104, 0.16);
+				&:before{content:'';display:block;position:absolute;bottom:-3px;left:50%;width:9px;height:9px;margin-left:-4px;border-radius:3px;@include prefix(transform,rotate(45deg) skew(8deg, 8deg));background:$col_p600;z-index:100}
+			}
+		}
+		&.btAir a{
+			&:after{background-position:0 -98px}
+			&[aria-selected=true]:after{background-position:0 -64px}
+		}
+		&.btRent a{
+			&:after{background-position:-34px -98px}
+			&[aria-selected=true]:after{background-position:-34px -64px}
+		}
+		&.btStay a{
+			&:after{background-position:-68px -98px}
+			&[aria-selected=true]:after{background-position:-68px -64px}
+		}
+		&.btFood a{
+			&:after{background-position:-102px -98px}
+			&[aria-selected=true]:after{background-position:-102px -64px}
+		}
+		&.btCafe a{
+			&:after{background-position:-170px -98px}
+			&[aria-selected=true]:after{background-position:-170px -64px}
+		}
+		&.btTrip a{
+			&:after{background-position:-136px -98px}
+			&[aria-selected=true]:after{background-position:-136px -64px}
+		}
+	}
+}
+
+.k1_section_multi{display:none;margin:40px 0 0 0;padding:0;text-align:center;background:none;
+	.kf_innergray{position:relative;width:1136px;margin:0 auto;padding-bottom:45px;font-size:0;text-align:left;}
+	&.sectionON{display:block}
+	.kf_flightInner{position:relative;display:inline-block;margin-left:16px;height:96px;
+		.k1_flight_panel{position:relative;display:inline-block;border-radius:16px;border:1px solid $col_white;background:$col_white;box-shadow: 0 8px 16px 0 rgba($col_g900, 0.08);}
+		.k1_area{float:left;width:226px;padding:25px 23px 16px 23px;text-align:left;
+			.tit{display:block;font-size:rem(14px);line-height:1.16;}
+			button{display:block;width:100%;height:37px;border:none;color:$col_g500;font-size:rem(18px);text-align:left;
+				strong{display:inline-block;color:$col_g900;font-size:rem(18px)}
+				.engName{display:inline-block;padding-left:5px;color:$col_g900;font-size:rem(18px)}
+			}
+			&.destination{margin-left:32px;padding-left:18px}
+		}
+		&.kf_flightDate, &.kf_flightInfo{
+			.k1_flight_panel .k1_area strong{font-weight:$weight700}
+		}
+		&.kf_flightDate{
+			.k1_area{width:276px}
+		}
+		&.kf_flightInfo{
+			.k1_area{width:232px}
+		}
+		.k1_icon{@extend %textHidden;position:absolute;top:50%;left:50%;width:42px;height:42px;margin:-21px 0 0 -21px;
+			&:after{@include pseudo(32px,32px);background:url(#{$img_url}/common/spr_air.png) no-repeat}
+		}
+		&:first-child{margin-left:0}
+		&.selectON .k1_flight_panel{border:1px solid $col_p600;
+		}
+	}
+	.k1_btn_price_search{position:absolute;top:0;right:0;width:96px;height:96px;color:$col_white;font-size:rem(18px);font-weight:$weight700;text-align:center;line-height:96px;border-radius:16px;background:$col_primary;box-shadow: 0 8px 16px 0 rgba(35,0,104, 0.16);}
+}
+.k1_flight_list{margin-top:32px;
+	.titDep4{margin-bottom:13px}
+	.k1_country_list{display:flex;flex-wrap:wrap;margin:-10px -10px 0 -10px;
+		> li{position:relative;flex:0 0 calc(100% / 4);padding:15px 10px 0 10px;text-align:center;
+			input{position:absolute;top:0;left:0;z-index:100;width:100%;height:100%;cursor:pointer;
+				&:checked + label{z-index:100;
+					figure{
+						&:after{display:block;}
+						&:before{display:block;}
+					}
+				}
+			}
+			label{position:relative;display:block;font-size:rem(14px);z-index:2;
+				figure{position:relative;overflow:hidden;margin-bottom:6px;border-radius:50%;
+					img{width:100%}
+					&:after{content:'';display:none;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba($col_primary, 0.6);z-index:1;opacity:0;animation:chkAni 0.5s}
+					&:before{@include pseudo(18px,18px);display:none;background:url(#{$img_url}/common/spr_ico.png) no-repeat -66px 0;z-index:2;opacity:0;animation:chkAni 0.5s}
+				}
+				@keyframes chkAni{
+					0%{opacity:0}
+					30%{opacity:1}
+					70%{opacity:1}
+					100%{opacity:0}
+				}
+			}
+		}
+	}
+}
+.frmChkAni{
+	> li{
+		input:checked + label{color:$default_col;border-color:$col_g200;background:$col_white;animation:labelAni 0.5s}
+	}
+}
+@keyframes labelAni{
+	0%{color:$default_col;border-color:$col_g200;background:$col_white}
+	30%{color:$col_p600;border-color:$col_p300;background-color:$col_p100}
+	70%{color:$col_p600;border-color:$col_p300;background-color:$col_p100}
+	100%{color:$default_col;border-color:$col_g200;background:$col_white}
+}
+
+.toggleCityList{padding-bottom:30px;
+	.acctItem{margin-top:16px}
+	.toggleBtn{height:53px;padding-left:0;line-height:53px;}
+}
+
+.kf_interBanner{margin:32px 0 16px;
+	a{display:block;height:72px;color:$col_white;font-size:rem(18px);font-weight:$weight700;line-height:72px;text-align:center;border-radius:12px;background:url(#{$img_url}/air/bg_interBanner.jpg) no-repeat;
+		em{color:#0A628A}
+	}
+	&.type02{margin-top:0;
+		.titDep4{margin-bottom:23px}
+		a{height:48px;line-height:48px;font-size:rem(16px);font-weight:$weight600;background-image:url(#{$img_url}/air/bg_interBanner02.jpg)}
+	}
+}
+
+.k1_destination_list{margin-top:14px;
+	a{display:block;padding:6px 0;font-size:0;
+		.destName{display:inline-block;font-size:rem(14px);font-weight:$weight600;}
+		.infoAirport{display:inline-block;margin-left:8px;
+			strong, span, em{font-size:rem(14px)}
+			strong{color:$col_g900;font-weight:$weight400}
+			span{padding-left:5px;color:$col_g600;
+				&.engCode{
+					&:before{content:'·';padding-right:3px}
+				}
+			}
+		}
+		.resultTxt{color:$col_redP;font-size:rem(14px)}
+	}
+}
+
+//날짜 선택
+.swiperWrap.swiperCalendar{padding:48px 0;
+	//.swiper-wrapper .swiper-slide{width:50%}
+	[class^=swiper-button]{top:33px;margin:0;background:$col_white;opacity:1;transition:none;
+		&:after{@include pseudo(18px,18px);background:url(#{$img_url}/common/spr_ico.png) no-repeat -180px 0}
+		&.swiper-button-disabled{opacity:0.4}
+	}
+}
+.k1_calendar_wrap{width:100%;padding:0 20px;z-index:10;
+	.k1_sel_month{margin-bottom:16px;padding:0;color:$col_g900;font-size:rem(18px);font-weight:700;line-height:1.1;text-align:center;background:none}
+	& + .k1_calendar_wrap{margin-top:40px}
+	.k1_board_mcal{overflow:hidden;border:none; 
+		thead th{height:34px;padding:0;border:none;color:$default_col;text-align:center;background:none;}
+		td{position:relative;height:64px;padding-top:12px;text-align:center;vertical-align:top;line-height:1.5;border:none;font-weight:400;
+			a{position:relative;display:inline-block;width:32px;height:32px;margin-top:-6px;border-radius:50%;line-height:32px;z-index:3}
+			.txt{position:absolute;top:-21px;left:50%;width:auto;height:21px;padding:0 8px;color:$col_primary;font-size:12px;font-weight:$weight600;line-height:21px;border:1px solid $col_p400;border-radius:8px;z-index:4;box-sizing:border-box;background:$col_white;white-space:nowrap;@include prefix(transform,translateX(-50%));
+				&:after{content:'';display:block;position:absolute;bottom:-3px;left:50%;width:3px;height:3px;margin-left:-3px;border:solid $col_p400;border-width:0 1px 1px 0;background:$col_white;@include prefix(transform,rotate(45deg));z-index:3}
+			}
+			.price{display:block;margin-top:2px;font-size:rem(11px);text-align:center;
+				&.lowPrice{color:$col_p600}
+			}
+			&.today a{color:$col_primary;background:$col_p100}
+			&.off{color:$col_g400;
+				.price{display:none}
+			}
+			&.start{
+				a{color:$col_white;background:$col_p600;						
+					//&:after{content:'';display:block;position:absolute;top:29px;left:50%;height:24px;padding:0;border:1px solid $col_primary;border-radius:8px;}
+				}
+				&.end:before{display:none}	
+			} 
+			&.end{
+				a{color:$col_white;background:$col_p600}
+				//&:before{content:'';display:block;position:absolute;top:8px;right:50%;left:0;height:32px;background:$col_p100;z-index:1}
+			}
+			&.range{
+				a{color:$col_p600;z-index:2}
+				&:before{content:'';display:block;position:absolute;top:8px;left:-50%;right:-50%;height:32px;background:$col_p100;z-index:1}
+			}
+		}
+		.sun a{color:$col_redP}
+	}
+}
+.kf_laySearch .kf_inner .kf_search .kf_area.kf_areaDate.kf_areaCalendar{
+	.swiperCalendar{padding:45px 0}
+	.k1_calendar_wrap .k1_board_mcal td{height:48px;padding-top:0;vertical-align:middle}
+}
+
+//탑승인원 및 좌석 등급 선택
+.kf_laySearch .kf_inner .kf_search .kf_area{
+	&.kf_areaNum{padding-right:40px;padding-bottom:0}
+}
+.k1_passenger{padding:0;border:none;background:none;
+	li{position:relative;float:none;width:auto;margin-top:32px;
+		&:first-child{margin-top:0;
+			.setting{margin:0}
+		}
+		&:nth-child(2) .caption{padding-left:0}
+		.caption{color:$col_g900;font-weight:$weight700;font-size:rem(16px);
+			.desc{position:static;display:block;padding:0;font-size:rem(14px);letter-spacing:inherit}
+		}
+		.setting{position:absolute;top:6px;right:0;display:inline-block;height:32px;margin:0 !important;white-space:nowrap;border:none;
+			button{@extend %textHidden;position:relative;float:left;width:32px;height:32px;border:1px solid $col_g200;border-radius:50%;background:$col_white;
+				&:after{@include pseudo(12px,12px);background:url(#{$img_url}/common/spr_ico.png) no-repeat -198px 0}
+				&.plus:after{background-position:-212px 0}
+				&:disabled .k1_icon:after{opacity:0.25}
+			}
+			input{float:left;border:none;width:36px;height:32px;min-width:auto;color:$col_g900;font-size:rem(18px);font-weight:$weight700;line-height:32px;padding:0;text-align:center;border-radius:0;font-family:inherit}
+		}
+	}
+}
+.acctAging{margin:32px -40px 0;padding:24px 40px 27px;background:$col_g100;
+	
+	.inpFrm{position:relative;display:block;padding:0;margin:0;
+		.titLab{display:block;width:auto;margin-bottom:8px;color:$col_g900;font-size:rem(14px);font-weight:$weight600;line-height:1.2}
+		.inpA{width:100%;
+			input{min-width:auto;width:100%;}
+			.btnDefault{display:block !important;flex:0 0 72px;min-width:auto;padding:0;}
+		.icDel{top:2px;right:83px;}
+		}		
+	}
+	.listType01{margin-top:6px;
+		> li{margin-top:3px;color:$col_g600;font-size:rem(14px)}
+	}
+
+	.txtInfo{margin-top:16px;padding-top:3px;border-top:1px dashed $col_g300}
+	
+}
+
+//달력 온보딩
+.layerOnboarding{width:614px;margin-left:-307px;
+	.layContainer{padding:0 !important;max-height:none}
+	.poponBoarding{position:absolute;top:24px;left:24px;z-index:100}
+}
+.swiperOnboarding{padding-bottom:40px;
+	.swiper-slide{flex-direction:column;text-align:center;
+		figure{padding-top:77px;background:$col_g200;}
+		.onBoardInfo{padding:32px 0;text-align:center;background:$col_white;
+			.tit{margin-bottom:16px;color:$col_g900;font-size:rem(22px);font-weight:$weight700;line-height:1.2;
+				em{color:$col_primary;font-size:rem(22px);font-weight:$weight700;line-height:1.2;}
+			}
+			.txt{display:block;
+				em{color:$col_g900;font-weight:$weight600}
+			}
+		}
+	}
+}
+
+//렌트카
+.k1_section_multi.section_rent{
+	.kf_flightInner{width:276px;
+		.k1_flight_panel{display:block;
+			.k1_area{float:none;width:100%}
+		}
+		&.kf_rentcarTime{width:244px}
+		&.kf_rentcarCondition{width:212px}
+		&.kf_rentcarDriver{width:244px}
+	}
+	.kf_time .kf_area{min-height:auto;height:220px;padding:48px 39px 24px;
+		.selectWrap{width:100%}
+	}
+	.kf_carCondition .kf_area{min-height:auto;height:293px;padding:48px 39px 24px;
+		.frmBox label img{vertical-align:-3px;margin-right:3px}
+	}
+	.kf_driverCondition .kf_area{min-height:auto;height:220px;padding:48px 39px 24px;}
+}
+
+
+
+//숙박
+.k1_section_multi.section_stay{
+	.kf_flightInner{width:276px;
+		.k1_flight_panel{display:block;
+			.k1_area{float:none;width:100%}
+		}
+		&.kf_stayDestination{width:440px}
+	}
+	.kf_staySearch{
+		.kf_area{min-height:auto;height:400px}
+		.kf_destinationList{width:847px;
+			.searchIcon.staySearch{display:block;
+				&:before{background-position:-85px -30px}
+				&.inpFocus:before{background-position:-66px -30px}
+			}
+			.kf_scrollArea{overflow:visible;height:auto}
+			.quick_resultList{margin-top:15px;
+				> li{
+					> a{position:relative;display:block;padding:9px 0 9px 30px;font-size:rem(14px);
+						em{color:$col_redP;font-size:rem(14px)}
+						.txt{color:$col_g900;font-weight:$weight600;font-size:rem(14px);
+							em{font-weight:$weight600}
+						}
+						.city{color:$col_g600;font-size:rem(14px)}
+						&:before{@include pseudo(18px,18px);left:0;margin-left:0;background:url(#{$img_url}/common/spr_ico.png) no-repeat -85px -30px}
+					}
+					&.stay a:before{background-position:-105px -30px}
+					&.hotplace a:before{background-position:-125px -30px}
+					&.keyword a:before{background-position:-145px -30px}
+				}
+			}
+		}
+	}
+	.kf_serchPersons{
+		.kf_area{height:400px;}
+		.kf_persons{width:847px;padding:48px 39px 24px;
+			.scriptScroll{max-height:242px;margin-right:-39px;padding-right:39px}
+			.passengerArea{position:relative;
+				.k1_passenger{font-size:0;
+					> li{display:inline-block;width:calc(50% - 24px);margin-right:24px;
+						& + li{margin:0 0 0 24px}
+					}
+				}
+				.btDel{position:absolute;top:27px;right:-5px;color:$col_g600;font-size:rem(14px);height:32px;padding:0 5px;line-height:32px}
+				& + .passengerArea{margin-top:30px;padding-top:30px;border-top:1px dashed $col_g300}
+			}
+			
+			.btnShadow{position:relative;padding-top:30px;z-index:1000;
+				/*&:before{content:'';display:block;position:absolute;bottom:48px;left:0;width:100%;height:50px;background-image: linear-gradient(to top, $col_white, rgba($col_white, 1) 40%, rgba($col_white, 0));z-index:1000}*/
+				.btnDefault{display:block;width:100%;box-shadow:0 -45px 20px rgba($col_white, 0.8);}
+			}
+		}
+	}
+}
+
+//맛집/카페
+.k1_section_multi.section_food, .k1_section_multi.section_cafe, .k1_section_multi.section_trip{
+	.kf_innergray{width:600px;margin:0 auto}
+	.kf_food, .kf_cafe, .kf_hotSpot{width:100%;height:64px;
+		.inpA{width:520px;margin-right:16px;
+			input{height:64px;line-height:64px;border-radius:16px;padding:0 60px 0 24px;color:$col_g900;font-size:rem(18px);font-weight:$weight700;box-shadow: 0 8px 16px 0 rgba($col_g900, 0.08);
+				&::-webkit-input-placeholder{font-size:rem(18px);font-weight:$weight400}
+				&:-ms-input-placeholder{font-size:rem(18px);font-weight:$weight400}
+				&::-ms-input-placeholder{font-size:rem(18px);font-weight:$weight400}
+				&::placeholder{font-size:rem(18px);font-weight:$weight400}
+			}
+			.icDel{top:9px;right:7px;}
+		}
+		.icoSearch{width:64px;height:64px;border-radius:16px;box-shadow: 0 8px 16px 0 rgba($col_g900, 0.08);
+			&:after{width:20px;height:20px;margin:-10px 0 0 -10px;background-position:-455px 0}
+		}
+	}
+	.kf_search_cafe{
+		.kf_area{height:449px}
+		.kf_cafeLocal{padding:46px 39px 24px;}
+	}
+}
+.localList{display:flex;flex-wrap:wrap;margin:-20px -10px 0 -10px;
+	> li{position:relative;flex:0 0 calc(100% / 4);padding:15px 0 0 0;text-align:center;
+		input{position:absolute;top:0;left:0;z-index:100;width:100%;height:100%;cursor:pointer;
+			&:checked + label{z-index:100;
+				figure{
+					&:after{display:block;}
+					&:before{display:block;}
+				}
+			}
+		}
+		label{position:relative;display:block;font-size:rem(14px);z-index:2;letter-spacing:-0.01em;
+			figure{position:relative;overflow:hidden;margin-bottom:6px;border-radius:50%;margin:0 10px 6px;
+				img{width:100%}
+				&:after{content:'';display:none;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba($col_primary, 0.6);z-index:1;opacity:0;animation:chkAni 0.5s}
+				&:before{@include pseudo(18px,18px);display:none;background:url(#{$img_url}/common/spr_ico.png) no-repeat -66px 0;z-index:2;opacity:0;animation:chkAni 0.5s}
+			}
+			@keyframes chkAni{
+				0%{opacity:0}
+				30%{opacity:1}
+				70%{opacity:1}
+				100%{opacity:0}
+			}
+		}
+	}
+}
+.frmChkAni{
+> li{
+	input:checked + label{color:$default_col;border-color:$col_g200;background:$col_white;animation:labelAni 0.5s}
+	}
+	@keyframes labelAni{
+	0%{color:$default_col;border-color:$col_g200;background:$col_white}
+	30%{color:$col_p600;border-color:$col_p300;background-color:$col_p100}
+	70%{color:$col_p600;border-color:$col_p300;background-color:$col_p100}
+	100%{color:$default_col;border-color:$col_g200;background:$col_white}
+	}
+}
+
+.wordArea{position:relative;
+	.titDep4{margin-bottom:8px !important}
+	.btDel{position:absolute;top:-2px;right:0;display:inline-block;padding:5px 16px 5px 5px;color:$col_g600;font-size:rem(14px);
+		&:after{@include pseudo(12px,12px);left:auto;right:0;margin-left:0;background:url(#{$img_url}/common/spr_ico.png) no-repeat 0 -12px}
+	}
+	.wordList{font-size:0;margin-left:-8px;
+		> li{position:relative;display:inline-block;margin:8px 0 0 8px;
+			a{display:block;height:36px;padding:0 28px 0 15px;color:$col_g600;font-size:rem(14px);line-height:36px;border-radius:36px;background:$col_g100}
+			.icoDel{@extend %textHidden;position:absolute;top:50%;right:8px;width:20px;height:20px;margin-top:-10px;
+				&:after{@include pseudo(12px,12px);background:url(#{$img_url}/common/spr_ico.png) no-repeat}
+			}
+		}
+		&.tagList{
+			> li{
+				a{height:40px;padding:0 15px;color:$col_g600;font-weight:$weight400;line-height:38px;border:1px solid $col_g200;background:$col_white}
+				&.selON a{color:$col_white;font-weight:$weight600;border-color:$col_p600;background:$col_p600}
+			}
+		}
+	}
+	& + .wordArea{margin-top:28px}
+}
+
+//트립
+.kf_laySearch .kf_search.kf_trip{height:449px;
+	.kf_area{width:423px;padding:48px 40px 24px 40px;
+		&:after{content:'';display:block;position:absolute;bottom:0;left:0;width:100%;height:48px;z-index:100;
+			background:transparent;
+			background-image: linear-gradient(rgba($col_white,0), rgba($col_white,0.2) 40%, $col_white 80%);
+		}
+		.kf_scrollArea{height:100%;padding-right:13px}
+		&.areaTit{
+			.btnDefault{position:absolute;bottom:48px;left:0;width:240px}
+		}
+		
+	}
+}
+.quickTripList{margin:0 -4px;
+	> li{overflow:hidden;float:left;width:25%;padding:8px;
+		> a{position:relative;overflow:hidden;display:block;border-radius:8px;padding-top:100%;
+			img{position:absolute;top:0;left:0;width:100%}
+		}
+		&.tripCase01{width:50%}
+		&.tripCase11{float:right;width:50%}
+		&.movie{
+			a{
+				&:before{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba($col_black, 0.5)}
+				&:after{@include pseudo(42px,42px);background:url(#{$img_url}/common/spr_ico.png) no-repeat -240px -26px}
+			}
+
+		}
+	}
+}
+
+.toggleCityList{
+	.acctItem{margin-top:16px}
+	.toggleBtn{height:53px;padding-left:0;line-height:53px;}
+}
+
+// slider
+.fp_slideArea{
+	.slideValue{position:relative;height:24px;
+		span{position:absolute;top:0;color:$col_g600;font-size:rem(14px);
+			&.minValue{left:0}
+			&.maxValue{right:0}
+		}
+	}
+	.fp_slideInp{display:flex;margin-top:16px;
+		input:read-only{width:100%;background:$col_white;text-align:right;}
+		.dash{flex:0 0 18px;align-items:center;justify-content: center;text-align:center;line-height:48px;}
+		.selectWrap{display:block;width:105px}
+	}
+}
+.ui-slider{position:relative;height:24px;border-radius:24px;background:$col_p100;
+	.ui-slider-range{position:absolute;top:3px;bottom:3px;border-radius:18px;background:$col_p400;}
+	.ui-slider-handle{display:inline-block;position:absolute;top:3px;width:18px;height:18px;border-radius:50%;background:$col_primary;touch-action:none;
+		& + .ui-slider-handle{margin-left:-18px}
+		&:after{@include pseudo(8px,8px);border-radius:50%;background:$col_white}
+	}
+}
+
+//플래그
+.flagList{margin-bottom:12px}
+.flag{display:inline-block;height:22px;margin-right:1px;padding:0 8px;color:$col_r800;font-size:rem(12px);font-weight:$weight600;line-height:22px;border-radius:6px;background:$col_r100;
+	&.envi{color:$col_s800;background:$col_s100}
+	&.fly{color:$col_s800;background:$col_s100}
+	&.jejuOnly{color:$col_p600;background:$col_p100}
+	&.special{color:$default_col;background:$col_g100}
+	&.hot{color:$col_r800;background:$col_r100}
+	&.traveler{color:$col_p600;background:$col_p100}
+	&.resident{color:$col_s800;background:$col_s100}
+	&.flagNew{color:$col_r800;background:$col_r100}
+	&.flagBest{color:$col_p600;background:$col_p100}
+}
+//nodata
+.noData{padding:128px 0 126px;text-align:center;
+	.tit{padding-top:70px;color:$col_g900;font-size:rem(18px);font-weight:$weight700;background:url(#{$img_url}/common/bg_noData.png) no-repeat 50% 0}
+	.subTxt{display:block;margin-top:8px}
+	.btnArea{position:relative;top:auto;right:auto;display:block;margin-top:30px}
+	&.noReview .tit{background-image:url(#{$img_url}/common/bg_noReview.png)}
+	&.noTrip .tit{background-image:url(#{$img_url}/common/bg_noTrip.png)}
+}
+
+//list
+.sideList{border-bottom:1px dashed $col_g200; 
+	> li{display:flex;padding:4px 0;
+		.tit, .contR{width:100%}
+		.contR{color:$col_g900;font-weight:$weight600;text-align:right}
+		&.total{
+			.tit{font-weight:$weight600}
+			.contR{color:$col_p600;font-size:rem(18px);font-weight:$weight700}
+		}
+		&.totalT{padding-bottom:17px;margin-bottom:16px;border-bottom:1px dashed $col_g300;
+			.tit{color:$col_g900;font-size:rem(18px);font-weight:$weight700}
+			.contR{color:$col_g900;font-size:rem(18px);font-weight:$weight700}
+		}
+		&.totalB{margin-top:14px;padding-top:16px;border-top:1px dashed $col_g300;
+			.tit{color:$col_g900 !important;font-weight:$weight700 !important}
+			.contR{color:$col_p600 !important;font-weight:$weight700 !important}
+		}
+	}
+}
+.grayBox{
+	.sideList{margin:-3px 0;
+		> li{
+			.tit{color:$col_g800;font-weight:$weight600}
+			.contR{color:$col_g800;font-weight:$weight400}
+			&.line{margin-top:11px;padding-top:13px;border-top:1px dashed $col_g300}
+		}
+	}
+}
+
+.agreeList{margin-top:18px;padding-top:6px;border-top:2px dotted $col_g300;
+    li{margin-top:15px;
+        .viewBtn{position:absolute;top:-2px;right:-2px;width:20px;height:20px;z-index:2;
+            &:after{content:'';display:inline-block;width:6px;height:6px;border:solid $col_g500;border-width:0 0 2px 2px;@include prefix(transform,rotate(-135deg))}
+        }
+    }
+    &.toggleList .acctItem{
+        & > .frmInp{position:absolute;
+            & + .toggleBtn{height:22px;line-height:22px;
+                &:after{right:3px;margin-top:-6px;border-color:$col_g500}
+            }
+        }
+        .toggleCont .chk-group{display:block;padding-top:10px;
+            .frmInp.txt{display:inline-block;margin-left:28px;
+                & + .frmInp.txt{margin-left:16px}
+            }
+        }
+    }
+    & + .listType01{margin:16px 0 -4px}
+}
+
+/* alert/confirm */
+.alertBox{position:fixed;top:0;left:0;width:100%;height:100%;z-index:110;
+	&:after{content:'';display:block;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba($col_black, 0.8);z-index:1}
+	.alertInner{position:absolute;top:50%;left:50%;width:340px;margin-left:-170px;padding:20px;text-align:center;border-radius:12px;background:$col_white;z-index:10;@include prefix(transform,translateY(-50%));
+		.titAlert{padding:24px 0 10px;color:$col_g900;font-size:rem(18px);font-weight:$weight700;line-height:1.16}
+		.txtAlert{line-height:1.46}
+		.alertBtns{display:flex;margin:30px -4px 0;
+			.btnDefault{width:100%;min-width:auto;margin:0 4px;}
+		}
+		.closeA{@extend %textHidden;position:absolute;top:4px;right:4px;width:56px;height:56px;
+			&:after{@include pseudo(26px,26px);background:url(#{$img_url}/common/spr_layout.png) no-repeat -168px 0} 
+		}
+	}
+}
+
+// 결제 레이아웃
+.viewContents{position:relative;margin-bottom:-164px;padding:64px 288px 164px 0;
+	&:before{overflow:hidden;content:'';display:block;position:absolute;top:0;left:50%;width:100vw;height:100%;margin-left:-50vw;background:$col_g100;z-index:1}
+	.boxWhite{position:relative;z-index:2;
+		.titDep3{margin-bottom:17px;padding-bottom:24px;border-bottom:1px dotted $col_g200}
+		.sideList{border:none}
+        p.txt{margin-top:24px;padding-top:24px;font-size:rem(14px);border-top:1px dashed $col_g200}
+		.guideInfo{margin-top:22px;background:none;padding:30px 0 0 0;border-top:1px dashed $col_g200;
+			&:before{display:none}
+			p{font-size:rem(14px)}
+		}
+		.btnArea{margin-top:32px;
+            .btnDefault{width:100%;}
+        }
+		.noData{
+			.btnArea .btnDefault{width:auto}
+		}
+	}
+}
+.floatingCont{position:absolute;right:50%;top:64px;width:272px;height:calc(100vh - 424px);margin-right:-568px;z-index:2;
+	&.fixedPayment{position:fixed;top:96px;right:50%;height:calc(100vh - 128px);min-height:300px;margin-right:-568px;transition:0.5s;}
+	&.filterFoot{position:absolute;bottom:32px;top:auto;transition:0.5s;}
+	.boxWhite{padding:16px 4px;border:1px solid $col_p400;border-radius:16px;box-shadow:0 8px 16px 0 rgba($col_g900,0.1);background:$col_white;
+		.inner{overflow:auto;overflow-x:hidden;max-height:calc(100vh - 227px);padding:8px 20px;
+			&::-webkit-scrollbar{width:4px;height:100%;background-color:rgba($col_black, 0.1);border-radius:4px}
+		}
+	}
+	.floatingBtns{width:100%;height:88px;
+		.floatingInner{
+			.btnWrap{position:relative;margin-top:46px;
+				.btTip{position:absolute;top:-34px;left:50%;display:block;height:32px;padding:0 25px;color:$col_white;font-size:rem(13px);line-height:32px;border-radius:32px;text-align:center;transform:translateX(-50%);background:$col_p600;box-shadow: 0 8px 16px 0 rgba($col_g900, 0.08);white-space:nowrap;
+					&:after{content:'';display:block;position:absolute;bottom:-2px;left:50%;width:5px;height:5px;border-radius:3px;background:$col_p600;@include prefix(transform,rotate(45deg) skew(3deg, 3deg));}
+				}
+			}
+			.btnDefault{width:100%;min-width:auto;margin-top:9px;box-shadow: 0 8px 16px 0 rgba($col_g900, 0.16);}
+		}
+		
+	}
+}
+
+//필터
+.k1_main_search_area{position:relative;padding:64px 0 64px;text-align:center;border:none;z-index:100;
+	&:before{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:115px;background:$col_g100 url(#{$img_url}/common/bg_mainR.png) repeat-x 0 100%;}
+	.k1_search_are_spot{width:1136px;margin:0 auto;text-align:left;
+		.titDep1{margin:8px 0 32px 0;text-align:center}
+		.k1_section_multi{display:block;position:relative;margin-top:0;padding:0 106px 0 0;font-size:0}
+	}
+}
+.kf_searchFixed{height:96px;margin:0 0 64px;
+	.k1_main_search_area{padding:0;
+		&:before{display:none}
+		.kf_section_fixed{display:none}		
+	}
+	/*&.fixed{height:64px;
+		.k1_main_search_area{position:fixed;top:96px;left:50%;width:1136px;height:64px;margin-left:-568px;
+			
+			.k1_section_multi{display:none}
+			.kf_section_fixed{position:relative;display:block;padding:18px 56px 18px 24px;border:1px solid $col_p400;border-radius:16px;background:$col_white;height:64px;
+				&:before{content:'';display:block;position:absolute;top:-25px;left:50%;width:100vw;margin-left:-50vw;height:24px;
+					background:$col_g100;
+					background-image::linear-gradient(rgba($col_g100, 0), rgba($col_g100, 1), rgba($col_g100, 0));
+				}
+				.titSel{color:$col_p600;font-size:rem(18px);font-weight:$weight700}
+				.kf_selBtns{display:inline-block;float:right;font-size:0;
+					button{position:relative;display:inline-block;height:26px;color:$col_g600;font-size:rem(14px);line-height:26px;padding-left:30px;margin-left:12px;
+						&:after{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:16px;margin-top:-8px;background:$col_g200}
+						&:first-child:after{display:none}
+						&.btPlan{padding-left:0;margin-left:0;
+							&:before{display:none}
+							span{display:inline-block;position:relative;color:$col_g600;font-size:rem(14px);
+								& + span{padding-left:30px;
+									&:before{content:'';display:block;position:absolute;top:50%;left:6px;width:18px;height:18px;margin-top:-9px;background:url(#{$img_url}/common/spr_air.png) no-repeat 0 -66px}
+								}
+							}
+						}
+						&.btDate{
+							&:before{content:'';display:block;position:absolute;top:50%;left:12px;width:12px;height:12px;margin-top:-6px;background:url(#{$img_url}/common/spr_air.png) no-repeat -20px -66px}
+						}
+						&.btSeat{
+							&:before{content:'';display:block;position:absolute;top:50%;left:12px;width:12px;height:12px;margin-top:-6px;background:url(#{$img_url}/common/spr_air.png) no-repeat -34px -66px}
+						}
+					}
+				}
+				.icoReset{position:absolute;top:4px;right:0}
+			}
+		}
+	}*/
+}
+
+.kf_quickFixed{height:64px;margin-top:16px;
+	.tabBox{position:relative;border:1px solid $col_white;z-index:1000}
+	&.fixed{height:64px;
+		.tabBox{position:fixed;top:96px;left:50%;width:1136px;margin:0 0 0 -568px;border-color:$col_p400;box-shadow: 0 8px 16px 0 rgba($col_g900, 0.08);z-index:9999;
+			&:before{content:'';display:block;position:absolute;top:-26px;left:50%;width:100vw;margin-left:-50vw;height:25px;
+				background:$col_g100;
+				background-image:linear-gradient(rgba($col_g100, 0), rgba($col_g100, 1), rgba($col_g100, 0));
+			}
+			.tit{color:$col_p600}
+		}
+		& ~ .kf_schedule_search .filterWrap{}
+	}
+}
+.kf_schedule_search{position:relative;padding-left:288px;margin:16px 0 0 0; 
+	&:after{content:'';display:block;clear:both}
+	.kf_schNum{margin-bottom:12px;padding:16px 24px;color:$col_g600;border-radius:16px;background:$col_white;
+		strong{color:$col_p600;font-weight:$weight400}
+	}
+	.filterWrap{position:fixed;top:170px;left:50%;width:272px;margin:0 0 0 -568px;
+		&.filterFoot{position:absolute;bottom:-123px;top:auto;height:auto;left:0;margin:0;padding:0}
+	}
+	.toggleCont{padding:7px 20px 14px 24px;
+		.frmInp.small{
+			input{
+				& + label{padding:11px 30px 10px 0;color:$default_col;line-height:1.18;
+					&:before{top:50%;left:auto;right:0;margin-top:-11px}
+					&:after{top:50%;left:auto;right:6px;margin:-5px 0 0 0;padding:0}
+				}
+			}
+			input[type=checkbox] + label:after{right:0;margin-top:-11px}
+		}
+	}
+}
+.filterSorting{border-radius:16px;background:$col_white;
+	.toggleBtn{height:56px;padding:0 30px 0 24px;line-height:56px;font-weight:$weight700;font-size:rem(18px);
+		&:after{width:18px;height:18px;background-position:-42px -50px}
+	}
+}
+.filterSelectWrap{position:relative;margin-top:16px;border-radius:16px;background:$col_white;
+	.tit{height:56px;padding:0 24px;color:$col_g900;font-size:rem(18px);font-weight:$weight700;line-height:56px}
+	.icoReset{position:absolute;top:0;right:0}
+	.scriptScroll{height:calc(100vh - 1012px);min-height:285px}
+	.toggleList{				
+		.toggleBtn{height:56px;padding:0 30px 0 24px;color:$col_g800;line-height:56px;border-bottom:1px dashed $col_g200;
+			&[aria-expanded=true]{border-bottom:none}
+			&:after{right:25px;background-position:-62px -50px}
+		}
+		.acctItem:last-child .toggleBtn{border-bottom:0}
+		.toggleCont{border-top:1px dashed $col_g200;
+			.frmInp{
+				img{width:22px;margin-right:6px;vertical-align:-5px}
+			}
+			.fp_slideArea{margin-top:16px}
+			&.toggleEtc{
+				.frmInp label span{display:block;color:$col_g600;font-size:rem(12px)}
+			}
+		}
+	}
+}
+.filterBtns{/*position:absolute;bottom:0;left:0;*/width:100%;margin-top:16px;
+	.btnDefault{display:block;width:100%;box-shadow: 0 8px 16px 0 rgba($col_g900, 0.16);}
+}
+
+//평점
+.reviewStars{border-top:1px solid $col_g600;
+	> li{display:flex;padding:19px 0;border-bottom:1px solid $col_g200;
+		.tit{width:100%;color:$col_g900;font-size:rem(18px);font-weight:$weight700;
+			em{color:$col_p600;font-size:rem(18px);font-weight:$weight700;}
+		}
+		.slideReview{position:relative;flex:0 0 250px;height:32px;
+			input{position:absolute;top:2px;left:0;width:50px;min-width:auto;height:32px;padding:0;line-height:34px;color:$default_col;font-size:rem(18px);font-weight:$weight600;text-align:center;border:0}
+		}
+	}
+}
+.slideReview{text-align:right;
+	.slider{display:inline-block;width:200px;height:32px;margin:0 auto;background:url(#{$img_url}/common/bg_star.png) no-repeat;border-radius:0;
+		.ui-slider-handle{display:block;top:0;width:14px;height:32px;margin-left:-14px;opacity:0;border-radius:0;cursor:pointer;z-index:101;
+			&:after{display:none}
+			& + .ui-slider-handle{display:block;}
+		}
+		.ui-slider-range{left:0;top:0;bottom:auto;height:32px;background:url(#{$img_url}/common/bg_starSlider.png) no-repeat;border-radius:0;z-index:100}
+		&:after{display:none}
+	}
+}
+
+/*.reviewStars{
+	> li{margin-top:32px;text-align:center;
+		.tit{display:block;margin-bottom:12px;color:$col_g900;font-size:rem(18px);line-height:1;
+			em{color:$col_p600}
+		}
+	}
+}
+.slideReview{text-align:center;
+	.slider{display:inline-block;width:200px;height:32px;margin:0 auto;background:url(#{$img_url}/common/bg_star.png) no-repeat;border-radius:0;
+		.ui-slider-handle{display:block;top:0;width:14px;height:32px;margin-left:-14px;opacity:0;border-radius:0;
+			&:after{display:none}
+			& + .ui-slider-handle{display:block;}
+		}
+		.ui-slider-range{left:0;top:0;bottom:auto;height:32px;background:url(#{$img_url}/common/bg_starSlider.png) no-repeat;border-radius:0;z-index:100}
+		&:after{display:none}
+	}
+}*/
+
+
+//지도로 보기 팝업
+.layerMap{left:0;top:104px;width:100%;height:calc(100% - 104px);border-radius:0;background:$col_white;transform:none;
+	&:before{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:8px;opacity:0.05;background-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));z-index:10}
+	.layContainer{height:100%;max-height:inherit;padding:0}
+	.leftCont{position:absolute;top:0;left:0;width:423px;height:100%;padding:32px 24px;background:$col_white;z-index:100;
+		.searchIcon input{width:100%}
+	}
+	.mapCont{position:relative;padding-left:423px;width:100%;height:100%;
+		
+		.cateWrap{position:absolute;top:32px;left:455px;z-index:10;font-size:0;
+			.frmInp{margin-right:8px;
+				label{height:32px;padding:0 11px 0 34px;color:$col_g400;font-size:rem(14px);font-weight:$weight600;border-radius:8px;line-height:32px;background:$col_white;
+					&:after{display:none;}
+					&:before{content:'';display:block;position:absolute;top:50%;left:12px;width:18px;height:18px;margin-top:-9px;border:none;border-radius:0;background:url(#{$img_url}/food/spr_kind.png) no-repeat 0 -20px;}
+				}
+				&.pass label:before{background-position:-18px -20px}	
+				&.trip label:before{background-position:-36px -20px}	
+				&.stay label:before{background-position:-52px -20px}
+				&.food input:checked + label{color:$col_p600;
+					&:before{background-position:0 0}
+				}
+				&.pass input:checked + label{color:$col_secondary;
+					&:before{background-position:-18px 0}
+				}
+				&.trip input:checked + label{color:$col_r600;
+					&:before{background-position:-36px 0}
+				}
+				&.stay input:checked + label{color:#ff8800;
+					&:before{background-position:-52px 0}
+				}
+			}
+		}
+		.mapArea{width:100%;height:100%;
+			img{width:100%;height:100%}
+		}
+	}
+	.closeL{top:32px;right:32px;width:48px;height:48px;border-radius:50%;background:$col_white;box-shadow: 0 8px 16px 0 rgba($col_g900, 0.1)}
+}
+.resultArea{overflow:auto;height:calc(100% - 32px);margin:16px -17px 0 0;padding-right:17px}
+.mapSearchList{
+	> li{margin-top:12px;
+		&:first-child{margin-top:0}
+		a{position:relative;display:block;min-height:166px;padding:23px;border:1px solid $col_g200;border-radius:12px;box-sizing:border-box;font-size:0;
+			&[aria-selected=true]{border-color:$col_p600}
+			figure{overflow:hidden;position:relative;display:inline-block;width:120px;height:120px;border-radius:12px;
+				&:after{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;background-image: linear-gradient(269deg, #000 99%, #000 99%, rgba($col_black, 0) 1%);opacity:0.09}
+				img{position:absolute;top:-25%;bottom:-25%;width:150%;margin:auto}
+				.closed{position:absolute;top:50%;left:50%;padding:0 9px;color:$col_white;font-size:rem(12px);line-height:24px;border-radius:6px;background:$default_col;@include prefix(transform,translate(-50%, -50%));}
+				& + .inner{width:calc(100% - 120px)}
+			}
+			.inner{position:relative;display:inline-block;width:100%;min-height:120px;padding:3px 0 0 18px;vertical-align:top;
+				.titDep4{@include ellipsis(1, 26px);display:block;padding-right:20px;}
+				.tagWrap{@include ellipsis(1, 24px);
+					.tag{display:inline-block;font-size:rem(16px)}
+				}
+				.locationInfo{display:block;margin-top:6px;
+					span{position:relative;display:inline-block;padding:0 7px 0 8px;
+						&:before{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:12px;margin-top:-6px;background:$col_g200}
+						&:first-child{padding-left:0;
+							&:before{display:none}
+						}
+					}
+				}
+				.conUtil{position:absolute;bottom:0;left:18px}
+				.kind{@extend %textHidden;position:absolute;top:7px;right:-5px;width:18px;height:18px;background:url(#{$img_url}/food/spr_kind.png) no-repeat;
+					&.cafe{background-position:-18px 0}	
+					&.trip{background-position:-36px 0}	
+					&.stay{background-position:-52px 0}	
+			}
+			}
+		}
+	}
+}
+
+//쿠폰리스트
+.couponList{
+	>li{overflow:hidden;position:relative;margin-top:12px;background:$col_white;
+		&:first-child{margin-top:0}
+		.couponCont{position:relative;display:block;overflow:hidden;
+			&:before, &:after{content:'';display:block;position:absolute;right:50px;width:16px;height:15px;border-radius:50%;border:1px solid $col_p400;background:$col_white;z-index:10}
+			&:before{top:-8px}
+			&:after{bottom:-8px}
+			.inner{overflow:hidden;position:relative;padding:20px 70px 20px 20px;border:1px solid $col_p400;border-radius:16px;z-index:1;
+				&:after{content:'';display:block;position:absolute;top:0;right:0;bottom:0;width:58px;border-left:1px dashed $col_p400;background:$col_p100 url(#{$img_url}/common/bi_logo_v.png) no-repeat 50% 50%;}
+				strong.titCoupon{@include ellipsis(2, 48px);display:block;margin-bottom:8px;padding:0;color:$col_g900;font-size:rem(20px);border:none;line-height:1.2}
+				.txtTerm{display:block;font-size:rem(14px)}
+				.couponInfo{margin-top:16px;color:$col_g600;font-size:rem(13px);line-height:1.4}
+			}
+		}
+		.btDown{@extend %textHidden;position:absolute;top:2px;right:2px;bottom:2px;width:57px;border-radius:0 20px 20px 0;background:$col_p100;z-index:1;
+			&:after{@include pseudo(22px,22px);left:auto;right:20px;margin-left:0;background:url(#{$img_url}/common/spr_coupon.png) no-repeat -96px 0}
+			
+		}
+		input{position:absolute;top:20px;left:20px;z-index:1;			
+			&:checked{
+				& + label.couponCont{
+					&:before, &:after{border-color:$col_p400}
+					.inner{border-color:$col_p400;
+						&:after{border-color:$col_p400;}
+						&:before{background-position:-24px 0}
+					}
+				}
+			}
+			&:disabled{
+				& + label.couponCont .inner{
+					*{opacity:0.6;}
+					p.listType02.typePoint{opacity:1}
+				}				
+			}
+			&[type=checkbox]{
+				& + label.couponCont .inner{
+					&:before{background-position:-48px 0}
+				}
+				&:checked + label .inner:before{background-position:-72px 0}
+			}
+		}
+		label.couponCont{
+			&:before, &:after{border-color:$col_g200}
+			.inner{border-color:$col_g200;
+				&:before{@include pseudo(22px,22px);left:auto;right:20px;margin-left:0;background:url(#{$img_url}/common/spr_coupon.png) no-repeat}	
+				&:after{border-color:$col_g200;background:none}
+			}
+		}
+	}
+	p.listType02 + &{margin-top:15px}
+}
+
+//포토리뷰, 사진보기
+.layPhotoView{
+	.layContainer{max-height:700px}
+}
+.swiperGallery{
+	.swiperImgBig{overflow:hidden;height:473px;border-radius:16px;background:$col_black;
+		.swiper-wrapper{height:473px;
+			.swiper-slide{height:100%;padding-top:100px;
+				figure{overflow:hidden;position:relative;width:100%;height:270px;}
+				img{position:absolute;top:50%;width:100%;transform:translateY(-50%);transition:0.5s;
+					&:hover{transform:scale(1.1) translateY(-45%)}
+				}
+			}
+		}
+		.swiper-paging{bottom:127px}
+		[class^=swiper-button]{width:40px;height:40px;margin-top:-20px}
+	}
+	.swiperThumb{margin:32px 0;height:114px;
+		.swiper-slide{height:114px;			
+			figure{position:relative;overflow:hidden;height:114px;border-radius:12px;width:100%;padding-top:100%;box-sizing:border-box;				
+				> a{display:block;height:114px}
+				img{position:absolute;top:50%;left:50%;width:150%;transform:translate(-50%, -50%)}
+			}
+			&.swiper-slide-thumb-active, &.swiper-slide-active{
+				figure{border:1px solid $col_p600;
+					&:after{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;background:rgba(#ddd, 0.6);}
+				}
+			}
+		}
+	}
+}
+
+.layPhotoList{
+	.anchorTab{padding-top:30px;
+		.titDep4{margin-bottom:12px;
+			.count{color:$col_g900;font-size:rem(18px);font-weight:$weight700}
+		}
+		+ {padding-top:30px}
+	}
+}
+.photoList{display:flex;margin:-6px -6px 0;flex-wrap:wrap;
+	> li{flex:0 33.33%;padding:6px;
+		> a{position:relative;display:block;overflow:hidden;border-radius:12px;padding-top:100%;}
+		img{position:absolute;top:50%;left:50%;width:200%;transform:translate(-50%, -50%);transition:0.5s;
+			&:hover{transform:scale(1.1) translate(-45%, -45%)}
+		}
+		&.more a:after{content:'+'attr(data-count);display:flex;position:absolute;top:0;left:0;width:100%;height:100%;color:$col_white;font-size:rem(22px);font-weight:$weight700;text-align:center;line-height:100%;background:rgba($col_g900, 0.5);align-items:center;justify-content:center;}
+	}
+}
+
+//공유하기
+.layPop.popShare{
+	.layContainer{padding:32px 0;text-align:center}
+	.shareList{display:inline-block;text-align:center;font-size:0;
+		> li{display:inline-block;width:94px;text-align:center;
+			> button{position:relative;display:block;width:70px;padding-top:75px;margin:0 auto;
+				&:before{@include pseudo(70px,70px);top:0;margin-top:0;border-radius:50%;background:$col_g100;}
+				&:after{@include pseudo(32px,32px);top:19px;margin-top:0;background:url(#{$img_url}/common/spr_ico.png) no-repeat -543px 0}
+				span{display:block;color:$col_g800;line-height:1.2}
+				&.btSms:after{background-position:-510px 0}
+				&.btUrl:after{background-position:-477px 0}
+			}
+		}
+	}
+}
+
+//로딩
+.loading{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba($col_p600, 0.9);z-index:10000;
+	.loadingInner{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);text-align:center;
+		.loadingAni{display:inline-block;width:96px;}
+		.loadingTxt{margin-top:20px;color:$col_white;font-size:rem(20px);font-weight:$weight700;text-align:center}
+	}
+	.loadingAD{position:absolute;bottom:64px;left:50%;width:1136px;height:64px;margin-left:-568px;color:$col_white;font-size:rem(18px);text-align:center;line-height:64px;border-radius:12px;background:$col_p800}
+}
+
+//에러페이지
+.errorWrap{display:flex;align-items:center;justify-content:center;width:560px;height:calc(100vh - 332px);margin:0 auto;flex-direction:column;text-align:center;
+	.titError{display:block;margin-bottom:10px;color:$col_g900;font-size:rem(26px);font-weight:900;font-family:$fontEXB;padding-top:158px;text-align:center;background:url(#{$img_url}/common/img_error404.png) no-repeat 50% 0;}
+	.txterror{font-size:rem(18px)}
+	.btnArea{display:flex;width:100%;margin:62px -4px 0;
+		.btnDefault{width:100%;min-width:auto;display:block}
+	}
+}
+
+/* 크로스셀링 팝업 */
+.layContainer.crossSel{padding-top:44px;
+    .contentTit{color:$col_g900;font-size:rem(18px);font-weight:$weight700;text-align:center;
+        span{color:$col_p600;font-size:rem(18px);font-weight:$weight700}
+    }
+    .subTit{margin-top:6px;text-align:center}
+    .recommendData{position:relative;margin-top:21px;padding:21px 24px 0;border-radius:12px;border:1px solid $col_g200;
+        .recName,.recPrice{display:block;color:$col_g900;font-weight:$weight700}
+        .recPrice{margin:3px 0 6px;font-size:rem(18px)}
+        .recDetail,.recInfo{display:inline-block;vertical-align:middle}
+        .recDetail{color:$col_g800;font-size:rem(14px);font-weight:$weight600}
+        .recInfo{margin-left:4px;
+            li{float:left;position:relative;color:$col_g600;font-size:rem(14px);
+                +li{padding-left:13px;
+                    &:before{content:'';position:absolute;top:4px;left:6px;width:1px;height: 14px;background:$col_g200}
+                }
+            }
+        }
+        .recTime{overflow:hidden;margin:20px -24px 0;height:56px;line-height:56px;padding:0 23px;font-size:rem(14px);color:$col_g600;background:$col_g100;border-radius:0 0 12px 12px;
+            .timeFlag{float:right;margin-top:16px;padding:6px 8px;color:$col_white;font-size:rem(12px);font-weight:$weight600;line-height:1;background:$col_p500;border-radius:6px}
+        }
+    }
+    .couponList{margin-top:21px;
+        .couponCont .inner strong.titCoupon{height:auto}
+    }
+    .welcomePoint{overflow:hidden;margin-top:21px;padding:16px 24px 15px 24px;border:1px solid $col_g200;border-radius:12px;
+        >span{font-weight:$weight700}
+        .pointName{float:left;color:$col_g900}
+        .pointAmount{float:right;color:$col_p600}
+    }
+    .keywords{margin:21px 0 -8px;font-size:0;
+        >a{padding:0 12px;line-height:30px;border-radius:16px}
+    }
+}
+
+.boxWhite{
+    &.offerArea{padding:38px 40px 26px;
+        .otherStory.swiperWrap{
+            .likeNum{font-size:rem(16px)}
+        .swiper-pagination .swiper-pagination-bullet{margin:17px 2px 0}
+        }
+    }
+    &.sch_result{position:relative;padding:24px;
+        .kf_schNum ~ .selectWrap.selectSmall{position:absolute;top:16px;right:20px;z-index:10;width:160px}
+    }
+}
+.boxWhite.noData{
+    .tit > small{display:block;margin-top:9px;color:$default_col;font-size:rem(16px);font-weight:$weight400}
+    .btnDefault{margin-top:29px}
+}
+.mapSearch[aria-disabled=true]{color:$col_g400;cursor:default;
+    &:before{opacity:0.3}
+ }
+ .kf_laySearch .mapSearch{position:absolute;top:46px;right:39px;font-size:rem(14px)}
+.tCenter{text-align:center}
+.layPop{
+    &.layerS .titLay{padding:44px 44px 0}
+    .titLay em.pur{color:$col_p600;font-weight:$weight700;font-size:rem(18px)}
+}
+.titDep2 > small{display:block;margin-top:13px;color:$default_col;font-weight:$weight400;font-family:$default_font;font-size:rem(18px)}
+.selectWrap.selectSmall.w100{width:100px}
+.descBox{padding:16px 20px;text-align:center;border-radius:12px;background-color:$col_g100;letter-spacing:-.02em;
+    .pur{color:$col_p600;font-weight:$weight600}
+    &.col03{color:$col_white;background:#0dc8cc;
+        em{color:#ffeeac}
+    }
+}
+.listType01{
+    &.small li{font-size:rem(13px)}
+    &.medium li{font-size:rem(14px);color:$col_g600;
+        &:before{top:9px} 
+     }
+}
+
+// height:1080이하
+@media screen and (max-height:850px) {
+	.quickSearchList{padding-top:10px}
+	.k1_section_multi .kf_innergray{padding-bottom:30px}
+	.kf_laySearch .kf_inner .kf_search .kf_area{min-height:434px;padding:32px 0 24px 30px}
+	.kf_laySearch .kf_inner .kf_search .kf_area .kf_scrollArea{height:330px}
+	.kf_laySearch .kf_inner .kf_search .kf_area.kf_areaSel .kf_scrollArea{height:398px}
+	.wrapper.headFixed header nav .quickSearchWrap .laySearch .quickSearchList{padding-top:30px}
+	.kf_laySearch .kf_search.kf_trip .kf_area{padding:32px 30px 24px 30px}
+}
+@media screen and (min-width:1236px) {
+	.laySearch .closeL{left:50%;right:auto;margin-left:568px}
+}

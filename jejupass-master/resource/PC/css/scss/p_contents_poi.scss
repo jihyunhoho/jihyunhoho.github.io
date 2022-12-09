@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+@import '_pbase', '_pfont'; 
+
+/* POI */
+.poi{
+    .viewInfoWrap{
+        .titDep1{margin-bottom:12px}
+    }
+    .placeadd{margin-top:8px;color:$col_g600;font-size:rem(14px)}
+}
+.viewContents.tabAllCont{
+    .titDep3{z-index:1}
+    .swiper-pagination{position:relative;z-index:1}
+}
+.poiWrap{position:relative;
+    ~ .poiWrap{margin-top:48px}
+    .poiCont{display:flex;
+        .scriptScroll>.scroll-element.scroll-y{right:0}
+    }
+    .mapCont{position:relative;width:726px;height:100%;z-index:1;		
+		.cateWrap{position:absolute;top:20px;left:20px;z-index:10;font-size:0;
+			.frmInp{margin-right:8px;
+				label{height:32px;padding:0 11px 0 34px;color:$col_g400;font-size:rem(14px);font-weight:$weight600;border-radius:8px;line-height:32px;background:$col_white;
+					&:after{display:none;}
+					&:before{content:'';display:block;position:absolute;top:50%;left:12px;width:18px;height:18px;margin-top:-9px;border:none;border-radius:0;background:url(#{$img_url}/food/spr_kind.png) no-repeat 0 -20px;}
+				}
+				&.pass label:before{background-position:-18px -20px}	
+				&.trip label:before{background-position:-36px -20px}	
+				&.stay label:before{background-position:-52px -20px}
+				&.food input:checked + label{color:$col_p600;
+					&:before{background-position:0 0}
+				}
+				&.pass input:checked + label{color:$col_secondary;
+					&:before{background-position:-18px 0}
+				}
+				&.trip input:checked + label{color:$col_r600;
+					&:before{background-position:-36px 0}
+				}
+				&.stay input:checked + label{color:#ff8800;
+					&:before{background-position:-52px 0}
+				}
+			}
+		}
+		.mapArea{overflow:hidden;border-radius:16px;width:100%;height:528px;
+			img{width:100%;height:100%}
+            button{@extend %textHidden;position:absolute;right:20px;width:44px;height:44px;border-radius:50%;background:$col_white;box-shadow:0 8px 16px 0 rgba(32,32,32,0.2);
+                &.zoomIn{bottom:80px;
+                    &:after{@include pseudo(18px,18px);background:url(#{$img_url}/common/ic_x18_mapview_zoom_out.png) no-repeat}
+                }
+                &.location{bottom:20px;
+                    &:after{@include pseudo(18px,18px);background:url(#{$img_url}/common/ic_x18_mapmy.png) no-repeat}
+                }
+            }
+		}
+	}
+    .rightCont{position:relative;margin-left:24px;padding-right:11px;z-index:1;width:375px;height:528px;overflow-y:auto}
+    .mapSearchList{
+        > li{
+            a{background-color:$col_white}
+        }
+    }
+    .restList{position:relative;margin-bottom:48px;z-index:1;
+        .summaryCon{margin-top:12px;
+            .hashtag{
+                & > li{width:auto;padding:0 4px 0 0;
+                    &:before{content:'# ';display:inline-block;}
+                }
+            }
+            .distance{
+                &:before{content:'';display:inline-block;width:1px;height:14px;margin:0 8px;background:$col_g200;vertical-align:middle}
+            }
+        }
+        .likeNum{display:block;margin-top:16px}
+    }
+    .bannerType{position:relative;
+        .flag{position:absolute;top:20px;right:20px;width:49px;height:24px;margin:0;padding:0 5px 0 0;border-radius:6px;background:rgba(0,0,0,0.4);color:$col_white;font-size:rem(12px);text-align:center;
+            &:before{content:'';display:inline-block;width:12px;height:12px;background:url(#{$img_url}/common/ico_flag.png) no-repeat;vertical-align:middle}        
+        }
+    }
+    .reviewList{margin:0;border-top:0;
+        > li{
+            &:last-child{border-bottom:0}
+            &.photoY{
+                .photoSet{top:72px}
+            }
+        }
+        
+    }
+    .kf_innergray{position:relative;margin-top:80px;padding:44px 0;z-index:1;background-color:$col_white;border-radius:12px;text-align:center;
+        .kf_flightInner{margin:0 auto;width:658px;
+            .inpA{width:592px}
+            input[type=text]{display:inline-block;width:590px;height:56px;border-radius:12px}
+           .btIco.icoSearch{margin-left:8px;width:56px;height:56px}
+           .kf_scrollArea{width:590px;max-height:144px;text-align:left;
+                .quick_resultList{
+                    > li{
+                        > a{position:relative;display:block;margin-left:16px;padding:10px 0 10px 30px;font-size:rem(14px);
+                            em{color:$col_redP;font-size:rem(18px)}
+                            .txt{color:$col_g900;font-weight:$weight600;font-size:rem(18px);
+                                em{font-weight:$weight600}
+                            }
+                            &:before{@include pseudo(18px,18px);left:0;margin-left:0;background:url(#{$img_url}/common/spr_ico.png) no-repeat -85px -30px}
+                        }
+                    }
+                }
+            }
+            .inpA.result{display:inline-block;border:1px solid $col_primary;border-radius:12px;
+                input[type=text]{margin:0;border:0;border-radius:12px}
+                input[type=text]:focus{border:0;border-radius:12px}
+                .btIco.icoSearch{vertical-align:top}
+            }
+        }
+    }
+}
+.reviewInfo{position:absolute;top:24px;right:0;
+    .kind{@extend %textHidden;display:inline-block;width:18px;height:18px;margin-right:4px;background:url(#{$img_url}/food/spr_kind.png) no-repeat;vertical-align:-2px;
+        &.cafe{background-position:-18px 0}	
+        &.trip{background-position:-36px 0}	
+        &.stay{background-position:-52px 0}	
+	}
+    .tit{color:$col_g900;font-weight:$weight700}
+    .distance{
+        &:before{content:'';display:inline-block;width:1px;height:12px;margin:0 6px 0 4px;background:$col_g200;font-size:rem(14px);vertical-align:middle}
+    }
+}
+
+/*회사소개*/
+.companyArea{width:100% !important;padding-top:0 !important;
+    .visualPic{overflow:hidden;position:relative;height:971px;text-align:center;
+        img{transition:0.5s;}
+        &:hover img{left:55%;top:55%;transform:scale(1.1) translate(-52%, -52%);}
+        &:after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba($col_black,.1)}
+        img{position:absolute;top:50%;left:50%;min-width:1920px;width:100%;@include prefix(transform,translate(-50%, -50%))}
+        figcaption{position:absolute;top:50%;left:50%;height:207px;margin-top:-103px;z-index:10;@include prefix(transform,translateX(-50%));
+            > p{color:$col_white;font-weight:$weight700;font-size:rem(40px);font-family:$fontEXB;text-align:center;
+                &:after{content:'';display:inline-block;width:6px;height:6px;margin-bottom:30px;border-radius:50%;background-color:$col_pointR}
+            }
+            > span.subTit{display:block;color:$col_white;font-size:rem(20px);margin-top:22px;}
+            .scrollDown{@extend %textHidden;position:absolute;bottom:0;width:29px;height:31px;
+                &:after{@include pseudo(29px,31px);background:url(#{$img_url}/common/ic_x36_scrollDown.png) no-repeat}
+            }
+        }
+    }
+    .companyInfo{width:1136px;margin:104px auto 0;
+        .mainInfo{overflow:hidden;
+            .topView{display:flex;
+                > strong{width:50%;color:$col_g900;font-size:rem(32px);line-height:48px}
+                .txtCont{width:50%;
+                    .titDep3{margin-bottom:24px;font-size:rem(22px);font-weight:$weight600}
+                    > p{font-size:rem(18px);line-height:30px}
+                }
+            }
+            .imgCont{margin:60px 0}
+            > .txtCont{width:50%;float:right;font-size:rem(18px);line-height:30px}
+        }
+        .comInfo{clear:both;display:inline-block;position:relative;width:100%;margin-top:164px;
+            .topView{position:relative;margin-bottom:50px;
+                > strong{color:$col_g900;font-size:rem(32px)}    
+                .pageMove{position:absolute;top:0;right:0;margin-top:0}
+                &.contArea{display:flex;
+                    > strong{width:50%;color:$col_g900;font-size:rem(22px);line-height:37px}
+                } 
+            }
+            .imgCont{position:relative;
+                .txtCont{position:relative;width:640px;margin-top:-114px;padding:64px 64px 0 0;background:$col_white;
+                    .titDep4{margin-bottom:22px;font-size:rem(22px);font-weight:$weight600;line-height:34px}
+                    > p{font-size:rem(18px);line-height:30px}
+                    &.rightType{float:right;padding:64px 0 0 64px;}
+                }
+                &.type02{display:flex;
+                    img{width:100%;height:100%;}
+                    img + img{margin:115px 0 0 24px}
+                }
+            }
+            > strong{color:$col_g900;font-size:rem(32px)}    
+            > .txtCont{width:718px;margin-top:-50px;font-size:rem(18px);line-height:30px}
+        }
+    }
+    .comInfo.wideType{margin-top:164px;
+        & + .companyInfo{margin-top:0}
+        &.last{margin-bottom:-164px}
+        .topView{position:relative;width:1163px;margin:0 auto 50px;
+            > strong{color:$col_g900;font-size:rem(32px)}    
+            .pageMove{position:absolute;top:0;right:0;margin-top:0}
+            &.contArea{display:flex;
+                > strong{width:50%;color:$col_g900;font-size:rem(22px);line-height:37px}
+                .txtCont{width:50%;
+                    .titDep3{margin-bottom:24px;font-size:rem(22px);font-weight:$weight600}
+                    > p{font-size:rem(18px);line-height:30px}
+                }
+            }
+        }
+        .imgCont img{width:100vw;}
+        .imgCont.bg{width:100vw;height:1016px;background:url(#{$img_url}/dummy/@com_img09.jpg) no-repeat top center/100% 1016px;
+            .wrapper{position:relative;width:1136px;margin:0 auto;
+                .txtCont{height:305px;position:absolute;top:356px;
+                    strong{color:$col_white;font-size:rem(32px)}
+                    p{color:$col_white;font-size:rem(18px);line-height:30px;
+                        &.bigT{margin:24px 0 56px;font-size:rem(22px);font-weight:$weight600}    
+                    }
+                }
+            }
+        }
+    }
+}

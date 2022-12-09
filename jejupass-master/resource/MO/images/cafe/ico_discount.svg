@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a82323;
+      }
+
+      .cls-1, .cls-6 {
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #63a1ff;
+      }
+
+      .cls-10, .cls-3 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #63a1ff;
+        stroke-width: 5px;
+      }
+
+      .cls-4, .cls-8 {
+        fill: #18225c;
+      }
+
+      .cls-5 {
+        fill: #e83667;
+      }
+
+      .cls-6, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-8 {
+        font-size: 12px;
+        font-family: Pretendard-Black, Pretendard;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+
+      .cls-9 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="ic_x72_discount" transform="translate(-1045 -2744)">
+    <rect id="container" class="cls-1" width="72" height="72" transform="translate(1045 2744)"/>
+    <g id="그룹_14665" data-name="그룹 14665" transform="translate(1052.2 2751.2)">
+      <path id="사각형_10847" data-name="사각형 10847" class="cls-2" d="M4,0H39.2a4,4,0,0,1,4,4V33.2a10,10,0,0,1-10,10H10a10,10,0,0,1-10-10V4A4,4,0,0,1,4,0Z" transform="translate(4.32 10.08)"/>
+      <g id="사각형_10848" data-name="사각형 10848" class="cls-3" transform="translate(38.88 15.84)">
+        <path class="cls-9" d="M0,0H13.72a5,5,0,0,1,5,5V16.92a9,9,0,0,1-9,9H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z"/>
+        <path class="cls-10" d="M5,2.5h8.72A2.5,2.5,0,0,1,16.22,5V16.92a6.5,6.5,0,0,1-6.5,6.5H5a2.5,2.5,0,0,1-2.5-2.5V5A2.5,2.5,0,0,1,5,2.5Z"/>
+      </g>
+      <rect id="사각형_10849" data-name="사각형 10849" class="cls-4" width="43.2" height="4.32" rx="2.16" transform="translate(4.32 53.28)"/>
+      <rect id="Rectangle_83" data-name="Rectangle 83" class="cls-5" width="7.2" height="7.2" rx="3.6" transform="translate(0 0)"/>
+      <rect id="container-2" data-name="container" class="cls-6" width="25.92" height="25.92" transform="translate(12.96 18.72)"/>
+      <path id="Star_1" data-name="Star 1" class="cls-7" d="M14.444.765a2,2,0,0,1,2.613,1.082l.894,2.159a2,2,0,0,0,1.082,1.082l2.159.894A2,2,0,0,1,22.275,8.6l-.894,2.159a2,2,0,0,0,0,1.531l.894,2.159a2,2,0,0,1-1.082,2.613l-2.159.894a2,2,0,0,0-1.082,1.082l-.894,2.159a2,2,0,0,1-2.613,1.082l-2.159-.894a2,2,0,0,0-1.531,0L8.6,22.275a2,2,0,0,1-2.613-1.082l-.894-2.159a2,2,0,0,0-1.082-1.082l-2.159-.894A2,2,0,0,1,.765,14.444l.894-2.159a2,2,0,0,0,0-1.531L.765,8.6A2,2,0,0,1,1.848,5.983l2.159-.894A2,2,0,0,0,5.089,4.006l.894-2.159A2,2,0,0,1,8.6.765l2.159.894a2,2,0,0,0,1.531,0Z" transform="translate(14.4 20.16)"/>
+      <text id="_" data-name="%" class="cls-8" transform="translate(20.92 35.68)"><tspan x="0" y="0">%</tspan></text>
+    </g>
+  </g>
+</svg>

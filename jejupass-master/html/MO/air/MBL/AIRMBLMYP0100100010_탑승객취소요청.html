@@ -1,0 +1,151 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>탑승객 취소요청 - 제주패스</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="/resource/MO/images/favicon/apple_touch_icon.ico">
+<link rel="apple-touch-icon" href="/resource/MO/images/favicon/apple_touch_icon_144.ico">
+<link href="/air/css/kfx/mbl/airA.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_commonAIR.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_contentsAIR.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_contents_air.min.css" rel="stylesheet" type="text/css">
+<style>
+	.layPop, .dimmed{display:block !important}
+</style>
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper airWrapper">
+	
+	<!-- jsp:include page="/inc/MO/header.html" / -->
+	
+	<header>
+		<button type="button" class="btPrev">이전</button>
+		<h1 class="titDep1 titAir">김포<span class="icTrip">왕복여정</span>제주</h1>
+		<div class="menuWrap">
+			<button type="button" class="btNav">메뉴</button>
+		</div>
+	</header>
+
+	<div id="container" class="container">
+		
+
+		
+
+	</div><!-- //container -->
+
+	<div class="floatingBtns floatingCase05">
+		<div class="floatingInner">
+			<div class="sortingArea">
+				<button type="button" class="btSort">정렬</button>
+				<button type="button" class="btFilter">필터</button>
+			</div>
+		</div>
+	</div>		
+
+</section><!-- //wrapper -->
+<footer>
+	<img src="/resource/MO/images/dummy/@footer.png" alt="">
+</footer>
+
+<aside>
+	<div class="asideRight">
+		<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+	</div>
+	
+</aside>
+
+<!-- 탑승객 취소요청 팝업 -->
+<div id="pop_passportCert" class="layPop k1_pop_wrap">
+	<div class="k1_pop">
+		<h3>
+			탑승객 취소요청<a href="#" class="k1_btn close_btn"><span class="k1_icon_min pop-close">팝업닫기</span></a>
+		</h3>
+		<div class="cont">
+
+			<p class="pageTit">취소할 탑승객을 선택하세요</p>
+			<span class="subTit">해당 여정에서 제외할 탑승객을 선택 후 <br>취소요청 해주세요. <br>전체 취소 시 예약취소로 처리됩니다.</span>
+
+			<!-- 편집 모드 -->
+			<div class="kf_listControls">
+				<span class="frmInp frmTotal"><input type="checkbox" id="chk_listTotal"><label for="chk_listTotal"><span class="false">전체선택</span><span class="true">선택해제</span></label></span>
+				<div class="kf_contRight">
+					<div class="unfold">예약번호(PNR번호) : <strong>1234-5678</strong></div>
+				</div>
+			</div>
+			<!-- //편집 모드 -->
+			
+			<ul class="kf_passengerList">
+				<li class="frmInp">
+					<input type="checkbox" id="chkpassen01">
+					<label class="kf_passenBox" for="chkpassen01">
+						<span class="name">홍길동<span class="passenger">성인1</span></span>
+						<div class="info">
+							<span>1977.07.07</span>
+							<span>남자</span>
+							<span>한국</span>
+						</div>
+					</label>
+				</li>
+				<li class="frmInp">
+					<input type="checkbox" id="chkpassen02">
+					<label class="kf_passenBox" for="chkpassen02">
+						<span class="name">선우정아<span class="passenger">성인2</span></span>
+						<div class="info">
+							<span>1977.07.07</span>
+							<span>여자</span>
+							<span>한국</span>
+						</div>
+					</label>
+				</li>
+			</ul>
+
+			<div class="k1_box marT32">
+				<div class="inpWrap">
+					<label for="inpBirth">취소 사유</label>
+					<span class="k1_custom_ipt">
+						<textarea placeholder="취소 사유를 입력하세요.(최대 500자)"></textarea>
+					</span>
+					<p class="textNum">0/100</p>
+				</div>
+			</div>
+
+			<div class="guideInfo boxType01">
+				<h4 class="titGuide">알려드립니다</h4>
+				<ul class="listType01">
+					<li>이미 취소된 예약은 탑승객 취소하실 수 없습니다.</li>
+					<li>소아/유아를 제외한 최소 출발인원은 1명입니다.</li>
+					<li>소아/유아를 제외한 인원수가 최소 인원수보다 적으면 예약 취소 후 다시 예약하셔야 합니다.</li>
+					<li>발권된 항공권 환불이나 재발행 시 항공사 수수료 외 당사 수수료가 발생할 수 있습니다.</li>
+					<li>항공사 수수료의 경우 요금규정을 참고하시기 바랍니다.</li>
+					<li>전체 취소 시, 예약취소로 처리됩니다.</li>					
+				</ul>
+			</div>
+
+			<div class="kf_btn_inner">
+				<button type="button" class="k1_btn max">취소</button>
+				<button type="button" class="k1_btn max dark" disabled>탑승객 취소 요청</button>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!-- //탑승객 취소요청 팝업 -->
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+
+
+</body>
+</html>

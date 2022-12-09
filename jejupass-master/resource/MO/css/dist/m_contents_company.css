@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url(../fonts/Pretendard-Regular.woff2) format("woff2"), url(../fonts/Pretendard-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"), url(../fonts/Pretendard-SemiBold.woff2) format("woff2"), url(../fonts/Pretendard-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url(../fonts/Pretendard-Bold.woff2) format("woff2"), url(../fonts/Pretendard-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'NanumSquareR';
+  font-weight: 900;
+  font-display: swap;
+  src: local("나눔스퀘어라운드 ExtraBold"), url(../fonts/NanumSquareRoundOTFEB.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url(../fonts/Pretendard-Regular.woff2) format("woff2"), url(../fonts/Pretendard-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"), url(../fonts/Pretendard-SemiBold.woff2) format("woff2"), url(../fonts/Pretendard-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url(../fonts/Pretendard-Bold.woff2) format("woff2"), url(../fonts/Pretendard-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'NanumSquareR';
+  font-weight: 900;
+  font-display: swap;
+  src: local("나눔스퀘어라운드 ExtraBold"), url(../fonts/NanumSquareRoundOTFEB.woff) format("woff");
+}
+
+/*회사 소개*/
+.companyInfo {
+  margin-bottom: -128px;
+}
+
+.mainImg {
+  height: 716px;
+  background: url(/resource/MO/images/company/bg_loading.jpg);
+  background-size: 100% auto;
+  margin: -30px -20px 0;
+}
+
+.mainImg .mainTxt {
+  position: relative;
+  top: 144px;
+  margin-left: 32px;
+}
+
+.mainImg .mainTxt p {
+  color: #fff;
+}
+
+.mainImg .mainTxt .pageTit + p {
+  margin: 20px 0 44px;
+  font-size: 1.8rem;
+}
+
+.mainInfo {
+  margin: 60px 0 48px;
+  padding-bottom: 49px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.mainInfo strong {
+  color: #202020;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.mainInfo .titDep3 {
+  margin-top: 24px;
+}
+
+.mainInfo .imgCont {
+  margin: 28px -20px;
+}
+
+.comInfo {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.comInfo strong {
+  color: #202020;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.comInfo strong span {
+  display: block;
+  color: #202020;
+  font-size: 2rem;
+}
+
+.comInfo .pageMove {
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+
+.comInfo .pageMove img {
+  width: auto;
+}
+
+.conType01 .imgCont {
+  margin: 28px 0 36px;
+}
+
+.conType01.passAir, .conType01.passCafe {
+  margin-right: -20px;
+  clear: both;
+}
+
+.conType01.passAir .pageMove, .conType01.passCafe .pageMove {
+  right: 20px;
+}
+
+.conType01.passAir .txtCont, .conType01.passCafe .txtCont {
+  padding-right: 20px;
+}
+
+.conType02 .titDep4 {
+  margin-top: 24px;
+}
+
+.passCar .imgCont, .passTrip .imgCont {
+  margin-left: -20px;
+}
+
+.passStay .imgCont, .pledge .imgCont {
+  margin: 36px -20px 0;
+}
+
+.passFood {
+  display: inline-block;
+}
+
+.passFood img {
+  width: 100%;
+}
+
+.passFood .img01 {
+  float: left;
+  margin: 40px 0 0 -20px;
+}
+
+.passFood .img02 {
+  float: right;
+  margin: 80px -20px 0 0;
+}

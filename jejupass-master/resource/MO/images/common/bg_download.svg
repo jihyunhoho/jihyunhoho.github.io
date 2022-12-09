@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12.002" viewBox="0 0 12 12.002">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #63a1ff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="ic_x18_down" transform="translate(0 0.004)">
+    <path id="Vector" class="cls-1" d="M0,0H12V12H0Z"/>
+    <g id="Group_14256" data-name="Group 14256" transform="translate(1.597 1.996)">
+      <path id="Vector-2" data-name="Vector" class="cls-2" d="M-1-1,1.569,1.569,4.137-1" transform="translate(2.835 4.024)"/>
+      <path id="Vector-3" data-name="Vector" class="cls-2" d="M0-1V5.593" transform="translate(4.403)"/>
+      <path id="Vector-4" data-name="Vector" class="cls-2" d="M9.53,0V2.933a.3.3,0,0,1-.116.23.445.445,0,0,1-.281.1H.4a.445.445,0,0,1-.281-.1A.3.3,0,0,1,0,2.933V0" transform="translate(-0.361 5.594)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg id="Group_16204" data-name="Group 16204" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_11574" data-name="Rectangle 11574" style="fill:none" d="M0 0h32v32H0z"/>
+        </clipPath>
+        <style>
+            .cls-2{clip-path:url(#clip-path)}.cls-4{fill:#569aff}.cls-5{fill:#18225c}.cls-7{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group_16203" data-name="Group 16203" class="cls-2">
+        <g id="Group_16202" data-name="Group 16202">
+            <g id="Group_16201" data-name="Group 16201" class="cls-2">
+                <path id="Path_18146" data-name="Path 18146" class="cls-5" d="M8.4 22.288h-.8A1.5 1.5 0 0 0 6 23.659v2.97A1.5 1.5 0 0 0 7.6 28h.8a1.5 1.5 0 0 0 1.6-1.371v-2.97a1.5 1.5 0 0 0-1.6-1.371"/>
+                <path id="Path_18147" data-name="Path 18147" class="cls-5" d="M24 22c-1.1 0-2-.09-2 .857v3.77A1.5 1.5 0 0 0 23.6 28h.8a1.5 1.5 0 0 0 1.6-1.371v-3.77c0-.947-.9-.857-2-.857"/>
+                <path id="Path_18148" data-name="Path 18148" class="cls-4" d="m27.846 15.961-1.675-2.545a9.967 9.967 0 0 1-.861-1.611l-1.626-3.857A2.992 2.992 0 0 0 20.838 6h-9.676a2.991 2.991 0 0 0-2.846 1.948L6.69 11.805a10.046 10.046 0 0 1-.861 1.611l-1.675 2.545a2.721 2.721 0 0 0-.154.9v5.289A2.928 2.928 0 0 0 7 25h18a2.928 2.928 0 0 0 3-2.85v-5.288a2.721 2.721 0 0 0-.154-.9"/>
+                <path id="Path_18149" data-name="Path 18149" class="cls-5" d="M6 11a2 2 0 1 1-2-2 2 2 0 0 1 2 2"/>
+                <path id="Path_18150" data-name="Path 18150" d="M30 11a2 2 0 1 1-2-2 2 2 0 0 1 2 2" style="fill:#e83667"/>
+                <path id="Path_18151" data-name="Path 18151" class="cls-7" d="M8.25 18a1.75 1.75 0 1 1-1.75 1.75A1.751 1.751 0 0 1 8.25 18"/>
+                <path id="Path_18152" data-name="Path 18152" class="cls-7" d="M23.75 18A1.75 1.75 0 1 1 22 19.75 1.751 1.751 0 0 1 23.75 18"/>
+                <path id="Path_18153" data-name="Path 18153" class="cls-7" d="M21.523 14H10.477a1 1 0 0 1-.928-1.371l1.2-3A1 1 0 0 1 11.677 9h8.646a1 1 0 0 1 .928.629l1.2 3A1 1 0 0 1 21.523 14"/>
+            </g>
+        </g>
+    </g>
+</svg>

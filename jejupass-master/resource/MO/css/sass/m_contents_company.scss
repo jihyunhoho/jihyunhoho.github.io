@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+@import '_mbase', '_mfont';
+
+/*회사 소개*/
+.companyInfo{margin-bottom:-128px}
+.mainImg{height:716px;background:url(#{$img_url}/company/bg_loading.jpg);background-size:100% auto;margin:-30px -20px 0;
+    .mainTxt{position:relative;top:144px;margin-left:32px;
+        p{color:$col_white}
+        .pageTit{
+            & + p{margin:20px 0 44px;font-size:rem(18px)}
+        }
+    }
+}
+.mainInfo{margin:60px 0 48px;padding-bottom:49px;border-bottom:1px solid $col_g200;
+    strong{color:$col_g900;font-size:rem(26px);font-weight:$weight700}
+    .titDep3{margin-top:24px}
+    .imgCont{margin:28px -20px}
+}
+.comInfo{position:relative;margin-bottom:80px;
+    strong{color:$col_g900;font-size:rem(26px);font-weight:$weight700;
+        span{display:block;color:$col_g900;font-size:rem(20px)}    
+    }
+    .pageMove{position:absolute;top:12px;right:0;
+        img{width:auto}
+    }
+}
+.conType01{
+    .imgCont{margin:28px 0 36px}
+    &.passAir, &.passCafe{margin-right:-20px;clear:both;
+        .pageMove{right:20px;}
+        .txtCont{padding-right:20px}
+    }
+}
+.conType02{
+    .titDep4{margin-top:24px}
+}
+.passCar,.passTrip{
+    .imgCont{margin-left:-20px}
+}
+.passStay,.pledge{
+    .imgCont{margin:36px -20px 0}
+}
+.passFood{display:inline-block;
+    img{width:100%}
+    .img01{float:left;margin:40px 0 0 -20px}
+    .img02{float:right;margin:80px -20px 0 0}
+}
+
+// 360이하
+@media screen and (max-width:$sizeM) {
+	
+}
+
+// 320이하
+@media screen and (max-width:$sizeS) {
+	
+}

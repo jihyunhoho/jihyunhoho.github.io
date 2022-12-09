@@ -1,0 +1,207 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>제주패스</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="/resource/MO/images/favicon/apple_touch_icon.ico">
+<link rel="apple-touch-icon" href="/resource/MO/images/favicon/apple_touch_icon_144.ico">
+<link href="/air/css/kfx/mbl/airA.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_commonAIR.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_contentsAIR.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_contents_air.min.css" rel="stylesheet" type="text/css">
+<style>
+	.layPop{display:block !important}
+</style>
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper airWrapper">
+	
+	<!-- jsp:include page="/inc/MO/header.html" / -->
+	
+	<header>
+		<button type="button" class="btPrev">이전</button>
+		<h1 class="titDep1">가격변동 알림내역 편집</h1>
+		<div class="menuWrap">
+			<button type="button" class="btNav">메뉴</button>
+		</div>
+	</header>
+
+	<div id="container" class="container">
+		
+		
+
+		<!-- ul class="kf_passengerList kf_alramList">
+			<li class="frmInp">
+				<input type="checkbox" id="chkAlram01" name="chkAlram">
+				<label class="kf_passenBox" for="chkAlram01">
+					<div class="k1_from_to">
+						<div class="from">김포 GMP</div>
+						<div class="to">제주 CJU</div>
+					</div>
+					<div class="k1_fr">
+						<strong>2021.08.18(수) ~ 2021.08.19(목)</strong>
+						<span class="k1_status">승객 20명</span><span class="k1_status min point">일반석</span>
+					</div>
+				</label>
+				<button type="button" class="btIco icoEdit">위치편집</button>
+			</li>
+			<li class="frmInp">
+				<input type="checkbox" id="chkAlram02" name="chkAlram">
+				<label class="kf_passenBox" for="chkAlram02">
+					<div class="k1_from_to">
+						<div class="from">인천 ICN</div>
+						<div class="to">부에노스아이레스 EZE</div>
+					</div>
+					<div class="k1_fr">
+						<strong>2021.08.18(수) ~ 2021.08.19(목)</strong>
+						<span class="k1_status">승객 20명</span><span class="k1_status min point">일반석</span>
+					</div>
+				</label>
+			</li>
+			<li class="frmInp">
+				<input type="checkbox" id="chkAlram03" name="chkAlram">
+				<label class="kf_passenBox" for="chkAlram03">
+					<div class="k1_from_to">
+						<div class="from">김포 GMP</div>
+						<div class="to">제주 CJU</div>
+					</div>
+					<div class="k1_fr">
+						<strong>2021.08.18(수) ~ 2021.08.19(목)</strong>
+						<span class="k1_status">승객 20명</span><span class="k1_status min point">일반석</span>
+					</div>
+				</label>
+			</li>
+			<li class="frmInp">
+				<input type="checkbox" id="chkAlram04" name="chkAlram">
+				<label class="kf_passenBox" for="chkAlram04">
+					<div class="k1_from_to">
+						<div class="from">김포 GMP</div>
+						<div class="to">제주 CJU</div>
+					</div>
+					<div class="k1_fr">
+						<strong>2021.08.18(수) ~ 2021.08.19(목)</strong>
+						<span class="k1_status">승객 20명</span><span class="k1_status min point">일반석</span>
+					</div>
+				</label>
+			</li>
+		</ul -->
+	</div><!-- //container -->
+
+	<div class="floatingBtns floatingCase01">
+		<div class="floatingInner">
+			<button type="button" class="btnDefault btnL action">완료</button>
+		</div>
+	</div>		
+
+</section><!-- //wrapper -->
+<footer>
+	<img src="/resource/MO/images/dummy/@footer.png" alt="">
+</footer>
+
+<section id="pop_sampleL" class="layPop layFull" tabindex="0">
+	<header>
+		<h2 class="titLay">가격변동 알림내역 편집</h2>
+	</header>
+
+	<div class="layContainer" tabindex="0">
+		<div class="layContent">
+			<p class="pageTit">더 이상 알림 받고 싶지 않은 <br>내역을 목록에서 삭제해주세요</p>
+			<span class="kf_subTxt">가격변동 알림 목록 중 항공편의 기간(탑승일)이 지난 내역은 해당 목록에서 자동으로 삭제됩니다.</span>
+
+			<!-- 편집 모드 -->
+			<div class="kf_listControls">
+				<span class="frmInp frmTotal"><input type="checkbox" id="chk_listTotal"><label for="chk_listTotal"><span class="false">전체선택</span><span class="true">선택해제</span></label></span>
+				<div class="kf_contRight">
+					<button type="button" class="btTxt">선택삭제</button>
+				</div>
+			</div>
+			<!-- //편집 모드 -->
+
+			<ul class="kf_passengerList kf_alramList">
+				<li class="frmInp">
+					<input type="checkbox" id="chkAlram01" name="chkAlram">
+					<label class="kf_passenBox" for="chkAlram01">
+						<div class="k1_from_to">
+							<div class="from">김포 GMP</div>
+							<div class="to">제주 CJU</div>
+						</div>
+						<div class="k1_fr">
+							<strong>2021.08.18(수) ~ 2021.08.19(목)</strong>
+							<span class="k1_status">승객 20명</span><span class="k1_status min point">일반석</span>
+						</div>
+					</label>
+					<button type="button" class="btIco icoEdit">위치편집</button>
+				</li>
+				<li class="frmInp">
+					<input type="checkbox" id="chkAlram02" name="chkAlram">
+					<label class="kf_passenBox" for="chkAlram02">
+						<div class="k1_from_to">
+							<div class="from">인천 ICN</div>
+							<div class="to">부에노스아이레스 EZE</div>
+						</div>
+						<div class="k1_fr">
+							<strong>2021.08.18(수) ~ 2021.08.19(목)</strong>
+							<span class="k1_status">승객 20명</span><span class="k1_status min point">일반석</span>
+						</div>
+					</label>
+				</li>
+				<li class="frmInp">
+					<input type="checkbox" id="chkAlram03" name="chkAlram">
+					<label class="kf_passenBox" for="chkAlram03">
+						<div class="k1_from_to">
+							<div class="from">김포 GMP</div>
+							<div class="to">제주 CJU</div>
+						</div>
+						<div class="k1_fr">
+							<strong>2021.08.18(수) ~ 2021.08.19(목)</strong>
+							<span class="k1_status">승객 20명</span><span class="k1_status min point">일반석</span>
+						</div>
+					</label>
+				</li>
+				<li class="frmInp">
+					<input type="checkbox" id="chkAlram04" name="chkAlram">
+					<label class="kf_passenBox" for="chkAlram04">
+						<div class="k1_from_to">
+							<div class="from">김포 GMP</div>
+							<div class="to">제주 CJU</div>
+						</div>
+						<div class="k1_fr">
+							<strong>2021.08.18(수) ~ 2021.08.19(목)</strong>
+							<span class="k1_status">승객 20명</span><span class="k1_status min point">일반석</span>
+						</div>
+					</label>
+				</li>
+			</ul>
+			
+		</div><!-- //layCont-->
+		<div class="floatingBtns floatingCase01">
+			<div class="floatingInner">
+				<button type="button" class="btnDefault btnL action">완료</button>
+			</div>
+		</div>
+	</div>
+	<button type="button" class="closeL">팝업 닫기</button>
+	
+	</section>
+
+
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+
+
+</body>
+</html>

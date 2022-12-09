@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* calendar */
+.k1_calendar_wrap{position:relative;z-index:1000;}
+.k1_calendar_wrap .k1_btn{position:absolute;top:15px; right:15px; display:block;width:24px; height:14px; font-size:0; border:none; background:url(/air/wfw/imgs/mbl/airA/ico/icon-min.png) no-repeat -77px 3px; background-size:160px;}
+
+.k1_board_mcal{width:100%;}
+.k1_board_mcal th{height:22px;background-color:#666;font-size:0.85rem;color:#fff;}
+.k1_board_mcal td{position:relative;width:14.2857142%;height:42px;border:1px solid #e7e7e7;background-color:#fff;font-size:1.2rem;font-weight:bold;text-align:center;}
+.k1_board_mcal td .txt{display:block;position:absolute;bottom:3px;left:0;width:100%;font-size:0.77rem;color:#3775C7;text-align:center;}
+.k1_board_mcal td a.sun{color:#e70021;}
+.k1_board_mcal td a.undate{color:#ccc;}
+.k1_board_mcal td a.undate.sun{color:#ccc;}
+.k1_board_mcal td.flight{background-color:#f3f3f3;}
+.k1_board_mcal td.anchor{background-color:#666;color:#fff;}
+.k1_board_mcal td.anchor a{color:#fff;}
+.k1_board_mcal td.today strong{display:inline-block;width:16px;height:14px;padding-top:2px;border-radius:8px;background-color:#e70021;color:#fff;text-align:center;}
+.k1_board_mcal td.today .txt{color:#e70021;}

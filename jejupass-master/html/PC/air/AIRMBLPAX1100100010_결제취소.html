@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>제주패스</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, width=1366">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" type="image/x-icon" href="/resource/PC/images/favicon/favicon.ico">
+<link href="/air/css/kfx/airA.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/p_commonAir.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/p_contentsAir.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/p_contents_air.min.css" rel="stylesheet" type="text/css">
+<style>
+	.kf_pop_wrap{display:block !important}
+	.dimmed{display:block !important}
+</style>
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper airWrapper">
+	<header>
+		<h1 class="topLogo"><a href="#">JEJUPASS</a></h1><!-- 11.05 SEO를 위한 태그 수정 -->
+		<nav>
+			<!-- 11.05 SEO를 위한 태그 수정 -->
+			<div class="navList">
+				<h2><a href="#" arial-selected="true">항공</a></h2>
+				<h2><a href="#">렌터카</a></h2>
+				<h2><a href="#">숙박</a></h2>
+				<h2><a href="#">맛집</a></h2>
+				<h2><a href="#">카페패스</a></h2>
+				<h2><a href="#">트립</a></h2>
+			</div>
+			<!-- //11.05 SEO를 위한 태그 수정 -->
+			<div class="quickSearchWrap">
+				<button type="button" class="btSearch">빠른검색</button>
+				
+			</div>
+		</nav>
+		<div class="topUtil">
+			<img src="/resource/PC/images/dummy/@util.png" alt="">
+		</div>
+	</header>
+
+	<div id="container" class="container">
+		
+		
+	</div><!-- //container -->
+
+	
+
+</section><!-- //wrapper -->
+<footer>
+	<div class="footInner">
+		<img src="/resource/PC/images/dummy/@footer.png" alt="">
+	</div>
+</footer>
+
+<aside>
+	<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+</aside>
+
+<!-- 탑승객 취소요청 팝업 -->
+<div id="pop_cancelPayment" class="layPop k1_pop_wrap kf_pop_wrap">
+	<div class="k1_pop_header">
+		<h1>결제취소</h1>
+	</div>
+	<div class="k1_pop_contents scriptScroll">
+		<!-- 탑승객 목록 -->
+		<p class="pageTit pageTitP">결제취소 할 탑승객을 <br>선택해주세요.</p>
+		<span class="subTxt">해당 여정에서 결제취소를 신청 할 탑승객을 선택 후 <br>환불요청을 해주세요. 
+			</span>
+
+		<div class="list_controls">
+			<span class="frmInp frmTotal"><input type="checkbox" id="chk_listTotal"><label for="chk_listTotal"><span class="false">전체선택</span><span class="true">선택해제</span></label></span>
+			<div class="contRight">
+				<div class="unfold">예약번호(PNR번호) : <strong>1234-5678</strong></div>
+			</div>
+		</div>
+		<ul class="kf_passengerList typeNoneMoving">
+			<li class="frmInp">
+				<input type="checkbox" id="chkpassen01">
+				<label class="kf_passenBox" for="chkpassen01">
+					<span class="name">KIM JEJU</span>
+					<div class="info">
+						<span title="티켓번호" class="ticketNum">123456789</span>
+						<span title="결제방법">카드</span>
+						<span title="결제금액">1,500,000원</span>
+					</div>
+				</label>
+			</li>
+			<li class="frmInp">
+				<input type="checkbox" id="chkpassen02">
+				<label class="kf_passenBox" for="chkpassen02">
+					<span class="name">JUNGA SUNWOO</span>
+					<div class="info">
+						<span title="티켓번호" class="ticketNum">123456789</span>
+						<span title="결제방법">카드</span>
+						<span title="결제금액">1,500,000원</span>
+					</div>
+				</label>
+			</li>
+		</ul>
+
+		<div class="guideInfo boxType01 marT24">
+			<h4 class="titGuide">알려드립니다</h4><!-- 12.24 문구 수정 -->
+			<ul class="listType01">
+				<li>환불은 실시간 처리가 아니며, 담당자 확인 후 개별 연락드립니다.</li>
+				<li>환불에 따른 환불 위약금이 발생되며, 항공사에 따라서 취소가 불가능한 경우도 있습니다.</li>
+				<li>카드 결제인 경우, 카드사에 취소 요청 후 2~3주 후에 카드 취소가 이루어집니다.</li>
+			</ul>
+		</div>
+
+		<!-- 12.24 : 추가-->
+		<h2 class="titDep4 marT32">취소 사유<span class="ness">*필수</span></h2><!-- 12.30 문구 추가 -->
+		<div class="calcelReasonList">
+			<span class="frmInp small txt"><input type="radio" id="radCancelreason01" name="radCancelreason"><label for="radCancelreason01">여행 일정, 여행지 변경</label></span>
+			<span class="frmInp small txt"><input type="radio" id="radCancelreason02" name="radCancelreason"><label for="radCancelreason02">가격, 조건 등으로 취소 후 재구매</label></span>
+			<span class="frmInp small txt"><input type="radio" id="radCancelreason03" name="radCancelreason"><label for="radCancelreason03">개인사유(건강악화, 가정대소사 등)</label></span>
+			<span class="frmInp small txt"><input type="radio" id="radCancelreason04" name="radCancelreason"><label for="radCancelreason04">항공권 결제 과정의 실수</label></span>
+			<span class="frmInp small txt"><input type="radio" id="radCancelreason05" name="radCancelreason"><label for="radCancelreason05">항공권 문제(결항, 지연 등)</label></span>
+			<span class="frmInp small txt"><input type="radio" id="radCancelreason06" name="radCancelreason"><label for="radCancelreason06">기타</label></span>
+		</div>
+		<!-- //12.24 : 추가-->
+
+		<h4 class="titDep5 marT32">수수료 안내</h4>
+		<table class="tblV">
+			<caption>취소 수수료 테이블에는 결제일별 수수료정보가 있습니다.</caption>
+			<colgroup><col style="width:40%"><col style="width:auto"></colgroup><!-- 12.30 테이블 넓이 수정 -->
+			<tbody>
+				<tr>
+					<th scope="row">판매사 수수료</th>
+					<td>70,000원</td>
+				</tr>
+				<tr>
+					<th scope="row">환불 신청 인원</th>
+					<td>00명</td>
+				</tr>
+				<tr>
+					<th scope="row">수수료 합계</th>
+					<td>0원</td>
+				</tr>
+				<tr>
+					<th scope="row">수수료 입금계좌안내</th>
+					<td>OO은행<br>1234-123456-123<br>㈜캐플릭스</td><!-- 12.30 br추가 -->
+				</tr>
+				<tr>
+					<th scope="row">입금상태</th>
+					<td>미입금</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="grayBox grayBoxS">
+			<p class="listType02 small">여행사 취소 수수료 입금 확인 후, 환불절차가 이루어집니다. 자세한 사항은 ㈜캐플릭스 <a href="tel:1544-0445">1544-0445</a>로 문의 주시기바랍니다.</p>
+		</div>
+
+		<div class="kf_HistoryListWrap">
+			<div class="titArea">
+				<h3 class="titDep3">약관 동의</h3>
+			</div>
+			<div class="grayBox agree">
+				<span class="frmInp txt large"><input type="checkbox" id="chkAll"><label for="chkAll">전체 약관 동의</label></span>
+				<ul class="agreeList">
+					<li>
+						<span class="frmInp txt frmInpS">
+							<input type="checkbox" id="chkAgree01"><label for="chkAgree01"><em>[필수]</em> 일반규정</label>
+							<a href="#" role="button" class="viewBtn layPopBtn" data-id="pop_agree-01"><i class="hidden">내용보기</i></a>
+						</span>
+					</li>
+					<li>
+						<span class="frmInp txt frmInpS">
+							<input type="checkbox" id="chkAgree02"><label for="chkAgree02"><em>[필수]</em> 요금규정</label>
+							<a href="#" role="button" class="viewBtn layPopBtn" data-id="pop_agree-02"><i class="hidden">내용보기</i></a>
+						</span>
+					</li>
+					<li>
+						<span class="frmInp txt frmInpS">
+							<input type="checkbox" id="chkAgree03"><label for="chkAgree03"><em>[필수]</em> 환불규정</label>
+							<a href="#" role="button" class="viewBtn layPopBtn" data-id="pop_agree-02"><i class="hidden">내용보기</i></a>
+						</span>
+					</li>
+					<li>
+						<span class="frmInp txt frmInpS">
+							<input type="checkbox" id="chkAgree04"><label for="chkAgree04"><em>[필수]</em> 개인정보 수집 및 이용약관 동의</label>
+							<a href="#" role="button" class="viewBtn layPopBtn" data-id="pop_agree-02"><i class="hidden">내용보기</i></a>
+						</span>
+					</li>
+					<li>
+						<span class="frmInp txt frmInpS">
+							<input type="checkbox" id="chkAgree05"><label for="chkAgree05"><em>[필수]</em> 개인정보 제3자 제공 동의</label>
+							<a href="#" role="button" class="viewBtn layPopBtn" data-id="pop_agree-02"><i class="hidden">내용보기</i></a>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //탑승객 목록 -->
+	</div>	
+	<div class="k1_btn_wrap2">
+		<a href="#" class="k1_btn01 kf_btnDefault"><span>취소</span></a>
+		<a href="#" class="k1_btn01"><span>환불 요청</span></a>
+	</div>
+	<a href="" class="k1_btn_p_close1" title="닫기">닫기</a>
+	
+</div>
+<!-- //탑승객 취소요청 팝업 -->
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/pc/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/p_common.js"></script>
+
+</body>
+</html>

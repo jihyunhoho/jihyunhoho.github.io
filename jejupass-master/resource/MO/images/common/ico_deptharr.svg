@@ -1,0 +1,19 @@
+<svg id="ic_x12_area" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #aeaeae;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <rect id="container" class="cls-1" width="12" height="12"/>
+  <path id="Path_2603" data-name="Path 2603" class="cls-2" d="M-6620.8,1820.793l4.5,4.5-4.5,4.5" transform="translate(6625.303 -1819.294)"/>
+</svg>

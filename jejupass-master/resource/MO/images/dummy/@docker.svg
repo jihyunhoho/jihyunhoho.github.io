@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="399" height="131" viewBox="0 0 399 131">
+  <defs>
+    <filter id="합치기_34" x="0" y="0" width="399" height="131" filterUnits="userSpaceOnUse">
+      <feOffset dy="-4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_docker" data-name="@docker" transform="translate(12 16)">
+    <g transform="matrix(1, 0, 0, 1, -12, -16)" filter="url(#합치기_34)">
+      <path id="합치기_34-2" data-name="합치기 34" d="M-2531-492v-68.671c0-7.056,7.163-12.776,16-12.776h91c8.241,0,15.9-3.4,20.269-9.007l7.046-9.039c3.641-4.67,10.023-7.506,16.891-7.506h73.587c6.869,0,13.251,2.837,16.891,7.506l7.046,9.039c4.369,5.6,12.029,9.007,20.27,9.007h90c8.836,0,16,5.72,16,12.776V-492Z" transform="translate(2543 615)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

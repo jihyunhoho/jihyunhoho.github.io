@@ -1,0 +1,320 @@
+@charset "utf-8";
+/* ------------------------------------------------------------------------------------
+ie7 전용 Style Sheet (for version 4 browsers)
+
+version: 0.1
+author: 박수연
+email: suudjin@nate.com
+설명: ie7 전용핵
+
+/************************************************************************************************************
+ common 핵
+************************************************************************************************************/
+#k1_skipnavigation a:active, #k1_skipnavigation a:focus{zoom:1;}
+.k1_input_hidden{filter:alpha(opacity=0); *font-size:1.2em !important;}
+.k1_file_input{*display:inline; zoom:1;}
+.k1_bigbtn{*font-size:10px !important;}
+.k1_blind tr, 
+tr.k1_blind{*display:none;}
+.k1_dpib{*display:inline; zoom:1}
+.k1_dpt{*display:inline; zoom:1}
+#k1_skipnavigation a:focus{zoom:1;}
+.k1_mad_bg{filter:alpha(opacity=50);}
+
+/************************************************************************************************************
+ 공통버튼관련 핵
+************************************************************************************************************/
+.k1_detail, 
+.k1_detail2, 
+.k1_detail3, 
+.k1_details, 
+.k1_detail_info_s, 
+.k1_btn_cal, 
+.k1_btn_cal_b, 
+.k1_btn_cal_s, 
+.k1_btn_q, 
+.k1_rules, 
+.k1_btn_file, 
+.k1_btn_docu, 
+.k1_btn_docu2, 
+.k1_btn_p_close1, 
+.k1_btn_close1, 
+.k1_btn_p_close2,
+.k1_dfile,
+.k1_btn_refresh,
+.k1_btn_more{zoom:1; *display:inline;}
+
+/************************************************************************************************************
+ 버튼관련 핵 - ie7, 파이어폭스
+************************************************************************************************************/
+.k1_btn4 button, .k1_btn4 input{*padding:2px 1px 1px 3px;}
+@-moz-document url-prefix() {.k1_btn4 button, .k1_btn4 input{padding:2px 1px 1px 3px;} }
+
+.k1_btn6 button, .k1_btn6 input{*padding:2px 4px 2px 5px;}
+@-moz-document url-prefix() {.k1_btn6 button, .k1_btn6 input{padding:2px 6px 2px 7px;} }
+
+.k1_btn1 button, .k1_btn1 input{*padding:2px 1px 1px 3px;}
+@-moz-document url-prefix() {.k1_btn1 button, .k1_btn1 input{padding:2px 1px 1px 3px;} }
+
+.k1_btn1_2 button, .k1_btn1_2 input{*padding:2px 1px 2px 2px;}
+@-moz-document url-prefix() {.k1_btn1_2 button, .k1_btn1_2 input{padding:2px 1px 2px 2px;} }
+
+.k1_btn2 button, .k1_btn2 input{*padding:1px 2px 1px 3px;}
+@-moz-document url-prefix() {.k1_btn2 button, .k1_btn2 input{padding:1px 2px 1px 3px;} }
+
+.k1_btn3 button, .k1_btn3 input{*padding:3px 1px 2px 2px;}
+@-moz-document url-prefix() {.k1_btn3 button, .k1_btn3 input{padding:3px 2px 2px 2px;} }
+
+.k1_btn3_1 button, .k1_btn3_1 input{*padding:3px 1px 2px 3px;}
+@-moz-document url-prefix() {.k1_btn3_1 button, .k1_btn3_1 input{padding:3px 1px 2px 3px;} }
+
+.k1_btn5 button, .k1_btn5 input{*padding:2px 4px 2px 4px;}
+@-moz-document url-prefix() {.k1_btn5 button, .k1_btn5 input{padding:2px 5px 2px 6px;} }
+
+@-moz-document url-prefix() {.k1_btn7 button, .k1_btn7 input{padding:2px 13px 2px 24px;} }
+
+@-moz-document url-prefix() {.k1_btn8 button, .k1_btn8 input{padding:2px 1px 1px 4px;} }
+
+@-moz-document url-prefix() {.k1_btn9 button, .k1_btn9 input{padding:2px 1px 1px 4px;} }
+
+.k1_btn9_1 button, .k1_btn9_1 input{*padding:2px 0 1px 0;}
+@-moz-document url-prefix() {.k1_btn9_1 button, .k1_btn9_1 input{padding:2px 1px 1px 3px;} }
+
+@-moz-document url-prefix() {.k1_btn11 button, .k1_btn11 input{padding:5px 5px 2px 6px;} }
+
+@-moz-document url-prefix() {.k1_btn12 button, .k1_btn12 input{padding:4px 4px 1px 5px;} }
+@-moz-document url-prefix() {.k1_btn13 button, .k1_btn13 input{padding:2px 0; line-height:1.2em;} }
+
+.k1_btn_01_over button, .k1_btn_01_over input{*padding:4px 4px 4px 7px;}
+@-moz-document url-prefix() {.k1_btn_01_over button, .k1_btn_01_over input{padding:4px 13px 4px 16px;} }
+
+.k1_btn_02_over button, .k1_btn_02_over input{*padding:4px 4px 4px 7px;}
+@-moz-document url-prefix() {.k1_btn_02_over button, .k1_btn_02_over input{padding:4px 13px 4px 16px;} }
+
+@-moz-document url-prefix() {.k1_btn01 button, .k1_btn01 input{padding:9px 7px 8px 17px;} }
+@-moz-document url-prefix() {.k1_btn01_off button, .k1_btn01_off input{padding:9px 7px 8px 17px;} }
+
+.k1_btn02 button, .k1_btn02 input{*padding:1px 3px 1px 13px;}
+@-moz-document url-prefix() {.k1_btn02 button, .k1_btn02 input{padding:1px 7px 1px 17px;} }
+
+.k1_btn03 button,.k1_btn03 input{*padding:7px 6px 7px 8px;}
+@-moz-document url-prefix() {.k1_btn03 button,.k1_btn03 input{padding:7px 10px 7px 12px;} }
+
+.k1_btn04 button, .k1_btn04 input{*padding:6px 2px 5px 5px;}
+@-moz-document url-prefix() {.k1_btn04 button, .k1_btn04 input{padding:6px 5px 5px 7px;} }
+
+.k1_btn05 button, .k1_btn05 input{*padding:6px 2px 5px 5px;}
+@-moz-document url-prefix() {.k1_btn05 button, .k1_btn05 input{padding:6px 5px 5px 7px;} }
+
+.k1_btn06 button, .k1_btn06 input{*padding:4px 0 5px 5px;}
+@-moz-document url-prefix() {.k1_btn06 button, .k1_btn06 input{padding:4px 2px 5px 7px;} }
+
+.k1_btn06_off button, .k1_btn06_off input{*padding:4px 0 5px 5px;}
+@-moz-document url-prefix() {.k1_btn06_off button, .k1_btn06_off input{padding:4px 2px 5px 7px;} }
+
+.k1_btn07 button, .k1_btn07 input{*padding:6px 2px 3px 5px;}
+@-moz-document url-prefix() {.k1_btn07 button, .k1_btn07 input{padding:6px 3px 3px 6px;} }
+
+.k1_btn08 button, .k1_btn08 input{*padding:6px 2px 3px 5px;}
+@-moz-document url-prefix() {.k1_btn08 button, .k1_btn08 input{padding:6px 4px 3px 7px;} }
+
+.k1_btn09 button, .k1_btn09 input{*padding:5px 1px 2px 4px;}
+@-moz-document url-prefix() {.k1_btn09 button, .k1_btn09 input{padding:5px 1px 2px 4px;} }
+
+.k1_btn10 button, .k1_btn10 input{*padding:4px 3px 3px 5px;}
+@-moz-document url-prefix() {.k1_btn10 button, .k1_btn10 input{padding:4px 5px 3px 7px;} }
+
+.k1_btn_all_set button, .k1_btn_all_set input{*padding:3px 0 1px 0;}
+@-moz-document url-prefix() {.k1_btn_all_set button, .k1_btn_all_set input{padding:3px 7px 1px 5px;} }
+
+.k1_btmsbtn01 button, .k1_btmsbtn01 input{*padding:6px 7px 4px 13px;}
+@-moz-document url-prefix() {.k1_btmsbtn01 button, .k1_btmsbtn01 input{padding:6px 11px 4px 18px;} }
+
+.k1_btmsbtn01_off button, .k1_btmsbtn01_off input{*padding:6px 7px 4px 13px;}
+@-moz-document url-prefix() {.k1_btmsbtn01_off button, .k1_btmsbtn01_off input{padding:6px 11px 4px 18px;} }
+
+.k1_btmsbtn01_2 button, .k1_btmsbtn01_2 input{*padding:6px 13px 4px 19px;}
+@-moz-document url-prefix() {.k1_btmsbtn01_2 button, .k1_btmsbtn01_2 input{padding:6px 20px 4px 27px;} }
+
+.k1_btmsbtn_s01 button, .k1_btmsbtn_s01 input{*padding:5px 1px 4px 6px;}
+@-moz-document url-prefix() {.k1_btmsbtn_s01 button, .k1_btmsbtn_s01 input{padding:5px 1px 4px 7px;} }
+
+.k1_btn_dbtxt button, .k1_btn_dbtxt input{*padding:4px 1px 3px 3px;}
+@-moz-document url-prefix() {.k1_btn_dbtxt button, .k1_btn_dbtxt input{padding:4px 1px 3px 4px;} }
+
+.k1_btn_dbtxt01 button, .k1_btn_dbtxt01 input{*padding:4px 1px 3px 3px;}
+@-moz-document url-prefix() {.k1_btn_dbtxt01 button, .k1_btn_dbtxt01 input{padding:4px 1px 3px 4px;} }
+
+.k1_btn_dbtxt02 button, .k1_btn_dbtxt02 input, .k1_btn_dbtxt02_1 button, .k1_btn_dbtxt02_1 input{*padding:4px 1px 3px 3px;} 
+@-moz-document url-prefix() {.k1_btn_dbtxt02 button, .k1_btn_dbtxt02 input, .k1_btn_dbtxt02_1 button, .k1_btn_dbtxt02_1 input{padding:4px 1px 3px 4px;} }
+
+.k1_btn_dbtxt03 button, .k1_btn_dbtxt03 input{*padding:4px 0 3px 7px;}
+@-moz-document url-prefix() {.k1_btn_dbtxt03 button, .k1_btn_dbtxt03 input{padding:4px 1px 3px 20px;} }
+
+.k1_btn_dbtxt04 button, .k1_btn_dbtxt04 input{*padding:4px 0 3px 5px;}
+@-moz-document url-prefix() {.k1_btn_dbtxt04 button, .k1_btn_dbtxt04 input{padding:4px 1px 3px 24px;} }
+
+.k1_btn_dbtxt05 button, .k1_btn_dbtxt05 input{*padding:4px 0 3px 0;}
+@-moz-document url-prefix() {.k1_btn_dbtxt05 button, .k1_btn_dbtxt05 input{padding:4px 1px 3px 5px;} }
+
+.k1_btn_dbtxt06 button, .k1_btn_dbtxt06 input{*padding:3px 1px 3px 3px;}
+@-moz-document url-prefix() {.k1_btn_dbtxt06 button, .k1_btn_dbtxt06 input{padding:3px 1px 3px 4px;} }
+
+.k1_btn_icon button, .k1_btn_icon input{*padding-left:12px;}
+@-moz-document url-prefix() {.k1_btn_icon button, .k1_btn_icon input{padding-left:17px;}}
+
+@-moz-document url-prefix() {.k1_htlbtn_01 button, .k1_htlbtn_01 input{padding:10px 26px 9px 37px;} }
+@-moz-document url-prefix() {.k1_htlbtn_02 button, .k1_htlbtn_02 input{padding:17px 17px 16px 27px;} }
+@-moz-document url-prefix() {.k1_htlbtn_03 button, .k1_htlbtn_03 input{padding:8px 15px 7px 17px;} }
+@-moz-document url-prefix() {.k1_htlbtn_03_off button, .k1_htlbtn_03_off input{padding:8px 15px 7px 17px;} }
+@-moz-document url-prefix() {.k1_htlbtn_04 button, .k1_htlbtn_04 input{padding:6px 5px 6px 7px;} }
+@-moz-document url-prefix() {.k1_htlbtn_05 button, .k1_htlbtn_05 input{padding:4px 5px 2px 25px;} }
+@-moz-document url-prefix() {.k1_htlsbtn_01 button, .k1_htlsbtn_01 input{padding:4px 7px 3px 9px;} }
+@-moz-document url-prefix() {.k1_htlsbtn_012 button, .k1_htlsbtn_012 input{padding:4px 5px 3px 7px;} }
+@-moz-document url-prefix() {.k1_htlsbtn_02 button, .k1_htlsbtn_02 input{padding:2px 0 1px 4px;} }
+@-moz-document url-prefix() {.k1_htlsbtn_03 button, .k1_htlsbtn_03 input{padding:3px 23px 3px 25px;} }
+@-moz-document url-prefix() {.k1_htlsbtn_04 button, .k1_htlsbtn_04 input{padding:3px 2px 3px 3px;} }
+@-moz-document url-prefix() {.k1_htlsbtn_05 button, .k1_htlsbtn_05 input{padding:4px 2px 2px 7px;} }
+@-moz-document url-prefix() {.k1_htlsbtn_05 button.sbtn, .k1_htlsbtn_05 input.sbtn{padding:4px 0 2px 2px;} }
+@-moz-document url-prefix() {.k1_htlsbtn_06 button, .k1_htlsbtn_06 input{padding:5px 4px 5px 7px;} }
+@-moz-document url-prefix() {.k1_htlsbtn_07 button, .k1_htlsbtn_07 input{padding:4px 0 2px 1px;} }
+@-moz-document url-prefix() {.k1_htlsbtn_08 button, .k1_htlsbtn_08 input{padding:3px 5px 3px 7px;} }
+@-moz-document url-prefix() {.k1_htlsbtn_09 button, .k1_htlsbtn_09 input{padding:2px 2px 1px 4px;} }
+@-moz-document url-prefix() {.k1_htlsbtn_10 button, .k1_htlsbtn_10 input{padding:4px 7px 3px 9px;} }
+
+@-moz-document url-prefix() {.k1_tm_1 button, k1_tm_1 input {padding:6px 2px 6px 15px;} }
+@-moz-document url-prefix() {.k1_tm_2 button, k1_tm_2 input {padding:2px 0 1px 20px;} }
+
+/************************************************************************************************************
+ air관련 핵
+************************************************************************************************************/
+#k1_air_select .schedule .price_box1{*overflow-x:auto;}
+#k1_air_select .price .price_box{*overflow-x:auto;}/*삭제예정*/
+.k1_air_lowprice_tab ul{zoom:1;}
+.k1_airplane_wrap .cont ul{*display:inline; zoom:1;}
+.k1_airplane_wrap .cont ol{*display:inline; zoom:1;}
+.k1_airplane_wrap .cont span.no{*display:inline; zoom:1;}
+.k1_fare_sch{zoom:1;}
+
+.k1_option_box1 span.k1_arrow_dot2{*display:inline; zoom:1; *vertical-align:top; *margin-top:2px;}
+.k1_airprice{*display:inline; zoom:1;}
+.k1_total_price{*display:inline; zoom:1;} 
+.k1_tt_box .inbox p{*display:inline; zoom:1;}
+.k1_h_area{zoom:1;}
+.k1_gride, .k1_gride2, .k1_gride3{*overflow-x:auto;}
+.k1_cont{zoom:1;}
+.k1_reserve_list{zoom:1;}
+.k1_tabs1{zoom:1;}
+.k1_event_box{zoom:1; *padding-bottom:15px;}
+.k1_txt_price_box{zoom:1;}
+
+.k1_booking_detail{zoom:1;}
+
+.k1_cont2, .box_ct{zoom:1;} 
+.k1_txt_box1, .k1_txt_box3,.k1_statue_box5 {zoom:1;}
+.k1_air_city_box ul{*zoom:1;}
+.k1_htl_quicksch_city{*zoom:1;}
+.k1_htl_maparea{*zoom:1;}
+
+.k1_bg_board {*zoom:1;}
+.k1_htl_eventbox, .k1_htl_quicksch_city {*zoom:1}
+.k1_htl_tab06 li {*display:inline;}
+.k1_htl_infobox01 {*zoom:1}
+
+.k1_cont span.ico,
+.k1_cont span.ico2,
+.k1_cont2 span.ico,
+.k1_cont2 span.ico2{float:none;}
+.k1_h_area2{zoom:1;}
+.k1_plancode{zoom:1;}
+
+.k1_statue_list7 li em.nom{*display:inline;}
+.k1_statue_list7 li p.txt{*display:inline;}
+.k1_passenger {*zoom:1;}
+
+.k1_agreebox .k1_option_box1{*position:static;}
+.k1_cont_box{zoom:1}
+
+/* 결제하기 */
+.k1_booking_detail{zoom:1;}
+.k1_h_area2 .btn{*margin-top:-1px;}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+   .k1_cont{letter-spacing:-0.1px;}
+}
+
+/************************************************************************************************************
+ 팝업 핵
+************************************************************************************************************/
+.k1_detail_pop .cont_wrap {zoom:1;}
+.k1_receipt .title{zoom:1;}
+.k1_informlist2{zoom:1;}
+.k1_btmspop_yscroll{zoom:1;}
+.k1_pop_info ol li span.no{*line-height:1.4em  !important;}
+
+/*b2b*/
+#k1_b2b_container .tdate2_box{*overflow-x:auto;}
+.k1_planbox{zoom:1;}
+.k1_addr_sel{zoom:1;}
+.k1_addr_sel2{zoom:1}
+.k1_select_list{*zoom:1} 
+.k1_gride4{*overflow-x:auto; *position:relative;}
+
+#k1_b2b_content .k1_air_city_tab ul li.active{*width:14%;}
+
+/* 항공권 예약 인쇄 미리보기 팝업 */
+.k1_booking_box .k1_board_type6_1,
+.k1_booking_box .k1_board_type6 {*border-collapse:collapse;}
+
+/************************************************************************************************************
+ btms관련 핵
+************************************************************************************************************/
+.k1_btms_boardgroup{zoom:1;}
+.k1_intable .k1_btn_area_l{*width:200px; *text-align:left;}
+.k1_btn_calender, .k1_btn_search{zoom:1; *display:inline;}
+.k1_btn_dbtxt,
+.k1_btn_dbtxt02,
+.k1_btn_dbtxt03{zoom:1; *display:inline;}
+.k1_htl_ordershort ul li p{*display:inline; zoom:1;}
+.k1_htl_ordershort ul li .k1_btn_area{*width:370px;}
+.k1_gride_y,
+.k1_gride_y2, .k1_gride_y3{*overflow-x:auto; *position:relative;}
+.k1_btmspop_yscroll{zoom:1;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+   .k1_gride_y2 .k1_btms_table3 td{padding:4px 2px; letter-spacing:-0.5px;}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+   .k1_gride_y3 .k1_btms_table3 td{padding:4px;}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+   .k1_btms_statue{letter-spacing:-0.1px;}
+}
+
+/************************************************************************************************************
+ htl관련 핵
+************************************************************************************************************/
+.k1_htl_mainsearch_b{zoom:1; *display:inline;}
+.k1_btn{zoom:1; *display:inline;}
+.k1_htlsbtn_05{zoom:1; *display:inline;}
+.k1_htl_gradebox{*position:static;}
+.k1_htl_grade_l .k1_star{*margin-top:4px;}
+.k1_htl_commentbox .k1_star02{*margin-top:2px;}
+
+.k1_htlpop_close2{zoom:1; *display:inline;}
+.k1_htl_detail{zoom:1;}
+.k1_htl_gallery2{zoom:1;}
+.k1_htl_ico span{*display:inline; zoom:1;}
+.k1_htl_tab05{zoom:1;}
+.k1_htl_order{zoom:1;}
+.k1_htl_layerpop02{zoom:1;}
+.k1_htl_grid01{*overflow-x:auto; *position:relative;}
+.k1_htl_step_tt h2{zoom:1;}
+.k1_star{*margin-top:-2px;}
+.k1_htl_ordertit div .k1_star{*display:inline;}
+.k1_htl_titarea{zoom:1;}
+
+.k1_htl_msehbox_b dt{*width:85px;}
+.k1_htl_msehbox_b dt.w60{*width:75px;}
+.k1_htl_eventdata .place_tit{*display:inline; zoom:1;}
+.k1_htl_eventdata .place_cont{*display:inline; zoom:1;}
+.k1_htl_spotlist li{*float:none; *display:inline;}

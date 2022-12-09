@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a82323;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #cacaca;
+      }
+
+      .cls-3 {
+        fill: gray;
+      }
+
+      .cls-4 {
+        fill: #606060;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="ic_x18_coffee" transform="translate(-0.035 -0.035)">
+    <rect id="container" class="cls-1" width="24" height="24" transform="translate(0.035 0.035)"/>
+    <g id="Group_15637" data-name="Group 15637" transform="translate(2.035 2.035)">
+      <path id="Path_17641" data-name="Path 17641" class="cls-2" d="M17.5,6H17V5a1,1,0,0,0-1-1H2A1,1,0,0,0,1,5v6a6,6,0,0,0,6,6h4a6,6,0,0,0,5.651-4H17.5a3.5,3.5,0,0,0,0-7m0,5H17V8h.5a1.5,1.5,0,0,1,0,3"/>
+      <path id="Path_17642" data-name="Path 17642" class="cls-3" d="M9,0A1.5,1.5,0,1,1,7.5,1.5,1.5,1.5,0,0,1,9,0"/>
+      <path id="Path_17643" data-name="Path 17643" class="cls-4" d="M18,20H1a1,1,0,0,1,0-2H18a1,1,0,0,1,0,2"/>
+      <path id="Path_17644" data-name="Path 17644" class="cls-5" d="M4,11a1,1,0,0,1-1-1V7A1,1,0,0,1,5,7v3a1,1,0,0,1-1,1"/>
+      <rect id="Rectangle_11268" data-name="Rectangle 11268" class="cls-6" width="21" height="20"/>
+    </g>
+  </g>
+</svg>

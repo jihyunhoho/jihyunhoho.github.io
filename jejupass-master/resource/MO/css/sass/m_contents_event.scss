@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+@import '_mbase', '_mfont';
+
+
+/*이벤트 리스트(진행, 종료)*/
+.tabType01.event{width:100vw;margin:32px 0 0 -20px}
+.eventList{margin-top:32px;
+    a{display:block;padding-bottom:32px;
+        strong{display:block;margin-top:12px;color:$col_g900;font-size:rem(18px);font-weight:$weight700;line-height:1.44}
+        span{color:$col_g600;font-size:rem(14px);line-height:1.57}
+        .imgCont{overflow:hidden;position:relative;border-radius:12px;
+            &:before{content:'';position:absolute;width:100%;height:100%;background:rgba(0,0,0,0.7)}
+            p.roundTxt{position:absolute;top:50%;left:50%;width:76px;height:32px;margin:-16px 0 0 -38px;color:$col_white;font-size:rem(16px);text-align:center;line-height:32px;border:1px solid $col_white;border-radius:80px;box-sizing:border-box}
+        }
+    }
+    li:last-child a{padding-bottom:20px}
+} 
+
+/*진행 중 이벤트 상세*/
+.contTit.event{
+    .date{margin-top:4px;color:$col_g600;font-size:rem(14px);font-weight:$weight400}
+}
+/*이벤트(당첨자 발표)*/
+.listCont.event{margin-top:-12px;
+    li:first-child a>p{font-weight:$weight600}
+}
+/*이벤트(당첨자 발표 상세)*/
+.infoArea.event{
+    .eventTit{margin-bottom:24px}
+    p{margin:0}
+    table{margin-bottom:24px;border-top:1px solid $col_g200;box-sizing:border-box;color:$col_g900;font-size:rem(15px);
+        tr{height:47px;line-height:47px;text-align:center;
+            td{width:33.333%;border-bottom:1px solid $col_g200;box-sizing:border-box;color:$col_g900;
+                &:first-child{width:25%;font-weight:$weight600;background:$col_g100}
+                &:not(:last-child){border-right:1px solid $col_g200}
+            }
+        }
+    }
+    .centerTxt{margin:20px 0}
+}
+
+// 360이하
+@media screen and (max-width:$sizeM) {
+	
+}
+
+// 320이하
+@media screen and (max-width:$sizeS) {
+	
+}

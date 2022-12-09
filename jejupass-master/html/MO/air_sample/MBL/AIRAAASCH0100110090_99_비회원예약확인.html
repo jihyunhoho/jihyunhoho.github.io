@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no" />
+<title>비회원예약확인 - 여행으로 연결되는 더 큰 세상! 토파스 항공예약</title>
+<link href="/air/css/kfx/mbl/airA.css" rel="stylesheet" type="text/css">
+<!-- <script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../../js/common_mbl.js"></script> -->
+</head>
+<body>
+<div id="k1_container">	
+	<jsp:include page="/AIR/MBL/inc/mbl_header.html" />
+	
+	<section>
+		<div class="k1_top_panel">
+			<ul>
+				<li class="back"><a href="#none" class="k1_btn"><span class="k1_icon back"></span>이전</a></li>
+				<li class="bread_crumb"><span>비회원예약확인</span></li>
+			</ul>
+		</div>
+		<div class="k1_grid k1_bg_light_gray1">
+			<div class="k1_login_panel">
+				<!-- <span class="logo">노랑풍선-ybtour</span> -->
+				<ul>
+					<li class="k1_custom_ipt">
+						<input type="text" id="cu_id" name="cu_id" maxlength="20" placeholder="예약번호를 입력하세요" title="예약번호 입력" />
+					</li>
+					<li class="k1_custom_ipt">
+						<input type="text" id="cu_pass1" name="cu_pass1" maxlength="16" placeholder="예약자명을 입력하세요" title="예약자명 입력" />
+					</li>
+				</ul>
+				<ul class="linear">
+					<li class="k1_w33pct k1_mgt15">
+						<span class="k1_custom_sel">
+							<select  name="" class="k1_w100pct">
+								<option>010</option>
+							</select>
+						</span>
+					</li>
+					<li class="k1_w33pct">
+						<span class="k1_custom_ipt"><input type="tel"  name="" maxlength="4"></span>
+					</li>
+					<li class="k1_w33pct">
+						<span class="k1_custom_ipt"><input type="number"  name="" maxlength="4"></span>
+					</li>
+				</ul>
+	
+				<div class="k1_btn_wrap">
+					<a href="#none" class="k1_btn max dark"><span class="k1_icon check"></span>확인</a>
+				</div>
+
+			</div><!--// k1_login_panel -->
+		</div><!--// k1_grid -->
+	</section>
+		
+	<jsp:include page="/AIR/MBL/inc/mbl_footer.html" />
+	<jsp:include page="/AIR/MBL/inc/mbl_side.html" />	
+	<div class="k1_slide_blind" style="display:none;"></div>
+</div><!--// k1_container -->
+</body>
+</html>

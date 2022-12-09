@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_11796" data-name="사각형 11796" transform="translate(464 424)" style="fill:#ffdbdb;opacity:.51" d="M0 0h50v50H0z"/>
+        </clipPath>
+        <style>
+            .cls-4{fill:#aeaeae}.cls-5{fill:#cacaca}.cls-7{fill:#fff}
+        </style>
+    </defs>
+    <g id="ic_x50_stay" transform="translate(-464 -424)" style="clip-path:url(#clip-path)">
+        <g id="ico_stay" transform="translate(278.478 -2468.522)">
+            <g id="그룹_16548" data-name="그룹 16548" transform="translate(187.522 2897.282)">
+                <rect id="사각형_11914" data-name="사각형 11914" class="cls-4" width="5" height="7" rx="2.5" transform="translate(3 33.24)"/>
+                <path id="사각형_11913" data-name="사각형 11913" class="cls-5" d="M3 0h28a3 3 0 0 1 3 3v14H0V3a3 3 0 0 1 3-3z" transform="translate(6 .24)"/>
+                <rect id="사각형_11915" data-name="사각형 11915" class="cls-4" width="5" height="7" rx="2.5" transform="translate(38 33.24)"/>
+                <rect id="사각형_11909" data-name="사각형 11909" class="cls-5" width="46" height="15" rx="3" transform="translate(0 20.24)"/>
+                <path id="사각형_11910" data-name="사각형 11910" d="M5 0h30a5 5 0 0 1 5 5H0a5 5 0 0 1 5-5z" transform="translate(3 15.24)" style="fill:#eaeaea"/>
+                <g id="그룹_16547" data-name="그룹 16547" transform="translate(9.84 8.96)">
+                    <path id="사각형_11911" data-name="사각형 11911" class="cls-7" d="M3 0h6a3 3 0 0 1 3 3v3H0V3a3 3 0 0 1 3-3z" transform="translate(.16 .28)"/>
+                    <path id="사각형_11912" data-name="사각형 11912" class="cls-7" d="M3 0h6a3 3 0 0 1 3 3v3H0V3a3 3 0 0 1 3-3z" transform="translate(14.16 .28)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

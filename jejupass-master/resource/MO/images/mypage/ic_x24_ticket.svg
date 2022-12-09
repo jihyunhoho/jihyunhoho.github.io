@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-3{fill:#fff}
+        </style>
+    </defs>
+    <g id="ic_x24_ticket" transform="translate(-1610 -300)">
+        <g id="Group_14482" data-name="Group 14482" transform="translate(-2.931 -6.001)">
+            <path id="Subtraction_5" data-name="Subtraction 5" d="M-6580-2253h-22a1 1 0 0 1-1-1v-14a1 1 0 0 1 1-1h22a1 1 0 0 1 1 1v1.5a1.5 1.5 0 0 0-1.429 1.5 1.5 1.5 0 0 0 1.429 1.5v1a1.5 1.5 0 0 0-1.429 1.5 1.5 1.5 0 0 0 1.429 1.5v1a1.5 1.5 0 0 0-1.429 1.5 1.5 1.5 0 0 0 1.429 1.5v1.5a1 1 0 0 1-1 1z" transform="translate(8215.93 2579.001)" style="fill:#6531ce"/>
+            <path id="Rectangle_10792" data-name="Rectangle 10792" class="cls-3" transform="translate(1629 313)" d="M0 0h2v2H0z"/>
+            <path id="Rectangle_10793" data-name="Rectangle 10793" class="cls-3" transform="translate(1629 317)" d="M0 0h2v2H0z"/>
+            <path id="Rectangle_10794" data-name="Rectangle 10794" class="cls-3" transform="translate(1629 321)" d="M0 0h2v2H0z"/>
+        </g>
+    </g>
+</svg>

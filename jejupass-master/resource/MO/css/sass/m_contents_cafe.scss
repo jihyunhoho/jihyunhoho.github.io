@@ -1,0 +1,540 @@
+@charset "utf-8";
+
+@import '_mbase', '_mfont';
+
+/* 카페패스 */
+
+//카페패스 메인
+.cafeBanner{position:relative;overflow:hidden;display:block;margin-top:24px;height:48px;text-align:center;border-radius:12px;
+    figure{overflow:hidden;border-radius:12px;}
+    p{position:absolute;top:0;left:0;width:100%;height:100%;font-weight:$weight600;color:$col_white;line-height:48px;
+        span{color:#ffec8e}
+    }
+}
+.cafeMyPick{margin-top:42px;
+    .swiperWrap.swiperGap .swiper-container{width:calc(100% - 31px)}
+}
+.cafepassNone{position:relative;padding:20px 60px;background:#fcf9f1;border-radius:8px;
+    &:before{content:'';position:absolute;top:20px;left:20px;width:24px;height:24px;background:url(#{$img_url}/common/ico_cafepass.svg) no-repeat}
+    &:after{content:'';display:block;position:absolute;top:50%;right:25px;width:6px;height:6px;margin-top:-4px;border:solid $col_g800;border-width:2px 2px 0 0;transform:rotate(45deg)}
+    a{display:block}
+    em{display:block;font-size:rem(16px);color:#46200f;font-weight:$weight700}
+    p{font-size:rem(14px);color:$col_g600}
+}
+.myCafepass{position:relative;padding:20px 60px;background:$col_g100;border-radius:8px;
+    &:before{content:'';position:absolute;top:20px;left:20px;width:24px;height:24px;}
+    &:after{content:'';display:block;position:absolute;top:50%;right:25px;width:6px;height:6px;margin-top:-4px;border:solid $col_g800;border-width:2px 2px 0 0;transform:rotate(45deg)}
+    &.typeMug:before{background:url(#{$img_url}/common/ico_mug.svg) no-repeat}
+    &.typeTumbler:before{background:url(#{$img_url}/common/ico_tumbler.svg) no-repeat}
+    em{display:block;font-size:rem(16px);color:$col_g800;font-weight:$weight700}
+    p{font-size:rem(14px);color:$col_g600}
+    .pointColor{font-size:rem(16px);font-weight:$weight700}
+    &.noHistory em{color:$col_g600}
+    ~ .myCafepass{margin-top:8px}
+}
+
+.graytxt{color:$col_g600;font-size:rem(14px);margin-top:5px;margin-bottom:10px}
+.txt + .tagWrap{margin-top:4px}
+.flagList + .descBox{margin-top:24px}
+
+.flexWrap{display:flex;justify-content:space-between;align-items:center}
+
+.tumblerUseWrap{display:flex;justify-content:space-between;align-items:center;padding-bottom:10px;
+	.roundBoxGray{flex:1;height:140px;position:relative;text-align:center;border:1px solid $col_g200;
+		padding-top:80px;font-weight:$weight600; font-size:rem(16px);color:$col_g900;
+		+ .roundBoxGray{margin-left:8px}
+		&:after{@include pseudo(24px,24px);margin-top:-20px}
+		&.normal:after{background:url(#{$img_url}/common/ico_mug.svg) no-repeat}
+		&.tumbler:after{background:url(#{$img_url}/common/ico_tumbler.svg) no-repeat}
+	}
+}
+.reviewBox .reviewSet .name .tumblerInfo{display:inline-block;position:relative;color:$col_g600;font-size:1.4rem;padding-left:8px;margin-left:8px;
+	&:before{content:'';position:absolute;left:0;top:4px;width:1px;height:12px;background:$col_g200}
+}
+
+//infotxtSet 정의
+.infotxtSet{display:flex;justify-content:space-between;align-items:center;width:100%;
+	>dt, .tit{width:50%;font-weight:$weight600;color:$col_g900}
+	>dd, .txt{text-align:right;flex:1 0 auto}
+	& +.infotxtSet{margin-top:6px}
+	&.type2{
+		dt{min-width:120px;width:120px}
+		dd{text-align:left;width:100%}
+	}
+	.col01{color:$col_p600 !important}
+	.col02{color:$col_redP !important}
+	~ .roundBoxPur{margin-top:28px;padding:22px 20px}
+}
+.toggleBtn .infotxtSet{padding-right:10px;
+	* {font-size:rem(16px);font-weight:$weight700}
+}
+ul.infotxtSet{display:block;
+	>li{display:flex;justify-content:space-between;padding-top:12px; flex-wrap:wrap;
+		.txt{color:$col_g800;font-weight:$weight600}
+		dl.infotxtSet.bul{margin-top:5px;
+			dt{position:relative;color:$default_col;padding-left:10px;font-weight: $weight400}	
+			dt:before{content:'';display:block;width:5px;height:5px;border:1px solid $col_g600;border-width:0 0 1px 1px;
+			position:absolute;top:5px; left:0; }
+		}
+	}
+}
+//toggleList 
+.toggleList.acctAging01{
+	.toggleBtn{border:1px solid $col_g200;border-radius:8px;font-size:rem(16px);height:56px;display:flex;align-items:center;
+		> strong{display:inline-block;width:80px;color:$col_g900}
+		> span{display:inline-block;color:$col_g500}
+		&:after{right:20px;margin-top:-5px}
+	}
+	.toggleCont{display:none;padding:0 20px 18px;background:$col_g100;border:0;border-radius:0 0 8px 8px}
+	.toggleBtn[aria-expanded=true]{
+		background:$col_g100;border:0;border-radius:8px 8px 0 0;
+		& +.toggleCont{display:block}
+	}	
+}
+.toggleList.acctAging01.confirmCafe{margin:20px 0 30px;
+	.toggleBtn[aria-expanded=true]{border-bottom:1px dashed $col_g300}
+	.toggleCont{padding-top:10px}
+}
+.roundBoxPur{
+	.formBox{padding-bottom:21px;text-align:center;
+		.titDep5{margin-bottom:16px}
+		input{display:inline-block;width:42px;height:56px;margin:0 2px;padding:0 5px;text-align:center;border-radius:4px;font-size:rem(20px)}
+		.txtErr{display:none;font-size:rem(13px);letter-spacing:-.02em}
+		&.inpError .txtErr{display:block}
+	}
+	.listType01{border-top:1px solid $col_p200;padding-top:10px}
+	.listType01>li{margin-top:3px; font-size:rem(14px);color:$col_g600}
+	& + .btnDefault{margin-top:32px}
+}
+
+.outArea{margin-left:-20px;margin-right:-20px;padding:32px 20px}
+.cafeUseCass{position:relative;padding-left:135px;height:136px;
+	figure{position:absolute;top:20px;left:20px;width:96px;height:96px;border-radius:8px;overflow:hidden}
+	.tit{font-size:rem(16px);color:$col_g900; display:block;margin-top:16px}
+	.txt{font-size:rem(14px);color:$col_g600; display:block;margin-top:10px}
+	.tumblerBox{
+		position:absolute;
+		top:25px;right:20px;
+		width:64px;height:64px;
+		border-radius:50%;
+		$col_p200:#F1EBFF;
+		background: conic-gradient($col_p600 0% 50%, $col_p200 50% 100%);
+		
+		.center{
+			position:absolute;
+			width:60px; 
+			height: 60px;
+			background :#fff;
+			border-radius: 50%;
+			top: 2px;
+			left:2px;
+			&:after{content:'';position:absolute;top:50%;left:50%;margin:-16px 0 0 -16px;width:32px;height:32px;background:url('/resource/MO/images/common/ico_tumblerx32.svg')}
+			span{
+				position:absolute;bottom:-25px;
+				display:block;text-align:center;width:100%;
+				color:$col_g500;font-size:rem(12px); 
+				.grade{color:$col_p600;font-weight:$weight600}
+			}
+		}
+	}
+}
+
+//쿠폰다운로드
+.couponBox{
+	position:relative;overflow:hidden;width:100%;
+	display:flex;align-items:center; justify-content: space-between;
+	.left, .right{position:relative;display:inline-block;padding:20px 20px;height:100%;color:$col_g900;border:1px solid $col_p300}
+	.left{border-right:0;border-radius:8px 0 0 8px;text-align:left;width:calc(100% - 100px);
+		display:flex;justify-content:start;align-items:center;flex-wrap:wrap;
+		strong{display:block;width:100%;line-height:1.2}
+		&:before, &:after{content:'';position:absolute;right:-7px;top:-7px;z-index:1;
+			display:block;width:10px;height:10px;
+			border:1px solid $col_p300;border-radius:50%;background:$col_white;
+		}
+		&:after{top:auto;bottom:-7px}
+	}
+	.right{
+		display:inline-flex;justify-content:center;align-items:center;
+		position:absolute;top:0px;right:0px;width:100px;text-align:center;
+		border-left:1px dotted $col_p300;border-radius:0 8px 8px 0;
+		strong{color:$col_p600}
+	}
+
+	&.couponType01{
+		.right{background:$col_p200;
+			span{color:$col_p600;font-weight:$weight700}
+		}
+	}
+	&.couponType02{margin-top:24px;
+		.left, .right{min-height:96px}
+		.left{border-radius:12px 0 0 12px;
+			strong{font-size:2rem;color:$col_g900;margin:0 0 5px}
+		}
+		.right{border-radius:0 12px 12px 0;
+			.btnGo{position:absolute;width:40px;height:40px;border-radius:50%;color:$col_white;text-align:center;line-height:40px;font-size:1.3rem;top:50%;left:50%;margin:-20px 0 0 -20px;background:$col_p600}
+			&.bg{background:$col_p200}
+			strong{font-size: 1.8rem}
+		}
+	}
+}
+.couponBox.couponType01 + button.btnM{position:absolute;bottom:115px;left:20px;width:calc(100% - 40px);z-index:1}
+.tumblerGradPop .layContainer{margin-top:32px !important}
+.tumblerGradeWrap{
+	position:relative;border-radius:8px;background:$col_g100;padding:20px;margin-top:28px;	
+	* {font-size:1.4rem;color:$col_g600}
+
+	.tumblerUser{line-height:1;text-align:center;
+		figure{position:absolute;top:-28px;left:50%;width:56px;height:56px;border-radius:50%;overflow:hidden;margin-left:-28px}
+		span.col01{display:block;color:$col_p600;margin-top:20px}
+		strong.name{display:block;color:$col_g900;font-size:2rem;margin-top:4px}
+		.grade{display:inline-flex;align-items:center;margin-top:16px;
+			&+.grade:before{content:'';display:inline-block;margin:0 6px 0 7px;width:1px;height:10px;background:$col_g200}
+		}
+	}
+	.tumblerGrade{margin-top:12px;
+		.scoreBar{display:flex;justify-content:space-between;
+			.icons{width:50px;height:32px;background:url(#{$img_url}/common/ico_tumblerx32.svg) no-repeat}
+			.total{width:65px;font-size:1.4rem;text-align:right;line-height:32px}
+			.graph{position:relative;height:7px;margin:12px 0;border-radius:8px;border:1px solid $col_p300;flex:1 1 auto;
+				.bar{display: inline-block;
+					position: relative;
+					max-width: 100%;
+					height: 6px;
+					vertical-align: top;
+					border-radius: 8px;
+					background-color:$col_p600}
+			}
+
+		}
+		strong{color:$col_p600}
+		.gradeTxt{margin-top:5px;text-align:center}
+	}
+	.tumblerList{margin:32px -20px 0;
+		li{display:flex;flex-wrap:wrap;justify-content:center;align-items:start;
+			.tumblerUserBadge{padding:0 12px 20px}
+			.tumblerUserBadge.p0{padding-left:0;padding-right:0}
+		}
+	}
+}
+.tumblerUserBadge{text-align:center;
+	.iconBadge{display:inline-block;width:64px;height:64px;border-radius:24px;background:$col_p300;position:relative;
+		background:$col_p300 url(#{$img_url}/cafe/ic_notice.svg) no-repeat center center;
+		&:before{content:'';position:absolute;top:0;left:0;display:block;background:$col_p400;width:24px;height:24px;border-radius:0 0 18px 0;opacity:0.8}
+		&:after{content:'';position:absolute;top:-1px;left:-1px;border:13px solid $col_g100;border-right:13px solid transparent;border-bottom:13px solid transparent}
+		
+		& + span{display:block}
+		&[class$="lock"]{background:$col_g200 url(#{$img_url}/cafe/ic_lock.svg) no-repeat center center;
+			&:before, &:after{content:none}
+		}
+		&.challenger{background-image:url(#{$img_url}/cafe/ico_challenger.svg);}
+		&.challenger_lock{background-image:url(#{$img_url}/cafe/ico_challenger_lock.svg)}
+		&.beginner{background-image:url(#{$img_url}/cafe/ico_beginner.svg);}
+		&.beginner_lock{background-image:url(#{$img_url}/cafe/ico_beginner_lock.svg)}
+		&.follower{background-image:url(#{$img_url}/cafe/ico_follower.svg);}
+		&.follower_lock{background-image:url(#{$img_url}/cafe/ico_follower_lock.svg)}
+		&.pro{background-image:url(#{$img_url}/cafe/ico_pro.svg);}
+		&.pro_lock{background-image:url(#{$img_url}/cafe/ico_pro_lock.svg)}
+		&.master{background-image:url(#{$img_url}/cafe/ico_master.svg);}
+		&.master_lock{background-image:url(#{$img_url}/cafe/ico_master_lock.svg)}
+		&.legend{background-image:url(#{$img_url}/cafe/ico_legend.svg);}
+		&.legend_lock{background-image:url(#{$img_url}/cafe/ico_legend_lock.svg);}
+		&.god{background-image:url(#{$img_url}/cafe/ico_god.svg);}
+		&.god_lock{background-image:url(#{$img_url}/cafe/ico_god_lock.svg);}
+	}
+
+}
+
+.tumblerGradeWrap + .titDep4{margin-top:32px}
+.temblerUseInfo{border-top:2px dotted $col_g300;padding:16px 0;line-height:1;display:flex;justify-content:space-between;
+	dt{color:$col_g800;font-weight:600}
+}
+.tumblerBadgeWraper.type2{
+	.iconBadge{ &:after{border-color:$col_white transparent transparent $col_white} }
+	.iconBadge.icon02{background-color:$col_g200}
+	.txt{text-align:center;margin-bottom:32px}
+}
+
+.userThumbWrap{margin:-20px -20px 0;padding:32px 20px;background:$col_white;
+	figure{display:flex;align-items:center;margin-bottom:16px;
+		img{width:36px;height:36px;border-radius:50%}
+		figcaption{margin-left:8px;font-weight:$weight600;font-size:1.6rem;color:$col_g900}
+	}
+	dl{margin-top:6px;display:flex;justify-content:space-between;align-items:center}
+	dd{color:$col_g900;font-weight:$weight600}
+	& + .listType02{margin-top:32px}
+}
+.pageTit + .txt{margin:10px 0 30px;display:block}
+.cafeCouponBox{margin-top:12px;position:relative;border:1px solid $col_g200;border-radius:8px;color:$col_g600;background:$col_white;width:100%;text-align:left;height:95px;padding:0;
+	> div{position:relative;padding:20px 30px 20px 60px;
+		strong{font-size:1.8rem;display:block;color:$col_p600}
+		span{font-size:1.4rem;display:block;color:$col_g600}
+		&:after{content:'';display:block;width:24px;height:24px;position:absolute;top:24px;left:20px;background-repeat:no-repeat}
+		&.cafeC:after{background-image:url(#{$img_url}/common/ico_mug.svg)}
+		&.userC:after{background-image:url(#{$img_url}/common/ico_coupon.svg)}
+		
+	}
+	&:disabled{background-color:$col_g100;
+		strong{color:$col_g600}
+		.cafeC:after{background-image:url(#{$img_url}/common/ico_mug_mono.svg)}
+		.userC:after{background-image:url(#{$img_url}/common/ico_coupon_mono.svg)}
+	}
+	&.btLink01:after{border-color:$col_g500;right:20px}
+
+	&.ticketBox{display:block;border:none;height:auto;padding:20px;flex-direction:inherit;
+		.lCont{padding:0;width:calc(100% - 96px)}
+		.tit{margin-bottom:10px;color:$col_g900;
+			em{font-size:1.5rem;font-weight:normal}
+		}
+		.txt{padding:0}
+		.rCont{
+			&:before{width:7px;height:12px;border:2px solid $col_p300;border-width:0 2px 2px 0;border-radius:0;transform: rotate(45deg);
+			background:none;margin:-22px 0 0 -6px}
+			strong{color:$col_p600;font-size:1.8rem;margin-top:15px}
+		}
+		&.passOn .rCont:before{border-color:$col_p600}
+	}
+}
+.frmBox.frmCouponBox{display:block;;margin:0;
+	li{padding:0;margin-top:12px;
+		.cafeCouponBox.ticketBox{
+			display:flex;align-items:center;text-align:left;
+			.rCont{
+				&:before{width:7px;height:12px;border:2px solid $col_p300;border-width:0 2px 2px 0;border-radius:0;transform: rotate(45deg);
+				background:none;margin:-22px 0 0 -6px}
+				strong{color:$col_p600;font-size:1.8rem;margin-top:15px}}
+		}
+		input:checked + label.cafeCouponBox {
+			.rCont:before{border-color:$col_p600}
+			&:after{background-image: url(/resource/MO/images/food/bg_coupon-on.svg)}
+		}
+	}
+}
+
+.guideInfo{margin-top:32px;
+	strong.tit{display:block;margin:20px 0 0;color:$col_g900}
+	.listType01>li{margin-top:8px}
+}
+
+//완료페이지
+.completePanel{
+    .message.cafeMess{background:url(#{$img_url}/common/ic_stay_cafe.svg) no-repeat 50% 0}
+}
+.completePanel.cafePanel{padding:72px 0 54px;background:none;
+	&:before{content:'';display:block;position:absolute;z-index:-1;top:0;width:100%;height:340px;background:$col_p600}
+}
+.boxCompCont.cafeComp{
+	margin-top:0;
+	.donateBox{padding:0;border:0;
+		figure{width:96px;height:96px;
+			img{width:100%;height:100%}
+		}
+		& +.btnM{margin-top:20px}
+	}
+	.couponType02{margin:0 0 20px;
+		.left, .right{min-height:115px}
+		.left{padding-right:10px;
+			strong{font-size:1.8rem}
+		}
+		.left:before{background:$col_p200}
+	}
+}
+.tumblerComplete{position:relative;padding:60px 0 20px;text-align:center;
+	&:before{@include pseudo(40px,40px);top:0;margin-top:0;background:url(#{$img_url}/cafe/ic_notice.svg) no-repeat}
+	&.levelUp:before{background-image:url(#{$img_url}/cafe/ico_tumLevelup.svg)}
+	&.Benefit:before{background-image:url(#{$img_url}/cafe/ico_tumBenefit.svg)}
+	& + .roundBoxGray{margin-bottom:32px;text-align:center}
+}
+.completePanel.stayPanel{padding-bottom:114px}
+
+//결제하기
+.toggleList.paymentWrap{
+	.acctItem{border-bottom:1px solid $col_g200;
+		.toggleBtn{height:60px;padding-left:0;padding-right:30px;
+			display:flex;align-items:center;justify-content:space-between;
+			.tit{font-size:rem(18px);color:$col_g900;line-height:1;flex:2 0 auto;}
+			.price{font-size:rem(18px);color:$col_g900;line-height:1;flex:1 0 auto;text-align:right;}
+			.col01{color:$col_p600;}
+			.col02{color:$col_redP;}
+			&:after{right:5px;}
+		}
+		.toggleCont{display:none;
+			padding:18px 0;
+			.infotxtSet dd{flex:1 0 auto;}
+		}
+		.toggleBtn[aria-expanded=true]{
+			border-bottom:1px dashed $col_g200;
+			& +.toggleCont{display:block;}
+		}
+	}
+}
+
+/* 카페패스 이용안내 */
+.cafeGuide{
+    .titDep2{margin:60px 0 5px;text-align:center;
+        >strong{color:$col_p600;line-height:1.36;font-size:rem(22px)}
+        +.desc{font-size:rem(14px);text-align:center}
+    }
+	.swiperWrap{margin-top:24px;
+		&.subMainVisual{margin-top:0}
+		&.swiperGap .swiper-container{width:calc(100% - 43px)}
+	}
+    .guideInfo{margin-top:48px;border:0}
+}
+// .swiperCaGuide,.swiperCaMember{margin-top:24px}
+.caReview{padding:24px 20px;border:1px solid $col_g200;border-radius:12px;
+    .reviewSet{
+        .name{display:inline-block;position:relative;padding-right:10px;color:$col_g900;font-size:rem(15px);font-weight:$weight600;vertical-align:middle;
+            &:after{content:'';display:block;position:absolute;right:3px;top:50%;margin-top:-6px;width:1px;height:12px;background:$col_g200;}
+        }
+		.rating{display:inline-block;vertical-align:middle}
+    }
+    .caReviewTit{display:inline-block;margin-top:17px;color:$col_g900;font-size:rem(18px)}
+    .caReviewCont{margin-top:10px}
+}
+
+.caMemberCont{width:100%;
+    .caMemberImg{overflow:hidden;padding-top:100%;position:relative;border-radius:12px;
+		img{position:absolute;top:50%;left:50%;@include prefix(transform,translate(-50%, -50%));width:150%;}
+	}
+    .memberName{display:block;margin-top:10px;color:$col_g900}
+    .descTag{color:$col_g600;font-size:rem(13px);@include ellipsis(1, auto)}
+}
+
+.caVoucherCont{text-align:center;padding:32px 20px;margin-top:24px;background:$col_g100;border-radius:12px;
+	.titDep3{margin-bottom:5px;font-size:rem(18px)}
+	.caVoucherList{overflow:hidden;margin-top:20px;
+		li{float:left;width:50%;padding:0 6px;
+			+li+li{margin-top:12px}
+		}
+		+.btnArea{margin-top:32px}
+	}
+	.voucherCoupon{overflow:hidden;position:relative;
+		&:before, &:after{content:'';display:block;position:absolute;bottom:28px;width:24px;height:24px;border-radius:50%;border:1px solid $col_p300;background:$col_g100;z-index:10;}
+		&:before{left:-12px}
+		&:after{right:-12px}
+		.inner{overflow:hidden;position:relative;padding-top:20px;border:1px solid $col_p300;background:$col_white;border-radius:12px;
+			.titVoucher{color:$col_g900;font-size:rem(18px)}
+			.voucherPrice{padding-bottom:20px;color:$col_g600}
+			.chkArea{display:block;position:relative;height:40px;background:$col_p100;border-top:1px dashed $col_p300;
+				&:after{@include pseudo(10px,60px);background:url(#{$img_url}/common/bi_logo_v.svg) no-repeat 50% / 100% auto;@include prefix(transform,rotate(90deg))}
+			}
+		}
+	}
+	+.caVoucherCont{margin-top:20px}
+}
+.cafeBenefitCont{margin:0 -20px;background:url(#{$img_url}/cafe/bg_cafeBenefit.png) no-repeat 0 0 / 100% auto;}
+.caBenefit{margin-top:20px;text-align:center;
+    li{position:relative;padding-top:168px;text-align:center;
+        &:before{@include pseudo(148px,148px);top:0;margin-top:0;background:$col_g100 url(#{$img_url}/cafe/ico_free.svg) no-repeat 50%;border-radius:50%}
+        .benefitTit{color:$col_g900;font-size:rem(18px)}
+        .benefitDesc{margin-top:5px}
+        +li{margin-top:20px;
+            &:before{background-image:url(#{$img_url}/cafe/ico_discount.svg)}
+        }
+    }
+}
+.caUseGuide{position:relative;margin:60px -20px 0;padding:0 20px;text-align:center;background:$col_g100;
+    .titDep2{margin-top:0;padding-top:40px}
+    .guideStep{
+        .swiper-slide{overflow:visible;justify-content:center;text-align:center;
+			.useGuideCont{width:100%;
+				// &:after{content:'';display:block;margin-top:45px;width:100%;height:368px;background:url(#{$img_url}/cafe/img_useGuide_step01.png) no-repeat 50% 0 / 100% auto;box-shadow:10px 20px 40px 0 rgba(0, 0, 0, 0.12);border-radius:24px 24px 0 0}
+				.stepNum{display:block;color:$col_p600;font-weight:$weight700;width:30px;height:30px;line-height:30px;text-align:center;margin:0 auto;background:$col_p200;border-radius:50%;}
+				.stepName{display:inline-block;margin-top:10px;color:$col_g900;font-size:rem(18px);
+					+p{margin-top:5px;}
+					~.guideImg{margin-top:45px;padding:0 28px;
+						img{box-shadow:10px 20px 40px 0 rgba(0, 0, 0, 0.12);border-radius:24px 24px 0 0}
+					}
+				}
+			}
+        }
+    }
+	.swiperWrap{position:relative;
+		.swiper-pagination{position:absolute;top:90px;left:0;right:0}
+	}
+}
+
+//카페패스(20211124)
+.mainStoryArea{
+    .titDep3{margin:46px 0 21px}
+    .tabWrap .tabTypeR>li>a{min-width:109px}
+    .storySwiper li{height:calc(100vw - 124px);
+        a{overflow:hidden;position:relative;display:block;border-radius:12px;
+            &:after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background-image:linear-gradient(to bottom, rgba($col_black, 0) 48%, $col_black);opacity:.8}
+            figcaption{position:absolute;left:24px;bottom:22px;z-index:10;color:$col_white;font-weight:$weight600;font-size:rem(18px);line-height:1.44}
+        }
+    }
+}
+.cafeViewArea{position:relative;margin:-12px -20px 16px;
+    &:after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background-image:linear-gradient(to bottom, rgba($col_black, 0) 48%, $col_black);opacity:.8}
+    .txtInfo{position:absolute;left:24px;bottom:42px;z-index:10;
+        .flagInfo{position:absolute;left:0;bottom:0;color:$col_white}
+        .titDep2{display:block;margin:0 0 36px 0;color:$col_white;font-size:rem(24px)}
+    }
+}
+.cafeThemeList{margin-top:4px;
+    li:nth-child(n+2){margin-top:24px}
+    a{overflow:hidden;position:relative;display:block;border-radius:8px;
+        &:after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba($col_g900,.3)}
+        .txtInfo{position:absolute;top:50%;left:50%;width:80%;margin-top:-24px;text-align:center;z-index:10;@include prefix(transform,translate(-50%, -50%));
+            .flagInfo{color:$col_white;font-size:rem(15px)}
+            .titDep2{display:block;margin-top:12px;color:$col_white}
+        }
+    }
+}
+.pickList{margin-top:-12px;
+    li{
+        &:nth-child(n+2){margin-top:28px}
+        a{display:block;
+            .editorInfo{overflow:hidden;padding:13px 0 11px;border-bottom:1px solid $col_g200;
+                figure{overflow:hidden;display:inline-block;width:36px;height:36px;border-radius:50%;vertical-align:middle}
+                .editorName{display:inline-block;vertical-align:middle;margin-left:3px;color:$col_g900;font-weight:$weight600}
+                .price{float:right;margin-top:4px;font-size:rem(18px);font-weight:$weight700;color:$col_p600}
+                .date{float:right;margin-top:8px;font-size:rem(14px);color:$col_g600}
+            }
+            > figure{margin:0 -20px}
+            > .titDep4{display:block;margin:18px 0 2px;
+                ~ .conUtil{margin:0;
+                ~ .txt{margin-top:12px}
+                } 
+            }
+        }
+    }
+}
+
+.noData{
+	&.noCafe{
+		p.txt:before{background:url(#{$img_url}/cafe/ic_x50_noData_c.svg) no-repeat;border-radius:0}
+	}
+}
+
+// 360이하
+@media screen and (max-width:$sizeM) {
+	.pageTit + .contBtmFixed{position:static}
+    .themeViewArea{position:static;margin-top:0;@include prefix(transform,translateY(0))}
+    .layPop.layBtm.ticketLayer .swiper-slide.ticketCont:after{left:20px;right:20px}
+}
+
+// 320이하
+@media screen and (max-width:$sizeS) {
+	.tripSelect{
+		.selArea01>button, .selArea01>span{padding-left:15px;font-size:rem(12px);
+			&.btSeat{margin-left:1px;padding-left:17px;
+				&:before{left:3px}
+			}
+		}
+		.frmBox.frmBoxS li{flex:0 calc(25% - 8px);
+			&.sorting{flex:0 80px;
+				input+label{padding:0 16px 0 25px;
+					&:before{left:10px}
+				}
+			}
+		}
+	}
+	.setBox{height:auto;
+        .thum{position:static;width:100%;height:auto}
+        .txtInfo{margin:0;padding-left:0;
+            .tit > br{display:none}
+        }
+    }
+}

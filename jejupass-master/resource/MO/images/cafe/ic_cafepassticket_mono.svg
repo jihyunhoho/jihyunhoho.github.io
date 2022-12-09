@@ -1,0 +1,41 @@
+<svg id="ic_x24_cafepassticket_mono" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #aeaeae;
+      }
+
+      .cls-3 {
+        fill: gray;
+      }
+
+      .cls-4 {
+        fill: #f8f8f8;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="container" class="cls-1">
+    <rect class="cls-5" width="24" height="24"/>
+    <rect class="cls-6" x="0.5" y="0.5" width="23" height="23"/>
+  </g>
+  <g id="trip" transform="translate(-10 -14)">
+    <path id="Subtract" class="cls-2" d="M21,14H2a2,2,0,0,1-2-2V9A2,2,0,0,0,2,7,2,2,0,0,0,0,5V2A2,2,0,0,1,2,0H21a2,2,0,0,1,2,2V5a2,2,0,1,0,0,4v3A2,2,0,0,1,21,14Z" transform="translate(11 17)"/>
+    <rect id="Rectangle_91" data-name="Rectangle 91" class="cls-3" width="23" height="2" rx="1" transform="translate(11 33)"/>
+    <rect id="Rectangle_93" data-name="Rectangle 93" class="cls-4" width="13" height="8" rx="1" transform="translate(16 20)"/>
+    <circle id="Ellipse_72" data-name="Ellipse 72" class="cls-3" cx="1.5" cy="1.5" r="1.5" transform="translate(21 22.43)"/>
+  </g>
+</svg>

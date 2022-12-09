@@ -1,0 +1,195 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url(../fonts/Pretendard-Regular.woff2) format("woff2"), url(../fonts/Pretendard-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"), url(../fonts/Pretendard-SemiBold.woff2) format("woff2"), url(../fonts/Pretendard-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url(../fonts/Pretendard-Bold.woff2) format("woff2"), url(../fonts/Pretendard-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'NanumSquareR';
+  font-weight: 900;
+  font-display: swap;
+  src: local("나눔스퀘어라운드 ExtraBold"), url(../fonts/NanumSquareRoundOTFEB.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url(../fonts/Pretendard-Regular.woff2) format("woff2"), url(../fonts/Pretendard-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"), url(../fonts/Pretendard-SemiBold.woff2) format("woff2"), url(../fonts/Pretendard-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url(../fonts/Pretendard-Bold.woff2) format("woff2"), url(../fonts/Pretendard-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'NanumSquareR';
+  font-weight: 900;
+  font-display: swap;
+  src: local("나눔스퀘어라운드 ExtraBold"), url(../fonts/NanumSquareRoundOTFEB.woff) format("woff");
+}
+
+/* 이벤트 */
+/*이벤트*/
+.photoListR {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: -40px -10px 0;
+}
+
+.photoListR li {
+  margin: 40px 10px 0;
+  width: 414px;
+}
+
+.photoListR li .inner {
+  display: block;
+}
+
+.photoListR li .inner .imgCont {
+  overflow: hidden;
+  position: relative;
+  width: 414px;
+  height: 234px;
+  border-radius: 12px;
+}
+
+.photoListR li .inner .imgCont img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.photoListR li .inner .imgCont img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.photoListR li .inner .tit {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  height: auto;
+  margin: 12px 0 4px;
+  color: #202020;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.photoListR li .inner .date {
+  color: #808080;
+  font-size: 1.3rem;
+}
+
+.photoListR li .inner.end .imgCont:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.photoListR li .inner.end .roundTxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 86px;
+  height: 36px;
+  margin: -18px 0 0 -43px;
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 31px;
+  border: 1px solid #fff;
+  border-radius: 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.photoListR + .pageMove {
+  margin-top: 48px;
+}
+
+.boardList.event .tit a {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  height: auto;
+}
+
+.infoArea.event .eventTit {
+  margin: -40px 0 24px;
+}
+
+.infoArea.event table {
+  margin-bottom: 40px;
+  border-top: 1px solid #EAEAEA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.infoArea.event table tr {
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.infoArea.event table tr td {
+  width: 336px;
+  border-bottom: 1px solid #EAEAEA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #202020;
+}
+
+.infoArea.event table tr td:first-child {
+  width: 174px;
+  font-weight: 600;
+  background: #F8F8F8;
+}
+
+.infoArea.event table tr td:not(:last-child) {
+  border-right: 1px solid #EAEAEA;
+}
+
+.infoArea.event .centerTxt {
+  margin: 20px 0;
+}
+
+.infoArea.event .centerTxt p {
+  margin: 0;
+}

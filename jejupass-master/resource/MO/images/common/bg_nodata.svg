@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+    <defs>
+        <style>
+            .cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="ic_x48_null" transform="translate(-233 -526)">
+        <circle id="Ellipse_113" data-name="Ellipse 113" cx="24" cy="24" r="24" transform="translate(233 526)" style="fill:#eaeaea"/>
+        <rect id="Rectangle_178" data-name="Rectangle 178" class="cls-2" width="6" height="15" rx="3" transform="translate(254 539.2)"/>
+        <rect id="Rectangle_179" data-name="Rectangle 179" class="cls-2" width="6" height="6" rx="3" transform="translate(254 555.591)"/>
+    </g>
+</svg>

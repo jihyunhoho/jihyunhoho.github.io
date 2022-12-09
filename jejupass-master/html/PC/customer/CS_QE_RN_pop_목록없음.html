@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>예약번호 조회 | 제주패스</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, user-scalable=no, width=1366">
+<link rel="shortcut icon" type="image/x-icon" href="/resource/PC/images/favicon/favicon.ico">
+<link href="/resource/PC/css/p_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/PC/css/p_contents.min.css" rel="stylesheet" type="text/css">
+<style>
+    .layPop{display: block}
+    .dimmed{display: block;opacity: 1}
+</style>
+</head>
+
+<body>
+
+<section id="pop_reserveNum" class="layPop layerM" tabindex="0">
+	<header>
+		<h2 class="titLay">예약번호 조회</h2>
+	</header>
+	<div class="layContainer" tabindex="0">
+		<div class="selectView reserveNum">
+			<div class="swiperWrap swiperPaging" data-options='{"loop": false}'><!--20211124 loop 옵션 수정-->
+				<button type="button" class="swiper-button-prev">이전</button>			
+				<div class="swiper-container">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">2017</li>
+						<li class="swiper-slide">2018</li>
+						<li class="swiper-slide">2019</li>
+						<li class="swiper-slide">2020</li>
+						<li class="swiper-slide">2021</li>
+					</ul>
+				</div>	
+				<button type="button" class="swiper-button-next">다음</button>
+			</div>
+		</div>
+		<div class="grayArea">
+			<div class="noData infoType">
+				<p class="tit">예약내역이 없습니다.</p>
+			</div>
+		</div>	
+	</div><!-- //layContainer-->
+	
+	<button type="button" class="closeL">팝업 닫기</button>
+
+</section>
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/PC/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_common.js"></script>
+
+
+</body>
+</html>

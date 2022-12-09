@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>결제 | 제주패스</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, user-scalable=no, width=1366">
+<link rel="shortcut icon" type="image/x-icon" href="/resource/PC/images/favicon/favicon.ico">
+<link href="/resource/PC/css/p_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/PC/css/p_contents.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper defaultWrapper"><!-- scrollTop 104이상일때 headFixed 추가 -->
+	<header>
+		<h1 class="topLogo"><a href="#">JEJUPASS</a></h1>
+		<nav>
+			<div class="navList">
+				<h2><a href="#" aria-selected="true">항공</a></h2>
+				<h2><a href="#">렌터카</a></h2>
+				<h2><a href="#">숙박</a></h2>
+				<h2><a href="#">맛집</a></h2>
+				<h2><a href="#">카페패스</a></h2>
+				<h2><a href="#">트립</a></h2>
+			</div>
+			<div class="quickSearchWrap">
+				<button type="button" class="btSearch">빠른검색</button>
+			</div>
+		</nav>
+		<div class="topUtil">
+			<img src="/resource/PC/images/dummy/@util.png" alt="">
+		</div>
+	</header>
+
+	<div id="container" class="container bgGray">
+		<div id="contents" class="contents">
+			<h2 class="titDep2">결제</h2>
+			<div class="viewContents paymentPage">
+				<div class="boxWhite">
+					<div class="titArea">
+                        <h3 class="titDep3">주문상품</h3>
+                    </div>
+                    <ul class="kf_payList">
+                        <li><span class="tit">상품명</span><strong class="contR">100,000원</strong></li>
+                        <li><span class="tit">옵션<button type="button" class="btDel">삭제</button></span><strong class="contR">50,000원</strong></li>
+                        <li class="total"><span class="tit">주문금액</span><strong class="contR">150,000원</strong></li>
+                    </ul>
+				</div>
+				<div class="boxWhite">
+					<div class="titArea">
+                        <h3 class="titDep3">할인/혜택</h3>
+                    </div>
+					<ul class="kf_payList benefitWrap">
+						<!-- 쿠폰/이용권 -->
+						<!-- 사용가능 쿠폰이 있는 경우 -->
+						<li>
+							<strong class="title">쿠폰</strong>
+							<div class="downCoupon">
+								<p class="tit">사용가능 쿠폰</p>
+								<strong class="kf_couponNum">10개</strong>
+								<a href="#" role="button" class="link layPopBtn" data-id="pop_couponList">보기</a>
+							</div>
+						</li>
+						<!-- //사용가능 쿠폰이 있는 경우 -->
+						<!-- 쿠폰 적용 한 경우 -->
+						<li>
+							<strong class="title">쿠폰</strong>
+							<div class="downCoupon downChange">
+								<p class="tit">제주패스 웰컴패키지 제주패스 웰컴패키지</p>
+								<strong class="kf_couponNum">20,000원</strong>
+								<a href="#" role="button" class="link layPopBtn" data-id="pop_couponList">변경</a>
+							</div>
+						</li>
+						<!-- //쿠폰 적용 한 경우 -->
+						<!-- 사용가능 쿠폰이 있는 경우 -->
+                        <li>
+                            <strong class="title">쿠폰</strong>
+                            <div class="downCoupon">
+                                <p class="tit">사용가능 쿠폰</p>
+                                <strong class="kf_couponNum">10개</strong>
+                                <a href="#" role="button" class="link layPopBtn" data-id="pop_couponList">보기</a>
+                            </div>
+                        </li>
+                        <!-- //사용가능 쿠폰이 있는 경우 -->
+						<!-- 쿠폰 적용 한 경우 -->
+                        <li>
+                            <strong class="title">쿠폰</strong>
+                            <div class="downCoupon downChange">
+                                <p class="tit">제주패스 웰컴패키지 제주패스 웰컴패키지</p>
+                                <strong class="kf_couponNum">20,000원</strong>
+                                <a href="#" role="button" class="link layPopBtn" data-id="pop_couponList">변경</a>
+                            </div>
+                        </li>
+						<!-- //쿠폰 적용 한 경우 -->
+						<!-- 비로그인 상태인 경우 -->
+                        <li>
+                            <strong class="title">쿠폰</strong>
+                            <div class="grayBox loginInfo">
+                                <p class="listType02">로그인이 필요한 서비스입니다.</p>
+                                <a href="#" role="button" class="btLink">로그인하기</a>
+                            </div>
+                        </li>
+                        <!-- //비로그인 상태인 경우 -->
+						<!-- 사용가능 쿠폰이 없는 경우 -->
+                        <li>
+                            <strong class="title">쿠폰</strong>
+                            <div class="downCoupon downNone">
+                                <p class="tit">사용가능 쿠폰</p>
+                                <strong class="kf_couponNum">0개</strong>
+                                <a href="#" role="button" class="link layPopBtn" data-id="pop_couponList">보기</a>
+                            </div>
+                        </li>
+                        <!-- //사용가능 쿠폰이 없는 경우 -->
+                        <!-- //쿠폰/이용권 -->
+                        
+                        <!-- 프로모션 코드 -->
+                        <!-- 프로모션 코드 기본 -->
+                        <li>
+                            <div class="inpFrm inpDeleteAni"><!-- input value값 있을 때 삭제버튼 출력 -->
+                                <label for="inpCode" class="titLab">프로모션코드</label>
+                                <span class="inpA">
+                                    <input type="text" id="inpCode" placeholder="프로모션 코드를 입력하세요.">
+                                    <button type="button" class="btIco icDel">삭제</button>
+                                    <button type="button" class="btnDefault btnM btnLineG">적용</button>
+                                </span>
+                            </div>
+                        </li>
+                        <!-- //프로모션 코드 기본 -->
+                        <!-- 프로모션 코드 적용 한 경우 -->
+                        <li>
+                            <strong class="title">프로모션 코드</strong>
+                            <div class="downCoupon downChange">
+                                <p class="tit">알콩달콩 8% 할인권</p>
+                                <strong class="kf_couponNum">20,000원</strong>
+                                <a href="#" role="button" class="link layPopBtn" data-id="pop_couponList">변경</a>
+                            </div>
+                        </li>
+						<!-- //프로모션 코드 적용 한 경우 -->
+                        <!-- 프로모션 코드 비로그인 상태인 경우 -->
+                        <li>
+                            <strong class="title">프로모션 코드</strong>
+                            <div class="grayBox loginInfo">
+                                <p class="listType02">로그인이 필요한 서비스입니다.</p>
+                                <a href="#" role="button" class="btLink">로그인하기</a>
+                            </div>
+                        </li>
+                        <!-- //프로모션 코드 비로그인 상태인 경우 -->
+                        <!-- //프로모션 코드 -->
+
+                        <!-- 포인트사용 --> 
+						<!-- 비로그인 상태인 경우 -->
+						<li>
+                            <strong class="title">포인트 사용</strong>
+                            <div class="grayBox loginInfo">
+                                <p class="listType02">로그인이 필요한 서비스입니다.</p>
+                                <a href="#" role="button" class="btLink">로그인하기</a>
+                            </div>
+                        </li>
+						<!-- //비로그인 상태인 경우 -->
+						<!-- 렌터카 이용권 -->
+						<li class="discountPoint"> <!-- 로그인 후 포인트 사용 시 class="discountPoint" 추가 -->
+                            <strong class="title">렌터카 이용권</strong>
+                            <div class="inpFrm kf_chargePay">
+                                <label for="inpChargePrice3">사용가능 포인트</label>
+                                <span class="inpA">
+                                    <input type="tel" id="inpChargePrice3" value="10,000원" readonly>
+                                </span>
+                            </div>
+                            <div class="inpFrm kf_chargePay">
+                                <label for="inpChargePrice4">사용 포인트</label>
+                                <span class="inpA">
+                                    <input type="tel" id="inpChargePrice4" placeholder="사용할 포인트를 입력하세요." value="10,000원">
+									<button type="button" class="btnDefault btnM btnLineG">적용</button>
+                                </span>
+                            </div>
+							<div class="allPoint">
+								<div class="frmInp txt inpAcct frmInpS"><input type="checkbox" id="chk022"><label for="chk022">항상 전액 사용</label></div>
+							</div>
+						</li>
+						<!-- //렌터카 이용권 -->						
+						<!-- 포인트가 충분한 경우, 포인트가 부족한 경우, 멤버십 회원이 아닌 경우 -->
+                        <li class="discountPoint"> <!-- 로그인 후 포인트 사용 시 class="discountPoint" 추가 -->
+                            <strong class="title">포인트 사용</strong>
+                            <div class="inpFrm kf_chargePay">
+                                <label for="inpChargePrice5">사용가능 포인트</label>
+                                <span class="inpA">
+                                    <input type="tel" id="inpChargePrice5" value="0P" readonly>
+                                </span>
+                            </div>
+                            <div class="inpFrm kf_chargePay">
+                                <label for="inpChargePrice6">사용 포인트</label>
+                                <span class="inpA">
+                                    <input type="tel" id="inpChargePrice6" placeholder="사용할 포인트를 입력하세요." value="0P">
+									<button type="button" class="btnDefault btnM btnLineG">적용</button>
+                                </span>
+                            </div>
+							<div class="allPoint">
+								<div class="frmInp txt inpAcct frmInpS"><input type="checkbox" id="chk033"><label for="chk033">항상 전액 사용</label></div>
+							</div>
+							<div class="toggleList kf_pointCharge">
+								<div class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="false">부족한 <em>12,000p</em> 충전 후 결제<a href="#" class="layChargeTip">최대 3%적립</a></button>
+									<div class="toggleCont">
+										<div class="inner">
+											<ul class="kf_payList benefitWrap">
+												<li>
+													<div class="inpFrm inpDeleteAni">
+														<label for="inpChargePrice" class="titLab">충전금액</label>
+														<span class="inpA">
+															<input type="text" id="inpChargePrice" placeholder="충전금액을 선택해주세요.">
+															<button type="button" class="btIco icDel">삭제</button>
+															<div class="inpFrm kf_chargePay">
+																<p class="listType02 small">최소 5만원 단위/ 1,988,000원 한도 내 충전가능</p>
+																<div class="kf_priceBtns">
+																	<button type="button" class="inpPay">+5만</button>
+																	<button type="button" class="inpPay">+10만</button>
+																	<button type="button" class="inpPay">+50만</button>
+																	<button type="button" class="inpPay">+100만</button>
+																	<button type="button" class="btIco icoChange">금액 재설정</button>
+																</div>											
+															</div>
+														</span>
+													</div>
+												</li>
+												<li>
+													<strong class="title">연결계좌</strong>
+													<div class="swiperWrap swiperGap swiperAccount" data-options='{"Spacebetween": 16, "view" : "auto"}'>
+														<button type="button" class="swiper-button-prev">이전</button>
+														<div class="swiper-container">
+															<ul class="swiper-wrapper">
+																<li class="swiper-slide">
+																	<div class="kf_cardWrap">
+																		<input type="radio" id="radCard01" name="radCard" checked>
+																		<label for="radCard01">
+																			<img src="/resource/PC/images/common/card_kakao.png" alt="카카오뱅크 이미지">
+																			<p class="acctName">홍길동</p>
+																			<div class="kf_accountInfo">
+																				<span class="bankName">카카오뱅크</span>
+																				<strong class="bankAccountNum">110-12235-222112218</strong>
+																			</div>
+																		</label>
+																		
+																		<!-- 은행 이미지
+																		<img src="/resource/MO/images/common/card_kb.png" alt="KB국민은행 이미지">
+																		<img src="/resource/MO/images/common/card_ibk.png" alt="IBK기업은행 이미지">
+																		<img src="/resource/MO/images/common/card_nh.png" alt="NH농협은행 이미지">
+																		<img src="/resource/MO/images/common/card_shinhan.png" alt="신한은행 이미지">
+																		<img src="/resource/MO/images/common/card_citi.png" alt="한국씨티은행 이미지">
+																		<img src="/resource/MO/images/common/card_sc.png" alt="SC제일은행 이미지">
+																		<img src="/resource/MO/images/common/card_woori.png" alt="우리은행 이미지">
+																		<img src="/resource/MO/images/common/card_kakao.png" alt="카카오뱅크 이미지">
+																		<img src="/resource/MO/images/common/card_k.png" alt="케이뱅크 이미지">
+																		<img src="/resource/MO/images/common/card_keb.png" alt="KEB하나은행 이미지">
+																		<img src="/resource/MO/images/common/card_bnk.png" alt="BNK경남은행 이미지">
+																		<img src="/resource/MO/images/common/card_kj.png" alt="광주은행 이미지">
+																		<img src="/resource/MO/images/common/card_dgb.png" alt="DGB대구은행 이미지">
+																		<img src="/resource/MO/images/common/card_busan.png" alt="BNK부산은행 이미지">
+																		<img src="/resource/MO/images/common/card_kdb.png" alt="산업은행 이미지">
+																		<img src="/resource/MO/images/common/card_sh.png" alt="수협 이미지">
+																		<img src="/resource/MO/images/common/card_epost.png" alt="우체국 이미지">
+																		<img src="/resource/MO/images/common/card_jb.png" alt="전북은행 이미지">
+																		<img src="/resource/MO/images/common/card_jeju.png" alt="제주은행 이미지">
+																		<img src="/resource/MO/images/common/card_mg.png" alt="MG새마을금고 이미지">
+																		<img src="/resource/MO/images/common/card_cu.png" alt="신협은행 이미지">
+																		<img src="/resource/MO/images/common/card_sbi.png" alt="SBI저축은행 이미지">
+																		<img src="/resource/MO/images/common/card_sb.png" alt="저축은행 이미지">
+																		<img src="/resource/MO/images/common/card_toss.png" alt="토스뱅크 이미지">
+																		-->
+																	</div>
+																</li>
+																<li class="swiper-slide">
+																	<div class="kf_cardWrap">
+																		<input type="radio" id="radCard02" name="radCard">
+																		<label for="radCard02">
+																			<img src="/resource/PC/images/common/card_sb.png" alt="저축은행 이미지">
+																			<p class="acctName">홍길동</p>
+																			<div class="kf_accountInfo">
+																				<span class="bankName">저축은행</span>
+																				<strong class="bankAccountNum">110-12235-222112218</strong>
+																			</div>
+																		</label>
+																	</div>
+																</li>
+																<li class="swiper-slide">
+																	<div class="kf_cardWrap">
+																		<input type="radio" id="radCard03" name="radCard">
+																		<label for="radCard03">
+																			<img src="/resource/PC/images/common/card_sb.png" alt="저축은행 이미지">
+																			<p class="acctName">홍길동</p>
+																			<div class="kf_accountInfo">
+																				<span class="bankName">저축은행</span>
+																				<strong class="bankAccountNum">110-12235-222112218</strong>
+																			</div>
+																		</label>
+																	</div>
+																</li>
+																<li class="swiper-slide">
+																	<a href="#" role="button" class="kf_applyCont">
+																		<strong>충전계좌 등록</strong>
+																		<span>본인 명의 계좌만 등록 가능</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+														<button type="button" class="swiper-button-next">다음</button>
+													</div>
+												</li>
+												<li>
+													<ul class="chargingPoint">
+														<li>
+															<strong class="title">사용 충전포인트</strong>
+															<p class="pointTxt">100,000p</p>
+														</li>
+														<li>
+															<strong class="title">사용 후 잔액 충전포인트</strong>
+															<p class="pointTxt purple">50,000p</p>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </li>
+						<!-- //포인트가 부족한 경우 -->
+						
+                        <!-- //포인트사용 -->
+						<li class="total"><span class="tit">할인/혜택 금액</span><strong class="contR red">54,000원</strong></li>
+					</ul>
+				</div>
+				
+				<div class="boxWhite">
+					<div class="titArea">
+                        <h3 class="titDep3">결제수단</h3>
+                    </div>
+					<div class="toggleCont">
+						<ul class="kf_selPayment frmAcctList">
+							<li>
+								<span class="frmInp txt inpAcct" aria-expanded="true"><input type="radio" id="radPay" name="radPayMethod" checked><label for="radPay">제주PAY</label></span>
+								<div class="payDetailCont">
+									<div class="swiperWrap swiperGap swiperAccount" data-options='{"Spacebetween": 16, "view" : "auto"}'>
+										<button type="button" class="swiper-button-prev">이전</button>
+										<div class="swiper-container">
+											<ul class="swiper-wrapper">
+												<li class="swiper-slide">
+													<div class="kf_cardWrap">
+														<input type="radio" id="radPay01" name="radPay" checked>
+														<label for="radPay01">
+															<img src="/resource/PC/images/common/card_kdb.png" alt="산업은행 카드 이미지">
+															<p class="acctName">홍길동</p>
+															<div class="kf_accountInfo">
+																<span class="bankName">산업은행</span>
+																<strong class="bankAccountNum">110-12235-222112218</strong>
+															</div>
+														</label>
+														
+														<!-- 카드 이미지
+														<img src="/resource/PC/images/common/card_kb.png" alt="KB국민은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_ibk.png" alt="IBK기업은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_nh.png" alt="NH농협은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_shinhan.png" alt="신한은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_citi.png" alt="한국씨티은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_sc.png" alt="SC제일은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_woori.png" alt="우리은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_kakao.png" alt="카카오뱅크 이미지">
+														<img src="/resource/PC/images/common/card_k.png" alt="케이뱅크 이미지">
+														<img src="/resource/PC/images/common/card_keb.png" alt="KEB하나은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_bnk.png" alt="BNK경남은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_kj.png" alt="광주은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_dgb.png" alt="DGB대구은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_busan.png" alt="BNK부산은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_kdb.png" alt="산업은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_sh.png" alt="수협 이미지">
+														<img src="/resource/PC/images/common/card_epost.png" alt="우체국 이미지">
+														<img src="/resource/PC/images/common/card_jb.png" alt="전북은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_jeju.png" alt="제주은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_mg.png" alt="MG새마을금고 이미지">
+														<img src="/resource/PC/images/common/card_cu.png" alt="신협은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_sbi.png" alt="SBI저축은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_sb.png" alt="저축은행 카드 이미지">
+														<img src="/resource/PC/images/common/card_samsung.png" alt="삼성카드 이미지">
+														<img src="/resource/PC/images/common/card_lotte.png" alt="롯데카드 이미지">
+														<img src="/resource/PC/images/common/card_hyundai.png" alt="현대카드 이미지">
+														<img src="/resource/PC/images/common/card_stock.png" alt="증권사 카드 이미지">
+														-->
+													</div>
+												</li>
+												<li class="swiper-slide">
+													<div class="kf_cardWrap">
+														<input type="radio" id="radPay02" name="radPay">
+														<label for="radPay02">
+															<img src="/resource/PC/images/common/card_kdb.png" alt="산업은행 카드 이미지">
+															<p class="acctName">홍길동</p>
+															<div class="kf_accountInfo">
+																<span class="bankName">산업은행</span>
+																<strong class="bankAccountNum">110-12235-222112218</strong>
+															</div>
+														</label>
+													</div>
+												</li>
+												<li class="swiper-slide">
+													<div class="kf_cardWrap">
+														<input type="radio" id="radPay03" name="radPay">
+														<label for="radPay03">
+															<img src="/resource/PC/images/common/card_kdb.png" alt="산업은행 카드 이미지">
+															<p class="acctName">홍길동</p>
+															<div class="kf_accountInfo">
+																<span class="bankName">산업은행</span>
+																<strong class="bankAccountNum">110-12235-222112218</strong>
+															</div>
+														</label>
+													</div>
+												</li>
+												<li class="swiper-slide">
+													<a href="#" role="button" class="kf_applyCont">
+														<strong>충전계좌 등록</strong>
+														<span>본인 명의 계좌만 등록 가능</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<button type="button" class="swiper-button-next">다음</button>
+									</div>
+									<!-- 카드할부 선택 영역 -->
+									<div class="payInstallment">
+										<div class="selectWrap">
+											<select title="카드할부 선택" data-header="카드할부 선택">
+												<option>일시불</option>
+												<option>3개월</option>
+												<option>5개월</option>
+												<option>6개월</option>
+											</select>
+										</div>
+										<!-- <p class="listType02 small">할부는 50,000원 이상부터 적용됩니다.</p> -->
+									</div>
+									<!-- //카드할부 선택 영역 -->
+								</div>
+							</li>
+							<li>
+								<span class="frmInp txt inpAcct" aria-expanded="false"><input type="radio" id="radSimple" name="radPayMethod"><label for="radSimple">간편결제</label></span>
+								<div class="payDetailCont">
+									<ul class="simplePayList">
+										<li>
+											<input type="radio" id="radSimple01" name="radSimple" checked>
+											<label for="radSimple01">
+												<figure><img src="/resource/PC/images/common/img_samsungpay.png" alt="삼성페이"></figure><span>삼성페이</span>
+											</label>
+										</li>
+										<li>
+											<input type="radio" id="radSimple02" name="radSimple">
+											<label for="radSimple02">
+												<figure><img src="/resource/PC/images/common/img_cacaopay.png" alt="카카오페이"></figure><span>카카오페이</span>
+											</label>
+										</li>
+										<li>
+											<input type="radio" id="radSimple3" name="radSimple">
+											<label for="radSimple3">
+												<figure><img src="/resource/PC/images/common/img_toss.png" alt="토스"></figure><span>토스</span>
+											</label>
+										</li>
+										<li>
+											<input type="radio" id="radSimple4" name="radSimple">
+											<label for="radSimple4">
+												<figure><img src="/resource/PC/images/common/img_payco.png" alt="페이코"></figure><span>페이코</span>
+											</label>
+										</li>
+										<li>
+											<input type="radio" id="radSimple5" name="radSimple">
+											<label for="radSimple5">
+												<figure><img src="/resource/PC/images/common/img_lpay.png" alt="엘페이"></figure><span>엘페이</span>
+											</label>
+										</li>
+										<li>
+											<input type="radio" id="radSimple6" name="radSimple">
+											<label for="radSimple6">
+												<figure><img src="/resource/PC/images/common/img_naverpay.png" alt="네이버페이"></figure><span>네이버페이</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<span class="frmInp txt inpAcct" aria-expanded="true"><input type="radio" id="radNormal" name="radPayMethod"><label for="radNormal">일반결제</label></span>
+							</li>
+						</ul>
+						<!-- 12.24 추가 -->
+						<div class="btnsPayEtc">
+							<a href="#" role="button" class="btLink icArr light layPopBtn" data-id="pop_cardSaleInfo">카드할인 및 무이자할부 안내</a>
+							<a href="#" role="button" class="btLink icArr light">롯데카드 <em>5% 청구할인</em></a>
+						</div>
+						<!-- //12.24 추가 -->
+					</div>
+				</div>
+
+				<div class="boxWhite">
+					<div class="titArea">
+                        <h3 class="titDep3">적립포인트</h3>
+                    </div>
+					<ul class="kf_payList">
+                        <li><span class="tit">상품명<span class="toolTip">충전포인트<em> 5%</em></span></em></span><strong class="contR">750p</strong></li>
+                        <li><span class="tit">리뷰</span><strong class="contR">최대 300p</strong></li>
+                        <li class="total save"><span class="tit">총 예상 적립 포인트</span><strong class="contR">최대 1,050p</strong></li>
+					</ul>
+				</div>
+
+				<div id="filterWrap" class="kf_paymentBox floatingCont floatingPayment">
+					<!-- 2021.12.17 수정 -->
+					<div class="boxWhite">
+						<div class="inner">
+							<h3 class="titDep3">최종결제 금액</h3>
+							<div class="totalPay">
+								<div class="detail">
+									<span class="tit">주문금액</span>
+									<strong class="pay">9,078,000원</strong>
+								</div>							
+								<ul class="detailList">
+									<li><span class="tit">상품금액</span><strong class="pay">36,100원</strong></li>
+									<li><span class="tit">추가금액</span><strong class="pay">42,000원</strong></li>
+								</ul>
+								
+								<div class="detail borderTop">
+									<span class="tit">할인/혜택</span>
+									<strong class="pay discount">54,000원</strong>
+								</div>
+								<ul class="detailList discount">
+									<li><span class="tit">쿠폰</span><strong class="pay">20,000원</strong></li>
+									<li><span class="tit">프로모션 코드</span><strong class="pay">12,000원</strong></li>
+									<li><span class="tit">이용권</span><strong class="pay">10,000원</strong></li>
+									<li><span class="tit">포인트</span><strong class="pay">12,000원</strong></li>
+								</ul>
+
+								<div class="detail borderTop">
+									<span class="tit">결제 금액</span>
+									<strong class="pay total">96,000원</strong>
+								</div>
+								<div class="btnArea">
+									<button type="button" class="btnDefault btnM btnLineG">상세요금 보기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //2021.12.17 수정 -->
+					<div class="floatingBtns">
+						<div class="floatingInner">
+							<button type="button" class="btnDefault btnL action">78,000원 결제</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //컨텐츠 영역 -->
+		</div>
+	</div><!-- //container -->
+
+	
+
+</section><!-- //wrapper -->
+<footer>
+	<div class="footInner">
+		<img src="/resource/PC/images/dummy/@footer.png" alt="">
+	</div>
+</footer>
+
+<aside>
+	<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+</aside>
+
+<!-- 카드할인 및 무이자 할부안내 팝업 12.24 추가-->
+<section id="pop_cardSaleInfo" class="layPop layerM" tabindex="0">
+	<header>
+		<h2 class="titLay">카드할인 및 무이자 할부안내</h2>
+	</header>
+
+	<div class="layContainer scriptScroll" tabindex="0">
+		<ul class="cardsaleInfoList">
+			<li>
+				<figure><img src="/resource/MO/images/common/img_cardLogo_shinhan.png" alt="신한카드"></figure>
+				<div class="saleInfo">
+					<span>5만원 이상, 제주PAY 결제시</span>
+					<strong>2~7개월 무이자 할부</strong>
+				</div>
+			</li>
+			<li>
+				<figure><img src="/resource/MO/images/common/img_cardLogo_samsung.png" alt="삼성카드"></figure>
+				<div class="saleInfo">
+					<span>5만원 이상, 제주PAY 결제시</span>
+					<strong>2~7개월 무이자 할부</strong>
+				</div>
+			</li>
+			<li>
+				<figure><img src="/resource/MO/images/common/img_cardLogo_hyundai.png" alt="현대카드"></figure>
+				<div class="saleInfo">
+					<span>5만원 이상, 제주PAY 결제시</span>
+					<strong>2~7개월 무이자 할부</strong>
+				</div>
+			</li>
+			<li>
+				<figure><img src="/resource/MO/images/common/img_cardLogo_kbcard.png" alt="KB국민카드"></figure>
+				<div class="saleInfo">
+					<span>5만원 이상, 제주PAY 결제시</span>
+					<strong>2~7개월 무이자 할부</strong>
+				</div>
+			</li>
+			<li>
+				<figure><img src="/resource/MO/images/common/img_cardLogo_woori.png" alt="우리카드"></figure>
+				<div class="saleInfo">
+					<span>5만원 이상, 제주PAY 결제시</span>
+					<strong>2~7개월 무이자 할부</strong>
+				</div>
+			</li>
+			<li>
+				<figure><img src="/resource/MO/images/common/img_cardLogo_nh.png" alt="NH농협카드"></figure>
+				<div class="saleInfo">
+					<span>5만원 이상, 제주PAY 결제시</span>
+					<strong>2~7개월 무이자 할부</strong>
+				</div>
+			</li>
+			<li>
+				<figure><img src="/resource/MO/images/common/img_cardLogo_hana.png" alt="하나카드"></figure>
+				<div class="saleInfo">
+					<span>5만원 이상, 제주PAY 결제시</span>
+					<strong>2~7개월 무이자 할부</strong>
+				</div>
+			</li>
+			<li>
+				<figure><img src="/resource/MO/images/common/img_cardLogo_citi.png" alt="씨티카드"></figure>
+				<div class="saleInfo">
+					<span>5만원 이상, 제주PAY 결제시</span>
+					<strong>2~7개월 무이자 할부</strong>
+				</div>
+			</li>
+			<li>
+				<figure><img src="/resource/MO/images/common/img_cardLogo_ibk.png" alt="IBK기업은행카드"></figure>
+				<div class="saleInfo">
+					<span>5만원 이상, 제주PAY 결제시</span>
+					<strong>2~7개월 무이자 할부</strong>
+				</div>
+			</li>
+			<li>
+				<figure><img src="/resource/MO/images/common/img_cardLogo_lotte.png" alt="롯데카드"></figure>
+				<div class="saleInfo">
+					<span>5만원 이상, 제주PAY 결제시</span>
+					<strong>2~7개월 무이자 할부</strong>
+				</div>
+			</li>
+			<li>
+				<figure><img src="/resource/MO/images/common/img_cardLogo_post.png" alt="우체국"></figure>
+				<div class="saleInfo">
+					<span>5만원 이상, 제주PAY 결제시</span>
+					<strong>2~7개월 무이자 할부</strong>
+				</div>
+			</li>
+		</ul>
+	</div><!-- //layContainer-->
+	<div class="btnArea">
+		<button type="button" class="btnDefault btnL action">닫기</button>
+	</div>
+	<button type="button" class="closeL">팝업 닫기</button>
+</section>
+<!-- //카드할인 및 무이자 할부안내 팝업 12.24 추가-->
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/PC/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_common.js"></script>
+
+</body>
+</html>

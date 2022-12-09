@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+    <defs>
+        <style>
+            .cls-6{fill:#569aff}.cls-9{fill:#18225c}
+        </style>
+    </defs>
+    <g id="ic_x96_complete_stay" transform="translate(-1002 -183)">
+        <path id="Path_17581" data-name="Path 17581" d="M60.887 58.969 6.33 44.341a6 6 0 0 1-1.941-.911 6.06 6.06 0 0 0 1.668-4.185A6.088 6.088 0 0 0 2.886 33.9l7.891-29.431A6.037 6.037 0 0 1 18.163.206l54.558 14.628a6.037 6.037 0 0 1 4.263 7.386l-8.71 32.486a6.038 6.038 0 0 1-7.386 4.263" transform="translate(1010.015 198.537)" style="fill:#1d68dc"/>
+        <path id="Path_17582" data-name="Path 17582" d="M62.507 62.008H6.03A6.037 6.037 0 0 1 0 55.978V44.434a5.277 5.277 0 0 0 5.272-5.271A5.277 5.277 0 0 0 0 33.891V22.349a6.037 6.037 0 0 1 6.03-6.03h56.477a6.036 6.036 0 0 1 6.03 6.03v11.542a5.272 5.272 0 0 0 0 10.543v11.544a6.036 6.036 0 0 1-6.03 6.03" transform="translate(1010 198.618)" style="fill:#fff"/>
+        <path id="Path_17583" data-name="Path 17583" d="M68.254 41.236A11.861 11.861 0 1 1 56.393 53.1a11.861 11.861 0 0 1 11.861-11.864" transform="translate(1009.885 198.504)" style="fill:#cde0ff"/>
+        <path id="Path_17584" data-name="Path 17584" class="cls-6" d="M67.131 56.286a1.256 1.256 0 0 1-.919-.4l-2.534-2.722a1.256 1.256 0 1 1 1.839-1.712l1.615 1.735 3.227-3.466a1.256 1.256 0 0 1 1.841 1.711l-4.15 4.454a1.256 1.256 0 0 1-.919.4z" transform="translate(1010.202 198.798)"/>
+        <g id="ic_x24_doc_stay" transform="translate(527.2 -242.2)">
+            <g id="Group_15556" data-name="Group 15556" transform="translate(507 471)">
+                <path id="Path_17539" data-name="Path 17539" d="M6 2.739a1.5 1.5 0 1 1-1.5 1.5 1.5 1.5 0 0 1 1.5-1.5" style="fill:#e83667"/>
+                <path id="Path_17540" data-name="Path 17540" class="cls-6" d="M3 14H0V1.5a1.5 1.5 0 0 1 3 0z"/>
+                <path id="Path_17541" data-name="Path 17541" class="cls-9" d="M2.3 12H.7a.7.7 0 0 0-.7.7v4.1A1.2 1.2 0 0 0 1.2 18h.6A1.2 1.2 0 0 0 3 16.8v-4.1a.7.7 0 0 0-.7-.7"/>
+                <path id="Path_17542" data-name="Path 17542" class="cls-9" d="M18.5 11a1.5 1.5 0 0 0-1.5 1.5v4.3a1.2 1.2 0 0 0 1.2 1.2h.6a1.2 1.2 0 0 0 1.2-1.2v-4.3a1.5 1.5 0 0 0-1.5-1.5"/>
+                <path id="Path_17543" data-name="Path 17543" class="cls-6" d="M20 14.75H0v-4a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3z"/>
+                <path id="Path_17544" data-name="Path 17544" class="cls-9" d="M17 5.75h-7a1 1 0 0 1 0-2h7a1 1 0 0 1 0 2"/>
+            </g>
+        </g>
+    </g>
+</svg>

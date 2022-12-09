@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <style>
+            .cls-4{fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="ic_x18_join" transform="translate(-293 -116)">
+        <g id="Group_16878" data-name="Group 16878" transform="translate(295.583 116.423)">
+            <g id="Group_16986" data-name="Group 16986" transform="translate(.417)">
+                <g id="Ellipse_1964" data-name="Ellipse 1964" transform="translate(.607)" style="stroke-miterlimit:10;stroke:#fff;stroke-linecap:round;stroke-width:2px;fill:none">
+                    <circle cx="4.809" cy="4.809" r="4.809" style="stroke:none"/>
+                    <circle cx="4.809" cy="4.809" r="3.809" style="fill:none"/>
+                </g>
+                <path id="Path_22678" data-name="Path 22678" d="M307.924 94.874a7.637 7.637 0 0 1 7.417-7.841 7.311 7.311 0 0 1 3.136.752l.105.049" transform="translate(-309.924 -78.356)" style="fill-rule:evenodd;stroke-miterlimit:10;stroke:#fff;stroke-linecap:round;stroke-width:2px;fill:none"/>
+            </g>
+            <g id="Group_16985" data-name="Group 16985" transform="translate(-1.531 -.568)">
+                <path id="Path_23211" data-name="Path 23211" class="cls-4" d="M6.455 13.586h5" transform="translate(4.493 1)"/>
+                <path id="Path_23212" data-name="Path 23212" class="cls-4" d="M6.455 13.586h5" transform="rotate(90 10.701 16.332)"/>
+            </g>
+        </g>
+    </g>
+</svg>

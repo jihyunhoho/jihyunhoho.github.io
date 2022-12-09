@@ -1,0 +1,241 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>항공 예약 | 제주패스</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="/resource/MO/images/favicon/apple_touch_icon.ico">
+<link rel="apple-touch-icon" href="/resource/MO/images/favicon/apple_touch_icon_144.ico">
+<link href="/air/css/kfx/mbl/airA.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_commonAIR.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_contentsAIR.min.css" rel="stylesheet" type="text/css">
+<link href="/air/css/kfx/mbl/m_contents_air.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper airWrapper">
+	
+	<!-- jsp:include page="/inc/MO/header.html" / -->
+	
+	<header>
+		<button type="button" class="btPrev">이전</button>
+		<h1 class="titDep1">탑승객 정보 입력</h1><!-- 12.10 타이틀 텍스트 수정 -->
+		<!-- div class="menuWrap">
+			<button type="button" class="btNav">메뉴</button>
+		</div --><!-- 12.13 삭제 -->
+	</header>
+
+	<div id="container" class="container">		
+		
+		<div class="tabWrap tabScript fixed">
+			<button type="button" class="prev"><span>이전</span></button>
+			<ul class="tabType01 tabBasics">
+				<li><a href="#" role="button" aria-selected="true" data-controls="tabContents01">성인1</a></li>
+				<li><a href="#" role="button" aria-selected="false" data-controls="tabContents02">성인2</a></li>
+				<li><a href="#" role="button" aria-selected="false" data-controls="tabContents03">성인3</a></li>
+				<li><a href="#" role="button" aria-selected="false" data-controls="tabContents04">소아1</a></li>
+				<li><a href="#" role="button" aria-selected="false" data-controls="tabContents05">유아1</a></li>
+				<li><a href="#" role="button" aria-selected="false" data-controls="tabContents06">유아2</a></li>
+			</ul>
+			<button type="button" class="next"><span>다음</span></button>
+		</div>
+		
+		<div id="tabContents01" class="tabContentWrap tabON">
+			<div class="titArea">
+				<h3 class="titDep4">탑승객 정보</h3>
+				<span class="frmInp txt small"><input type="checkbox" id="chk01"><label for="chk01">예약자 정보와 동일</label></span>
+			</div>			
+
+			<div class="k1_box">
+				<div class="inpWrap">
+					<label for="inpName">탑승객 성명</label>
+					<div class="kf_flexBox">
+						<span class="k1_custom_ipt"><input type="text" id="inpName" name="" title="한글 또는 영문 성 입력" placeholder="한글 또는 영문 성" value="홍길동"></span>
+						<span class="k1_custom_ipt"><input type="text" id="inpName" name="" title="한글 또는 영문 이름 입력" placeholder="한글 또는 영문 이름"></span>
+					</div>
+				</div>
+				
+				<div class="inpHalf">
+					<div class="inpWrap">
+						<label for="inpBirth">생년월일</label>
+						<span class="k1_custom_ipt"><input type="tel" id="inpBirth" name="" title="YYYY.MM.DD 형태로 입력" placeholder="YYYY.MM.DD"></span>
+					</div>
+					<div class="inpWrap">
+						<label for="inpPhone">성별</label>
+						<ul class="frmBox frmTogS">
+							<li><input type="radio" id="radMale02" name="radSex" checked=""><label for="radMale02">남자</label></li>
+							<li><input type="radio" id="radFemale02" name="radSex"><label for="radFemale02">여자</label></li>
+						</ul>
+					</div>
+				</div>
+				<div class="inpWrap">
+					<label for="inpPhone">국적</label>
+					<div class="selectWrap">
+						<select title="국적 선택" data-header="국적 선택">
+							<option value="01" data-option="" selected>한국</option>
+							<option value="02" >미국</option>
+							<option value="03">일본</option>
+							<option value="04">중국</option>
+							<option value="05">러시아</option>
+							<option value="06">나이지리아</option>
+						</select>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+
+		<div id="tabContents02" class="tabContentWrap">
+			<div class="titArea">
+				<h3 class="titDep4">탑승객 정보</h3>
+				<!-- span class="frmInp txt small"><input type="checkbox" id="chk01"><label for="chk01">예약자 정보와 동일</label></span --><!-- 10.12 삭제 -->
+			</div>			
+
+			<div class="k1_box">
+				<div class="inpWrap">
+					<label for="inpName">탑승객 성명</label>
+					<div class="kf_flexBox">
+						<span class="k1_custom_ipt"><input type="text" id="inpName" name="" title="한글 또는 영문 성 입력" placeholder="한글 또는 영문 성"></span>
+						<span class="k1_custom_ipt"><input type="text" id="inpName" name="" title="한글 또는 영문 이름 입력" placeholder="한글 또는 영문 이름"></span>
+					</div>
+				</div>
+				
+				<div class="inpHalf">
+					<div class="inpWrap">
+						<label for="inpBirth">생년월일</label>
+						<span class="k1_custom_ipt"><input type="tel" id="inpBirth" name="" title="YYYY.MM.DD 형태로 입력" placeholder="YYYY.MM.DD"></span>
+					</div>
+					<div class="inpWrap">
+						<label for="inpPhone">성별</label>
+						<ul class="frmBox frmTogS">
+							<li><input type="radio" id="radMale02" name="radSex" checked=""><label for="radMale02">남자</label></li>
+							<li><input type="radio" id="radFemale02" name="radSex"><label for="radFemale02">여자</label></li>
+						</ul>
+					</div>
+				</div>
+				<div class="inpWrap">
+					<label for="inpPhone">국적</label>
+					<div class="selectWrap">
+						<select title="국적 선택" data-header="국적 선택">
+							<option value="01" data-option="" selected>한국</option>
+							<option value="02" >미국</option>
+							<option value="03">일본</option>
+							<option value="04">중국</option>
+							<option value="05">러시아</option>
+							<option value="06">나이지리아</option>
+						</select>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+
+		<div class="guideInfo boxType01">
+			<h4 class="titGuide">알려드립니다</h4>
+			<ul class="listType01">
+				<li>탑승자의 성명은 실제 탑승하는 승객의 신분증 정보와 반드시 일치해야 합니다.</li>
+				<li>내국인은 한글 성명을, 시민권자/외국인은 여권 상 영문 성명을 입력해 주세요.</li>
+			</ul>
+		</div>
+		
+		<div class="btnArea">
+			<button type="button" class="btnDefault btnL action">완료</button><!-- 12.10 버튼 텍스트 수정 -->
+		</div>
+
+	</div><!-- //container -->
+
+	<!-- div class="floatingBtns floatingCase03">
+		<div class="floatingInner">
+			<div class="txtArea">
+				<span class="tit">총 결제금액</span>
+				<a href="#" role="button" class="txtPoint" data-id="pop_detailView">9,015,000원</a>
+			</div>
+			<button type="button" class="btnDefault btnL action">예약</button>
+		</div>
+	</div --><!-- 12.10 삭제 -->		
+
+</section><!-- //wrapper -->
+<footer>
+	<img src="/resource/MO/images/dummy/@footer.png" alt="">
+</footer>
+
+<aside>
+	<div class="asideRight">
+		<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+	</div>
+	
+</aside>
+
+<!-- 운임규정 및 취소 규정안내 팝업 -->
+<div id="pop_airFilter" class="layPop k1_pop_wrap">
+	<div class="k1_pop">
+		<h3>
+			항공편 세부정보<a href="#" class="k1_btn close_btn"><span class="k1_icon_min pop-close">팝업닫기</span></a>
+		</h3>
+		<div class="cont kf_detailCont">
+
+			<h4 class="titDep5">항공사</h4>
+			<div class="detailCont">대한항공</div>
+
+			<h4 class="titDep5">항공편 추가정보</h4>
+			<div class="detailCont">
+				<h5>특가운임</h5>
+				<ul class="kf_airInfoList">
+					<li class="flyBaggage01">기내 수화물 10kg</li>
+					<li class="flyBaggage02">위탁 수화물 15kg</li>
+				</ul>
+
+				<h5>할인운임</h5>
+				<ul class="kf_airInfoList">
+					<li class="flyBaggage01">기내 수화물 10kg</li>
+					<li class="flyBaggage02">위탁 수화물 15kg</li>
+				</ul>
+
+				<h5>정상운임</h5>
+				<ul class="kf_airInfoList">
+					<li class="flyBaggage01">기내 수화물 10kg</li>
+					<li class="flyBaggage02">위탁 수화물 15kg</li>
+				</ul>
+
+				<h5>항공편 공통</h5>
+				<ul class="kf_airInfoList">
+					<li class="flyAir">A321 협동체</li>
+					<li class="flySeat">사전 좌석 지정(B/C Zone) 제공</li>
+					<li class="flyBaggage03">위탁 수하물 별도구매</li>
+					<li class="flyFirst">우선 탑승 제공</li>
+					<li class="flyLayout">좌석 레이아웃 3-3</li>
+					<li class="flyDevice">장치 스트리밍 가능성 정보 없음</li>
+					<li class="flyPower">전원 콘센트 제공 가능성 있음</li>
+					<li class="flySeat02">앞뒤 좌석간 거리 71cm</li>
+					<li class="flySnack">프리미엄 스낵 미제공 (유료)</li>
+					<li class="flyWifi">Wi-Fi 없음</li>
+				</ul>
+			</div>
+
+			<div class="k1_btn_wrap">
+				<div class="kf_btn_inner">
+					<a href="#none" class="k1_btn max dark"><span class="k1_icon check"></span>확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //운임규정 및 취소 규정안내 팝업 -->
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+
+
+</body>
+</html>

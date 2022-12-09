@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #8f63e6;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="ic_x12_star_1" transform="translate(-23 -383)">
+    <g id="사각형_2914" data-name="사각형 2914" class="cls-1" transform="translate(23 383)">
+      <rect class="cls-3" width="12" height="12"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="11" height="11"/>
+    </g>
+    <path id="Star_1" data-name="Star 1" class="cls-2" d="M4.543,1.022a.5.5,0,0,1,.913,0l.93,2.08a.5.5,0,0,0,.391.292l2.21.292a.5.5,0,0,1,.286.852L7.615,6.171a.5.5,0,0,0-.141.446L7.9,8.936a.5.5,0,0,1-.742.522l-1.9-1.1a.5.5,0,0,0-.5,0l-1.9,1.1A.5.5,0,0,1,2.1,8.936l.422-2.319a.5.5,0,0,0-.141-.446L.728,4.537a.5.5,0,0,1,.286-.852l2.21-.292A.5.5,0,0,0,3.614,3.1Z" transform="translate(24 384)"/>
+  </g>
+</svg>

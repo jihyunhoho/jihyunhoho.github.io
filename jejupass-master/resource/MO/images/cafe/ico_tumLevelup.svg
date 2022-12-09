@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_11803" data-name="사각형 11803" style="fill:none" d="M0 0h40v40H0z"/>
+        </clipPath>
+        <style>
+            .cls-7{fill:none;stroke:#cacaca;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="ic_congr_x40" style="clip-path:url(#clip-path)">
+        <path id="패스_21241" data-name="패스 21241" d="M33.416 23.317 15.778 5.592c-1.231-1.238-3.594-.427-4.251 1.462L2.171 33.945a2.313 2.313 0 0 0 .359 2.283 2.213 2.213 0 0 0 2.4.648l27.014-9.314c1.888-.65 2.708-3.008 1.477-4.245" style="fill:#569aff"/>
+        <path id="패스_21242" data-name="패스 21242" d="M33 9a3 3 0 1 1-3 3 3 3 0 0 1 3-3" style="fill:#e83667"/>
+        <path id="패스_21243" data-name="패스 21243" d="M23.2 4a2 2 0 1 1-2 2 2 2 0 0 1 2-2" style="fill:#260b5b"/>
+        <path id="패스_21244" data-name="패스 21244" d="m10.952 8.741-.9 2.589 6.688 6.32a1.25 1.25 0 0 0 1.732-1.8l-.015-.014z" style="fill:#85b5ff"/>
+        <path id="선_246" data-name="선 246" class="cls-7" transform="translate(33.178 18.615)" d="m0 0 3 .657"/>
+        <path id="선_247" data-name="선 247" class="cls-7" transform="translate(29.245 4.024)" d="M0 2.701.98 0"/>
+    </g>
+</svg>

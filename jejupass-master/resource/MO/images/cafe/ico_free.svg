@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+    <defs>
+        <style>
+            .cls-2{fill:#63a1ff}.cls-3{fill:#18225c}
+        </style>
+    </defs>
+    <g id="ic_x72_free" transform="translate(19.642 17.871)">
+        <path id="패스_3210" data-name="패스 3210" class="cls-2" d="M2.1 0h10.487a2.1 2.1 0 0 1 2.1 2.1v2.1a2.1 2.1 0 0 1-2.1 2.1H2.1A2.1 2.1 0 0 1 0 4.2V2.1A2.1 2.1 0 0 1 2.1 0z" transform="rotate(-68 13.722 -16.33)"/>
+        <path id="패스_3215" data-name="패스 3215" class="cls-2" d="M-1 0h35.443l-.569 9.513H-.406z" transform="translate(1.652 4.253)"/>
+        <path id="패스_3216" data-name="패스 3216" class="cls-2" d="m30.615 17.935-.89 15.574a1.672 1.672 0 0 1-1.7 1.646H2.762a1.672 1.672 0 0 1-1.7-1.646L.143 17.935z" transform="translate(2.978 15.105)"/>
+        <path id="패스_3217" data-name="패스 3217" class="cls-3" d="M1.267-1h37.041A2.1 2.1 0 0 1 40.575.873v5.62H-1V.873A2.1 2.1 0 0 1 1.267-1z" transform="translate(-1.415 -.351)"/>
+        <path id="패스_3213" data-name="패스 3213" class="cls-3" d="M.851 0h34.806a1.952 1.952 0 0 1 1.851 2.039l-1.851 27.636a1.952 1.952 0 0 1-1.851 2.039H2.7a1.952 1.952 0 0 1-1.849-2.039L-1 2.039A1.952 1.952 0 0 1 .851 0z" transform="translate(.118 9.937)"/>
+        <path id="Star_1" data-name="Star 1" d="M14.444.765a2 2 0 0 1 2.613 1.082l.894 2.159a2 2 0 0 0 1.082 1.082l2.159.894A2 2 0 0 1 22.275 8.6l-.894 2.159a2 2 0 0 0 0 1.531l.894 2.159a2 2 0 0 1-1.082 2.613l-2.159.894a2 2 0 0 0-1.082 1.082l-.894 2.159a2 2 0 0 1-2.613 1.082l-2.159-.894a2 2 0 0 0-1.531 0l-2.155.89a2 2 0 0 1-2.613-1.082l-.894-2.159a2 2 0 0 0-1.082-1.082l-2.159-.894a2 2 0 0 1-1.087-2.614l.894-2.159a2 2 0 0 0 0-1.531L.765 8.6a2 2 0 0 1 1.083-2.617l2.159-.894a2 2 0 0 0 1.082-1.083l.894-2.159A2 2 0 0 1 8.6.765l2.159.894a2 2 0 0 0 1.531 0z" transform="translate(6.517 14.078)" style="fill:#fff"/>
+        <text id="Free" transform="translate(12.036 28.098)" style="font-size:6px;font-family:Pretendard-Black,Pretendard;font-weight:800;letter-spacing:-.02em;fill:#18225c"><tspan x="0" y="0">Free</tspan></text>
+        <circle id="Ellipse_70" data-name="Ellipse 70" cx="3.6" cy="3.6" r="3.6" transform="rotate(90 7.38 -6.623)" style="fill:#e83667"/>
+    </g>
+</svg>

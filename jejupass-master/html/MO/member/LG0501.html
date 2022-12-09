@@ -1,0 +1,83 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>비회원 예약확인 | 제주패스</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="/resource/MO/images/favicon/apple_touch_icon.ico">
+<link rel="apple-touch-icon" href="/resource/MO/images/favicon/apple_touch_icon_144.ico">
+<link href="/resource/MO/css/m_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/MO/css/m_contents.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper defaultWrapper">
+	<header>
+		<button type="button" class="btPrev">이전</button>
+		<h1 class="titDep1">비회원 예약확인</h1>
+		<div class="menuWrap">
+			<button type="button" class="btNav">메뉴</button>
+		</div>
+	</header>
+
+	<div id="container" class="container">
+		<h2 class="pageTit">예약 시 고객정보와 <br>발급된 예약번호를 입력해주세요</h2>
+		<fieldset class="signFrm">
+			<legend>비회원 예약확인</legend>
+			<div class="inpFrm inpDeleteAni"><!-- input value값 있을 때 삭제버튼 출력 -->
+				<label for="inp_name">이름</label>
+				<span class="inpA">
+					<input type="text" id="inp_name" placeholder="이름을 입력해주세요." title="이름을 입력해주세요.">
+					<button type="button" class="icDel">삭제</button>
+				</span>
+				<p class="txtInfo">이름을 입력해 주세요.</p>
+				<p class="txtErr">국&middot;영문 최대 20자 입력 가능합니다.</p>
+			</div>
+			<div class="inpFrm inpDeleteAni inpError"><!-- input data 오류시 inpError 클래스 추가 -->
+				<label for="inp_tel">휴대전화</label>
+				<span class="inpA">
+					<input type="tel" id="inp_tel" maxlength="11" placeholder="- 없이 번호만 입력해주세요." title="- 없이 번호만 입력해주세요.">
+					<button type="button" class="icDel">삭제</button>
+				</span>
+				<p class="txtErr">(-) 하이픈 없이 숫자만 입력해주세요.</p>
+			</div>
+			<div class="inpFrm inpDeleteAni">
+				<label for="inp_num">예약번호</label>
+				<span class="inpA">
+					<input type="text" id="inp_num" placeholder="예약번호를 입력해주세요." title="예약번호를 입력해주세요.">
+					<button type="button" class="icDel">삭제</button>
+				</span>
+			</div>
+		</fieldset>
+	</div><!-- //container -->
+	<div class="absolBtns">
+		<div class="absolInner">
+			<button type="button" class="btnDefault btnL action" disabled>확인</button>
+		</div>
+	</div>
+</section><!-- //wrapper -->
+<footer>
+	<img src="/resource/MO/images/dummy/@footer.png" alt="">
+</footer>
+<aside>
+	<div class="asideRight">
+		<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+	</div>
+</aside>
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/MO/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_selectbox.js"></script>
+<script type="text/javascript" src="/resource/MO/js/m_common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_55" data-name="Rectangle 55" transform="translate(44 184)" style="fill:rgba(255,0,0,.2)" d="M0 0h18v18H0z"/>
+        </clipPath>
+        <style>
+            .cls-5{fill:none}.cls-8,.cls-9{stroke:none}.cls-9{fill:#ff7d0c}
+        </style>
+    </defs>
+    <g id="icon_gift" transform="translate(-44 -184)">
+        <g id="Mask_Group_638" data-name="Mask Group 638" style="clip-path:url(#clip-path)">
+            <path id="Rectangle_55-2" data-name="Rectangle 55" transform="translate(44 184)" style="fill:none" d="M0 0h18v18H0z"/>
+            <g id="Group_13854" data-name="Group 13854" transform="translate(1 1.859)">
+                <rect id="Rectangle_10685" data-name="Rectangle 10685" width="12" height="9" rx="1" transform="translate(46 190)" style="fill:#ffd016"/>
+                <g id="Path_2604" data-name="Path 2604" class="cls-5">
+                    <path class="cls-8" d="M2.5 0A2.5 2.5 0 0 1 5 2.5c0 1.381-2.5 3.333-2.5 3.333S0 3.881 0 2.5A2.5 2.5 0 0 1 2.5 0z" transform="rotate(45 -194.018 156.882)"/>
+                    <path class="cls-9" d="M2.5 2a.5.5 0 0 0-.492.409c.076.163.256.406.492.675.236-.269.416-.512.492-.675A.5.5 0 0 0 2.5 2m0-2A2.5 2.5 0 0 1 5 2.5c0 1.38-2.5 3.333-2.5 3.333S0 3.881 0 2.5A2.5 2.5 0 0 1 2.5 0z" transform="rotate(45 -194.018 156.882)"/>
+                </g>
+                <g id="Path_2605" data-name="Path 2605" class="cls-5">
+                    <path class="cls-8" d="M2.5 0A2.5 2.5 0 0 1 5 2.5c0 1.381-2.5 3.333-2.5 3.333S0 3.881 0 2.5A2.5 2.5 0 0 1 2.5 0z" transform="rotate(-30 369.59 6.315)"/>
+                    <path class="cls-9" d="M2.5 2a.5.5 0 0 0-.492.409c.076.163.256.406.492.675.236-.269.416-.512.492-.675A.5.5 0 0 0 2.5 2m0-2A2.5 2.5 0 0 1 5 2.5c0 1.38-2.5 3.333-2.5 3.333S0 3.881 0 2.5A2.5 2.5 0 0 1 2.5 0z" transform="rotate(-30 369.59 6.315)"/>
+                </g>
+                <path id="Rectangle_10687" data-name="Rectangle 10687" d="M1 0h12a1 1 0 0 1 1 1v3H0V1a1 1 0 0 1 1-1z" transform="translate(45 188)" style="fill:#ffc116"/>
+                <path id="Rectangle_10688" data-name="Rectangle 10688" transform="translate(51 188)" style="fill:#ff7d0c" d="M0 0h2v11H0z"/>
+            </g>
+        </g>
+    </g>
+</svg>

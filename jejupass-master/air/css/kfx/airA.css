@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* ------------------------------------------------------------------------------------
+Basic Style Sheet (for version 4 browsers)
+
+version: 0.2
+author: 박수연
+email: suudjin@nate.com
+
+--------------------------------------------------------------------------------------- */
+
+/* 공통 */
+@import url("/air/wfw/css/comm/common.css");	/* common */
+@import url("/air/wfw/css/airA/calendar.css");/* 공통 calendar */
+@import url("/air/wfw/css/airA/contents.css");/* 공통 contents */
+@import url("/air/wfw/css/airA/popup.css");	/* 공통 popup */
+@import url("/air/wfw/css/airA/board.css");	/* 공통 board */
+@import url("/air/wfw/css/airA/typo.css");	/* 공통 typo */
+@import url("/air/wfw/css/airA/ico.css");		/* 공통 icon */
+@import url("/air/wfw/css/airA/btn.css");		/* btn */
+@import url("/air/wfw/css/airA/icon_btn.css");/* 아이콘 버튼 */
+@import url("/air/wfw/css/airA/seatmap.css");/* 아이콘 버튼 */
+@import url("/air/wfw/css/airA/baggage.css");/* 아이콘 버튼 */
+
+
+/* b2b b2c */
+@import url("/air/wfw/css/airA/air_contents.css");	/* b2c_contents */
+@import url("/air/wfw/css/airA/b2b_contents.css");	/* b2b_contents */
+
+/* 공통 */
+@import url("/air/wfw/css/comm/ie7.css");		/* ie7전용핵 */

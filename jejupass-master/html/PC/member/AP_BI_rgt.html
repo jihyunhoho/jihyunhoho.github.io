@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>회원가입(정보입력) | 제주패스</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, user-scalable=no, width=1366">
+<link rel="shortcut icon" type="image/x-icon" href="/resource/PC/images/favicon/favicon.ico">
+<link href="/resource/PC/css/p_common.min.css" rel="stylesheet" type="text/css">
+<link href="/resource/PC/css/p_contents.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper memberWrapper">
+	<header>
+		<p class="topLogo"><a href="#">JEJUPASS</a></p>
+		<nav>
+			<img src="/resource/PC/images/dummy/@navi.png" alt="">
+		</nav>
+		<div class="topUtil">
+			<img src="/resource/PC/images/dummy/@util.png" alt="">
+		</div>
+	</header>
+
+	<div id="container" class="container">
+		<div id="contents" class="contents">
+			<!-- 컨텐츠 영역  -->
+			<p class="titDep2 titDepC">회원가입</p>				
+			<fieldset class="signFrm">
+                <legend>회원가입 정보입력</legend>
+                <div class="inpFrm inpDeleteAni"><!-- input value값 있을 때 삭제버튼 출력 -->
+                    <label for="inp_id" class="titLab">아이디(이메일)</label>
+                    <div class="inpA inpBtns">
+						<input type="text" class="inpL" id="inp_id" placeholder="example@jejupass.com" title="example@jejupass.com">
+                        <button type="button" class="btIco icDel">삭제</button>
+						<a href="#" role="button" class="btnDefault btnL btnLineP">중복확인</a>
+                    </div>
+                    <p class="txtInfo">아이디(이메일)을 입력해주세요.</p>
+                </div>
+                <div class="inpFrm inpDeleteAni"><!-- input value값 있을 때 삭제버튼 출력 -->
+                    <label for="inp_pwd" class="titLab">비밀번호</label>
+                    <div class="inpA">
+                        <input type="password" class="inpL" id="inp_pwd" placeholder="영문, 숫자, 특수문자 8 ~ 16자 이내" title="영문, 숫자, 특수문자 8 ~ 16자 이내"><!-- 20211130 : 문구(변경) -->
+                        <button type="button" class="btIco icDel">삭제</button>
+                    </div>
+                    <p class="txtInfo">비밀번호를 입력해주세요.</p>
+                    <p class="txtErr">최소 자 이상 입력해주세요.</p><!-- 20211130 : 문구(변경) -->
+                </div>
+                <div class="inpFrm inpDeleteAni inpError"><!-- input data 오류시 inpError 클래스 추가 -->
+                    <label for="inp_repwd" class="titLab">비밀번호 확인</label>
+                    <div class="inpA">
+                        <input type="password" class="inpL" id="inp_repwd" placeholder="확인을 위해 한번 더 입력해주세요." title="확인을 위해 한번 더 입력해주세요.">
+                        <button type="button" class="btIco icDel">삭제</button>
+                    </div>
+                </div>
+                <div class="inpFrm">
+                    <label for="inp_name" class="titLab">이름</label>
+                    <span class="inpA">
+                        <input type="text" class="inpL" id="inp_name" value="김제주" readonly>
+                    </span>
+                </div>
+                <div class="inpFrm">
+                    <span class="titLab">생년월일</span>
+                    <div class="select-group birth">
+                        <div class="selectWrap">
+                            <!-- 1931~2002(1990:Default) -->
+                            <select title="생년" data-msg="년" data-header="년도">
+                                <option value="1931">1931</option><option value="1932">1932</option><option value="1933">1933</option><option value="1934">1934</option><option value="1935">1935</option>
+                                <option value="1990" selected>1990</option>
+                                <option value="2002">2000</option><option value="2002">2001</option><option value="2002">2002</option>
+                            </select>
+                        </div>
+                        <div class="selectWrap">
+                            
+                            <select title="생월" data-msg="월" data-header="월">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div class="selectWrap">
+                            <select title="생일" data-msg="일" data-header="일">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="inpFrm">
+                    <label for="inp_phnum" class="titLab">휴대전화번호</label>
+                    <span class="inpA">
+                        <input type="text" id="inp_phnum" class="inpL" value="01012345678" readonly>
+                    </span>
+                </div>
+                <div class="inpFrm">
+                    <span class="titLab">성별</span>
+                    <ul class="frmBox frmTog">
+                        <li><input type="radio" id="radMale" name="radSex" checked><label for="radMale">남자</label></li>
+                        <li><input type="radio" id="radFemale" name="radSex"><label for="radFemale">여자</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+			<div class="btnArea">
+				<button type="button" class="btnDefault btnL action" disabled>확인</button>	
+				<button type="button" class="btnDefault btnL action">확인</button>	
+			</div>
+			<!-- //컨텐츠 영역 -->
+		</div>
+	</div><!-- //container -->
+
+</section><!-- //wrapper -->
+<footer>
+	<div class="footInner">
+		<img src="/resource/PC/images/dummy/@footer.png" alt="">
+	</div>
+</footer>
+
+<aside>
+	<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+</aside>
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/PC/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_common.js"></script>
+
+</body>
+</html>
