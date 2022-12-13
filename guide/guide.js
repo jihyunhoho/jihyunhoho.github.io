@@ -2,16 +2,18 @@ $(document).ready(function(){
 	
 	var obj = $(".no");
 	
-	for( var i=0; i<obj.length;i++ ){
-			obj.eq(i).text(i+1);
+	for( var i=0; i<obj.length; i++ ){
+		obj.eq(i).text(i+1);
 	}
 
 	
-	var gnb =  $(".gnbDep1").children();	
-	var snb =  $(".gnbDep2").children();
+	var gnb = $(".gnbDep1").children();	
+	var snb = $(".gnbDep2").children();
 	
 
 	gnb.eq(gnbNO).addClass("navON");
+	console.log(gnbNO);
+
 	if( snb.length == 0) return false;
 	snb.eq(snbNO).addClass("navON");
 	
