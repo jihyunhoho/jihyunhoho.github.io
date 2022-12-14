@@ -1,0 +1,154 @@
+@charset "utf-8"; 
+
+/* ------------------------------------------------------------------------------------
+Basic Style Sheet (for version 4 browsers)
+
+version: 0.2
+author: 박수연
+email: suudjin@nate.com
+설명: B2B
+--------------------------------------------------------------------------------------- */
+/************************************************************************************************************
+ B2B_Layout
+************************************************************************************************************/
+#k1_b2b_wrap {width:100%;}
+#k1_b2b_header {position:relative; width:1042px; height:141px; margin:0 auto;}
+#k1_b2b_header h1 {width:144px; height:34px; margin:0 auto; padding-top:16px;}
+
+#k1_gnb{position:absolute; top:60px; left:0; width:1042px; height:82px; background:url(/air/wfw/imgs/airB/b2b/bg_gnb_bar.jpg) no-repeat 0 0;}
+#k1_gnb ul.top_navi {height:15px; margin-top:14px;}
+#k1_gnb ul li {position:absolute; height:15px;}
+#k1_gnb ul li a {height:15px;}
+#k1_gnb ul li.navi_01 {left:113px;}
+#k1_gnb ul li ul {position:relative; top:26px; width:800px; height:12px;}
+#k1_gnb ul li ul li {position:absolute; left:0; width:800px;}
+#k1_gnb ul li ul li a {font-weight:bold;}
+#k1_gnb ul li ul li a:hover {color:#8a2525;}
+#k1_gnb ul li.navi_01 ul li.snavi_01 {left:0;}
+#k1_gnb ul li.navi_01 ul li.snavi_02 {left:137px;}
+#k1_gnb li.navi_02 {left:303px;}
+#k1_gnb li.navi_03 {left:475px;}
+#k1_gnb li.navi_04 {left:654px;}
+#k1_gnb li.navi_05 {left:828px;}
+
+#k1_b2b_container {position:relative; width:1020px; margin:15px auto;}
+#k1_b2b_container:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+#k1_b2b_aside {float:left; width:175px;}
+#k1_b2b_content {float:right; width:835px;}
+#k1_b2b_content input.k1_input_text,
+#k1_b2b_content input.k1_input_text_r{border:#e2e3ea 1px solid; color:#8a8a8a;}
+
+/* leftmenu */
+#k1_b2b_aside h2 {position:relative; width:155px; height:40px; padding-left:20px; background:url(/air/wfw/imgs/airB/b2b/bg_left_b2b.gif) no-repeat; color:#fff; font-weight:bold; font-size:14px; cursor:pointer; line-height:40px;} 
+#k1_b2b_aside .arrow {position:absolute; width:13px; height:9px; background: url(/air/wfw/imgs/airB/b2b/bg_left_b2b_arrow.gif) no-repeat; top:16px; right:8px; cursor:pointer; font-size:0;} 
+#k1_b2b_aside .arrow_off {position:absolute; top:16px; right:8px; width:13px; height:9px; background: url(/air/wfw/imgs/airB/b2b/bg_left_b2b_arrow_off.gif) no-repeat; cursor:pointer; font-size:0;} 
+#k1_b2b_aside .b2b_left_menu {padding:10px 15px 12px 15px; background:url(/air/wfw/imgs/airB/b2b/bg_left_b2b_center.gif) repeat-y;}
+#k1_b2b_aside .b2b_left_menu h3 {padding:10px 0 5px 13px; border-bottom:1px solid #f1f1f1; background:url(/air/wfw/imgs/airB/b2b/bul_left_arrow.gif) no-repeat 0 13px; cursor:pointer;}
+#k1_b2b_aside .b2b_left_menu h3.off {padding:10px 0 5px 13px; border-bottom:1px solid #f1f1f1; background:url(/air/wfw/imgs/airB/b2b/bul_left_arrow_off.gif) no-repeat 0 15px; cursor:pointer;}
+#k1_b2b_aside .b2b_left_menu h3 a,
+#k1_b2b_aside .b2b_left_menu h3 button {color:#ca2323; font-weight:bold; font-size:12px; border:0 none; background:none;}
+#k1_b2b_aside .b2b_left_menu ul li {padding:6px 0 5px 13px; border-bottom:1px solid #f1f1f1;}
+#k1_b2b_aside .b2b_left_menu ul li a:hover {color:#ca2323;}
+#k1_b2b_aside .b2b_left_menu ul li a.active {color:#ca2323;}
+#k1_b2b_aside .b2b_left_menu ul li.last {border:0 none;}
+#k1_b2b_aside .b2b_left_menu_b {width:175px; height:2px; border:0 none; background:url(/air/wfw/imgs/airB/b2b/bg_left_b2b_bottom.gif) no-repeat;} 
+
+/* b2b_left 고객센터 */
+.k1_banner1 {width:175px;}
+.k1_banner1 .top {height:2px; background:url(/air/wfw/imgs/img_common/bg_b2b_banner1_top.gif) no-repeat;}
+.k1_banner1 .cont {padding:10px; border-left:#cdd6de 2px solid; border-right:#cdd6de 2px solid;}
+.k1_banner1 .cont h4{padding-left:28px; height:40px; background:url(/air/wfw/imgs/img_common/img_phone.gif) no-repeat 0 0; color:#4b4b4b; font-weight:bold;}
+.k1_banner1 .cont h4 span{display:block; color:#8a8a8a;}
+.k1_banner1 .cont .call_t{height:2px; background:url(/air/wfw/imgs/img_common/bg_b2b_calltop.gif) no-repeat 0 0;}
+.k1_banner1 .cont .call_b{height:2px; background:url(/air/wfw/imgs/img_common/bg_b2b_callbottom.gif) no-repeat 0 ;}
+.k1_banner1 .cont .call{padding:3px 10px 2px; background:#dfe5eb; font-weight:bold; line-height:1.2em;}
+.k1_banner1 .bottom {height:2px; background:url(/air/wfw/imgs/img_common/bg_b2b_banner1_bottom.gif) no-repeat 0 0;}
+
+/* k1_b2b_footer */
+#k1_b2b_footer_wrap{height:60px; width:100%; margin-top:40px; background:#f1f1f1;}
+.k1_b2b_foot {position:relative; margin:0 auto; padding:20px 30px 10px; width:960px; height:30px}
+.k1_b2b_foot .k1_footlogo{width:115px; height:28px;}
+#k1_b2b_footer_wrap address{position:absolute; left:175px; top:17px; padding-left:30px; background:url(/air/wfw/imgs/img_common/bg_footer_line.gif) no-repeat 0 3px; color:#777;}
+#k1_b2b_footer_wrap address p{line-height:17px;}
+
+/************************************************************************************************************
+ 발권요청
+************************************************************************************************************/
+.k1_new_request {position:relative; padding:7px 10px; height:19px; border:1px solid #d9d9d9; background:#f1f1f1; line-height:1.2em;}
+.k1_new_request .time {position:absolute; top:10px; left:20px; padding-left:11px; background:url(/air/wfw/imgs/airB/bullet_icon/bul_6px_dot2.gif) 0 3px no-repeat;}
+.k1_new_request .box {position:absolute; top:8px; right:10px;}
+.k1_new_request .box label,
+.k1_new_request .box .tt{padding:1px 10px 1px 11px; background:url(/air/wfw/imgs/airB/bullet_icon/bul_6px_dot2.gif) 0 3px no-repeat; vertical-align:middle;}
+.k1_new_request .list:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.k1_new_request .list li{float:left; height:19px; padding:0 20px; background:url(/air/wfw/imgs/airB/bullet_icon/bul_6px_dot2.gif) 10px 5px no-repeat; vertical-align:middle; line-height:1.6em;}
+.k1_new_request .list li label{vertical-align:middle; margin-right:5px;}
+
+.k1_box_spot1 {position:relative; padding:10px 20px 8px; background:#ffebeb; line-height:1.2em;}
+.k1_box_spot1 h4{padding-left:10px; background:url(/air/wfw/imgs/airB/bullet_icon/bul_arrow.gif) 0 3px no-repeat; color:#ab4e4e; font-weight:bold; line-height:1.3em;}
+.k1_box_spot1 .k1_btn_close1{position:absolute; top:10px; right:10px;}
+.k1_box_spot2 {padding:5px 19px; border:1px solid #d9d9d9; background:#f1f1f1; line-height:1em;}
+.k1_box_spot2 label{font-weight:bold;}
+.k1_box_spot2 select{width:45px;}
+.k1_box_spot2 span{vertical-align:middle;}
+
+/************************************************************************************************************
+ b2b event list
+************************************************************************************************************/
+.k1_b2b_event{width:100%; border:#d9d9d9 1px solid; border-top:#d36969 2px solid; font-size:11px;}
+.k1_b2b_event td{padding:20px 18px; border:#d9d9d9 1px solid; line-height:1.2em; vertical-align:top;}
+.k1_b2b_event dl{margin:10px 0 5px;}
+.k1_b2b_event dt{height:14px; padding:3px 0; font-size:12px; color:#ca2323; font-weight:bold; line-height:1.2em;}
+.k1_b2b_event dt a{color:#ca2323;}
+.k1_b2b_event dd{height:14px; padding:3px 0; line-height:1.2em;}
+.k1_event_com{padding:10px 0; background:url(/air/wfw/imgs/bullet/dot_line4.gif) repeat-x 0 0; line-height:1.6em; text-align:justify;}
+
+/************************************************************************************************************
+ 업체큐번호
+************************************************************************************************************/
+.k1_qno:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.k1_qno li{float:left; padding:2px 0; width:50%; font-size:11px;}
+.k1_qno li strong{vertical-align:middle;}
+.k1_qno li strong span{display:inline-block; width:60px; color:#ca2323; font-size:12px;}
+.k1_qno li input[type=radio]{margin:0 5px;}
+.k1_qno li input[type=text]{width:70px; margin-left:10px;}
+
+/************************************************************************************************************
+ 로그인
+************************************************************************************************************/
+.k1_login_type3_wrap {width:395px; margin:80px auto 10px;}
+.k1_login_type3_wrap .top {height:8px; background:url(/air/wfw/imgs/airB/cont/bg_login_top.gif) no-repeat;}
+.k1_login_type3_wrap .cont {padding:30px; background:url(/air/wfw/imgs/airB/cont/bg_login_center.gif) repeat-y;}
+.k1_login_type3_wrap .cont p{padding:2px 30px;}
+.k1_login_type3_wrap .cont p .tt{padding:5px 10px; background:url(/air/wfw/imgs/airB/bullet_icon/bul_arrow.gif) 0 7px no-repeat; line-height:1.2em; vertical-align:middle;}
+.k1_login_type3_wrap .tit {position:relative; height:24px; padding:0 10px 3px; border-bottom:1px solid #d9d9d9;}
+.k1_login_type3_wrap .tit h2{width:57px; height:22px; background:url(/air/wfw/imgs/img_common/tit_login.gif) 0 0 no-repeat; font-size:0;}
+.k1_login_type3_wrap .tit .logo {position:absolute; right:10px; top:0;}
+.k1_login_type3_wrap .bottom {height:8px; background:url(/air/wfw/imgs/airB/cont/bg_login_bottom.gif) no-repeat;}
+
+.k1_login_box3_wrap {padding:15px 10px; margin:10px; border:1px solid #e9bbbb; background:#ffebeb;}
+.k1_login_box3 {position:relative;}
+.k1_login_box3 dl{width:75%; padding:4px 0 3px; line-height:1.2em;}
+.k1_login_box3 dl:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.k1_login_box3 dt {float:left; width:64px; height:14px; padding:3px 5px 2px;}
+.k1_login_box3 dt label{padding-left:10px; background:url(/air/wfw/imgs/airB/bullet_icon/dot_3px.gif) 0 4px no-repeat; font-weight:bold;}
+.k1_login_box3 dd {float:left; width:140px; height:19px; padding:0 2px;}
+.k1_login_box3 dd input {width:130px;}
+.k1_login_box3 .btn_login {position:absolute; right:10px; top:4px;}
+.k1_login_box3_wrap p{padding-left:10px; margin-left:10px; background:url(/air/wfw/imgs/airB/bullet_icon/bul_arrow.gif) 0 2px no-repeat;}
+
+/************************************************************************************************************
+b2c 예약 및 결제내역 커스트마이징
+************************************************************************************************************/
+#k1_b2b_content .k1_step_box{width:147px;}
+#k1_b2b_content .k1_step_box_select{width:151px;}
+
+/************************************************************************************************************
+	거래처 운임정보 리스트
+************************************************************************************************************/
+.k1_account_fare:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.k1_account_fare li{float:left; padding:1px 15px 1px 0; font-size:11px;}
+.k1_account_fare li span{display:inline-block;}
+.k1_account_fare li span.name{width:150px;}
+.k1_account_fare li span.sum{width:60px; text-align:right;}
+.k1_account_fare li span.sum2{width:72px; text-align:right;}
+.k1_account_fare li span.sum3{width:50px; text-align:right;}

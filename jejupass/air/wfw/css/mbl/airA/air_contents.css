@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* container */
+#k1_container{position:relative;min-width:320px;min-height:100%; overflow-x:hidden;background-color:#F3F3F3; font-family:'Noto sans kr',sans-serif !important;}
+
+/* header */
+#k1_header{position:relative;height:40px;padding-top:6px;z-index:1; background-color:#ebf6ff;}
+#k1_header .menu_btn, #k1_header .my_btn{display:inline-block;background-image:url(/air/wfw/imgs/mbl/airA/ico/gnb_m_menu.png);background-repeat:no-repeat;background-size:62%;}
+#k1_header .menu_btn{position:absolute;top:13px;left:11px;z-index:1;width:35px;height:20px;background-position:9px 0;font-size:0;}
+#k1_header h1{font-size:0;line-height:0;text-align:center;}
+#k1_header .logo{display:inline-block; width:150px;height:34px;background-image:url(/air/wfw/imgs/mbl/airA/logo/logo_0318.png); background-repeat:no-repeat; background-size:70%;background-position:center 5px;}
+#k1_header .my_btn{position:absolute;top:6px;right:6px;z-index:1;width:34px;height:34px;background-position:-350px 0;font-size:0;}
+
+/*sticky footer 처리*/
+div#k1_container section,
+div#k1_container section.k1_min_height{padding-bottom:156px;}
+
+/*footer*/
+footer#k1_footer {position:absolute; bottom:0px; padding:0px 0px 40px; background-color:#333; color:#8e8e8e;  width:100%; /*position:fixed; bottom:0; height:208px;*/}
+#k1_footer address{padding:0px 20px;font-size:9px; font-size:0.9rem; font-style:normal}
+#k1_footer address em{color:#484848;padding:0px 7px;}
+#k1_footer{padding:14px 13px 19px;}
+#k1_footer .sns_area ul li a ,
+#k1_footer .service_menu ul li a i{display:inline-block; background-image:url('/air/wfw/imgs/mbl/common/common.png'); background-size:300px 148px; background-repeat:no-repeat;}
+
+#k1_footer .sns_area{overflow:hidden; width:100%; margin-bottom:12px;}
+#k1_footer .sns_area ul{ height:40px; position:relative;text-align:center; }
+#k1_footer .sns_area ul li{margin-right:45px; display:inline-block;}
+#k1_footer .sns_area ul li a{width:40px; height:40px; font-size:0;}
+#k1_footer .sns_area ul li:last-child{margin-right:40px;}
+/*sns_좌표값*/
+#k1_footer .sns_area ul li a.talk{position:absolute; top:0px; background-position:0px -62px; z-index:1;}
+#k1_footer .sns_area ul li a.facebook{position:absolute; top:0px; background-position:-50px -62px; z-index:1;}
+#k1_footer .sns_area ul li a.twitter{position:absolute; top:0px; background-position:-100px -62px; z-index:1;}
+#k1_footer .sns_area ul li a.blog{position:absolute; top:0px; background-position:-150px -62px; z-index:1;}
+#k1_footer .sns_area ul li a.youtube{position:absolute; top:0px; background-position:-200px -62px; z-index:1;}
+#k1_footer .sns_area ul li a.story{position:absolute; top:0px; background-position:-200px -108px; z-index:1;}
+
+#k1_footer .service_menu{color:#c1c1c1; font-size:11px; font-size:1.1rem; overflow:hidden;}
+#k1_footer .service_menu ul{margin-bottom:15px; text-align:center; background-color:#3e3e3e; border:1px solid #272727; width:100%; height:45px; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; content:''}
+#k1_footer .service_menu ul li{display:inline-block; padding:15px 8px; position:relative;}
+#k1_footer .service_menu ul li a{color:#c1c1c1;}
+#k1_footer .service_menu ul li a i{ width:8px; height:8px; line-height:0; font-size:0; position:absolute; right:-2px; margin-top:3px; background-position:-188px -117px; z-index:1;}
+#k1_footer .service_menu ul li:before {display:inline-block;width:1px;height:12px;margin:0 20px 0 0;background:#5b5b5b;vertical-align:-3px;content:''}
+#k1_footer .service_menu ul li:first-child:before {display:none}
+
+footer#k1_footer .fot_m{padding:0px 20px;margin-top:14px;font-size:10px; font-size:1.0rem;}
+footer#k1_footer .fot_m a{ color:#8e8e8e;}
+footer#k1_footer .fot_m ul li{display:inline-block;}
+#k1_footer .fot_m ul li:before {display:inline-block; vertical-align:1px; margin:0 6px 0 3px; background-color:#5c5c5c; font-size:0; width:4px; height:4px; border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; content:''}
+#k1_footer .fot_m ul li:first-child:before {display:none}

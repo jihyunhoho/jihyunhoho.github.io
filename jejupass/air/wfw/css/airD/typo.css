@@ -1,0 +1,165 @@
+@charset "utf-8"; 
+
+/* ------------------------------------------------------------------------------------
+Basic Style Sheet (for version 4 browsers)
+
+version: 0.2
+author: 박수연
+email: suudjin@nate.com
+설명: 공통텍스트
+--------------------------------------------------------------------------------------- */
+
+/************************************************************************************************************
+ b2c, b2b 헤딩태그
+************************************************************************************************************/
+.k1_h3_tit {padding:5px 0 5px 13px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_h3_b2b_tit.gif) 0 7px no-repeat; color:#393939; font-weight:bold; font-size:14px; line-height:1em;}
+.k1_h3_tit2 {padding:5px 0 5px 13px; margin-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_h3_b2b_tit.gif) 0 8px no-repeat; color:#393939; font-weight:bold; font-size:14px; line-height:1em;}
+.k1_txt_comt{padding-left:10px; margin-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_6px_dot2.gif) 0 3px no-repeat; font-size:12px; color:#2360ca; font-weight:normal;}
+/* h3 + 버튼 영역 */
+.k1_btn_first_fee {position:relative;}
+.k1_btn_first_fee .btn{position:absolute; top:2px; right:0;}
+.k1_tit_area{padding:10px 0; margin-bottom:10px; background:url(/air/wfw/imgs/airD/b2b/tit_bg.gif) repeat-x 0 bottom;}
+.k1_tit_area h2{padding-left:15px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_h2.gif) 0 2px no-repeat; font-size:16px; color:#25608a; font-weight:bold; line-height:1.2em;}
+
+.k1_h_tit1{padding:5px 10px 4px 17px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_tit.gif) no-repeat 3px 8px; color:#393939; font-size:14px; font-weight:bold; line-height:14px;}
+.k1_h_tit2{padding:5px 10px 4px 13px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_tit.gif) no-repeat 0 8px; color:#0b2343; font-size:14px; font-weight:bold; line-height:14px;}
+h4.k1_h_stit1{padding-left:10px; margin:5px 0 5px 5px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_6px_dot2.gif) no-repeat 0 2px; color:#0b2343; font-size:12px; font-weight:bold; line-height:12px;}
+
+/************************************************************************************************************
+ 
+************************************************************************************************************/
+.k1_bold {font-weight:bold !important;}/*호텔사용*/
+.k1_basec {color:#5e5e5e !important;}/*호텔사용*/
+
+.k1_t11 {font-size:11px;}/*호텔사용*/
+.k1_t12 {font-size:12px !important;}/*호텔사용*/
+.k1_t14 {font-size:14px !important;}/*호텔사용*/
+.k1_t16 {font-size:16px !important;}/*호텔사용*/
+.k1_t18 {font-size:18px;}/*호텔사용*/
+
+.k1_htl_voucher_tit {font-weight:bold; line-height:16px; color:#393939;}/*호텔사용*/
+
+.k1_tit2 {color:#0b2343; font-weight:bold; font-size:12px;}
+.k1_tit3 {color:#0b2343; font-weight:bold; font-size:14px;}
+.k1_tit4 {color:#5e5e5e; font-weight:bold; font-size:14px;}
+
+.k1_underpoint{color:#0b2343; text-decoration:underline;}
+
+/************************************************************************************************************
+ k1_tpoint
+************************************************************************************************************/
+.k1_tpoint {color:#393939 !important;}
+.k1_tpoint4 {color:#4b4b4b !important;}/*b2b left고객센터*/
+.k1_tpoint5 {color:#8a8a8a !important;}/*b2b left고객센터*/
+.k1_tpoint6 {color:#4a4a4a !important;}
+
+/************************************************************************************************************
+ k1_cpoint
+************************************************************************************************************/
+.k1_cpoint {color:#0b2343 !important;}/*호텔사용*/
+.k1_cpoint_over:hover {color:#0b2343 !important; text-decoration:underline;}
+.k1_cpoint_unb{color:#0b2343; text-decoration:underline;}
+a.k1_cpoint_unb:hover{text-decoration:underline;}
+.k1_cpoint2 {color:#2360ca !important;}
+a.k1_cpoint2_tdub{color:#2360ca !important; text-decoration:underline;}/*20131021박수연 추가*/
+a.k1_cpoint2_tdub:hover{color:#2360ca; font-weight:bold; text-decoration:underline;}/*20131021박수연 추가*/
+.k1_cpoint2_unb{color:#2360ca !important; text-decoration:underline;}/*20140225박수연 추가*/
+.k1_cpoint2_unb:hover{text-decoration:underline;}/*20140225박수연 추가*/
+.k1_cpoint3 {color:#e92100 !important;}/*호텔사용*/
+.k1_cpoint4 {color:#25608a !important;}
+.k1_cpoint5 {color:#527315;}
+.k1_cpoint6 {color:#1b57a4;}
+.k1_hpoint01{color:#777;}
+.k1_hpoint02{color:#999; display:inline-block; text-decoration:line-through;}
+
+/************************************************************************************************************
+ k1_pricep
+************************************************************************************************************/
+.k1_pricep {color:#3775c7;}
+
+/************************************************************************************************************
+ btms_font
+************************************************************************************************************/
+.k1_bmpoint_01{color:#3775c7; font-size:11px; line-height:11px;}
+.k1_bmpoint_02{font-size:12px; font-weight:bold; color:#5e5e5e; padding-top:10px;}
+.k1_bmpoint_03{font-size:16px; font-weight:bold; color:#0b2343; padding-top:20px;}
+.k1_bmpoint_04{color:#3775c7; font-size:12px; line-height:12px; font-weight:bold;}
+a.k1_pricep:hover, 
+.k1_pricep a:hover{text-decoration:underline;}
+.k1_bmpoint_05{color:#fd2805 !important;}
+
+/************************************************************************************************************
+ k1_tit_dot
+************************************************************************************************************/
+.k1_tit_dot {padding-left:13px; padding-top:1px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_tit.gif) 0 3px no-repeat; color:#393939; font-weight:bold; font-size:12px;}
+.k1_tit_dot1 {padding-left:13px; padding-top:1px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_tit.gif) 0 2px no-repeat; color:#0b2343; font-weight:bold; font-size:12px; line-height:12px;}
+.k1_tit_dot2_1 {padding-left:13px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_tit.gif) 0 3px no-repeat; font-weight:bold; font-size:12px; line-height:1.3em;}
+.k1_tit_dot3 {padding-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_6px_dot.gif) 0 3px no-repeat; font-size:12px;}/*호텔사용*/
+.k1_tit_dot3_1 {padding-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_6px_dot.gif) 0 4px no-repeat; font-size:11px; color:#0b2343;}
+.k1_tit_dot3_2 {padding:10px 10px 0 20px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_6px_dot.gif) 10px 12px no-repeat; font-size:11px; color:#393939;}
+.k1_tit_dot4_1 {padding-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_6px_dot2.gif) 0 3px no-repeat; color:#0b2343; font-weight:bold;}
+.k1_tit_dot4_2 {padding:1px 0 1px 15px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_6px_dot2.gif) 0 5px no-repeat; font-weight:bold; font-size:12px; line-height:1.2em;}
+.k1_tit_dot6 {padding-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_6px_dot2.gif) 0 3px no-repeat; font-size:12px; color:#0b2343; font-weight:bold; line-height:1.3em;}/*호텔사용*/
+.k1_tit_dot6_1 {padding-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_6px_dot2.gif) 0 2px no-repeat; font-size:12px; color:#0b2343; line-height:1.2em;}/*b2b*/
+.k1_tit_dot7 {padding-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_6px_dot4.gif) 0 3px no-repeat; font-size:12px;}/*btms만 사용*/
+.k1_tit_hdot1{padding-left:7px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_2px_dot.gif) no-repeat 0 7px; color:#0b2343; font-weight:bold;}
+
+/************************************************************************************************************
+ k1_arrow_dot
+************************************************************************************************************/
+.k1_arrow_dot {padding-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_arrow.gif) 0 2px no-repeat; color:#0b2343;}
+.k1_arrow_dot1 {padding-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_arrow.gif) 0 2px no-repeat; font-weight:bold;}
+.k1_arrow_dot2 {padding-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_arrow2.gif) 0 2px no-repeat; line-height:1.2em;  vertical-align:middle;}
+.k1_arrow_dot2_3 {padding-left:9px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_arrow2.gif) 0 3px no-repeat;}
+.k1_arrow_dot2_4 {padding-left:7px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_arrow2.gif) 0 3px no-repeat; font-size:11px;}
+.k1_arrow_dot2_5 {padding-left:7px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_arrow2.gif) 0 2px no-repeat; color:#e92100; font-size:12px;}
+.k1_arrow_dot4 {padding-left:20px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_arrow4.gif) 0 1px no-repeat; vertical-align:middle;}
+.k1_arrow_dot5 {padding-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_arrow5.gif) no-repeat 0 3px; vertical-align:middle; font-weight:bold; font-size:12px;}
+.k1_arrow_dot5_1 {padding:2px 0 2px 10px; height:14px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_arrow5.gif) no-repeat 0 4px; vertical-align:middle; font-size:12px; color:#393939; line-height:1.4em;}
+
+.k1_dot_arrow1 {padding:1px 15px; background: url(/air/wfw/imgs/airD/bullet_icon/dot_arrow1.gif) 0 1px no-repeat; color:#0b2343; font-size:14px; font-weight:bold; line-height:1em;}
+.k1_dot_arrow2 {padding-left:15px; background: url(/air/wfw/imgs/airD/bullet_icon/dot_arrow2.gif) 0 0 no-repeat;}
+
+.k1_arrow_txt01 {padding-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_arrow.gif) 0 2px no-repeat; line-height:1.2em; color:#393939; font-size:12px; vertical-align:middle;}
+.k1_arrow_txt02 {padding-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_arrow.gif) 0 2px no-repeat; line-height:1.2em; font-size:12px; vertical-align:middle; font-weight:bold;}
+.k1_arrow_txt03 {padding-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_arrow.gif) 0 2px no-repeat; line-height:1.2em; color:#0b2343; font-size:12px; vertical-align:middle; font-weight:bold;}
+.k1_arrow_btxt01 {padding-left:10px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_arrow2.gif) 0 2px no-repeat; line-height:1em; color:#0b2343; font-weight:bold;  vertical-align:middle; font-size:12px;}
+
+/************************************************************************************************************
+ k1_txt_dot
+************************************************************************************************************/
+.k1_txt_dot2 {padding-left:7px; background:url(/air/wfw/imgs/bullet/bul_1px.gif) 0 4px no-repeat;}
+.k1_txt_dot2_1 {padding-left:7px; background:url(/air/wfw/imgs/bullet/bul_1px.gif) 0 4px no-repeat; font-size:11px;}
+.k1_txt_dot3 {padding-left:9px; background:url(/air/wfw/imgs/airD/bullet_icon/bul_3px.gif) 0 6px no-repeat;}
+
+/************************************************************************************************************
+ 아이콘형 텍스트
+************************************************************************************************************/
+.k1_txt_tit01 {display:inline-block; width:93px; height:14px; padding:4px 0 2px; background:url(/air/wfw/imgs/airD/bullet_icon/txt_tit01.png) no-repeat; color:#fff; line-height:1.2em; text-align:center; vertical-align:middle;}
+.k1_txt_tit02 {display:inline-block; width:31px; height:16px; background:url(/air/wfw/imgs/airD/bullet_icon/txt_tit02.gif) no-repeat; color:#fff; line-height:19px; text-align:center;}
+.k1_txt_tit03 {display:inline-block; width:31px; height:17px; background:url(/air/wfw/imgs/airD/bullet_icon/txt_tit03.gif) no-repeat; color:#fff; line-height:17px; text-align:center;}
+.k1_txt_tit04 {display:inline-block; width:45px; height:17px; background:url(/air/wfw/imgs/airD/bullet_icon/txt_tit04.gif) no-repeat; color:#fff; line-height:18px; text-align:center;}
+.k1_txt_state01s {display:inline-block; width:27px; height:13px; background:url(/air/wfw/imgs/bullet/txt_ok.gif) no-repeat; color:#fff; font-size:0; vertical-align:middle;}
+.k1_txt_state02s {display:inline-block; width:27px; height:13px; background:url(/air/wfw/imgs/bullet/txt_wait.gif) no-repeat; color:#fff; font-size:0; vertical-align:middle;}
+
+/************************************************************************************************************
+ 특수문자
+************************************************************************************************************/
+.k1_bul_note {padding-left:15px; background:url(/air/wfw/imgs/bullet/bul_note.gif) 0 2px no-repeat;}/*11px에 맞춰짐*/
+.k1_bul_note2 {padding-left:15px; background:url(/air/wfw/imgs/bullet/bul_note.gif) 0 1px no-repeat;}/*호텔추가*/
+.k1_bul_note3 {padding-left:15px; background:url(/air/wfw/imgs/bullet/bul_note3.gif) 0 1px no-repeat; line-height:1.2em; font-size:11px;}/*11px 배경#fff*/
+.k1_bul_plus {padding-left:13px; background:url(/air/wfw/imgs/bullet/bul_plus.gif) 0 3px no-repeat;}
+
+/************************************************************************************************************
+ BTMS주요도시
+************************************************************************************************************/
+.k1_map_dot1 {display:inline-block; padding-left:10px; background: url(/air/wfw/imgs/airD/bullet_icon/bul_map_dot.gif) 0 50% no-repeat;}
+.k1_map_dot2 {display:inline-block; padding-bottom:10px; background: url(/air/wfw/imgs/airD/bullet_icon/bul_map_dot.gif) 50% 22px no-repeat;}
+.k1_map_dot3 {display:inline-block; padding-right:10px; background: url(/air/wfw/imgs/airD/bullet_icon/bul_map_dot.gif) right 50% no-repeat;}
+
+/************************************************************************************************************
+ 검색결과 없음
+************************************************************************************************************/
+.k1_none_sech{padding:10px 10px 15px; text-align:center; color:#5e5e5e; line-height:1.2em;}
+.k1_none_sech2{padding:18px; text-align:center; color:#777; line-height:1.2em;}
+.k1_none_sech3{padding:21px; height:90px; text-align:center; color:#777; line-height:1.2em;}

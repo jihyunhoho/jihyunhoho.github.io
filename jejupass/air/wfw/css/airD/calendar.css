@@ -1,0 +1,48 @@
+@charset "utf-8"; 
+
+/* ------------------------------------------------------------------------------------
+Basic Style Sheet (for version 4 browsers)
+
+version: 0.2
+author: 박수연
+email: suudjin@nate.com
+설명: 공통 캘린더
+
+--------------------------------------------------------------------------------------- */
+/* =calendar
+--------------------------------------------------------------------------------------- */
+.k1_calender_wrap {overflow:hidden; position:relative; border:2px solid #0b2343;}
+.k1_calender_header{height:14px; padding:6px 10px 8px; background:#0b2343; color:#fff;}
+.k1_calender_header h1{padding-left:20px; background:url(/air/wfw/imgs/airD/common/bul_popup.gif) 0 0 no-repeat; font-weight:bold; font-size:14px; line-height:1em;}
+.k1_calender_contents{position:relative; padding:10px;}
+.k1_calender_contents:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.k1_btn_p_close1 {display:inline-block; position:absolute; top:6px; right:12px; width:13px; height:13px; border:0 none; background:url(/air/wfw/imgs/airD/btn/btn_icon.png) no-repeat -48px -24px; font-size:0; cursor:pointer; vertical-align:middle;}
+
+.k1_cal_period{position:relative; padding:5px 5px 10px; text-align:center; line-height:1.2em;}
+.k1_cal_period input[type=radio]{width:14px; height:14px; margin:-1px 3px 0 0; vertical-align:middle;}
+.k1_cal_period input[type=radio].sec{margin-left:5px;}
+.k1_cal_period input[type=text]{padding:2px 2px 1px; height:14px; width:85px; border:#ccc 1px solid; font-size:11px; color:#8a8a8a; text-align:center; vertical-align:middle;}
+.k1_cal_period label{margin-right:5px; color:#4c4c4c;}
+.k1_cal_period select{height:19px; border:1px solid #cfcfcf; color:#777; font-size:11px; line-height:12px;}
+.k1_cal_period .k1_year{width:60px;}
+.k1_cal_period .k1_month{width:50px;}
+.k1_cal_period .cal_prevs {position:absolute; left:0; top:25%; width:10px; height:11px; background:url(/air/wfw/imgs/airD/btn/btn_cal_sarrow_prev.gif) 0 0 no-repeat;cursor:pointer; font-size:0;}
+.k1_cal_period .cal_nexts {position:absolute; right:0; top:25%; width:10px; height:11px; background:url(/air/wfw/imgs/airD/btn/btn_cal_sarrow_next.gif) 0 0 no-repeat;cursor:pointer;  font-size:0;}
+
+.k1_cal_box {position:relative; width:666px; margin:0 auto;}
+.k1_cal_box:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.k1_cal_box2 {position:relative; width:446px; margin:0 auto;}
+.k1_cal_box2:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.k1_cal_prev {position:absolute; left:-23px; top:48%; width:20px; height:22px; background:url(/air/wfw/imgs/airD/btn/btn_cal_arrow_prev.gif) no-repeat; cursor:pointer; font-size:0;}
+.k1_cal_next {position:absolute; right:-23px; top:48%; width:20px; height:22px; background:url(/air/wfw/imgs/airD/btn/btn_cal_arrow_next.gif) no-repeat; cursor:pointer; font-size:0;}
+.k1_cal_wrap{float:left; width:212px; margin:0 5px;}
+.k1_cal_date {height:14px; padding:5px 5px 4px; border:1px solid #0b2343; background:#0b2343; color:#fff; font-weight:bold; line-height:1.2em; text-align:center;}
+.k1_cal_board {width:100%; border:#d4d4d4 1px double; table-layout:fixed;}
+.k1_cal_board th {height:14px; padding:2px 0 1px; background:#e3e3e3;  border-bottom:#d4d4d4 1px solid; color:#5e5e5e; font-size:11px; text-align:center; line-height:12px;}
+.k1_cal_board td {height:29px; border-bottom:1px solid #eee; border-right:1px solid #eee; background:#fff; font-size:12px; text-align:center; line-height:1.2em; color:#cfcfcf;}
+.k1_cal_board td a{display:block; height:14px; padding:8px 5px 7px; line-height:1.2em; text-decoration:underline;}
+.k1_cal_board td a:hover{background:#ffffd9; display:block;}
+.k1_cal_board a.selected{height:14px; padding:7px 5px 6px; background:none; border:#3367ad 1px solid;}
+.k1_cal_board a.selected:hover{background:none;}
+.k1_cal_board .sun {color:#e92100;}
+.k1_cal_board .sat {color:#235ba5;}

@@ -1,0 +1,136 @@
+/******20210311_수하물********/
+
+.k1_baggage {margin:0px auto 0px; width:1040px; min-width:320px; font-family:'Noto sans kr',sans-serif !important;}
+.k1_baggage .k1_baggage_contents {padding:15px 25px;overflow:hidden;border: 1px solid #3A71DF;height: 937px;overflow-y:scroll;box-sizing: border-box;margin-top: 70px;}
+.k1_baggage h1 {text-align:center; padding:25px 0; background-color:#ebf6ff;}
+.k1_baggage .baggage_people {display:inline-block; width:25%;}
+.k1_baggage .baggage_people ul {height:220px; overflow-y:auto;}
+.k1_baggage .baggage_people ul li {position:relative; height:50px; line-height:50px; border-bottom:1px solid #ccc; padding-left:5px;}
+.k1_baggage .baggage_people ul li:first-child {border-top:1px solid #ccc;}
+.k1_baggage .baggage_people .checkbox01 span {position:absolute; left:26px;}
+
+.k1_baggage_contents .baggage_people .checkbox01 {top:0; position:relative;}
+.k1_baggage_contents .baggage_people .checkbox01 input[type="radio"] {display:none;}
+.k1_baggage_contents .baggage_people .checkbox01 input[type="radio"] + label {display: inline-block; width:15px; height:15px; border:1px solid #ccc;
+cursor: pointer; border-radius: 50%;}
+.k1_baggage_contents .baggage_people .checkbox01 input[type="radio"]:checked + label {border:0; width:18px; height:18px; display:inline-block; background:url(/air/wfw/imgs/airA/icon/radiobox_on.png) no-repeat;}
+.k1_baggage_contents .baggage_people .checkbox01 input[type="radio"] + label span {position:absolute; left:20px;}
+.k1_baggage_contents .baggage_title {font-size:18px; font-weight:bold; color:#333; padding-bottom:15px;}
+
+.k1_baggage .baggage_trip {display:inline-block; width:70%;}
+.k1_baggage .baggage_table table {width:100%; text-align:center; font-family:'Noto sans kr',sans-serif !important;}
+.k1_baggage .baggage_table a {padding:3px 10px; font-size:13px;}
+.k1_baggage_contents .baggage_trip .checkbox01 {top:0; position:relative;}
+.k1_baggage_contents .baggage_trip .checkbox01 input[type="radio"] {display:none;}
+.k1_baggage_contents .baggage_trip .checkbox01 input[type="radio"] + label {display: inline-block; width:14px; height:14px; border:1px solid #ccc;cursor: pointer; border-radius: 3px;}
+.k1_baggage_contents .baggage_trip .checkbox01 input[type="radio"]:checked + label {border:0; width:15px; height:15px; display:inline-block; background:url(/air/wfw/imgs/airA/icon/checkbox_on.png) no-repeat}
+.k1_baggage_contents .baggage_trip .checkbox01 input[type="radio"] + label span {position:absolute; left:20px;}
+.k1_baggage .table01 {height:220px; overflow-y:auto; overflow-x:hidden; width:100%;}
+.k1_baggage .baggage_table th {border-top:1px solid #2e6abc; background-color:#ebf6ff; border-right:1px solid #ccc; border-bottom:1px solid #ccc; padding:9px 0; font-weight:bold; font-size:14px;}
+.k1_baggage .baggage_table th:last-child {border-right:0;}
+.k1_baggage .baggage_table td {border-bottom:1px solid #ccc; border-right:1px solid #ccc; padding:6px 0; font-size:14px;}
+.k1_baggage .baggage_table td.alignL{text-align: left; padding-left: 10px;}
+.k1_baggage .baggage_table td:last-child {border-right:0;}
+.k1_baggage .baggage_table td[rowspan]:not(td:nth-child(1)) {border-left:1px solid #ccc;}
+
+.k1_baggage .baggage_table span.baggage_airN {padding-left:30px; width:100px; display:inline-block;}
+.k1_baggage .baggage_table td img.logo {width: 15px;margin-top: -3px;}
+.k1_baggage .baggage_table.baggage_trip_mbl {display: none;}
+.k1_baggage .baggage_table.baggage_trip_mbl td:last-child {text-align: left;padding-left: 10px;}
+.k1_baggage .baggage_table.baggage_trip_mbl td:last-child a{margin-left: 5px;}
+.k1_baggage .table02 input {width:30px; border:1px solid #ccc; height:22px; font-family:'Noto sans kr',sans-serif;text-align: right;padding: 0 5px;}
+.k1_baggage .baggage_goods .goods_m_list {display:none;}
+.k1_baggage .baggage_price {text-align:center;}
+.k1_baggage .k1_baggage_03 .baggage_price_save  {padding:10px 50px; display:inline-block; margin-top:20px; margin-bottom:30px;}
+.k1_baggage .baggage_price .price_m_list {display:none;}
+.k1_baggage .k1_baggage_03 {text-align:center;margin-bottom: 15px;}
+.k1_baggage .k1_baggage_03 .price_list_pay_all {display:none;}
+.k1_baggage .k1_baggage_04 .baggage_purchase {padding-bottom:30px;}
+.k1_baggage .k1_baggage_04 .purchase_m_list {display:none;}
+
+/*팝업*/
+div.baggage_pop{position:absolute;top:50%;left:50%;width:400px;margin-top:-100px;margin-left:-200px;z-index:210;background:#fff;font-family:'Noto sans kr',sans-serif;border-radius:5px}
+div.baggage_pop h2{color:#fff;padding:10px 20px;font-size:18px;background-color:#094AB0; border-radius:5px 5px 0 0}
+div.baggage_pop .content{padding:25px 25px;font-size:14px; color:#666}
+div.baggage_pop .content ol{margin-left:20px;}
+div.baggage_pop .content ol > li{font-size:16px;color:#094AB0;list-style:decimal;margin-bottom:20px;font-weight:500;}
+div.baggage_pop .content ol > li > ul > li{color:#666;font-size:14px;}
+div.baggage_pop .wrap-btn a{width:50%;float:left;display:inline-block;padding:15px 0px;font-size:16px;font-weight:400;border-top:1px solid #094AB0;text-align:center;box-sizing:border-box;color:#094AB0}
+div.baggage_pop .wrap-btn a.submit{background-color:#094AB0; color:#fff;border-radius:0 0px 5px 0px;}
+div.baggage_pop .wrap-btn a.submit.alert{width:100%;}
+div.baggage_pop a.close{position:absolute;top:13px;right:10px;font-size:0;width:20px;height:20px;}
+div.baggage_pop a.close::before{content:'';position:absolute;top:8px;left:0;width:20px;height:3px;transform: rotate( -45deg );background-color:#FFF;border-radius:3px;}
+div.baggage_pop a.close::after{content:'';position:absolute;top:8px;left:0;width:20px;height:3px;transform: rotate( -135deg );background-color:#FFF;border-radius:3px;}
+
+/* 2021-07-02 좌석지정&수화물구매 페이지 탭으로 통합 eslee*/
+.k1_baggage_contents {padding-bottom: 84px !important;}
+.k1_baggage_contents .submit_all{position: absolute;width: 1024px;}
+.k1_baggage_contents .submit_f{left:-26px;top:20px; bottom:inherit;}
+
+
+
+@media all and (max-width:1023px) {
+	.k1_baggage {width:100%;}
+	.k1_baggage .k1_baggage_contents{height: inherit;overflow: inherit;padding-bottom: 160px !important; border: none;margin-top: 60px;}
+
+}
+
+@media all and (max-width:767px) {
+	.k1_baggage .k1_baggage_contents {padding:0;margin-top: 40px;}
+	.k1_baggage h1 {padding:15px 0;}
+	.k1_baggage h1 img {width:40%;}
+	.k1_baggage .k1_baggage_01 { padding:0 20px;}
+	.k1_baggage .k1_baggage_02 {padding:0 20px 30px 20px;}
+	.k1_baggage .baggage_people {width:100%; padding-top:15px; padding-bottom:30px;}
+	.k1_baggage .baggage_trip {width:100%;}
+	.k1_baggage .baggage_trip .baggage_title {float:none; width:100%;}
+	.k1_baggage .baggage_trip .baggage_title_span {margin-top:0 !important; float:none; width:100%; display:inline-block; margin-bottom:20px;}
+	.k1_baggage_contents .k1_baggage_01 .baggage_title {padding-bottom:10px;}
+	.k1_baggage .baggage_table th {border:0;}
+	.k1_baggage .baggage_table td {padding:10px 0;}
+	.k1_baggage .baggage_table .baggage_t_border {border-bottom:1px solid #ccc !important;}
+	.k1_baggage .baggage_table span.baggage_airN {padding:0 10px; width: inherit;}
+	.k1_baggage .baggage_table {height:100%;}
+	.k1_baggage .baggage_table.table01 {display: none;}
+	.k1_baggage .baggage_table.baggage_trip_mbl {display: block;}
+	.k1_baggage .baggage_people ul {overflow:hidden; height:100%;}
+	.k1_baggage .baggage_trip {padding-bottom:30px;}
+	.k1_baggage .table02 {display:none;}
+	.k1_baggage .k1_baggage_02 .baggage_title {float:none; width:100%;}
+	.k1_baggage .k1_baggage_02 .baggage_title_span {float:none; width:100%; margin-top:0 !important;}
+	.k1_baggage .baggage_goods .goods_m_list {padding-top:15px; font-size:15px; display:block;}
+	.k1_baggage .baggage_people .checkbox01 span {font-size:15px;}
+	.k1_baggage .baggage_goods .goods_m_list .goods_list_title_01 {height:50px; border-bottom:1px solid #333; line-height:50px; position:relative;}
+	.k1_baggage .baggage_goods .goods_m_list .goods_list_title_01 .goods_title_up {position:absolute; right:0; bottom:0; width:15px;}
+	.k1_baggage .baggage_goods .goods_m_list .goods_list_title_01 .goods_title_up img {width:100%;}
+	.k1_baggage .baggage_goods .goods_m_list .goods_list_title {font-weight:bold; color:#333;}
+	.k1_baggage .baggage_goods .goods_m_list .goods_list_title img.logo {width: 15px;}
+	.k1_baggage .baggage_goods .goods_m_list .goods_list_input {padding:10px 0; overflow:hidden;}
+	.k1_baggage .baggage_goods .goods_m_list .goods_list_input input {height:22px; border:1px solid #ccc;}
+	.k1_baggage .baggage_goods .goods_m_list .goods_list_pay {overflow:hidden;}
+	.k1_baggage .baggage_goods .goods_m_list .goods_list_save {width:100%; display:inline-block; text-align:center; padding:10px 0;}
+	.k1_baggage .baggage_price .table03 {display:none;}
+	.k1_baggage .k1_baggage_03 .baggage_title, 	.k1_baggage .k1_baggage_04 .baggage_title {width:100%; background-color:#ebf6ff; padding:5px 0 10px 20px; text-align:left; margin-bottom:20px;box-sizing: border-box;}
+	.k1_baggage .baggage_price .price_m_list {display:block; font-size:15px;}
+	.k1_baggage .baggage_price {text-align:left; background-color:#f7f7f7; padding:15px 20px; overflow:hidden;}
+	.k1_baggage .baggage_price .price_m_list .price_list_title_01 {margin-bottom:15px; height:50px; border-bottom:1px solid #333; line-height:50px; position:relative;}
+	.k1_baggage .baggage_price .price_m_list .price_list_title_01 .price_title_up {position:absolute; right:0; bottom:0; width:15px;}
+	.k1_baggage .baggage_price .price_m_list .price_list_title_01 .price_title_up img {width:100%;}
+	.k1_baggage .baggage_price .price_m_list .price_list_title_01 .price_list_title {color:#333; font-weight:bold;}
+	.k1_baggage .baggage_price .price_m_list .price_list_pay {overflow:hidden; padding-bottom:10px; color:#333;}
+	.k1_baggage .baggage_price .price_m_list .price_list_pay a {padding:3px 20px;}
+	.k1_baggage .k1_baggage_03 .price_list_pay_all {display:block; font-size:18px; padding:20px; font-weight:bold; overflow:hidden;}
+	.k1_baggage .k1_baggage_03 .baggage_price_save {width:90%; padding:10px 0;}
+	.k1_baggage .k1_baggage_04 .baggage_purchase .table04 {display:none;}
+	.k1_baggage .k1_baggage_04 .baggage_purchase {padding:0 20px; font-size:15px;}
+	.k1_baggage .k1_baggage_04 .purchase_m_list .purchase_list_pay {clear:both; padding-bottom:10px; overflow:hidden;}
+	.k1_baggage .k1_baggage_04 .purchase_m_list {display:block; color:#333;}
+	.k1_baggage .k1_baggage_04 .purchase_m_list ul li {border-bottom:1px solid #ccc; margin-bottom:20px;}
+	.k1_baggage .k1_baggage_04 .purchase_m_list ul li:last-child {border:0;}
+	/*2021-06-18*/
+	.baggage_table .k1_tal a {float:none !important; margin-right:0 !important; display: inline-block;width: 100%;text-align: center;margin-top: 10px;}
+}
+
+/* 2021-06-18*/
+
+.baggage_table .k1_tal a {float:right; margin-right:20px;}

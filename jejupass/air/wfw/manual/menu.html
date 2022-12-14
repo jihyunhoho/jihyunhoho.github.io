@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>무제 문서</title>
+<style type="text/css">
+<!--
+html, body {margin:8 ; padding:0;}
+body { font-size:12px; font-family: "돋움", "dotum" ,"Verdana"; color:#555555;}
+/*table { border-collapse: collapse;}*/
+td,input,textarea {color:#676767; font-size:12px ; font-family:"돋움", "dotum", "Verdana"; word-break:break-all; word-wrap:break-word;}
+
+fieldset, img {border: none;}
+div, ul, ol, form, fieldset, td, th, li, h1, h2, h3, h4, p, dl, dt, dd, address { margin:0; padding:0;}
+ul, ol {list-style:none;}
+img.middle { vertical-align:middle; margin-bottom:3px;}
+hr {display:none;}
+div.hide, h1.hide, h2.hide, div.hide {display:none;}
+
+a:link { color: #333333; text-decoration:none;}
+a:visited { color: #333333; text-decoration:none;}
+a:hover { color: #db3d63; text-decoration: underline;}
+a:active { color: #333333; text-decoration:none;}
+
+.png24				{tmp:expression(setPng24(this));}
+
+/* 메뉴 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+div.menuWrap								{width:190px;}
+
+/*depth01*/
+div.depth01									{background:url(images/menu_line.gif) bottom no-repeat; height:18px; margin:8px 0 0 0; cursor:pointer;}
+
+div.depth01 a:link,
+div.depth01 a:visited,
+div.depth01 a:active						{display:block; height:14px; padding-left:12px; color:#464c5b; text-decoration:none; }
+
+div.depth01 a:hover,
+div.depth01 a.leftSelected,
+div.depth01 a.leftSelected:visited		{background-position:right; color:#db3d63; text-decoration:none; }
+
+div.lineNone									{background:none; height:22px;}
+
+/*depth02*/
+ul.depth02										{display:block; cursor:pointer; color:#2C6595;}
+
+ul.depth02 li									{background:url(images/menu_line.gif) bottom no-repeat; height:18px; padding:5px 0 3px 7px;}
+
+ul.depth02 a:link,
+ul.depth02 a:visited,
+ul.depth02 a:active							{display:block; height:14px; color:#464c5b; text-decoration:none;}
+
+ul.depth02 a:hover,
+ul.depth02 a:visited.selected,
+ul.depth02 a.selected						{background-position:right; color:#ff7200; text-decoration:none;}
+
+
+
+/*depth02 2줄짜리*/
+ul.depth02_L									{display:block; cursor:pointer; color:#2C6595;}
+
+ul.depth02_L li									{background:url(images/menu_line.gif) bottom no-repeat; height:30px; padding:5px 0 3px 7px;}
+
+ul.depth02_L a:link,
+ul.depth02_L a:visited,
+ul.depth02_L a:active							{display:block; height:14px;  color:#464c5b; text-decoration:none;}
+
+ul.depth02_L a:hover,
+ul.depth02_L a:visited.selected,
+ul.depth02_L a.selected						{background-position:right; color:#ff7200; text-decoration:none;}
+
+/*depth03*/
+ul.depth03										{display:block; cursor:pointer;}
+
+ul.depth03 li									{background:url(images/menu_line.gif) bottom no-repeat; height:18px; padding:4px 0 0px 0px;}
+/*depth03 2줄짜리*/
+ul.depth03 li.longtext									{background:url(images/menu_line.gif) bottom no-repeat; height:28px; padding:4px 0 2px 0px;}
+ul.depth03 a:link,
+ul.depth03 a:visited,
+ul.depth03 a:active							{display:block; height:14px; padding-left:23px; color:#464c5b; text-decoration:none;}
+
+ul.depth03 a:hover,
+ul.depth03 a:visited.selected,
+ul.depth03 a.selected						{background-position:right; color:#ff7200; text-decoration:none;}
+-->
+</style>
+<script language="javascript">
+<!--        
+    function menu(name) {
+       submenu=eval("submenu_"+name+".style");
+	   //imagch=eval("bar_"+name);
+	   if(submenu.display=='none')
+	   {
+	   submenu.display='block';
+	   //image.src="./images/tree_minus.gif";
+	   }
+	   else
+	   {
+	   submenu.display='none';
+	    //image.src="./images/tree_plus.gif";
+	   }
+    }
+//-->
+</script>
+
+</head>
+
+<body style="background-image:url(images/menu_linebg.gif); background-repeat:repeat-y;">
+
+<!--메뉴시작 -->
+
+   
+   
+   
+   
+<h2 class="hide">메뉴페이지</h2>
+<div class="menuWrap">
+
+<!-- Ⅰ.Grid -->
+	<div class="depth01"><a onclick="menu(1);"><img id='bar_1' src='images/tree_ico1.gif'/><strong>Ⅰ.Grid</strong></a></div>
+	<div id=submenu_1 style="DISPLAY:none;">
+	 <ul class="depth02">
+		<li><a href="content.html#1_1" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>1.init</a></li>
+		<li><a href="content.html#1_2" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>2.makeTree</a></li>
+		<li><a href="content.html#1_3" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>3.setSelection</a></li>
+		<li><a href="content.html#1_4" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>4.setGridParam</a></li>
+		<li><a href="content.html#1_5" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>5.setGroupHeaders</a></li>
+		<li><a href="content.html#1_6" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>6.setGridEvent</a></li>
+		<li><a href="content.html#1_7" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>7.onSelectRow</a></li>
+		<li><a href="content.html#1_8" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>8.onPaging</a></li>
+		<li><a href="content.html#1_9" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>9.onSortCol</a></li>
+		<li><a href="content.html#1_10" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>10.getGridParam</a></li>
+
+		<li><a href="content.html#1_11" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>11.getRowData</a></li>
+		<li><a href="content.html#1_12" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>12.clearGridData</a></li>
+		<li><a href="content.html#1_13" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>13.gridToForm</a></li>
+		<li><a href="content.html#1_14" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>14.editFormToGrid</a></li>
+		<li><a href="content.html#1_15" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>15.addFormToGrid</a></li>
+		<li><a href="content.html#1_16" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>16.selectData</a></li>
+		<li><a href="content.html#1_17" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>17.addRow</a></li>
+		<li><a href="content.html#1_18" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>18.delRowData</a></li>
+		<li><a href="content.html#1_19" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>19.addRowData</a></li>
+		<li><a href="content.html#1_20" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>20.setGridStyle</a></li>
+		<li><a href="content.html#1_21" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>21.headColdiv</a></li>
+
+		<li><a href="content.html#1_22" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>22.dataToString</a></li>
+		<li><a href="content.html#1_23" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>23.editDataRow</a></li>
+		<li><a href="content.html#1_24" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>24.setCombo</a></li>
+		<li><a href="content.html#1_25" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>25.setComboData</a></li>
+		<li><a href="content.html#1_26" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>26.jsonToString</a></li>
+		<li><a href="content.html#1_27" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>27.dataCopy</a></li>
+		<li><a href="content.html#1_28" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>28.setEditRowToGrid</a></li>
+		<li><a href="content.html#1_29" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>29.editRow</a></li>
+		<li><a href="content.html#1_30" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />30.getDataIds</a></li>
+		<li><a href="content.html#1_31" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />31.getColData</a></li>
+		<li><a href="content.html#1_32" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />32.setSummaryFooter</a></li>
+		<li><a href="content.html#1_33" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />33.openRowEdit</a></li>
+		<li><a href="content.html#1_34" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />34.addRowWithoutUpdate</a></li>
+		<li><a href="content.html#1_35" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />35.getUpdateColDataByJsonString</a></li>
+		<li><a href="content.html#1_36" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />36.setGridParamNoReload</a></li>
+		<li><a href="content.html#1_37" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />37.getCellData</a></li>
+	 </ul>
+	 
+	</div>
+	
+<!-- Ⅱ.Form -->
+	<div class="depth01"><a onclick="menu(2);"><img id='bar_1' src='images/tree_ico1.gif'/><strong>Ⅱ.Form</strong></a></div>
+	<div id=submenu_2 style="DISPLAY:none;">
+	 <ul class="depth02">
+		<li><a href="content.html#2_1" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>1.loaddata</a></li>
+		<li><a href="content.html#2_2" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>2.ischange</a></li>
+		<li><a href="content.html#2_3" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>3.validation</a></li>
+		<li><a href="content.html#2_4" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>4.validCheck</a></li>
+		<li><a href="content.html#2_5" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>5.ajaxsubmit</a></li>
+		<li><a href="content.html#2_6" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>6.getsubmit</a></li>
+		<li><a href="content.html#2_7" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>7.postsubmit</a></li>
+		<li><a href="content.html#2_8" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>8.makeRule</a></li>
+		<li><a href="content.html#2_9" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>9.addMethod</a></li>
+		<li><a href="content.html#2_10" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>10.tagName</a></li>
+		<li><a href="content.html#2_11" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>11.selectajax </a></li>
+	 </ul>
+	 
+	</div>
+
+<!-- Ⅲ.Table -->
+	<div class="depth01"><a onclick="menu(3);"><img id='bar_1' src='images/tree_ico1.gif'/><strong>Ⅲ.Table</strong></a></div>
+	<div id=submenu_3 style="DISPLAY:none;">
+	 <ul class="depth02">
+		<li><a href="content.html#3_1" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>1.colmove</a></li>
+	 </ul>
+	 
+	</div>
+
+<!-- Ⅳ.Tab -->
+	<div class="depth01"><a onclick="menu(4);"><img id='bar_1' src='images/tree_ico1.gif'/><strong>Ⅳ.Tab</strong></a></div>
+	<div id=submenu_4 style="DISPLAY:none;">
+	 <ul class="depth02">
+		<li><a href="content.html#4_1" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>1.init</a></li>
+		<li><a href="content.html#4_2" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>2.setIndex</a></li>
+		<li><a href="content.html#4_3" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>3.getIndex</a></li>
+		<li><a href="content.html#4_4" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>4.setEnable</a></li>
+		<li><a href="content.html#4_5" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>5.setDisable</a></li>
+		<li><a href="content.html#4_6" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>6.addNew</a></li>
+		<li><a href="content.html#4_7" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>7.remove</a></li>
+		<li><a href="content.html#4_8" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>8.tabselect</a></li>
+	 </ul>
+	 
+	</div>
+
+<!-- Ⅴ.Xsl -->
+	<div class="depth01"><a onclick="menu(5);"><img id='bar_1' src='images/tree_ico1.gif'/><strong>Ⅴ.Xsl</strong></a></div>
+	<div id=submenu_5 style="DISPLAY:none;">
+	 <ul class="depth02">
+		<li><a href="content.html#5_1" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>1.init</a></li>
+		<li><a href="content.html#5_2" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>2.xmlstring</a></li>
+		<li><a href="content.html#5_3" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>3.fromtext</a></li>
+		<li><a href="content.html#5_4" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>4.xslstring</a></li>
+	 </ul>
+	 
+	</div>
+
+<!-- Ⅵ.Date -->
+	<div class="depth01"><a onclick="menu(6);"><img id='bar_1' src='images/tree_ico1.gif'/><strong>Ⅵ.Date</strong></a></div>
+	<div id=submenu_6 style="DISPLAY:none;">
+	 <ul class="depth02">
+		<li><a href="content.html#6_1" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>1.calendar</a></li>
+		<li><a href="content.html#6_2" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>2.usecal</a></li>
+		<li><a href="content.html#6_3" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>3.validcal</a></li>
+		<li><a href="content.html#6_4" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>4.팝업형태</a></li>
+	 </ul>
+	</div>
+
+<!-- Ⅶ.Chart -->
+	<div class="depth01"><a onclick="menu(7);"><img id='bar_1' src='images/tree_ico1.gif'/><strong>Ⅶ.Chart</strong></a></div>
+	<div id=submenu_7 style="DISPLAY:none;">
+	 	 <ul class="depth02">
+		<li><a href="content.html#7_1" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>1.chart</a></li>
+	 </ul>
+	</div>
+
+<!-- Ⅷ.Uitab -->
+	<div class="depth01"><a onclick="menu(8);"><img id='bar_1' src='images/tree_ico1.gif'/><strong>Ⅷ.Uitab</strong></a></div>
+	<div id=submenu_8 style="DISPLAY:none;">
+	 	 <ul class="depth02">
+		<li><a href="content.html#8_1" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>1.init</a></li>
+		<li><a href="content.html#8_2" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>2.selected</a></li>
+		<li><a href="content.html#8_3" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>3.tabselect</a></li>
+		<li><a href="content.html#8_4" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>4.getIndex</a></li>
+		<li><a href="content.html#8_5" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>5.getIndexArray</a></li>
+		<li><a href="content.html#8_6" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>6.remove</a></li>
+		<li><a href="content.html#8_7" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>7.tabmove</a></li>
+		<li><a href="content.html#8_8" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>8.add</a></li>
+		<li><a href="content.html#8_9" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>9.setTabMove</a></li>
+		<li><a href="content.html#8_10" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>10.displayMoveButton</a></li>
+	 </ul>
+	</div>
+
+<!-- Ⅸ.Pager -->
+	<div class="depth01"><a onclick="menu(9);"><img id='bar_1' src='images/tree_ico1.gif'/><strong>Ⅸ.Pager</strong></a></div>
+	<div id=submenu_9 style="DISPLAY:none;">
+	 	 <ul class="depth02">
+		<li><a href="content.html#9_1" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>1.pager</a></li>
+		<li><a href="content.html#9_2" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>2.navigator</a></li>
+		<li><a href="content.html#9_3" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>3.link</a></li>
+	 </ul>
+	</div>
+
+<!-- Ⅹ.File -->
+	<div class="depth01"><a onclick="menu(10);"><img id='bar_1' src='images/tree_ico1.gif'/><strong>Ⅹ.File</strong></a></div>
+	<div id=submenu_10 style="DISPLAY:none;">
+	 	 <ul class="depth02">
+		<li><a href="content.html#10_1" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>1.search</a></li>
+		<li><a href="content.html#10_2" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>2.reset</a></li>
+		<li><a href="content.html#10_3" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>3.getName</a></li>
+	 </ul>
+	</div>
+
+<!-- XI.Common -->
+	<div class="depth01"><a onclick="menu(11);"><img id='bar_1' src='images/tree_ico1.gif'/><strong>XI.Common</strong></a></div>
+	<div id=submenu_11 style="DISPLAY:none;">
+	 <ul class="depth02">
+		<li><a href="content.html#11_1" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>1.maskDiv </a></li>
+		<li><a href="content.html#11_2" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>2.sideMoveDiv</a></li>
+		<li><a href="content.html#11_3" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>3.upSideMoveDiv</a></li>
+		<li><a href="content.html#11_4" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>4.resizeIframe </a></li>
+		<li><a href="content.html#11_5" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>5.modal </a></li>
+		<li><a href="content.html#11_6" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>6.showmodal </a></li>
+		<li><a href="content.html#11_7" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>7.winopen </a></li>
+		<li><a href="content.html#11_8" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>8.close </a></li>
+		<li><a href="content.html#11_9" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>9.winclose </a></li>
+		<li><a href="content.html#11_10" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>10.modalclose </a></li>
+		<li><a href="content.html#11_11" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>11.retval </a></li>
+		<li><a href="content.html#11_12" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>12.winval </a></li>
+		<li><a href="content.html#11_13" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>13.modalval </a></li>
+		<li><a href="content.html#11_14" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>14.tool tip </a></li>
+		<li><a href="content.html#11_15" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>15.sliding </a></li>
+		<li><a href="content.html#11_16" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>16.autocomplete </a></li>
+		<li><a href="content.html#11_17" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>17.multi select box </a></li>
+		<li><a href="content.html#11_18" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>18.inputToComma </a></li>
+		<li><a href="content.html#11_19" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>19.toComma </a></li>
+		<li><a href="content.html#11_20" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>20.toEn </a></li>
+		<li><a href="content.html#11_21" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>21.inputToNum </a></li>
+		<li><a href="content.html#11_22" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>22.formClear </a></li>
+		<li><a href="content.html#11_23" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>23.getDate </a></li>
+		<li><a href="content.html#11_24" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>24.getDateCalc </a></li>
+		<li><a href="content.html#11_25" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>25.uiBlockByGif </a></li>
+		<li><a href="content.html#11_26" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>26.uiBlockByJq </a></li>
+		<li><a href="content.html#11_27" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />27.uiUnblockByJq </a></li>
+	 </ul>
+	 
+	</div>
+
+<!-- XII.B2C -->
+	<div class="depth01"><a onclick="menu(12);"><img id='bar_1' src='images/tree_ico1.gif'/><strong>XII.B2C</strong></a></div>
+	<div id=submenu_12 style="DISPLAY:none;">
+	 
+	</div>
+
+<!-- XIII.B2B -->
+	<div class="depth01"><a onclick="menu(13);"><img id='bar_1' src='images/tree_ico1.gif'/><strong>XIII.B2B</strong></a></div>
+	<div id=submenu_13 style="DISPLAY:none;">
+	 
+	</div>
+
+<!-- XX.Util -->
+	<div class="depth01"><a onclick="menu(20);"><img id='bar_1' src='images/tree_ico1.gif'/><strong>XX.Util</strong></a></div>
+	<div id=submenu_20 style="DISPLAY:none;">
+	<ul class="depth02">
+		<li><a href="content.html#20_1" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>1.min</a></li>
+		<li><a href="content.html#20_2" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>2.max</a></li>
+		<li><a href="content.html#20_3" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>3.isNull </a></li>
+		<li><a href="content.html#20_4" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>4.checkURL </a></li>
+		<li><a href="content.html#20_5" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>5.checkEmail </a></li>
+		<li><a href="content.html#20_6" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>6.checkPhone </a></li>
+		<li><a href="content.html#20_7" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>7.checkNumber </a></li>
+		<li><a href="content.html#20_8" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>8.checkDate8 </a></li>
+		<li><a href="content.html#20_9" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>9.checkDate10 </a></li>
+		<li><a href="content.html#20_10" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>10.checkTime12 </a></li>
+		<li><a href="content.html#20_11" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>11.checkTime24 </a></li>
+		<li><a href="content.html#20_12" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>12.checkPassword </a></li>
+		<li><a href="content.html#20_13" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>13.replace </a></li>
+		<li><a href="content.html#20_14" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>14.length </a></li>
+		<li><a href="content.html#20_15" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>15.substring </a></li>
+		<li><a href="content.html#20_16" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>16.isEmpty </a></li>
+		<li><a href="content.html#20_17" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>17.dateCheck </a></li>
+		<li><a href="content.html#20_18" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>18.getDay </a></li>
+		<li><a href="content.html#20_19" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>19.strToDate </a></li>
+		<li><a href="content.html#20_20" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>20.checkDateTime </a></li>
+		<li><a href="content.html#20_21" target='icontent'><img id='bar_11' src='images/tree_ico2.gif'/>21.intSize </a></li>
+	</ul>
+	</div>
+	
+	<!-- XX1.map -->
+	<div class="depth01">
+		<a onclick="menu(21);"><img id='bar_1' src='images/tree_ico1.gif' /><strong>XXI.map</strong></a>
+	</div>
+	<div id=submenu_21 style="DISPLAY: none;">
+		<ul class="depth02">
+			<li><a href="content.html#21_1" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />1.mapInit</a></li>
+			<li><a href="content.html#21_2" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />2.addMarker</a></li>
+			<li><a href="content.html#21_3" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />3.removeMarkers </a></li>
+			<li><a href="content.html#21_4" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />4.removeAllMarkers </a></li>
+			<li><a href="content.html#21_5" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />5.creatHotelInfoWindow </a></li>
+			<li><a href="content.html#21_6" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />6.creatTrafficInfoWindow </a></li>
+			<li><a href="content.html#21_7" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />7.creatSightsInfoWindow </a></li>
+			<li><a href="content.html#21_8" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />8.creatFoodInfoWindow </a></li>
+			<li><a href="content.html#21_9" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />9.creatShopInfoWindow </a></li>
+			<li><a href="content.html#21_10" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />10.openStreetView </a></li>
+			<li><a href="content.html#21_11" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />11.getPlaceLibrary </a></li>
+			<li><a href="content.html#21_12" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />12.geocode </a></li>
+			<li><a href="content.html#21_13" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />13.setMapType </a></li>
+			<li><a href="content.html#21_14" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />14.setMapScale </a></li>
+			<li><a href="content.html#21_15" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />15.setMapCenter </a></li>
+			<li><a href="content.html#21_16" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />16.printMap </a></li>
+			<li><a href="content.html#21_17" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />17.drawInfoWindow </a></li>
+			<li><a href="content.html#21_18" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />18.drawTitleBar </a></li>
+			<li><a href="content.html#21_19" target='icontent'><img id='bar_11' src='images/tree_ico2.gif' />19.closeMap </a></li>
+		</ul>
+	</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<graphs>
+	<legend>
+		<data>매출</data>
+	</legend>
+	<ticks>
+		<data>대한항공</data>
+		<data>아시아나</data>
+		<data>진에어</data>
+		<data>제주항공</data>
+	</ticks>
+	<graph>
+		<data>1000</data>
+		<data>2000</data>
+		<data>500</data>
+		<data>1500</data>
+	</graph>
+</graphs>

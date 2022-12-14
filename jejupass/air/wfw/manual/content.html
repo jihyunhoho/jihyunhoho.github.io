@@ -1,0 +1,7226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>무제 문서</title>
+<style type="text/css">
+<!--
+body {margin-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px;font-size:12px; font-family: "돋움", "dotum" ,"Verdana"; color:#555555;}
+/*table { border-collapse: collapse;}*/
+td,input,textarea {color:#676767; font-size:12px ; font-family:"돋움", "dotum", "Verdana"; word-break:break-all; word-wrap:break-word;}
+a:link { color: #333333; text-decoration:none;}
+a:visited { color: #333333; text-decoration:none;}
+a:hover { color: #db3d63; text-decoration: underline;}
+a:active { color: #333333; text-decoration:none;}
+.title{height:30px; width:95%; padding-left:14px; margin-left:10px; margin-top:10px; margin-right:10px; font-size:15px; font-weight:bold; color:#2D4078; background-image:url(images/menual_title_line.gif); background-repeat:no-repeat;}
+.subtitle{margin-left:10px; margin-top:3px; color:#2D4078;font-weight:bold; padding-left:17px;}
+.subtitle_sub{color:#51799C;font-weight:bold; padding-left:20px; margin-left:20px; margin-top:8px;}
+.content_title{color:#343434; padding-left:30px; margin-left:10px; margin-top:3px; margin-bottom:10px;}
+.content_title .content{color:#575757; padding-left:20px; padding-top:5px; line-height:18px; margin-right:20px;}
+.content_title .leftimage{margin-top:3px; margin-bottom:8px;}
+.content_title .image{padding-left:20px; padding-top:3px; margin-bottom:8px;}
+.margin5{margin-top:5px;}
+-->
+</style>
+<script language="javascript">
+<!--        
+//-->
+</script>
+
+</head>
+
+<body style="">
+<!-- //Grid Manual Start -->
+<a name="1_1" id="1_1"></a>
+<br/>
+<div class="title">
+ Ⅰ. Grid : jquery.com.grid.js  
+ 
+</div>
+<div class="subtitle">[Grid 추가/수정/삭제 예제]
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/vof/AIR/RSV/GPG/AIRRSVPUW0110010110.html" target="_blank">예제 Click</a>
+</div> <p/>
+
+<div class="subtitle">
+1. Init
+</div>
+<div class="subtitle_sub">$(selector).grid('init', uurl, title, model, option, event)</div>
+
+<div class="content_title">
+<div class="content">
+	- 기본적인 Grid를 만드는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - Grid Object
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - uurl (grid 데이타를 만들 xml 파일의 경로)<br/>
+ - title (그리드 Header 이름) <br/>
+ - model (그리드 칼럼 속성을 정의) <br/>
+ - option (필요한 그리드 속성 정의) <br/>
+ - event (필요한 그리드의 이벤트 정의)   <br/> 
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:300px;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//Grid title 
+var gTitle = ['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'];
+//Grid Model 
+var gModel = [
+	{name:'id',index:'id', width:60, sorttype:"int"},
+	{name:'invdate',index:'invdate', width:90, sorttype:"date"},
+	{name:'name',index:'name', width:100},
+	{name:'amount',index:'amount', width:80, align:"right",sorttype:"float",formatter:"number", 
+			summaryType:"sum"},
+	{name:'tax',index:'tax', width:80, align:"right",sorttype:"float"},		
+	{name:'total',index:'total', width:80,align:"right",sorttype:"float"},		
+	{name:'note',index:'note', width:150, sortable:false}	
+];
+
+var options = 	{
+	//옵션에 multiselect:true 부분을 추가하면 그리드 목록 전체선택/전체 해제가 가능하다. 
+	multiselect:true,	
+	pager: '#pager1', 	
+	rowNum:3,
+   	rowList:[3,6,9,12,15],
+   	xmlReader: {
+		root : "data",
+		row: "list", 
+		page: "data>page", 			//
+	    total: "data>total", 		//
+	    records : "data>records", 	//
+		repeatitems: false,
+		id: "id"
+		}
+		
+};
+
+var events = {loadComplete:fn_loadComplete1, ondblClickRow:fn_ondblClickRow1, 
+				onRightClickRow:fn_onRightClickRow1};
+
+//1. 기본적인 Grid을 만든다. : 화면 로딩시 바로 데이타 조회
+$k1("#list1").grid('init','../jsp/grid_data2.jsp', gTitle, gModel, options, events);
+	
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/vof/AIR/RSV/GPG/AIRINTQTT0100010020_MDI.html" target="_blank">예제 Click</a>	
+
+<!-- // 1. Init -->
+
+<p>&nbsp;</p>
+
+<a name="1_2" id="1_2"></a>
+<div class="subtitle">
+2. makeTree
+</div>
+<div class="subtitle_sub">$(selector).grid('makeTree', uurl, title, model, option, event)</div>
+
+<div class="content_title">
+<div class="content">
+	- Grid 중에서 Tree Grid을 만드는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - TreeGrid Object
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - uurl (grid 데이타를 만들 xml 파일의 경로)<br/>
+ - title (그리드 Header 이름) <br/>
+ - model (그리드 칼럼 속성을 정의) <br/>
+ - option (필요한 그리드 속성 정의) <br/>
+ - event (필요한 그리드의 이벤트 정의)   <br/> 
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:300px;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var gTitle = ["id","Items","url", "메뉴구분", "메뉴경로", "프로그램ID", "프로그램설명", "화면형태"];
+//var gTitle = [];
+var gModel = [
+              {name: "id",width:1,hidden:true, key:true},
+              {name: "menu", width:150, resizable: false, sortable:false},
+              {name: "url",width:1,hidden:true}, 
+              {name: "mgubun",width:1,hidden:true}, 
+              {name: "mPath",width:1,hidden:true}, 
+              {name: "programId",width:1,hidden:true}, 
+              {name: "programDesc",width:1,hidden:true}, 
+              {name: "pageType",width:1,hidden:true}
+          ];
+
+var options = 	{
+		xmlReader: {
+    		root : "data",
+    		row: "list",
+    		repeatitems: false,
+    		id: "id"
+    		}, 
+    	width: '700',
+   	    height: '200', 	
+		ExpandColumn: 'menu', 
+		treeIcons: {plus:'ui-icon-folder-collapsed',
+					minus:'ui-icon-folder-open',
+					leaf:'ui-icon-document'} 
+	};	
+
+var events = {onSelectRow:fn_rowClick};
+
+//TreeGrid를 만든다. 
+$k1("#menuGrid").grid('makeTree', '../jsp/menu_data.jsp', gTitle, gModel, options, events);
+</pre>	
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/vof/wfw/html/tree_grid.html" target="_blank">예제 Click</a>	
+
+<!-- // 2. makeTree -->
+
+<p>&nbsp;</p>
+
+<a name="1_3" id="1_3"></a>
+<div class="subtitle">
+3. setSelection
+</div>
+<div class="subtitle_sub">$(selector).grid('setSelection', row)</div>
+
+<div class="content_title">
+<div class="content">
+	- Grid 데이타를 선택하는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - row 선택
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - uurl row (해당 Row를 선택한다.)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//데이타 로드된 후에 바로 첫번째 데이타를 선택되게 한다.
+$k1("#list2").grid('setSelection', 1);
+</pre>
+</div>
+</div>
+
+<!-- // 3. setSelection -->
+
+<p>&nbsp;</p>
+
+<a name="1_4" id="1_4"></a>
+<div class="subtitle">
+4. setGridParam
+</div>
+<div class="subtitle_sub">$(selector).grid('setGridParam', option)</div>
+
+<div class="content_title">
+<div class="content">
+	- Grid 속성을 정의하는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 속성이 적용된 Grid Object
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - option (속성 옵션 값)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//Grid 옵션 추가 함수.
+$k1("#list1").grid('setGridParam', {sortname:"amount",sortorder:"desc"});
+</pre>
+</div>
+</div>
+
+<!-- // 4. setGridParam -->
+
+<p>&nbsp;</p>
+
+<a name="1_5" id="1_5"></a>
+<div class="subtitle">
+5. setGroupHeaders
+</div>
+<div class="subtitle_sub">$(selector).grid('setGroupHeaders', option, usecol)</div>
+
+<div class="content_title">
+<div class="content">
+	- Grid Header의 Grouping을 정의하는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 속성이 적용된 Grid Object
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - option (속성 옵션 값)	<br/>
+ - usecol (colspan 속성 사용 여부)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var groupHeaders = [	
+        			{startColumnName: 'amount', numberOfColumns: 3, titleText: '<em>Price</em>'}
+        			  ];
+
+//그리드의 Header 정보를 2줄로 보이게 세팅한다.
+$k1("#list1").grid('setGroupHeaders', groupHeaders, true);
+</pre>
+</div>
+</div>
+
+<!-- // 5. setGroupHeaders -->
+
+<p>&nbsp;</p>
+
+<a name="1_6" id="1_6"></a>
+<div class="subtitle">
+6. setGridEvent
+</div>
+<div class="subtitle_sub">$(selector).grid('setGridEvent', evtOption)</div>
+
+<div class="content_title">
+<div class="content">
+	- Grid 이벤트를 정의하는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 이벤트가 적용된 Grid Object
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - evtOption (이벤트 속성)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var events = {loadComplete:fn_loadComplete1, ondblClickRow:fn_ondblClickRow1};
+
+$k1("#list1").grid('setGridEvent', events);
+</pre>
+</div>
+</div>
+
+<!-- // 6. setGridEvent -->
+
+<p>&nbsp;</p>
+<a name="1_7" id="1_7"></a>
+<div class="subtitle">
+7. onSelectRow
+</div>
+<div class="subtitle_sub">$(selector).grid('onSelectRow', func)</div>
+
+<div class="content_title">
+<div class="content">
+	- Grid의 Row 선택시 발생하는 이벤트.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 이벤트 발생.
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - func (해당 이벤트시 실행되는 함수 이름)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//Grid 	onSelectRow 이벤트 선언. 
+$k1("#list2").grid('onSelectRow', fn_selectRow2);
+
+function fn_selectRow2(rowid) {
+	//onSelectRow 이벤트 시 실행.
+}
+</pre>
+</div>
+</div>
+
+<!-- // 7. onSelectRow -->
+
+<p>&nbsp;</p>
+<a name="1_8" id="1_8"></a>
+<div class="subtitle">
+8. onPaging
+</div>
+<div class="subtitle_sub">$(selector).grid('onPaging', action, url)</div>
+
+<div class="content_title">
+<div class="content">
+	- 기본적으로 페이징 이벤트를 포함한다.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 이벤트 발생.
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - action (페이지 관련 버튼의 이벤트 종류)	<br/>
+ - url (페이징을 조회하기 위한 URL) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+onPaging : function (action) {
+	$("#list2").grid("onPaging", action, url);
+} 
+</pre>
+</div>
+</div>
+
+<!-- // 8. onPaging -->
+
+<p>&nbsp;</p>
+<a name="1_9" id="1_9"></a>
+<div class="subtitle">
+9. onSortCol
+</div>
+<div class="subtitle_sub">$(selector).grid('onSortCol', index, iCol, sortorder, url)</div>
+
+<div class="content_title">
+<div class="content">
+	- header 타이틀 클릭시 해당 필드로 정렬이 되게 한다.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 정렬 Grid Object
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - index (grid 필드 index 이름)	<br/>
+ - iCol (grid 필드 칼럼 인덱스)	<br/>
+ - sortorder (해당 칼럼의 sortorder : desc or asc)	<br/>
+ - url (정렬을 하기 위한 URL) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//column 정렬시 재조회를 하기 위한 주소. 
+var url = '/vof/xsl/AIRRSVPUW0110010110_trip.xml';
+
+onSortCol : function (index, iCol, sortorder) {	
+	$("#list2").grid("onSortCol", index, iCol, sortorder, url);
+}
+</pre>
+</div>
+</div>
+
+<!-- // 9. onSortCol -->
+
+<p>&nbsp;</p>
+<a name="1_10" id="1_10"></a>
+<div class="subtitle">
+10. getGridParam
+</div>
+<div class="subtitle_sub">$(selector).grid('getGridParam', pName)</div>
+
+<div class="content_title">
+<div class="content">
+	- Grid의 속성 값을 얻는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - Grid 속성 값
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - pName (grid 속성 이름, grid 옵션 값.)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//Grid에서 선택된 Row의 아이디를 구한다. 
+var rowid = $k1("#list2").grid('getGridParam', 'selrow');
+
+//Grid 의 Row 수를 구한다. 
+var rows = $k1("#list1").grid('getGridParam', 'records');
+
+//Grid의 속성이 다중 선택이 가능할 경우 선택된 row id를 구한다. 
+var s = $k1("#list1").grid('getGridParam', 'selarrrow');
+</pre>
+</div>
+</div>
+
+<!-- // 10. getGridParam -->
+
+<p>&nbsp;</p>
+<a name="1_11" id="1_11"></a>
+<div class="subtitle">
+11. getRowData
+</div>
+<div class="subtitle_sub">$(selector).grid('getRowData', index)</div>
+
+<div class="content_title">
+<div class="content">
+	- Grid의 데이타 값을 얻는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - Grid Row 데이타
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - index (grid row 인덱스)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+for(i=1; i<=s.length; i++) {	
+	var ret = $k1("#list1").grid('getRowData', i);
+	alert("id="+ret.id+" invdate="+ret.invdate+" Client="+ret.name);
+}
+</pre>
+</div>
+</div>
+
+<!-- // 11. getRowData	 -->
+
+<p>&nbsp;</p>
+<a name="1_12" id="1_12"></a>
+<div class="subtitle">
+12. clearGridData
+</div>
+<div class="subtitle_sub">$(selector).grid('clearGridData')</div>
+
+<div class="content_title">
+<div class="content">
+	- Grid 데이타를 Clear 시키는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - Grid Object
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1("#list1").grid('clearGridData');
+</pre>
+</div>
+</div>
+
+<!-- // 12. clearGridData	 -->
+
+<p>&nbsp;</p>
+<a name="1_13" id="1_13"></a>
+<div class="subtitle">
+13. gridToForm
+</div>
+<div class="subtitle_sub">$(selector).grid('gridToForm', formid, rowid)</div>
+
+<div class="content_title">
+<div class="content">
+	- 선택된 Row의 데이타를 Form으로 바인딩하는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - Form Binding
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - formid (그리드와 바인딩 되는 Form 아이디)	<br/>
+ - rowid (바인딩 되는 그리드 row 아아디)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//선택된 그리드 데이타 Form 바인딩.
+$k1("#list2").grid('gridToForm', '#grid_form', rowid);
+</pre>
+</div>
+</div>
+
+<!-- // 13. gridToForm	 -->
+
+<p>&nbsp;</p>
+<a name="1_14" id="1_14"></a>
+<div class="subtitle">
+14. editFormToGrid
+</div>
+<div class="subtitle_sub">$(selector).grid('editFormToGrid', formid, rowid)</div>
+
+<div class="content_title">
+<div class="content">
+	- 바인딩 된 Form의 값이 바뀌면 그리드에 칼럼도 바뀌게 하는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 변경된 Grid Data 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - formid (그리드와 바인딩 되는 Form 아이디)	<br/>
+ - rowid (바인딩 되는 그리드 row 아아디)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//선택된 row 아이디.
+var rowid = $k1("#list2").grid('getGridParam', 'selrow');
+$k1("#list2").grid('editFormToGrid', '#grid_form', rowid);	
+</pre>		
+</div>
+</div>
+
+<!-- // 14. editFormToGrid	 -->
+
+<p>&nbsp;</p>
+<a name="1_15" id="1_15"></a>
+<div class="subtitle">
+15. addFormToGrid
+</div>
+<div class="subtitle_sub">$(selector).grid('addFormToGrid', formid, rowid)</div>
+
+<div class="content_title">
+<div class="content">
+	- 바인딩 된 Form의 값을 그리드에 add시키는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - Grid Data 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - formid (그리드와 바인딩 되는 Form 아이디)	<br/>
+ - rowid (바인딩 되는 그리드 row 아아디)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1("#list2").grid('addFormToGrid', '#grid_form', 10);	
+</pre>	
+</div>
+</div>
+
+<!-- // 15. addFormToGrid	 -->
+
+<p>&nbsp;</p>
+<a name="1_16" id="1_16"></a>
+<div class="subtitle">
+16. selectData
+</div>
+<div class="subtitle_sub">$(selector).grid('selectData', uurl, formid)</div>
+
+<div class="content_title">
+<div class="content">
+	- grid 데이타를 재조회하는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - Grid Data 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - uurl (조회하는 url)	<br/>
+ - formid (그리드와 바인딩 되는 Form 아이디)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//재조회할 때  필요한 parameter가 있을 경우에는 form 아이디를 넣으면 된다. 
+//그리드와 바인딩 되는 form 아이디를 넣지 않으면 빈 값이 들어간다. 
+$k1("#list2").grid('selectData', "../jsp/grid_data.jsp", 'form_id');	
+</pre>
+</div>
+</div>
+
+<!-- // 16. selectData	 -->
+
+<p>&nbsp;</p>
+<a name="1_17" id="1_17"></a>
+<div class="subtitle">
+17. addRow
+</div>
+<div class="subtitle_sub">$(selector).grid('addRow')</div>
+
+<div class="content_title">
+<div class="content">
+	- 그리드의 row을 추가하는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - Grid Object 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1("#list2").grid('addRow');
+</pre>
+</div>
+</div>
+
+<!-- // 17. addRow	 -->
+
+<p>&nbsp;</p>
+<a name="1_18" id="1_18"></a>
+<div class="subtitle">
+18. delRowData
+</div>
+<div class="subtitle_sub">$(selector).grid('delRowData', rowid, formid)</div>
+
+<div class="content_title">
+<div class="content">
+	- grid의 선택된 row을 삭제하는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - Grid Object 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	rowid (삭제하는 그리드 row 아아디)		<br/>
+ - 	formid (삭제하는 데이타의 값을 가지고 있는 form)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var rowid = $k1("#list2").grid('getGridParam', 'selrow');		
+//삭제시 해당 데이타를 삭제한 후 삭제된 데이타를 return 값으로 받는다. 
+var formstr = $k1("#list2").grid('delRowData', rowid, 'grid_form');
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/vof/AIR/RSV/GPG/AIRRSVPUW0110010110.html" target="_blank">예제 Click</a>&nbsp;&nbsp;[Grid 추가/수정/삭제 예제]	
+
+<!-- // 18. delRowData	 -->
+
+<p>&nbsp;</p>
+<a name="1_19" id="1_19"></a>
+<div class="subtitle">
+19. addRowData
+</div>
+<div class="subtitle_sub">$(selector).grid('addRowData', addrowid, data)</div>
+
+<div class="content_title">
+<div class="content">
+	- 해당 row에 그리드의 row을 추가하는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - Grid Object 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	addrowid (추가하고자 하는 그리드 row 아아디)		<br/>
+ - data (추가하고자 하는 그리드 데이타)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var rowcount = $k1("#list2").grid('getGridParam', 'records');
+var addRowId = Number(rowcount)+1;
+//그리드 row를 추가할 때 기본적으로 넣을 데이타를 배열 형태로 넘긴다.
+var data = {'no':nextKey, 'editMode':'I'};	 
+
+$k1("#list2").grid('addRowData', addRowId, data);		
+</pre>
+</div>
+</div>
+
+<!-- // 19. addRowData	 -->
+
+<p>&nbsp;</p>
+<a name="1_20" id="1_20"></a>
+<div class="subtitle">
+20. setGridStyle
+</div>
+<div class="subtitle_sub">$(selector).grid('setGridStyle', style)</div>
+
+<div class="content_title">
+<div class="content">
+	- Grid를 만들고 나서 그리드 스타일을 지정하는 함수. 
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - Grid Object 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	style (스타일 종류)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+	//그리드 스타일 지정
+	$k1("#tbl_trip").grid('setGridStyle', 'vof_list');
+</pre>	
+</div>
+</div>
+
+<!-- // 20. setGridStyle	 -->
+
+<p>&nbsp;</p>
+<a name="1_21" id="1_21"></a>
+<div class="subtitle">
+21. headColspan
+</div>
+<div class="subtitle_sub">$(selector).grid('headColspan', cols, alignOpt)</div>
+
+<div class="content_title">
+<div class="content">
+	- 그리드의 header에 제목 부분을 colspan 해야 하는 경우 사용한다.  
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - Grid Object 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	cols (colspan 하는 제목 이름)		<br/>
+ - alignOpt (colspan 할 때 제목의 정렬을 정의한다. ) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+	//Header Colspan 설정
+	$k1('#tbl_trip').grid('headColspan', ['seat1', 'seat2'], {1:'right', 2:'left'});
+</pre>	
+</div>
+</div>
+
+<!-- // 21. headColspan	 -->
+
+<p>&nbsp;</p>
+<a name="1_22" id="1_22"></a>
+<div class="subtitle">
+22. dataToString
+</div>
+<div class="subtitle_sub">$(selector).grid('dataToString', rowid, editYN)</div>
+
+<div class="content_title">
+<div class="content">
+	- 해당 Row의 칼럼별 데이타를 String를 얻는 함수.  
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 데이타 String 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - rowid (선택한 Row 아이디)		<br/>
+ - editYN (edit 상태인지 여부)	 <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:300px;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+// row을 선택시에 edit한 상태로 변경한다. 
+function gfnCardSelectRow (id) {
+	if(id && id!==lastsel2){
+		if(!$k1.util.isNull(lastsel2)) {
+			uptData = $k1('#tbl_card').grid('dataToString', lastsel2, true);
+			
+			isSame = (orgData == uptData)? true:false;
+		}
+		//데이터가 변경되었을 경우에만 업데이트한 데이타를 구한다. 
+		if(!isSame) {
+			updateData = $k1('#tbl_card').grid('editDataRow', lastsel2);  
+		}
+		//위에서 구한 업데이트한 데이타를  restoreRow 한 후에 setData한다. 
+		$k1('#tbl_card').restoreRow(lastsel2, {"afterrestorefunc" : function( response ) {
+				if(!isSame) {
+					$k1("#tbl_card").jqGrid('setRowData',lastsel2, updateData);
+					//makeJSON();
+					updateData = [], isSame=true;
+					$k1('#tbl_card').grid('setCombo', lastsel2); 
+				}
+			}}
+		); 
+		
+		lastsel2=id; 
+	}
+
+	//orginal data 얻기
+	orgData = $k1('#tbl_card').grid('dataToString', id, false);
+	$k1('#tbl_card').editRow(id,true);
+
+}
+</pre>	
+</div>
+</div>
+
+<!-- // 22. dataToString	 -->
+
+<p>&nbsp;</p>
+<a name="1_23" id="1_23"></a>
+<div class="subtitle">
+23. editDataRow
+</div>
+<div class="subtitle_sub">$(selector).grid('editDataRow', rowid)</div>
+
+<div class="content_title">
+<div class="content">
+	- 해당 Row의 수정된 데이타를 배열로 얻는다.  
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 칼럼 이름과 값으로된 배열 값 ex)[colname:value, colname2:value2]
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - rowid (선택한 Row 아이디)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+if(!isSame) {
+	updateData = $k1('#tbl_card').grid('editDataRow', lastsel2);  
+}
+$k1('#tbl_card').restoreRow(lastsel2, {"afterrestorefunc" : function( response ) {
+		if(!isSame) {
+			$k1("#tbl_card").jqGrid('setRowData',lastsel2, updateData);
+			//makeJSON();
+			updateData = [], isSame=true;
+			$k1('#tbl_card').grid('setCombo', lastsel2); 
+		}
+	}}
+); 
+</pre>	
+</div>
+</div>
+
+<!-- // 23. editDataRow	 -->
+
+<p>&nbsp;</p>
+<a name="1_24" id="1_24"></a>
+<div class="subtitle">
+24. setCombo
+</div>
+<div class="subtitle_sub">$(selector).grid('setCombo', rowid)</div>
+
+<div class="content_title">
+<div class="content">
+	- 전체 Row 또는 선택된 Row의 edittype = 'select' 이면  코드값이 아닌 text를 값으로 보이게 한다. 
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - rowid (선택한 Row 아이디)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+// edit type = select 일경우 데이타가 코드인 경우 text로 데이타를 보여 주기 위해서 호출한다. 
+$k1('#tbl_card').grid('setCombo');
+
+//선택된 Row의 Combo 값을 세팅한다. 
+$k1('#tbl_card').grid('setCombo', lastsel2); 
+</pre>	
+</div>
+</div>
+
+<!-- // 24. setCombo	 -->
+
+<p>&nbsp;</p>
+<a name="1_25" id="1_25"></a>
+<div class="subtitle">
+25. setComboData
+</div>
+<div class="subtitle_sub">$(selector).grid('setComboData', rowid, col)</div>
+
+<div class="content_title">
+<div class="content">
+	- 실제 combo의 코드값이 아닌 text 값을 칼럼에 보이게  setRowData 하는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - rowid (선택한 Row 아이디)	<br/>
+ - col (칼럼의 정보) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var $target = $(this);
+var colModel = $target.grid('getGridParam', 'colModel');
+$.each(colModel, function(index, col) {
+	if (col.edittype === 'select') {
+		if ($.util.isNull(rowid)) {
+			//전체 Row의 combo를 세팅
+			$.each($target.jqGrid('getDataIDs'), function(index, id) {
+				$target.grid('setComboData', id, col);
+			});
+		} else {
+			//특정 Row의 combo를 세팅
+			$target.grid('setComboData', rowid, col);
+		}
+	}
+});
+</pre>	
+</div>
+</div>
+
+<!-- // 25. setComboData	 -->
+
+<p>&nbsp;</p>
+<a name="1_26" id="1_26"></a>
+<div class="subtitle">
+26. jsonToString
+</div>
+<div class="subtitle_sub">$(selector).grid('jsonToString', data)</div>
+
+<div class="content_title">
+<div class="content">
+	- 변경된 Row의 모든 데이타를 JSON 형태의 String으로 만드는 함수.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - JSON 형태의 String 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	data (json data를 만들기 위한 key)   <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//변경된 Row 들의 데이타를 JSON 데이타로 만든다. 
+jsonObj = $k1('#tbl_card').grid('jsonToString', 'cards');  
+var obj = $k1.parseJSON(jsonObj);
+  	
+$k1.each(obj.cards, function(i,card){
+	alert(card.ownerType+' : '+card.ownerName);
+});
+</pre>	
+</div>
+</div>
+
+<!-- // 26. jsonToString	 -->
+
+<p>&nbsp;</p>
+<a name="1_27" id="1_27"></a>
+<div class="subtitle">
+27. dataCopy
+</div>
+<div class="subtitle_sub">$(from Grid Id).grid('copyData', to Grid Id);</div>
+
+<div class="content_title">
+<div class="content">
+	- 복사할 그리드의 체크된 데이터를 복사 대상 그리드에 추가하는 함수
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 복사대상 grid id <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1("#copy").click(function(){
+	$k1("#tbl_grid").grid("dataCopy", "tbl_grid2");
+	//복사 후 복사된 그리드는 스타일을 재 정의 해준다.
+	$k1("#tbl_grid2").grid('setGridStyle', 'vof_list');
+});
+
+</pre>	
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/vof/AIR/STA/GPG/AIRSTAGPG0100000750_2.html " target="_blank">예제 Click</a>  //129~130 line
+<br/>
+
+<!-- // 27. dataCopy	 -->
+
+<p>&nbsp;</p>
+<a name="1_28" id="1_28"></a>
+<div class="subtitle">
+28. setEditRowToGrid
+</div>
+<div class="subtitle_sub">$(Grid Id).grid('setEditRowToGrid', Row Id);</div>
+
+<div class="content_title">
+<div class="content">
+	- editable cell의 값을 수정한 후 수정한 값을 그리드에 적용
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - row id <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1('#tbl_page1').grid('setGridParam', {onSelectRow : function(id){
+	if(id && id !== lastsel){			
+		$k1('#tbl_page1').grid('setEditRowToGrid', lastsel);
+		$k1('#tbl_page1').grid('editRow', id, editparameters);
+		lastsel = id;
+	}
+}});
+
+</pre>	
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/grid_addrowedit.html" target="_blank">예제 Click</a> 
+<br/>
+
+<!-- // 28. setEditRowToGrid	 -->
+
+<p>&nbsp;</p>
+<a name="1_29" id="1_29"></a>
+<div class="subtitle">
+29. editRow
+</div>
+<div class="subtitle_sub">$(Grid Id).grid('editRow', Row Id, edit options);</div>
+
+<div class="content_title">
+<div class="content">
+	- 그리드에서 선택한 row를 editable하게 변환<br/>
+	- 그리드 column model에 'editable: true' 옵션이 필요
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - row id <br/>
+ - edit options
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1('#tbl_page1').grid('setGridParam', {onSelectRow : function(id){
+	if(id && id !== lastsel){			
+		$k1('#tbl_page1').grid('setEditRowToGrid', lastsel);
+		
+		var editparameters = {
+			"keys" : true,
+			"oneditfunc" : onEdit,
+			"successfunc" : success,
+			"url" : null,
+			"extraparam" : {},
+			"aftersavefunc" : afterSave,
+			"errorfunc": null,
+			"afterrestorefunc" : afterRestore,
+			"restoreAfterError" : true,
+			"mtype" : "POST"
+		};		
+		$k1('#tbl_page1').grid('editRow', id, editparameters);
+		lastsel = id;
+	}
+}});
+
+</pre>	
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/grid_addrowedit.html" target="_blank">예제 Click</a> 
+<br/>
+
+<!-- // 29. editRow	 -->
+
+<p>&nbsp;</p>
+<a name="1_30" id="1_30"></a>
+<div class="subtitle">
+30. getDataIds
+</div>
+<div class="subtitle_sub">$(Grid Id).grid('getDataIds');</div>
+
+<div class="content_title">
+<div class="content">
+	- 그리드의 ID컬럼의 값들을 구한다.<br/>	
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> 
+ - grid row id array
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var idArr = $k1('#tbl_page1').grid('getDataIds');
+for(var i = 0;i &lt; idArr.length;i++){
+	alert(idArr[i]);
+}
+</pre>	
+</div>
+</div>
+<span class="subtitle_sub">▶ </span>
+<br/>
+
+<!-- // 30. getDataIds	 -->
+
+<p>&nbsp;</p>
+<a name="1_31" id="1_31"></a>
+<div class="subtitle">
+31. getColData
+</div>
+<div class="subtitle_sub">$(Grid Id).grid('getColData', colnm, returntype, mathoperation);</div>
+
+<div class="content_title">
+<div class="content">
+	- 그리드의 컬럼단위 데이터의 집합 또는 수치를 구한다.<br/>	
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> 
+ - Array or value
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - colnm(컬럼명)
+ - returntype(true : array return, false : value return)
+ - mathoperation('sum', 'avg', 'count' 중 하나 선택. 리턴타입이 false일 경우만 적용됨)
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var amountArr = $k1('#tbl_page1').grid('getColData', 'amount', true);
+var amountSum = $k1('#tbl_page1').grid('getColData', 'amount', false, 'sum');
+
+for(var i = 0;i &lt; amountArr.length;i++){
+	console.log(amountArr[i]);
+}
+console.log(amountSum);
+</pre>	
+</div>
+</div>
+<span class="subtitle_sub">▶ </span>
+<br/>
+
+<!-- // 31. getColData	 -->
+
+<p>&nbsp;</p>
+<a name="1_32" id="1_32"></a>
+<div class="subtitle">
+32. setSummaryFooter
+</div>
+<div class="subtitle_sub">$(Grid Id).grid('setSummaryFooter', option);</div>
+
+<div class="content_title">
+<div class="content">
+	- 그리드의 footer row에 값을 세팅해 주는 함수.<br/>	
+	- 그리드 옵션 중 footerrow:true 가 필요
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> 
+ - 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - option({col:['colnm1', 'colnm2', ... , 'colnmN'], cal:['sum', 'avg', ... , 'count']})<br/>	 
+ - col과 cal의 배열 길이는 같아야 한다. 순서대로 1대 1대응.
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var footerOption = {
+	col:['amount', 'tax', 'total'],
+	cal:['sum', 'avg', 'count']
+};
+$k1('#tbl_page2').grid('setSummaryFooter', footerOption);		
+</pre>	
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/paging.html" target="_blank">예제 Click</a> //239 ~ 243라인
+<br/>
+
+<!-- // 32. setSummaryFooter	 -->
+
+<p>&nbsp;</p>
+<a name="1_33" id="1_33"></a>
+<div class="subtitle">
+33. openRowEdit
+</div>
+<div class="subtitle_sub">$(Grid Id).grid('openRowEdit', option);</div>
+
+<div class="content_title">
+<div class="content">
+	- 그리드의 row클릭시 해당 row를 수정가능 상태로 변경해 주는 함수.<br/>	
+	- column model에서 수정 가증하게 할 컬럼의 editable이 true로 설정되어야 한다.<br/>	
+	- 그리듸 옵션에 rowEditable : true 를 세팅해 준다.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> 
+ - 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - option(row id 및 에디트 옵션)
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1('#tbl_page1').grid('setGridParam', {onSelectRow : function(id){		
+	var editOption = {
+		"rowid" : id,
+		"keys" : true,
+		"oneditfunc" : onEdit
+		//"successfunc" : success,
+		//"url" : null,
+	    //"extraparam" : {},
+		//"aftersavefunc" : afterSave,
+		//"errorfunc": null,
+		//"afterrestorefunc" : afterRestore,
+		//"restoreAfterError" : true,
+		//"mtype" : "POST"
+	};	
+	$k1('#tbl_page1').grid('openRowEdit', editOption);
+}});
+</pre>	
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/grid_addrowedit.html" target="_blank">예제 Click</a>
+<br/>
+
+<!-- // 33. openRowEdit	 -->
+
+<p>&nbsp;</p>
+<a name="1_34" id="1_34"></a>
+<div class="subtitle">
+34. addRowWithoutUpdate
+</div>
+<div class="subtitle_sub">$(Grid Id).grid('addRowWithoutUpdate');</div>
+
+<div class="content_title">
+<div class="content">
+	- 그리드에 신규 입력 가능한 row를 생성.<br/>	
+	- row가 신규 생성되면 수정 모드는 작동하지 않는다.	
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> 
+ - 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1('#addRowBtn').bind('click', function() {		
+	$k1("#tbl_page1").grid('addRowWithoutUpdate');
+	$k1("#tbl_page1").grid('setGridStyle', 'vof_list');
+});
+</pre>	
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/grid_addrowedit.html" target="_blank">예제 Click</a>
+<br/>
+
+<!-- // 34. addRowWithoutUpdate	 -->
+
+<p>&nbsp;</p>
+<a name="1_35" id="1_35"></a>
+<div class="subtitle">
+35. getUpdateColDataByJsonString
+</div>
+<div class="subtitle_sub">$(Grid Id).grid('getUpdateColDataByJsonString');</div>
+
+<div class="content_title">
+<div class="content">
+	- 그리드에서 수정된 컬럼의 값이나 신규 입력된 값을 json형태의 문자열로 만들어 주는 함수.	
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> 
+ - json형식의 string
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1('#tojsonBtn').bind('click', function() {
+	var lastSelRow = $k1("#tbl_page1").grid('getGridParam', 'lastSelRow');
+	if(lastSelRow != 'none'){
+		if($k1("#tbl_page1").grid('getGridParam', 'rowEditable')){
+			$k1("#tbl_page1").grid('setEditRowToGrid', lastSelRow);					
+			if($k1.util.isNull($k1("#tbl_page1").grid('getGridParam', 'updateData'))){
+				$k1("#tbl_page1").grid('setGridParamNoReload', {lastSelRow:'none'});
+				return;
+			}
+		}
+		
+		var jsonStr = $k1("#tbl_page1").grid('getUpdateColDataByJsonString');
+		alert(jsonStr);
+	}
+});
+</pre>	
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/grid_addrowedit.html" target="_blank">예제 Click</a>
+<br/>
+
+<!-- // 35. getUpdateColDataByJsonString	 -->
+
+<p>&nbsp;</p>
+<a name="1_36" id="1_36"></a>
+<div class="subtitle">
+36. setGridParamNoReload
+</div>
+<div class="subtitle_sub">$(Grid Id).grid('setGridParamNoReload', option);</div>
+
+<div class="content_title">
+<div class="content">
+	- 그리드에 속성을 정의.<br/>
+	- 그리드에 전역적으로 사용할 값을 저장하기 위해 사용.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> 
+ - 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - option (속성 옵션 값)
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1('#tojsonBtn').bind('click', function() {
+	var lastSelRow = $k1("#tbl_page1").grid('getGridParam', 'lastSelRow');
+	if(lastSelRow != 'none'){
+		if($k1("#tbl_page1").grid('getGridParam', 'rowEditable')){
+			$k1("#tbl_page1").grid('setEditRowToGrid', lastSelRow);					
+			if($k1.util.isNull($k1("#tbl_page1").grid('getGridParam', 'updateData'))){
+				$k1("#tbl_page1").grid('setGridParamNoReload', {lastSelRow:'none'});
+				return;
+			}
+		}
+		
+		var jsonStr = $k1("#tbl_page1").grid('getUpdateColDataByJsonString');
+		alert(jsonStr);
+	}
+});
+</pre>	
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/grid_addrowedit.html" target="_blank">예제 Click</a>
+<br/>
+
+<!-- // 36. setGridParamNoReload	 -->
+
+<p>&nbsp;</p>
+<a name="1_37" id="1_37"></a>
+<div class="subtitle">
+37. getCellData
+</div>
+<div class="subtitle_sub">$(Grid Id).grid('getCellData', rowid, iCol);</div>
+
+<div class="content_title">
+<div class="content">
+	- 그리드 특정 셀의 값을 구하는 함수.	
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> 
+ - 셀의 값
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - row id(해당 row의 id)<br/>
+ - iCol(해당 컬럼의 index 또는 컬럼명)
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+function gfnGridComplete(){		
+	var rowids = $k1("#tbl_grid").grid('getDataIds');
+	
+	for(var i = 0;i < rowids.length;i++){
+		var lat = $k1("#tbl_grid").grid('getCellData', rowids[i], 'lat');
+		var lng = $k1("#tbl_grid").grid('getCellData', rowids[i], 'lng');
+		var room = $k1("#tbl_grid").grid('getCellData', rowids[i], 'room');
+		var name = $k1("#tbl_grid").grid('getCellData', rowids[i], 'name');
+		var intro = $k1("#tbl_grid").grid('getCellData', rowids[i], 'intro');
+		
+		var markerOption = {
+			markerType : "hotel",
+			id : rowids[i], 
+			lat : lat, 
+			lng : lng, 
+			name : name,
+			intro : intro,
+		    infoImg : "/vof/wfw/imgs/map/htl/hotel_" + rowids[i] + ".jpg",
+			roomCount : room,
+			streetViewFunc : 'openStreetView'
+		};
+			
+		$k1.gmap.addMarker(markerOption);
+	}
+}
+</pre>	
+</div>
+</div>
+<span class="subtitle_sub"> </span>
+<br/>
+
+<!-- // 37. getCellData	 -->
+
+<!-- //Grid Manual End -->
+
+<!-- //Form Manual Start -->
+
+<a name="2_1" id="2_1"></a>
+<br/>
+<div class="title">
+ Ⅱ. Form : jquery.com.form.js
+</div>
+
+<div class="subtitle">
+1. loaddata
+</div>
+<div class="subtitle_sub">$(selector).object('loaddata'url, params, dataOpt)</div>
+
+<div class="content_title">
+<div class="content">
+	- 코드성 정보들을 불러 오는 함수.<br/>
+	- 코드성 정보를 가져와서 보여 주는 주체가 select, radio, checkbox 인 것에 따라서 태그를 만들어 준다.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	url (데이타를 조회하는 url) <br/>
+ - 	params (데이타 조회시 필요한 Parameter ex.param1=value1&amp;param2=value2 ) <br/>
+ -  dataOpt (code, name의 필드 값[, initVal(초기세팅값)] ) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1("#state").object('loaddata', '/air/...', 'param1=value1&amp;param2=value2', {code:'', name:''});	
+$k1("input[name='gubun']").object('loaddata', '/air/...', 'param1=value1&amp;param2=value2', 
+					{code:'', name:'', initVal:['', '']});
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/vof/wfw/html/combo_btms.html" target="_blank">예제 Click</a>	
+<!-- // 1. loaddata	 -->
+
+<p>&nbsp;</p>
+<a name="2_2" id="2_2"></a>
+<div class="subtitle">
+2. ischange
+</div>
+<div class="subtitle_sub">$(selector).forms('ischange', org_data)</div>
+
+<div class="content_title">
+<div class="content">
+	- form 객체들 중에 수정된 데이타가 있는지 여부를 체크하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  수정여부 (수정:true, 수정되지 않음:false)
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - org_data (수정전에 데이타 : String)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var ischange = $k1("#signupForm").forms('ischange', orgData);	
+</pre>
+</div>
+</div>
+
+<!-- // 2. ischange	 -->
+
+<p>&nbsp;</p>
+<a name="2_3" id="2_3"></a>
+<div class="subtitle">
+3. validation
+</div>
+<div class="subtitle_sub">$(selector).forms('validation', sumbit_func, options)</div>
+
+<div class="content_title">
+<div class="content">
+	- 폼 데이타를 submit하기 전에 정의된 Validation을 체크한다.<br/>
+	- 일반 이미지나 버튼을 이용하여 폼 Validation 체크시 사용 <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  폼을 체크하여 validation에 맞지 않으면 메시지를 보여 준다. 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - sumbit_func (폼 데이타를 전송하는 함수)		<br/>
+ - options (validation 체크 옵션 정의)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:300px;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+	//항공요금 조회 버튼 클릭시..						
+	$k1("#img_search").click(function(){			
+		//Form Validation을 사용하여 Form 체크 		
+		var options = getValidationOption();		
+													
+		$k1("#tripForm").forms('validation', form_sumbit, options);
+			
+	});	
+
+	
+// 폼 Validation 체크 함수 호출.		
+	
+function getValidationOption() {		
+	/*								
+	* 폼 체크를 위한 옵션 정의			
+	*/								
+	var checkItems = null;				
+	var validateRules = null;		
+	var msgItems = null;			
+									
+	//국내출발 또는 해외 출발에 따라서 출국 도시 객체가 틀려지기 때문에..
+	var start_city_obj = "cbo_style2_1";						
+	if($k1("#btn_for_str").hasClass("btn btn_blue")) start_city_obj = "txt_style2_1";
+	
+    
+	var adult = isNaN(parseInt($k1.trim($k1("#cbo_adult").val()))) ? 0 : 
+									parseInt($k1.trim($k1("#cbo_adult").val()));	//성인
+	var young = isNaN(parseInt($k1.trim($k1("#cbo_young").val()))) ? 0 : 
+									parseInt($k1.trim($k1("#cbo_young").val()));	//소아
+	var child = isNaN(parseInt($k1.trim($k1("#cbo_child").val()))) ? 0 : 
+									parseInt($k1.trim($k1("#cbo_child").val()));	//유아
+	
+	// 폼 항목 외에 체크해야 하는 로직 추가 방법 
+	//인원을 체크하기 위한 메소드 추가. 
+	$k1.validate.addMethod ("persons", function(value,  element, checkValue){
+    	if(adult+young+child==0) 	return false;							
+    	else return true;													
+	}, "인원은 1명 이상이어야 합니다.");										
+	
+	//인원을 체크하기 위한 메소드 추가.						 
+    $k1.validate.addMethod("chkChild", function(value,  element, checkValue) {	
+    	if(child!=0){								
+    		if(adult < child){						
+    			return false;							
+    		}										
+    		return true;							
+    	}	
+    	return true;			
+    	
+    }, "유아는 성인 인원이 같거나 적어야 합니다.");		
+    	
+	//왕복 선택시...	
+	if($k1("input:radio[name='rdo_interval']:checked").val()==1){	
+		
+		checkItems = [start_city_obj, "txt_style2_2", "txt_homecoming", "txt_style3_1"];	
+		validateRules = [						
+						{required: true}, 		
+						{required: true}, 		
+						{required: true},  		
+						{required: (!($k1("#chk_style3_1").is(":checked")))? true:false}	
+						];				
+		msgItems = [			
+					{required: "출국도시명을 입력해 주세요."},		 
+					{required: "출국일을 입력해 주세요."}, 			
+					{required: "귀국도시명을 입력해 주세요."}, 	
+					{required: "귀국일을 입력해 주세요."}			
+				];				
+	}		
+	// 편도 		
+	if($k1("input:radio[name='rdo_interval']:checked").val()==2){	
+		
+		
+	}
+	//출귀국 다른 여정	
+	if($k1("input:radio[name='rdo_interval']:checked").val()==3){		
+		
+	}
+	
+	//인원을 체크하기 위한 메소드를 Validation 체크하기 위해서 배열에 추가한다.	  
+	checkItems.push("cbo_adult", "cbo_child");				
+	validateRules.push({persons : true}, {chkChild : true});		
+		
+	return new Array(checkItems, validateRules, msgItems);
+}
+
+// 폼 submit 할 때 함수. 
+
+function form_sumbit(f) {
+	alert('submit...');
+	
+	//$.ajax 을 이용하여 저장.
+	//$k1("#airIntForm").forms('ajaxsubmit', '폼 처리 action', null, callback);
+}
+
+/*	validateRules에 추가 가능한 옵션
+required : bool
+minlength : length
+maxlength : length
+rangelength : [minlength, maxlength]
+min : minValue
+max : maxValue
+range : [minValue, maxValue]
+email : bool
+url : bool
+date : bool
+dateISO : bool
+number : bool
+digits : bool
+creditcard : bool
+equalTo : http://docs.jquery.com/Plugins/Validation/Methods/equalTo#source 참조
+*/
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/AIR/INT/TRP/AIRINTTRP0100100010.html" target="_blank">예제 Click</a>
+
+<!-- // 3. validation	 -->
+
+<p>&nbsp;</p>
+<a name="2_4" id="2_4"></a>
+<div class="subtitle">
+4. validCheck
+</div>
+<div class="subtitle_sub">$(selector).forms('validCheck', sumbit_func, options);</div>
+
+<div class="content_title">
+<div class="content">
+	- 폼 데이타를 submit하기 전에 정의된 Validation을 체크한다. <br/>
+	- input type='submit' 또는 input type='image' 버튼 을 이용하여 폼 Validation 체크시 사용 <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  폼을 체크하여 validation에 맞지 않으면 메시지를 보여 준다. 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - sumbit_func (폼 데이타를 전송하는 함수)	<br/>
+ - options (validation 체크 옵션 정의)			<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//항공요금 조회 버튼 클릭시..						
+$k1("#img_search").click(function(){			
+	//Form Validation을 사용하여 Form 체크 		
+	var options = getValidationOption();		
+												
+	$k1("#tripForm").forms('validCheck', form_sumbit, options);
+		
+});	
+
+//이하 부분 처리는  validation 와 동일함.
+</pre>	
+</div>
+</div>
+
+<!-- // 4. validCheck	 -->
+
+
+<p>&nbsp;</p>
+<a name="2_5" id="2_5"></a>
+<div class="subtitle">
+5. ajaxsubmit
+</div>
+<div class="subtitle_sub">$(selector).forms('ajaxsubmit', url, type, success_func, dataType, data)</div>
+
+<div class="content_title">
+<div class="content">
+	- form submit을 ajax 방식으로 전송하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  성공 : success_func 메소드 실행, 에러 : 에러 메시지. 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - url (form 전송 주소)	<br/>
+ - type (form 전송 방식 : get/post)		<br/>
+ - success_func (form 전송이 성공했을 때 실행하는 함수) <br />
+ - dataType (form 전송시 데이타 방식)			<br/>
+ - data (form 전송시 파라미터 데이타)			<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//$.ajax 을 이용하여 저장.		
+$k1("#signupForm").forms('ajaxsubmit', '../jsp/form_submit.jsp', 'post', callback, 'text', 
+						'param1=value1&amp;param2=value2');	
+</pre>		
+</div>
+</div>
+
+<!-- // 5. ajaxsubmit	 -->
+
+<p>&nbsp;</p>
+<a name="2_6" id="2_6"></a>
+<div class="subtitle">
+6. getsubmit
+</div>
+<div class="subtitle_sub">$(selector).forms('getsubmit', url, success_func, data)</div>
+
+<div class="content_title">
+<div class="content">
+	- form submit을 get 방식으로 전송하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  성공 : success_func 메소드 실행
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - url (form 전송 주소)	<br/>
+ - success_func (form 전송이 성공했을 때 실행하는 함수)		<br/>
+ - data (form 전송시 파라미터 데이타)	 <br />
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//$.get 을 이용하여 저장.			
+$k1("#signupForm").forms('getsubmit', '../jsp/form_submit.jsp', callback, 
+								'param1=value1&amp;param2=value2');		
+</pre>		
+</div>
+</div>
+
+<!-- // 6. getsubmit	 -->
+
+<p>&nbsp;</p>
+<a name="2_7" id="2_7"></a>
+<div class="subtitle">
+7. postsubmit
+</div>
+<div class="subtitle_sub">$(selector).forms('postsubmit', url, success_func, data)</div>
+
+<div class="content_title">
+<div class="content">
+	- form submit을 post 방식으로 전송하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  성공 : success_func 메소드 실행
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - url (form 전송 주소)	<br/>
+ - success_func (form 전송이 성공했을 때 실행하는 함수)		<br/>
+ - data (form 전송시 파라미터 데이타)	 <br />
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//$.post 을 이용하여 저장.		
+$k1("#signupForm").forms('postsubmit', '../jsp/form_submit.jsp', callback, 
+								'param1=value1&amp;param2=value2');
+</pre>		
+</div>
+</div>
+
+<!-- // 7. postsubmit	 -->
+
+<p>&nbsp;</p>
+<a name="2_8" id="2_8"></a>
+<div class="subtitle">
+8. makeRule
+</div>
+<div class="subtitle_sub">$.validate.makeRule(items, rules, size, flag);</div>
+
+<div class="content_title">
+<div class="content">
+	- validate 체크를 위한 Rule을 추가한다. <br/>
+	- 이 함수는 validation 체크 내부 로직에서 사요하는 함수를 재정의한 것이다. <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  성공 : success_func 메소드 실행
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - items (validation 체크를 할 항목)			<br/>
+ - rules (valiation 체크 항목에 대한 규칙 )		<br/>
+ - size (임의로 무조건 1)	 <br />
+ - flag (rule add : true, rulue remove : false) <br />
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+if (!$.util.isNull(options)) {		
+	var checkItems = options[0];		
+	var validateRules = options[1];		
+	var msgItems = options[2];			
+		
+	for ( var i = 0; i < validateRules.length; i++) {	
+		validateRules[i]['messages'] = msgItems[i];		
+	}	
+	$.validate.makeRule(checkItems, validateRules, 1, true);	
+}	
+</pre>	
+</div>
+</div>
+
+<!-- // 8. makeRule	 -->
+
+<p>&nbsp;</p>
+<a name="2_9" id="2_9"></a>
+<div class="subtitle">
+9. addMethod
+</div>
+<div class="subtitle_sub">$.validate.addMethod(methodName, func, msg)</div>
+
+<div class="content_title">
+<div class="content">
+	- validation 체크시 사용자가 정의한 함수를 이용하여  <br/>
+	  체크하기 위한 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - methodName (메소드 이름)					<br/>
+ - func (사용자 정의 함수 )		<br/>
+ - msg (validation 체크시 맞지 않으면 보여주는 메시지 정의)	<br />
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+// 폼 항목 외에 체크해야 하는 로직 추가 방법 			
+//인원을 체크하기 위한 메소드 추가. 				
+$k1.validate.addMethod ("persons", function(value,  element, checkValue){		
+   	if(adult+young+child==0) 	return false;	
+   	else return true;						
+}, "인원은 1명 이상이어야 합니다.");			
+		
+//인원을 체크하기 위한 메소드 추가.				 
+   $k1.validate.addMethod("chkChild", function(value,  element, checkValue) {	
+   	if(child!=0){							
+   		if(adult < child){					
+   			return false;					
+   		}									
+   		return true;						
+   	}					
+   	return true;		
+   		
+   }, "유아는 성인 인원이 같거나 적어야 합니다.");		
+</pre>   
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/validate.html" target="_blank">예제 Click</a>
+
+<!-- // 9. addMethod	 -->
+
+<p>&nbsp;</p>
+<a name="2_10" id="2_10"></a>
+<div class="subtitle">
+10. tagName
+</div>
+<div class="subtitle_sub">$(selector).tagName()</div>
+
+<div class="content_title">
+<div class="content">
+	- html 태그 이름을 얻는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  태그 이름 (ex. select 태그 : select return)
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+if($("#state").tagName() == 'select') {	
+	//태그 이름이 select이면 처리 로직			
+}
+</pre>		
+</div>
+</div>
+
+<!-- // 10. tagName	 -->
+
+<p>&nbsp;</p>
+<a name="2_11" id="2_11"></a>
+<div class="subtitle">
+11. selectajax
+</div>
+<div class="subtitle_sub">$.selectajax(url, type, success_func, dataType, data)</div>
+
+<div class="content_title">
+<div class="content">
+	- 폼을 이용하지 않고 바로 조회 가능한 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - url (form 전송 주소)	<br/>
+ - type (form 전송 방식 : get/post)	<br/>
+ - success_func (form 전송이 성공했을 때 실행하는 함수)	<br/>
+ - dataType (form 전송시 데이타 방식)	<br/>
+ - data (form 전송시 파라미터 데이타)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//Form 을 이용하지 않고 바로 조회시 함수. 	
+$k1.selectajax('../jsp/form_submit.jsp', "POST", fn_selectdata, "xml", "mode=select");	
+</pre>
+</div>
+</div>
+
+<!-- // 11. selectajax	 -->
+
+<!-- //Form Manual End -->
+
+<!-- //Table Manual Start -->
+
+<a name="3_1" id="3_1"></a>
+<br/>
+<div class="title">
+ Ⅲ. Table : jquery.com.table.js
+</div>
+
+<div class="subtitle">
+1. colmove
+</div>
+<div class="subtitle_sub">$(selector).table('colmove', levt, revt, cntOpt)</div>
+
+<div class="content_title">
+<div class="content">
+	- 좌우 버튼을 클릭하여 테이블의 숨겨진 칼럼을 보여 주는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - levt (칼럼을 왼쪽으로 이동하는 버튼 아이디)	<br/>
+ - revt (칼럼을오른쪽으로 이동하는 버튼 아이디)	<br/>
+ - cntOpt (테이블 칼럼 이동시 필요한 옵션 [앞 고정갯수, 앞뒤보여지는 칼럼 갯수, 뒤 고정갯수])	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//테이블 좌/우 이동 버튼 클릭시	
+var cntOpt = [3,5,1];		//앞 고정갯수, 앞뒤보여지는 갯수, 뒤 고정갯수.
+$k1('.min_price_list').table('colmove', '#btn_prev','#btn_next', cntOpt);
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/vof/wfw/html/table_colmove.html" target="_blank">예제 Click</a>
+<br/>
+
+<!-- // 1. colmove	 -->
+
+<!-- //Table Manual End -->
+
+<!-- //Tab Manual Start -->
+
+<a name="4_1" id="4_1"></a>
+<br/>
+<div class="title">
+ Ⅳ. Tab : jquery.com.tab.js
+</div>
+
+<div class="subtitle">
+1. init
+</div>
+<div class="subtitle_sub">$(selector).tab('init', options)</div>
+
+<div class="content_title">
+<div class="content">
+	- tab의 초기 옵션을 정의한다.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - options (tab 관련 옵션)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//탭 초기 설정		
+$k1('#container-1').tab({selected: 3, fx: { opacity: 'toggle', duration: 'fast' }});
+</pre>
+</div>
+</div>
+
+<!-- // 1. init	 -->
+
+<p>&nbsp;</p>
+<a name="4_2" id="4_2"></a>
+<div class="subtitle">
+2. setIndex
+</div>
+<div class="subtitle_sub">$(selector).tab('setIndex', index)</div>
+
+<div class="content_title">
+<div class="content">
+	- tab 중에서 선택되어진 탭을 설정하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - index (탭 인덱스)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//Tab Index 선택		
+$k1('#container-1').tab('setIndex', 10);	
+</pre>
+</div>
+</div>
+
+<!-- // 2. setIndex	 -->
+
+<p>&nbsp;</p>
+<a name="4_3" id="4_3"></a>
+<div class="subtitle">
+3. getIndex
+</div>
+<div class="subtitle_sub">$(selector).tab('getIndex')</div>
+
+<div class="content_title">
+<div class="content">
+	- 선택된 탭 인덱스를 얻는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 선택된 탭 인덱스 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//선택된 탭 Index 얻기		
+var selectedIndex = $k1('#container-1').tab('getIndex');		
+</pre>
+</div>
+</div>
+
+<!-- // 3. getIndex	 -->
+
+<p>&nbsp;</p>
+<a name="4_4" id="4_4"></a>
+<div class="subtitle">
+4. setEnable
+</div>
+<div class="subtitle_sub">$(selector).tab('setEnable', index)</div>
+
+<div class="content_title">
+<div class="content">
+	- disabled 된 인덱스를 enabled 로 활성화 하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - index (disabled 된 인덱스)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//Tab Index Enable 설정		
+$k1('#container-1').tab('setEnable', 5);		
+</pre>
+</div>
+</div>
+
+<!-- // 4. setEnable	 -->
+
+<p>&nbsp;</p>
+<a name="4_5" id="4_5"></a>
+<div class="subtitle">
+5. setDisable
+</div>
+<div class="subtitle_sub">$(selector).tab('setDisable', index)</div>
+
+<div class="content_title">
+<div class="content">
+	- 해당 인덱스를 disabled 비활성화 하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - index (disabled 할 인덱스)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//특정 Tab Index Disable 설정		
+$k1('#container-1').tab('setDisable', 5);		
+</pre>
+</div>
+</div>
+
+<!-- // 5. setDisable	 -->
+
+<p>&nbsp;</p>
+<a name="4_6" id="4_6"></a>
+<div class="subtitle">
+6. addNew
+</div>
+<div class="subtitle_sub">$(selector).tab('addNew', id,  title, index)</div>
+
+<div class="content_title">
+<div class="content">
+	- tab을 추가하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - id (추가할 탭 아이디)		<br/>
+ - title (추가할 탭 제목)		<br/>
+ - index (추가할 탭의 index, 이값이 없으면 제일 마지막에 추가됨)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//Tab 추가		
+$k1('#container-1').tab('addNew', 'test', '테스트');		
+</pre>
+</div>
+</div>
+
+<!-- // 6. addNew	 -->
+
+<p>&nbsp;</p>
+<a name="4_7" id="4_7"></a>
+<div class="subtitle">
+7. remove
+</div>
+<div class="subtitle_sub">$(selector).tab('remove', index)</div>
+
+<div class="content_title">
+<div class="content">
+	- 해당 인덱스 탭을 삭제한다.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - index (삭제할 탭 index)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//Tab 삭제		
+$k1('#container-1').tab('remove', 2);
+</pre>
+</div>
+</div>
+
+<!-- // 7. remove	 -->
+
+<p>&nbsp;</p>
+<a name="4_8" id="4_8"></a>
+<div class="subtitle">
+8. tabselect
+</div>
+<div class="subtitle_sub">$(selector).tab('tabselect', func)</div>
+
+<div class="content_title">
+<div class="content">
+	- 탭이 선택되었을 경우 이벤트 처리.<br/>
+	- *==== Tab 이벤트명 : 발생 시기 ====<br/>
+	- tabsselect: 탭이 선택됐을 때<br/>
+	- tabsload: 원격탭이 로드 됐을때<br/>
+	- tabsshow: 탭이 나타날 때<br/>
+	- tabsadd: 탭이 인터페이스에 이미 추가됐을 때<br/>
+	- tabsremove: 탭이 인터페이스에서 이미 제거됐을 때<br/>
+	- tabsdisable: 탭이 이미 작동 불능 상태일 때<br/>
+	- tabsenable: 탭이 이미 작동 가능 상태일 때<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - func (탭이 선택되었을 때 실행하는 함수)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//Tab Event			
+//탭이 선택되었을 때 콜백 함수 지정.	
+$k1("#container-1").tab('tabselect', fn_tabselect);		
+		
+//탭이 선택되었을  때 처리하는 함수. 	
+var fn_tabselect = function(e, tab){	
+    alert(tab.index + "번째 탭이 선택 되었다.");	
+}	
+</pre>
+</div>
+</div>
+
+<!-- // 8. tabselect	 -->
+
+<!-- //Tab Manual End -->
+
+<!-- //Xsl Manual Start -->
+
+<a name="5_1" id="5_1"></a>
+<br/>
+<div class="title">
+ Ⅴ. Xsl : jquery.com.toxslt.js
+</div>
+
+<div class="subtitle">
+1. init
+</div>
+<div class="subtitle_sub">$(selector).toxslt(xml, xsl, param, sucess_func)</div>
+
+<div class="content_title">
+<div class="content">
+	- xml와 xsl을 transform하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - xml (xml 주소)		<br/>
+ - xsl (xsl 주소)		<br/>
+ - param (파라미터 String)		<br/>
+ - sucess_func (transform 한 후의 실행 메소드)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var xml = '/air/xml/AIRAAASCH010010001.xml';	
+var xsl = '/air/xsl/AIRAAASCH010010001.xsl';	
+var param = { airPath: '/air'};					
+$k1("#k1_air_select").toxslt(xml, xsl, param, gfnInit);	
+</pre>
+</div>
+</div>
+
+<!-- // 1. init	 -->
+
+<p>&nbsp;</p>
+<a name="5_2" id="5_2"></a>
+<div class="subtitle">
+2. xmlstring
+</div>
+<div class="subtitle_sub">$(selector).toxslt('xmlstring', xmlstr, xslurl, param, sucess_func)</div>
+
+<div class="content_title">
+<div class="content">
+	- xml String과 xsl URL을 가지고 transform하는 함수<br/>
+	- 한개의 xml을 가지고 여러 개의 xsl을 transform 할 수 있다. <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - xmlstr (xml String)	<br/>
+ - xslurl (xsl 주소)		<br/>
+ - param (파라미터 String)	<br/>
+ - sucess_func (transform 한 후의 실행 메소드)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//먼저 xml를 ajax 통해서 text 형태로 변환.
+$k1(document).ready(function() {
+	var xml = '/air/xml/front_b2c/B2C1020004.xml';
+
+	$k1.selectajax(xml, 'POST', gfnFunc, 'text', 'param1=value1');
+});
+
+//xml text 데이타를 가지고 transform 한다. 
+function gfnFunc(data) {
+	var xmlStr = data;
+	var xsl = '/air/xsl/front_b2c/B2C1020004.xsl';
+	var param = { section: 'somevalue', qsVariableName : 'true', comp : 'kb' };
+	
+	$k1("#tableDiv").toxslt('xmlstring', xmlStr, xsl, param, gfnInit);
+}
+</pre>
+</div>
+</div>
+
+<!-- // 2. xmlstring	 -->
+
+<p>&nbsp;</p>
+<a name="5_3" id="5_3"></a>
+<div class="subtitle">
+3. fromtext
+</div>
+<div class="subtitle_sub">$(selector).toxslt('fromtext', xmlstr, xslstr, param, sucess_func)</div>
+
+<div class="content_title">
+<div class="content">
+	- xml text 과 xsl text 를  가지고 transform하는 함수<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - xmlstr (xml String)	<br/>
+ - xslstr (xsl String)	<br/>
+ - param (파라미터 String)	<br/>
+ - sucess_func (transform 한 후의 실행 메소드)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var xmlstr = null;
+var xslstr = null;
+   
+//먼저 xml를 ajax 통해서 text 형태로 변환.
+$k1(document).ready(function() {
+	var xml = '/wtopas/xml/front_b2c/B2C1020004.xml';
+	
+	$k1.selectajax(xml, 'POST', gfnXml, 'text', 'param1=value1');
+});
+
+//xsl를 ajax 통해서 text 형태로 변환.
+function gfnXml (data) {
+	xmlstr = data;
+	var xsl = '/wtopas/xsl/front_b2c/B2C1020004.xsl';
+	
+	$k1.selectajax(xsl, 'POST', gfnXsl, 'text', 'param1=value1');
+}
+
+//xml text 와 xsl text 데이타를 가지고 transform 한다. 
+function gfnXsl (data) {
+	xslstr = data;
+	
+	var param = { section: 'somevalue', qsVariableName : 'true', comp : 'kb' };
+	
+	$k1("#tableDiv").toxslt('fromtext', xmlstr, xslstr, param, gfnInit);
+}
+</pre>
+</div>
+</div>
+
+<!-- // 3. fromtext	 -->
+
+<p>&nbsp;</p>
+<a name="5_4" id="5_4"></a>
+<div class="subtitle">
+4. xslstring
+</div>
+<div class="subtitle_sub">$(selector).toxslt('xslstring', xmlurl, xslstr, param, sucess_func)</div>
+
+<div class="content_title">
+<div class="content">
+	- xml URL 과 xsl String을 가지고 transform하는 함수<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - xmlurl (xml 주소)		<br/>
+ - xslstr (xsl String)	<br/>
+ - param (파라미터 String)	<br/>
+ - sucess_func (transform 한 후의 실행 메소드)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//먼저 xsl를 ajax 통해서 text 형태로 변환.
+$k1(document).ready(function() {
+	var xsl = '/wtopas/xsl/front_b2c/B2C1020004.xsl';
+
+	$k1.selectajax(xsl, 'POST', gfnFunc, 'text', 'param1=value1');
+});
+
+//xsl text 데이타를 가지고 transform 한다. 
+function gfnFunc(data) {
+	var xslStr = data;
+	var xml = '/wtopas/xml/front_b2c/B2C1020004.xml';
+	var param = { section: 'somevalue', qsVariableName : 'true', comp : 'kb' };
+	
+	$k1("#tableDiv").toxslt('xslstring', xml, xslStr, param, gfnInit);
+}
+</pre>
+</div>
+</div>
+
+<!-- // 4. xslstring	 -->
+
+<!-- //Xsl Manual End -->
+
+<!-- //Date Manual Start -->
+
+<a name="6_1" id="6_1"></a>
+<br/>
+<div class="title">
+ Ⅵ. Date : jquery.com.datepicker.js
+</div>
+
+<div class="subtitle">
+1. calendar
+</div>
+<div class="subtitle_sub">$(selector).calendar(json)</div>
+
+<div class="content_title">
+<div class="content">
+	- 기본달력을 생성하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - {siteType : 사이트명 (b2b, b2c)}<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1("#txt_style2_2").calendar({siteType:"b2c"});
+
+
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="defaultDatepicker.html" target="_blank">예제 Click</a>	//19 line
+<br/>
+
+<!-- // 1. calendar	 -->
+
+<a name="6_2" id="6_2"></a>
+<br/>
+
+<div class="subtitle">
+2. usecal
+</div>
+<div class="subtitle_sub">$(selector).usecal(json, json)</div>
+
+<div class="content_title">
+<div class="content">
+	- 사용자 정의 달력 생성 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - {nummons : 달력 갯수 (default:3)<br/>
+select : 년, 월 selectBox선택여부[년, 월](default:false, false)<br/>
+mindate : 현재 날짜 이전 선택 금지 (-1:이전 날짜, +0:현재날짜, +1:다음 날짜)<br/> 
+maxdate : 지정한 날짜 이후 선택 금지 (-1:이전 날짜, +0:현재날짜, +1:다음 날짜)<br/>
+onselect : 날짜 선택 후 실행되는 펑션명<br/>
+deteformat : 날짜형식 (default:yy-mm-dd)}<br/>
+ - {siteType : 사이트명 (b2b, b2c)<br/>
+width : 달력 넓이(최소 510이상)<br/>
+height : 달력 높이(최소 185이상)}
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1("#txt_style3_1").usecal({nummons:3, mindate:+0});
+$k1("#txt_style3_1").usecal({nummons:3, mindate:+0}, {siteType:"b2b", width:"700", height:"200"});
+
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/AIR/INT/QTT/AIRINTQTT1111100010.html" target="_blank">예제 Click</a>	//153~165 line
+<br/>
+
+<!-- // 2. usecal	 -->
+
+<a name="6_3" id="6_3"></a>
+<br/>
+
+<div class="subtitle">
+3. validcal
+</div>
+<div class="subtitle_sub">$(selector).validcal(json, json)</div>
+
+<div class="content_title">
+<div class="content">
+	- 사용자 설정 달력 + validation 체크 함수(시작일, 종료일 날짜선택 자동 제어)<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - { toid : 종료달력 id <br/>
+nummons : 달력 갯수 (default:3)<br/> 
+select : 년, 월 selectBox선택여부[년, 월](default:false,false)<br/> 
+mindate : 현재 날짜 이전 선택 금지 (-1:이전 날짜, +0:현재날짜, +1:다음 날짜)<br/> 
+maxdate : 지정한 날짜 이후 선택 금지 (-1:이전 날짜, +0:현재날짜, +1:다음 날짜)<br/>
+onselect : 날짜 선택 후 실행되는 펑션명<br/>
+deteformat : 날짜형식 (default:yy-mm-dd) }<br/>
+ - {siteType : 사이트명 (b2b, b2c)<br/>
+width : 달력 넓이(최소 510이상)<br/>
+height : 달력 높이(최소 185이상)}
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1("#txt_style2_2").validcal({toid:"txt_style3_1", nummons:3, mindate:+0});
+$k1("#txt_style2_2").validcal({toid:"txt_style3_1", nummons:3, mindate:+0}, {siteType:"b2b", width:"700", height:"200"});
+
+
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/AIR/INT/QTT/AIRINTQTT0100100050.html" target="_blank">예제 Click</a>	//65 line
+<br/>
+
+<!-- // 3. validcal	 -->
+
+<a name="6_4" id="6_4"></a>
+<br/>
+
+<div class="subtitle">
+4. 팝업형태
+</div>
+<div class="subtitle_sub">-</div>
+
+<div class="content_title">
+<div class="content">
+	- layer 팝업으로 시작일 종료일을 선택 후 선택된 값을 받는다.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 선택 날짜
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+	<a href="datepicker.html" target="_blank">예제 Click</a>																								
+</div>
+</div>
+
+<!-- // 3. validcal	 -->
+
+<!-- //Date Manual End -->
+
+<!-- //Chart Manual Start -->
+
+<a name="7_1" id="7_1"></a>
+<br/>
+<div class="title">
+ Ⅴ. chart : jquery.com.jqplot.js
+</div>
+
+<div class="subtitle">
+1. ajaxchart
+</div>
+<div class="subtitle_sub">$k1(selector).ajaxchart(json, json)</div>
+
+<div class="content_title">
+<div class="content">
+	- line, bar, pie, 가로bar, 다중line, 다중bar, 다중가로bar, line-bar chart를 생성하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - {url : "xml파일경로"}<br/>
+ - {charttype:차트 종류 (lineOne, barOne, wbarOne, line, bar, wbar, pie, lineBar)<br/>
+	pointLabel:차트에 값 표시여부 (default:false)<br/>
+		 unit:[콤마여부(default:false), '단위'] <br/>
+		 legendShow : [범례 사용여부(default:false)]<br/>
+		 lePosition:범례 위치 (inside:그래프 안쪽, outside : 그래프 밖, default : outside)<br/>
+		 legendAlign:범례 방향 (nw, n, ne, e, se, s, sw, w)<br/>
+		 legendRow : 범례 line(pie chart 전용)<br/>
+		 color : 색상 변경['#ffffff', '#dddddd', ...]<br/>
+		 title : ["상단제목", "하단제목"] ※파이차트는 상단제목만 적용됨.<br/>
+		 unit2:[콤마여부(default:false), '단위'] (line-bar 차트 전용)<br/>
+		 unit3:[콤마여부(default:false), '단위'] (line-bar 차트 전용)<br/>
+		 highlighter : 데이터 포인트에 마우스 오버시 값 표시여부(line 차트 전용)<br/>
+	}<br/>
+ - line-bar chart 주의사항<br/>
+     : 테이블 width가 지나치게 넓으면 안 됨<br/>
+     : XML data중 ticks, graph는 integer형으로 가져와야 함
+</div>
+</div>
+
+<div class="subtitle_sub">Example_1 (ajax방식)</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//line chart
+$("#chart1").ajaxchart({url:"jqplotDataXML/testdata4.xml"}, {charttype:"lineOne"});
+
+//bar chart
+$("#chart2").ajaxchart({url:"jqplotDataXML/testdata4.xml"}, {charttype:"barOne"});
+    
+//가로바 chart
+$("#chart3").ajaxchart({url:"jqplotDataXML/testdata2.xml"}, 
+{charttype:"wbarOne", pointLabel:true, unit:[true, "원"]});
+  	
+//다중 line chart
+$("#chart4").ajaxchart({url:"jqplotDataXML/testdata.xml"}, 
+{charttype:"line", unit:[true, "건"], lePosition:"inside", legendShow:true, highlighter:true});
+    
+//다중 bar chart
+$("#chart5").ajaxchart({url:"jqplotDataXML/testdata.xml"}, 
+{charttype:"bar", pointLabel:true, legendShow:true});
+    
+//다중 가로바 chart
+$("#chart6").ajaxchart({url:"jqplotDataXML/testdata.xml"}, 
+{charttype:"wbar", pointLabel:true, unit:[true, "원"], legendShow:true});
+  
+//pie chart
+$("#chart7").ajaxchart({url:"jqplotDataXML/testdata2.xml"}, {charttype:"pie"});
+
+//pie chart
+$("#chart8").ajaxchart({url:"jqplotDataXML/testdata2.xml"}, 
+{charttype:"pie", legendAlign:'s', legendRow:1, lePosition:'inside', 
+color:['#85802b', '#003194', '#73C774', '#C7754C']});
+
+//line-bar chart
+$("#chart9").ajaxchart({url:"jqplotDataXML/testdata3.xml"}, 
+{charttype:"lineBar", unit:[true, "건"], unit2:[true, "원"], unit3:[false, "년"], legendShow:true, 
+lePosition:"inside", pointLabel:true, highlighter:true});
+
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="jqplot.html" target="_blank">예제 Click</a>	//36~59 line
+<br/>
+
+
+<div class="subtitle_sub">Example_2 (arr 방식)</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//line chart
+$("#chart1").barchart({chartdata:[[['대한항공', 1000], ['아시아나', 2000], ['진에어', 500], 
+					['제주항공', 1500]]], charttype:'lineOne'});
+
+//bar chart
+$("#chart2").barchart({chartdata:[[['대한항공', 1000], ['아시아나', 2000], ['진에어', 500], 
+					['제주항공', 1500]]], charttype:'barOne'});
+
+//가로바 chart
+$("#chart3").wbarchart({chartdata:[[[1000, '대한항공'], [2000, '아시아나'], [500, '진에어'], 
+					[1500, '제주항공']]], charttype:'wbarOne'});
+
+//다중 line chart
+$("#chart4").barchart({chartdata:[[500, 1500, 650, 2500], [320, 690, 850, 100], [369, 514, 1200, 854], 
+					[3549, 1880, 2895, 1685]], ticks:['1월', '2월', '3월', '6월'], 
+					legend:['대한항공', '아시아나', '진에어', '제주항공'], 
+					legendShow:true, charttype:'line'});
+
+//다중 bar chart
+$("#chart5").barchart({chartdata:[[500, 1500, 650, 2500], [320, 690, 850, 100], [369, 514, 1200, 854], 
+					[3549, 1880, 2895, 1685]], ticks:['1월', '2월', '3월', '6월'], 
+					legend:['대한항공', '아시아나', '진에어', '제주항공'], 
+					legendShow:true, charttype:'bar'});
+
+//다중 가로바 chart
+$("#chart6").wbarchart({chartdata:[[[500, '1월'], [1500, '2월'], [650, '3월'], [2500, '4월']], 
+					[[320, '1월'], [690, '2월'], [850, '3월'], [100, '4월']], [[369, '1월'], 
+					[514, '2월'], [1200, '3월'], [854, '4월']], [[3549, '1월'], [1880, '2월'], 
+					[2895, '3월'], [1685, '4월']]], legend:['대한항공', '아시아나', '진에어', '제주항공'], 
+					legendShow:true, charttype:'wbar'});
+
+//pie chart
+$("#chart7").piechart([['대한항공', '아시아나', '진에어', '제주항공'], [1000, 2000, 500, 1500]], 
+					{charttype:'pie'});
+$("#chart8").piechart([['대한항공', '아시아나', '진에어', '제주항공'], [1000, 2000, 500, 1500]], 
+					{charttype:"pie", legendAlign:'s', legendRow:1, lePosition:'inside', 
+					color:['#85802b', '#003194', '#73C774', '#C7754C'], title:["하나", "둘"]});
+
+//line-bar chart
+var s1 = [[2003, 1500], [2004, 3000], [2005, 2500], [2006, 2657], [2007, 2761], [2008, 3231], 
+		  [2009, 1564], [2010, 4411], [2011, 2865]];
+var s2 = [[2003, 500], [2004, 2000], [2005, 800], [2006, 957], [2007, 1761], [2008, 2231], 
+		  [2009, 564], [2010, 3411], [2011, 1865], [2012, 1247]];
+$("#chart9").lineBarchart({chartdata:s1, chartdata2:s2, legend:['매출', '건'], 
+					legendShow:true, charttype:'lineBar'});
+					
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="jqplot.html" target="_blank">예제 Click</a>	//63~80 line
+<br/>
+
+
+<!-- // 1. ajaxchart	 -->
+
+<!-- //Chart Manual End -->
+
+<!-- //Uitab Manual Start -->
+
+<a name="8_1" id="8_1"></a>
+<br/>
+<div class="title">
+ Ⅷ. Uitab : jquery.com.uitab.js
+</div>
+
+<div class="subtitle">
+1. init
+</div>
+<div class="subtitle_sub">$(selector).uitab(options, atagYN)</div>
+
+<div class="content_title">
+<div class="content">
+	- Tab를 초기 구성한다. <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - options (탭을 구성하는 옵션, 초기 selected 인덱스 또는 선택되었을 때 메소드  등을 선언한다.)<br/>
+ - ex. {selected: 0, tabselect:gfnTabSelect}<br/>
+ - atagYN (li 태그 안에 a 태그가 존재하는지 여부 ) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//Tab 기능 선언..			
+$k1('#k1_content').uitab({selected: 0, tabselect:gfnTabSelect}, 'N');	
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/vof/AIR/RSV/GPG/AIRINTQTT0100010020_MDI.html" target="_blank">예제 Click</a>
+<br/><br/>
+
+
+<!-- // 1. init	 -->
+
+<a name="8_2" id="8_2"></a>
+<div class="subtitle">
+2.  selected
+</div>
+<div class="subtitle_sub">$(selector).uitab('selected', sIdx, htmlarr)</div>
+
+<div class="content_title">
+<div class="content">
+	- 탭 중에서 어떤 탭을 선택할지 정하는 메소드  .<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - sIdx (선택하고자 하는 탭의 인덱스)	<br/>
+ - htmlarr (활성화된 탭 또는 비활성화된 탭의 html 태그를 넘긴다. ) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+if (selectedIndex == (lis.length - 1)) {				
+	$(this).uitab('selected', selectedIndex - 1, {
+		act : actHtml
+	});
+} else {
+	$(this).uitab('selected', selectedIndex, {
+		act : actHtml
+	});
+}
+</pre>	
+</div>
+</div>
+
+<!-- // 2. selected	 -->
+
+<a name="8_3" id="8_3"></a>
+<div class="subtitle">
+3.  tabselect
+</div>
+<div class="subtitle_sub">$(selector).uitab('tabselect', func)</div>
+
+<div class="content_title">
+<div class="content">
+	- 탭을 선택했을 때 실행하는 함수를 정한다.<br/>
+	- 만약에 사용자가 따로 정의하지 않으면 기본적인 메소드가 실행된다. <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - func (탭 클릭시 실행되는 메소드 이름)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1('#k1_content').uitab('tabselect', gfnTabSelect);		
+</pre>
+</div>
+</div>
+
+<!-- // 3. tabselect	 -->
+
+<a name="8_4" id="8_4"></a>
+<div class="subtitle">
+4.  getIndex
+</div>
+<div class="subtitle_sub">$(selector).uitab('getIndex')</div>
+
+<div class="content_title">
+<div class="content">
+	- 선택된 탭의 인덱스를 구하는 메소드.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  선택된 탭 인덱스 
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var selectedIndex = $('#k1_content').uitab('getIndex');		
+</pre>
+</div>
+</div>
+
+<!-- // 4. getIndex	 -->
+
+<a name="8_5" id="8_5"></a>
+<div class="subtitle">
+5.  getIndexArray
+</div>
+<div class="subtitle_sub">$(selector).uitab('getIndexArray', type, delIndex)</div>
+
+<div class="content_title">
+<div class="content">
+	- 보여지는 탭의 배열 또는 보여지지 않는 탭의 배열을 구하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  해당 type에 따른 탭 인덱스 배열
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - type (보여지는 또는 보여지지 않는 type ex.block/none) <br/>
+ - delIndex (삭제된 탭 인덱스. 삭제된 탭 인덱스를 배열에 포함시키지 않는다. ) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var showlis = $k1('#k1_content').uitab('getIndexArray', 'block');	
+</pre>
+</div>
+</div>
+
+<!-- // 5. getIndexArray	 -->
+
+<a name="8_6" id="8_6"></a>
+<div class="subtitle">
+6.  remove
+</div>
+<div class="subtitle_sub">$(selector).uitab('remove')</div>
+
+<div class="content_title">
+<div class="content">
+	- 선택된 탭 인덱스를 구해서 그 탭을 삭제한다. <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ -  <br/>
+ -  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$(".close").click(function() {		
+	alert('close ...');				
+								
+	$k1('#k1_content').uitab('remove');				
+	return false;						
+});	
+</pre>
+</div>
+</div>
+
+<!-- // 6.  remove	 -->
+
+<a name="8_7" id="8_7"></a>
+<div class="subtitle">
+7.  tabmove
+</div>
+<div class="subtitle_sub">$(selector).uitab('tabmove',type, del_falg)</div>
+
+<div class="content_title">
+<div class="content">
+	- 탭이 많은 경우 좌/우 이동 버튼을 이용하여 탭을 이동시킨다.  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ -  type (next 버튼 or prev 버튼)<br/>
+ -  del_falg (탭이 삭제되었을 경우에는 앞의 요소를 보이지 않게 하는 부분을 실행하지 않는다. )<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//Tab 좌/우 버튼 클릭시...				
+$k1('#tab_next').bind('click', function() {			
+	$k1('#k1_content').uitab('tabmove', 'next', true);	
+});				
+$k1('#tab_prev').bind('click', function() {			
+	$k1('#k1_content').uitab('tabmove', 'prev', true);		
+});				
+</pre>
+</div>
+</div>
+
+<!-- // 7.  tabmove	 -->
+
+<a name="8_8" id="8_8"></a>
+<div class="subtitle">
+8.  add
+</div>
+<div class="subtitle_sub">$(selector).uitab('add', title, link)</div>
+
+<div class="content_title">
+<div class="content">
+	- 왼쪽 메뉴를 클릭시 MDI 창 처럼 탭이 추가된다. <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - title (탭 제목)	<br/>
+ - link (탭이 열리면서 로드해야 되는 페이지 주소) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1('.left_menu li > a').bind('click', function() {
+	
+	//alert($k1(this).attr('rel'));
+	$k1('#k1_ui_tabs_navi').uitab('add', $k1(this).text(), $k1(this).attr('rel'));
+	
+});
+</pre>	
+</div>
+</div>
+
+<!-- // 8. add	 -->
+
+<a name="8_9" id="8_9"></a>
+<div class="subtitle">
+9.  setTabMove
+</div>
+<div class="subtitle_sub">$(selector).uitab('setTabMove')</div>
+
+<div class="content_title">
+<div class="content">
+	- 탭이 추가 또는 삭제될 때 탭 이동 이벤트를 실행 또는 해제한다.  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$(this).uitab('setTabMove');
+</pre>	
+</div>
+</div>
+
+<!-- // 9.  setTabMove	 -->
+
+<a name="8_10" id="8_10"></a>
+<div class="subtitle">
+10.  displayMoveButton
+</div>
+<div class="subtitle_sub">$(selector).uitab('displayMoveButton')</div>
+
+<div class="content_title">
+<div class="content">
+	- 탭 초기화 또는 탭 이동시 탭 이동 버튼을 활성화/비활성화해서 보여 주는 메소드. <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  enable/disable button display
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+// 탭 이동시마다 이동 버튼을 disble/enable 시킨다.
+target.uitab('displayMoveButton');
+</pre>	
+</div>
+</div>
+
+<!-- // 10.  displayMoveButton	 -->
+
+<!-- //Uitab Manual Start -->
+
+<!-- //Pager Manual Start -->
+
+<a name="9_1" id="9_1"></a>
+<br/>
+<div class="title">
+ Ⅸ. Pager : jquery.com.pager.js
+</div>
+
+<div class="subtitle">
+1. pager
+</div>
+<div class="subtitle_sub">$(selector).pager(options, styleOptions, side)</div>
+
+<div class="content_title">
+<div class="content">
+	- grid list의 Paging 처리를 한다.  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - options (페이지 구성에 필요한 옵션) <br/>
+ 	ex. pageSize: pageSize, 			//한 페이지당 보여 주는 row수 <br/>
+ 	    pageBlock: pageBlock, 	//block으로 보여 주는 page 수 <br/>
+ 	    currentPage: currentPage, //현재 페이지 <br/>
+ 	    pageTotal: pageTotal, 		//총 row 수 <br/>
+ 	    url:url, 					//페이지 이동시 url <br/>
+ 	    formid:formid				//페이지 이동시 param으로 넘겨야 하는 form id <br/>
+ 	     <br/>
+ - styleOptions (페이지 네비게이션을 구성하기 위해서 필요한 옵션 )<br/>
+    ex. {type:'grid', 					//페이징하고자 하는 목록이  Grid Or Table <br/>
+    	 id:'tbl_grid', 				//페이징하고자 하는 목록의 아이디 <br/>
+    	 style:'vof_list'}			//페이징 네비게이션을 만들기 위한 스타일을 미리 정해 놓는다. <br/> 
+ - side : Server Side Or Client Side 여부 <br/>
+ 	ex. 'C' : client, 'S'/null : server <br/>    	 
+  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var side = 'C';		//side 값이 null 이면 default:server
+
+$k1(".k1_page_num").pager({pageSize: pageSize, 
+							pageBlock: pageBlock, 
+							currentPage: currentPage, 
+							pageTotal: pageTotal, 
+							url:url, 
+							formid:formid
+							}, {type:'grid', id:'tbl_grid', style:'vof_list'}, side);	
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/vof/AIR/RSV/GPG/AIRINTQTT0100010020.html" target="_blank">예제 Click</a>
+<br/>
+<br/>
+
+<!-- // 1. pager	 -->
+
+<a name="9_2" id="9_2"></a>
+<div class="subtitle">
+2.  navigator
+</div>
+<div class="subtitle_sub">$.pager.navigator(naviOption, style)</div>
+
+<div class="content_title">
+<div class="content">
+	- Paging Navigator 을 만든다. <br/>
+	- pager 메소드를 호출하면 navigator 만드는 부분도 포함된다. <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - naviOption (네이게이션을 만들기 위해서 필요한 값) <br/>
+    ex. sPage : sPage,		//시작 페이지  <br/>
+        ePage : ePage,	//마지막 페이지 <br/>
+        currentPage : currentPage,	//현재 페이지 <br/>
+        pageTotalCnt : pageTotalCnt	//페이지 총 갯수 <br/>
+ - style (디자인이 틀리기 때문에 구분자로 스타일을 틀리게 준다. 다른 디자인이 필요하면 추가해서 만들어야 한다.) <br/> 
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var naviOpt = {			
+	sPage : sPage,		
+	ePage : ePage,		
+	currentPage : currentPage,	
+	pageTotalCnt : pageTotalCnt	
+};	
+html = $.pager.navigator(naviOpt, styleOptions.style);
+</pre>			
+</div>
+</div>
+
+<!-- // 2. navigator	 -->
+
+<a name="9_3" id="9_3"></a>
+<div class="subtitle">
+3.  link
+</div>
+<div class="subtitle_sub">$.pager.link(url, formid, pages, styleOptions, side)</div>
+
+<div class="content_title">
+<div class="content">
+	- 페이지 네비게이션을 클릭시 이벤트를 선언한다. <br/>
+	- pager 메소드를 호출하면 navigator 만드는 부분도 포함된다. <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - url (다른 페이지를 클릭시 이동하는 url)  <br/>
+ - formid (페이지 이동시 param으로 넘겨야 하는 form id)  <br/>
+ - pages (각 링크마다 계산되어진 페이지 No) <br/>
+ - styleOptions (페이지 네비게이션을 구성하기 위해서 필요한 옵션 )  <br/>
+ - side (Server Side Or Client Side 여부) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var side = 'C';		//side 값이 null 이면 default:server
+var pages = {			
+	first : 1,			
+	prev : sPage - pageBlock,	
+	next : ePage + 1,			
+	last : pageTotalCnt			
+};			
+
+$.pager.link(options.url, options.formid, pages, styleOptions, side);
+</pre>
+</div>
+</div>
+
+<!-- // 3. link	 -->
+
+<!-- //Pager Manual End -->
+
+<!-- //File Manual Start -->
+
+<a name="10_1" id="10_1"></a>
+<br/>
+<div class="title">
+ Ⅹ. File : jquery.com.file.js
+</div>
+
+<div class="subtitle">
+1. search
+</div>
+<div class="subtitle_sub">$(selector).file('search', after_func)</div>
+
+<div class="content_title">
+<div class="content">
+	- 파일 첨부 버튼 클릭 후 처리해야 되는 메소드가 있으면 실행시키는 함수   <br/>
+	- 브라우저 별로 처리되는 이벤트가 틀려서 구분하여 실행시킨다. <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  after_func 실행 결과.
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - after_func (파일 선택 후의 실행되는 메소드 이름) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//파일 첨부 버튼 클릭시..								
+$k1(".k1_b2b_board2 tr td .k1_btn2").bind('click', function () {	
+	var target = $k1(this);							
+	var fileNameHtml = '<a href="">fileNames</a>';			
+	var fileObj = target.parent().parent().find("input:file");		
+		
+	fileObj.click();		
+	
+	fileObj.file('search', function() {		
+		var filecol = fileObj.parent();		
+		var fileNameStr = $k1.file.getName(fileObj.val());		
+		//파일 이름 보이기		
+		filecol.prepend($k1.util.replace(fileNameHtml, 'fileNames', fileNameStr));	
+		filecol.find(" > img").show();		//파일 삭제 버튼 보이기		
+		target.hide();						//파일 첨부 버튼 숨기기		
+	});			
+});		
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/AIR/INT/QTT/AIRDOMTRP0100100030.html" target="_blank">예제 Click</a>
+<br/>
+<br/>
+
+<!-- // 1. search	 -->
+
+<a name="10_2" id="10_2"></a>
+<div class="subtitle">
+2.  reset
+</div>
+<div class="subtitle_sub">$(selector).file('reset', after_func)</div>
+
+<div class="content_title">
+<div class="content">
+	- input file 객체를 초기화 시키는 메소드 	<br/>
+	- 브라우저 별로 초기화 시키는 방법이 틀린다. <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  input file 객체 초기화
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ -  after_func (초기화 된 후 실행되는 메소드 이름)	 <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//파일 삭제 버튼 클릭시..				
+$k1(".k1_b2b_board2 tr td .close").bind('click', function () {			
+	var target = $k1(this);						
+	var row = target.parent().parent();					
+	var fileObj = row.find("input:file");					
+				
+	fileObj.file('reset', function() {		
+		target.parent().find(" > a").remove();	//파일 이름 삭제			
+		target.hide();							//파일 삭제 버튼 숨기기			
+				
+		row.find("td:last > .k1_btn2").show();		//파일 첨부 버튼 보이기		
+			
+	});	
+});	
+</pre>
+</div>
+</div>
+
+<!-- // 2. reset	 -->
+
+<a name="10_3" id="10_3"></a>
+<div class="subtitle">
+3.  getName
+</div>
+<div class="subtitle_sub">$.file.getName(file)</div>
+
+<div class="content_title">
+<div class="content">
+	- 전체 파일 경로에서 파일이름과 확장자 만을 추출하는 메소드. 	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  파일이름.확장자
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ -  file (파일 전체 경로)	 <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var fileNameStr = $k1.file.getName(fileObj.val());		
+</pre>
+</div>
+</div>
+
+<!-- // 2. getName	 -->
+
+<!-- //File Manual End -->
+
+<!-- //Common Manual Start -->
+
+<a name="11_1" id="11_1"></a>
+<br/>
+<div class="title">
+ XI. Common : jquery.com.js
+</div>
+
+<div class="subtitle">
+1. maskDiv
+</div>
+<div class="subtitle_sub">$(selector).event('maskDiv', div, toggleVal, speed, url)</div>
+
+<div class="content_title">
+<div class="content">
+	- 레이어 팝업을 띄우고 아래 화면은 Mask 처리를 하는 Toggle함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - div (레이어 팝업 아이디)		<br/>
+ - toggleVal (Toggle되는 버튼의 val : 배열)		<br/>
+ - speed (레이어 팝업을 보여 주고 감출때의 속도)		<br/>
+ - url (레이어를 보여줄 페이지 경로)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//다른 여정 조회 버튼 클릭시	
+$k1('#btn_itinerary').event('maskDiv', 'div_itinerary', ['다른 여정 조회 ▼','다른 여정 조회  ▶'], 
+								'slow', '/air/AIR/INT/TRP/AIRINTTRP0100100010.html');	
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/AIR/AAA/SCH/AIRAAASCH0100100010.html" target="_blank">예제 Click</a>
+<br/><br/>
+
+
+<!-- // 1. maskDiv	 -->
+
+<a name="11_2" id="11_2"></a>
+<div class="subtitle">
+2.  sideMoveDiv
+</div>
+<div class="subtitle_sub">$(selector).event('sideMoveDiv', menuDiv, contDiv, speed, options)</div>
+
+<div class="content_title">
+<div class="content">
+	- 좌측 레이어가 감춰 지면서 우측 레이어를 크게 보여지게 하는 이벤트 .<br/>
+	- 좌측 레이어가 다시 보여지면 우측 레이어를 원래 크기대로 보게 한다. <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - menuDiv (좌측 없어졌다 보였다 하는 레이어 아이디)	<br/>
+ - contDiv (우측 크게 보였다 작게 보였다 하는 레이어 아이디) 	<br/>
+ - speed (이벤트를 보여 주는 속도) <br/>
+ - options (해당 이벤트가 발생한 후의 처리 함수 구현 ex.afterIn:function(){ }, afterOut:function(){ } )<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//왼쪽 메뉴 좌/우 이동 버튼 클릭시. 		
+$k1('.btn_close').event('sideMoveDiv', 'k1_aside', 'k1_content', 500, {afterIn:function(){
+	var searchWidth = $k1.util.intSize($k1('.cont_wrap').css('width'), 'px');
+	$k1("#tbl_grid").setGridWidth(searchWidth, false);
+}, afterOut:function(){
+	var searchWidth = $k1.util.intSize($k1('.cont_wrap').css('width'), 'px');
+	$k1("#tbl_grid").setGridWidth(searchWidth, false); 
+}});
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/vof/AIR/RSV/GPG/AIRINTQTT0100010020_MDI.html" target="_blank">예제 Click</a>
+<br/><br/>
+
+
+<!-- // 2. sideMoveDiv	 -->
+
+<a name="11_3" id="11_3"></a>
+<div class="subtitle">
+3.  upSideMoveDiv
+</div>
+<div class="subtitle_sub">$(selector).event('upSideMoveDiv', upDiv, speed, options)</div>
+
+<div class="content_title">
+<div class="content">
+	- 검색 조건을 상/하로 이동시키는 이벤트  .<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - upDiv (상/하로 움직이는 검색 조건 레이어 Class 이름 ex) .search_condition )	<br/>
+ - speed (이벤트를 보여 주는 속도) <br/>
+ - options (해당 이벤트가 발생한 후의 처리 함수 구현 ex.afterIn:function(){ }, afterOut:function(){ } )<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//검색 조건 상/하 이동 버튼 클릭시. 			
+var closeHtml = $k1('.btn_sclose').html();		
+var openHtml = $k1('.k1_hide').html();				
+$k1('.btn_sclose').event('upSideMoveDiv', '.search_condition', 500, {afterIn:function(){	
+		
+	//그리드 데이타를 새로 조회하도록 변경해야 함.	 
+	$k1("#tbl_grid").grid('setGridParam', {		
+		rowNum : 15								
+	});											
+		
+	$k1('.btn_sclose').html(openHtml);			
+		
+}, afterOut:function(){							
+	//그리드 데이타를 새로 조회하도록 변경해야 함. 	
+	$k1("#tbl_grid").grid('setGridParam', {		
+		rowNum : 12											
+	});											
+		
+	$k1('.btn_sclose').html(closeHtml);			
+}});	
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/vof/AIR/RSV/GPG/AIRINTQTT0100010020.html" target="_blank">예제 Click</a>
+<br/><br/>
+
+
+<!-- // 3. upSideMoveDiv	 -->
+
+
+<a name="11_4" id="11_4"></a>
+<div class="subtitle">
+4. resizeIframe 
+</div>
+<div class="subtitle_sub">$(selector).event('resizeIframe', margin)</div>
+
+<div class="content_title">
+<div class="content">
+	- iframe width와 height를 자동으로 resizing.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	margin (iframe 의 body를 보여 주기 위한 margin width, margin height을 배열로 지정해 준다. )		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//iframe resize 선언			
+$('#' + div + '> iframe').event('resizeIframe', '50');
+//iframe 주소 변경			
+$('#' + div + '> iframe').attr('src', url);		
+</pre>
+</div>
+</div>
+
+<!-- // 4. resizeIframe	 -->
+
+<a name="11_5" id="11_5"></a>
+<div class="subtitle">
+5. modal
+</div>
+<div class="subtitle_sub">$.popup.modal(url, params, options, closefunc)</div>
+
+<div class="content_title">
+<div class="content">
+	- popupType에 따라서 모달창 또는 윈도우 팝업을 보여 준다.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -   
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - url (팝업으로 보여줄 화면 URL)	<br/>
+ - params (팝업에 전달할 Parameter ex){param1:value1, param2:value2}))	<br/>
+ - options (팝업에 필요한 옵션을 배열로 만든다. height, widht, windowName...)		<br/>
+ - closefunc (팝업에서 보내 주는 값을 받아서 처리하는 함수)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//close function이 있는 경우.	
+$k1.popup.modal('/air/AIR/AAA/SCH/AIRAAASCH0100110050.html', {param1:value1, param2:value2}, 
+					{width:600, height:290, winName:'rule'},  
+					function(ret){			
+						//modal 창이 닫힌 후에 변수 처리 로직을 넣는다.	 
+					}	
+);	
+
+//close function이 없는 경우	
+$k1.popup.modal('/air/AIR/AAA/SCH/AIRAAASCH0100110050.html', {param1:value1, param2:value2}, 
+					{width:600, height:290});
+</pre>
+</div>
+</div>
+
+<!-- // 5. modal	 -->
+
+<a name="11_6" id="11_6"></a>
+<div class="subtitle">
+6. showmodal
+</div>
+<div class="subtitle_sub">$.popup.showmodal(url, params, options, closefunc)</div>
+
+<div class="content_title">
+<div class="content">
+	- 모달창을 보여 주는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -   
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - url (팝업으로 보여줄 화면 URL)	<br/>
+ - params (팝업에 전달할 Parameter ex.{param1:value1, param2:value2})	<br/>
+ - options (팝업에 필요한 옵션을 배열로 만든다. height, widht, windowName...)		<br/>
+ - closefunc (팝업에서 보내 주는 값을 받아서 처리하는 함수)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.popup.showmodal('/air/AIR/AAA/SCH/AIRAAASCH0100110050.html', 
+						{param1:value1, param2:value2}, {width:600, height:290},  
+						function(ret){			
+							//modal 창이 닫힌 후에 변수 처리 로직을 넣는다.	 
+						}	
+);	
+</pre>
+</div>
+</div>
+
+<!-- // 6. showmodal	 -->
+
+
+<a name="11_7" id="11_7"></a>
+<div class="subtitle">
+7. winopen
+</div>
+<div class="subtitle_sub">$.popup.winopen(url, params, options, closefunc)</div>
+
+<div class="content_title">
+<div class="content">
+	- 윈도우 팝업을 띄우는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -   
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - url (팝업으로 보여줄 화면 URL)	<br/>
+ - params (팝업에 전달할 Parameter ex.{param1:value1, param2:value2})	<br/>
+ - options (팝업에 필요한 옵션을 배열로 만든다. height, widht, windowName...)		<br/>
+ - closefunc (팝업에서 보내 주는 값을 받아서 처리하는 함수)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.popup.winopen('/air/AIR/AAA/SCH/AIRAAASCH0100110050.html', 
+					{param1:value1, param2:value2}, {width:600, height:290, winName:'rule'},  
+					function(ret){			
+						//modal 창이 닫힌 후에 변수 처리 로직을 넣는다.	 
+					}	
+);	
+</pre>
+</div>
+</div>
+
+<!-- // 7. winopen	 -->
+
+<a name="11_8" id="11_8"></a>
+<div class="subtitle">
+8. close
+</div>
+<div class="subtitle_sub">$.popup.close()</div>
+
+<div class="content_title">
+<div class="content">
+	- popupType에 따라서 모달창 또는 윈도우 팝업을 닫는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -   
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//모달창 또는 팝업창에서..		
+$k1.popup.close();			
+</pre>
+</div>
+</div>
+
+<!-- // 8. close	 -->
+
+<a name="11_9" id="11_9"></a>
+<div class="subtitle">
+9. winclose
+</div>
+<div class="subtitle_sub">$.popup.winclose()</div>
+
+<div class="content_title">
+<div class="content">
+	- 윈도우 팝업을 닫는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -   
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+// 팝업창에서..		
+$k1.popup.winclose();			
+</pre>
+</div>
+</div>
+
+<!-- // 9. winclose	 -->
+
+<a name="11_10" id="11_10"></a>
+<div class="subtitle">
+10. modalclose
+</div>
+<div class="subtitle_sub">$.popup.modalclose()</div>
+
+<div class="content_title">
+<div class="content">
+	- 모달창을 닫는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -   
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//모달창에서 	
+$k1.popup.modalclose();			
+</pre>
+</div>
+</div>
+
+<!-- // 10. modalclose	 -->
+
+<a name="11_11" id="11_11"></a>
+<div class="subtitle">
+11. retval
+</div>
+<div class="subtitle_sub">$.popup.retval(ret)</div>
+
+<div class="content_title">
+<div class="content">
+	- popupType에 따라서 부모창에 값을 전달하는 함수. <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	ret (모달창 또는 팝업창에서 전달하는 값 ex.{'id':'aaa', 'name':'bbb'} ) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//모달창 또는 팝업창에서..		
+retVal = {'id':'aaa', 'name':'bbb'};	
+						
+//값 전달				
+$k1.popup.retval(retVal);		
+</pre>
+</div>
+</div>
+
+<!-- // 11. retval	 -->
+
+<a name="11_12" id="11_12"></a>
+<div class="subtitle">
+12. winval
+</div>
+<div class="subtitle_sub">$.popup.winval(ret)</div>
+
+<div class="content_title">
+<div class="content">
+	- 윈도우 팝업을 띄웠을 때 부모창에 값을 전달하는 함수.  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	ret (팝업창에서 전달하는 값 ex.{'id':'aaa', 'name':'bbb'} ) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//팝업창에서..		
+retVal = {'id':'aaa', 'name':'bbb'};	
+						
+//값 전달				
+$k1.popup.winval(retVal);		
+</pre>
+</div>
+</div>
+
+<!-- // 12. winval	 -->
+
+<a name="11_13" id="11_13"></a>
+<div class="subtitle">
+13. modalval
+</div>
+<div class="subtitle_sub">$.popup.modalval(ret)</div>
+
+<div class="content_title">
+<div class="content">
+	- 모달 팝업을 띄웠을 때 부모창에 값을 전달하는 함수.   <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - 	ret (모달창에서 전달하는 값 ex.{'id':'aaa', 'name':'bbb'} ) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//모달창에서..		
+retVal = {'id':'aaa', 'name':'bbb'};	
+						
+//값 전달				
+$k1.popup.modalval(retVal);		
+</pre>
+</div>
+</div>
+
+<!-- // 13. modalval	 -->
+			
+<a name="11_14" id="11_14"></a>
+<div class="subtitle">
+14. tool tip
+</div>
+<div class="subtitle_sub">$(selector).tooltip()</div>
+
+<div class="content_title">
+<div class="content">
+	- 툴팁을 보여주는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -   <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Include File</div>
+
+<div class="content_title">
+<div class="content">
+ - /air/wfw/css/jquery-bubble-popup-v3.css<br/>
+ - /air/wfw/js/plugin/jquery-bubble-popup-v3.min.js<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//class로 적용
+$k1('.pt4').tooltip();
+//id로 적용
+$k1('#testId').tooltip();
+
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/AIR/AAA/TRP/AIRAAATRP0100110090.html" target="_blank">예제 Click</a>	//30 line
+<br/><br/>
+
+
+<!-- // 14. tooltip	 -->
+
+<a name="11_15" id="11_15"></a>
+<div class="subtitle">
+15. sliding
+</div>
+<div class="subtitle_sub">$(this).sliding(targetId, value, speed);</div>
+
+<div class="content_title">
+<div class="content">
+	- DIV 메뉴를 펼치는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -   <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - targetId (펼칠 메뉴 ID) <br/>
+ - value (toggle되는 버튼의 val : 배열) <br/>
+ - speed (toggle 속도) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//항공 상세요금	
+$k1("#btn_flightDeSe").click(function(){	
+&nbsp;&nbsp;&nbsp;&nbsp;$k1(this).sliding("div_flDetails", ["항공 상세조회조건 보기 ▼", "항공 상세조회조건 닫기 ▲"]);	
+});
+
+
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/AIR/INT/TRP/AIRINTTRP0100100010.html" target="_blank">예제 Click</a>	//228 line
+<br/><br/>
+
+
+<!-- // 15. sliding	 -->
+
+<a name="11_16" id="11_16"></a>
+<div class="subtitle">
+16. autocomplete 
+</div>
+<div class="subtitle_sub">$k1.autocom([id], xml);</div>
+
+<div class="content_title">
+<div class="content">
+	- input box 자동완성 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -   <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - id (적용대상 id : [id1, id2, id3]) <br/>
+ - xml (xml 경로)
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//출국, 귀국, 도착
+$k1.autocom(["txt_homecoming", "txt_style2_1", "txt_style1_1"], "../../london.xml");
+
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/AIR/INT/TRP/AIRINTTRP0100100010.html" target="_blank">예제 Click</a>	//174 line
+<br/><br/>
+
+
+<!-- // 16. autocomplete	 -->
+
+<a name="11_17" id="11_17"></a>
+<div class="subtitle">
+17. multi select box
+</div>
+<div class="subtitle_sub">$k1(selector).multiSelect(option, returnFn)</div>
+
+<div class="content_title">
+<div class="content">
+	- multi select box 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 선택된 값  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - option (multi select option) <br/>
+   : {selectAllText : '전체선택'} (전체선택 글자변경)<br/>
+   : {oneOrMoreSelected: : '*'} (선택시 선택된 값 표시)<br/>
+ - returnFn (return function) <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Include File</div>
+
+<div class="content_title">
+<div class="content">
+ - /air/wfw/js/plugin/jquery.multiSelect.js<br/>
+ - /air/wfw/css/jquery.multiSelect.css<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+//multi selectbox 생성
+$k1("#mSelect1").multiSelect();
+
+//multi selectbox 생성 (callback)
+$k1("#mSelect2").multiSelect(null, function(e){
+	//선택된 데이터 value 
+	alert($k1("#mSelect2").selectedValuesString());
+});
+
+//Select All 문자 변경
+$k1("#mSelect3").multiSelect({selectAllText : '전체선택'});
+
+//선택시 선택값 표시
+$k1("#mSelect4").multiSelect({oneOrMoreSelected: '*'});
+
+</pre>	
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/multiSelect.html" target="_blank">예제 Click</a>
+<br/><br/>
+
+
+<!-- // 17. multi select box	 -->
+
+<a name="11_18" id="11_18"></a>
+<div class="subtitle">
+18. inputToComma
+</div>
+<div class="subtitle_sub">$k1(selector).inputToComma()</div>
+
+<div class="content_title">
+<div class="content">
+	- input box 숫자 입력 + ','생성 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 변경된 데이터  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ -  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1("#txt_airfare").inputToComma();
+
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/AIR/INT/QTT/AIRINTQTT1111100010.html" target="_blank">예제 Click</a>	//133, 173~174... line
+<br/><br/>
+
+
+<!-- // 18. inputToComma	 -->
+
+<a name="11_19" id="11_19"></a>
+<div class="subtitle">
+19. toComma
+</div>
+<div class="subtitle_sub">$k1.toComma(data)</div>
+
+<div class="content_title">
+<div class="content">
+	- 금액형식을 만들어 주는 함수<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 변경된 데이터  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ -  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.toComma(123456789);
+
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/AIR/INT/QTT/AIRINTQTT1111100010.html" target="_blank">예제 Click</a>	//1259, 1267, 1296... line
+<br/><br/>
+
+
+<!-- // 19. toComma	 -->
+
+<a name="11_20" id="11_20"></a>
+<div class="subtitle">
+20. toEn
+</div>
+<div class="subtitle_sub">$k1(selector).toEn()</div>
+
+<div class="content_title">
+<div class="content">
+	- input box 영문만 입력<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 변경된 데이터  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ -  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1("#txt_firstName").toEn();
+
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/AIR/INT/QTT/AIRINTQTT1111100010.html" target="_blank">예제 Click</a>	//1166, 1171 line
+<br/><br/>
+
+
+<!-- // 20. toEn	 -->
+
+<a name="11_21" id="11_21"></a>
+<div class="subtitle">
+21. inputToNum
+</div>
+<div class="subtitle_sub">$k1(selector).inputToNum()</div>
+
+<div class="content_title">
+<div class="content">
+	- input box 숫자만 입력가능<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 변경된 데이터  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ -  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1("#txt_cardNumF").inputToNum();
+
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/AIR/INT/QTT/AIRINTQTT1111100010.html" target="_blank">예제 Click</a>	//756~763 line
+<br/><br/>
+
+
+<!-- // 21. inputToNum	 -->
+
+<a name="11_22" id="11_22"></a>
+<div class="subtitle">
+22. formClear
+</div>
+<div class="subtitle_sub">$k1(selector).formClear()</div>
+
+<div class="content_title">
+<div class="content">
+	- 선택된 하위 전체 요소 (input box, check box, select box) 초기화<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -   <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ -  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1("#div_search1").formClear();
+
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/AIR/INT/QTT/AIRINTQTT1111100010.html" target="_blank">예제 Click</a>	//1324 line
+<br/><br/>
+
+
+<!-- // 22. formClear	 -->
+
+<a name="11_23" id="11_23"></a>
+<div class="subtitle">
+23. getDate
+</div>
+<div class="subtitle_sub">$k1.getDate(addYear, addMonth, addDay, token)</div>
+
+<div class="content_title">
+<div class="content">
+	-  날짜계산기(아무것도 안던지면 오늘날짜 반환, 오늘일자 기준 년,월,일 +- 계산) 
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - yyyy-mm-dd  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ -  addYear : 년도계산 +10, -10 등<br/>
+ -  addMonth : 월계산 +10, -10 등<br/>
+ -  addDay : 일자계산 +10, -10 등<br/>
+ -  token : 기본값 "-"<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.getDate(); //오늘날짜
+$k1.getDate(null, null, null, '.'); //날짜형식 yyy.mm.dd로 변경
+$k1.getDate(-1);//1년 이전 날짜
+$k1.getDate(0, -1);//1개월 이전 날짜
+$k1.getDate(0, 0, -1);//1일 이전 날짜
+
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/vof/AIR/STA/GPG/AIRSTAGPG0100000750.html" target="_blank">예제 Click</a>	//191, 196 line
+<br/><br/>
+
+
+<!-- // 23. getDate	 -->
+
+<a name="11_24" id="11_24"></a>
+<div class="subtitle">
+24. getDateCalc
+</div>
+<div class="subtitle_sub">$k1.getDateCalc(from, to)</div>
+
+<div class="content_title">
+<div class="content">
+	-  일자 계산 함수 (from, to 날짜의 차이를 계산)
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 차이 일수  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ -  from : 시작일(YYYY-MM-DD)<br/>
+ -  to : 종료일(YYYY-MM-DD)<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.getDateCalc($k1("#txt_fromDate").val(), $k1("#txt_toDate").val())
+
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/AIR/HTL/HTLINTTRP0100100010.html" target="_blank">예제 Click</a>	//98 line
+<br/><br/>
+
+<!-- // 24. getDateCalc	 -->
+
+
+<a name="11_25" id="11_25"></a>
+<div class="subtitle">
+25. uiBlockByGif
+</div>
+<div class="subtitle_sub">$k1.uiBlockByGif()</div>
+
+<div class="content_title">
+<div class="content">
+	-  서버 요청시 이중 submit과 같은 오동작을 막기 위해 화면을 block 함(gif이미지 사용).
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -   <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content"> 
+ -  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1(document).ready(function() {
+	$k1.uiBlockByGif()
+});
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/vof/AIR/RSV/GPG/AIRINTQTT0100010021_1.html" target="_blank">예제 Click(조회)</a>	//106 line
+<br/><br/>
+
+
+<!-- // 25. uiBlockByGif	 -->
+
+<a name="11_26" id="11_26"></a>
+<div class="subtitle">
+26. uiBlockByJq
+</div>
+<div class="subtitle_sub">$k1.uiBlockByJq()</div>
+
+<div class="content_title">
+<div class="content">
+	-  서버 요청시 이중 submit과 같은 오동작을 막기 위해 화면을 block 함(jQuery Plugin 사용).
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -   <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content"> 
+ -  type : txt(텍스트 메세지), tag(화면내 엘리먼트 내용)<br/>
+ -  value : type이 txt일 경우 텍스트 메세지, tag일 경우 화면내 엘리먼트 ID<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+&lt;script src="/vof/wfw/js/plugin/jquery-1.7.2.min.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="/vof/wfw/js/plugin/jquery.blockUI.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="/vof/wfw/js/lib/jquery.com.js" type="text/javascript"&gt;&lt;/script&gt;
+  :
+(중략)
+  :
+$k1(document).ready(function() {
+	$k1.uiBlockByJq('txt', 'Loading....');
+	//$k1.uiBlockByJq('tag', 'loadDiv');
+});
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/vof/AIR/RSV/GPG/AIRINTQTT0100010021_2.html" target="_blank">예제 Click(조회)</a>	//93 line
+<br/><br/>
+
+
+<!-- // 26. uiBlockByGif	 -->
+
+<a name="11_27" id="11_27"></a>
+<div class="subtitle">
+27. uiUnblockByJq
+</div>
+<div class="subtitle_sub">$k1.uiUnblockByJq()</div>
+
+<div class="content_title">
+<div class="content">
+	-  block 된 화면을 해제함.
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -   <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content"> 
+ -  <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+&lt;script src="/vof/wfw/js/plugin/jquery-1.7.2.min.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="/vof/wfw/js/plugin/jquery.blockUI.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="/vof/wfw/js/lib/jquery.com.js" type="text/javascript"&gt;&lt;/script&gt;
+  :
+(중략)
+  :
+$k1(document).ready(function() {
+	$k1.uiBlockByJq('messagePopDiv');
+	$k1.uiUnblockByJq()
+});
+</pre>
+</div>
+</div>
+<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/vof/AIR/RSV/GPG/AIRINTQTT0100010021_2.html" target="_blank">예제 Click(조회)</a>
+<br/><br/>
+
+<!-- // 27. uiUnblockByJq	 -->
+
+<!-- //Common Manual End -->
+
+<!-- //Util Manual Start -->
+
+<a name="20_1" id="20_1"></a>
+<br/>
+<div class="title">
+ XX. Util : jquery.com.util.js
+</div>
+
+<div class="subtitle">
+1. min
+</div>
+<div class="subtitle_sub">$.util.min(a, b)</div>
+
+<div class="content_title">
+<div class="content">
+	- a와 b 중에서 최소값을 구하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - a, b (최소값을 구하기 위한 숫자)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.util.min(3, 4)	
+</pre>
+</div>
+</div>
+
+<!-- // 1. min	 -->
+
+<p>&nbsp;</p>
+<a name="20_2" id="20_2"></a>
+<div class="subtitle">
+2. max
+</div>
+<div class="subtitle_sub">$.util.max(a, b)</div>
+
+<div class="content_title">
+<div class="content">
+	- a와 b 중에서 최대값을 구하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - a, b (최대값을 구하기 위한 숫자)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.util.max(3, 4)	
+</pre>
+</div>
+</div>
+
+<!-- // 2. max	 -->
+
+<p>&nbsp;</p>
+<a name="20_3" id="20_3"></a>
+<div class="subtitle">
+3. isNull
+</div>
+<div class="subtitle_sub">$.util.isNull(val)</div>
+
+<div class="content_title">
+<div class="content">
+	- val 값이 null인지 아닌지 구분하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  null 여부 체크 flag (true:null, false:null이 아니다.)
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - val (null 체크를 하는 값)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+if(!$k1.util.isNull(option) && !$k1.util.isNull(option.rowList)) {	
+	rowListOpt = option.rowList;		
+}
+</pre>
+</div>
+</div>
+
+<!-- // 3. isNull	 -->
+
+<p>&nbsp;</p>
+<a name="20_4" id="20_4"></a>
+<div class="subtitle">
+4. checkURL 
+</div>
+<div class="subtitle_sub">$.util.checkURL(val)</div>
+
+<div class="content_title">
+<div class="content">
+	- val 값이 주소 유형에 맞는지 여부 체크.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  주소 타입 여부 체크 flag
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - val (url 체크를 하는 값)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.util.checkURL('http://www.naver.com');		
+</pre>
+</div>
+</div>
+
+<!-- // 4. checkURL 	 -->
+
+<p>&nbsp;</p>
+<a name="20_5" id="20_5"></a>
+<div class="subtitle">
+5. checkEmail 
+</div>
+<div class="subtitle_sub">$.util.checkEmail(val)</div>
+
+<div class="content_title">
+<div class="content">
+	- val 값이 이메일 주소 유형에 맞는지 여부 체크.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  이메일 주소 타입 여부 체크 flag
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - val (이메일 주소를 체크하기 위한 값)	<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.util.checkEmail('a123@naver.com');		
+</pre>
+</div>
+</div>
+
+<!-- // 5. checkEmail  	 -->
+
+<p>&nbsp;</p>
+<a name="20_6" id="20_6"></a>
+<div class="subtitle">
+6. checkPhone 
+</div>
+<div class="subtitle_sub">$.util.checkPhone(val)</div>
+
+<div class="content_title">
+<div class="content">
+	- val 값이 전화 번호인지 체크하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  전화번호 형식이 맞는지  여부 체크 flag
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - val (전화번호 값)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.util.checkPhone('010-234-5678');	
+</pre>
+</div>
+</div>
+
+<!-- // 6. checkPhone   	 -->
+
+<p>&nbsp;</p>
+<a name="20_7" id="20_7"></a>
+<div class="subtitle">
+7. checkNumber 
+</div>
+<div class="subtitle_sub">$.util.checkNumber(val, sign)</div>
+
+<div class="content_title">
+<div class="content">
+	- val 값이 숫자인지 여부를 체크하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  숫자인지 여부 체크 flag
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - val (숫자값)	<br/>
+ - sign (+, -)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.util.checkNumber('a123');		
+</pre>
+</div>
+</div>
+
+<!-- // 7. checkNumber   	 -->
+
+<p>&nbsp;</p>
+<a name="20_8" id="20_8"></a>
+<div class="subtitle">
+8. checkDate8 
+</div>
+<div class="subtitle_sub">$.util.checkDate8(val)</div>
+
+<div class="content_title">
+<div class="content">
+	- 날짜가 8자리인지 체크하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  날짜 길이 체크 flag
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - val (날짜)			<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.util.checkDate8('20121030');		
+</pre>
+</div>
+</div>
+
+<!-- // 8. checkDate8   	 -->
+
+<p>&nbsp;</p>
+<a name="20_9" id="20_9"></a>
+<div class="subtitle">
+9. checkDate10 
+</div>
+<div class="subtitle_sub">$.util.checkDate10(val)</div>
+
+<div class="content_title">
+<div class="content">
+	- 입력값이 날짜 형태 인지 체크하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  날짜 길이 체크 flag <br /> 허용 입력 타입(yyyy-MM-dd, yyyy/MM/dd, yyyy.MM.dd)	
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - val (날짜)			<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.util.checkDate10('2012-10-30');		
+</pre>
+</div>
+</div>
+
+<!-- // 9. checkDate10    	 -->
+
+<p>&nbsp;</p>
+<a name="20_10" id="20_10"></a>
+<div class="subtitle">
+10. checkTime12 
+</div>
+<div class="subtitle_sub">$.util.checkTime12(val)</div>
+
+<div class="content_title">
+<div class="content">
+	- 12시 기준 시간포맷 유효성 체크하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  true = 입력값이 주어진 시간 형태일 경우<br/>
+		허용 입력 타입(hh:mm:ss (am,Am,AM,aM)|(pm,pM,Pm,PM)	)
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - val (시간)			<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.util.checkTime12('05:30:30 am');		
+</pre>
+</div>
+</div>
+
+<!-- // 10. checkTime12    	 -->
+
+<p>&nbsp;</p>
+<a name="20_11" id="20_11"></a>
+<div class="subtitle">
+11. checkTime24 
+</div>
+<div class="subtitle_sub">$.util.checkTime24(val)</div>
+
+<div class="content_title">
+<div class="content">
+	- 24시 기준 시간포맷 유효성 체크하는 함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  true = 입력값이 주어진 시간 형태일 경우<br/>
+		허용 입력 타입(hh:mm:ss)
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - val (시간)			<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.util.checkTime24('14:30:30');		
+</pre>
+</div>
+</div>
+
+<!-- // 11. checkTime24     	 -->
+
+<p>&nbsp;</p>
+<a name="20_12" id="20_12"></a>
+<div class="subtitle">
+12. checkPassword 
+</div>
+<div class="subtitle_sub">$.util.checkPassword(val)</div>
+
+<div class="content_title">
+<div class="content">
+	- 사용자 패스워드 유효성 체크  함수.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  true = 입력값이 영문, 숫자 조합하여 6~18자 까지<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - val (비밀번호)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.util.checkPassword('abc1234');		
+</pre>
+</div>
+</div>
+
+<!-- // 12. checkPassword      	 -->
+
+<p>&nbsp;</p>
+<a name="20_13" id="20_13"></a>
+<div class="subtitle">
+13. replace 
+</div>
+<div class="subtitle_sub">$.util.replace(a, b, c)</div>
+
+<div class="content_title">
+<div class="content">
+	- 입력된 문자열의 일부분을 다른 문자열로 치환.<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  String(대체 된 문자열)<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - a (원본 String)		<br/>
+ - b (바꿀 String)		<br/>
+ - c (대체할 String)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$.util.replace("abc", "b", "*");		
+</pre>
+</div>
+</div>
+
+<!-- // 13. replace       	 -->
+
+<p>&nbsp;</p>
+<a name="20_14" id="20_14"></a>
+<div class="subtitle">
+14. length 
+</div>
+<div class="subtitle_sub">$.util.length(val)</div>
+
+<div class="content_title">
+<div class="content">
+	- 입력값 형태에 따라서 길이 또는 범위를 구하는 함수<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  Type에 따라 구해진 길이 또는 범위<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - val (객체, 문자열, 배열)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var len = $.util.length("abc");		
+</pre>   	
+</div>
+</div>
+
+<!-- // 14. length        	 -->
+
+<p>&nbsp;</p>
+<a name="20_15" id="20_15"></a>
+<div class="subtitle">
+15. substring 
+</div>
+<div class="subtitle_sub">$.util.substring(strString, nIndex, nSize)</div>
+
+<div class="content_title">
+<div class="content">
+	- 입력된 문자열에서 특정 위치 안에 있는 문자열 반환<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  String(지정 위치 안의 문자열)<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - strString(String 문자열)		<br/>
+ - nIndex(얻어올 첫 글자의 Index)		<br/>
+ - nSize(얻어올 글자수, Default length(해당 객체의 길이)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var cutStr = $.util.substring('abcdefg', 0, 4);		
+</pre>
+</div>
+</div>
+
+<!-- // 15. substring         	 -->
+
+<p>&nbsp;</p>
+<a name="20_16" id="20_16"></a>
+<div class="subtitle">
+16. isEmpty 
+</div>
+<div class="subtitle_sub">$.util.isEmpty(val)</div>
+
+<div class="content_title">
+<div class="content">
+	- 값이 존재하는지 여부 체크<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - true = 입력값이 null, 빈 스트링(""), undefined일 경우<br/>false = 그 외 값이 존재하는 경우
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - val(입력값)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$.util.isEmpty('');		
+</pre>
+</div>
+</div>
+
+<!-- // 16. isEmpty          	 -->
+
+<p>&nbsp;</p>
+<a name="20_17" id="20_17"></a>
+<div class="subtitle">
+17. dateCheck 
+</div>
+<div class="subtitle_sub">$.date.dateCheck(sDate)</div>
+
+<div class="content_title">
+<div class="content">
+	- 날짜 형식인지 아닌지 체크하는 함수<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 날짜 형식 여부
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - sDate(입력값)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$.date.dateCheck('2012.08.08');		
+</pre>
+</div>
+</div>
+
+<!-- // 17. dateCheck        	 -->
+
+<p>&nbsp;</p>
+<a name="20_18" id="20_18"></a>
+<div class="subtitle">
+18. getDay 
+</div>
+<div class="subtitle_sub">$.date.getDay(sDate)</div>
+
+<div class="content_title">
+<div class="content">
+	- 입력된 날짜의 요일을 반납<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - 0 = 일요일, 1 = 월요일, ..., 6 = 토요일 <br/>-1 = 오류 발생시	
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - sDate (yyyyMMdd 형태의 날짜 String)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$.date.getDay('20120808');		
+</pre>   	
+</div>
+</div>
+
+<!-- // 18. getDay       	 -->
+
+<p>&nbsp;</p>
+<a name="20_19" id="20_19"></a>
+<div class="subtitle">
+19. strToDate 
+</div>
+<div class="subtitle_sub">$.date.strToDate(sDate)</div>
+
+<div class="content_title">
+<div class="content">
+	- yyyyMMdd 형태의 String을 Date 객체로 변환하는 함수<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> - Date	
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - sDate (yyyyMMdd 형태의 날짜 String)		<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$.date.strToDate('20120808');		
+</pre>
+</div>
+</div>
+
+<!-- // 19. strToDate        	 -->
+
+<p>&nbsp;</p>
+<a name="20_20" id="20_20"></a>
+<div class="subtitle">
+20. checkDateTime 
+</div>
+<div class="subtitle_sub">$.util.checkDateTime(val)</div>
+
+<div class="content_title">
+<div class="content">
+	- YYYY-MM-DD HH:MM 형식을 체크하는 함수<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  true = 입력값이 주어진 형태일 경우<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - val (날짜시간)			<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.util.checkDateTime('2012-12-29 18:30')	
+</pre>
+</div>
+</div>
+
+<!-- // 20. checkDateTime    	 -->
+
+<p>&nbsp;</p>
+<a name="20_21" id="20_21"></a>
+<div class="subtitle">
+21. intSize 
+</div>
+<div class="subtitle_sub">$.util.intSize(val, changeChar)</div>
+
+<div class="content_title">
+<div class="content">
+	- 객체의 width 또는 height 크기가 String형태인 것을 숫자로 뽑아서 써야 할 때 사용한다. <br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Returns</div>
+
+<div class="content_title">
+<div class="content"> -  true = integer 형의 길이<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Parameters</div>
+
+<div class="content_title">
+<div class="content">
+ - val (객체 width)			<br/>
+ - changeChar (제외하는 char ex. px, %)			<br/>
+</div>
+</div>
+
+<div class="subtitle_sub">Example</div>
+
+<div class="content_title">
+<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var searchWidth = $k1.util.intSize($k1('.cont_wrap').css('width'), 'px');   	
+$k1("#tbl_grid").setGridWidth(searchWidth, false);   	
+</pre>
+</div>
+</div>
+
+<!-- // 21. checkDateTime    	 -->
+
+<!-- //Util Manual End -->
+
+<!-- //map Manual Start -->
+	
+	<a name="21_1" id="21_1"></a><br/>
+	<div class="title">
+		XXI. Map : jquery.com.map.js
+	</div>	
+	<div class="subtitle">1. mapInit</div>
+	<div class="subtitle_sub">$.gmap.mapInit(mapDivId, option)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 구글맵을 초기화 한다.
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			-  
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- mapDivId(지도를 화면에 표시하기 위한 div의 id) <br/> 
+			- option : <a href="https://developers.google.com/maps/documentation/javascript/reference#MapOptions" target="_blank">참고사이트</a>		 
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var mapOptions = {};
+$k1.gmap.geocode('요코하마시', function(results, status){		
+	mapOptions = {location : results[0].geometry.location};
+	
+	//윗줄의 location옵션을 써도 되고 아래처럼 위도, 경도를 직접 넣어 줘도 된다.
+	//mapOptions = {lat:35.4437078, lng:139.6380256};  
+	
+	$k1.gmap.mapInit('googlemap', mapOptions);	
+});
+			</pre>
+		</div>
+	</div>
+	<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a>
+	<br/>
+	<br/>
+	
+	<!-- // 1. mapInit	 -->
+	
+	<a name="21_2" id="21_2"></a><br/>	
+	<div class="subtitle">2. addMarker</div>
+	<div class="subtitle_sub">$.gmap.addMarker(option)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 지도 위에 마커를 추가한다.
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			-  
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- option
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+function gfnGridComplete(){		
+	var rowids = $k1("#tbl_grid").grid('getDataIds');
+	
+	for(var i = 0;i &lt; rowids.length;i++){
+		var lat = $k1("#tbl_grid").grid('getCellData', rowids[i], 'lat');
+		var lng = $k1("#tbl_grid").grid('getCellData', rowids[i], 'lng');
+		var room = $k1("#tbl_grid").grid('getCellData', rowids[i], 'room');
+		var name = $k1("#tbl_grid").grid('getCellData', rowids[i], 'name');
+		var intro = $k1("#tbl_grid").grid('getCellData', rowids[i], 'intro');
+		
+		var markerOption = {
+			markerType : "hotel",
+			id : rowids[i], 
+			lat : lat, 
+			lng : lng, 
+			name : name,
+			intro : intro,
+		    infoImg : "/vof/wfw/imgs/map/htl/hotel_" + rowids[i] + ".jpg",
+			status : room,
+			streetViewFunc : 'openStreetView'
+		};
+			
+		$k1.gmap.addMarker(markerOption);
+	}
+}
+			</pre>
+		</div>
+	</div>
+	<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a>
+	<br/>
+	<br/>
+	
+	<!-- // 2. addMarker	 -->
+	
+	<a name="21_3" id="21_3"></a><br/>	
+	<div class="subtitle">3. removeMarkers</div>
+	<div class="subtitle_sub">$.gmap.removeMarkers(markerType)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 지도 위에서 특정 마커를 제거한다.
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			-  
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- makerType(마커타입)
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1('#btn_list').bind('click', function() {	
+	$k1.gmap.removeMarkers('hotel');
+	
+	var url = '/vof/wfw/xsl/htlMapData.xml';
+	$k1("#tbl_grid").grid('selectData', url);
+});
+			</pre>
+		</div>
+	</div>
+	<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a>
+	<br/>
+	<br/>
+	
+	<!-- // 3. removeMarkers	 -->
+	
+	<a name="21_4" id="21_4"></a><br/>	
+	<div class="subtitle">4. removeAllMarkers</div>
+	<div class="subtitle_sub">$.gmap.removeAllMarkers()</div>	
+	<div class="content_title">
+		<div class="content">
+			- 지도 위에서 모든 마커를 제거한다.
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			-  
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- 
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1.gmap.removeAllMarkers();	
+			</pre>
+		</div>
+	</div>
+	<!-- <span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a> -->
+	<br/>
+	<br/>
+	
+	<!-- // 5. removeMarkers	 -->
+	
+	<a name="21_5" id="21_5"></a><br/>	
+	<div class="subtitle">5. creatHotelInfoWindow</div>
+	<div class="subtitle_sub">$.gmap.creatHotelInfoWindow(option)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 호텔 마커의 정보 창을 생성한다.(구글 기본 모양)
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			-  
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- option
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var infoWindowOption = {
+	marker : marker,
+	id : id,	
+	lat : lat,
+	lng : lng,
+	name : name,
+	intro : intro,
+	infoImg : infoImg,
+	streetViewFunc : streetViewFunc
+};
+$.gmap.creatHotelInfoWindow(infoWindowOption);
+			</pre>
+		</div>
+	</div>
+	<!-- <span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a> -->
+	<br/>
+	<br/>
+	
+	<!-- // 5. creatHotelInfoWindow	 -->
+	
+	<a name="21_6" id="21_6"></a><br/>	
+	<div class="subtitle">6. creatTrafficInfoWindow</div>
+	<div class="subtitle_sub">$.gmap.creatTrafficInfoWindow(option)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 교통 마커의 정보 창을 생성한다.(구글 기본 모양)
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			-  
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- option
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var infoWindowOption = {
+	marker : marker,
+	id : id,	
+	lat : lat,
+	lng : lng,
+	name : name	
+};
+$.gmap.creatTrafficInfoWindow(infoWindowOption);
+			</pre>
+		</div>
+	</div>
+	<!-- <span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a> -->
+	<br/>
+	<br/>
+	
+	<!-- // 6. creatSightsInfoWindow	 -->
+	
+	<a name="21_7" id="21_7"></a><br/>	
+	<div class="subtitle">7. creatSightsInfoWindow</div>
+	<div class="subtitle_sub">$.gmap.creatSightsInfoWindow(option)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 명소 마커의 정보 창을 생성한다.(구글 기본 모양)
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			-  
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- option
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var infoWindowOption = {
+	marker : marker,
+	id : id,	
+	lat : lat,
+	lng : lng,
+	name : name	
+};
+$.gmap.creatSightsInfoWindow(infoWindowOption);
+			</pre>
+		</div>
+	</div>
+	<!-- <span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a> -->
+	<br/>
+	<br/>
+	
+	<!-- // 7. creatSightsInfoWindow	 -->
+	
+	<a name="21_8" id="21_8"></a><br/>	
+	<div class="subtitle">8. creatFoodInfoWindow</div>
+	<div class="subtitle_sub">$.gmap.creatFoodInfoWindow(option)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 맛집 마커의 정보 창을 생성한다.(구글 기본 모양)
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			-  
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- option
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var infoWindowOption = {
+	marker : marker,
+	id : id,	
+	lat : lat,
+	lng : lng,
+	name : name	
+};
+$.gmap.creatFoodInfoWindow(infoWindowOption);
+			</pre>
+		</div>
+	</div>
+	<!-- <span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a> -->
+	<br/>
+	<br/>
+	
+	<!-- // 8. creatFoodInfoWindow	 -->
+	
+	<a name="21_9" id="21_9"></a><br/>	
+	<div class="subtitle">9. creatShopInfoWindow</div>
+	<div class="subtitle_sub">$.gmap.creatShopInfoWindow(option)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 쇼핑 마커의 정보 창을 생성한다.(구글 기본 모양)
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			-  
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- option
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var infoWindowOption = {
+	marker : marker,
+	id : id,	
+	lat : lat,
+	lng : lng,
+	name : name	
+};
+$.gmap.creatShopInfoWindow(infoWindowOption);
+			</pre>
+		</div>
+	</div>
+	<!-- <span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a> -->
+	<br/>
+	<br/>
+	
+	<!-- // 9. creatShopInfoWindow	 -->
+	
+	<a name="21_10" id="21_10"></a><br/>	
+	<div class="subtitle">10. openStreetView</div>
+	<div class="subtitle_sub">$.gmap.openStreetView(option)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 마커의 위치정보를 기반으로 스트리트 뷰를 보여준다.
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			-  
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- option(location 또는 lat, lng)
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+function openStreetView(lat, lng){	
+	var option = {
+		lat : lat,
+		lng : lng
+	};
+	$k1.gmap.openStreetView(option);
+}
+			</pre>
+		</div>
+	</div>
+	<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a>
+	<br/>
+	<br/>
+	
+	<!-- // 10. openStreetView	 -->
+	
+	<a name="21_11" id="21_11"></a><br/>	
+	<div class="subtitle">11. getPlaceLibrary</div>
+	<div class="subtitle_sub">$.gmap.getPlaceLibrary(type)</div>	
+	<div class="content_title">
+		<div class="content">
+			- type별 지역정보를 가져온다.
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			-  
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- type
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1('#chk_traffic').bind('click', function() {		
+	if($k1(this).is(':checked')) $k1.gmap.getPlaceLibrary('traffic');	
+	else $k1.gmap.removeMarkers('traffic');			
+});
+			</pre>
+		</div>
+	</div>
+	<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a>
+	<br/>
+	<br/>
+	
+	<!-- // 11. getPlaceLibrary	 -->
+	
+	<a name="21_12" id="21_12"></a><br/>	
+	<div class="subtitle">12. geocode</div>
+	<div class="subtitle_sub">$.gmap.geocode(query, callback)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 주소를 기반으로 한 위치정보를 가져온다.
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			-  
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- query(주소)<br/>
+			- callback(위치정보를 받아온 후 실행할 함수)
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var mapOptions = {};
+$k1.gmap.geocode('요코하마시', function(results, status){	
+	mapOptions = {location : results[0].geometry.location};	
+	$k1.gmap.mapInit('googlemap', mapOptions);
+	init();
+});
+			</pre>
+		</div>
+	</div>
+	<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a>
+	<br/>
+	<br/>
+	
+	<!-- // 12. geocode	 -->
+	
+	<a name="21_13" id="21_13"></a><br/>	
+	<div class="subtitle">13. setMapType</div>
+	<div class="subtitle_sub">$.gmap.setMapType(type)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 지도의 유형을 변경한다.
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			-  
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- type(roadmap, satellite, hybrid, terrain)
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1('#btn_roadmap').bind('click', function() {		
+	$k1.gmap.setMapType('roadmap');
+});
+
+$k1('#btn_satellite').bind('click', function() {
+	$k1.gmap.setMapType('satellite');
+});
+
+$k1('#btn_hybrid').bind('click', function() {
+	$k1.gmap.setMapType('hybrid');
+});	
+			</pre>
+		</div>
+	</div>
+	<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a>
+	<br/>
+	<br/>
+	
+	<!-- // 13. setMapType	 -->
+	
+	<a name="21_14" id="21_14"></a><br/>	
+	<div class="subtitle">14. setMapScale</div>
+	<div class="subtitle_sub">$.gmap.setMapScale(val)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 지도의 축척을 변경한다.
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			-  
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- val(zoom level)
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$.gmap.setMapScale(12)
+			</pre>
+		</div>
+	</div>
+	<!-- <span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a> -->
+	<br/>
+	<br/>
+	
+	<!-- // 14. setMapScale	 -->
+	
+	<a name="21_15" id="21_15"></a><br/>	
+	<div class="subtitle">15. setMapCenter</div>
+	<div class="subtitle_sub">$.gmap.setMapCenter(lat, lng)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 지도의 중심을 변경한다.
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			-  
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- lat(위도)<br/>
+			- lng(경도)
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$.gmap.setMapCenter(35.4437078, 139.6380256)
+			</pre>
+		</div>
+	</div>
+	<!-- <span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a> -->
+	<br/>
+	<br/>
+	
+	<!-- // 15. setMapCenter	 -->
+	
+	<a name="21_16" id="21_16"></a><br/>	
+	<div class="subtitle">16. printMap</div>
+	<div class="subtitle_sub">$.gmap.printMap()</div>	
+	<div class="content_title">
+		<div class="content">
+			- 현재지도를 이미지화 시킬수 있는 url경로를 구해준다.
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			- url
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- 
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+$k1('#btn_print').bind('click', function() {				
+	var url = $k1.gmap.printMap();
+	window.open('gmapprint.html?url=' + url);
+});	
+			</pre>
+		</div>
+	</div>
+	<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a>
+	<br/>
+	<br/>
+	
+	<!-- // 16. printMap	 -->
+	
+	<a name="21_17" id="21_17"></a><br/>	
+	<div class="subtitle">17. drawInfoWindow</div>
+	<div class="subtitle_sub">$.gmap.drawInfoWindow(option)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 지도위에 정보창을 생성한다.<br/>
+			- 마커가 추가되면 자동으로 생성된다.($.gmap.addMarker에서 호출)
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			- 
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- option
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+google.maps.event.addListener(marker, "click", function(e) {
+	$.gmap.drawInfoWindow({
+		type : option.markerType,
+		latlng : marker.getPosition(),
+		color : '#cf0c2c',
+		width : 400,
+		heithg : 200,
+		name : option.name,
+		intro : option.intro,
+		infoImg : option.infoImg,
+		streetViewFunc : option.streetViewFunc
+	});
+});
+			</pre>
+		</div>
+	</div>
+	<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a>
+	<br/>
+	<br/>
+	
+	<!-- // 17. drawInfoWindow	 -->
+	
+	<a name="21_18" id="21_18"></a><br/>	
+	<div class="subtitle">18. drawTitleBar</div>
+	<div class="subtitle_sub">$.gmap.drawTitleBar(option)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 마커위에 마우스를 가져가면 타이틀창이 생성된다.<br/>
+			- 호텔 마커가 추가되면 자동으로 생성된다.($.gmap.addMarker에서 호출)
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			- 
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- option
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+google.maps.event.addListener(marker, "mouseover", function(e) {
+	marker.setZIndex(1);
+	$.gmap.drawTitleBar({
+		latlng : marker.getPosition(),
+		name : option.name,
+		width : 300,
+		height : 23
+	});
+});
+			</pre>
+		</div>
+	</div>
+	<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a>
+	<br/>
+	<br/>
+	
+	<!-- // 18. drawTitleBar	 -->
+	
+	<a name="21_19" id="21_19"></a><br/>	
+	<div class="subtitle">19. closeMap</div>
+	<div class="subtitle_sub">$.gmap.closeMap(btnClass, upDiv, speed, options)</div>	
+	<div class="content_title">
+		<div class="content">
+			- 지도를 열고 닫는다.
+		</div>
+	</div>	
+	<div class="subtitle_sub">Returns</div>	
+	<div class="content_title">
+		<div class="content"> 
+			- 
+		</div>
+	</div>	
+	<div class="subtitle_sub">Parameters</div>	
+	<div class="content_title">
+		<div class="content">
+			- btnClass(지도를 열고 닫는 버튼 영역의 클래스명)<br/>
+			- upDiv(지도 div의 상위 div의 클래스명)<br/>
+			- speed(열고 닫는 속도)<br/>
+			- options
+		</div>
+	</div>	
+	<div class="subtitle_sub">Example</div>	
+	<div class="content_title">
+		<div class="content" style="border-color:rgb(255,204,255); border-style:dotted; width:600px;height:;overflow-x:hidden;overflow-y:auto;">
+			<pre style='font-family: "돋움", "dotum" ,"Verdana";'>
+var closeHtml = $k1('.btn_tselect').html();
+var openHtml = $k1('.k1_hide').html();
+$k1.gmap.closeMap('.btn_tselect', '.search_condition', 500, {afterIn:function(){		
+	$k1('.btn_tselect').html(openHtml);		
+}, afterOut:function(){
+	$k1('.btn_tselect').html(closeHtml);
+}});
+			</pre>
+		</div>
+	</div>
+	<span class="subtitle_sub">▶ </span><a href="http://ibedev.topas.net:5200/air/wfw/html/googlemap_2.html" target="_blank">예제 Click</a>
+	<br/>
+	<br/>
+	
+	<!-- // 19. closeMap	 -->	
+	
+	<!-- //map Manual End -->
+
+</body>
+</html>

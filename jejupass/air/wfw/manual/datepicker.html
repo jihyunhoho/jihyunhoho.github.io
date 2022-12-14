@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>달력</title>
+<link href="/air/css/kfx/airA.css" rel="stylesheet" type="text/css">
+<link rel="Stylesheet" type="text/css" href="/air/wfw/css/jquery-ui-1.8.24.custom.css" />
+
+<script type="text/javascript" src="/air/wfw/js/plugin/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/air/wfw/js/lib/jquery.com.datepicker.js"></script>
+<script type="text/javascript" src="/air/wfw/js/plugin/jquery-ui-1.8.24.custom.js"></script>
+<script type="text/javascript" src="/air/wfw/js/lib/jquery.com.util.js"></script>
+
+<script type="text/javascript">
+var $k1 = jQuery.noConflict();
+
+$k1(document).ready(function() {
+	//$k1("#div_datepicker").usecal({nummons:3, mindate:true, dtlaypop:true});
+	var from = {from:$k1("#txt_popFrom").val(), to:$k1("#txt_popTo").val(), gubun:"from", mindate:0, dtlaypop : true};
+	var to = {from:$k1("#txt_popFrom").val(), to:$k1("#txt_popTo").val(), gubun:"to", mindate:0, dtlaypop : true};
+	$k1("#txt_popFrom").click(function(){
+		$k1.gfnDpMask("div_mask", "layer_pop");
+		//{from : 출국일자, to : 귀국일자, gubun : from, to 구분, mindate : 이전일 선택 제한, maxdate : 다음일 선택제한, dtlaypop:layer popup 달력일 경우 true}
+		//{siteType : 사이트 타입}
+		$k1.gfnDpDefult(from, {siteType : "pop"});
+	});
+	$k1("#img_popFrom").click(function(){
+		$k1.gfnDpMask("div_mask", "layer_pop");
+		$k1.gfnDpDefult(from, {siteType : "pop"});
+	});
+	$k1("#txt_popTo").click(function(){
+		$k1.gfnDpMask("div_mask", "layer_pop");
+		$k1.gfnDpDefult(to, {siteType : "pop"});
+	});
+	$k1("#img_popTo").click(function(){
+		$k1.gfnDpMask("div_mask", "layer_pop");
+		$k1.gfnDpDefult(to, {siteType : "pop"});
+	});
+	$k1("#img_popClose").click(function(){
+		$k1.gfnDpMask("div_mask", "layer_pop", true);
+	});
+	//날짜선택완료
+	$k1("#btn_dateReturn").click(function(){
+		if($k1.gfnDpValid(from, {siteType : "pop"})){
+			$k1.gfnDpMask("div_mask", "layer_pop", true);
+			$k1("#txt_popFrom").val($k1("#txt_popInterval1").val());
+			$k1("#txt_popTo").val($k1("#txt_popInterval2").val());
+		}
+	});
+});
+</script>
+</head>
+
+<body>
+<br/><br/>
+<input id="txt_popFrom" class="k1_input_text" type="text" value="" readonly />
+<img src="/air/imgs/btn/btn_calendar_m.gif" alt="달력" id="img_popFrom" style="margin-bottom:-7px">
+<input id="txt_popTo" class="k1_input_text" type="text" value="" readonly />
+<img src="/air/imgs/btn/btn_calendar_m.gif" alt="달력" id="img_popTo"  style="margin-bottom:-7px">
+<br/>
+<div id="layer_pop" style="position:absolute;display:none;width:725px;z-index:10000">
+	<div id="k1_pop_wrap">
+		<div class="popup"  style="background:#ffffff">
+			<div class="header"><h1 class="tit">날짜 선택</h1><img src="/air/wfw/imgs/airA/btn/btn_p_close.gif" alt="닫기" class="close" id='img_popClose' style="cursor: pointer;"/></div>
+			<div class="contents">
+			<div id="k1_date_wrap">
+				<div id="k1_calendar_group">	
+					<!-- 날짜선택 -->
+					<div class="date">
+						<span class="date_departure">
+						<input type="radio" id="rdo_popInterval1" class="input_radio" name="rdo_popInterval" value='1' checked='checked'/><label for="rdo_popInterval1">출국일자</label>
+						<input id="txt_popInterval1" class="k1_input_text" type="text" value="" readonly/>
+						</span>
+						<span class="date_return">
+						<input type="radio" id="rdo_popInterval2" class="input_radio" name="rdo_popInterval" value='2'/><label for="rdo_popInterval2">귀국일자</label>
+						<input id="txt_popInterval2" class="k1_input_text" type="text" value="" readonly/>
+						</span>
+						<span class="k1_btn6"><a href="#"><span id="btn_dateReturn">날짜선택완료</span></a></span>
+					</div>
+					<!-- 날짜선택 -->
+					<div id="div_datepicker"></div>
+				</div>	
+			</div>		
+			</div>	
+		</div>
+	</div>
+</div>
+<div id="div_mask" style="position:absolute;left:0;top:0;z-index:9000;display:none;"></div>
+</body>
+</html>

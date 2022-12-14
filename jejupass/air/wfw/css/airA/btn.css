@@ -1,0 +1,510 @@
+@charset "utf-8"; 
+
+/* ------------------------------------------------------------------------------------
+Basic Style Sheet (for version 4 browsers)
+
+version: 0.2
+author: 박수연
+email: suudjin@nate.com
+설명: air 버튼
+--------------------------------------------------------------------------------------- */
+
+/************************************************************************************************************
+ 버튼영역
+************************************************************************************************************/
+.k1_btn_wrap {text-align: center;}
+.k1_btn_wrap2 {text-align:center; padding:10px 0;}
+.k1_btn_wrap3 {text-align:center; padding-top:10px;}
+.k1_requst_select {padding:10px; text-align:center;}
+.k1_btn_center {text-align:center; margin-bottom:10px;}
+.k1_btn_air_search {position:relative; height:20px; margin-bottom:3px;}
+.k1_btn_air_search .btn {position:absolute; top:0; right:0;}
+.k1_btn_reservation {text-align:center;}
+
+/************************************************************************************************************
+ k1_btn1
+************************************************************************************************************/
+.k1_btn1,
+.k1_btn1 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff !important; line-height:15px; vertical-align:middle; cursor:pointer; text-decoration:none !important; font-size:11px;}
+.k1_btn1{display:inline-block; height:17px; padding-right:2px; background-position:right 0;}
+.k1_btn1 span{display:block; height:14px; padding:2px 4px 1px 6px; background-position:left 0;}
+.k1_btn1 button,
+.k1_btn1 input{display:block; height:17px; border:0 none; padding:2px 4px 1px 6px; background-position:left 0;}
+.k1_btn1 *:hover{color:#fff !important; text-decoration:none !important;}
+
+/************************************************************************************************************
+ k1_btn1_2
+************************************************************************************************************/
+.k1_btn1_2,
+.k1_btn1_2 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff !important; line-height:16px; vertical-align:middle; cursor:pointer; text-decoration:none !important;}
+.k1_btn1_2{display:inline-block; height:17px; padding-right:2px; background-position:right -17px;}
+.k1_btn1_2 span{display:block; height:14px; padding:2px 4px 1px 6px; background-position:left -17px;}
+.k1_btn1_2 button,
+.k1_btn1_2 input{display:block; height:17px; border:0 none; padding:2px 4px 2px 6px; background-position:left -17px;}
+.k1_btn1_2 *:hover{color:#fff !important; text-decoration:none !important;}
+
+/************************************************************************************************************
+ k1_btn2
+************************************************************************************************************/
+.k1_btn2,
+.k1_btn2 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#494949; font-size:11px; line-height:16px; vertical-align:middle; cursor:pointer; text-decoration:none; white-space:nowrap;}
+.k1_btn2{display:inline-block; height:19px; padding-right:2px; background-position:right -34px;}
+.k1_btn2 span{display:block; height:16px; padding:2px 5px 1px 6px; background-position:left -34px;}
+.k1_btn2 button,
+.k1_btn2 input{display:block; height:19px; padding:1px 5px 1px 6px; border:0 none; background-position:left -34px;}
+.k1_btn2 span.w55{width:43px; text-align:center;}
+.k1_btn2 button.w55,
+.k1_btn2 input.w55{width:55px; text-align:center;}
+.k1_btn2 *.t_red{color:#e92100;}
+.k1_btn2:hover{text-decoration:none !important;}
+
+/************************************************************************************************************
+ k1_btn3
+************************************************************************************************************/
+.k1_btn3,
+.k1_btn3 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; vertical-align:middle; line-height:1.25em; cursor:pointer; text-decoration:none;}
+.k1_btn3{display:inline-block; position:relative; height:19px; padding-right:2px; background-position:right -53px;}
+.k1_btn3 span{display:block; height:14px; padding:3px 4px 2px 6px; background-position:left -53px;}
+.k1_btn3 button,
+.k1_btn3 input{display:block; height:19px; padding:3px 4px 2px 6px; border:0 none; background-position:left -53px;}
+
+/************************************************************************************************************
+ k1_btn3_1
+************************************************************************************************************/
+.k1_btn3_1,
+.k1_btn3_1 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; vertical-align:middle; line-height:1.25em; cursor:pointer; text-decoration:none;}
+.k1_btn3_1{display:inline-block; position:relative; height:19px; padding-right:2px; background-position:right -481px;}
+.k1_btn3_1 span{display:block; height:14px; padding:3px 4px 2px 6px; background-position:left -481px;}
+.k1_btn3_1 button,
+.k1_btn3_1 input{display:block; height:19px; padding:3px 4px 2px 6px; border:0 none; background-position:left -481px;}
+
+/************************************************************************************************************
+ k1_btn4 - htl 사용
+************************************************************************************************************/
+.k1_btn4,
+.k1_btn4 *{background-image:url(/air/wfw/imgs/airA/btn/btn_bg.png); color:#235ba5; cursor:pointer; line-height:17px; text-decoration:none;}
+.k1_btn4{display:inline-block; height:20px; padding-right:2px; background-position:right top; text-align:center; vertical-align:middle;}
+.k1_btn4 span{display:block; height:17px; padding:2px 4px 1px 6px; background-position:left top;}
+.k1_btn4 button,
+.k1_btn4 input{display:block; height:20px; padding:2px 4px 1px 6px; border:0 none; background-position:left top;}
+
+/************************************************************************************************************
+ k1_btn5
+************************************************************************************************************/
+.k1_btn5,
+.k1_btn5 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); line-height:16px; text-decoration:none; vertical-align:middle; cursor:pointer;}
+.k1_btn5 {display:inline-block; height:20px; padding-right:1px; background-position:right -72px;}
+.k1_btn5 span{display:block; height:16px; padding:3px 8px 1px 9px; background-position:left -72px;}
+.k1_btn5 button,
+.k1_btn5 input{display:block; height:20px; padding:2px 8px 2px 9px; border:0 none; background-position:left -72px;}
+
+/************************************************************************************************************
+ k1_btn6 - htl 사용
+************************************************************************************************************/
+.k1_btn6,
+.k1_btn6 *{background-image:url(/air/wfw/imgs/airA/btn/btn_bg.png); color:#fff; text-decoration:none; white-space:nowrap; cursor:pointer; line-height:17px}
+.k1_btn6{display:inline-block; height:20px; padding-right:2px; background-position:right -20px; vertical-align:middle;}
+.k1_btn6 span{display:block; height:17px; padding:2px 9px 1px 10px; background-position:left -20px;}
+.k1_btn6 button,
+.k1_btn6 input{display:block; height:20px; padding:2px 9px 2px 10px; background-position:left -20px; border:0 none;}
+.k1_btn6:hover{color:#fff !important; text-decoration:none !important;}
+
+/************************************************************************************************************
+ k1_btn7 - htl 사용
+************************************************************************************************************/
+.k1_btn7,
+.k1_btn7 *{overflow:visible; background-image:url(/air/wfw/imgs/airA/btn/btn_bg.png); color:#fff; text-decoration:none; line-height:17px; white-space:nowrap; cursor:pointer;}
+.k1_btn7{display:inline-block; position:relative; height:20px; padding-right:2px; background-position:right -40px; vertical-align:middle;}
+.k1_btn7 strong{background:none; border:0 none;}
+.k1_btn7 span{display:block; height:17px; padding:2px 16px 1px 27px; background-position:left -40px;}
+.k1_btn7 button,
+.k1_btn7 input{display:block; height:20px; padding:2px 16px 2px 27px; border:0 none; background-position:left -40px;}
+
+/************************************************************************************************************
+ k1_btn8 - htl 사용
+************************************************************************************************************/
+.k1_btn8,
+.k1_btn8 *{overflow:visible; background-image:url(/air/wfw/imgs/airA/btn/btn_bg.png); color:#fff; font-size:11px; text-align:center; line-height:15px; text-decoration:none; cursor:pointer; vertical-align:middle; white-space:nowrap;}
+.k1_btn8{display:inline-block; position:relative; height:17px; padding-right:3px; background-position:right -60px;}
+.k1_btn8 span{display:block; height:14px; padding:2px 3px 1px 7px; background-position:left -60px;}
+.k1_btn8 button,
+.k1_btn8 input{display:block; height:17px; padding:2px 3px 1px 7px; background-position:left -60px; border:0 none;}
+.k1_btn8 em.ico1{display:inline-block; padding:0 3px; width:5px; height:9px; background:url(/air/wfw/imgs/airA/btn/btn_icon.png) no-repeat 0 -55px;}
+
+/************************************************************************************************************
+ k1_btn9
+************************************************************************************************************/
+.k1_btn9,
+.k1_btn9 *{overflow:visible; background-image:url(/air/wfw/imgs/airA/btn/btn_bg.png); color:#fff; text-align:center; text-decoration:none; cursor:pointer; line-height:15px; vertical-align:middle; white-space:nowrap;}
+.k1_btn9{display:inline-block; height:17px; padding-right:4px; background-position:right -77px;}
+.k1_btn9 span{display:block; height:14px; padding:2px 3px 1px 7px; background-position:left -77px;}
+.k1_btn9 button,
+.k1_btn9 input{display:block; height:17px; border:0 none; padding:2px 3px 1px 7px; background-position:left -77px;}
+
+/************************************************************************************************************
+ k1_btn9_1
+************************************************************************************************************/
+.k1_btn9_1,
+.k1_btn9_1 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; text-align:center; vertical-align:middle; line-height:14px; text-decoration:none; cursor:pointer;}
+.k1_btn9_1{display:inline-block; height:17px; padding-right:3px; background-position:right -92px;}
+.k1_btn9_1 span{display:block; height:14px; padding:2px 3px 1px 7px; background-position:left -92px;}
+.k1_btn9_1 button,
+.k1_btn9_1 input{display:block; height:17px; padding:2px 3px 1px 7px; border:0 none; background-position:left -92px;}
+
+/************************************************************************************************************
+ k1_btn11 - btms 사용
+************************************************************************************************************/
+.k1_btn11,
+.k1_btn11 *{overflow:visible; background-image:url(/air/wfw/imgs/airA/btn/btn_bg.png); color:#fff; text-decoration:none; cursor:pointer; vertical-align:middle; line-height:14px;}
+.k1_btn11{display:inline-block; height:21px; padding-right:1px; background-position:right -94px;}
+.k1_btn11 span{display:block; height:14px; padding:5px 8px 2px 9px; background-position:left -94px;}
+.k1_btn11 button,
+.k1_btn11 input{display:block; height:21px; padding:5px 8px 2px 9px; background-position:left -94px; border:0 none;}
+
+/************************************************************************************************************
+ k1_btn12 - btms 사용
+************************************************************************************************************/
+.k1_btn12,
+.k1_btn12 *{overflow:visible; background-image:url(/air/wfw/imgs/airA/btn/btn_bg.png); color:#494949; text-decoration:none; cursor:pointer; vertical-align:middle; line-height:1.2em; font-size:11px;}
+.k1_btn12{display:inline-block; height:17px; padding-right:1px; background-position:right -115px;}
+.k1_btn12 span{display:block; height:12px; padding:4px 7px 1px 8px; background-position:left -115px;}
+.k1_btn12 button,
+.k1_btn12 input{display:block; height:17px; padding:4px 7px 1px 8px; background-position:left -115px; border:0 none;}
+a.k1_btn12:hover{text-decoration:none !important;}
+
+/************************************************************************************************************
+ k1_btn13 - 20140319 추가
+************************************************************************************************************/
+.k1_btn13,
+.k1_btn13 *{overflow:visible; background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; text-decoration:none; cursor:pointer; vertical-align:middle; line-height:1.3em; font-size:11px;}
+.k1_btn13{display:inline-block; height:16px; margin-bottom:1px; padding-right:1px; background-position:right -532px;}
+.k1_btn13 span{display:block; height:13px; width:45px; padding:2px 0 1px; background-position:left -532px; text-align:center;}
+.k1_btn13 button,
+.k1_btn13 input{display:block; height:16px; width:45px; padding:2px 0 1px; background-position:left -532px; border:0 none; text-align:center;}
+a.k1_btn13:hover{text-decoration:none !important;}
+
+/************************************************************************************************************
+ k1_btn_01
+************************************************************************************************************/
+.k1_btn_01,
+.k1_btn_01 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; font-weight:bold; line-height:21px; text-align:center; white-space:nowrap; vertical-align:middle; text-decoration:none; cursor:pointer;}
+.k1_btn_01{display:inline-block; width:110px; height:31px; padding-right:3px; background-position:right -109px;}
+.k1_btn_01 span{display:block; height:21px; padding:6px 7px 4px 10px; background-position:left -109px;}
+.k1_btn_01 button,
+.k1_btn_01 input{display:block; width:110px; height:31px; border:0 none; padding:4px 7px 4px 10px; background-position:left -109px;}
+
+/************************************************************************************************************
+ k1_btn_01_over
+************************************************************************************************************/
+.k1_btn_01_over,
+.k1_btn_01_over *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; font-weight:bold; line-height:21px; text-align:center; vertical-align:middle; text-decoration:none; white-space:nowrap; cursor:pointer;}
+.k1_btn_01_over {display:inline-block; height:31px; padding-right:3px; background-position:right -109px;}
+.k1_btn_01_over span {display:block; height:21px; padding:6px 16px 4px 19px; background-position:left -109px;}
+.k1_btn_01_over button,
+.k1_btn_01_over input{display:block; height:31px; border:0 none; padding:4px 16px 4px 19px; background-position:left -109px;}
+
+/************************************************************************************************************
+ k1_btn_02
+************************************************************************************************************/
+.k1_btn_02,
+.k1_btn_02 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; font-weight:bold; text-decoration:none; text-align:center; vertical-align:middle; line-height:21px; white-space:nowrap; cursor:pointer;}
+.k1_btn_02{display:inline-block; height:31px; width:110px; padding-right:3px; background-position:right -140px;}
+.k1_btn_02 span {display:block; height:21px; padding:6px 7px 4px 10px; background-position:left -140px;}
+.k1_btn_02 button,
+.k1_btn_02 input{display:block; height:31px; width:110px; padding:4px 7px 4px 10px; border:0 none; background-position:left -140px;}
+
+/************************************************************************************************************
+ k1_btn_02_over
+************************************************************************************************************/
+.k1_btn_02_over,
+.k1_btn_02_over *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; font-weight:bold; text-decoration:none; text-align:center; vertical-align:middle;line-height:21px; white-space:nowrap; cursor:pointer;}
+.k1_btn_02_over {display:inline-block; height:31px; padding-right:3px; background-position:right -140px;}
+.k1_btn_02_over span{display:block; height:21px; padding:6px 16px 4px 19px; background-position:left -140px;}
+.k1_btn_02_over button,
+.k1_btn_02_over input{display:block; height:31px; border:0 none; padding:4px 16px 4px 19px; background-position:left -140px;}
+
+/************************************************************************************************************
+ k1_btn_03
+************************************************************************************************************/
+.k1_btn_03,
+.k1_btn_03 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; font-weight:bold; text-decoration:none; text-align:center; vertical-align:middle; line-height:21px; white-space:nowrap; cursor:pointer;}
+.k1_btn_03{display:inline-block; height:31px; width:110px; padding-right:3px; background-position:right -500px;}
+.k1_btn_03 span {display:block; height:21px; padding:6px 7px 4px 10px; background-position:left -500px;}
+.k1_btn_03 button,
+.k1_btn_03 input{display:block; height:31px; width:110px; padding:4px 7px 4px 10px; border:0 none; background-position:left -500px;}
+
+/************************************************************************************************************
+ k1_btn01 - htl 사용
+************************************************************************************************************/
+.k1_btn01,
+.k1_btn01 *{overflow:visible; background-image:url(/air/wfw/imgs/airA/btn/btn_bg.png); color:#fff; font-size:12px; font-weight:bold; text-decoration:none; vertical-align:middle; cursor:pointer; line-height:1.35em;}
+.k1_btn01 {display:inline-block; height:31px; padding-right:10px; background-position:right -132px;}
+.k1_btn01 span{display:block; height:12px; padding:9px 10px 10px 20px; background-position:left -132px;}
+.k1_btn01 button,
+.k1_btn01 input{display:block; height:31px; padding:9px 10px 8px 20px; background-position:left -132px; border:0 none;}
+.k1_btn01 span.w100{width:70px; padding:9px 10px 10px 20px; text-align:center;}
+.k1_btn01 button.w100,
+.k1_btn01 input.w100{width:100px; text-align:center;}
+
+/************************************************************************************************************
+ k1_btn01_off - htl 사용
+************************************************************************************************************/
+.k1_btn01_off,
+.k1_btn01_off *{overflow:visible; background-image:url(/air/wfw/imgs/airA/btn/btn_bg.png); color:#fff; font-size:12px; font-weight:bold; text-decoration:none; vertical-align:middle; cursor:pointer; line-height:1.35em;}
+.k1_btn01_off {display:inline-block; height:31px; padding-right:10px; background-position:right -163px;}
+.k1_btn01_off span{display:block; height:12px; padding:9px 10px 10px 20px; background-position:left -163px;}
+.k1_btn01_off button,
+.k1_btn01_off input{display:block; height:31px; padding:9px 10px 8px 20px; background-position:left -163px; border:0 none;}
+.k1_btn01_off span.w100{width:70px; padding:9px 10px 10px 20px; text-align:center;}
+.k1_btn01_off button.w100,
+.k1_btn01_off input.w100{width:100px; text-align:center;}
+
+/************************************************************************************************************
+ k1_btn02
+************************************************************************************************************/
+.k1_btn02,
+.k1_btn02 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; font-size:12px; font-weight:bold; line-height:28px; vertical-align:middle; text-decoration:none; white-space:nowrap; cursor:pointer;}
+.k1_btn02 {display:inline-block; height:31px; padding-right:10px; background-position:right -171px;}
+.k1_btn02 span{display:block; height:28px; padding:2px 10px 1px 20px; background-position:left -171px;}
+.k1_btn02 button,
+.k1_btn02 input{display:block; height:31px; padding:1px 10px 1px 20px; border:0 none; background-position:left -171px;}
+.k1_btn02 span.w100{width:72px; padding:2px 9px 1px 19px; text-align:center;}
+.k1_btn02 button.w100,
+.k1_btn02 input.w100{width:100px; text-align:center;}
+.k1_btn02 .k1_ico_arrow{display:inline-block; width:14px; height:14px; margin-right:5px; background:url(/air/wfw/imgs/airA/btn/btn_icon.png) no-repeat -291px -25px; vertical-align:middle;}
+
+/************************************************************************************************************
+ k1_btn03
+************************************************************************************************************/
+.k1_btn03,
+.k1_btn03 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; font-size:12px; font-weight:bold; line-height:14px; text-decoration:none; vertical-align:middle; white-space:nowrap; cursor:pointer;}
+.k1_btn03 {display:inline-block; height:30px; padding-right:2px; background-position:right -203px;}
+.k1_btn03 span{display:block; height:14px; padding:9px 13px 7px 15px; background-position:left -203px;}
+.k1_btn03 button,
+.k1_btn03 input{display:block; height:30px; padding:7px 13px 7px 15px; border:0 none; background-position:left -203px;}
+.k1_btn03 span.w100{width:70px; padding:9px 13px 7px 15px; text-align:center;}
+.k1_btn03 button.w100,
+.k1_btn03 input.w100{width:100px; text-align:center;}
+
+/************************************************************************************************************
+ k1_btn04
+************************************************************************************************************/
+.k1_btn04,
+.k1_btn04 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; font-size:12px; font-weight:bold; line-height:14px; text-decoration:none; vertical-align:middle; white-space:nowrap; cursor:pointer;}
+.k1_btn04 {display:inline-block; height:30px; padding-right:2px; background-position:right -234px;}
+.k1_btn04 span{display:block; height:14px; padding:9px 8px 7px 10px; background-position:left -234px;}
+.k1_btn04 button,
+.k1_btn04 input{display:block; height:30px; padding:6px 8px 5px 10px; border:0 none; background-position:left -234px;}
+
+/************************************************************************************************************
+ k1_btn05
+************************************************************************************************************/
+.k1_btn05,
+.k1_btn05 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; font-size:12px; font-weight:bold; line-height:14px; text-decoration:none; vertical-align:middle; white-space:nowrap; cursor:pointer;}
+.k1_btn05 {display:inline-block; height:30px; padding-right:2px; background-position:right -264px;}
+.k1_btn05 span{display:block; height:14px; padding:9px 8px 7px 10px; background-position:left -264px;}
+.k1_btn05 button,
+.k1_btn05 input{display:block; height:30px; padding:6px 8px 5px 10px; border:0 none; background-position:left -264px;}
+
+/************************************************************************************************************
+ k1_btn06
+************************************************************************************************************/
+.k1_btn06,
+.k1_btn06 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; font-size:12px; text-decoration:none; vertical-align:middle; line-height:14px; white-space:nowrap; cursor:pointer;}
+.k1_btn06 {display:inline-block; height:28px; padding-right:7px; background-position:right -294px;}
+.k1_btn06 span{display:block; height:14px; padding:7px 4px 7px 10px; background-position:left -294px;}
+.k1_btn06 button,
+.k1_btn06 input{display:block; height:28px; padding:4px 4px 5px 10px; border:0 none; background-position:left -294px;}
+
+/************************************************************************************************************
+ k1_btn06_off
+************************************************************************************************************/
+.k1_btn06_off,
+.k1_btn06_off *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; font-size:12px; line-height:14px; text-decoration:none; vertical-align:middle; white-space:nowrap; cursor:pointer;}
+.k1_btn06_off {display:inline-block; height:28px; padding-right:7px; background-position:right -322px;}
+.k1_btn06_off span{display:block; height:14px; padding:7px 4px 7px 10px; background-position:left -322px;}
+.k1_btn06_off button,
+.k1_btn06_off input{display:block; height:28px; padding:4px 4px 5px 10px; border:0 none; background-position:left -322px;}
+
+/************************************************************************************************************
+ k1_btn07
+************************************************************************************************************/
+.k1_btn07,
+.k1_btn07 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; font-size:12px; line-height:1.25em; text-align:center; vertical-align:middle; font-weight:bold; text-decoration:none; white-space:nowrap; cursor:pointer;}
+.k1_btn07 {display:inline-block; height:23px; padding-right:3px; background-position:right -350px;}
+.k1_btn07 span{display:block; height:14px; padding:6px 6px 3px 9px; background-position:left -350px;}
+.k1_btn07 button,
+.k1_btn07 input{display:block; height:23px; padding:6px 6px 3px 9px; border:0 none; background-position:left -350px;}
+
+/************************************************************************************************************
+ k1_btn08
+************************************************************************************************************/
+.k1_btn08,
+.k1_btn08 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); font-size:12px; color:#5e5e5e; font-weight:bold; text-align:center; vertical-align:middle; text-decoration:none; line-height:14px; white-space:nowrap; cursor:pointer;}
+.k1_btn08 {display:inline-block; height:23px; padding-right:2px; background-position:right -373px;}
+.k1_btn08 span{display:block; height:14px; padding:6px 7px 3px 9px; background-position:left -373px;}
+.k1_btn08 button,
+.k1_btn08 input{display:block; height:23px; padding:6px 7px 3px 9px; border:0 none; background-position:left -373px;}
+
+/************************************************************************************************************
+ k1_btn09
+************************************************************************************************************/
+.k1_btn09,
+.k1_btn09 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; font-size:12px; vertical-align:middle; text-decoration:none; line-height:1.2em; white-space:nowrap; cursor:pointer;}
+.k1_btn09 {display:inline-block; height:21px; padding-right:3px; background-position:right -396px;}
+.k1_btn09 span{display:block; height:14px; padding:5px 4px 2px 7px; background-position:left -396px;}
+.k1_btn09 button,
+.k1_btn09 input{display:block; height:21px; padding:5px 4px 2px 7px; border:0 none; background-position:left -396px;}
+
+/************************************************************************************************************
+ k1_btn10
+************************************************************************************************************/
+.k1_btn10,
+.k1_btn10 *{background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; font-size:12px; text-align:center; vertical-align:middle; text-decoration:none;  line-height:15px; white-space:nowrap; cursor:pointer;}
+.k1_btn10 {display:inline-block; height:21px; padding-right:3px; background-position:right -396px;}
+.k1_btn10 span{display:block; height:14px; padding:4px 8px 3px 10px; background-position:left -396px;}
+.k1_btn10 button,
+.k1_btn10 input{display:block; height:21px; padding:4px 8px 3px 10px; border:0 none; background-position:left -396px;}
+
+/************************************************************************************************************
+ k1_dbtn01 - HTL공통사용
+************************************************************************************************************/
+.k1_dbtn01,
+.k1_dbtn01 *{overflow:visible; background-image:url(/air/wfw/imgs/airA/btn/btn_bg.png); color:#fff; font-size:11px; text-decoration:none; cursor:pointer; vertical-align:middle; line-height:1.3em;}
+.k1_dbtn01{display:inline-block; width:110px; height:20px; padding-right:2px; background-position:right -194px; text-align:center;}
+.k1_dbtn01 span{display:block; height:14px; padding:4px 1px 2px 3px; background-position:left -194px;}
+.k1_dbtn01 button,
+.k1_dbtn01 input{display:block; width:110px; height:20px; padding:2px 1px 1px 3px; border:0 none; background-position:left -194px;}
+
+/************************************************************************************************************
+ k1_dbtn02 - HTL공통사용
+************************************************************************************************************/
+.k1_dbtn02,
+.k1_dbtn02 *{overflow:visible; background-image:url(/air/wfw/imgs/airA/btn/btn_bg.png); color:#fff; font-size:11px; text-align:center; text-decoration:none; vertical-align:middle; cursor:pointer; line-height:1.2em;}
+.k1_dbtn02{display:inline-block; height:33px; width:110px; padding-right:2px; background-position:right -215px;}
+.k1_dbtn02 span{display:block; height:27px; padding:4px 1px 2px 3px; background-position:left -215px;}
+.k1_dbtn02 button,
+.k1_dbtn02 input{display:block; width:110px; height:33px; padding:2px 1px 1px 3px; border:0 none; background-position:left -215px;}
+
+/************************************************************************************************************
+ k1_btn_reserch1 - htl 사용
+************************************************************************************************************/
+.k1_btn_reserch1,
+.k1_btn_reserch1 *{background-image:url(/air/wfw/imgs/airA/btn/btn_bg.png); color:#fff; text-align:center; text-decoration:none; white-space:nowrap; cursor:pointer; vertical-align:middle; line-height:1.3em;}
+.k1_btn_reserch1{display:inline-block; height:24px; width:64px; padding-right:2px; background-position:right -249px;}
+.k1_btn_reserch1 span{display:block; height:15px; padding:5px 1px 4px 3px; background-position:left -249px;}
+.k1_btn_reserch1 button,
+.k1_btn_reserch1 input{display:block; width:64px; height:24px; padding:5px 1px 4px 3px; border:0 none; background-position:left -249px;}
+
+/************************************************************************************************************
+ k1_btn_bg01 - htl 사용
+************************************************************************************************************/
+.k1_btn_bg01 {display:inline-block; width:93px; height:17px; padding:1px 0; border:0 none; background:url(/air/wfw/imgs/airA/btn/btn_bg.png) no-repeat 0 -333px; line-height:17px; color:#fff !important; font-size:11px; text-align:center; vertical-align:middle; cursor:pointer; text-decoration:none;}
+a.k1_btn_bg01{height:16px; line-height:16px;}
+a.k1_btn_bg01:hover{text-decoration:none;}
+
+/************************************************************************************************************
+ k1_btn_input01 - btms 사용(댓글)
+************************************************************************************************************/
+.k1_btn_input01,
+.k1_btn_input01 *{background-image:url(/air/wfw/imgs/airA/btn/btn_bg.png); color:#fff !important; font-weight:bold; text-align:center; text-decoration:none !important; vertical-align:middle; cursor:pointer; line-height:1.2em;}
+.k1_btn_input01{display:inline-block; height:60px; width:68px; padding-right:2px; background-position:right -273px;}
+.k1_btn_input01 span{display:block; height:14px; padding:23px 1px 23px 3px; background-position:left -273px;}
+.k1_btn_input01 button,
+.k1_btn_input01 input{display:block; height:60px; width:68px; padding:23px 1px 23px 3px; border:0 none; background-position:left -273px;}
+
+/************************************************************************************************************
+ k1_btn_input02
+************************************************************************************************************/
+.k1_btn_input02,
+.k1_btn_input02 *{overflow:visible; background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; font-weight:bold; text-align:center; vertical-align:middle; text-decoration:none; line-height:14px; white-space:nowrap; cursor:pointer;}
+.k1_btn_input02{display:inline-block; height:44px; width:62px; padding-right:2px; background-position:right -418px;}
+.k1_btn_input02 span{display:block; height:14px; padding:16px 1px 14px 3px; background-position:left -418px;}
+.k1_btn_input02 button,
+.k1_btn_input02 input{display:block; width:64px; height:44px; padding:16px 1px 14px 3px; border:0 none; background-position:left -418px;}
+
+/************************************************************************************************************
+ k1_btn_input03
+************************************************************************************************************/
+.k1_btn_input03,
+.k1_btn_input03 *{overflow:visible; background-image:url(/air/wfw/imgs/airA/btn/btn_airbg.gif); color:#fff; text-align:center; vertical-align:middle; line-height:15px; text-decoration:none; white-space:nowrap; cursor:pointer;}
+.k1_btn_input03{display:inline-block; height:19px; padding-right:1px; background-position:right -462px;}
+.k1_btn_input03 span{display:block; width:86px; height:14px; padding:3px 0 2px 0; background-position:left -462px;}
+.k1_btn_input03 button,
+.k1_btn_input03 input{display:block; width:86px; height:19px; padding:3px 0 2px 0; border:0 none; background-position:left -462px;}
+
+/************************************************************************************************************
+ k1_btn_lowest
+************************************************************************************************************/
+.k1_btn_lowest,
+.k1_btn_lowest *{padding:0; margin:0; color:#5e5e5e; vertical-align:middle; cursor:pointer; text-decoration:none; font-size:11px; text-align:right; line-height:1.3em;}
+.k1_btn_lowest{display:inline-block; width:50px; height:14px; padding:2px 0 1px;}
+.k1_btn_lowest button{display:block; width:55px; height:14px; border:0 none; background:none;}
+.k1_btn_lowest button.active{color:#e92100;}
+.k1_btn_lowest *:hover{color:#2360ca; text-decoration:underline; }
+/************************************************************************************************************
+ 첨부파일
+************************************************************************************************************/
+.k1_proof_info {position:relative; height:60px; padding:9px; border:1px solid #69a7d3;}
+.k1_proof_info2 {position:relative; height:60px;}
+.k1_file_box {overflow-x: hidden; overflow-y: scroll; padding:5px; border:1px solid #bfbfbf;}
+.k1_file_box ul {overflow:hidden;}
+.k1_file_box ul li {font-size:11px; line-height:1.8em; cursor:pointer;}
+.k1_file_box ul li:hover{background:#eee;}
+.k1_file_box ul li em {display:inline-block; width:13px; height:15px; margin:0 5px; background:url(/air/wfw/imgs/icon/bul_addfile.gif) no-repeat 0 0; vertical-align:middle;}
+.k1_file_box ul li a.del, 
+.k1_file_box ul li button.del {display:inline-block; width:12px; height:12px; border:0 none; margin-left:10px; background:url(/air/wfw/imgs/airA/btn/btn_icon.png) no-repeat -192px -24px; vertical-align:middle; font-size:0; cursor:pointer;}
+
+.k1_proof_info .file_btn {display:inline-block; position:absolute; width:70px; height:60px; top:9px; right:9px; padding-right:2px; background:url(/air/wfw/imgs/airA/btn/btn_bg.png) no-repeat right -273px; vertical-align:middle;}
+.k1_proof_info .file_btn span {display:block; width:67px; height:14px; padding:23px 1px 23px 3px; background:url(/air/wfw/imgs/airA/btn/btn_bg.png) no-repeat left -273px; color:#fff; font-weight:bold; border:0 none; text-align:center;}
+.k1_proof_info .file_btn button {display:block; width:67px; height:60px; padding:20px 1px 20px 6px; background:url(/air/wfw/imgs/airA/btn/btn_bg.png) no-repeat left -273px; color:#fff; font-weight:bold; border:0 none; text-align:center;}
+
+.k1_proof_info2 .file_btn {display:inline-block; position:absolute; width:70px; height:60px; top:0; right:0; padding-right:2px; background:url(/air/wfw/imgs/airA/btn/btn_bg.png) no-repeat right -273px; vertical-align:middle;}
+.k1_proof_info2 .file_btn span{display:block;width:67px; height:14px; padding:23px 1px 23px 3px; background:url(/air/wfw/imgs/airA/btn/btn_bg.png) no-repeat left -273px; color:#fff; font-weight:bold; border:0 none; text-align:center;}
+.k1_proof_info2 .file_btn button {display:block; width:67px; height:60px; padding:20px 1px 20px 6px; background:url(/air/wfw/imgs/airA/btn/btn_bg.png) no-repeat left -273px; color:#fff; font-weight:bold; border:0 none; text-align:center;}
+
+/************************************************************************************************************
+ 공통버튼
+************************************************************************************************************/
+/*공지사항버튼*/
+.k1_btn_arrow_prev2 {display:inline-block; width:15px; height:15px; background:url(/air/wfw/imgs/airA/btn/btn_arrow.gif) no-repeat 0 0; vertical-align:middle;}
+.k1_btn_arrow_next2 {display:inline-block; width:15px; height:15px; background:url(/air/wfw/imgs/airA/btn/btn_arrow.gif) no-repeat -15px 0; vertical-align:middle;}
+
+/************************************************************************************************************
+ 할인항공_전체선택 버튼
+************************************************************************************************************/
+.k1_btn_all_set,
+.k1_btn_all_set *{color:#235ba5; line-height:15px; vertical-align:middle; cursor:pointer; text-decoration:none !important; font-size:11px; font-weight:bold;}
+.k1_btn_all_set{display:inline-block; height:21px; background:url(/air/wfw/imgs/airA/btn/btn_airbg.gif) left -548px; padding-left:1px;}
+.k1_btn_all_set span{display:block; height:17px; padding:4px 9px 1px 9px; background:url(/air/wfw/imgs/airA/btn/btn_airbg.gif) right -548px;}
+.k1_btn_all_set button,
+.k1_btn_all_set input{display:inline-block; height:21px; border:0 none; padding:3px 10px 1px 8px; background:url(/air/wfw/imgs/airA/btn/btn_airbg.gif) right -548px;}
+
+/************************************************************************************************************
+ 예약및 결제내역 툴팁
+************************************************************************************************************/
+.k1_schedule_info {display:inline-block; width:11px; height:11px; margin-left:5px; background:url(/air/wfw/imgs/bullet/ico_ex.gif) no-repeat left 0; font-size:0; text-decoration:none; cursor:pointer; vertical-align:middle;}
+
+/************************************************************************************************************************************************
+ +, - 버튼
+************************************************************************************************************************************************/
+.k1_btn_plus {display:inline-block; font-size:0; width:15px; height:15px; background:url(/air/wfw/imgs/airA/btn/btn_plus.gif) no-repeat; color:#fff; line-height:15px; text-align:center; vertical-align:middle;}
+.k1_btn_minus {display:inline-block; font-size:0; width:15px; height:15px; background:url(/air/wfw/imgs/airA/btn/btn_minus.gif) no-repeat; color:#fff; line-height:15px; text-align:center; vertical-align:middle;}
+
+/*20191031 스카이스캐너 즉시결제 디자인 변경 esleee */
+span.btn_fold{float:right;width:16px;height:26px;margin-top:-7px;font-size:0; -webkit-transform: rotate(90deg);transform: rotate(90deg); cursor:pointer}
+span.btn_fold.close{background:url(/air/wfw/imgs/airA/btn/btn_tabset.gif) 0px -26px no-repeat;}
+span.btn_fold.open{background:url(/air/wfw/imgs/airA/btn/btn_tabset.gif) -16px -26px no-repeat;}
+div.k1_fold_contents{display:block;margin-bottom:10px;}
+.k1_btn_input02.pay{width:170px;}
+.k1_btn_input02.pay span{font-size:14px;}
+
+/*2021-03-25 가격추적 기능 디자인 추가 esleee */
+.k1_btn7.bell{background: none;}
+.k1_btn7.bell span{height: 20px;color: #235ba5;border: 1px solid #235ba5;background-image: url(/air/wfw/imgs/airA/icon/ico_bell.png);background-size:14px 14px;background-repeat: no-repeat;background-position: 8px 2px;box-sizing: border-box;border-radius: 3px}
+.type1 .k1_btn01{height: auto;background: none;padding-right: 0;}
+.type1 .k1_btn01 span{ height: auto; padding: 10px 50px; background: none; color: #fff; font-size: 15px; font-weight: normal;background-color: #3775c7; border-radius: 5px;}
+
+.k1_btn_flat{padding:3px 7px 4px;font-size:11px;color:#fff;background-color:#3775c7;}
+.k1_btn_flat:active{background-color:#3775c7;}
+a.ico_print::before{content:'';display:inline-block;width:15px;height:15px;margin-right:5px;vertical-align:sub;background:url('/air/wfw/imgs/airA/icon/ico_print.png') 50% 50% no-repeat;background-size:100%;}

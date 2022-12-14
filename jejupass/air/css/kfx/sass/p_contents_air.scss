@@ -1,0 +1,1474 @@
+@charset "utf-8";
+
+@import '_pbase', '_pfont';
+
+/* 항공 메인 */
+.k1_main_search_area{position:relative;padding:64px 0 64px 0;text-align:center;border:none;z-index:100;
+	&:before{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:115px;background:$col_g100 url(#{$img_url}/common/bg_mainR.png) repeat-x 0 100%;}
+	.k1_search_are_spot{position:relative;width:1136px;margin:0 auto;text-align:left;
+		.titDep1{margin:8px 0 32px 0;text-align:center}
+		.btLink{position:absolute;top:-39px;right:-1px}
+		.k1_section_multi{display:block;position:relative;margin:0;padding:0 106px 0 0;font-size:0}
+	}
+}
+
+.wrapper .container .airMainContests{padding-top:40px;
+	.titDep2{text-align:center;}
+	.kf_recentWrap{margin:40px 0 100px 0}	
+}
+.swiperMytrip{
+	.swiper-slide{overflow:hidden;position:relative;border:1px solid $col_g200;border-radius:16px;background:$col_white;
+		> a{display:block;width:100%;position:relative}
+		.k1_from_to{width:100%;height:64px;padding:0 24px;background:$col_g100;
+			> div{position:relative;display:inline-block;color:$col_g800;font-size:rem(18px);font-weight:$weight600;line-height:64px;
+				&.to{padding-left:29px;
+					&:before{content:'';display:block;position:absolute;top:50%;left:4px;width:18px;height:18px;margin-top:-9px;background:url(#{$img_url}/common/spr_air.png) no-repeat -64px 0;}
+				}
+			}
+			&.i2 .to:before{background-position:-82px 0}
+		}
+		.k1_fr{padding:22px 24px;float:none;
+			strong{display:block;color:$col_g600;font-weight:$weight400}
+			span{display:inline-block;position:relative;color:$col_g600;line-height:1.18;
+				&:before{content:'';display:block;position:absolute;top:1px;left:8px;width:1px;height:14px;background:$col_g200}
+				&.min{padding-left:17px;}
+			}
+		}
+		.del{@extend %textHidden;position:absolute;top:16px;right:6px;width:32px;height:32px;
+			&:after{@include pseudo(12px,12px);background:url(#{$img_url}/common/spr_ico.png) no-repeat}
+		}
+	}
+	& + .titDep2{margin-top:104px}
+}
+.kf_airMainBtms{margin-top:102px;
+	&:after{content:'';display:block;clear:both}
+	.titDep3 a{font-size:rem(26px);font-family:$fontEXB;font-weight:900;
+		&:after{width:10px;height:10px;margin-bottom:2px}
+	}
+	.kf_notice{float:left;width:calc(50% - 8px);
+		.noticeList{display:flex;margin:-6px;flex-wrap:wrap;
+			li{flex:0 50%;padding:6px;
+				> a{position:relative;display:block;height:150px;padding:22px;border:1px solid $col_g200;border-radius:12px;
+					.tit{display:block;margin-bottom:8px;color:$col_p600;font-size:rem(18px);font-weight:$weight700;line-height:1.18}
+					.cont{overflow:hidden;display:block;font-size:rem(18px);line-height:1.44;height:48px;
+						.flag{height:18px;padding:0 5px;line-height:18px;vertical-align:2px;}
+					}
+					.info{position:absolute;bottom:20px;left:22px;
+						span{position:relative;display:inline-block;padding:0 7px 0 8px;color:$col_g600;font-size:rem(14px);
+							&:before{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:12px;margin-top:-6px;background:$col_g200}
+							&:first-child{padding-left:0;
+								&:before{display:none}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.kf_faq{float:right;width:calc(50% - 8px);
+		.mainFaqlist{
+			> li{margin-top:12px;
+				&:first-child{margin-top:0}
+				>a{display:block;height:69px;padding-right:70px;border:1px solid $col_g200;border-radius:12px;white-space:nowrap;
+					.tit{@include ellipsis(1, auto);position:relative;display:inline-block;max-width:100%;padding:0 0 0 24px;font-size:rem(18px);line-height:67px;
+						&:before{content:'Q';display:inline-block;padding-right:5px;color:$col_p600;font-size:rem(18px);font-weight:$weight700}
+					}
+					.flag{vertical-align:top;margin-top:24px}
+				}
+			}
+		}
+	}
+}
+
+//항공 로딩
+.airLoadingImg{position:absolute;top:0;left:0}
+.k1_container_loading{overflow:hidden;width:614px;height:528px;margin-left:-307px;/*background:url(#{$img_url}/air/bg_loading.jpg) no-repeat;*/z-index:10000;
+	.wrap-loading-bar{position:relative;padding:32px;z-index:10;
+		h1{color:$col_white;font-size:rem(32px);line-height:1.25;
+			strong{color:$col_white;font-size:rem(32px);font-family:$fontEXB;font-weight:$weight900}
+		}
+		.k1_loading_bar{position:relative;width:142px;height:140px;margin:80px auto 0;
+			p{display:inline-block;width:120px;height:120px;margin:11px 0 0 12px;padding:30px 0 0;color:$col_white;font-size:rem(14px);border-radius:50%;text-align:center}
+			.root-plane{position:absolute;top:0;left:0;}
+		}
+	}
+	.loadingBanner{position:absolute;bottom:32px;left:32px;right:32px;padding:14px;line-height:1.5;text-align:center;border-radius:8px;background:rgba($col_white, 0.8);
+		.eventTit{color:$col_p600;font-weight:$weight600}
+		.eventTxt{color:$col_g800;font-weight:$weight700}
+	}
+}
+
+//항공 검색 리스트
+.kf_airFixed{
+	&.kf_searchFixed{height:96px;margin:0 0 64px;
+		.k1_main_search_area{padding:0;
+			&:before{display:none}
+			.kf_section_fixed{display:none}			
+		}
+		/*&.fixed{height:64px;
+			.k1_main_search_area{position:fixed;top:96px;left:50%;width:1136px;height:64px;margin-left:-568px;
+				.k1_search_are_spot{padding:0;}
+				.k1_section_multi{display:none}
+				.kf_section_fixed{position:relative;display:block;padding:18px 56px 18px 24px;border:1px solid $col_p400;border-radius:16px;background:$col_white;height:64px;
+					&:before{content:'';display:block;position:absolute;top:-25px;left:50%;width:100vw;margin-left:-50vw;height:24px;
+						background:$col_g100;
+						background-image::linear-gradient(rgba($col_g100, 0), rgba($col_g100, 1), rgba($col_g100, 0));
+					}
+					.titSel{color:$col_p600;font-size:rem(18px);font-weight:$weight700}
+					.kf_selBtns{display:inline-block;float:right;font-size:0;
+						button{position:relative;display:inline-block;height:26px;color:$col_g600;font-size:rem(14px);line-height:26px;padding-left:30px;margin-left:12px;
+							&:after{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:16px;margin-top:-8px;background:$col_g200}
+							&.btPlan{padding-left:0;margin-left:0;
+								&:after{display:none}
+								span{display:inline-block;position:relative;color:$col_g600;font-size:rem(14px);
+									& + span{padding-left:30px;
+										&:before{content:'';display:block;position:absolute;top:50%;left:6px;width:18px;height:18px;margin-top:-9px;background:url(#{$img_url}/common/spr_air.png) no-repeat 0 -66px}
+									}
+								}
+							}
+							&.btDate{
+								&:before{content:'';display:block;position:absolute;top:50%;left:12px;width:12px;height:12px;margin-top:-6px;background:url(#{$img_url}/common/spr_air.png) no-repeat -20px -66px}
+							}
+							&.btSeat{
+								&:before{content:'';display:block;position:absolute;top:50%;left:12px;width:12px;height:12px;margin-top:-6px;background:url(#{$img_url}/common/spr_air.png) no-repeat -34px -66px}
+							}
+						}
+					}
+					.icoReset{position:absolute;top:4px;right:0}
+				}
+			}
+		}*/
+	}
+	&.kf_quickFixed{height:64px;margin-top:16px;
+		.tabBox{position:relative;border:1px solid $col_white;z-index:1000}
+		&.fixed{height:64px;
+			.tabBox{position:fixed;top:96px;left:50%;width:1136px;margin:0 0 0 -568px;border-color:$col_p400;box-shadow: 0 8px 16px 0 rgba($col_g900, 0.08);z-index:9999;
+				&:before{content:'';display:block;position:absolute;top:-26px;left:50%;width:100vw;margin-left:-50vw;height:25px;
+					background:$col_g100;
+					background-image:linear-gradient(rgba($col_g100, 0), rgba($col_g100, 1), rgba($col_g100, 0));
+				}
+				.tit{color:$col_p600}
+			}
+			& ~ .kf_schedule_search .filterWrap{}
+		}
+	}
+}
+
+.kf_schedule_search{position:relative;padding-left:288px;margin:16px 0 0 0;
+	&:after{content:'';display:block;clear:both}
+	.filterWrap{position:fixed;top:170px;left:50%;width:272px;height:calc(100vh - 485px);margin:0 0 0 -568px;
+		&.filterFoot{position:absolute;bottom:-132px;top:auto;height:auto;left:0;margin:0;padding:0}
+	}
+	.toggleCont{padding:7px 20px 14px 24px;
+		.frmInp.small{
+			input{
+				& + label{padding:11px 30px 10px 0;color:$default_col;line-height:1.18;
+					&:before{top:50%;left:auto;right:0;margin-top:-11px}
+					&:after{top:50%;left:auto;right:6px;margin:-5px 0 0 0;padding:0}
+				}
+			}
+			input[type=checkbox] + label:after{right:0;margin-top:-11px}
+		}
+	}
+}
+.filterSorting{border-radius:16px;background:$col_white;
+	.toggleBtn{height:56px;padding:0 30px 0 24px;line-height:56px;
+		&:after{width:18px;height:18px;background-position:-42px -50px}
+	}	
+}
+.filterSelectWrap{position:relative;margin-top:16px;border-radius:16px;background:$col_white;
+	.tit{height:56px;padding:0 24px;color:$col_g900;font-size:rem(18px);font-weight:$weight700;line-height:56px}
+	.icoReset{position:absolute;top:0;right:0}
+	.scriptScroll{height:calc(100vh - 1012px);min-height:285px}
+	.toggleList{				
+		.toggleBtn{height:56px;padding:0 30px 0 24px;color:$col_g800;line-height:56px;border-bottom:1px dashed $col_g200;
+			&[aria-expanded=true]{border-bottom:none}
+			&:after{right:25px;background-position:-62px -50px}
+		}
+		.acctItem:last-child .toggleBtn{border-bottom:0}
+		.toggleCont{border-top:1px dashed $col_g200;
+			.frmInp{
+				img{width:22px;margin-right:6px;vertical-align:-5px}
+			}
+			.fp_slideArea{margin-top:16px;
+				.slideValue span{font-size:rem(12px)}
+			}
+			&.toggleEtc{
+				.frmInp label span{display:block;color:$col_g600;font-size:rem(12px)}
+			}
+			.frmAirline{margin-bottom:12px;padding:16px 0 24px;border-bottom:1px dashed $col_g200;
+				> li{flex:0 100%;
+					label{
+						span{font-weight:$weight600}
+						img{width:18px;margin-right:6px;vertical-align:middle}
+					}
+					input:checked+label span{color:$col_p600}
+				}
+			}
+		}
+	}
+}
+.filterBtns{/*position:absolute;bottom:0;left:0;*/width:100%;margin-top:16px;
+	.btnDefault{display:block;width:100%;box-shadow: 0 8px 16px 0 rgba($col_g900, 0.16);}
+}
+.kf_scheculeList{float:left;width:100%;min-height:calc(100vh - 709px);
+	.kf_schNum{padding:16px 24px;color:$col_g600;border-radius:16px;background:$col_white;
+		strong{color:$col_p600;font-weight:$weight400}
+		& + .bannerType{margin-top:12px}
+	}
+}
+.k1_sch_result{margin-top:12px;
+	> li{overflow:hidden;position:relative;margin-top:12px;padding:20px 24px 12px 24px;border-radius:16px;border:1px solid $col_white;background:$col_white;
+		&.banner{padding:0}
+		&:first-child{margin-top:0}
+		.k1_al{margin-bottom:12px;padding-bottom:10px;border-bottom:1px dashed $col_g200}
+		.flagList{display:inline-block;margin:0;height:22px}
+		.btnArea{position:absolute;top:97px;right:117px;display:block;height:31px;margin-top:0;text-align:right;
+			.btLink{padding:5px 10px;text-decoration:underline;
+				&:after{content:'';display:block;position:absolute;top:50%;right:0;width:1px;height:14px;margin-top:-7px;background:$col_g200}
+			}
+		}
+		.toggleBtn{display:inline-block;position:absolute;top:97px;right:24px;width:auto;height:30px;padding-right:20px;font-size:rem(14px);line-height:30px;
+			&:after{right:3px;margin-top:-5px}
+			
+			& + .toggleCont{padding:0;margin:0 -24px}
+		}
+		&.anchor{padding:0;margin-top:0;border:none}
+		&.noData{padding:110px 0 110px;
+			.btnArea{position:static;margin-top:48px;height:auto;text-align:center}
+		}	
+	}
+	
+	&.kf_back_select{position:relative;margin-bottom:32px;padding:28px 0 25px 23px;border:1px solid $col_white;border-radius:16px;background:$col_white;
+		.k1_al{padding-right:58px;
+			.tit{display:none}
+			.air{width:auto;padding-right:28px;
+				.thumb{display:inline-block;padding-right:10px}
+			}
+			.time-info{width:auto;
+				li{display:inline-block;
+					& + li{position:relative;padding-left:50px;
+						&:before{@include pseudo(14px,10px);left:18px;margin:-5px 0 0 0;background:url(#{$img_url}/common/spr_air.png) no-repeat -102px 0}
+					}
+				}
+			}
+		}
+		.icoReset{position:absolute;top:50%;right:0;margin-top:-27px}
+		.totalPrice{float:right;color:$col_g900;font-size:rem(18px);font-weight:$weight700;
+			em{color:$col_p600;font-size:rem(18px);font-weight:$weight700;}
+		}
+		& ~ .kf_schedule_search .filterWrap{}
+	}
+}
+.k1_al{position:relative;padding-right:104px;font-size:0;vertical-align:top;
+	.air{display:inline-block;width:196px;vertical-align:top;
+		.thumb{display:block;font-size:0;
+			*{vertical-align:midle}
+			img{width:20px;margin:3px 0 0 0;vertical-align:top;border-radius:3px}
+			strong{display:inline-block;padding-left:4px;color:$col_g900;font-size:rem(18px);font-weight:$weight700;}
+		}
+		span{display:inline-block;color:$col_g600;font-size:rem(14px);line-height:1.14;
+			&+ span{position:relative;margin-left:4px;padding-left:7px;
+				&:before{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:12px;margin-top:-6px;background:$col_g200}
+			}
+		}
+	}
+	.time-info{display:inline-block;width:240px;
+		> li{margin-top:2px;
+			&:first-child{margin-top:0}
+			.time{display:inline-block;margin-right:6px;color:$col_g900;font-size:rem(18px);font-weight:$weight700}
+			span{color:$col_g600;font-size:rem(14px)}
+		}
+	}
+	.price-info{float:right;display:block;width:258px;text-align:right;vertical-align:top;
+		.priceInfo{color:$col_g900;font-size:rem(18px);font-weight:$weight700}
+		.k1_price{
+			span{color:$col_g600;font-size:rem(14px)}
+			.totalPrice{position:relative;display:inline-block;margin-left:7px;padding:0 0 0 9px;font-size:rem(14px);
+				em{font-size:rem(14px);}
+				&:before{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:12px;margin-top:-6px;background:$col_g200}
+			}
+		}
+	}
+	.btnDefault{position:absolute;top:0;right:0}
+}	
+.toggleAirList > li.toggleON{border:1px solid $col_p600}
+
+.priceList{display:flex;border-top:1px solid $col_g100;flex-wrap:wrap;
+	> li{position:relative;flex:0 0 33.33%;padding:20px 24px 80px;border-left:1px solid $col_g100;flex-direction:column;text-align:center;
+		&:first-child{border-left:none}
+		.tit{display:block;margin-bottom:12px;color:$col_g900;font-size:rem(16px);font-weight:$weight700}
+		.baggageList{font-size:0;margin-bottom:18px;
+			span{position:relative;display:inline-block;padding:0 15px 0 20px;color:$col_g600;font-size:rem(14px);
+				&:before{@include pseudo(16px,16px);left:0;margin:-9px 0 0 0;background:url(#{$img_url}/common/spr_air.png) no-repeat 0 -34px}
+				& + span:before{background-position:-17px -34px}
+			}
+		}
+		.k1_price{font-size:0;
+			span, strong, em{display:inline-block}
+			.tit{color:$col_g600}
+			.totalPrice{color:$col_g600;font-size:rem(14px);
+				em{color:$col_g600;font-size:rem(14px);}
+			}
+			.kp_seat{position:relative;padding-right:8px;margin-right:7px;color:$col_g600;font-size:rem(14px);
+				&:before{content:'';display:block;position:absolute;top:50%;right:0;width:1px;height:14px;margin-top:-7px;background:$col_g200}
+			}
+		.priceInfo{display:inline-block;color:$col_p600;font-weight:$weight700}
+		}
+		.btnDefault{position:absolute;bottom:20px;left:50%;width:88px;margin-left:-44px}
+		&.soldout{
+			.priceInfo{color:$default_col}
+		}
+		&.noneCharge{
+			&:after{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba($col_white, 0.6);z-index:100}
+			.k1_price .priceInfo{color:$default_col}
+		}
+		&.kf_other{flex:0 0 100%;height:80px;padding:29px 127px 20px 23px;border-top:1px solid $col_g100;text-align:left;
+			*{vertical-align:middle}
+			.tit{display:inline-block;margin:0;}
+			.baggageList{display:inline-block;margin:0 0 0 20px}
+			.k1_price{display:inline-block;float:right}
+			.btnDefault{top:20px;left:auto;right:20px;margin-left:0}
+			.priceInfo{margin-left:15px;}
+		}
+	}
+}
+
+//선택한 항공편
+.kf_selectFlightWrap{position:relative;padding-right:288px;min-height:449px;
+	.kf_boxWhite:first-child{margin-top:0}
+	.kf_paymentBox{position:absolute;bottom:-132px;top:0;right:50%;width:272px;margin-right:-568px;
+		.boxWhite{padding:22px 24px 32px;box-shadow: 0 8px 16px 0 rgba($col_g900, 0.08);border:1px solid $col_p400;
+			.titDep3{margin-bottom:20px;padding-bottom:16px;border-bottom:1px dashed $col_g200}
+			.sideList >li.total{
+				.tit{font-weight:$weight600}
+				.contR{font-weight:$weight700}
+			}
+			.guideInfo{margin-top:22px;background:none;padding:30px 0 0 0;border-top:1px dashed $col_g200;
+				&:before{display:none}
+				.titGuide{height:auto;line-height:1.5;
+					&:before{top:4px}
+				}
+				p{font-size:rem(14px)}
+				.listType01{margin-top:10px}
+			}
+			.btnArea{margin-top:30px;
+				.btnM{display:block;width:100%;margin:8px 0 0 0}
+			}
+			.agree{padding:32px 0 0 0;
+				.frmInp.txt.large label{font-size:rem(16px)}
+				.agreeList{margin-top:10px;
+					> li{margin:0;
+						.frmInp.txt.frmInpS{padding:3px 0;
+							label{font-size:rem(14px);@include ellipsis(1, auto);padding-right:16px;letter-spacing:-0.028em;
+								em{font-size:rem(14px);white-space:nowrap;}
+							}
+						}
+						.viewBtn{top:50%;right:-5px;margin-top:-13px;
+							&:after{margin:-3px 0 2px 4px}
+						}
+					}
+				}
+			}
+		}
+		.paymentBtns{margin-top:16px;
+			.btnL{display:block;width:100%;box-shadow:0 8px 16px 0 rgba($col_g900, 0.16);}
+		}
+		&.type02{height:calc(100vh - 257px);min-height:718px;
+			&.fixedPayment{position:fixed;bottom:32px;top:auto;height:calc(100vh - 136px);}
+			&.filterFoot{position:absolute;bottom:-132px;top:auto;}
+		}
+		
+		
+	}
+}
+.kf_boxWhite{margin-top:16px;
+	.frmList{margin:15px 0 0 0;
+		> li{width:100%;padding:8px 0}
+	}
+	&.kf_passenger{position:relative;
+		.btLink{position:absolute;top:28px;right:27px;color:$col_g900;font-size:rem(16px);font-weight:$weight600}
+		.tabType01{
+			&:before{top:48px}
+			> li > a{height:48px;font-weight:$weight400;font-size:rem(16px);line-height:48px}
+		}
+		.passenterTabCont{position:relative;padding:47px 0 24px;
+			.frmInpS{position:absolute;top:24px;right:0}	
+			.frmList{margin:0;
+				li{
+					label{flex:0 0 128px}
+					&.kf_passengerName{
+						input{width:324px;display:inline-block;
+							& + input{margin-left:4px}
+						}
+					}
+					&.inpHalf{width:50%}
+					&.inpHalf2{
+						.inpFrm  > label{padding-left:40px}
+					}
+					&.kf_selectFull{
+						.inpFrm .inpA .selectWrap{width:100%;display:block}
+					}
+				}
+				& + .frmInpS{display:block;position:relative;top:auto;right:auto;margin:0 0 0 128px}
+			}
+			&.passenterTabContInter{padding-bottom:32px;margin-bottom:32px;border-bottom:1px dashed $col_g200}
+		}
+		&.type02{
+			.kf_box{position:relative;border:1px solid $col_g200;border-radius:12px;overflow:hidden;
+				.titDep5{height:56px;padding:0 24px;line-height:56px;background:$col_g100}
+				.frmList{margin:0;padding:24px}
+				& + .kf_box{margin-top:12px;
+					.btLink{position:absolute;top:19px;right:19px;height:26px;padding:0 5px;color:$col_g600;font-size:rem(14px);text-decoration:underline;line-height:26px;}
+				}
+				& + .btnArea{margin-top:24px;
+					.btnDefault{width:100%}
+				}
+			}
+		}
+	}
+	&.kf_agree{
+		.agree{margin-top:24px;padding:22px 24px 20px;border-radius:12px;background:$col_g100;
+			.titAirSelect{border-color:$col_g300}
+			.frmInp.txt.large label{font-weight:$weight700}
+			.agreeList{padding-top:8px;
+				li{margin-top:8px}
+			}
+		}
+	}
+}
+.titAirSelect{padding-bottom:16px;border-bottom:1px dashed $col_g200;color:$col_g900;font-size:rem(20px);font-weight:$weight900;line-height:1.2;
+	span{display:inline-block;color:$col_g900;font-size:rem(20px);font-weight:$weight900;line-height:1.2;
+		& + span{position:relative;padding-left:34px;
+			&:before{@include pseudo(18px,18px);left:8px;margin-left:0;background:url(#{$img_url}/common/spr_air.png) no-repeat -46px -66px}
+		}
+	}
+	&.titAirLine{margin-top:38px;padding:30px 0 0 0;border-top:1px dashed $col_g200;border-bottom:0;}
+}
+.titAirSelectS{margin:24px 0 10px;padding-top:16px;border-top:1px dashed $col_g200;color:$col_g900;font-size:rem(18px);font-weight:$weight900;line-height:1.2;
+	& ~ .titDep5{margin:22px 0 4px}
+}
+.kf_listSelFlight{margin-top:24px;
+	> li{overflow:hidden;position:relative;margin-top:12px;border:1px solid $col_g200;border-radius:12px;
+		&:first-child{margin-top:0}
+		.titArea{position:relative;height:56px;margin-bottom:0;padding:0 24px;background:$col_g100;
+			.titDep4{font-size:rem(16px);line-height:56px;
+				.date{display:inline-block;padding-left:10px;color:$col_g600;font-weight:400;font-size:rem(16px)}
+			}
+			.icoReset{position:absolute;top:0;right:8px}
+		}
+		.k1_sch_result{margin-top:0}
+		.k1_al{padding:20px 58px 20px 24px;			
+			.air .thumb{
+				& + span{margin-left:0;padding-left:0;
+					&:before{display:none}
+				}
+			}
+			.btnArea{position:absolute;top:48px;right:48px;margin:0;
+				> a{text-decoration:underline;
+					& + a{margin-left:5px;padding-left:9px;
+						&:before{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:12px;margin-top:-6px;background:$col_g200}
+					}
+				}
+			}
+			.price-info{font-size:rem(18px);font-weight:$weight700;
+				.totalNum{font-size:rem(18px);font-weight:$weight700;}
+				.k1_price{display:inline-block;
+					.totalPrice{display:inline;margin:0;padding:0;color:$col_p600;font-size:rem(18px);font-weight:$weight700;
+						&:before{display:none}
+					}
+				}
+			}
+			.kf_interInfo{position:absolute;top:24px;right:53px;
+				.addDay{color:$col_p600;font-size:rem(14px)}
+				span{display:inline-block;position:relative;margin-left:6px;padding-left:7px;color:$col_g600;font-size:rem(14px);
+					&:before{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:12px;margin-top:-6px;background:$col_g200}
+				}
+			}
+		}
+		.toggleBtn{@extend %textHidden;position:absolute;top:75px;right:8px;width:50px;height:50px;
+			&:after{@include pseudo(18px,18px);background:url(#{$img_url}/common/spr_ico.png) no-repeat -42px -50px}
+		}
+		.toggleCont{padding:18px 24px;border-top:1px dashed $col_g200;
+			.kf_airInfoList{font-size:0;
+				> li{display:inline-block;width:calc(100% / 3)}
+			}
+			.grayBox{margin-top:30px}
+		}
+	}
+}
+.kf_airInfoList{font-size:0;
+	> li{position:relative;padding:3px 0 3px 24px;color:$col_g600;font-size:rem(14px);
+		&:nth-child(3n - 2):after{display:none}
+		&:after{content:'';display:block;position:absolute;top:0;left:-24px;border-left:1px dashed $col_g200;width:1px;height:27px;}						
+		&:before{@include pseudo(12px,12px);left:0;margin-left:0;background:url(#{$img_url}/common/spr_air.png) no-repeat 0 -52px}
+		&.flyAir:before{background-position:-84px -52px}
+		&.flySeat:before{background-position:-28px -52px}
+		&.flyLayout:before{background-position:-14px -52px}
+		&.flyDevice:before{background-position:-56px -52px}
+		&.flyPower:before{background-position:-98px -52px}
+		&.flySeat02:before{background-position:-28px -52px}
+		&.flySnack:before{background-position:-70px -52px}
+		&.flyWifi:before{background-position:-112px -52px}
+		&.flyFirst:before{background-position:-126px -52px}
+		&.flySetNum:before{background-position:-154px -52px}
+		&.flySetArray:before{background-position:-168px -52px}
+		&.flySetSpace:before{background-position:-182px -52px}
+		&.flySetWidth:before{background-position:-196px -52px}
+		&.flyUSB:before{background-position:-210px -52px}
+		&.flyPower2:before{background-position:-224px -52px}
+		&.flySetSlope:before{background-position:-238px -52px}
+		&.flyEtc:before{background-position:-252px -52px}
+	}
+}
+
+//popup
+.marT0{margin-top:0 !important}
+.k1_pop_wrap{
+	&.kf_pop_wrap{overflow:hidden;position:fixed !important;top:50%;left:50%;width:480px;margin-left:-240px;border-radius:16px;background:$col_white;z-index:1000;@include prefix(transform,translateY(-50%));border:none !important;
+		.k1_pop_header{height:72px;padding:0;background:$col_white;
+			h1{@include ellipsis(1, 72px);padding:0 72px;color:$col_g900;font-size:rem(20px);font-weight:$weight700;line-height:71px;text-align:center;border-bottom:1px solid $col_g200;background:none}
+		}
+		.k1_pop_contents{max-height:608px;padding:32px 24px;text-align:left;
+			.k1_gride5{overflow:hidden;border:none;
+				.extraTxt{margin-top:12px}
+				&.terms{
+					.tblV tbody{
+						th{text-align:center}
+						td{text-align:left}
+					}	
+					ul.k1_guide_arrw.kf_pointCol li{margin:0 0 0 15px;
+						&:first-child{margin-left:0}
+					}	
+				}
+			}
+			.k1_gh_m550{max-height:inherit}
+		}
+		.k1_btn_p_close1{position:absolute;top:0;right:0;width:72px;height:72px;background:none;
+			&:after{@include pseudo(24px,24px);background:url(#{$img_url}/common/spr_layout.png) no-repeat -168px 0}
+		}
+	}
+	&.laypopS{width:340px;margin-left:-170px;
+		.k1_pop_header{height:auto;
+			h1{overflow:visible;padding:42px 20px 0;font-size:rem(18px);line-height:1.44;border:none}
+		}
+		.k1_pop_contents{padding:9px 24px 28px}
+		.txtPop{text-align:center;letter-spacing:-0.032em}
+		.k1_btn_wrap2{
+			.k1_btn01{
+				span{height:48px;font-size:rem(15px);line-height:48px;border-radius:8px}
+			}
+		}
+	}
+}
+.k1_dl_list{
+	&.line{margin-bottom:32px;padding-bottom:32px;border-bottom:1px dashed $col_g300}
+	dt{float:none;width:auto;padding:32px 0 12px 0;color:$col_g900;font-size:rem(18px);font-weight:$weight700;line-height:1.2;
+		&:first-child{padding-top:0}
+	}
+	dd{float:none;padding:0;color:$default_col;background:none;
+		.txt{margin-bottom:12px}
+		.topTxt{margin-bottom:12px}
+		.dateTxt{margin:32px 0 8px;color:$col_g900;font-weight:$weight600;
+			&.top{margin-top:0}
+		}
+		.sub_tit{margin:24px 0 5px;color:$col_g800;font-weight:$weight600;
+			&.top{margin-top:0}
+		}
+		ol.numList{counter-reset: section;
+			li{position:relative;margin-top:8px;padding-left:15px;
+				&:before{content: counter(section)')';counter-increment:section;display:inline-block;width:18px;margin:-3px 0 0 -15px;vertical-align:middle}
+			}
+		}
+	}
+}
+ul.k1_guide_arrw{
+	> li{position:relative;margin-top:10px;padding:0 0 0 6px;color:$default_col;line-height:1.53;
+		&:first-child{margin-top:0}
+		&:before{content:'';display:block;position:absolute;top:10px;left:0;width:2px;height:2px;background:$col_g600}
+		&.colRed{color:$col_redP;
+			&:before{background:$col_redP}
+		}
+	}
+	&.kf_pointCol{font-size:0;
+		li{display:inline-block;margin:0 0 0 24px;color:$col_redP;
+			&:first-child{margin-left:0}
+			&:before{background:$col_redP}
+		}
+	}
+}
+.k1_btn_wrap2{display:flex;margin:0 -4px;padding:0 24px 24px 24px;
+	.k1_btn01{width:100%;height:auto;margin:0 4px;padding:0;background:none;
+		span{display:block;width:100%;height:56px;padding:0 24px;color:$col_white;font-size:rem(18px);font-weight:$weight600;border-radius:12px;line-height:56px;background:$col_primary}
+	}
+	.kf_btnDefault span{color:$col_p600;background:$col_p200}
+	.btnDefault{width:100%}
+}
+.k1_box.kf_priceBox{
+	.titDep4{margin-bottom:12px;font-size:rem(20px)}
+	.grayBox{padding:0;background:none}
+	.sideListP{
+		> li{
+			.contR{font-weight:$weight400;color:$default_col}
+			&.total{padding-bottom:10px;margin-bottom:8px;border-bottom:1px dashed $col_g300;
+				.tit{color:$col_g900;font-size:rem(18px);font-weight:$weight700}
+				.contR{color:$col_g900;font-size:rem(18px);font-weight:$weight700}
+			}
+			& + .total{margin-top:20px}
+		}
+	}
+	.grayBox + .titDep4{margin-top:32px}
+	.guideInfo.boxType01{margin-top:32px}
+}
+
+.subTxt{display:block;margin-top:-19px;}
+.list_controls{position:relative;height:36px;margin-top:24px;
+	.frmTotal{margin-top:5px}
+	.contRight{position:absolute;top:0;right:-5px;
+		.btTxt{display:inline-block;padding:5px 10px;font-size:rem(14px)}
+		.unfold{color:$col_g600;font-size:rem(14px);padding-right:5px;
+			strong{color:$col_p600;font-size:rem(14px);font-weight:$weight600}
+		}
+	}
+}
+.kf_passengerList{position:relative;margin-top:-12px;
+	.frmInp{display:block;margin:12px 0;height:90px;min-height:auto;
+		input:checked + label{border-color:$col_p400;
+			.name .passenger{display:inline-block}
+		}
+		label{height:100%;padding-left:66px;line-height:normal;box-sizing:border-box;background:$col_white;
+			&:before{top:50%;left:20px;width:18px;height:18px;margin-top:-9px}
+			&:after{left:20px;}
+			.name{color:$col_g900;font-weight:$weight600;
+				.passenger{display:none;padding-left:8px;color:$col_p600;font-weight:$weight600}
+			}
+		}
+		.btIco{display:none;position:absolute;top:0;right:0;width:56px;height:100%;z-index:3;
+			&:after{@include pseudo(18px,50px);background:url(#{$img_url}/common/spr_air.png) no-repeat -118px 0}
+		}
+	}
+	&.kf_alramList{
+		> .frmInp{height:auto;
+			label{height:auto;
+				.k1_from_to{font-size:rem(14px);line-height:1.2;
+					> div{position:relative;float:none;width:auto;display:inline-block;color:$col_g900;font-weight:$weight600;text-align:left;
+						& + div{padding-left:30px;
+							&:before{@include pseudo(18px,18px);left:5px;margin-left:0;background:url(#{$img_url}/common/spr_air.png) no-repeat -64px 0}
+						}
+					}
+					&.i2 > div + div:before{background-position:-82px 0}
+				}
+				.k1_fr{margin-top:3px;float:none !important;font-size:0;
+					strong, span{color:$col_g600;font-size:rem(14px);font-weight:$weight400}
+					strong{display:block;margin-bottom:3px;}
+					span{display:inline-block;min-width:auto;height:14px;margin:0;padding:0;line-height:14px;text-align:left;background:none;
+						& + span{margin-left:8px;padding-left:8px;border-left:1px solid $col_g200;}
+					}
+				}
+			}
+		}
+	}
+	&.typeNoneMoving{
+		> li{height:auto;
+			.kf_passenBox .info{height:auto;
+				
+			}
+		}
+	}
+}
+.ui-sortable .frmInp .btIco{display:block}
+.kf_passenBox{position:relative;padding:16px 16px 17px;border:1px solid $col_g300;border-radius:8px;
+	.name{display:block}
+	.info{height:12px;margin-top:12px;
+		span{position:relative;display:inline-block;padding:0 3px 0 7px;height:19px;color:$col_g600;font-size:rem(16px);line-height:19px;vertical-align:top;
+			&:before{content:'';display:block;position:absolute;top:4px;left:0;width:1px;height:12px;background:$col_g200}
+			&:first-child{padding-left:0;
+				&:before{display:none}
+			}
+			&.ticketNum{display:block;margin-bottom:4px;
+				& + span{padding-left:0;
+					&:before{display:none}
+				}
+			}
+		}
+	}
+	.icModify{position:absolute;top:50%;right:0;margin-top:-28px}
+	& + .titDep5{margin-top:32px}
+}
+
+//예약완료
+.flightComp{
+	.kf_airPlan{position:relative;margin:0 -32px;padding-bottom:37px;text-align:center;border-bottom:1px dashed $col_g200;
+		&:before, &:after{content:'';display:block;position:absolute;bottom:-11px;width:20px;height:20px;margin-top:-10px;border-radius:50%;background:$col_g100;z-index:10}
+		&:before{left:-10px}
+		&:after{right:-10px}
+		.k1_area{display:inline-block;width:202px;
+			strong, span{display:block}
+			strong{color:$col_g900;font-size:rem(20px);font-weight:$weight700}
+			span{color:$col_g600}
+		}
+		.fly{@extend %textHidden;position:relative;display:inline-block;width:32px;height:32px;margin:0 30px;border-radius:50%;background:$col_p200;vertical-align:top;
+			&:after{@include pseudo(18px,18px);background:url(#{$img_url}/common/spr_air.png) no-repeat -136px 0}
+			&.single:after{background-position:-172px 0}
+		}
+	}
+	.kf_reservationInfo{margin:24px 0 6px;padding:20px 15px 20px 24px;border-radius:12px;background:$col_g100;
+		.tit{display:inline-block;padding-top:2px}
+		strong{display:block;float:right;color:$col_g800;
+			span{display:inline-block;padding:0 7px 0 10px;color:$col_p600;font-size:rem(18px);font-weight:$weight700;
+				& + span{position:relative;
+					&:before{content:'';display:block;position:absolute;top:3px;left:0;width:1px;height:19px;background:$col_g200}
+				}
+			}
+		}
+		&.type02{padding:0;margin-bottom:0;background:none}
+	}
+	.sideList.listComp01{margin-top:18px;
+		strong{color:$col_g800}
+	}
+	.txtGuide{margin-top:12px;color:$col_g600;
+		a{color:$col_g900;font-weight:$weight600;text-decoration:underline}
+	}
+	.titSche01{margin-top:32px}
+	.kf_checkIn{
+		> li{padding:0;border-radius:0;border:none;background:none;
+			> .link{display:block;position:relative;padding:19px 24px 22px;border-radius:12px;background:$col_white;
+				&:before{content:'';display:block;position:absolute;top:27px;right:27px;width:8px;height:8px;border:solid $col_g600;border-width:2px 2px 0 0;@include prefix(transform,rotate(45deg) skew(3deg, 3deg));}
+				.titDep5{padding:0 24px 15px;margin:0 -24px 18px;border-bottom:1px solid $col_g100;
+					.date{display:inline-block;padding-left:12px}
+				}
+				.k1_al{display:block;margin:0;padding:0;border:none;
+					.air{display:block;width:100%;
+						.thumb{display:inline-block;padding-right:3px}
+					}
+					.time-info{width:100%;font-size:0;
+						li{display:inline-block;
+							& + li{position:relative;padding-left:50px;
+								&:before{@include pseudo(14px,10px);left:16px;margin-left:0;background:url(#{$img_url}/common/spr_air.png) no-repeat -102px 0}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+//마이페이지
+.kf_flightIng{position:relative;margin-top:32px;padding-right:288px;
+	& + .noData{padding:167px 0}
+	.reserveState{height:117px;padding:24px 0;border-radius:12px;text-align:center;background:$col_g100;
+		> li{position:relative;display:inline-block;width:266px;text-align:center;
+			> a{display:block;}
+			.num{display:block;margin-bottom:5px;color:$col_g900;font-size:rem(36px);font-weight:$weight700;line-height:1}
+			.txt{color:$col_g900;font-size:rem(15px);font-weight:$weight600}
+			&.noReserve{
+				.num{color:$col_g500}
+			}
+			& + li{
+				&:before{@include pseudo(8px,8px);left:-10px;margin:-5px 0 0 0;border:solid $col_g500;border-width:2px 2px 0 0;@include prefix(transform,rotate(45deg));}
+			}
+		}
+	}
+	.boxTypePurple{position:absolute;bottom:0;right:0;width:272px;padding:10px 24px;border-radius:12px;background:$col_p600;
+		> li{
+			> a{position:relative;display:block;height:48px;padding-right:28px;line-height:48px;color:$col_white;font-size:rem(20px);font-weight:$weight700;text-align:right;
+				.tit{float:left;height:48px;color:$col_p300;font-size:rem(14px);line-height:48px}
+				&:after{@include pseudo(6px,6px);left:auto;right:3px;margin-left:0;border:solid $col_p500;border-width:2px 2px 0 0;@include prefix(transform,rotate(45deg));}
+			}
+			& + li{border-top:1px solid $col_p500}
+		}
+	}
+}
+.kf_HistoryListWrap{position:relative;margin-top:40px;
+	& + .bannerType{margin-top:40px}
+	.titArea .side .btLink.icArr{color:$col_g600;
+		&:after{border-color:$col_g600}
+	}
+	.kf_userName ~ .sideList.type02, .titArea ~ .sideList.type02{margin-bottom:12px;border-radius:0 0 12px 12px;border-top:none;}
+	.sideList{padding:17px 23px;border:1px solid $col_g200;border-radius:12px;font-size:0;
+		>li{display:inline-block;width:50%;padding:2px 0;
+			*{vertical-align:top}
+			.tit{display:inline-block;width:128px;color:$col_g800;font-size:rem(14px);font-weight:$weight600;}
+			.contR{display:inline-block;width:calc(100% - 128px);text-align:left;color:$col_g600;font-size:rem(14px);font-weight:$weight400;
+				.noInp{color:$col_redP;font-size:rem(14px);}
+			}
+		}
+		&.type02{
+			& + .frmInp{margin-top:12px;
+				& + .titArea{margin-top:24px}
+			}
+		}
+		&.typeLine{position:relative;
+			&:after{content:'';display:block;position:absolute;top:20px;left:50%;bottom:20px;border-left:1px dashed $col_g200;}
+			> li{width:50%;text-align:right;vertical-align:top;
+				.tit{float:left;text-align:left}
+				.contR{text-align:right}
+				&:nth-child(2n-1){
+					.contR{padding-right:24px;}
+				}
+				&:nth-child(2n){
+					.tit{padding-left:24px}
+				}
+			}
+		
+		}
+		&.type03{position:relative;//border-radius:0 0 12px 12px;border-top:none;
+			&:after{content:'';display:block;position:absolute;top:20px;left:50%;bottom:20px;border-left:1px dashed $col_g200;}
+			> li{width:50%;text-align:right;vertical-align:top;
+				.tit{float:left;text-align:left}	
+				.contR{color:$col_g800;font-weight:$weight600}
+				.pointR{color:$col_redP !important}
+				&:nth-child(2n){
+					.tit{padding-left:24px}
+				}
+				&:nth-child(2n-1){
+					.contR{padding-right:24px;text-align:right}
+				}
+				.subCont{padding:5px 24px 0 0;clear:both;
+					> li{
+						.trip{position:relative;float:left;padding-left:12px;color:$col_g600;font-size:rem(14px);font-weight:$weight400;text-align:left;
+							&:before{content:'';display:block;position:absolute;top:50%;left:0;width:5px;height:6px;margin-top:-8px;border:solid $col_g300;border-width:0 0 1px 1px}
+						}
+						.price{color:$col_g600;font-size:rem(14px);font-weight:$weight400;}
+					}
+				}
+			}
+			
+		}
+	}
+	.kf_userName{display:block;width:auto;height:56px;padding:0 23px;color:$col_g800;font-weight:$weight600;line-height:56px;border:1px solid $col_g200;border-bottom:none;border-radius:12px 12px 0 0;background:$col_g100;
+		span{display:inline-block;padding-left:5px;color:$col_g800;font-weight:$weight600;}
+	}
+	.btLink.light{position:absolute;top:40px;right:24px;line-height:56px}
+	.titArea.type02{position:relative;display:block;height:56px;margin:0;padding:17px 24px;color:$col_g800;font-weight:$weight600;border:1px solid $col_g200;border-bottom:none;border-radius:12px 12px 0 0;background:$col_g100;
+		.kf_userName{height:auto;padding:0;border:none;line-height:1;background:none}
+		.side{bottom:auto;right:15px;top:50%;transform:translateY(-50%);
+			.btLink{line-height:31px;
+				& + .btLink{margin-left:12px;
+					&:after{content:'';display:block;position:absolute;top:50%;left:-8px;width:1px;height:12px;margin-top:-6px;background:$col_g200}
+				}
+			}
+		}		
+	}
+	.kf_lineBox{padding:7px 24px 24px 24px;border:1px solid $col_g200;border-top:none;border-radius:0 0 12px 12px;
+		& + .frmInp{margin-top:8px}
+	}
+	&.type04{margin-top:12px;
+		.btLink.light{top:-3px}
+	}
+}
+.kf_listFlight{
+	&.type02{margin-top:56px;
+		.sideList{font-size:0;margin-top:15px;padding-top:15px;border-top:1px solid $col_g200;
+			li{display:inline-block;width:50%;
+				.tit, .contR{font-size:rem(14px)}
+				.tit{display:inline-block;width:148px;color:$col_g800;font-weight:$weight600}
+				.contR{color:$default_col;font-weight:$weight400}
+			}
+		}
+		>li span.link{opacity:1}
+	}
+	> li{position:relative;overflow:hidden;margin-top:12px;border:1px solid $col_g200;border-radius:12px;
+		&:first-child{margin-top:0;}
+		.unfold{position:relative;display:block;height:56px;padding:17px 24px;background:$col_g100;
+			strong{color:$col_p600}
+			em{display:inline-block;padding-right:5px;color:$col_g900;font-weight:$weight700}
+			.listType02{display:inline-block;position:absolute;top:50%;right:24px;margin:-12px 0 0 0;}
+		}
+		> .link{position:relative;display:block;padding:19px 24px;			
+			.k1_al{
+				.air{width:auto;padding-top:1px;
+					.thumb{display:inline-block;
+						& + span{padding-left:10px}
+					}
+				}
+				.time-info{width:auto;margin-left:32px;font-size:0;
+					li{position:relative;display:inline-block;
+						& + li{padding-left:50px;
+							&:before{@include pseudo(14px,10px);left:16px;margin-left:0;background:url(#{$img_url}/common/spr_air.png) no-repeat -102px 0}
+						}
+						&.airDate{font-size:0;
+							span{display:inline-block;color:$col_g600;font-size:rem(14px);
+								& + span{position:relative;padding-left:17px;
+									&:before{content:'';display:block;position:absolute;top:50%;left:7px;width:1px;height:12px;margin-top:-6px;background:$col_g200}
+								}
+							}
+							& + li{padding-left:24px;
+								&:before{display:none}
+							}
+						}
+					}
+				}
+			}
+			&.disabled{opacity:0.5}		
+		}
+		a.link:after{@include pseudo(18px,18px);left:auto;right:24px;background:url(#{$img_url}/common/spr_ico.png) no-repeat -185px -30px}
+		span.disabled{opacity:0.6}
+		span.link{opacity:0.6}
+	}
+	&.type03{margin-top:32px;
+		>li{
+			.k1_al{padding:0;
+				.air{display:block;
+					.thumb{
+						strong{font-size:rem(16px)}
+						& + span{color:$col_g900;font-size:rem(16px);font-weight:$weight600}
+					}
+				}
+				.time-info{display:block;margin:5px 0 0 0;
+					li{display:block;
+						& + li{padding-left:0;
+							&:before{display:none}
+						}
+					}
+				}
+			}
+			.sideList{margin-top:22px;
+				> li{
+					.tit{width:60%;color:$col_g800;font-weight:$weight600}
+					.contR{color:$default_col;font-weight:$weight400}
+				}
+			}
+			.sideList.typeReceipt{margin-top:0}
+			.kf_userName{position:relative;display:block;height:56px;padding:17px 24px;color:$col_g800;font-weight:$weight600;background:$col_g100;}
+			.btLink{position:absolute;top:14px;right:24px}
+			span.link{opacity:1}
+		}
+		& + .titDep4{margin:32px 0 12px; 
+			& + .kf_listFlight.type03{margin-top:0}
+		}
+	}
+	&.kf_listFlightInter{
+		>li{
+			a.link:after{top:28px;margin-top:0}
+			.k1_al{padding-right:0;
+				.air{width:176px}
+				.time-info{margin-left:0;
+					.addDay{padding-left:0;width:54px;text-align:center;color:$col_p600;font-size:rem(14px);
+						&:before{display:none;}
+					}
+				}
+				& + .k1_al{margin-top:10px}
+			}
+		}
+		& + .btnArea{margin-top:24px;
+			.btnDefault{width:100%;margin:0}
+		}
+	}
+}
+
+//예약상세
+.kf_pageTop{margin-top:56px;text-align:center;
+	.titDep2{margin-bottom:14px;
+		em{color:$col_p600;font-size:rem(26px);font-family:$fontEXB;font-weight:$weight900}
+	}
+	.subTit{display:block}
+}
+.k1_btnFlex{display:flex;margin:52px -4px 0;
+	.btnDefault{width:100%;margin:0 4px;}
+	&.kf_btnInline{display:block;text-align:center;
+		.btnDefault{display:inline-block;width:270px;}
+	}
+}
+
+//예약자 연락처 변경
+.grayBox{
+	.sideList{margin:-3px 0;
+		> li{
+			.tit{color:$col_g800;font-weight:$weight600}
+			.contR{color:$default_col;font-weight:$weight400}
+			&.line{margin-top:11px;padding-top:13px;border-top:1px dashed $col_g300}
+		}
+	}
+}
+.listType02.type02{margin:10px 0 0 128px}
+
+//항공편 세부정보
+.kf_detailCont{
+	.detailCont{margin:12px 0 32px}
+	.tabType01{margin:0 -24px;padding:8px 24px 0;border-top:1px solid $col_g200;
+		&:after{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:8px;background:$col_g100}
+		&:before{top:63px}
+	}
+	.kf_detail{margin-top:32px;
+		.titDep4{margin-bottom:12px}
+		.grayBoxS{margin-top:30px}
+	}
+	.tabType01>li>a{font-size:rem(16px);font-weight:$weight600}
+}
+
+//1:1문의
+.btnArea.air{padding:0 0 16px 0}
+
+/*항공-공지사항 상세*/
+.contTit{padding-bottom:16px;border-bottom:1px solid $col_g200;
+    > p{position:relative;width:90%;color:$col_g900;font-size:rem(18px);font-weight:$weight600;line-height:1.44;
+        img{position:absolute;bottom:4px;width:auto;margin-left:4px} 
+    }
+    &.air{
+        .sortingList{
+            .category{padding-left:0;
+                &:before{content:none}
+            }
+        }    
+    }
+    &.customer, &.event{
+        .sortingList{
+            .date{padding-left:0;
+                &:before{content:none}
+            }
+        }    
+    }
+}
+.infoArea{margin:30px 0 0 0;
+    .imgCont{overflow:hidden;margin-bottom:24px;border-radius:12px}
+    .txtCont{color:$default_col;font-size:rem(15px);line-height:1.53;
+        p{margin-bottom:20px}
+    }
+}
+.btnArea.customer{padding:0;
+}
+.txtAns.myPage{margin-top:20px;padding:20px;border-radius:8px;background:$col_g100}
+
+//취소내역 상세
+.kf_cancelInfo{display:flex;margin:40px -8px 0;
+	.kf_HistoryListWrap{width:100%;margin:0 8px;
+		.inner{overflow:hidden;display:flex;width:100%;height:calc(100% - 44px);border:1px solid $col_g200;border-radius:12px;flex-direction:column}
+		.kf_userName{border:none;border-radius:0}
+		.sideList{border:none;border-radius:0;
+			&:after{display:none}
+			&.type02 li{padding:8px 0}
+			> li{display:block;width:100%;
+				&:nth-child(2n) .tit{padding-left:0}
+				&:nth-child(2n-1) .contR{padding:0}
+			}
+			&.type03{
+				.contR{color:$default_col;font-weight:$weight400;}
+				> li{
+					&.lineT{margin-top:15px;padding-top:17px;border-top:1px dashed $col_g200}
+					&.contBold{
+						.contR{font-weight:$weight600;text-align:right}
+					}
+					.subCont{padding-right:0
+						
+					}
+				}
+			}
+		}
+	}
+}
+
+.noDataCancel{padding-top:160px}
+
+/* 국제선 */
+//가격변동알림
+.layPop.layerS.popAlram{
+	.layContainer{padding-top:44px;text-align:center;
+		.titAlram{padding-top:64px;color:$col_g900;font-size:rem(18px);font-weight:$weight700;line-height:1.44;background:url(#{$img_url}/air/bg_alramP.png) no-repeat 50% 0}
+		.alramTxt{display:block;margin-top:12px;letter-spacing:-0.032em}
+		.btnArea{display:block;margin-top:24px;text-align:center;
+			.btnDefault{width:auto}
+		}
+	}
+}
+
+//검색 리스트
+.kf_scheculeList.kf_scheculeList_inter .k1_sch_result{
+	> li{padding:20px 24px;
+		.k1_al{padding-right:0;
+			.kf_inter{position:relative;}
+			.air{width:212px}
+			.time-info{width:auto;
+				> li{position:relative;display:inline-block;width:86px;box-sizing:content-box;
+					.time{margin-right:8px}
+					& + li{padding-left:50px;
+						&:before{@include pseudo(14px,10px);left:17px;margin-left:0;background:url(#{$img_url}/common/spr_air.png) no-repeat -102px 0}
+					}
+				}
+			}
+			.addDay{display:inline-block;margin:-3px 0 0 12px;color:$col_p600;font-size:rem(14px)}
+			.kf_interInfo{display:inline-block;position:absolute;top:50%;right:23px;margin-top:-12px;
+				span{position:relative;display:inline-block;padding-left:6px;font-size:rem(14px);
+					&:before{content:'';display:block;position:absolute;top:50%;left:6px;width:1px;height:12px;margin-top:-6px;background:$col_g200}
+					&:first-child{padding-left:0;
+						&:before{display:none}
+					}
+					&.cargo{padding-left:29px;
+						&:after{content:'';display:block;position:absolute;top:50%;left:13px;width:12px;height:12px;margin-top:-6px;background:url(#{$img_url}/common/spr_air.png) no-repeat -140px -52px}
+					}
+				}
+			}
+		}
+		.kf_btm{position:relative;min-height:48px;margin-top:20px;padding:18px 128px 0 0;border-top:1px dashed $col_g200;
+			.flagList{display:inline-block;margin:0;padding-top:0;border:0;}
+			.price-info{position:absolute;top:50%;right:128px;margin-top:-25px;text-align:right;
+				.priceInfo{display:block;color:$col_g900;font-size:rem(18px)}
+				.k1_price{font-size:0;margin-top:2px;
+					span, em{color:$col_g600;font-size:rem(14px)}
+					span{display:inline-block;position:relative;
+						&.totalPrice{padding-left:9px;margin-left:8px;
+							&:before{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:14px;margin-top:-7px;background:$col_g200}
+						}
+					}
+				}
+			}
+			.btnArea{display:block;position:static;margin-left:-10px;text-align:left}
+			> .btnDefault{position:absolute;bottom:3px;right:0}
+		}
+		&.anchor{padding:0;}
+		
+	}
+}
+
+//항공사별 초과 수화물
+.kf_baggage_info{margin:-32px -24px 0;
+	> li{display:block;width:100%;height:auto;padding:0;margin:0;
+		&:nth-last-child(n){border:none;border-top:1px solid $col_g100}
+		&:first-child{border-top:0}
+		> a{position:relative;display:block;height:56px;padding:0 20px;font-size:rem(18px);line-height:56px;
+			&:after{@include pseudo(8px,8px);left:auto;right:22px;border:solid $col_g500;border-width:2px 2px 0 0;@include prefix(transform,rotate(45deg));}
+		}
+		&.myAirline a{color:$col_p600;font-weight:$weight600}
+	}
+}
+
+//선택한 항공편
+.kf_airDetail{position:relative;
+	.addDay{position:absolute;top:34px;right:32px;color:$col_g600;font-size:rem(14px)}
+}
+div.kf_listSelFlight{overflow:hidden;border:1px solid $col_g200;border-radius:12px;
+	.k1_al{height:56px;padding:15px 24px;background:$col_g100;z-index:11;
+		.air{width:245px;
+			.thumb{
+				.unionInfo{position:relative;margin-left:12px;
+					.tooltipWrap .tooltipCont{left:0}
+				}
+			}
+		}
+		.time-info{width:auto;
+			> li{display:inline-block;position:relative;
+				strong{display:inline-block;padding-right:6px;color:$col_g900;font-size:rem(14px)}
+				& + li{padding-left:50px;
+					&:before{@include pseudo(14px,10px);left:18px;margin-left:0;background:url(#{$img_url}/common/spr_air.png) no-repeat -102px 0}
+				}
+			}
+		}
+		.kf_interInfo{position:absolute;top:50%;right:24px;margin-top:-12px;
+			span{font-size:rem(14px);}
+		}
+	}
+}
+.kf_airLineDetail{position:relative;padding:32px 24px 0;border-radius:12px;background:$col_white;
+	> li{position:relative;padding:0 0 40px 122px;z-index:10;		
+		&:before{content:'';display:block;position:absolute;top:10px;bottom:-9px;left:90px;width:1px;border-left:1px solid $col_g300;z-index:1}	
+		&:after{content:'';display:block;position:absolute;top:8px;left:87px;width:7px;height:7px;border-radius:50%;background:$col_g500;z-index:2}
+		&:last-child{padding-bottom:24px;
+			&:before{display:none}
+		}
+		&.arrival{
+			&:before{border-left:1px dashed $col_g300}
+			.kf_info{margin-top:30px;
+				.time{color:$col_redP;font-size:rem(14px);}
+				.listType02{margin-top:1px}
+			}
+		}
+		&.hiddenVia{color:$col_g900;font-size:rem(14px);font-weight:$weight600;
+			*{vertical-align:middle}
+			& + li{z-index:1}		
+			.tooltipWrap .tooltipCont{left:120px}
+		}
+		.date{position:absolute;top:2px;left:0;color:$col_g600;font-size:rem(14px);font-weight:$weight400}
+		.time{display:inline-block;width:118px;line-height:24px;
+			em,span{display:inline-block;line-height:1.14;font-size:rem(14px)}
+			em{color:$col_g900;font-weight:$weight600}
+			span{position:relative;padding:0 0 0 8px;margin-left:8px;
+				&:before{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:12px;margin-top:-6px;background:$col_g200}			
+			}		
+		}
+		.kf_airport{display:inline-block;
+			.start{display:inline-block;margin-right:8px;color:$col_g900;font-size:rem(16px);font-weight:$weight700;line-height:1.2}
+			.airport{color:$col_g600;font-size:rem(14px);line-height:1.2}		
+		}
+		.kf_infoDetail{overflow:hidden;position:relative;display:flex;margin-top:24px;align-items:center;
+			.flyTime{flex:0 0 118px;color:$col_p600;font-size:rem(14px);
+				.tit{display:block;color:$col_g800;font-size:rem(14px);font-weight:$weight600}
+				&.flyStandby{color:$col_redP}
+			}
+			.thumb{width:100%;padding:16px 24px;border-radius:8px;background:$col_g100;
+				img{width:20px;}
+				strong{margin-left:5px;color:$col_g900;font-size:rem(14px);font-weight:$weight600;line-height:20px;}
+				> span{display:inline-block;padding-left:3px;color:$col_g900;font-size:rem(14px);font-weight:$weight600;line-height:20px;}
+				.listType02{margin-top:0}
+			}
+			.kf_interInfo{margin:4px 0 0 26px;
+				span{display:inline-block;position:relative;padding:0 7px 0 9px;font-size:rem(14px);color:$col_g600;
+					&:before{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:12px;margin-top:-6px;background:$col_g200}
+					&:first-child{padding-left:0;
+						&:before{display:none}					
+					}
+					&.terminal{display:inline-block;
+					}
+				}			
+			}
+		}
+	}
+}
+.kf_selectFlightWrap .kf_paymentBox.payMentInterType02{height:calc(100vh - 266px);min-height:453px;
+	&.fixedPayment{position:fixed;top:auto;bottom:32px;height:calc(100vh - 136px);}
+	&.filterFoot{position:absolute;top:auto;bottom:-132px;height:calc(100vh - 611px);}
+}
+
+//도시찾기
+.layPop .layContainer .scrollArea.scriptScroll{max-height:300px;margin-right:-24px;
+	.scroll-content{padding:0 24px 0 0}
+}
+.kf_flight_result{margin-top:32px;
+	.k1_destination_list>li>a{flex-direction:column;padding:10px 0;
+		.destName{flex:none;padding:0;color:$col_g900;
+			.resultTxt{display:inline-block;padding-left:7px}
+		}
+		.engName{display:inline-block;padding-left:6px;color:$col_g600;font-size:rem(14px)}
+	}
+}
+
+//비행상세(L)
+.pop_airDetail{
+	.air-info{margin-top:16px;font-size:0;
+		li{position:relative;display:inline-block;
+			strong{display:inline-block;color:$col_g900;font-size:rem(16px);font-weight:$weight700}
+			span{display:inline-block;padding-left:4px;color:$col_g600}
+			& + li{padding-left:34px;margin-left:15px;
+				&:before{content:'';display:block;position:absolute;top:50%;left:0;width:14px;height:10px;margin-top:-5px;background:url(#{$img_url}/common/spr_air.png) no-repeat -102px 0}
+			}
+		}
+	}
+	.kf_airlineInfo{position:relative;margin-top:12px;z-index:11;
+		.thumb{display:block;position:relative;z-index:10;
+			img{width:24px;}
+			strong{color:$col_g900;font-weight:$weight600}
+		}
+		.unionInfo{position:relative;display:inline-block;padding-left:4px;color:$col_g600;font-size:rem(14px);
+			*{vertical-align:middle}
+			.tooltipWrap{margin-top:-2px;
+				.tooltipCont{left:0;width:305px}
+			}
+		}
+		.kf_interInfo{margin-top:7px;font-size:0;
+			em, span{display:inline-block;padding:0 8px 0 7px;color:$col_g600;font-size:rem(14px)}		
+			em{padding-left:0}
+			span{position:relative;
+				&:before{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:12px;margin-top:-6px;background:$col_g200}
+			}
+		}
+	}
+	.kf_airLineDetail{margin-top:16px;padding:0;border-radius:12px;background:$col_g100;
+		> li{padding:18px 24px 20px 55px;
+			&:before{top:29px;left:27px;bottom:-25px}
+			&:after{top:25px;left:24px}
+			.kf_airport{display:block;
+				.airport{display:block}
+			}
+			.kf_infoDetail{overflow:hidden;display:block;margin-top:24px;padding:16px 20px;border:1px solid $col_g300;border-radius:8px;background:$col_white;
+				.thumb{padding:0;background:none}
+				.kf_interInfo{margin-left:0;
+					.terminal{display:block;padding:0;margin:0;
+						&:before{display:none}
+					}
+				}
+			}
+			&.hiddenVia{
+				.tooltipWrap{margin-top:-2px;
+					.tooltipCont{left:55px;top:45px;width:378px;}
+				}
+			}
+			&.arrival .kf_info .time{display:block;width:auto;
+				.tit{padding:0;margin:0;display:inline-block;margin-right:5px;color:$col_g800;font-size:rem(14px);font-weight:$weight600;
+					&:before{display:none}
+				}
+			}
+		}
+		& + .titDep3{margin-top:40px}
+		
+	}
+}
+
+//국제선 마이페이지
+.stepStype01{counter-reset:section;display:flex;height:72px;margin-top:56px;border-radius:12px;background:$col_g100;
+	>li{position:relative;display:flex;width:100%;height:72px;align-items:center;justify-content:center;background:$col_p200;
+		&:before{content:counter(section);counter-increment:section;position:absolute;left:32px;top:50%;width:36px;height:36px;margin-top:-18px;font-weight:$weight600;text-align:center;color:$col_p600;font-size:rem(16px);line-height:36px;border:none;@include prefix(transform,none);background:$col_white;border-radius:50%;}
+		&:after{content:'';display:block;position:absolute;top:0;right:-20px;width:20px;height:100%;background:$col_p200}
+		&:last-child:after{display:none}
+		&:first-child{border-radius:12px 0 0 12px}
+		&:last-child{border-radius:0 12px 12px 0}
+		> .link{height:32px;width:100%;display:block;padding-left:48px;color:$col_p600;font-size:rem(16px);text-align:center;border-left:1px solid $col_g200;line-height:32px;z-index:1;
+			&:after{@include pseudo(32px,32px);left:34px;margin-left:0;border-radius:50%;background:url(#{$img_url}/air/bg_check.png) no-repeat;z-index:11}
+			//&:before{@include pseudo(12px,6px);left:49px;top:32px;font-weight:$weight600;text-align:center;line-height:30px;margin-top:0;border:solid $col_p600;border-width:0 0 2px 2px;@include prefix(transform,rotate(-45deg) skew(3deg, 3deg));z-index:12}
+		}
+		
+		&:first-child span{border-left:0}
+		
+		&.notYet{
+			&:before{color:$col_p600;z-index:3}
+			&:after{display:none}
+		}
+		&.stepON{border-radius:12px;background:$col_p600;box-shadow: 0 3px 6px 0 rgba($col_black, 0.15);
+			&:after{@include pseudo(8px,8px);top:auto;bottom:-3px;margin-top:0;border-radius:2px;background:$col_p600;@include prefix(transform,rotate(45deg) skew(12deg, 12deg));}
+			.link{color:$col_white;border:none}
+			& + li .link{border:none}
+			& ~ li{background:$col_g100;
+				.link{color:$col_g300;
+					&:before{border-color:$col_g300}
+					&:after{background-image:url(#{$img_url}/air/bg_checkDefault.png)}
+				}				
+			}
+			&.notYet{
+				.link:before{color:$col_p600}
+			}
+			& ~ .notYet{
+				&:before{color:$col_g300}
+			}
+		}		
+	}
+}
+
+//여권정보 등록 요청
+.kf_sendList{margin:20px -24px 0;padding:20px;background:$col_g100;
+	.inpFrm{margin-top:12px;
+		&:first-child{margin-top:0}
+		.inpA.inpBtns{
+			.btnM{flex:0 0 76px;min-width:auto}
+		}
+		.k1_custom_ipt{background:none}
+	}
+	& + .btnArea{margin-top:32px;
+		.btnDefault{width:100%;margin:0}
+	}
+}
+
+//예약상세
+.kf_HistoryListWrap.type02{
+	.kf_lineBox{
+		& + .titArea{margin-top:12px}
+	}
+	.titArea.type03{margin-top:64px;
+		.titDep3{
+			.engName{display:inline-block;margin-left:11px;color:$col_p600;font-size:rem(18px);font-weight:$weight600}
+		}
+	}
+	.sideList.grayBox{border:none;padding:14px 24px;margin-bottom:16px;
+		> li{position:relative;display:block;width:100%;
+			.tit{color:$col_g800;font-size:rem(16px)}
+			.contR{position:absolute;top:50%;right:0;width:auto;margin-top:-12px;color:$col_p600;font-size:rem(16px);font-weight:$weight600}
+		}
+	}
+}
+
+.kf_mypayment{
+	.acctItem{
+		.toggleBtn{height:56px;padding:0 24px;color:$col_p600;font-size:rem(18px);font-weight:$weight600;border:1px solid $col_g200;border-radius:8px;
+			&:after{border-color:$col_g600;@include prefix(transform,rotate(45deg) skew(-1deg, -1deg));}
+			&[aria-expanded=true]{border-radius:8px 8px 0 0;border-bottom:none;background:$col_g100}
+		}
+		.toggleCont{padding:24px;border-radius:0 0 8px 8px;border:1px solid $col_g200;border-top:none;}
+	}
+}
+
+.kf_divideLine{margin-top:38px;padding-top:32px;border-top:1px dashed $col_g200}
+.kf_eticketList{
+	> li{height:56px;margin-top:12px;padding:16px 12px 16px 24px;border:1px solid $col_g200;border-radius:12px;text-align:right;
+		&:first-child{margin-top:0}
+		.titName{float:left}
+		.links{
+			> li{display:inline-block;
+				a{position:relative;display:block;padding:5px 12px;color:$col_g600;font-size:rem(14px);text-decoration:underline;}
+				& +li a{padding-left:13px;
+						&:before{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:12px;margin-top:-6px;background:$col_g200}
+					}
+			}
+		}
+	}
+}
+
+//예약완료
+.kf_airCompBox{overflow:hidden;position:relative;
+	&:before, &:after{content:'';display:block;position:absolute;top:123px;width:20px;height:20px;margin-top:-10px;border:1px solid $col_g200;border-radius:50%;background:$col_white;z-index:10}
+	&:before{left:-10px}
+	&:after{right:-10px}
+	.inner{padding:32px 24px;border:1px solid $col_g200;border-radius:16px;}
+	.kf_airPlan{position:relative;height:93px;margin:0 -24px;padding-bottom:38px;text-align:center;border-bottom:1px dashed $col_g200;		
+		.k1_area{display:inline-block;width:calc(50% - 100px);vertical-align:top;
+			strong, span{display:block}
+			strong{color:$col_g900;font-size:rem(20px);font-weight:$weight700;
+				span{display:inline-block;padding-left:12px}
+			}
+			span{color:$col_g600}
+		}
+		.fly{@extend %textHidden;position:relative;display:inline-block;width:32px;height:32px;margin:0 30px;border-radius:50%;background:$col_p200;vertical-align:top;
+			&:after{@include pseudo(18px,18px);background:url(#{$img_url}/common/spr_air.png) no-repeat -136px 0}
+			&.single:after{background-position:-154px 0}
+		}
+	}
+	.kf_reservationInfo{margin:24px 0 6px;padding:20px 15px 20px 24px;border-radius:12px;background:$col_g100;
+		.tit{display:inline-block;padding-top:2px}
+		strong{display:block;float:right;color:$col_g800;
+			span{display:inline-block;padding:0 7px 0 10px;color:$col_p600;font-size:rem(18px);font-weight:$weight700;
+				& + span{position:relative;
+					&:before{content:'';display:block;position:absolute;top:3px;left:0;width:1px;height:19px;background:$col_g200}
+				}
+			}
+		}
+		&.type02{padding:0;margin-bottom:0;background:none}
+	}
+	.sideList.half{display:flex;font-size:0;margin:20px -20px 0;flex-wrap:wrap;
+		> li{flex:0 0 50%;padding:3px 20px;
+			.tit{width:auto;white-space:nowrap}
+		}
+	}
+}
+
+//이티켓 인증
+.passengerLink{margin-top:32px;
+	> li{margin-top:12px;
+		> a{position:relative;display:block;height:56px;padding:0 20px;color:$col_g900;font-weight:$weight600;line-height:54px;border:1px solid $col_g200;border-radius:8px;
+			&:after{@include pseudo(12px,12px);left:auto;right:20px;margin-left:auto;background:url(#{$img_url}/common/spr_ico.png) no-repeat -318px -30px}
+		}
+	}
+}
+
+//어디든 항공편
+.kf_schedule_search_everyWhere{min-height:256px;
+	.filterWrap{height:auto;}
+}
+.kf_scheculeList.kf_scheculeList_everyWhere{min-height:auto;padding:16px 32px 32px;border-radius:16px;background:$col_white;
+	.tabWrap.tabTypeEvery .tabType01{font-size:0;
+		&:before{display:none}
+		>li{width:196px;border-bottom:1px solid $col_g200;}
+	}
+	.txtGray{margin-top:24px;padding:16px 0 15px;border-radius:8px;text-align:center;background:$col_g100;}
+}
+.kf_listEverywhere{margin:26px -8px -8px;font-size:0;
+	> li{display:inline-block;width:calc(100% / 3);padding:8px;
+		> a{position:relative;overflow:hidden;display:block;border-radius:12px;height:334px;
+			figure{position:relative;height:100%;
+				img{position:absolute;top:0;left:50%;height:100%;transform:translateX(-50%);transition:0.5s;}
+				&:after{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 48%, #000);}
+				&:hover img{transform:scale(1.1) translateX(-45%)}
+			}
+			.info{position:absolute;bottom:30px;left:32px;width:calc(100% - 64px);
+				.destArea{display:block;color:$col_white;font-size:rem(18px)}
+				.price{color:$col_white;font-weight:$weight600}
+			}
+		}
+	}
+}
+
+//결제취소
+.calcelReasonList{margin-top:10px;
+	.frmInp{margin-top:17px}
+}
+
+#pop_inqueryList{
+	.btnArea.air{margin:30px -4px 0;
+		.btnDefault{display:block}
+	}
+}
