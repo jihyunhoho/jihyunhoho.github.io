@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="37" height="18">
-    <path data-name="Rectangle 37" style="fill:none" d="M0 0h37v18H0z"/>
-    <g transform="translate(136 -484)">
-        <rect data-name="Rectangle 37" width="37" height="18" rx="6" transform="translate(-136 484)" style="fill:#f9f6fe"/>
-        <text data-name="best" transform="translate(-130 497)" style="fill:#6531ce;font-size:11px;font-family:Pretendard-SemiBold,Pretendard;font-weight:600;letter-spacing:-.02em"><tspan x="0" y="0">BEST</tspan></text>
-    </g>
-</svg>

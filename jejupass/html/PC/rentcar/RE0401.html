@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>렌터카 예약 | 제주패스</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, user-scalable=no, width=1366">
+<link rel="shortcut icon" type="image/x-icon" href="/jejupass/resource/PC/images/favicon/favicon.ico">
+<link href="/jejupass/resource/PC/css/p_common.min.css" rel="stylesheet" type="text/css">
+<link href="/jejupass/resource/PC/css/p_contents.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper defaultWrapper"><!-- scrollTop 104이상일때 headFixed 추가 -->
+	<header>
+		<h1 class="topLogo"><a href="#">JEJUPASS</a></h1>
+		<nav>
+			<div class="navList">
+				<h2><a href="#" aria-selected="true">항공</a></h2>
+				<h2><a href="#">렌터카</a></h2>
+				<h2><a href="#">숙박</a></h2>
+				<h2><a href="#">맛집</a></h2>
+				<h2><a href="#">카페패스</a></h2>
+				<h2><a href="#">트립</a></h2>
+			</div>
+			<div class="quickSearchWrap">
+				<button type="button" class="btSearch">빠른검색</button>
+			</div>
+		</nav>
+		<div class="topUtil">
+			<img src="/resource/PC/images/dummy/@util.png" alt="">
+		</div>
+	</header>
+
+	<div id="container" class="container bgGray">
+		<div id="contents" class="contents">
+			<h2 class="titDep2">렌터카 예약</h2>
+			<div class="viewContents rentcarReservation">
+				<div class="boxWhite">
+					<div class="rentcarInfo">
+						<a href="#" class="carLink">
+							<h3 class="titDep3">올 뉴 말리부</h3>
+							<span class="flagWrap">
+								<span class="flag pass">할인가</span>
+								<!-- <span class="flag">초특가</span>
+                        		<span class="flag special">정상가</span> -->
+							</span>
+						</a>
+						<div class="basicInfo">
+							<ul class="info">
+								<li>중형</li>
+								<li>5인승</li>
+								<li>휘발유</li>
+								<li>21.08.01(수) ~ 21.09.01(금) 09:00</li>
+							</ul>
+							<span class="storeName">삼성렌터카</span>
+						</div>
+					</div>
+				</div>
+				<div class="boxWhite">
+					<div class="reservationForm">
+						<div class="titArea">
+							<h3 class="titDep3">예약자/운전자 정보<em class="ress">필수</em></h3>
+							<span class="frmInp txt small"><input type="checkbox" id="chk01"><label for="chk01">내 정보와 동일</label></span> <!-- 2021.12.17 수정 -->
+						</div>
+						<div class="inpFrm inpDeleteAni"><!-- input value값 있을 때 삭제버튼 출력 -->
+							<label for="inpName" class="titLab">성명</label>
+							<span class="inpA">
+								<input type="text" id="inpName" placeholder="실명을 입력해주세요.">
+								<button type="button" class="btIco icDel">삭제</button>
+							</span>
+						</div>
+						<div class="inpFrm inpDeleteAni">
+							<label for="inpPhone" class="titLab">휴대전화번호</label>
+							<span class="inpA">
+								<input type="tel" id="inpPhone" placeholder="-빼고 숫자만 입력해주세요.">
+								<button type="button" class="btIco icDel">삭제</button>
+								<p class="txtInfo">긴급상황 시 즉시 연락 가능한 번호를 정확히 입력해주세요.</p>
+							</span>
+						</div>
+						<div class="inpFrm inpDeleteAni">
+							<label for="inpEmail" class="titLab">이메일</label>
+							<span class="inpA">
+								<input type="email" id="inpEmail" placeholder="ID@jejupass.com">
+								<button type="button" class="icDel">삭제</button>
+								<p class="txtInfo">위의 이메일로 렌터카 예약내용이 발송되며, 잘못된 정보 또는 미수신 시 발생하는 불이익은 당사에서 책임지지 않습니다.</p>
+							</span>
+						</div>
+						<div class="inpFrm">
+							<label for="inpLicense" class="titLab">면허종류</label>
+							<ul class="frmBox frmTog">
+								<li><input type="radio" id="license1" name="license" checked=""><label for="license1">1종</label></li>
+								<li><input type="radio" id="license2" name="license"><label for="license2">2종</label></li>
+							</ul>
+						</div>
+						<div class="inpFrm">
+							<span class="titLab">생년월일</span>
+							<div class="select-group birth">
+								<div class="selectWrap">
+									<!-- 1931~2002(1990:Default) -->
+									<select title="생년" data-msg="년" data-header="년도">
+										<option value="1931">1931</option><option value="1932">1932</option><option value="1933">1933</option><option value="1934">1934</option><option value="1935">1935</option>
+										<option value="1990" selected>1990</option>
+										<option value="2002">2000</option><option value="2002">2001</option><option value="2002">2002</option>
+									</select>
+								</div>
+								<div class="selectWrap">									
+									<select title="생월" data-msg="월" data-header="월">
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+										<option value="07">07</option>
+										<option value="08">08</option>
+										<option value="09">09</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+									</select>
+								</div>
+								<div class="selectWrap">
+									<select title="생일" data-msg="일" data-header="일">
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+										<option value="07">07</option>
+										<option value="08">08</option>
+										<option value="09">09</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="boxWhite">
+					<div class="reservationForm">
+						<h3 class="titDep3">보조운전자 정보</h3>
+						<div class="inpFrm inpDeleteAni">
+							<label for="inpDriverName" class="titLab">운전자 이름</label>
+							<span class="inpA">
+								<input type="text" id="inpDriverName" placeholder="실명을 입력해주세요.">
+								<button type="button" class="icDel">삭제</button>
+							</span>
+						</div>
+						<div class="inpFrm inpDeleteAni">
+							<label for="inpDriverPhone" class="titLab">휴대전화번호</label>
+							<span class="inpA">
+								<input type="text" id="inpDriverPhone" placeholder="-빼고 숫자만 입력해주세요.">
+								<button type="button" class="icDel">삭제</button>
+								<p class="txtInfo">긴급상황시 즉시 연락 가능한 번호를 정확히 입력해주세요.</p>
+							</span>
+						</div>
+						<div class="inpFrm">
+							<label for="inpLicense" class="titLab">면허종류</label>
+							<ul class="frmBox frmTog">
+								<li><input type="radio" id="inpDriverlicense1" name="inpDriverlicense" checked=""><label for="inpDriverlicense1">1종</label></li>
+								<li><input type="radio" id="inpDriverlicense2" name="inpDriverlicense"><label for="inpDriverlicense2">2종</label></li>
+							</ul>
+						</div>
+						<div class="inpFrm">
+							<span class="titLab">생년월일</span>
+							<div class="select-group birth">
+								<div class="selectWrap">
+									<!-- 1931~2002(1990:Default) -->
+									<select title="생년" data-msg="년" data-header="년도">
+										<option value="1931">1931</option><option value="1932">1932</option><option value="1933">1933</option><option value="1934">1934</option><option value="1935">1935</option>
+										<option value="1990" selected>1990</option>
+										<option value="2002">2000</option><option value="2002">2001</option><option value="2002">2002</option>
+									</select>
+								</div>
+								<div class="selectWrap">
+									
+									<select title="생월" data-msg="월" data-header="월">
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+										<option value="07">07</option>
+										<option value="08">08</option>
+										<option value="09">09</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+									</select>
+								</div>
+								<div class="selectWrap">
+									<select title="생일" data-msg="일" data-header="일">
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+										<option value="07">07</option>
+										<option value="08">08</option>
+										<option value="09">09</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 2021.12.17 추가 -->
+				<div class="rentcarBanner">
+					<figure><img src="/resource/PC/images/dummy/@img_banner05.jpg" alt=""></figure>
+				</div>
+				<!-- //2021.12.17 추가 -->
+				<div class="boxWhite">
+					<div class="reservationForm">
+						<div class="titArea">
+							<h3 class="titDep3">보험 보상/면제범위</h3>
+							<a href="#" class="btLink icArr light">자세히 보기</a>
+						</div>
+						<p class="titDesc">고객님이 선택하신 렌트카의 보장 항목을 확인하시고, 보장 범위와 한도를 지금 바로 업그레이드 해보세요.</p>
+						<div class="beware">
+							<a href="#" role="button" class="btLink01 btLink icArr careful">주의하세요</a> <!-- 2021.12.17 수정 -->
+							<p>현재 예약하는 대한렌터카의 '완전자차'는 보장 불가항목이 있어, 사고 발생 시 예상치 못한 비용이 발생할 수 있습니다.</p>
+						</div>
+						<!-- 2021.12.17 수정 -->
+						<!-- 케어플러스 미가입 -->
+						<h4 class="titDep4">전문 보험사가 보장하는 케어플러스</h4>
+						<div class="tblV">
+							<table>
+								<colgroup>
+									<col span="3" style="width:calc(100%/3)">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">보상내용</th>
+										<td><b>현재 적용된 완전자차</b></td>
+										<td><b>케어플러스 업그레이드 시</b></td>
+									</tr>
+									<tr>
+										<th scope="row">보상한도</th>
+										<td>500만</td>
+										<td class="pointColor">600만</td>
+									</tr>
+									<tr>
+										<th scope="row">휴차보상료</th>
+										<td class="pointColor">면제</td>
+										<td class="pointColor">면제</td>
+									</tr>
+									<tr>
+										<th scope="row">단독사고</th>
+										<td class="pointColor">면제</td>
+										<td class="pointColor">면제</td>
+									</tr>
+									<tr>
+										<th scope="row">휠/타이어 파손</th>
+										<td class="disableColor">보장불가</td>
+										<td class="pointColor">조건보장</td>
+									</tr>
+									<tr>
+										<th scope="row">가입</th>
+										<td>현재 조건으로 예약하기
+											<span class="frmInp txt small"><input type="radio" name="rad1" id="radtxt02" checked><label for="radtxt02">현재 조건으로 예약하기</label></span>
+										</td>
+										<td>9,900원 가입하기
+											<span class="frmInp txt small"><input type="radio" name="rad1" id="radtxt01"><label for="radtxt01">9,900원 가입하기</label></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<button type="button" class="btnDefault btnM btnLineP">가입</button>
+						<!-- //케어플러스 미가입 -->
+
+						<!-- 케어플러스 가입완료 -->
+						<h4 class="titDep4">전문 보험사가 보장하는 케어플러스</h4>
+						<div class="tblV">
+							<table>
+								<colgroup>
+									<col span="3" style="width:calc(100%/3)">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">보상내용</th>
+										<td><b>현재 적용된 완전자차</b></td>
+										<td><b>케어플러스 업그레이드 시</b></td>
+									</tr>
+									<tr>
+										<th scope="row">보상한도</th>
+										<td>500만</td>
+										<td class="pointColor">600만</td>
+									</tr>
+									<tr>
+										<th scope="row">휴차보상료</th>
+										<td class="pointColor">면제</td>
+										<td class="pointColor">면제</td>
+									</tr>
+									<tr>
+										<th scope="row">단독사고</th>
+										<td class="pointColor">면제</td>
+										<td class="pointColor">면제</td>
+									</tr>
+									<tr>
+										<th scope="row">휠/타이어 파손</th>
+										<td class="disableColor">보장불가</td>
+										<td class="pointColor">조건보장</td>
+									</tr>
+									<tr>
+										<th scope="row">가입</th>
+										<td>현재 조건으로 예약하기
+											<span class="frmInp txt small"><input type="radio" name="rad2" id="radtxt03"><label for="radtxt03">현재 조건으로 예약하기</label></span>
+										</td>
+										<td>9,900원 가입하기
+											<span class="frmInp txt small"><input type="radio" name="rad2" id="radtxt04" checked><label for="radtxt04">9,900원 가입하기</label></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p class="listType02 small">가입금은 렌터카 대여금에 포함하여 결제됩니다.</p>
+						<button type="button" class="btnDefault btnM btnLineP" disabled="">케어플러스 가입완료</button>
+						<div class="linkGroup">
+							<a href="#" role="button" class="btLink">가입해지</a>
+							<a href="#" role="button" class="btLink">약관보기</a>
+						</div>
+						<!-- //케어플러스 가입완료 -->
+
+						<!-- 케어플러스 / 자차 업그레이드 미가입 -->
+						<h4 class="titDep4">전문 보험사가 보장하는 케어플러스</h4>
+						<div class="tblV">
+							<table>
+								<colgroup>
+									<col span="3" style="width:calc(100%/4)">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">보상내용</th>
+										<td><b>현재 적용된 완전자차</b></td>
+										<td><b>케어플러스 업그레이드 시</b></td>
+										<td><b>자차 업그레이드</b></td>
+									</tr>
+									<tr>
+										<th scope="row">보상한도</th>
+										<td>500만</td>
+										<td class="pointColor">600만</td>
+										<td>250만</td>
+									</tr>
+									<tr>
+										<th scope="row">휴차보상료</th>
+										<td class="pointColor">면제</td>
+										<td class="pointColor">면제</td>
+										<td class="pointColor">면제</td>
+									</tr>
+									<tr>
+										<th scope="row">단독사고</th>
+										<td class="pointColor">면제</td>
+										<td class="pointColor">면제</td>
+										<td class="disableColor">보장불가</td>
+									</tr>
+									<tr>
+										<th scope="row">휠/타이어 파손</th>
+										<td class="disableColor">보장불가</td>
+										<td class="pointColor">조건보장</td>
+										<td class="disableColor">보장불가</td>
+									</tr>
+									<tr>
+										<th scope="row">배터리 방전</th>
+										<td class="disableColor">보장불가</td>
+										<td class="disableColor">보장불가</td>
+										<td class="pointColor">면제</td>
+									</tr>
+									<tr>
+										<th scope="row">차량장금해제</th>
+										<td class="disableColor">보장불가</td>
+										<td class="disableColor">보장불가</td>
+										<td class="pointColor">면제</td>
+									</tr>
+									<tr>
+										<th scope="row">견인</th>
+										<td class="disableColor">보장불가</td>
+										<td class="disableColor">보장불가</td>
+										<td class="disableColor">보장불가</td>
+									</tr>
+									<tr>
+										<th scope="row">견인 보장거리</th>
+										<td class="disableColor">0km</td>
+										<td class="disableColor">0km</td>
+										<td class="disableColor">0km</td>
+									</tr>
+									<tr>
+										<th scope="row">가입</th>
+										<td>현재 조건으로 예약하기
+											<span class="frmInp txt small"><input type="radio" name="rad3" id="radtxt05" checked><label for="radtxt05">현재 조건으로 예약하기</label></span>
+										</td>
+										<td>9,900원 가입하기
+											<span class="frmInp txt small"><input type="radio" name="rad3" id="radtxt06"><label for="radtxt06">9,900원 가입하기</label></span>
+										</td>
+										<td>15,000원 가입하기
+											<span class="frmInp txt small"><input type="radio" name="rad3" id="radtxt07"><label for="radtxt07">15,000원 가입하기</label></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<button type="button" class="btnDefault btnM btnLineP">가입</button>
+						<!-- //케어플러스 / 자차 업그레이드 미가입 -->
+
+						<!-- 케어플러스 가입 완료 -->
+						<h4 class="titDep4">전문 보험사가 보장하는 케어플러스</h4>
+						<div class="tblV">
+							<table>
+								<colgroup>
+									<col span="3" style="width:calc(100%/4)">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">보상내용</th>
+										<td><b>현재 적용된 완전자차</b></td>
+										<td><b>케어플러스 업그레이드 시</b></td>
+										<td><b>자차 업그레이드</b></td>
+									</tr>
+									<tr>
+										<th scope="row">보상한도</th>
+										<td>500만</td>
+										<td class="pointColor">600만</td>
+										<td>250만</td>
+									</tr>
+									<tr>
+										<th scope="row">휴차보상료</th>
+										<td class="pointColor">면제</td>
+										<td class="pointColor">면제</td>
+										<td class="pointColor">면제</td>
+									</tr>
+									<tr>
+										<th scope="row">단독사고</th>
+										<td class="pointColor">면제</td>
+										<td class="pointColor">면제</td>
+										<td class="disableColor">보장불가</td>
+									</tr>
+									<tr>
+										<th scope="row">휠/타이어 파손</th>
+										<td class="disableColor">보장불가</td>
+										<td class="pointColor">조건보장</td>
+										<td class="disableColor">보장불가</td>
+									</tr>
+									<tr>
+										<th scope="row">배터리 방전</th>
+										<td class="disableColor">보장불가</td>
+										<td class="disableColor">보장불가</td>
+										<td class="pointColor">면제</td>
+									</tr>
+									<tr>
+										<th scope="row">차량장금해제</th>
+										<td class="disableColor">보장불가</td>
+										<td class="disableColor">보장불가</td>
+										<td class="pointColor">면제</td>
+									</tr>
+									<tr>
+										<th scope="row">견인</th>
+										<td class="disableColor">보장불가</td>
+										<td class="disableColor">보장불가</td>
+										<td class="disableColor">보장불가</td>
+									</tr>
+									<tr>
+										<th scope="row">견인 보장거리</th>
+										<td class="disableColor">0km</td>
+										<td class="disableColor">0km</td>
+										<td class="disableColor">0km</td>
+									</tr>
+									<tr>
+										<th scope="row">가입</th>
+										<td>현재 조건으로 예약하기
+											<span class="frmInp txt small"><input type="radio" name="rad4" id="radtxt08"><label for="radtxt08">현재 조건으로 예약하기</label></span>
+										</td>
+										<td>9,900원 가입하기
+											<span class="frmInp txt small"><input type="radio" name="rad4" id="radtxt09" checked><label for="radtxt09">9,900원 가입하기</label></span>
+										</td>
+										<td>15,000원 가입하기
+											<span class="frmInp txt small"><input type="radio" name="rad4" id="radtxt10"><label for="radtxt10">15,000원 가입하기</label></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p class="listType02 small">가입금은 렌터카 대여금에 포함하여 결제됩니다.</p>
+						<button type="button" class="btnDefault btnM btnLineP" disabled="">케어플러스 가입완료</button>
+						<div class="linkGroup">
+							<a href="#" role="button" class="btLink">가입해지</a>
+							<a href="#" role="button" class="btLink">약관보기</a>
+						</div>
+						<!-- //케어플러스 가입완료 -->
+
+						<!-- 자차 업그레이드 가입완료-->
+						<h4 class="titDep4">전문 보험사가 보장하는 케어플러스</h4>
+						<div class="tblV">
+							<table>
+								<colgroup>
+									<col span="3" style="width:calc(100%/4)">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">보상내용</th>
+										<td><b>현재 적용된 완전자차</b></td>
+										<td><b>케어플러스 업그레이드 시</b></td>
+										<td><b>자차 업그레이드</b></td>
+									</tr>
+									<tr>
+										<th scope="row">보상한도</th>
+										<td>500만</td>
+										<td class="pointColor">600만</td>
+										<td>250만</td>
+									</tr>
+									<tr>
+										<th scope="row">휴차보상료</th>
+										<td class="pointColor">면제</td>
+										<td class="pointColor">면제</td>
+										<td class="pointColor">면제</td>
+									</tr>
+									<tr>
+										<th scope="row">단독사고</th>
+										<td class="pointColor">면제</td>
+										<td class="pointColor">면제</td>
+										<td class="disableColor">보장불가</td>
+									</tr>
+									<tr>
+										<th scope="row">휠/타이어 파손</th>
+										<td class="disableColor">보장불가</td>
+										<td class="pointColor">조건보장</td>
+										<td class="disableColor">보장불가</td>
+									</tr>
+									<tr>
+										<th scope="row">배터리 방전</th>
+										<td class="disableColor">보장불가</td>
+										<td class="disableColor">보장불가</td>
+										<td class="pointColor">면제</td>
+									</tr>
+									<tr>
+										<th scope="row">차량장금해제</th>
+										<td class="disableColor">보장불가</td>
+										<td class="disableColor">보장불가</td>
+										<td class="pointColor">면제</td>
+									</tr>
+									<tr>
+										<th scope="row">견인</th>
+										<td class="disableColor">보장불가</td>
+										<td class="disableColor">보장불가</td>
+										<td class="disableColor">보장불가</td>
+									</tr>
+									<tr>
+										<th scope="row">견인 보장거리</th>
+										<td class="disableColor">0km</td>
+										<td class="disableColor">0km</td>
+										<td class="disableColor">0km</td>
+									</tr>
+									<tr>
+										<th scope="row">가입</th>
+										<td>현재 조건으로 예약하기
+											<span class="frmInp txt small"><input type="radio" name="rad5" id="radtxt11"><label for="radtxt11">현재 조건으로 예약하기</label></span>
+										</td>
+										<td>9,900원 가입하기
+											<span class="frmInp txt small"><input type="radio" name="rad5" id="radtxt12"><label for="radtxt12">9,900원 가입하기</label></span>
+										</td>
+										<td>15,000원 가입하기
+											<span class="frmInp txt small"><input type="radio" name="rad5" id="radtxt13" checked><label for="radtxt13">15,000원 가입하기</label></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p class="listType02 small">가입금은 렌터카 대여금에 포함하여 결제됩니다.</p>
+						<button type="button" class="btnDefault btnM btnLineP" disabled="">자차 업그레이드 가입완료</button>
+						<div class="linkGroup">
+							<a href="#" role="button" class="btLink">가입해지</a>
+						</div>
+						<!-- //자차 업그레이드 가입완료-->
+						<!-- //2021.12.17 수정 -->
+					</div>
+				</div>
+
+				<!-- 2021.12.17 추가 -->
+				<div class="boxWhite">
+					<div class="reservationForm">
+						<div class="titArea">
+							<h3 class="titDep3">부가서비스</h3>
+						</div>
+						<ul class="toggleList acctAging additionalService">
+							<li class="acctItem">
+								<button type="button" class="toggleBtn" aria-expanded="false">육아용품</button>
+								<div class="toggleCont">
+									<div class="addServiceSelect">
+										<div class="inpFrm">
+											<label for="sel01">유모차</label>
+											<div class="selectWrap">
+												<select title="브랜드를 선택해주세요" data-msg="브랜드를 선택해주세요" data-header="정렬" id="sel01">
+													<option value="01">브랜드1</option>
+													<option value="02">브랜드2</option>
+													<option value="03">브랜드3</option>
+													<option value="04">브랜드4</option>
+												</select>
+											</div>
+										</div>
+										<div class="inpFrm">
+											<label for="sel02">유모차 종류</label>
+											<div class="selectWrap">
+												<select title="종류를 선택해주세요" data-msg="종류를 선택해주세요" data-header="정렬" id="sel02">
+													<option value="01">유모차 종류1</option>
+													<option value="02">유모차 종류2</option>
+													<option value="03">유모차 종류3</option>
+													<option value="04">유모차 종류4</option>
+												</select>
+											</div>
+										</div>
+										<button type="button" class="btnDefault btnM btnLineP">검색</button>
+									</div>
+									<div class="inpFrm">
+										<label for="sel03">카시트</label>
+										<div class="selectWrap">
+											<select title="브랜드를 선택해주세요" data-msg="브랜드를 선택해주세요" data-header="정렬" id="sel03">
+												<option value="01">브랜드1</option>
+												<option value="02">브랜드2</option>
+												<option value="03">브랜드3</option>
+												<option value="04">브랜드4</option>
+											</select>
+										</div>
+									</div>
+									<div class="inpFrm">
+										<label for="sel04">카시트 종류</label>
+										<div class="swiperWrap swiperGap imgSelect" data-options='{"Spacebetween": 12, "view" : 4, "group" : 1}'>
+											<button type="button" class="swiper-button-prev">이전</button>	
+											<div class="swiper-container">
+												<ul class="swiper-wrapper">
+													<li class="swiper-slide frmInp">
+														<input type="radio" id="rdo01" name="rdo">
+														<label for="rdo01">
+															<figure><img src="/resource/PC/images/dummy/@rentcar_img01.png" alt=""></figure>
+															<span class="brandName">조이 듀알로+프라임라이트 세트 (36개월 이상)</span>
+															<span class="price">20,000원</span>
+														</label>
+													</li>
+													<li class="swiper-slide frmInp">
+														<input type="radio" id="rdo02" name="rdo">
+														<label for="rdo02">
+															<figure><img src="/resource/PC/images/dummy/@rentcar_img02.png" alt=""></figure>
+															<span class="brandName">조이 듀알로<br>(36개월 이상)</span>
+															<span class="price">20,000원</span>
+														</label>
+													</li>
+													<li class="swiper-slide frmInp">
+														<input type="radio" id="rdo03" name="rdo">
+														<label for="rdo03">
+															<figure><img src="/resource/PC/images/dummy/@rentcar_img03.png" alt=""></figure>
+															<span class="brandName">브라이텍스 키드픽스
+																<br>(36개월 이상)</span>
+															<span class="price">20,000원</span>
+														</label>
+													</li>
+													<li class="swiper-slide frmInp">
+														<input type="radio" id="rdo04" name="rdo">
+														<label for="rdo04">
+															<figure><img src="/resource/PC/images/dummy/@rentcar_img01.png" alt=""></figure>
+															<span class="brandName">조이 듀알로+프라임라이트<br>세트 (36개월 이상)</span>
+															<span class="price">20,000원</span>
+														</label>
+													</li>
+													<li class="swiper-slide frmInp">
+														<input type="radio" id="rdo05" name="rdo">
+														<label for="rdo05">
+															<figure><img src="/resource/PC/images/dummy/@rentcar_img02.png" alt=""></figure>
+															<span class="brandName">ISOFIX 오가닉</span>
+															<span class="price">20,000원</span>
+														</label>
+													</li>
+													<li class="swiper-slide frmInp">
+														<input type="radio" id="rdo06" name="rdo">
+														<label for="rdo06">
+															<figure><img src="/resource/PC/images/dummy/@rentcar_img03.png" alt=""></figure>
+															<span class="brandName">ISOFIX 오가닉</span>
+															<span class="price">20,000원</span>
+														</label>
+													</li>
+												</ul>
+											</div>
+											<button type="button" class="swiper-button-next">다음</button>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="acctItem">
+								<button type="button" class="toggleBtn" aria-expanded="false">차량용품</button>
+								<div class="toggleCont">
+								</div>
+							</li>
+							<li class="acctItem">
+								<button type="button" class="toggleBtn" aria-expanded="false">애견보험</button>
+								<div class="toggleCont">
+								</div>
+							</li>
+							<li class="acctItem">
+								<button type="button" class="toggleBtn" aria-expanded="false">딜리버리</button>
+								<div class="toggleCont">
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>>
+				<!-- //2021.12.17 추가 -->
+
+				<!-- 2021.12.17 수정 -->
+				<div id="filterWrap" class="kf_paymentBox floatingCont floatingRentcar">
+					<div class="boxWhite">
+						<div class="inner">
+							<h3 class="titDep3">예약내역</h3>
+							<div class="totalPay">
+								<div class="detail">
+									<span class="tit">대여요금(할인가)</span>
+									<strong class="pay">36,100원</strong>
+								</div>
+								<span class="titDesc">완전자차 포함가</span>
+
+								<div class="detail borderTop">
+									<span class="tit">케어플러스</span>
+									<strong class="pay">9,900원</strong>
+								</div>
+
+								<div class="detail borderTop">
+									<span class="tit">부가서비스</span>
+								</div>
+								<span class="addService">육아용품(카시트 주니어)</span>
+								<ul class="k1_passenger">
+									<li>
+										<div class="tipWraper">
+											<strong class="tit">조이 듀알로 + 프라임라이트 세트 (36개월 이상)</strong>
+											<div class="tooltipWrap typeSmall">
+												<div class="tooltipCont">
+													<div class="context">이용연령 : 만 19세 이상</div>
+													<button type="button" class="btnClose">닫기</button>
+												</div>
+											</div>
+										</div>
+										<div class="settingBox">
+											<em class="price">60,000원</em>
+											<div class="setting">
+												<button type="button" class="minus"><span class="k1_icon">감소</span></button>
+												<input type="text" id="passenger1" name="passenger1" maxlength="2" class="num" value="1">
+												<button type="button" class="plus"><span class="k1_icon">증가</span></button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="tipWraper">
+											<strong class="tit">조이 듀알로 + 프라임라이트 세트 (36개월 이상)</strong>
+											<div class="tooltipWrap typeSmall">
+												<div class="tooltipCont">
+													<div class="context">이용연령 : 만 19세 이상</div>
+													<button type="button" class="btnClose">닫기</button>
+												</div>
+											</div>
+										</div>
+										<div class="settingBox">
+											<em class="price">60,000원</em>
+											<div class="setting">
+												<button type="button" class="minus"><span class="k1_icon">감소</span></button>
+												<input type="text" id="passenger2" name="passenger2" maxlength="2" class="num" value="2">
+												<button type="button" class="plus"><span class="k1_icon">증가</span></button>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<span class="addService">육아용품(카시트 유아용)</span>
+								<ul class="k1_passenger">
+									<li>
+										<div class="tipWraper">
+											<strong class="tit">조이 듀알로 + 프라임라이트 세트 (36개월 이상)</strong>
+											<div class="tooltipWrap typeSmall">
+												<div class="tooltipCont">
+													<div class="context">이용연령 : 만 19세 이상</div>
+													<button type="button" class="btnClose">닫기</button>
+												</div>
+											</div>
+										</div>
+										<div class="settingBox">
+											<em class="price">60,000원</em>
+											<div class="setting">
+												<button type="button" class="minus"><span class="k1_icon">감소</span></button>
+												<input type="text" id="passenger3" name="passenger3" maxlength="2" class="num" value="2">
+												<button type="button" class="plus"><span class="k1_icon">증가</span></button>
+											</div>
+										</div>
+									</li>
+								</ul>							
+
+								<div class="detail borderTop">
+									<span class="tit">주문금액</span>
+									<strong class="pay total">19,700원</strong>
+								</div>
+								<!-- 2021.12.27 삭제 <div class="cardBtn">
+									<a href="#" class="btLink btLine">카드 무이자 할부</a>
+									<a href="#" class="btLink btLine">청구 할인 정보</a>
+								</div> -->
+								<p class="infoText">보유 쿠폰사용은 결제 시<br>선택 가능합니다.</p>
+
+								<!-- 2021.12.17 삭제 <div class="guideInfo boxType01">
+									<h4 class="titGuide">바로 결제해야 예약 확정</h4>
+									<p>지금 보시는 요금은 고객님이 선택하신 기준으로 실제 검색된 실시간 렌터카로 선택된 일자 조건의 가격과 옵션은 언제든 바뀔 수 있습니다.</p>
+								</div> -->
+							</div>
+						</div>
+					</div>
+					<div class="floatingBtns">
+						<div class="floatingInner">
+							<button type="button" class="btnDefault btnL action">총 43,700원 결제</button>
+						</div>
+					</div>
+				</div>
+				<!-- //2021.12.17 수정 -->
+			</div>
+			<!-- //컨텐츠 영역 -->
+		</div>
+	</div><!-- //container -->
+
+	
+
+</section><!-- //wrapper -->
+<footer>
+	<div class="footInner">
+		<img src="/resource/PC/images/dummy/@footer.png" alt="">
+	</div>
+</footer>
+
+<aside>
+	<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+</aside>
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/PC/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_common.js"></script>
+
+</body>
+</html>

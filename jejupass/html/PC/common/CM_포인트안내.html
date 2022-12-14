@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>충전결제 적립포인트 안내</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, user-scalable=no, width=1366">
+<link rel="shortcut icon" type="image/x-icon" href="/jejupass/resource/PC/images/favicon/favicon.ico">
+<link href="/jejupass/resource/PC/css/p_common.min.css" rel="stylesheet" type="text/css">
+<link href="/jejupass/resource/PC/css/p_contents.min.css" rel="stylesheet" type="text/css">
+<style>
+    .dimmed{display:block !important;opacity:1 !important;}
+    .layPop{display:block !important;}
+  </style>
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+<section id="wrapper" class="wrapper defaultWrapper"><!-- scrollTop 104이상일때 headFixed 추가 -->
+</section><!-- //wrapper -->
+
+<!-- popup -->
+<section id="pop_pointInfo" class="layPop layerM pop_pointInfo" tabindex="0">
+	<header>
+		<h2 class="titLay">충전결제 적립포인트 안내</h2>
+	</header>
+
+	<div class="layContainer" tabindex="0">
+		<div class="layContent">
+            <h3 class="titDep4">충전결제란?</h3>
+            <p class="titDesc">지정한 금액만큼 연결계좌로 포인트를 충전한 후 결제에 사용하는 방식입니다. 충전결제 후 취소 시 포인트로 환불되며, 환불받은 포인트는 수수료없이 계좌로 인출이 가능합니다.</p>
+            <h3 class="titDep4">충전결제 적립 상세안내</h3>
+            <p class="titDesc">제주패스 결제구간별 적립포인트 적립율이 상이 합니다.</p>
+            <ul class="pointList">
+                <li class="purple">
+                    <span class="tit"><b>5%</b>적립</span>
+                    <span class="infoFlag">충전포인트</span>
+                </li>
+                <li class="red">
+                    <span class="tit"><b>2%</b>적립</span>
+                    <span class="infoFlag">제주PAY</span>
+                </li>
+                <li class="gray">
+                    <span class="tit"><b>2%</b>적립</span>
+                    <span class="infoFlag">간편/일반</span>
+                </li>
+            </ul>
+        </div>
+	</div>
+    <div class="btnArea">
+        <button type="button" class="btnDefault btnL action">확인</button>
+    </div>
+	<button type="button" class="closeL">팝업 닫기</button>
+</section>
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/PC/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_common.js"></script>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>

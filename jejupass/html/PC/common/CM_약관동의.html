@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>계좌연결</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, user-scalable=no, width=1366">
+<link rel="shortcut icon" type="image/x-icon" href="/jejupass/resource/PC/images/favicon/favicon.ico">
+<link href="/jejupass/resource/PC/css/p_common.min.css" rel="stylesheet" type="text/css">
+<link href="/jejupass/resource/PC/css/p_contents.min.css" rel="stylesheet" type="text/css">
+<style>
+    .dimmed{display:block !important;opacity:1 !important;}
+    .layPop{display:block !important;}
+  </style>
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+<section id="wrapper" class="wrapper defaultWrapper"><!-- scrollTop 104이상일때 headFixed 추가 -->
+</section><!-- //wrapper -->
+
+<!-- popup -->
+<section id="pop_account_terms" class="layPop layerM pop_account_terms" tabindex="0">
+	<header>
+		<h2 class="titLay">계좌연결</h2>
+	</header>
+
+	<div class="layContainer" tabindex="0">
+		<div class="layContent">
+            <p class="pageTit pageTitP">계좌연결을 위해<br>약관에 동의해주세요</p>
+            <div class="grayBox agree">
+                <span class="frmInp txt large"><input type="checkbox" id="chkAll"><label for="chkAll">전체 약관 동의</label></span>
+                <ul class="agreeList">
+                    <li>
+                        <span class="frmInp txt frmInpS">
+                            <input type="checkbox" id="chk01" required><label for="chk01"><em>[필수]</em> 오픈뱅킹 출금 및 조회 동의</label>
+                            <a href="#" role="button" class="viewBtn layPopBtn" data-id="pop_agree-01"><i class="hidden">내용보기</i></a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="frmInp txt frmInpS">
+                            <input type="checkbox" id="chk02" required><label for="chk02" ><em>[필수]</em> 금융결제원 개인정보 정보 제공의</label>
+                            <a href="#" role="button" class="viewBtn layPopBtn" data-id="pop_agree-02"><i class="hidden">내용보기</i></a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	<div class="btnArea">
+		<button type="button" class="btnDefault btnL">이전</button>
+		<button type="button" class="btnDefault btnL action">동의하고 계속</button>
+	</div>
+	<button type="button" class="closeL">팝업 닫기</button>
+</section>
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/PC/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_common.js"></script>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>

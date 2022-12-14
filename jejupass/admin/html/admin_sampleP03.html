@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>제주패스 :: 통합 관리자</title>
+<link href="/jejupass/admin/css/admin.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/admin/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/admin/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_common.js"></script>
+<script type="text/javascript" src="/resource/PC/js/swiper.min.js"></script>
+<script type="text/javascript" src="/admin/js/admin_script.js"></script>
+</head>
+
+<body>
+
+<div id="popWrapper" class="popWrapper">
+	<header>
+		<h2 class="titPop">리뷰 이미지 조회</h2>
+	</header>
+
+	<div class="popContainer" tabindex="0">
+
+		<h3 class="titDep2">업체 정보</h3>
+		<table class="selectSearch">
+			<colgroup><col style="width:15%"><col style="width:35%"><col style="width:15%"><col style="width:auto"></colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">맛집 명</th>
+					<td>순이네 식당</td>
+					<th scope="row">업체 코드</th>
+					<td>IG2DKDJFM04</td>
+				</tr>
+				<tr>
+					<th scope="row">지역</th>
+					<td>우도/성산</td>
+					<th scope="row">사용 여부</th>
+					<td>사용</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3 class="titDep2 marT40">리뷰 정보</h3>
+		<table class="selectSearch">
+			<colgroup><col style="width:15%"><col style="width:35%"><col style="width:15%"><col style="width:auto"></colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">등록일</th>
+					<td>YYYY-MM-DD</td>
+					<th scope="row">별점/좋아요 수</th>
+					<td>4.5 / 345</td>
+				</tr>
+				<tr>
+					<th scope="row">리뷰 전시 여부</th>
+					<td>전시</td>
+					<th scope="row">리뷰 타입</th>
+					<td>포토 리뷰</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3 class="titDep2 marT40">리뷰 이미지 선택</h3>
+
+		<div class="swiperWrap swiperReviewPhoto" data-options='{"view": 4, "Spacebetween" : 10}'>
+			<button type="button" class="swiper-button-prev">이전</button>
+			<div class="swiper-container">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide"><input type="checkbox" id="radReview01"><label for="radReview01"><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></label></li>
+					<li class="swiper-slide"><input type="checkbox" id="radReview02"><label for="radReview02"><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></label></li>
+					<li class="swiper-slide"><input type="checkbox" id="radReview03"><label for="radReview03"><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></label></li>
+					<li class="swiper-slide"><input type="checkbox" id="radReview04"><label for="radReview04"><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></label></li>
+					<li class="swiper-slide"><input type="checkbox" id="radReview05"><label for="radReview05"><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></label></li>
+					<li class="swiper-slide"><input type="checkbox" id="radReview06"><label for="radReview06"><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></label></li>
+					<li class="swiper-slide"><input type="checkbox" id="radReview07"><label for="radReview07"><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></label></li>
+					<li class="swiper-slide"><input type="checkbox" id="radReview08"><label for="radReview08"><img src="/resource/pc/images/dummy/@stay_img08.jpg" alt=""></label></li>
+				</ul>
+			</div>
+			<button type="button" class="swiper-button-next">다음</button>
+			<div class="swiper-pagination">
+				
+			</div>
+		</div>
+
+		<div class="btnAreaP">
+			<button type="submit" class="btnDefault btnL action">적용</button>
+		</div>
+	</div><!-- //popContainer -->
+
+	<button type="button" class="closeP" onclick="window.close();">닫기</button>
+</div>
+</body>
+</html>

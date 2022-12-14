@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>제주패스</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, width=1366"><!-- 10.29 추가 -->
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" type="image/x-icon" href="/jejupass/resource/PC/images/favicon/favicon.ico">
+<link href="/jejupass/resource/PC/css/p_common.min.css" rel="stylesheet" type="text/css">
+<link href="/jejupass/resource/PC/css/p_contents.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<p class="skip"><a href="#container">본문 바로가기</a></p>
+
+<section id="wrapper" class="wrapper defaultWrapper">
+	<header>
+		<h1 class="topLogo"><a href="#">JEJUPASS</a></h1><!-- 11.05 SEO를 위한 태그 수정 -->
+		<nav>
+			<div class="navList">
+				<h2><a href="#" arial-selected="true">항공</a></h2>
+				<h2><a href="#">렌터카</a></h2>
+				<h2><a href="#">숙박</a></h2>
+				<h2><a href="#">맛집</a></h2>
+				<h2><a href="#">카페패스</a></h2>
+				<h2><a href="#">트립</a></h2>
+			</div>
+			<div class="quickSearchWrap">
+				<button type="button" class="btSearch">빠른검색</button>
+				
+			</div>
+		</nav>
+		<div class="topUtil">
+			<img src="/resource/PC/images/dummy/@util.png" alt="">
+		</div>
+	</header>
+
+	<div id="container" class="container bgGray">
+		<div id="contents" class="contents">
+			<!-- 컨텐츠 영역  -->		
+			<div class="kf_airFixed kf_searchFixed">
+				<div class="k1_main_search_area">
+					<div class="k1_search_are_spot">
+						<div class="k1_section_multi section_rent">
+							<div class="kf_flightInner kf_rentcarDate"><!-- 버튼 클릭시 selectON 클래스 추가-->
+								<ul class="k1_flight_panel">
+									<li class="k1_area">
+										<p class="tit">대여/반납일</p>
+										<button type="button" ><strong>22.08.18(목) ~ 22.08.20(금)</strong></button>
+									</li>
+								</ul>
+							</div>
+		
+							<div class="kf_flightInner kf_rentcarTime">
+								<ul class="k1_flight_panel">
+									<li class="k1_area">
+										<p class="tit">대여/반납 시간</p>
+										<button type="button" ><strong>09:00 ~ 09:00 (36시간)</strong></button>
+									</li>
+								</ul>
+							</div>
+		
+							<div class="kf_flightInner kf_rentcarCondition">
+								<ul class="k1_flight_panel">
+									<li class="k1_area">
+										<p class="tit">차량조건</p>
+										<button type="button" aria-expanded="false"><strong>전체, 완전자차</strong></button> <!-- 2021.12.07 수정 -->
+									</li>
+								</ul>
+							</div>
+		
+							<div class="kf_flightInner kf_rentcarDriver">
+								<ul class="k1_flight_panel">
+									<li class="k1_area">
+										<p class="tit">운전자조건</p>
+										<button type="button" aria-expanded="false"><strong>만 26세이상, 2년이상</strong></button> <!-- 2021.12.07 수정 -->
+									</li>
+								</ul>
+							</div>
+							<button type="submit" class="k1_btn_price_search">검색</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="kf_airFixed kf_quickFixed">
+				<div class="tabBox tabSorting">
+					<strong class="tit">빠른 검색</strong>
+                    <div class="tabWrap tabScript">
+                        <button type="button" class="prev"><span>이전</span></button>
+                        <ul class="tabTypeR">
+                            <li><a href="#" role="button" aria-selected="false">더 많은 수입차</a></li>
+                            <li><a href="#" role="button" aria-selected="false">렌터카 패키지</a></li>
+                            <li><a href="#" role="button" aria-selected="false">애견동반</a></li>
+                            <li><a href="#" role="button" aria-selected="false">금연차량</a></li>
+                            <li><a href="#" role="button" aria-selected="true">스포츠카</a></li>
+                            <li><a href="#" role="button" aria-selected="false">렌터카 패키지</a></li>
+                            <li><a href="#" role="button" aria-selected="false">애견동반</a></li>
+                            <li><a href="#" role="button" aria-selected="false">금연차량</a></li>
+                            <li><a href="#" role="button" aria-selected="false">렌터카 패키지</a></li>
+                            <li><a href="#" role="button" aria-selected="false">애견동반</a></li>
+                        </ul>
+                        <button type="button" class="next"><span>다음</span></button>
+                    </div>
+				</div>
+			</div>
+
+			<div class="k1_schedule_search kf_schedule_search rentcar">
+				<div id="filterWrap" class="filterWrap"><!-- footer가 올시 filterFoot 추가 -->
+					<div class="toggleList filterSorting">
+						<div class="acctItem">
+							<button type="button" class="toggleBtn" aria-expanded="true">정렬</button>
+							<div class="toggleCont">
+								<span class="frmInp small txt"><input type="radio" id="radSorting01" name="radSorting" checked><label for="radSorting01">가격순</label></span>
+								<span class="frmInp small txt"><input type="radio" id="radSorting02" name="radSorting"><label for="radSorting02">고급옵션순</label></span>
+								<span class="frmInp small txt"><input type="radio" id="radSorting03" name="radSorting"><label for="radSorting03">예약순</label></span>
+								<span class="frmInp small txt"><input type="radio" id="radSorting04" name="radSorting"><label for="radSorting04">리뷰순</label></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="filterSelectWrap">
+						<p class="tit">필터</p>
+						<div class="scriptScroll">
+							<ul class="toggleList">
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="true">금액</button>
+									<div class="toggleCont">
+										<div class="fp_slideArea">
+											<div class="slideValue">
+												<span class="minValue">최소 0원</span>
+												<span class="maxValue">최대 650,000원</span>
+											</div>
+											<div id="slider-range1" class="slider" data-options='{"range": true, "min":0, "max": 650000, "step": 10000, "values": [80000, 650000], "text":"원" }'></div>
+											<div class="fp_slideInp">
+												<input type="text" class="amount" readonly>
+												<span class="dash">~</span>
+												<input type="text" class="amount" readonly>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="true">제조사</button>
+									<div class="toggleCont chkTotalSel">
+										<span class="frmInp small txt total"><input type="checkbox" id="chkTotalSel" name="chkTotalSel"><label for="chkTotalSel">전체</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt11" name="chkOpt1"><label for="chkOpt11">현대</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt12" name="chkOpt1"><label for="chkOpt12">기아</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt13" name="chkOpt1"><label for="chkOpt13">쌍용</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt14" name="chkOpt1"><label for="chkOpt14">르노삼성</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt15" name="chkOpt1"><label for="chkOpt15">쉐보레</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt16" name="chkOpt1"><label for="chkOpt16">수입</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt17" name="chkOpt1"><label for="chkOpt17">제네시스</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt18" name="chkOpt1"><label for="chkOpt18">기타</label></span>
+									</div>
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="true">연식</button>
+									<div class="toggleCont">
+										<div class="fp_slideArea">	
+											<div class="fp_slideInp">		
+												<div class="selectWrap selectSmall">
+													<select title="연식 선택" data-msg="2017년" data-header="연식">
+														<option value="01" data-option="" selected>2003년</option>
+														<option value="02">2004년</option>
+														<option value="03">2005년</option>
+													</select>
+												</div>
+												<span class="dash">~</span>
+												<div class="selectWrap selectSmall">
+													<select title="연식 선택" data-msg="2022년" data-header="연식">
+														<option value="01" data-option="" selected>2019년</option>
+														<option value="02">2020년</option>
+														<option value="03">2021년</option>
+													</select>
+												</div>
+											</div>		
+										</div>
+									</div>
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="true">옵션</button>
+									<!-- 2021.12.17 수정 -->
+									<div class="toggleCont chkTotalSel">
+										<span class="frmInp small txt total"><input type="checkbox" id="chkTotalSel2" name="chkTotalSel2"><label for="chkTotalSel2">전체</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt210" name="chkOpt2"><label for="chkOpt210">블루투스</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt23" name="chkOpt2"><label for="chkOpt23">후방센서</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt211" name="chkOpt2"><label for="chkOpt211">후방카메라</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt213" name="chkOpt2"><label for="chkOpt213">블랙박스</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt24" name="chkOpt2"><label for="chkOpt24">열선시트</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt25" name="chkOpt2"><label for="chkOpt25">열선핸들</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt212" name="chkOpt2"><label for="chkOpt212">통풍시트</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt22" name="chkOpt2"><label for="chkOpt22">네비게이션</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt216" name="chkOpt2"><label for="chkOpt216">금연차량</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt26" name="chkOpt2"><label for="chkOpt26">스마트키</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt217" name="chkOpt2"><label for="chkOpt217">썬루프</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt27" name="chkOpt2"><label for="chkOpt27">파노라마 썬루프</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt28" name="chkOpt2"><label for="chkOpt28">4륜구동</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt221" name="chkOpt2"><label for="chkOpt221">공기청정시스템</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt219" name="chkOpt2"><label for="chkOpt219">후측방 경고등</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt29" name="chkOpt2"><label for="chkOpt29">차선이탈방지</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt214" name="chkOpt2"><label for="chkOpt214">전방추돌방지</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt220" name="chkOpt2"><label for="chkOpt220">크루즈 컨트롤</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt215" name="chkOpt2"><label for="chkOpt215">서라운드 뷰</label></span>
+										<span class="frmInp small txt"><input type="checkbox" id="chkOpt218" name="chkOpt2"><label for="chkOpt218">HUD</label></span>
+									</div>
+									<!-- //2021.12.17 수정 -->
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="true">별점</button>
+									<div class="toggleCont">
+										<div class="fp_slideArea ratingSlider">
+                                            <div id="slider-range3" class="slider" data-options='{"range": true, "min": 1, "max": 5, "step": 1, "values": [2, 4] }'></div>
+                                            <div class="sliderInfo">
+                                                <span class="rating1">별점1점</span>
+                                                <span class="rating2">별점2점</span>
+                                                <span class="rating3">별점3점</span>
+                                                <span class="rating4">별점4점</span>
+                                                <span class="rating5">별점5점</span>
+                                            </div>
+										</div>
+									</div>
+								</li>
+								<li class="acctItem">
+									<button type="button" class="toggleBtn" aria-expanded="true">리뷰</button>
+									<div class="toggleCont">
+										<div class="fp_slideArea">
+											<div class="slideValue">
+												<span class="minValue">최소</span>
+												<span class="maxValue">최대</span>
+											</div>
+											<div id="slider-range1" class="slider" data-options='{"range": true, "min": 0, "max": 100, "step": 10, "values": [20, 100], "text":"회" }'></div>
+											<div class="fp_slideInp">
+												<input type="text" class="amount" readonly>
+												<span class="dash">~</span>
+												<input type="text" class="amount" readonly>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<button type="button" class="btIco icoReset">초기화</button>
+					</div>
+
+					<div class="filterBtns">
+						<button type="button" class="btnDefault btnL action">적용</button>
+					</div>
+				</div>
+				<div class="sch_result">
+					<div class="kf_schNum">
+                        총 <strong>283</strong>개의 차량
+                        <!-- <span class="selOption"><input type="checkbox" id="chkOption02"><label for="chkOption02">상세옵션보기</label></span> -->
+                    </div>
+					<div class="rentercarList">
+						<div class="rentcarItemGroup">
+							<div class="noData noCar"> <!-- 2021.12.17 class 추가 --> <!-- 2021.12.28 class명 변경 -->
+								<p class="tit">검색 조건에 맞는 차량이 없습니다.</p>
+								<span class="subTxt">필터조건을 변경해 조회하거나
+									필터 초기화를 진행주세요.</span>
+								<div class="btnArea">
+									<button type="button" class="btnDefault btnM action">필터 초기화</button>
+								</div>
+	
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+			
+			<!-- //컨텐츠 영역 -->
+
+		</div>
+	</div><!-- //container -->
+
+	
+
+</section><!-- //wrapper -->
+<footer>
+	<div class="footInner">
+		<img src="/resource/PC/images/dummy/@footer.png" alt="">
+	</div>
+</footer>
+
+<aside>
+	<a href="#" class="myViewGo" title="내가본 렌트카 리스트 이동"><img src="/resource/PC/images/dummy/@food_368x276-01.png" alt=""><span class="listNum">3</span></a>
+	<button type="button" class="btTop" onclick="location.href='#container'">페이지 상단으로 이동</button>
+</aside>
+
+<div class="dimmed"></div>
+
+<script type="text/javascript" src="/resource/pc/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/p_common.js"></script>
+
+</body>
+</html>

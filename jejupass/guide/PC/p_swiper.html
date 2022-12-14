@@ -1,0 +1,168 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>제주패스 - PC HTML List</title>
+<meta name="format-detection" content="telephone=no">
+<link href="../guide.css" rel="stylesheet" type="text/css">
+<link href="/jejupass/resource/PC/css/p_common.min.css" rel="stylesheet" type="text/css">
+<link href="/jejupass/resource/PC/css/p_content.min.css" rel="stylesheet" type="text/css">
+<style>
+	.swiperWrap .swiper-wrapper .swiper-slide{height:200px;background:pink}
+	.swiperVertical{height:300px}
+</style>
+</head>
+
+<body>
+	<section class='guideHeader pcHead'>
+	<h1>제주패스 - PC HTML List</h1>
+	<nav class="guide">
+		<div class="gnbDep1 pcGnb">
+			<a href="/jejupass/guide/PC/p_button.html">Guide</a>
+			<a href="/jejupass/guide/PC/p_pubList01.html" role="button">Main/공통/기타</a>
+			<a href="/jejupass/guide/PC/p_pubList05.html" role="button">렌트카</a>
+			<a href="/jejupass/guide/PC/p_pubList08.html" role="button">트립</a>
+			<!-- <a href="/jejupass/guide/PC/p_pubList02.html" role="button">ESG</a>
+			<a href="/jejupass/guide/PC/p_pubList03.html" role="button">항공</a>
+			<a href="/jejupass/guide/PC/p_pubList04.html" role="button">숙박</a>
+			<a href="/jejupass/guide/PC/p_pubList06.html" role="button">맛집</a>
+			<a href="/jejupass/guide/PC/p_pubList07.html" role="button">카페패스</a>
+			<a href="/jejupass/guide/PC/p_pubList09.html" role="button">고객센터</a>
+			<a href="/jejupass/guide/PC/p_pubList10.html" role="button">이벤트</a>
+			<a href="/jejupass/guide/PC/p_pubList11.html" role="button">회사소개</a>
+            <a href="/jejupass/guide/PC/p_pubList12.html" role="button">마이페이지</a>
+            <a href="/jejupass/guide/PC/p_pubList13.html" role="button">관리자</a> -->
+		</div>
+		<div class="gnbDep2">
+			<a href="/jejupass/guide/PC/p_button.html" role="button">Button</a>
+			<a href="/jejupass/guide/PC/p_form.html" role="button">Form</a>
+			<a href="/jejupass/guide/PC/p_table.html" role="button">Table</a>
+			<a href="/jejupass/guide/PC/p_list.html" role="button">Title/Text/List</a>
+			<!-- <a href="/jejupass/guide/PC/p_box.html" role="button">Box</a> -->
+			<a href="/jejupass/guide/PC/p_popup.html" role="button">Popup</a>
+			<a href="/jejupass/guide/PC/p_tab.html" role="button">Tab/Step</a>
+			<a href="/jejupass/guide/PC/p_layout.html" role="button">Layout</a>
+			<a href="/jejupass/guide/PC/p_swiper.html" role="button">Swiper</a>
+			<!-- a href="/jejupass/guide/PC/p_floating.html" role="button">floating button 모음</a -->
+			<a href="/jejupass/guide/PC/p_pattern.html" role="button" target="_blank">Pattern</a>
+		</div>
+	</nav>
+	<div class="topBtn">
+		<a href="/jejupass/guide/MO/m_button.html">Mobile Guide</a>
+	</div>
+	
+</section>
+
+<section class="guideContents pcGuideCont">
+	
+	<div style="font-size:18px;background:#f5f5f5;padding:20px">
+		<strong>swiper Option</strong><br><br>
+
+		1. 무한루프 : loop - false/true<br>
+		2. 자동롤링 : autoplay - 속도(예 - 2000)<br>
+		3. pagination : 기본 bullets, fraction - 페이징 숫자, all - bullets/ faction 모두 나옴<br>
+		4. Mode : 기본 swiper, fade - fade
+
+	</div>
+
+	<h3 class="guideTit3">Default Full 버전</h3>
+	
+	<div class="swiperWrap" data-options='{"loop": false, "autoplay": "0", "pagination": "all"}'>
+		<button type="button" class="swiper-button-prev">이전</button>	
+		<div class="swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">Slide 1</li>
+				<li class="swiper-slide">Slide 2</li>
+				<li class="swiper-slide">Slide 3</li>
+				<li class="swiper-slide">Slide 4</li>
+				<li class="swiper-slide">Slide 5</li>
+				<li class="swiper-slide">Slide 6</li>
+				<li class="swiper-slide">Slide 7</li>
+				<li class="swiper-slide">Slide 8</li>
+				<li class="swiper-slide">Slide 9</li>
+			</ul>
+		</div>
+		<button type="button" class="swiper-button-next">다음</button>
+		<div class="swiper-pagination">
+			<div class="btAutoplays">
+				<button type="button" class="btStop">정지</button>
+				<button type="button" class="btPlay">재생</button>
+			</div>
+			<button type="button" class="swiperMore">더보기</button>
+		</div>	
+	</div>
+	<br><br>
+
+	<div class="swiperWrap swiperFraction" data-options='{"loop": true, "pagination": "fraction"}'>
+		<button type="button" class="swiper-button-prev">이전</button>	
+		<div class="swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">Slide 1</li>
+				<li class="swiper-slide">Slide 2</li>
+				<li class="swiper-slide">Slide 3</li>
+				<li class="swiper-slide">Slide 4</li>
+				<li class="swiper-slide">Slide 5</li>
+				<li class="swiper-slide">Slide 6</li>
+				<li class="swiper-slide">Slide 7</li>
+				<li class="swiper-slide">Slide 8</li>
+				<li class="swiper-slide">Slide 9</li>
+			</ul>
+		</div>
+		<button type="button" class="swiper-button-next">다음</button>
+		<div class="swiper-pagination">
+			<button type="button" class="swiperMore">더보기</button>
+		</div>	
+	</div>
+	<br><br>
+
+	<div class="swiperWrap swiperMainWrapper" data-options='{"loop": true, "autoplay": "3000", "pagination": "all", "mode" : "fade"}'>
+		<button type="button" class="swiper-button-prev">이전</button>	
+		<div class="swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide" style="background:#aaa">Face effect</li>
+				<li class="swiper-slide">Slide 2</li>
+				<li class="swiper-slide" style="background:red">Slide 3</li>
+				<li class="swiper-slide" style="background:blue">Slide 4</li>
+				<li class="swiper-slide" style="background:#999">Slide 5</li>
+				<li class="swiper-slide">Slide 6</li>
+				<li class="swiper-slide">Slide 7</li>
+				<li class="swiper-slide">Slide 8</li>
+				<li class="swiper-slide">Slide 9</li>
+			</ul>
+		</div>
+		<button type="button" class="swiper-button-next">다음</button>
+		<div class="swiper-pagination">
+			<div class="btAutoplays">
+				<button type="button" class="btStop">정지</button>
+				<button type="button" class="btPlay">재생</button>
+			</div>
+			<button type="button" class="swiperMore">더보기</button>
+		</div>	
+	</div>
+	
+	
+		
+	
+</section>
+
+
+<div class="dimmed"></div>
+
+</body>
+<script type="text/javascript" src="/resource/PC/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/swiper.min.js"></script>
+<script type="text/javascript" src="/resource/pc/js/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_selectbox.js"></script>
+<script type="text/javascript" src="/resource/PC/js/p_common.js"></script>
+<script type="text/javascript" src="../guide.js"></script>
+<script type="text/javascript">
+
+	var gnbNO = 0;
+	//var snbNO = 8;
+	var snbNO = 7;
+
+</script>
+
+</html>
+
