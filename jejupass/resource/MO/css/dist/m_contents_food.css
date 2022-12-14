@@ -146,13 +146,13 @@
   font-family: NanumSquareR, -apple-system, BlinkMacSystemFont, Open Sans, Helvetica Neue, sans-serif;
   color: #fff;
   vertical-align: middle;
-  background: url(/resource/MO/images/common/bg_food_rank.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/bg_food_rank.svg) no-repeat;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .foodRanking ol li .rankingNum.top {
-  background: url(/resource/MO/images/common/bg_food_rank_top.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/bg_food_rank_top.svg) no-repeat;
 }
 
 .foodRanking ol li figure {
@@ -339,7 +339,7 @@
   margin-left: -9px;
   left: 0;
   margin-left: 0;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -150px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -150px 0;
 }
 
 .frmInp.like > label {
@@ -368,7 +368,7 @@
   left: 0;
   margin-left: 0;
   border: 0;
-  background: transparent url(/resource/MO/images/esg/ico_like.svg) no-repeat;
+  background: transparent url(/jejupass/resource/MO/images/esg/ico_like.svg) no-repeat;
 }
 
 .frmInp.like input:checked + label:before {
@@ -383,7 +383,7 @@
   margin-left: -9px;
   left: 0;
   margin-left: 0;
-  background: transparent url(/resource/MO/images/common/spr_ico.svg) no-repeat -150px 0;
+  background: transparent url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -150px 0;
 }
 
 .addressInfo, .distanceInfo {
@@ -414,7 +414,7 @@
   margin-left: -9px;
   left: 0;
   margin-left: 0;
-  background: url(/resource/MO/images/common/ico_star.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_star.svg) no-repeat;
 }
 
 .icoScore i {
@@ -525,19 +525,19 @@
 }
 
 .icoCate.food:before {
-  background: url(/resource/MO/images/common/ico_map_resturant-active.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_map_resturant-active.svg) no-repeat;
 }
 
 .icoCate.pass:before {
-  background: url(/resource/MO/images/common/ico_map_cafe-active.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_map_cafe-active.svg) no-repeat;
 }
 
 .icoCate.trip:before {
-  background: url(/resource/MO/images/common/ico_map_trip-active.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_map_trip-active.svg) no-repeat;
 }
 
 .icoCate.stay:before {
-  background: url(/resource/MO/images/common/ico_map_stay-active.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_map_stay-active.svg) no-repeat;
 }
 
 .cate {
@@ -581,7 +581,7 @@
 }
 
 .cate.frmInp.food label:before {
-  background: url(/resource/MO/images/common/ico_map_resturant.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_map_resturant.svg) no-repeat;
 }
 
 .cate.frmInp.food input:checked + label {
@@ -589,11 +589,11 @@
 }
 
 .cate.frmInp.food input:checked + label:before {
-  background: url(/resource/MO/images/common/ico_map_resturant-active.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_map_resturant-active.svg) no-repeat;
 }
 
 .cate.frmInp.pass label:before {
-  background: url(/resource/MO/images/common/ico_map_cafe.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_map_cafe.svg) no-repeat;
 }
 
 .cate.frmInp.pass input:checked + label {
@@ -601,11 +601,11 @@
 }
 
 .cate.frmInp.pass input:checked + label:before {
-  background: url(/resource/MO/images/common/ico_map_cafe-active.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_map_cafe-active.svg) no-repeat;
 }
 
 .cate.frmInp.trip label:before {
-  background: url(/resource/MO/images/common/ico_map_trip.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_map_trip.svg) no-repeat;
 }
 
 .cate.frmInp.trip input:checked + label {
@@ -613,11 +613,11 @@
 }
 
 .cate.frmInp.trip input:checked + label:before {
-  background: url(/resource/MO/images/common/ico_map_trip-active.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_map_trip-active.svg) no-repeat;
 }
 
 .cate.frmInp.stay label:before {
-  background: url(/resource/MO/images/common/ico_map_stay.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_map_stay.svg) no-repeat;
 }
 
 .cate.frmInp.stay input:checked + label {
@@ -625,7 +625,7 @@
 }
 
 .cate.frmInp.stay input:checked + label:before {
-  background: url(/resource/MO/images/common/ico_map_stay-active.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_map_stay-active.svg) no-repeat;
 }
 
 .contSet {
@@ -991,7 +991,7 @@
   height: 16px;
   margin-top: -8px;
   margin-left: -8px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat 2px -24px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat 2px -24px;
 }
 
 .chkScore {
@@ -1338,7 +1338,7 @@
   margin-left: -9px;
   left: 0;
   margin-left: 0;
-  background: url(/resource/MO/images/esg/ico_reply.png) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/MO/images/esg/ico_reply.png) no-repeat 0 0/cover;
 }
 
 .viewArea .txtInfo .reply > .btLink01:after {
@@ -1387,7 +1387,7 @@
   bottom: 10px;
   right: -2px;
   width: 10px;
-  background: #fff url(/resource/MO/images/food/bg_coupon-off.svg) repeat-y;
+  background: #fff url(/jejupass/resource/MO/images/food/bg_coupon-off.svg) repeat-y;
   z-index: 2;
 }
 
@@ -1455,7 +1455,7 @@
 }
 
 .ticketBox.passOn:after {
-  background-image: url(/resource/MO/images/food/bg_coupon-on.svg);
+  background-image: url(/jejupass/resource/MO/images/food/bg_coupon-on.svg);
 }
 
 .ticketBox.coupon {
@@ -1540,12 +1540,12 @@
   height: 100%;
   display: block;
   border-left: 1px dashed #EAEAEA;
-  background: url(/resource/MO/images/common/bg_download.svg) no-repeat 50% 50%;
+  background: url(/jejupass/resource/MO/images/common/bg_download.svg) no-repeat 50% 50%;
   font-size: 0;
 }
 
 .ticketBox.coupon.completed .rCont:after {
-  background-image: url(/resource/MO/images/common/bg_arr01.svg);
+  background-image: url(/jejupass/resource/MO/images/common/bg_arr01.svg);
 }
 
 .ticketBox.coupon ~ .couponBtn {
@@ -1617,7 +1617,7 @@
   width: 13px;
   height: 80px;
   border: 0;
-  background: url(/resource/MO/images/common/BI_jejupass.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/BI_jejupass.svg) no-repeat;
   -webkit-transform: rotate(0);
   transform: rotate(0);
 }
@@ -1634,7 +1634,7 @@
   height: auto;
   top: 14px;
   bottom: 14px;
-  background: #fff url(/resource/MO/images/food/bg_couponGray2.svg) repeat-y;
+  background: #fff url(/jejupass/resource/MO/images/food/bg_couponGray2.svg) repeat-y;
 }
 
 .ticketBox.disabled > * {
@@ -1703,7 +1703,7 @@
 }
 
 .ticketBox.chkBox input:checked + label:after {
-  background: #fff url(/resource/MO/images/food/bg_coupon-on.svg) repeat-y;
+  background: #fff url(/jejupass/resource/MO/images/food/bg_coupon-on.svg) repeat-y;
 }
 
 .ticketBox.chkBox label {
@@ -1783,7 +1783,7 @@
   bottom: 14px;
   right: -2px;
   width: 10px;
-  background: #fff url(/resource/MO/images/food/bg_coupon-off.svg) repeat-y;
+  background: #fff url(/jejupass/resource/MO/images/food/bg_coupon-off.svg) repeat-y;
   z-index: 2;
 }
 
@@ -1942,7 +1942,7 @@
 }
 
 .frmInp.frmTotal input:checked + label:before {
-  background: #fff url(/resource/MO/images/common/spr_ico.svg) no-repeat -80px -26px;
+  background: #fff url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -80px -26px;
 }
 
 .frmInp.frmTotal input:checked + label .false {
@@ -1976,7 +1976,7 @@
   top: 2px;
   margin: 0;
   border: none;
-  background: #fff url(/resource/MO/images/common/spr_ico.svg) no-repeat -60px -26px;
+  background: #fff url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -60px -26px;
 }
 
 .frmInp.frmTotal label:after {
@@ -2317,7 +2317,7 @@ ul + .icoMore {
 }
 
 .quick_search .searchIconBox .btMapSch {
-  background-image: url(/resource/MO/images/trip/img_btMapSch.png);
+  background-image: url(/jejupass/resource/MO/images/trip/img_btMapSch.png);
 }
 
 header > .searchIconBox {
@@ -2375,11 +2375,11 @@ header > .searchIconBox .searchIcon .icDel {
 }
 
 .hdFrmLayer.layPop header > .searchIconBox .btMapChoice {
-  background-image: url(/resource/MO/images/trip/img_mapW.png);
+  background-image: url(/jejupass/resource/MO/images/trip/img_mapW.png);
 }
 
 .hdFrmLayer.layPop header > .searchIconBox .btMapCurrent {
-  background-image: url(/resource/MO/images/common/ico_filter_list.svg);
+  background-image: url(/jejupass/resource/MO/images/common/ico_filter_list.svg);
 }
 
 .hdFrmLayer.layPop header ~ .layContainer {
@@ -2475,11 +2475,11 @@ header > .searchIconBox .searchIcon .icDel {
 }
 
 .listNumBtns > button.btnViewS:before {
-  background: url(/resource/MO/images/food/ico_view_small.png) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/MO/images/food/ico_view_small.png) no-repeat 0 0/cover;
 }
 
 .listNumBtns > button.btnViewB:before {
-  background: url(/resource/MO/images/food/ico_view_big.png) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/MO/images/food/ico_view_big.png) no-repeat 0 0/cover;
 }
 
 .listNumBtns .selectWrap .ui-selectmenu-button {
@@ -2778,7 +2778,7 @@ header > .searchIconBox .searchIcon .icDel {
   right: 0;
   margin-left: 0;
   border: 0;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -50px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -50px 0;
   -webkit-transform: inherit;
           transform: inherit;
 }
@@ -2886,7 +2886,7 @@ header > .searchIconBox .searchIcon .icDel {
   margin-left: -36px;
   left: inherit;
   right: -15px;
-  background: url(/resource/MO/images/food/ico_swiper-on.svg) no-repeat 0 0/contain;
+  background: url(/jejupass/resource/MO/images/food/ico_swiper-on.svg) no-repeat 0 0/contain;
   -webkit-box-shadow: 0 8px 16px 0 rgba(32, 32, 32, 0.1);
           box-shadow: 0 8px 16px 0 rgba(32, 32, 32, 0.1);
 }
@@ -2922,7 +2922,7 @@ header > .searchIconBox .searchIcon .icDel {
   height: 18px;
   margin-right: 4px;
   vertical-align: middle;
-  background: url(/resource/MO/images/food/ico_eye.png) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/MO/images/food/ico_eye.png) no-repeat 0 0/cover;
 }
 
 .themeViewArea .swiperWrap .listCont {
@@ -3143,11 +3143,11 @@ header > .searchIconBox .searchIcon .icDel {
 }
 
 .compInfo dd a[href^=tel]:before {
-  background: url(/resource/MO/images/food/ico_tel.png) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/MO/images/food/ico_tel.png) no-repeat 0 0/cover;
 }
 
 .compInfo dd a[href^=www]:before {
-  background: url(/resource/MO/images/food/ico_site.png) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/MO/images/food/ico_site.png) no-repeat 0 0/cover;
 }
 
 .compInfo dd.snsList .sns {
@@ -3168,7 +3168,7 @@ header > .searchIconBox .searchIcon .icDel {
   left: 0;
   width: 24px;
   height: 24px;
-  background: url(/resource/MO/images/food/ico_sns.png) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/MO/images/food/ico_sns.png) no-repeat 0 0/cover;
 }
 
 .compInfo dd.snsList .sns.bl:after {
@@ -3244,15 +3244,15 @@ header > .searchIconBox .searchIcon .icDel {
 }
 
 .mapBox .map.tmap:before {
-  background-image: url(/resource/MO/images/food/ico_tmap_navi.png);
+  background-image: url(/jejupass/resource/MO/images/food/ico_tmap_navi.png);
 }
 
 .mapBox .map.kakao:before {
-  background-image: url(/resource/MO/images/food/ico_kakao_navi.png);
+  background-image: url(/jejupass/resource/MO/images/food/ico_kakao_navi.png);
 }
 
 .mapBox .map.naver:before {
-  background-image: url(/resource/MO/images/food/ico_naver_navi.png);
+  background-image: url(/jejupass/resource/MO/images/food/ico_naver_navi.png);
 }
 
 .proposal {
@@ -3275,7 +3275,7 @@ header > .searchIconBox .searchIcon .icDel {
   height: 18px;
   margin-right: 12px;
   vertical-align: middle;
-  background: url(/resource/MO/images/food/ico_proposal.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/food/ico_proposal.svg) no-repeat;
 }
 
 .proposal.btLink01 {
@@ -3291,6 +3291,6 @@ header > .searchIconBox .searchIcon .icDel {
 }
 
 .noData.noFood p.txt:before {
-  background: url(/resource/MO/images/food/ic_x50_noData_f.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/food/ic_x50_noData_f.svg) no-repeat;
   border-radius: 0;
 }

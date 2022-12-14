@@ -173,7 +173,7 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -48px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -48px 0;
 }
 
 .kf_payList > li .tit .toolTip {
@@ -354,7 +354,7 @@
   height: 100%;
   display: block;
   border-left: 1px dotted #EAEAEA;
-  background: url(/resource/PC/images/common/bg_arr01.png) no-repeat 50% 50%;
+  background: url(/jejupass/resource/PC/images/common/bg_arr01.png) no-repeat 50% 50%;
   background-size: 12px 12px;
   font-size: 0;
 }
@@ -410,7 +410,7 @@
 }
 
 .benefitWrap .downCoupon.downChange .link {
-  background-image: url(/resource/PC/images/common/bg_change.png);
+  background-image: url(/jejupass/resource/PC/images/common/bg_change.png);
 }
 
 .benefitWrap .downCoupon.downNone .kf_couponNum {
@@ -453,7 +453,7 @@
   height: 100%;
   display: block;
   border-left: 1px dotted #EAEAEA;
-  background: url(/resource/PC/images/common/bg_close.png) no-repeat 50% 50%;
+  background: url(/jejupass/resource/PC/images/common/bg_close.png) no-repeat 50% 50%;
   background-size: 12px 12px;
   font-size: 0;
 }
@@ -1187,7 +1187,7 @@
   right: 16px;
   left: auto;
   margin: 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -332px -30px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -332px -30px;
   z-index: 1000;
 }
 
@@ -1284,7 +1284,7 @@
   margin-left: -13px;
   top: -1px;
   margin-top: 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -430px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -430px 0;
 }
 
 .swiperAccount .kf_applyCont span {
@@ -1552,15 +1552,15 @@
 }
 
 .arsWrap.step1:before {
-  background: url(/resource/PC/images/common/img_ars1.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/img_ars1.png) no-repeat;
 }
 
 .arsWrap.step2:before {
-  background: url(/resource/PC/images/common/img_ars2.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/img_ars2.png) no-repeat;
 }
 
 .arsWrap.step3:before {
-  background: url(/resource/PC/images/common/img_ars3.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/img_ars3.png) no-repeat;
 }
 
 .arsWrap.end:before {

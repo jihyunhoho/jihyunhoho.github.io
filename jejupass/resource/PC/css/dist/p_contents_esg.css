@@ -81,7 +81,7 @@
   width: 100vw;
   height: 100%;
   margin-left: -50vw;
-  background: url(/resource/PC/images/esg/bg_pattern.jpg) repeat-x;
+  background: url(/jejupass/resource/PC/images/esg/bg_pattern.jpg) repeat-x;
 }
 
 .esgMainContTop .context {
@@ -89,7 +89,7 @@
   position: relative;
   padding-top: 112px;
   height: 100%;
-  background: url(/resource/PC/images/esg/bg_esgMain.png) no-repeat 100% 124px, url(/resource/PC/images/esg/bg_esgPattern.jpg) no-repeat 100% 0;
+  background: url(/jejupass/resource/PC/images/esg/bg_esgMain.png) no-repeat 100% 124px, url(/jejupass/resource/PC/images/esg/bg_esgPattern.jpg) no-repeat 100% 0;
 }
 
 .esgMainContTop .context .title {
@@ -508,7 +508,7 @@
   width: 9px;
   height: 15px;
   margin: -7.5px -4.5px 0 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -171px -52px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -171px -52px;
 }
 
 .summaryInfoBox .summaryItem .linkRanking strong:before {
@@ -518,7 +518,7 @@
   height: 20px;
   margin-right: 4px;
   vertical-align: -4px;
-  background: url(/resource/PC/images/esg/ico_ranking.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/esg/ico_ranking.png) no-repeat;
 }
 
 .summaryInfoBox .summaryItem .tipWraper {
@@ -844,15 +844,15 @@
 }
 
 .winner .donationRank .rank.gold:after {
-  background-image: url(/resource/PC/images/esg/ico_medal1.png);
+  background-image: url(/jejupass/resource/PC/images/esg/ico_medal1.png);
 }
 
 .winner .donationRank .rank.silver:after {
-  background-image: url(/resource/PC/images/esg/ico_medal2.png);
+  background-image: url(/jejupass/resource/PC/images/esg/ico_medal2.png);
 }
 
 .winner .donationRank .rank.bronze:after {
-  background-image: url(/resource/PC/images/esg/ico_medal3.png);
+  background-image: url(/jejupass/resource/PC/images/esg/ico_medal3.png);
 }
 
 .winner .donationRank .txt {
@@ -885,15 +885,15 @@
 }
 
 .campRanking .donationRank .rank.gold:after {
-  background-image: url(/resource/PC/images/esg/ico_medal1.png);
+  background-image: url(/jejupass/resource/PC/images/esg/ico_medal1.png);
 }
 
 .campRanking .donationRank .rank.silver:after {
-  background-image: url(/resource/PC/images/esg/ico_medal2.png);
+  background-image: url(/jejupass/resource/PC/images/esg/ico_medal2.png);
 }
 
 .campRanking .donationRank .rank.bronze:after {
-  background-image: url(/resource/PC/images/esg/ico_medal3.png);
+  background-image: url(/jejupass/resource/PC/images/esg/ico_medal3.png);
 }
 
 .allRanking {
@@ -1143,11 +1143,11 @@
 }
 
 .noData.noBehind .tit {
-  background-image: url(/resource/PC/images/esg/bg_noData_behind.png);
+  background-image: url(/jejupass/resource/PC/images/esg/bg_noData_behind.png);
 }
 
 .noData.noCamp .tit {
-  background-image: url(/resource/PC/images/esg/bg_noData_campaign.png);
+  background-image: url(/jejupass/resource/PC/images/esg/bg_noData_campaign.png);
 }
 
 .viewArea {
@@ -1247,7 +1247,7 @@
   margin-left: -9px;
   left: 0;
   margin-left: 0;
-  background: url(/resource/PC/images/esg/ico_reply.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/esg/ico_reply.png) no-repeat;
 }
 
 .reply:after {
@@ -1317,11 +1317,11 @@
   height: 24px;
   margin-top: -12px;
   margin-left: -12px;
-  background: url(/resource/PC/images/esg/ico_bookmark.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/esg/ico_bookmark.png) no-repeat;
 }
 
 .btWrap .rCont > button.btShare:after {
-  background-image: url(/resource/PC/images/esg/ico_share.png);
+  background-image: url(/jejupass/resource/PC/images/esg/ico_share.png);
 }
 
 .btWrap .rCont > button + button {
@@ -1350,12 +1350,12 @@
   left: 0;
   margin-left: 0;
   border: 0;
-  background: transparent url(/resource/PC/images/esg/ico_like.png) no-repeat;
+  background: transparent url(/jejupass/resource/PC/images/esg/ico_like.png) no-repeat;
 }
 
 .frmLike input:checked + label:before,
 .frmLike.active label:before {
-  background-image: url(/resource/PC/images/esg/ico_like_on.png);
+  background-image: url(/jejupass/resource/PC/images/esg/ico_like_on.png);
 }
 
 .chartArea {
@@ -1702,7 +1702,7 @@
   height: 81px;
   margin-top: -40.5px;
   margin-left: -40.5px;
-  background: transparent url(/resource/PC/images/esg/play.png) no-repeat;
+  background: transparent url(/jejupass/resource/PC/images/esg/play.png) no-repeat;
 }
 
 .hostInfoArea {
@@ -1776,7 +1776,7 @@
   margin-left: -6px;
   left: 0;
   margin-left: 0;
-  background: url(/resource/PC/images/esg/ico_receipt.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/esg/ico_receipt.png) no-repeat;
 }
 
 .hostInfoArea .txtArea {
@@ -1908,11 +1908,11 @@
   margin-left: -9px;
   left: 0;
   margin-left: 0;
-  background: url(/resource/PC/images/esg/ico_edit.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/esg/ico_edit.png) no-repeat;
 }
 
 .reviewList li .btWrap > button.btDel:after {
-  background-image: url(/resource/PC/images/esg/ico_delete.png);
+  background-image: url(/jejupass/resource/PC/images/esg/ico_delete.png);
 }
 
 .reviewList li .btWrap > button + button {
@@ -2127,7 +2127,7 @@
   height: 640px;
   border-radius: 12px;
   overflow: hidden;
-  background: url(/resource/PC/images/esg/esg_visual01.jpg) no-repeat;
+  background: url(/jejupass/resource/PC/images/esg/esg_visual01.jpg) no-repeat;
 }
 
 .ambaVisualWrap * {
@@ -2181,7 +2181,7 @@
   top: auto;
   bottom: 0;
   z-index: -1;
-  background: url(/resource/PC/images/esg/bg_illust.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/esg/bg_illust.png) no-repeat;
 }
 
 .ambaSubContent {
@@ -2259,7 +2259,7 @@
   margin-top: 0;
   top: 0;
   z-index: -1;
-  background: url(/resource/PC/images/esg/flag.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/esg/flag.png) no-repeat;
 }
 
 .ambaSubContent .titDep2 {
@@ -2325,12 +2325,12 @@
 
 .ambaSubContent .flexWrap .boxR.type1 {
   padding: 96px 0 30px;
-  background: #F8F8F8 url(/resource/PC/images/esg/ico_general.png) center 36px no-repeat;
+  background: #F8F8F8 url(/jejupass/resource/PC/images/esg/ico_general.png) center 36px no-repeat;
 }
 
 .ambaSubContent .flexWrap .boxR.type2 {
   padding: 96px 0 30px;
-  background: #f4f9ff url(/resource/PC/images/esg/ico_speccial.png) center 36px no-repeat;
+  background: #f4f9ff url(/jejupass/resource/PC/images/esg/ico_speccial.png) center 36px no-repeat;
 }
 
 .ambaSubContent .flexWrap .boxR.type2 strong {
@@ -2408,7 +2408,7 @@
 .ambaMembers {
   padding: 64px 0 80px;
   margin-top: 30px;
-  background: url(/resource/PC/images/esg/ico_speccial.png) center top no-repeat;
+  background: url(/jejupass/resource/PC/images/esg/ico_speccial.png) center top no-repeat;
 }
 
 .ambaMembers .titTxt {
@@ -2418,14 +2418,14 @@
 .ambassadorSign {
   min-height: 903px;
   padding-top: 43px;
-  background: url(/resource/PC/images/esg/bg_ambassador.png) no-repeat 50% 0/100% 100%;
+  background: url(/jejupass/resource/PC/images/esg/bg_ambassador.png) no-repeat 50% 0/100% 100%;
 }
 
 .ambassadorSign:before {
   content: '';
   display: block;
   height: 178px;
-  background: url(/resource/PC/images/esg/img_bi.png) no-repeat 50% 50%;
+  background: url(/jejupass/resource/PC/images/esg/img_bi.png) no-repeat 50% 50%;
 }
 
 .ambassadorSign .pageTit {
@@ -2651,7 +2651,7 @@
   height: 18px;
   margin-right: 4px;
   vertical-align: text-top;
-  background: url(/resource/PC/images/esg/ico_coffee.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/esg/ico_coffee.png) no-repeat;
 }
 
 .signatureBox {
@@ -2684,7 +2684,7 @@
   height: 158px;
   margin-top: -79px;
   margin-left: -159px;
-  background: url(/resource/PC/images/esg/signature.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/esg/signature.png) no-repeat;
 }
 
 .signatureInfo {
@@ -2695,7 +2695,7 @@
   width: 100vw;
   height: 582px;
   padding: 90px 0 340px;
-  background: #F8F8F8 url(/resource/PC/images/esg/bg_signature.jpg) repeat-x 0 340px;
+  background: #F8F8F8 url(/jejupass/resource/PC/images/esg/bg_signature.jpg) repeat-x 0 340px;
 }
 
 .signatureInfo .signNum {
@@ -2718,7 +2718,7 @@
   letter-spacing: 25px;
   text-align: center;
   vertical-align: top;
-  background: url(/resource/PC/images/esg/bg_signNum.png) repeat-x 0 0;
+  background: url(/jejupass/resource/PC/images/esg/bg_signNum.png) repeat-x 0 0;
   background-size: 40px 54px;
 }
 
@@ -2759,11 +2759,11 @@
 }
 
 .btnGray .btIco.icoShare:after {
-  background-image: url(/resource/PC/images/common/ico_share.png);
+  background-image: url(/jejupass/resource/PC/images/common/ico_share.png);
 }
 
 .btnGray .btIco.icoDown:after {
-  background-image: url(/resource/PC/images/common/ico_down.png);
+  background-image: url(/jejupass/resource/PC/images/common/ico_down.png);
 }
 
 .btnGray .btIco + .btIco {
@@ -2845,7 +2845,7 @@
 
 /* ESG - 기부완료 */
 .wrapper.completeWrapper .container .completePanel .message.donation {
-  background-image: url(/resource/PC/images/common/bg_comp_esg.png);
+  background-image: url(/jejupass/resource/PC/images/common/bg_comp_esg.png);
 }
 
 .wrapper.completeWrapper .container .completePanel .subMsg {
@@ -2955,7 +2955,7 @@
   margin-left: 0;
   color: inherit;
   font-size: inherit;
-  background: url(/resource/PC/images/esg/ico_ranking_arrow.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/esg/ico_ranking_arrow.png) no-repeat;
 }
 
 .wrapper.completeWrapper .container .contents .donateState .sideList li .lanking.up {

@@ -108,7 +108,7 @@
   left: 20px;
   width: 24px;
   height: 24px;
-  background: url(/resource/MO/images/common/ico_cafepass.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_cafepass.svg) no-repeat;
 }
 
 .cafepassNone:after {
@@ -174,11 +174,11 @@
 }
 
 .myCafepass.typeMug:before {
-  background: url(/resource/MO/images/common/ico_mug.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_mug.svg) no-repeat;
 }
 
 .myCafepass.typeTumbler:before {
-  background: url(/resource/MO/images/common/ico_tumbler.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_tumbler.svg) no-repeat;
 }
 
 .myCafepass em {
@@ -278,11 +278,11 @@
 }
 
 .tumblerUseWrap .roundBoxGray.normal:after {
-  background: url(/resource/MO/images/common/ico_mug.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_mug.svg) no-repeat;
 }
 
 .tumblerUseWrap .roundBoxGray.tumbler:after {
-  background: url(/resource/MO/images/common/ico_tumbler.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_tumbler.svg) no-repeat;
 }
 
 .reviewBox .reviewSet .name .tumblerInfo {
@@ -829,7 +829,7 @@ ul.infotxtSet > li dl.infotxtSet.bul dt:before {
 .tumblerGradeWrap .tumblerGrade .scoreBar .icons {
   width: 50px;
   height: 32px;
-  background: url(/resource/MO/images/common/ico_tumblerx32.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_tumblerx32.svg) no-repeat;
 }
 
 .tumblerGradeWrap .tumblerGrade .scoreBar .total {
@@ -907,7 +907,7 @@ ul.infotxtSet > li dl.infotxtSet.bul dt:before {
   border-radius: 24px;
   background: #cde0ff;
   position: relative;
-  background: #cde0ff url(/resource/MO/images/cafe/ic_notice.svg) no-repeat center center;
+  background: #cde0ff url(/jejupass/resource/MO/images/cafe/ic_notice.svg) no-repeat center center;
 }
 
 .tumblerUserBadge .iconBadge:before {
@@ -938,7 +938,7 @@ ul.infotxtSet > li dl.infotxtSet.bul dt:before {
 }
 
 .tumblerUserBadge .iconBadge[class$="lock"] {
-  background: #EAEAEA url(/resource/MO/images/cafe/ic_lock.svg) no-repeat center center;
+  background: #EAEAEA url(/jejupass/resource/MO/images/cafe/ic_lock.svg) no-repeat center center;
 }
 
 .tumblerUserBadge .iconBadge[class$="lock"]:before, .tumblerUserBadge .iconBadge[class$="lock"]:after {
@@ -946,59 +946,59 @@ ul.infotxtSet > li dl.infotxtSet.bul dt:before {
 }
 
 .tumblerUserBadge .iconBadge.challenger {
-  background-image: url(/resource/MO/images/cafe/ico_challenger.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_challenger.svg);
 }
 
 .tumblerUserBadge .iconBadge.challenger_lock {
-  background-image: url(/resource/MO/images/cafe/ico_challenger_lock.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_challenger_lock.svg);
 }
 
 .tumblerUserBadge .iconBadge.beginner {
-  background-image: url(/resource/MO/images/cafe/ico_beginner.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_beginner.svg);
 }
 
 .tumblerUserBadge .iconBadge.beginner_lock {
-  background-image: url(/resource/MO/images/cafe/ico_beginner_lock.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_beginner_lock.svg);
 }
 
 .tumblerUserBadge .iconBadge.follower {
-  background-image: url(/resource/MO/images/cafe/ico_follower.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_follower.svg);
 }
 
 .tumblerUserBadge .iconBadge.follower_lock {
-  background-image: url(/resource/MO/images/cafe/ico_follower_lock.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_follower_lock.svg);
 }
 
 .tumblerUserBadge .iconBadge.pro {
-  background-image: url(/resource/MO/images/cafe/ico_pro.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_pro.svg);
 }
 
 .tumblerUserBadge .iconBadge.pro_lock {
-  background-image: url(/resource/MO/images/cafe/ico_pro_lock.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_pro_lock.svg);
 }
 
 .tumblerUserBadge .iconBadge.master {
-  background-image: url(/resource/MO/images/cafe/ico_master.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_master.svg);
 }
 
 .tumblerUserBadge .iconBadge.master_lock {
-  background-image: url(/resource/MO/images/cafe/ico_master_lock.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_master_lock.svg);
 }
 
 .tumblerUserBadge .iconBadge.legend {
-  background-image: url(/resource/MO/images/cafe/ico_legend.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_legend.svg);
 }
 
 .tumblerUserBadge .iconBadge.legend_lock {
-  background-image: url(/resource/MO/images/cafe/ico_legend_lock.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_legend_lock.svg);
 }
 
 .tumblerUserBadge .iconBadge.god {
-  background-image: url(/resource/MO/images/cafe/ico_god.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_god.svg);
 }
 
 .tumblerUserBadge .iconBadge.god_lock {
-  background-image: url(/resource/MO/images/cafe/ico_god_lock.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_god_lock.svg);
 }
 
 .tumblerGradeWrap + .titDep4 {
@@ -1133,11 +1133,11 @@ ul.infotxtSet > li dl.infotxtSet.bul dt:before {
 }
 
 .cafeCouponBox > div.cafeC:after {
-  background-image: url(/resource/MO/images/common/ico_mug.svg);
+  background-image: url(/jejupass/resource/MO/images/common/ico_mug.svg);
 }
 
 .cafeCouponBox > div.userC:after {
-  background-image: url(/resource/MO/images/common/ico_coupon.svg);
+  background-image: url(/jejupass/resource/MO/images/common/ico_coupon.svg);
 }
 
 .cafeCouponBox:disabled {
@@ -1149,11 +1149,11 @@ ul.infotxtSet > li dl.infotxtSet.bul dt:before {
 }
 
 .cafeCouponBox:disabled .cafeC:after {
-  background-image: url(/resource/MO/images/common/ico_mug_mono.svg);
+  background-image: url(/jejupass/resource/MO/images/common/ico_mug_mono.svg);
 }
 
 .cafeCouponBox:disabled .userC:after {
-  background-image: url(/resource/MO/images/common/ico_coupon_mono.svg);
+  background-image: url(/jejupass/resource/MO/images/common/ico_coupon_mono.svg);
 }
 
 .cafeCouponBox.btLink01:after {
@@ -1256,7 +1256,7 @@ ul.infotxtSet > li dl.infotxtSet.bul dt:before {
 }
 
 .frmBox.frmCouponBox li input:checked + label.cafeCouponBox:after {
-  background-image: url(/resource/MO/images/food/bg_coupon-on.svg);
+  background-image: url(/jejupass/resource/MO/images/food/bg_coupon-on.svg);
 }
 
 .guideInfo {
@@ -1274,7 +1274,7 @@ ul.infotxtSet > li dl.infotxtSet.bul dt:before {
 }
 
 .completePanel .message.cafeMess {
-  background: url(/resource/MO/images/common/ic_stay_cafe.svg) no-repeat 50% 0;
+  background: url(/jejupass/resource/MO/images/common/ic_stay_cafe.svg) no-repeat 50% 0;
 }
 
 .completePanel.cafePanel {
@@ -1354,15 +1354,15 @@ ul.infotxtSet > li dl.infotxtSet.bul dt:before {
   margin-left: -20px;
   top: 0;
   margin-top: 0;
-  background: url(/resource/MO/images/cafe/ic_notice.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/cafe/ic_notice.svg) no-repeat;
 }
 
 .tumblerComplete.levelUp:before {
-  background-image: url(/resource/MO/images/cafe/ico_tumLevelup.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_tumLevelup.svg);
 }
 
 .tumblerComplete.Benefit:before {
-  background-image: url(/resource/MO/images/cafe/ico_tumBenefit.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_tumBenefit.svg);
 }
 
 .tumblerComplete + .roundBoxGray {
@@ -1650,7 +1650,7 @@ ul.infotxtSet > li dl.infotxtSet.bul dt:before {
   height: 60px;
   margin-top: -30px;
   margin-left: -5px;
-  background: url(/resource/MO/images/common/bi_logo_v.svg) no-repeat 50%/100% auto;
+  background: url(/jejupass/resource/MO/images/common/bi_logo_v.svg) no-repeat 50%/100% auto;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
@@ -1661,7 +1661,7 @@ ul.infotxtSet > li dl.infotxtSet.bul dt:before {
 
 .cafeBenefitCont {
   margin: 0 -20px;
-  background: url(/resource/MO/images/cafe/bg_cafeBenefit.png) no-repeat 0 0/100% auto;
+  background: url(/jejupass/resource/MO/images/cafe/bg_cafeBenefit.png) no-repeat 0 0/100% auto;
 }
 
 .caBenefit {
@@ -1687,7 +1687,7 @@ ul.infotxtSet > li dl.infotxtSet.bul dt:before {
   margin-left: -74px;
   top: 0;
   margin-top: 0;
-  background: #F8F8F8 url(/resource/MO/images/cafe/ico_free.svg) no-repeat 50%;
+  background: #F8F8F8 url(/jejupass/resource/MO/images/cafe/ico_free.svg) no-repeat 50%;
   border-radius: 50%;
 }
 
@@ -1705,7 +1705,7 @@ ul.infotxtSet > li dl.infotxtSet.bul dt:before {
 }
 
 .caBenefit li + li:before {
-  background-image: url(/resource/MO/images/cafe/ico_discount.svg);
+  background-image: url(/jejupass/resource/MO/images/cafe/ico_discount.svg);
 }
 
 .caUseGuide {
@@ -1975,7 +1975,7 @@ ul.infotxtSet > li dl.infotxtSet.bul dt:before {
 }
 
 .noData.noCafe p.txt:before {
-  background: url(/resource/MO/images/cafe/ic_x50_noData_c.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/cafe/ic_x50_noData_c.svg) no-repeat;
   border-radius: 0;
 }
 

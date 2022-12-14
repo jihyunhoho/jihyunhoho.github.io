@@ -481,23 +481,23 @@
 }
 
 .anotherChannel .list .btnChannel.kakaotalk:before {
-  background-image: url(/resource/MO/images/member/img_kakaotalk.png);
+  background-image: url(/jejupass/resource/MO/images/member/img_kakaotalk.png);
 }
 
 .anotherChannel .list .btnChannel.apple:before {
-  background-image: url(/resource/MO/images/member/img_apple.png);
+  background-image: url(/jejupass/resource/MO/images/member/img_apple.png);
 }
 
 .anotherChannel .list .btnChannel.naver:before {
-  background-image: url(/resource/MO/images/member/img_naver.png);
+  background-image: url(/jejupass/resource/MO/images/member/img_naver.png);
 }
 
 .anotherChannel .list .btnChannel.facebook:before {
-  background-image: url(/resource/MO/images/member/img_facebook.png);
+  background-image: url(/jejupass/resource/MO/images/member/img_facebook.png);
 }
 
 .anotherChannel .list .btnChannel.google:before {
-  background-image: url(/resource/MO/images/member/img_google.png);
+  background-image: url(/jejupass/resource/MO/images/member/img_google.png);
 }
 
 .anotherChannel.signup .tit > span {
@@ -632,7 +632,7 @@
   margin-left: -36px;
   top: 0;
   margin-top: 0;
-  background: url(/resource/MO/images/member/ico_screen.svg) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/MO/images/member/ico_screen.svg) no-repeat 0 0/cover;
 }
 
 .signup-complete .compMsg small, .signup-alarm .compMsg small, .search-error .compMsg small, .search-complete .compMsg small, .search-mailSend .compMsg small, .no-mail .compMsg small, .pw-error .compMsg small, .combine-complete .compMsg small {
@@ -652,7 +652,7 @@
 }
 
 .signup-complete .compMsg:before {
-  background-image: url(/resource/MO/images/member/ico_travel.svg);
+  background-image: url(/jejupass/resource/MO/images/member/ico_travel.svg);
 }
 
 .signup-complete .pageDesc + .titDep6 {
@@ -697,7 +697,7 @@
 }
 
 .search-error .compMsg:before {
-  background-image: url(/resource/MO/images/member/ico_search.svg);
+  background-image: url(/jejupass/resource/MO/images/member/ico_search.svg);
 }
 
 .search-complete {
@@ -705,7 +705,7 @@
 }
 
 .search-complete .compMsg:before {
-  background-image: url(/resource/MO/images/member/ico_screen.svg);
+  background-image: url(/jejupass/resource/MO/images/member/ico_screen.svg);
 }
 
 .search-complete .anotherChannel {
@@ -721,7 +721,7 @@
 }
 
 .search-mailSend .compMsg:before {
-  background-image: url(/resource/MO/images/member/ico_sending.svg);
+  background-image: url(/jejupass/resource/MO/images/member/ico_sending.svg);
 }
 
 .search-mailSend .btnArea {
@@ -733,7 +733,7 @@
 }
 
 .no-mail .compMsg:before {
-  background-image: url(/resource/MO/images/member/ico_mail.png);
+  background-image: url(/jejupass/resource/MO/images/member/ico_mail.png);
 }
 
 .pw-error {
@@ -741,7 +741,7 @@
 }
 
 .pw-error .compMsg:before {
-  background-image: url(/resource/MO/images/member/ico_lock.svg);
+  background-image: url(/jejupass/resource/MO/images/member/ico_lock.svg);
 }
 
 .combine-complete {
@@ -749,7 +749,7 @@
 }
 
 .combine-complete .compMsg:before {
-  background-image: url(/resource/MO/images/member/ico_complete.svg);
+  background-image: url(/jejupass/resource/MO/images/member/ico_complete.svg);
 }
 
 .label_tit {
@@ -873,11 +873,11 @@
 }
 
 .btnArea.grayBg .btnIco.tel:before {
-  background-image: url(/resource/MO/images/member/img_tel.png);
+  background-image: url(/jejupass/resource/MO/images/member/img_tel.png);
 }
 
 .btnArea.grayBg .btnIco.kakao:before {
-  background-image: url(/resource/MO/images/member/img_kakao.png);
+  background-image: url(/jejupass/resource/MO/images/member/img_kakao.png);
 }
 
 .passConvertBox {
@@ -922,19 +922,19 @@
 }
 
 .passConvertBox .step li:first-child {
-  background-image: url(/resource/MO/images/member/ico_pass-login.svg);
+  background-image: url(/jejupass/resource/MO/images/member/ico_pass-login.svg);
 }
 
 .passConvertBox .step li:nth-child(2) {
-  background-image: url(/resource/MO/images/member/ico_pass-certi.svg);
+  background-image: url(/jejupass/resource/MO/images/member/ico_pass-certi.svg);
 }
 
 .passConvertBox .step li:nth-child(3) {
-  background-image: url(/resource/MO/images/member/ico_pass-agree.svg);
+  background-image: url(/jejupass/resource/MO/images/member/ico_pass-agree.svg);
 }
 
 .passConvertBox .step li:last-child {
-  background-image: url(/resource/MO/images/member/ico_pass-complete.svg);
+  background-image: url(/jejupass/resource/MO/images/member/ico_pass-complete.svg);
 }
 
 .passConvertBox .step li:nth-child(n+2):before {
@@ -1003,27 +1003,27 @@
 
 .infoSet .txt.kakaotalk {
   padding-left: 22px;
-  background: url(/resource/MO/images/member/ico_kakaotalk.png) no-repeat 0 0/contain;
+  background: url(/jejupass/resource/MO/images/member/ico_kakaotalk.png) no-repeat 0 0/contain;
 }
 
 .infoSet .txt.naver {
   padding-left: 22px;
-  background: url(/resource/MO/images/member/ico_naver.png) no-repeat 0 0/contain;
+  background: url(/jejupass/resource/MO/images/member/ico_naver.png) no-repeat 0 0/contain;
 }
 
 .infoSet .txt.apple {
   padding-left: 22px;
-  background: url(/resource/MO/images/member/ico_apple.png) no-repeat 0 0/contain;
+  background: url(/jejupass/resource/MO/images/member/ico_apple.png) no-repeat 0 0/contain;
 }
 
 .infoSet .txt.facebook {
   padding-left: 22px;
-  background: url(/resource/MO/images/member/ico_facebook.png) no-repeat 0 0/contain;
+  background: url(/jejupass/resource/MO/images/member/ico_facebook.png) no-repeat 0 0/contain;
 }
 
 .infoSet .txt.google {
   padding-left: 22px;
-  background: url(/resource/MO/images/member/ico_google.png) no-repeat 0 0/contain;
+  background: url(/jejupass/resource/MO/images/member/ico_google.png) no-repeat 0 0/contain;
 }
 
 .svcIco {
@@ -1040,15 +1040,15 @@
 }
 
 .svcIco li.rent {
-  background: url(/resource/MO/images/member/ico_rent.png) no-repeat 0 0/contain;
+  background: url(/jejupass/resource/MO/images/member/ico_rent.png) no-repeat 0 0/contain;
 }
 
 .svcIco li.cafe {
-  background: url(/resource/MO/images/member/ico_cafe.png) no-repeat 0 0/contain;
+  background: url(/jejupass/resource/MO/images/member/ico_cafe.png) no-repeat 0 0/contain;
 }
 
 .svcIco li.food {
-  background: url(/resource/MO/images/member/ico_food.png) no-repeat 0 0/contain;
+  background: url(/jejupass/resource/MO/images/member/ico_food.png) no-repeat 0 0/contain;
 }
 
 .layContainer .layContent.noticeTxt {

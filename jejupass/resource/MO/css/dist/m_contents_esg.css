@@ -67,7 +67,7 @@
   height: calc(100vh - 168px);
   margin: -32px -20px 0;
   padding: 0 32px;
-  background: url(/resource/MO/images/esg/esg_visual.png) no-repeat 50% 0/cover;
+  background: url(/jejupass/resource/MO/images/esg/esg_visual.png) no-repeat 50% 0/cover;
 }
 
 .eagVisual .context {
@@ -220,7 +220,7 @@
   height: 20px;
   margin-right: 4px;
   vertical-align: -4px;
-  background: url(/resource/MO/images/common/ico_ranking.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_ranking.svg) no-repeat;
 }
 
 .summaryInfoBox:before {
@@ -591,7 +591,7 @@
   height: 12px;
   margin-right: 4px;
   vertical-align: -2px;
-  background: url(/resource/MO/images/esg/ico_receipt.png) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/MO/images/esg/ico_receipt.png) no-repeat 0 0/cover;
 }
 
 .hostInfoArea .hostBox .hostInfo + .txt {
@@ -875,7 +875,7 @@
   width: 120px;
   height: 24px;
   margin: 0 auto;
-  background: url(/resource/MO/images/common/bg_star_md.svg) repeat-x;
+  background: url(/jejupass/resource/MO/images/common/bg_star_md.svg) repeat-x;
 }
 
 .rating .ratingOn {
@@ -884,7 +884,7 @@
   left: 0;
   height: 24px;
   margin: 0 auto;
-  background: url(/resource/MO/images/common/bg_star_md_on.svg) repeat-x;
+  background: url(/jejupass/resource/MO/images/common/bg_star_md_on.svg) repeat-x;
 }
 
 .reviewSet .rating {
@@ -1577,7 +1577,7 @@
   left: 24px;
   width: 24px;
   height: 24px;
-  background: url(/resource/MO/images/common/spr_quick.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/spr_quick.svg) no-repeat;
   z-index: 3;
 }
 
@@ -1699,15 +1699,15 @@
 }
 
 .donationRank .rank.gold:after {
-  background-image: url(/resource/MO/images/esg/ico_medal-01.png);
+  background-image: url(/jejupass/resource/MO/images/esg/ico_medal-01.png);
 }
 
 .donationRank .rank.silver:after {
-  background-image: url(/resource/MO/images/esg/ico_medal-02.png);
+  background-image: url(/jejupass/resource/MO/images/esg/ico_medal-02.png);
 }
 
 .donationRank .rank.bronze:after {
-  background-image: url(/resource/MO/images/esg/ico_medal-03.png);
+  background-image: url(/jejupass/resource/MO/images/esg/ico_medal-03.png);
 }
 
 .donationRank .rank.gold, .donationRank .rank.silver, .donationRank .rank.bronze {
@@ -2315,7 +2315,7 @@
 
 .ambassadorMain .visualBox.eagVisual {
   margin: 0;
-  background: url(/resource/MO/images/esg/img_jejuambassador.jpg) no-repeat 50% 50%/cover;
+  background: url(/jejupass/resource/MO/images/esg/img_jejuambassador.jpg) no-repeat 50% 50%/cover;
 }
 
 .ambassadorMain .visualBox.eagVisual .pageTit {
@@ -2381,7 +2381,7 @@
 
 .ambassadorMain .conTxtBox {
   padding-bottom: 225px;
-  background: url(/resource/MO/images/esg/bg_ambassador-buble.png) no-repeat 25px 116px/16.5%, url(/resource/MO/images/esg/bg_ambassadorBtm.png) no-repeat 50% 100%/contain;
+  background: url(/jejupass/resource/MO/images/esg/bg_ambassador-buble.png) no-repeat 25px 116px/16.5%, url(/jejupass/resource/MO/images/esg/bg_ambassadorBtm.png) no-repeat 50% 100%/contain;
 }
 
 .ambassadorMain .conTxtBox .titDep2 {
@@ -2453,7 +2453,7 @@
   padding: 9px 0;
   color: #abccff;
   font-size: 1.4rem;
-  background: url(/resource/MO/images/esg/bg_flag.png) no-repeat 0 0/contain;
+  background: url(/jejupass/resource/MO/images/esg/bg_flag.png) no-repeat 0 0/contain;
 }
 
 .benefitsArea .benefitItem .flagBox em {
@@ -2532,7 +2532,7 @@
   height: 28px;
   top: 38%;
   left: -1px;
-  background: #fff url(/resource/MO/images/esg/bg_benefitsBoxCmm.png) no-repeat;
+  background: #fff url(/jejupass/resource/MO/images/esg/bg_benefitsBoxCmm.png) no-repeat;
 }
 
 .benefitsArea .benefitItem .benefitsBoxCmm:after {
@@ -2540,7 +2540,7 @@
   height: 28px;
   top: 38%;
   right: -1px;
-  background: #fff url(/resource/MO/images/esg/bg_benefitsBoxCmm.png) no-repeat;
+  background: #fff url(/jejupass/resource/MO/images/esg/bg_benefitsBoxCmm.png) no-repeat;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -2602,11 +2602,11 @@
 }
 
 .benefitsBox.level li.general {
-  background: #F8F8F8 url(/resource/MO/images/esg/ico_mem-general.png) no-repeat 50% 28px/40px;
+  background: #F8F8F8 url(/jejupass/resource/MO/images/esg/ico_mem-general.png) no-repeat 50% 28px/40px;
 }
 
 .benefitsBox.level li.special {
-  background: #f4f9ff url(/resource/MO/images/esg/ico_mem-special.png) no-repeat 50% 28px/40px;
+  background: #f4f9ff url(/jejupass/resource/MO/images/esg/ico_mem-special.png) no-repeat 50% 28px/40px;
 }
 
 .benefitsBox.level li .tit {
@@ -2628,11 +2628,11 @@
 }
 
 .benefitsBox.level div.general {
-  background: #F8F8F8 url(/resource/MO/images/esg/ico_mem-general.png) no-repeat 50% 32px/40px;
+  background: #F8F8F8 url(/jejupass/resource/MO/images/esg/ico_mem-general.png) no-repeat 50% 32px/40px;
 }
 
 .benefitsBox.level div.special {
-  background: #f4f9ff url(/resource/MO/images/esg/ico_mem-special.png) no-repeat 50% 32px/40px;
+  background: #f4f9ff url(/jejupass/resource/MO/images/esg/ico_mem-special.png) no-repeat 50% 32px/40px;
 }
 
 .benefitsBox.level div .tit {
@@ -2650,14 +2650,14 @@
   min-height: 862px;
   margin: 20px 0;
   padding-top: 36px;
-  background: url(/resource/MO/images/esg/bg_ambassador.png) no-repeat 50% 0/100% 100%;
+  background: url(/jejupass/resource/MO/images/esg/bg_ambassador.png) no-repeat 50% 0/100% 100%;
 }
 
 .ambassador:before {
   content: '';
   display: block;
   height: 127px;
-  background: url(/resource/MO/images/esg/img_bi.png) no-repeat 50% 50%/contain;
+  background: url(/jejupass/resource/MO/images/esg/img_bi.png) no-repeat 50% 50%/contain;
 }
 
 .ambassador .pageTit {
@@ -2814,11 +2814,11 @@
 }
 
 .tabContentWrap .ambassador + .btnArea button.btShare {
-  background: url(/resource/MO/images/esg/ico_share.png) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/MO/images/esg/ico_share.png) no-repeat 0 0/cover;
 }
 
 .tabContentWrap .ambassador + .btnArea button.btDown {
-  background: url(/resource/MO/images/esg/ico_download.png) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/MO/images/esg/ico_download.png) no-repeat 0 0/cover;
 }
 
 .pageTit + .viewTab {
@@ -2871,7 +2871,7 @@
   height: 18px;
   margin-right: 4px;
   vertical-align: text-top;
-  background: url(/resource/MO/images/esg/ico_coffee.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/esg/ico_coffee.svg) no-repeat;
 }
 
 .txtBox + .signature ~ .descBox + .btnArea {
@@ -2903,7 +2903,7 @@
   color: #63a1ff;
   letter-spacing: 24px;
   text-align: center;
-  background: url(/resource/MO/images/esg/bg_signNum.png) repeat-x 0 0;
+  background: url(/jejupass/resource/MO/images/esg/bg_signNum.png) repeat-x 0 0;
 }
 
 .signatureInfo .signNum .unit {
@@ -2944,15 +2944,15 @@
 }
 
 .noData.noCampaign p.txt:before {
-  background: url(/resource/MO/images/common/ico_noCampaign.svg);
+  background: url(/jejupass/resource/MO/images/common/ico_noCampaign.svg);
 }
 
 .noData.noParticipate p.txt:before {
-  background: url(/resource/MO/images/common/ico_noParticipate.svg);
+  background: url(/jejupass/resource/MO/images/common/ico_noParticipate.svg);
 }
 
 .noData.noStory p.txt:before {
-  background: url(/resource/MO/images/common/ico_noStory.svg);
+  background: url(/jejupass/resource/MO/images/common/ico_noStory.svg);
 }
 
 @media screen and (max-width: 360px) {

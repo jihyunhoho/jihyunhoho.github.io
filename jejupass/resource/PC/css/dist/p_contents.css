@@ -1,16 +1,16 @@
 @charset "UTF-8";
-@import url(/resource/PC/css/p_contents_payment.min.css);
-@import url(/resource/PC/css/p_contents_stay.min.css);
-@import url(/resource/PC/css/p_contents_rentcar.min.css);
-@import url(/resource/PC/css/p_contents_food.min.css);
-@import url(/resource/PC/css/p_contents_cafe.min.css);
-@import url(/resource/PC/css/p_contents_trip.min.css);
-@import url(/resource/PC/css/p_contents_esg.min.css);
-@import url(/resource/PC/css/p_contents_customer.min.css);
-@import url(/resource/PC/css/p_contents_poi.min.css);
-@import url(/resource/PC/css/p_contents_mypage.min.css);
-@import url(/resource/PC/css/p_contents_event.min.css);
-@import url(/resource/PC/css/p_contents_comm.min.css);
+@import url(/jejupass/resource/PC/css/p_contents_payment.min.css);
+@import url(/jejupass/resource/PC/css/p_contents_stay.min.css);
+@import url(/jejupass/resource/PC/css/p_contents_rentcar.min.css);
+@import url(/jejupass/resource/PC/css/p_contents_food.min.css);
+@import url(/jejupass/resource/PC/css/p_contents_cafe.min.css);
+@import url(/jejupass/resource/PC/css/p_contents_trip.min.css);
+@import url(/jejupass/resource/PC/css/p_contents_esg.min.css);
+@import url(/jejupass/resource/PC/css/p_contents_customer.min.css);
+@import url(/jejupass/resource/PC/css/p_contents_poi.min.css);
+@import url(/jejupass/resource/PC/css/p_contents_mypage.min.css);
+@import url(/jejupass/resource/PC/css/p_contents_event.min.css);
+@import url(/jejupass/resource/PC/css/p_contents_comm.min.css);
 @font-face {
   font-family: 'Pretendard';
   font-weight: 400;
@@ -128,7 +128,7 @@
   padding: 168px 0;
   width: 100vw;
   height: 680px;
-  background: url(/resource/PC/images/main/bg_signature.png) no-repeat 50% 100%;
+  background: url(/jejupass/resource/PC/images/main/bg_signature.png) no-repeat 50% 100%;
   background-size: cover;
   text-align: center;
 }
@@ -211,7 +211,7 @@
   margin: 32px auto;
   width: 32px;
   height: 32px;
-  background: url(/resource/PC/images/main/spr_mainicon.png) no-repeat 0 0;
+  background: url(/jejupass/resource/PC/images/main/spr_mainicon.png) no-repeat 0 0;
 }
 
 .mainCont .mainIcon li a span {
@@ -264,7 +264,7 @@
   left: 0;
   width: 100%;
   height: 140px;
-  background: url(/resource/PC/images/main/bg_news.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/main/bg_news.png) no-repeat;
 }
 
 .mainCont .mainNews .txt .titDep3 {
@@ -405,7 +405,7 @@
   color: #fff;
   font-weight: 600;
   line-height: 59px;
-  background: url(/resource/PC/images/common/ico_topBanner.png) no-repeat 0 50%;
+  background: url(/jejupass/resource/PC/images/common/ico_topBanner.png) no-repeat 0 50%;
 }
 
 .mainTopbanner .btn_close {
@@ -426,7 +426,7 @@
   height: 12px;
   margin-top: -6px;
   margin-left: -6px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat -69px -26px;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat -69px -26px;
 }
 
 .mainTopbanner + header nav .quickSearchWrap .laySearch {
@@ -574,7 +574,7 @@
   margin-left: -9px;
   left: 13px;
   margin-left: 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -28px -30px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -28px -30px;
 }
 
 .kf_laySearch .kf_inner .kf_search .kf_area .btLocation strong {
@@ -712,7 +712,7 @@
   height: 24px;
   margin-top: -12px;
   margin-left: -12px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat -168px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat -168px 0;
 }
 
 .laySearch > .dimmed {
@@ -761,7 +761,7 @@
   height: 32px;
   margin-top: -16px;
   margin-left: -16px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat;
 }
 
 .searchBtns > li > a[aria-selected=true] {
@@ -944,7 +944,7 @@
   height: 32px;
   margin-top: -16px;
   margin-left: -16px;
-  background: url(/resource/PC/images/common/spr_air.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/spr_air.png) no-repeat;
 }
 
 .k1_section_multi .kf_flightInner:first-child {
@@ -1064,7 +1064,7 @@
   margin-top: -9px;
   margin-left: -9px;
   display: none;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -66px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -66px 0;
   z-index: 2;
   opacity: 0;
   -webkit-animation: chkAni 0.5s;
@@ -1182,7 +1182,7 @@
   line-height: 72px;
   text-align: center;
   border-radius: 12px;
-  background: url(/resource/PC/images/air/bg_interBanner.jpg) no-repeat;
+  background: url(/jejupass/resource/PC/images/air/bg_interBanner.jpg) no-repeat;
 }
 
 .kf_interBanner a em {
@@ -1202,7 +1202,7 @@
   line-height: 48px;
   font-size: 1.6rem;
   font-weight: 600;
-  background-image: url(/resource/PC/images/air/bg_interBanner02.jpg);
+  background-image: url(/jejupass/resource/PC/images/air/bg_interBanner02.jpg);
 }
 
 .k1_destination_list {
@@ -1273,7 +1273,7 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -180px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -180px 0;
 }
 
 .swiperWrap.swiperCalendar [class^=swiper-button].swiper-button-disabled {
@@ -1520,7 +1520,7 @@
   height: 12px;
   margin-top: -6px;
   margin-left: -6px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -198px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -198px 0;
 }
 
 .k1_passenger li .setting button.plus:after {
@@ -1811,7 +1811,7 @@
   margin-left: -9px;
   left: 0;
   margin-left: 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -85px -30px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -85px -30px;
 }
 
 .k1_section_multi.section_stay .kf_staySearch .kf_destinationList .quick_resultList > li.stay a:before {
@@ -2051,7 +2051,7 @@
   margin-top: -9px;
   margin-left: -9px;
   display: none;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -66px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -66px 0;
   z-index: 2;
   opacity: 0;
   -webkit-animation: chkAni 0.5s;
@@ -2135,7 +2135,7 @@
   left: auto;
   right: 0;
   margin-left: 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat 0 -12px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat 0 -12px;
 }
 
 .wordArea .wordList {
@@ -2179,7 +2179,7 @@
   height: 12px;
   margin-top: -6px;
   margin-left: -6px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat;
 }
 
 .wordArea .wordList.tagList > li a {
@@ -2294,7 +2294,7 @@
   height: 42px;
   margin-top: -21px;
   margin-left: -21px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -240px -26px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -240px -26px;
 }
 
 .toggleCityList .acctItem {
@@ -2482,7 +2482,7 @@
   color: #202020;
   font-size: 1.8rem;
   font-weight: 700;
-  background: url(/resource/PC/images/common/bg_noData.png) no-repeat 50% 0;
+  background: url(/jejupass/resource/PC/images/common/bg_noData.png) no-repeat 50% 0;
 }
 
 .noData .subTxt {
@@ -2499,11 +2499,11 @@
 }
 
 .noData.noReview .tit {
-  background-image: url(/resource/PC/images/common/bg_noReview.png);
+  background-image: url(/jejupass/resource/PC/images/common/bg_noReview.png);
 }
 
 .noData.noTrip .tit {
-  background-image: url(/resource/PC/images/common/bg_noTrip.png);
+  background-image: url(/jejupass/resource/PC/images/common/bg_noTrip.png);
 }
 
 .sideList {
@@ -2734,7 +2734,7 @@
   height: 26px;
   margin-top: -13px;
   margin-left: -13px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat -168px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat -168px 0;
 }
 
 .viewContents {
@@ -2926,7 +2926,7 @@
   left: 0;
   width: 100%;
   height: 115px;
-  background: #F8F8F8 url(/resource/PC/images/common/bg_mainR.png) repeat-x 0 100%;
+  background: #F8F8F8 url(/jejupass/resource/PC/images/common/bg_mainR.png) repeat-x 0 100%;
 }
 
 .k1_main_search_area .k1_search_are_spot {
@@ -2969,15 +2969,15 @@
 							&:before{display:none}
 							span{display:inline-block;position:relative;color:$col_g600;font-size:rem(14px);
 								& + span{padding-left:30px;
-									&:before{content:'';display:block;position:absolute;top:50%;left:6px;width:18px;height:18px;margin-top:-9px;background:url(/resource/PC/images/common/spr_air.png) no-repeat 0 -66px}
+									&:before{content:'';display:block;position:absolute;top:50%;left:6px;width:18px;height:18px;margin-top:-9px;background:url(/jejupass/resource/PC/images/common/spr_air.png) no-repeat 0 -66px}
 								}
 							}
 						}
 						&.btDate{
-							&:before{content:'';display:block;position:absolute;top:50%;left:12px;width:12px;height:12px;margin-top:-6px;background:url(/resource/PC/images/common/spr_air.png) no-repeat -20px -66px}
+							&:before{content:'';display:block;position:absolute;top:50%;left:12px;width:12px;height:12px;margin-top:-6px;background:url(/jejupass/resource/PC/images/common/spr_air.png) no-repeat -20px -66px}
 						}
 						&.btSeat{
-							&:before{content:'';display:block;position:absolute;top:50%;left:12px;width:12px;height:12px;margin-top:-6px;background:url(/resource/PC/images/common/spr_air.png) no-repeat -34px -66px}
+							&:before{content:'';display:block;position:absolute;top:50%;left:12px;width:12px;height:12px;margin-top:-6px;background:url(/jejupass/resource/PC/images/common/spr_air.png) no-repeat -34px -66px}
 						}
 					}
 				}
@@ -3275,7 +3275,7 @@
   width: 200px;
   height: 32px;
   margin: 0 auto;
-  background: url(/resource/PC/images/common/bg_star.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/bg_star.png) no-repeat;
   border-radius: 0;
 }
 
@@ -3304,7 +3304,7 @@
   top: 0;
   bottom: auto;
   height: 32px;
-  background: url(/resource/PC/images/common/bg_starSlider.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/bg_starSlider.png) no-repeat;
   border-radius: 0;
   z-index: 100;
 }
@@ -3321,12 +3321,12 @@
 	}
 }
 .slideReview{text-align:center;
-	.slider{display:inline-block;width:200px;height:32px;margin:0 auto;background:url(/resource/PC/images/common/bg_star.png) no-repeat;border-radius:0;
+	.slider{display:inline-block;width:200px;height:32px;margin:0 auto;background:url(/jejupass/resource/PC/images/common/bg_star.png) no-repeat;border-radius:0;
 		.ui-slider-handle{display:block;top:0;width:14px;height:32px;margin-left:-14px;opacity:0;border-radius:0;
 			&:after{display:none}
 			& + .ui-slider-handle{display:block;}
 		}
-		.ui-slider-range{left:0;top:0;bottom:auto;height:32px;background:url(/resource/PC/images/common/bg_starSlider.png) no-repeat;border-radius:0;z-index:100}
+		.ui-slider-range{left:0;top:0;bottom:auto;height:32px;background:url(/jejupass/resource/PC/images/common/bg_starSlider.png) no-repeat;border-radius:0;z-index:100}
 		&:after{display:none}
 	}
 }*/
@@ -3421,7 +3421,7 @@
   margin-top: -9px;
   border: none;
   border-radius: 0;
-  background: url(/resource/PC/images/food/spr_kind.png) no-repeat 0 -20px;
+  background: url(/jejupass/resource/PC/images/food/spr_kind.png) no-repeat 0 -20px;
 }
 
 .layerMap .mapCont .cateWrap .frmInp.pass label:before {
@@ -3638,7 +3638,7 @@
   right: -5px;
   width: 18px;
   height: 18px;
-  background: url(/resource/PC/images/food/spr_kind.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/spr_kind.png) no-repeat;
 }
 
 .mapSearchList > li a .inner .kind.cafe {
@@ -3709,7 +3709,7 @@
   bottom: 0;
   width: 58px;
   border-left: 1px dashed #abccff;
-  background: #f4f9ff url(/resource/PC/images/common/bi_logo_v.png) no-repeat 50% 50%;
+  background: #f4f9ff url(/jejupass/resource/PC/images/common/bi_logo_v.png) no-repeat 50% 50%;
 }
 
 .couponList > li .couponCont .inner strong.titCoupon {
@@ -3764,7 +3764,7 @@
   left: auto;
   right: 20px;
   margin-left: 0;
-  background: url(/resource/PC/images/common/spr_coupon.png) no-repeat -96px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_coupon.png) no-repeat -96px 0;
 }
 
 .couponList > li input {
@@ -3827,7 +3827,7 @@
   left: auto;
   right: 20px;
   margin-left: 0;
-  background: url(/resource/PC/images/common/spr_coupon.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/spr_coupon.png) no-repeat;
 }
 
 .couponList > li label.couponCont .inner:after {
@@ -4076,7 +4076,7 @@ p.listType02 + .couponList {
   margin-left: -16px;
   top: 19px;
   margin-top: 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -543px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -543px 0;
 }
 
 .layPop.popShare .shareList > li > button span {
@@ -4169,7 +4169,7 @@ p.listType02 + .couponList {
   font-family: NanumSquareR, -apple-system, BlinkMacSystemFont, Open Sans, Helvetica Neue, sans-serif;
   padding-top: 158px;
   text-align: center;
-  background: url(/resource/PC/images/common/img_error404.png) no-repeat 50% 0;
+  background: url(/jejupass/resource/PC/images/common/img_error404.png) no-repeat 50% 0;
 }
 
 .errorWrap .txterror {

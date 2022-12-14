@@ -81,7 +81,7 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: url(/resource/PC/images/mypage/@default_img.png) no-repeat top center/100% auto;
+  background: url(/jejupass/resource/PC/images/mypage/@default_img.png) no-repeat top center/100% auto;
 }
 
 .mainTop .imgArea:after {
@@ -91,7 +91,7 @@
   bottom: 0;
   width: 24px;
   height: 24px;
-  background: url(/resource/PC/images/mypage/btn_plus.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/btn_plus.png) no-repeat;
 }
 
 .mainTop .txtArea {
@@ -130,7 +130,7 @@
   width: 12px;
   height: 12px;
   margin: -6px 0 0 0;
-  background: url(/resource/PC/images/mypage/ic_x12_edit.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x12_edit.png) no-repeat;
 }
 
 .mainTop .btnArea {
@@ -193,7 +193,7 @@
   width: 9px;
   height: 14px;
   margin-top: -7px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -259px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -259px 0;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -243,7 +243,7 @@
   width: 18px;
   height: 18px;
   margin-top: -9px;
-  background: url(/resource/PC/images/mypage/ic_x18_recharge_w.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x18_recharge_w.png) no-repeat;
 }
 
 .contArea.myPage .blueBox .pointList .boxPoint button.btnOut p:before {
@@ -254,7 +254,7 @@
   width: 18px;
   height: 18px;
   margin-top: -9px;
-  background: url(/resource/PC/images/mypage/ic_x18_recharge_w.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x18_recharge_w.png) no-repeat;
 }
 
 .contArea.myPage .blueBox .innerBox {
@@ -346,15 +346,15 @@
 }
 
 .contArea.myPage .boxType03 .inner .txt.bookMark:before {
-  background: url(/resource/PC/images/mypage/ic_x24_bookmark_g.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x24_bookmark_g.png) no-repeat;
 }
 
 .contArea.myPage .boxType03 .inner .txt.opinion:before {
-  background: url(/resource/PC/images/mypage/ic_x24_fill_in_review.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x24_fill_in_review.png) no-repeat;
 }
 
 .contArea.myPage .boxType03 .inner .txt.coupon:before {
-  background: url(/resource/PC/images/mypage/ic_x24_coupon_g.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x24_coupon_g.png) no-repeat;
 }
 
 .contArea.myPage .boxType03 .inner .txt .num {
@@ -746,7 +746,7 @@
   height: 74px;
   margin-top: -37px;
   margin-left: -120px;
-  background: url(/resource/PC/images/mypage/bg_car.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/bg_car.png) no-repeat;
 }
 
 .contArea.myPage .tripPlan .noticeHis ul .noticeBox.limited .contArea.rent .innerTxt .subCont .num {
@@ -780,7 +780,7 @@
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -84px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -84px 0;
 }
 
 .contArea.myPage .tripPlan .noticeHis ul .noticeBox.limited .contArea .innerTxt .moreCont .txt {
@@ -840,7 +840,7 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/PC/images/mypage/icon_gift.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/icon_gift.png) no-repeat;
 }
 
 .contArea.myPage .bannerArea {
@@ -893,7 +893,7 @@
   height: 12px;
   margin-top: -6px;
   margin-left: -6px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat -69px -26px;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat -69px -26px;
 }
 
 .contArea.myPage .lstWrapper {
@@ -1005,7 +1005,7 @@
   height: 80px;
   margin-top: -40px;
   margin-left: -81px;
-  background: url(/resource/PC/images/dummy/signature.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/dummy/signature.png) no-repeat;
 }
 
 /*마이페이지-내자산(포인트, 렌터카이용권)*/
@@ -1055,7 +1055,7 @@
   width: 18px;
   height: 18px;
   margin-top: -9px;
-  background: url(/resource/PC/images/mypage/ic_x18_recharge.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x18_recharge.png) no-repeat;
 }
 
 .boxAsset01 .whiteArea {
@@ -1142,7 +1142,7 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/PC/images/mypage/ic_x18_stamp.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x18_stamp.png) no-repeat;
 }
 
 .boxAsset01.rent .whiteArea {
@@ -1345,7 +1345,7 @@
   left: 0;
   width: 24px;
   height: 24px;
-  background: url(/resource/PC/images/mypage/ic_x24_ticket.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x24_ticket.png) no-repeat;
 }
 
 .grayBox.punching .txt.pass {
@@ -1354,12 +1354,12 @@
 
 .grayBox.punching .txt.pass:before {
   top: 7px;
-  background: url(/resource/PC/images/mypage/ic_x24_coupon.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x24_coupon.png) no-repeat;
 }
 
 .grayBox.punching .txt.cafe:before {
   top: 7px;
-  background: url(/resource/PC/images/mypage/ic_x24_coffee_color.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x24_coffee_color.png) no-repeat;
 }
 
 .grayBox.punching .txt .num {
@@ -1389,7 +1389,7 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/PC/images/mypage/ic_x18_buy.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x18_buy.png) no-repeat;
 }
 
 .listFullR {
@@ -1516,7 +1516,7 @@
   width: 16px;
   height: 12px;
   margin-left: -8px;
-  background: url(/resource/PC/images/common/spr_coupon.png) no-repeat -51px -5px;
+  background: url(/jejupass/resource/PC/images/common/spr_coupon.png) no-repeat -51px -5px;
 }
 
 .listFullR li .sideArea .txt.refund {
@@ -1588,7 +1588,7 @@
   top: 20px;
   right: 0px;
   border-radius: 12px;
-  background: url(/resource/PC/images/mypage/bt_coupon_g.png) #fff;
+  background: url(/jejupass/resource/PC/images/mypage/bt_coupon_g.png) #fff;
   z-index: 1;
 }
 
@@ -1601,12 +1601,12 @@
 }
 
 .listFullR li.withSide.expired .inner .txtArea.cafe .tit:before {
-  background: url(/resource/PC/images/mypage/ic_x24_coffee_G.png);
+  background: url(/jejupass/resource/PC/images/mypage/ic_x24_coffee_G.png);
   z-index: 3;
 }
 
 .listFullR li.withSide.expired .inner .txtArea.cafe .tit.cupType:before {
-  background: url(/resource/PC/images/mypage/ic_x24_coffee_cup_G.png);
+  background: url(/jejupass/resource/PC/images/mypage/ic_x24_coffee_cup_G.png);
 }
 
 .listFullR li.withSide.expired .inner .txtArea.cafe .tit span {
@@ -1620,7 +1620,7 @@
 }
 
 .listFullR li.withSide.expired .sideArea:after {
-  background: url(/resource/PC/images/mypage/bg_couponG.png) #fff;
+  background: url(/jejupass/resource/PC/images/mypage/bg_couponG.png) #fff;
 }
 
 .listFullR li.withSide .btLink {
@@ -1653,11 +1653,11 @@
   left: 0;
   width: 24px;
   height: 24px;
-  background: url(/resource/PC/images/mypage/ic_x24_coffee.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x24_coffee.png) no-repeat;
 }
 
 .listFullR li.withSide .inner .txtArea.cafe .tit.cupType:before {
-  background: url(/resource/PC/images/mypage/ic_x24_coffee_cup.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x24_coffee_cup.png) no-repeat;
 }
 
 .listFullR li.withSide .inner .txtArea.cafe .tit span {
@@ -1703,7 +1703,7 @@
   height: calc(100% - 37px);
   top: 17px;
   right: -1px;
-  background: url(/resource/PC/images/mypage/bg_couponP.png) #fff;
+  background: url(/jejupass/resource/PC/images/mypage/bg_couponP.png) #fff;
   z-index: 3;
 }
 
@@ -1832,11 +1832,11 @@
 }
 
 .grayBox.divide div button.signC:before {
-  background: url(/resource/PC/images/mypage/ic_x18_stamp_CP.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x18_stamp_CP.png) no-repeat;
 }
 
 .grayBox.divide div button.downC:before {
-  background: url(/resource/PC/images/mypage/ic_x18_down_B.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x18_down_B.png) no-repeat;
 }
 
 .grayBox.divide .ownCoupon {
@@ -1977,7 +1977,7 @@
   left: 0;
   width: 16px;
   height: 12px;
-  background: url(/resource/PC/images/common/spr_coupon.png) no-repeat -75px -5px;
+  background: url(/jejupass/resource/PC/images/common/spr_coupon.png) no-repeat -75px -5px;
 }
 
 .listWrapper .promotion .chargeInfo .condition .time {
@@ -2077,11 +2077,11 @@
   height: 80px;
   margin-top: -40px;
   margin-left: -6.5px;
-  background: url(/resource/PC/images/common/bi_logo_v.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/bi_logo_v.png) no-repeat;
 }
 
 .layPop.layerM .layContainer .grayArea.typeTop .listFullR li.withSide.backP .sideArea:after, .layPop.layerM .layContainer .grayArea .listFullR li.withSide.backP .sideArea:after {
-  background: url(/resource/PC/images/mypage/bg_couponP2.png) #F8F8F8;
+  background: url(/jejupass/resource/PC/images/mypage/bg_couponP2.png) #F8F8F8;
   z-index: 3;
 }
 
@@ -2519,7 +2519,7 @@
   width: 9px;
   height: 14px;
   margin-top: -6px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -394px -30px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -394px -30px;
 }
 
 .grayBox.reservation .infoView .underArea {
@@ -2769,7 +2769,7 @@
   width: 9px;
   height: 14px;
   margin-top: -7px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -208px -29px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -208px -29px;
 }
 
 .payView .inner .infoBox .centerArea {
@@ -3336,7 +3336,7 @@
   right: 8px;
   width: 18px;
   height: 23px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat -212px -102px;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat -212px -102px;
 }
 
 /*마이페이지-알림함*/
@@ -3429,7 +3429,7 @@
   width: 18px;
   height: 18px;
   margin-top: -9px;
-  background: url(/resource/PC/images/mypage/ico_x18_arr.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ico_x18_arr.png) no-repeat;
 }
 
 .noticeHis ul .noticeBox .contArea .innerTxt .category {
@@ -3446,7 +3446,7 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/PC/images/mypage/icon_gift.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/icon_gift.png) no-repeat;
 }
 
 .noticeHis ul .noticeBox .contArea .innerTxt .category.plane:before {
@@ -3457,7 +3457,7 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/PC/images/mypage/icon_plane.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/icon_plane.png) no-repeat;
 }
 
 .noticeHis ul .noticeBox .contArea .innerTxt .txt {
@@ -3704,7 +3704,7 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/PC/images/mypage/ic_x18_delete.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/ic_x18_delete.png) no-repeat;
 }
 
 /*마이페이지-1:1 문의, 수정제안내역*/
@@ -3813,7 +3813,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: url(/resource/PC/images/mypage/@default_img.png);
+  background: url(/jejupass/resource/PC/images/mypage/@default_img.png);
 }
 
 .photoArea .fileView label figure {
@@ -3836,7 +3836,7 @@
   bottom: 0;
   width: 24px;
   height: 24px;
-  background: url(/resource/PC/images/mypage/btn_plus.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/btn_plus.png) no-repeat;
 }
 
 .editFrm {
@@ -3980,7 +3980,7 @@
   height: 12px;
   margin-top: -6px;
   margin-left: -6px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat -69px -26px;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat -69px -26px;
 }
 
 .payment .noData {
@@ -3988,11 +3988,11 @@
 }
 
 .payment .noData.card p.tit {
-  background: url(/resource/PC/images/mypage/no_card.png) no-repeat 50% 0;
+  background: url(/jejupass/resource/PC/images/mypage/no_card.png) no-repeat 50% 0;
 }
 
 .payment .noData.account p.tit {
-  background: url(/resource/PC/images/mypage/no_account.png) no-repeat 50% 0;
+  background: url(/jejupass/resource/PC/images/mypage/no_account.png) no-repeat 50% 0;
 }
 
 /*마이페이지-회원정보관리-팝업*/

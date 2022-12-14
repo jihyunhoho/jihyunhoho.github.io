@@ -112,7 +112,7 @@
   width: 18px;
   height: 18px;
   margin-top: -9px;
-  background: url(/resource/PC/images/common/spr_air.png) no-repeat -64px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_air.png) no-repeat -64px 0;
 }
 
 .swiperMytrip .swiper-slide .k1_from_to.i2 .to:before {
@@ -170,7 +170,7 @@
   height: 12px;
   margin-top: -6px;
   margin-left: -6px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat;
 }
 
 .swiperMytrip + .titDep2 {
@@ -185,7 +185,7 @@
   margin-left: calc(-50vw + 568px);
   padding: 80px 0 0 0;
   text-align: center;
-  background: #f8f7f6 url(/resource/PC/images/stay/bg_stayMain.png) no-repeat 50% 0;
+  background: #f8f7f6 url(/jejupass/resource/PC/images/stay/bg_stayMain.png) no-repeat 50% 0;
 }
 
 .themeSearch .inner {
@@ -273,7 +273,7 @@
   left: 16px;
   width: 48px;
   height: 48px;
-  background: url(/resource/PC/images/common/bg_ranking.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/bg_ranking.png) no-repeat;
   color: #fff;
   font-family: NanumSquareR, -apple-system, BlinkMacSystemFont, Open Sans, Helvetica Neue, sans-serif;
   font-size: 2.1rem;
@@ -345,7 +345,7 @@
 }
 
 .swiperRanking .stayRankingList > .swiper-slide:nth-child(n+4) > .link:before {
-  background-image: url(/resource/PC/images/common/bg_ranking_low.png);
+  background-image: url(/jejupass/resource/PC/images/common/bg_ranking_low.png);
 }
 
 /* 숙박 */
@@ -370,7 +370,7 @@
   margin-left: -9px;
   left: 0;
   margin-left: 0;
-  background: url(/resource/PC/images/common/ico_mapsearch.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/ico_mapsearch.png) no-repeat;
 }
 
 .stayList {
@@ -570,7 +570,7 @@
   margin-left: -6px;
   left: 0;
   margin-left: 0;
-  background: url(/resource/PC/images/common/spr_stay.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/spr_stay.png) no-repeat;
 }
 
 .stay-info li.person span {
@@ -839,7 +839,7 @@
   margin-top: -6px;
   width: 12px;
   height: 12px;
-  background: url(/resource/PC/images/common/ico_deptharr01.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/ico_deptharr01.png) no-repeat;
 }
 
 .conUtil .locationDepth span:after {
@@ -927,7 +927,7 @@
   margin-top: -9px;
   width: 18px;
   height: 18px;
-  background-image: url(/resource/PC/images/common/ico_deptharr02.png);
+  background-image: url(/jejupass/resource/PC/images/common/ico_deptharr02.png);
 }
 
 .stayBasicInfo .listType01 + .titDep4 {
@@ -2188,7 +2188,7 @@
   width: 12px;
   height: 12px;
   margin-right: 6px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -212px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -212px 0;
 }
 
 .reservationForm.stayReserv .guideInfo.boxType01 {
@@ -2351,15 +2351,15 @@
 }
 
 .wrapper.completeWrapper .container .completePanel .message.stay {
-  background: url(/resource/PC/images/common/bg_comp_stay.png) no-repeat 50% 0;
+  background: url(/jejupass/resource/PC/images/common/bg_comp_stay.png) no-repeat 50% 0;
 }
 
 .noData.noStay .tit {
-  background-image: url(/resource/PC/images/stay/ic_x50_noData_s.png);
+  background-image: url(/jejupass/resource/PC/images/stay/ic_x50_noData_s.png);
 }
 
 .noData.noReview .tit {
-  background-image: url(/resource/PC/images/common/ic_x50_noReview.png);
+  background-image: url(/jejupass/resource/PC/images/common/ic_x50_noReview.png);
 }
 
 /* 예상 적립금 */
@@ -2514,7 +2514,7 @@
   width: 18px;
   height: 18px;
   margin-right: 4px;
-  background: url(/resource/PC/images/common/ico_point.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/ico_point.png) no-repeat;
   vertical-align: middle;
 }
 

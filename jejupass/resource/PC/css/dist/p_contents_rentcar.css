@@ -188,7 +188,7 @@
   width: 104px;
   height: 104px;
   margin: 0 auto;
-  background: url(/resource/PC/images/rentcar/ico_loading.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/rentcar/ico_loading.png) no-repeat;
 }
 
 .loadingPage .wrap-loading-bar h1 {
@@ -238,7 +238,7 @@
   width: 12px;
   height: 12px;
   margin-top: -6px;
-  background: url(/resource/PC/images/common/spr_air.png) no-repeat -48px -66px;
+  background: url(/jejupass/resource/PC/images/common/spr_air.png) no-repeat -48px -66px;
 }
 
 .ratingSlider {
@@ -305,7 +305,7 @@
 .ratingSlider .sliderInfo > span.rating1 {
   position: absolute;
   left: 0;
-  background: url(/resource/PC/images/rentcar/rating01.png) no-repeat 0 0;
+  background: url(/jejupass/resource/PC/images/rentcar/rating01.png) no-repeat 0 0;
   margin-left: 0;
 }
 
@@ -316,25 +316,25 @@
 .ratingSlider .sliderInfo > span.rating2 {
   position: absolute;
   left: 25%;
-  background: url(/resource/PC/images/rentcar/rating02.png) no-repeat 50% 0;
+  background: url(/jejupass/resource/PC/images/rentcar/rating02.png) no-repeat 50% 0;
 }
 
 .ratingSlider .sliderInfo > span.rating3 {
   position: absolute;
   left: 50%;
-  background: url(/resource/PC/images/rentcar/rating03.png) no-repeat 50% 0;
+  background: url(/jejupass/resource/PC/images/rentcar/rating03.png) no-repeat 50% 0;
 }
 
 .ratingSlider .sliderInfo > span.rating4 {
   position: absolute;
   left: 75%;
-  background: url(/resource/PC/images/rentcar/rating04.png) no-repeat 50% 0;
+  background: url(/jejupass/resource/PC/images/rentcar/rating04.png) no-repeat 50% 0;
 }
 
 .ratingSlider .sliderInfo > span.rating5 {
   position: absolute;
   right: 0;
-  background: url(/resource/PC/images/rentcar/rating05.png) no-repeat 100% 0;
+  background: url(/jejupass/resource/PC/images/rentcar/rating05.png) no-repeat 100% 0;
 }
 
 .ratingSlider .sliderInfo > span.rating5:after {
@@ -460,7 +460,7 @@
   right: 30px;
   width: 12px;
   height: 12px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -256px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -256px 0;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -511,7 +511,7 @@
   width: 18px;
   height: 18px;
   margin-right: 4px;
-  background: url(/resource/PC/images/common/ico_best.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/ico_best.png) no-repeat;
   vertical-align: -3px;
 }
 
@@ -543,7 +543,7 @@
   width: 20px;
   height: 20px;
   margin-top: -11px;
-  background: url(/resource/PC/images/rentcar/ico_star.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/rentcar/ico_star.png) no-repeat;
   vertical-align: -1px;
 }
 
@@ -601,7 +601,7 @@
 }
 
 .rentercarList .icoMore.moreNone:after {
-  background: url(/resource/PC/images/common/ico_more_less.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/ico_more_less.png) no-repeat;
 }
 
 .rentercarList .bannerType {
@@ -660,15 +660,15 @@
 }
 
 .rentcarItem > .info span.seat:before {
-  background: url(/resource/PC/images/common/spr_air.png) no-repeat -34px -66px;
+  background: url(/jejupass/resource/PC/images/common/spr_air.png) no-repeat -34px -66px;
 }
 
 .rentcarItem > .info span.fuel:before {
-  background: url(/resource/PC/images/common/ico_fuel.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/ico_fuel.png) no-repeat;
 }
 
 .rentcarItem > .info span.year:before {
-  background: url(/resource/PC/images/common/spr_air.png) no-repeat -20px -66px;
+  background: url(/jejupass/resource/PC/images/common/spr_air.png) no-repeat -20px -66px;
 }
 
 .rentcarItem > .info span ~ span {
@@ -676,7 +676,7 @@
 }
 
 .noData.rentcar .tit {
-  background-image: url(/resource/PC/images/common/bg_noData_rentcar.png);
+  background-image: url(/jejupass/resource/PC/images/common/bg_noData_rentcar.png);
 }
 
 .myViewRentcar .rentcarItem {
@@ -1020,7 +1020,7 @@
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url(/resource/PC/images/rentcar/ico_share.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/rentcar/ico_share.png) no-repeat;
 }
 
 .detailRentcar .rentcarItem .info {
@@ -1232,7 +1232,7 @@
   width: 18px;
   height: 18px;
   margin-right: 6px;
-  background: url(/resource/PC/images/common/ico_super.png) no-repeat 0 0;
+  background: url(/jejupass/resource/PC/images/common/ico_super.png) no-repeat 0 0;
   vertical-align: -4px;
 }
 
@@ -1298,7 +1298,7 @@
   width: 12px;
   height: 7px;
   margin-left: 15px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat 0 -53px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat 0 -53px;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   vertical-align: 2px;
@@ -1608,7 +1608,7 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/PC/images/common/ic_18_point.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/ic_18_point.png) no-repeat;
 }
 
 .floatingRentcar .detailBox .tit + p {
@@ -1751,7 +1751,7 @@
   right: 0;
   width: 10px;
   height: 10px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -1px -13px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -1px -13px;
 }
 
 .floatingRentcar .k1_passenger .tipWraper {
@@ -1823,7 +1823,7 @@
   right: 34px;
   width: 10px;
   height: 18px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -373px -33px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -373px -33px;
 }
 
 .rentcarInfo .carLink .titDep3 {
@@ -2185,7 +2185,7 @@
   margin: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -279px -31px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -279px -31px;
 }
 
 .beware {
@@ -2209,7 +2209,7 @@
   width: 18px;
   height: 18px;
   margin-right: 6px;
-  background: url(/resource/PC/images/common/ico_topBanner.png) no-repeat 0 0;
+  background: url(/jejupass/resource/PC/images/common/ico_topBanner.png) no-repeat 0 0;
   vertical-align: -3px;
 }
 
@@ -2642,7 +2642,7 @@ aside button.btNoti {
 }
 
 aside button.btNoti:after {
-  background: url(/resource/PC/images/common/ico_noti.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/ico_noti.png) no-repeat;
 }
 
 .notiView {
@@ -2668,7 +2668,7 @@ aside button.btNoti:after {
   width: 18px;
   height: 18px;
   margin-right: 5px;
-  background: url(/resource/PC/images/common/ico_noti02.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/ico_noti02.png) no-repeat;
   vertical-align: -4px;
 }
 
@@ -2959,7 +2959,7 @@ aside button.btNoti:after {
   width: 18px;
   height: 18px;
   margin-right: 6px;
-  background: url(/resource/PC/images/common/ico_cafe.png) no-repeat 0 0;
+  background: url(/jejupass/resource/PC/images/common/ico_cafe.png) no-repeat 0 0;
   vertical-align: -4px;
 }
 
@@ -3057,7 +3057,7 @@ aside button.btNoti:after {
   left: 32px;
   width: 32px;
   height: 32px;
-  background: url(/resource/PC/images/rentcar/ico_terms.png) no-repeat 0 0;
+  background: url(/jejupass/resource/PC/images/rentcar/ico_terms.png) no-repeat 0 0;
   background-size: auto 32px;
 }
 
@@ -3156,7 +3156,7 @@ aside button.btNoti:after {
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  background: url(/resource/PC/images/rentcar/shuttle.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/rentcar/shuttle.png) no-repeat;
 }
 
 .rantcarInfo .shuttleStep li p {
@@ -3355,9 +3355,9 @@ aside button.btNoti:after {
 }
 
 .completePanel .message.rentcar {
-  background: url(/resource/PC/images/common/bg_comp_rentcar.png) no-repeat 50% 0 !important;
+  background: url(/jejupass/resource/PC/images/common/bg_comp_rentcar.png) no-repeat 50% 0 !important;
 }
 
 .noData.noCar .tit {
-  background-image: url(/resource/PC/images/rentcar/ic_x50_noData_r.png);
+  background-image: url(/jejupass/resource/PC/images/rentcar/ic_x50_noData_r.png);
 }

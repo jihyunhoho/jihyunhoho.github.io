@@ -289,7 +289,7 @@
   left: 7px;
   width: 14px;
   height: 14px;
-  background: url(/resource/MO/images/common/ico_time.svg) no-repeat 0 2px;
+  background: url(/jejupass/resource/MO/images/common/ico_time.svg) no-repeat 0 2px;
 }
 
 .noData {
@@ -330,7 +330,7 @@
 }
 
 aside div > button.btNoti:after {
-  background: url(/resource/MO/images/common/ico_noti.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_noti.svg) no-repeat;
 }
 
 aside .rentcarNoti {
@@ -547,7 +547,7 @@ aside .rentcarNoti {
   width: 18px;
   height: 18px;
   margin-right: 4px;
-  background: url(/resource/MO/images/food/ico_tel.png) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/MO/images/food/ico_tel.png) no-repeat 0 0/cover;
   vertical-align: -4px;
 }
 
@@ -656,15 +656,15 @@ aside .rentcarNoti {
 }
 
 .rentcarItemGroup .rentcarItem .info span.seat:before {
-  background: url(/resource/MO/images/common/spr_air.svg) no-repeat -16px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_air.svg) no-repeat -16px 0;
 }
 
 .rentcarItemGroup .rentcarItem .info span.fuel:before {
-  background: url(/resource/MO/images/common/ico_fuel.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_fuel.svg) no-repeat;
 }
 
 .rentcarItemGroup .rentcarItem .info span.year:before {
-  background: url(/resource/MO/images/common/spr_air.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/spr_air.svg) no-repeat;
 }
 
 .rentcarItemGroup .rentcarItem .info span ~ span {
@@ -742,7 +742,7 @@ aside .rentcarNoti {
   width: 18px;
   height: 18px;
   margin-right: 4px;
-  background: url(/resource/MO/images/common/ico_best.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_best.svg) no-repeat;
   vertical-align: -3px;
 }
 
@@ -837,7 +837,7 @@ aside .rentcarNoti {
 }
 
 .rentcarItemGroup .icoMore.moreNone:after {
-  background: url(/resource/MO/images/common/ico_more_less.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_more_less.svg) no-repeat;
 }
 
 .rentcarItemGroup ~ .bannerType {
@@ -905,7 +905,7 @@ aside .rentcarNoti {
   width: 18px;
   height: 18px;
   margin-right: 6px;
-  background: url(/resource/MO/images/common/ico_super.svg) no-repeat 0 0;
+  background: url(/jejupass/resource/MO/images/common/ico_super.svg) no-repeat 0 0;
   vertical-align: -4px;
 }
 
@@ -933,7 +933,7 @@ aside .rentcarNoti {
   width: 18px;
   height: 18px;
   margin-right: 6px;
-  background: url(/resource/MO/images/common/ico_beware.svg) no-repeat 0 0;
+  background: url(/jejupass/resource/MO/images/common/ico_beware.svg) no-repeat 0 0;
   vertical-align: -4px;
 }
 
@@ -961,7 +961,7 @@ aside .rentcarNoti {
   width: 18px;
   height: 18px;
   margin-right: 6px;
-  background: url(/resource/MO/images/common/ico_cafe.svg) no-repeat 0 0;
+  background: url(/jejupass/resource/MO/images/common/ico_cafe.svg) no-repeat 0 0;
   vertical-align: -4px;
 }
 
@@ -1321,7 +1321,7 @@ aside .rentcarNoti {
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/MO/images/common/ic_18_point.svg);
+  background: url(/jejupass/resource/MO/images/common/ic_18_point.svg);
 }
 
 .rentercarList.pageDetail .linkBox .titBox:after {
@@ -1332,7 +1332,7 @@ aside .rentcarNoti {
   width: 12px;
   height: 12px;
   margin-top: -6px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -42px -72px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -42px -72px;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
@@ -1540,7 +1540,7 @@ aside .rentcarNoti {
   width: 18px;
   height: 18px;
   margin-right: 6px;
-  background: url(/resource/MO/images/common/ico_beware.svg) no-repeat 0 0;
+  background: url(/jejupass/resource/MO/images/common/ico_beware.svg) no-repeat 0 0;
   vertical-align: -3px;
 }
 
@@ -1776,7 +1776,7 @@ aside .rentcarNoti {
   width: 18px;
   height: 18px;
   margin-right: 5px;
-  background: url(/resource/MO/images/common/ico_noti02.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_noti02.svg) no-repeat;
   vertical-align: -4px;
 }
 
@@ -1854,7 +1854,7 @@ aside .rentcarNoti {
 .ratingSlider .sliderInfo > span.rating1 {
   position: absolute;
   left: 0;
-  background: url(/resource/MO/images/rentcar/rating01.svg) no-repeat 0 0;
+  background: url(/jejupass/resource/MO/images/rentcar/rating01.svg) no-repeat 0 0;
   margin-left: 0;
 }
 
@@ -1865,25 +1865,25 @@ aside .rentcarNoti {
 .ratingSlider .sliderInfo > span.rating2 {
   position: absolute;
   left: 25%;
-  background: url(/resource/MO/images/rentcar/rating02.svg) no-repeat 50% 0;
+  background: url(/jejupass/resource/MO/images/rentcar/rating02.svg) no-repeat 50% 0;
 }
 
 .ratingSlider .sliderInfo > span.rating3 {
   position: absolute;
   left: 50%;
-  background: url(/resource/MO/images/rentcar/rating03.svg) no-repeat 50% 0;
+  background: url(/jejupass/resource/MO/images/rentcar/rating03.svg) no-repeat 50% 0;
 }
 
 .ratingSlider .sliderInfo > span.rating4 {
   position: absolute;
   left: 75%;
-  background: url(/resource/MO/images/rentcar/rating04.svg) no-repeat 50% 0;
+  background: url(/jejupass/resource/MO/images/rentcar/rating04.svg) no-repeat 50% 0;
 }
 
 .ratingSlider .sliderInfo > span.rating5 {
   position: absolute;
   right: 0;
-  background: url(/resource/MO/images/rentcar/rating05.svg) no-repeat 100% 0;
+  background: url(/jejupass/resource/MO/images/rentcar/rating05.svg) no-repeat 100% 0;
 }
 
 .ratingSlider .sliderInfo > span.rating5:after {
@@ -2399,7 +2399,7 @@ aside .rentcarNoti {
   width: 12px;
   height: 12px;
   margin: 0 auto;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat 0 -40px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat 0 -40px;
 }
 
 .rentcarBanner {
@@ -2738,7 +2738,7 @@ aside .rentcarNoti {
 }
 
 .completePanel.rentcar .message {
-  background: url(/resource/MO/images/rentcar/ic_rentcar_complete.svg) no-repeat 50% 0;
+  background: url(/jejupass/resource/MO/images/rentcar/ic_rentcar_complete.svg) no-repeat 50% 0;
 }
 
 .boxCompCont.rentcar {
@@ -2923,15 +2923,15 @@ aside .rentcarNoti {
 }
 
 .staySearchValue > a.arrival:before {
-  background: url(/resource/MO/images/common/ico_arrival.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_arrival.svg) no-repeat;
 }
 
 .staySearchValue > a.date:before {
-  background: url(/resource/MO/images/common/ico_calendar.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_calendar.svg) no-repeat;
 }
 
 .staySearchValue > a.person:before {
-  background: url(/resource/MO/images/common/ico_person.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_person.svg) no-repeat;
 }
 
 .staySearchValue > a ~ a {
@@ -2977,7 +2977,7 @@ aside .rentcarNoti {
 }
 
 .completePanel .message.rentcar {
-  background: url(/resource/MO/images/common/ic_rentcar_complete.svg) no-repeat 50% 0;
+  background: url(/jejupass/resource/MO/images/common/ic_rentcar_complete.svg) no-repeat 50% 0;
 }
 
 .payterms .layContent .tabContentWrap {
@@ -3277,7 +3277,7 @@ p.listType03:before {
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  background: url(/resource/MO/images/rentcar/shuttle.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/rentcar/shuttle.svg) no-repeat;
 }
 
 .rantcarInfo .shuttleStep li p {
@@ -3293,7 +3293,7 @@ p.listType03:before {
 }
 
 .noData.noCar p.txt:before {
-  background: url(/resource/MO/images/rentcar/ic_x50_noData_r.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/rentcar/ic_x50_noData_r.svg) no-repeat;
   border-radius: 0;
 }
 

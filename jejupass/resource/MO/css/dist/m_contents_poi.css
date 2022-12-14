@@ -205,7 +205,7 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/MO/images/mypage/ic_x12_mapview.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x12_mapview.svg) no-repeat;
 }
 
 .bestPlace .mapView .location {
@@ -240,7 +240,7 @@
   height: 16px;
   margin-top: -8px;
   margin-left: -8px;
-  background: url(/resource/MO/images/mypage/ic_x16_location.png) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x16_location.png) no-repeat;
 }
 
 .bestPlace .mapView .btmArea {
@@ -281,7 +281,7 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/MO/images/mypage/ic_x12_mapview.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x12_mapview.svg) no-repeat;
 }
 
 .bestPlace .mapView .btmArea .location {
@@ -316,7 +316,7 @@
   height: 16px;
   margin-top: -8px;
   margin-left: -8px;
-  background: url(/resource/MO/images/mypage/ic_x16_location.png) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x16_location.png) no-repeat;
 }
 
 .bannerType.bannerPoi {
@@ -472,7 +472,7 @@
   height: 16px;
   margin-top: -8px;
   margin-left: -8px;
-  background: url(/resource/MO/images/mypage/ic_x16_location.png) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x16_location.png) no-repeat;
 }
 
 .poiSelect .selectWrap .ui-selectmenu-text {

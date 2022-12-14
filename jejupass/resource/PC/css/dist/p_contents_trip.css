@@ -283,7 +283,7 @@
   height: 60px;
   margin-top: -30px;
   margin-left: -30px;
-  background: url(/resource/PC/images/trip/ico_play.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/trip/ico_play.png) no-repeat;
 }
 
 .edtFeed .edtSwiper .swiper-button-prev, .edtFeed .edtSwiper .swiper-button-next {
@@ -336,7 +336,7 @@
 }
 
 .passPeriod div.period .tit:before {
-  background-image: url(/resource/PC/images/trip/ico_period.png);
+  background-image: url(/jejupass/resource/PC/images/trip/ico_period.png);
 }
 
 .passPeriod div.certi {
@@ -344,7 +344,7 @@
 }
 
 .passPeriod div.certi .tit:before {
-  background-image: url(/resource/PC/images/trip/ico_certi.png);
+  background-image: url(/jejupass/resource/PC/images/trip/ico_certi.png);
 }
 
 .passPeriod ~ .toggleBtn {
@@ -405,7 +405,7 @@
   height: 18px;
   margin: 0 6px 2px 0;
   vertical-align: middle;
-  background: url(/resource/PC/images/trip/ico_caution.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/trip/ico_caution.png) no-repeat;
 }
 
 .cautionBox .txt {
@@ -833,7 +833,7 @@
   width: 18px;
   height: 18px;
   margin: 0 8px -4px 0;
-  background: url(/resource/PC/images/trip/img_map.png);
+  background: url(/jejupass/resource/PC/images/trip/img_map.png);
 }
 
 .passMap .icoMapView {

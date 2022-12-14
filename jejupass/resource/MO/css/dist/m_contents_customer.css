@@ -115,15 +115,15 @@
 }
 
 .customer_menu li a.btAsk:after {
-  background: url(/resource/MO/images/customer/ask.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/customer/ask.svg) no-repeat;
 }
 
 .customer_menu li a.btPartner:after {
-  background: url(/resource/MO/images/customer/partner.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/customer/partner.svg) no-repeat;
 }
 
 .customer_menu li a.btBenefit:after {
-  background: url(/resource/MO/images/customer/benefit.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/customer/benefit.svg) no-repeat;
 }
 
 .noticeM {
@@ -196,7 +196,7 @@
 }
 
 .faqM .faqList_M li .btLink01:after {
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -28px -72px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -28px -72px;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
@@ -248,7 +248,7 @@
   height: 18px;
   margin: -9px 0 0 4px;
   border: none;
-  background: url(/resource/MO/images/customer/ic_x18_chevron_right_B.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/customer/ic_x18_chevron_right_B.svg) no-repeat;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
@@ -332,7 +332,7 @@
   margin-left: -12px;
   left: 0;
   margin-left: 0;
-  background: url(/resource/MO/images/common/ic_x24_call.png) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ic_x24_call.png) no-repeat;
 }
 
 .contactM .btnArea button p.kakao:before {
@@ -347,7 +347,7 @@
   margin-left: -12px;
   left: 0;
   margin-left: 0;
-  background: url(/resource/MO/images/common/ic_x24_cacaotalk.png) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ic_x24_cacaotalk.png) no-repeat;
 }
 
 .btLink_B {
@@ -400,7 +400,7 @@
 
 .noData.search p.txt:before {
   border-radius: 0;
-  background: url(/resource/MO/images/customer/no_search.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/customer/no_search.svg) no-repeat;
   background-position: 0 0;
 }
 
@@ -605,7 +605,7 @@
   right: 0;
   width: 12px;
   height: 12px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -28px -72px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -28px -72px;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -618,15 +618,15 @@
   right: 0;
   width: 12px;
   height: 12px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -28px -72px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -28px -72px;
 }
 
 .noData.infoType p.txt:before {
-  background: url(/resource/MO/images/mypage/noData_01.svg);
+  background: url(/jejupass/resource/MO/images/mypage/noData_01.svg);
 }
 
 .noData.noticeType p.txt:before {
-  background: url(/resource/MO/images/mypage/noData_02.svg);
+  background: url(/jejupass/resource/MO/images/mypage/noData_02.svg);
 }
 
 /*공지사항 FAQ*/
@@ -775,7 +775,7 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/MO/images/customer/ic_x18_more.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/customer/ic_x18_more.svg) no-repeat;
 }
 
 .askFrm .inpFrm.photo input {
@@ -886,7 +886,7 @@
   height: 14px;
   margin-top: -7px;
   margin-left: -7px;
-  background: url(/resource/MO/images/common/spr_layout.svg) no-repeat -300px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_layout.svg) no-repeat -300px 0;
 }
 
 /*고객센터 예약번호 조회*/

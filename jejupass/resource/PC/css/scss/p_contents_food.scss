@@ -6,7 +6,7 @@
 
 //서브메인
 .sub_main_search_area{position:relative;padding:32px 0 40px;
-    &:before{@include pseudo(100%,124px);top:0;padding-bottom:5px;background:$col_g100 url(/resource/PC/images/food/bg_main_search.png) repeat-x 0 100%;z-index:-1}
+    &:before{@include pseudo(100%,124px);top:0;padding-bottom:5px;background:$col_g100 url(/jejupass/resource/PC/images/food/bg_main_search.png) repeat-x 0 100%;z-index:-1}
     .inpFrm{width:600px;margin:0 auto;
         input[type=text]{width:520px;height:64px;padding-left:24px;color:$col_g900;font-size:rem(18px);border:0;border-radius:16px;box-shadow:0 8px 16px 0 rgba(32, 32, 32,.08);
             &::-webkit-input-placeholder{color:$col_g400;font-size:rem(18px);font-weight:400}
@@ -17,7 +17,7 @@
         .btIco.icDel{right:80px;width:64px;height:64px}
     }
    .sub_main_search{position:relative;@extend %textHidden;width:64px;height:64px;margin-left:13px;border-radius:16px;background:$col_primary;box-shadow:0 8px 16px 0 rgba(35, 0, 104, 0.16);
-        &:after{@include pseudo(24px,24px);background:url(/resource/PC/images/common/spr_layout.png) no-repeat -44px -26px}
+        &:after{@include pseudo(24px,24px);background:url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat -44px -26px}
     }
     .bgGray &{padding:64px 0 0;
         &:before{display:none}
@@ -341,7 +341,7 @@
                     label{color:$col_white;
                         &:before{background-image:url(#{$img_url}/common/ico_like_w.png)}
                     }   
-                    input:checked+label:before{background-image:url(/resource/PC/images/esg/ico_like_on.png)}
+                    input:checked+label:before{background-image:url(/jejupass/resource/PC/images/esg/ico_like_on.png)}
                 }
             }
         }
@@ -364,7 +364,7 @@
                         label{height:45px;padding:0;
                             &:before{background-image:url(#{$img_url}/food/ico_wish-off_b.png)}
                         }                        
-                        input:checked + label:before{background-image:url(/resource/PC/images/food/ico_wish-on.png)}
+                        input:checked + label:before{background-image:url(/jejupass/resource/PC/images/food/ico_wish-on.png)}
                     }
                     .btShare{position:relative;width:45px;height:45px;text-indent:-999em;z-index:10;
                         &:after{@include pseudo(24px,24px);background:url(#{$img_url}/food/ico_share_b.png) no-repeat}
@@ -376,7 +376,7 @@
                     label{color:$default_col;
                         &:before{background-image:url(#{$img_url}/common/ico_like_b.png)}
                     }   
-                    input:checked+label:before{background-image:url(/resource/PC/images/esg/ico_like_on.png)}
+                    input:checked+label:before{background-image:url(/jejupass/resource/PC/images/esg/ico_like_on.png)}
                 }
             }
         }
@@ -714,7 +714,7 @@
 }
 .compMap{overflow:hidden;height:300px;margin-top:21px;border-radius:8px}
 .proposalBox{position:relative;height:96px;margin-top:25px;padding:22px 32px 22px 96px;border-radius:8px;background-color:$col_g100;
-    &:before{@extend %pseudo_inab;top:24px;left:32px;width:48px;height:48px;border-radius:50%;background:$col_white url(/resource/PC/images/food/ico_proposal.png) no-repeat 50% 50%}
+    &:before{@extend %pseudo_inab;top:24px;left:32px;width:48px;height:48px;border-radius:50%;background:$col_white url(/jejupass/resource/PC/images/food/ico_proposal.png) no-repeat 50% 50%}
     .txt{display:block;margin-top:4px;color:$col_g600;
         em{color:$col_p600;font-weight:700}
     }

@@ -78,7 +78,7 @@
   height: 20px;
   margin-top: -10px;
   margin-left: -55px;
-  background: url(/resource/MO/images/common/BI_jejupass_W.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/BI_jejupass_W.svg) no-repeat;
 }
 
 .wrapper.completeWrapper header.sub_main > button.btSetting {
@@ -86,7 +86,7 @@
 }
 
 .wrapper.completeWrapper header.sub_main > button.btSetting:after {
-  background-image: url(/resource/MO/images/mypage/ic_x24_setting_w.svg);
+  background-image: url(/jejupass/resource/MO/images/mypage/ic_x24_setting_w.svg);
 }
 
 .wrapper.completeWrapper .btClose.subMain {
@@ -107,7 +107,7 @@
   height: 26px;
   margin-top: -13px;
   margin-left: -13px;
-  background: url(/resource/MO/images/mypage/ic_x24_close.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x24_close.svg) no-repeat;
 }
 
 .completePanel.subMain {
@@ -138,11 +138,11 @@
 }
 
 .completePanel.subMain.logout .btnArea button > p.logIn:after {
-  background: url(/resource/MO/images/mypage/ic_x18_login.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x18_login.svg) no-repeat;
 }
 
 .completePanel.subMain.logout .btnArea button > p.join:after {
-  background: url(/resource/MO/images/mypage/ic_x18_join.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x18_join.svg) no-repeat;
 }
 
 .completePanel.subMain .myMainInfo {
@@ -159,7 +159,7 @@
   height: 52px;
   border: 2px solid #fff;
   border-radius: 50%;
-  background: url(/resource/MO/images/mypage/default_img.png) top center/100% auto;
+  background: url(/jejupass/resource/MO/images/mypage/default_img.png) top center/100% auto;
 }
 
 .completePanel.subMain .myMainInfo .txt {
@@ -196,7 +196,7 @@
   width: 12px;
   height: 12px;
   margin-top: -6px;
-  background: url(/resource/MO/images/mypage/ic_x12_edit.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x12_edit.svg) no-repeat;
 }
 
 .completePanel.subMain .btnArea {
@@ -258,7 +258,7 @@
 }
 
 .boxCompCont.mypageComp .inner .infoList li a.num:after {
-  background: url(/resource/MO/images/mypage/blue_arr.png) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/blue_arr.png) no-repeat;
 }
 
 .boxCompCont.mypageComp .inner .infoList.ticket {
@@ -321,15 +321,15 @@
 }
 
 .contArea.myPage .boxType03 .inner .txt.bookMark:before {
-  background: url(/resource/MO/images/mypage/ic_x18_bookmark_w.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x18_bookmark_w.svg) no-repeat;
 }
 
 .contArea.myPage .boxType03 .inner .txt.opinion:before {
-  background: url(/resource/MO/images/mypage/ic_x18_fill_in_review.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x18_fill_in_review.svg) no-repeat;
 }
 
 .contArea.myPage .boxType03 .inner .txt.coupon:before {
-  background: url(/resource/MO/images/mypage/ic_x18_coupon.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x18_coupon.svg) no-repeat;
 }
 
 .contArea.myPage .boxType03 .inner .num {
@@ -386,7 +386,7 @@
 .contArea.myPage .grayList .noticeHis.forTrip .inner .noticeBox.limited .contArea.rent .inner .moreCont {
   height: 90px;
   padding-top: 0;
-  background: url(/resource/MO/images/mypage/bg_car.png) no-repeat center center;
+  background: url(/jejupass/resource/MO/images/mypage/bg_car.png) no-repeat center center;
 }
 
 .contArea.myPage .grayList .noticeHis.forTrip .inner .noticeBox.limited .contArea.rent .inner .moreCont:before {
@@ -407,7 +407,7 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/MO/images/mypage/icon_thunder.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/icon_thunder.svg) no-repeat;
 }
 
 .contArea.myPage .grayList .noticeHis.forTrip .inner .noticeBox.limited .contArea .inner {
@@ -430,7 +430,7 @@
   width: 26px;
   height: 26px;
   margin-left: -13px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -50px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -50px 0;
 }
 
 .contArea.myPage .grayList .noticeHis.forTrip .inner .noticeBox.limited .contArea .inner .moreCont .txt {
@@ -530,7 +530,7 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/MO/images/mypage/icon_gift.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/icon_gift.svg) no-repeat;
 }
 
 .contArea.myPage .grayList .noticeHis.forTrip .inner .noticeBox .subTit {
@@ -744,7 +744,7 @@
   right: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/MO/images/mypage/ic_x18_copy_G.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x18_copy_G.svg) no-repeat;
 }
 
 .contArea.myPage .grayList .noticeHis.forTrip .inner .noticeBox .contArea .inner .insideBox .infoList li span, .contArea.myPage .grayList .noticeHis.forTrip .inner .noticeBox .contArea .inner .insideBox .infoList li .txt_r {
@@ -804,7 +804,7 @@
   height: 14px;
   margin-top: -7px;
   margin-left: -7px;
-  background: url(/resource/MO/images/common/spr_layout.svg) no-repeat -300px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_layout.svg) no-repeat -300px 0;
 }
 
 .contArea.myPage .lstWrapper {
@@ -908,7 +908,7 @@
   height: 112px;
   margin-top: -56px;
   margin-left: -111px;
-  background: url(/resource/MO/images/dummy/@esg_sign.png) no-repeat;
+  background: url(/jejupass/resource/MO/images/dummy/@esg_sign.png) no-repeat;
 }
 
 /*마이페이지-내자산-포인트*/
@@ -1123,11 +1123,11 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/MO/images/mypage/ic_x18_arr_right.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x18_arr_right.svg) no-repeat;
 }
 
 .selectView .swiperWrap.swiperPaging.chargeDate .swiper-button-prev.swiper-button-disabled:before {
-  background: url(/resource/MO/images/mypage/ic_x18_chevron_right_blur.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x18_chevron_right_blur.svg) no-repeat;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -1158,13 +1158,13 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/MO/images/mypage/ic_x18_arr_right.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x18_arr_right.svg) no-repeat;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .selectView .swiperWrap.swiperPaging.chargeDate .swiper-button-next.swiper-button-disabled:before {
-  background: url(/resource/MO/images/mypage/ic_x18_chevron_right_blur.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x18_chevron_right_blur.svg) no-repeat;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
@@ -1343,7 +1343,7 @@
   left: 0;
   width: 24px;
   height: 24px;
-  background: url(/resource/MO/images/mypage/ic_x24_coffee_color.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x24_coffee_color.svg) no-repeat;
 }
 
 .boxVoucher.cafe .txt:after {
@@ -1620,7 +1620,7 @@
 .voucherT .ticketBox:after {
   top: 15px;
   height: 126px;
-  background: url(/resource/MO/images/food/bg_coupon-off.svg) #F8F8F8;
+  background: url(/jejupass/resource/MO/images/food/bg_coupon-off.svg) #F8F8F8;
 }
 
 .voucherT .ticketBox .inner {
@@ -1730,7 +1730,7 @@
 }
 
 .voucherT .expired .ticketBox:after {
-  background: url(/resource/MO/images/food/bg_couponGray.svg) #F8F8F8;
+  background: url(/jejupass/resource/MO/images/food/bg_couponGray.svg) #F8F8F8;
 }
 
 .voucherT .expired .sideArea {
@@ -1754,7 +1754,7 @@
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  background: url(/resource/MO/images/common/spr_coupon.svg) -52px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_coupon.svg) -52px 0;
 }
 
 .voucherT .expired .sideArea .refundAsk {
@@ -1781,7 +1781,7 @@
   width: 18px;
   height: 18px;
   margin-left: -9px;
-  background: url(/resource/MO/images/mypage/ic_x18_checked_R.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x18_checked_R.svg) no-repeat;
 }
 
 .voucherT .expired .sideArea .refundComp + span {
@@ -1795,7 +1795,7 @@
   top: 15px;
   bottom: 15px;
   height: 110px;
-  background: url(/resource/MO/images/food/bg_coupon-on.svg) #F8F8F8;
+  background: url(/jejupass/resource/MO/images/food/bg_coupon-on.svg) #F8F8F8;
 }
 
 .voucherT.purpleT .ticketBox .inner .tit {
@@ -1835,7 +1835,7 @@
   height: 80px;
   margin-top: -40px;
   margin-left: -7px;
-  background: url(/resource/MO/images/mypage/BI_jejupass.png) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/BI_jejupass.png) no-repeat;
 }
 
 .voucherT.cafePass li .ticketBox:after {
@@ -1861,11 +1861,11 @@
 
 .voucherT.cafePass li.expired .inner strong.tit:before {
   top: 2px;
-  background: url(/resource/MO/images/mypage/ic_x24_coffee_G.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x24_coffee_G.svg) no-repeat;
 }
 
 .voucherT.cafePass li.expired .inner strong.cupType:before {
-  background: url(/resource/MO/images/mypage/ic_x24_coffee_cup_G.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x24_coffee_cup_G.svg) no-repeat;
 }
 
 .voucherT.cafePass li.expired .inner .voucherBt {
@@ -1893,7 +1893,7 @@
   width: 18px;
   height: 18px;
   margin-left: -9px;
-  background: url(/resource/MO/images/mypage/ic_x18_checked_R.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x18_checked_R.svg) no-repeat;
 }
 
 .voucherT.cafePass li.expired .sideArea .refund_end + .txt {
@@ -1928,7 +1928,7 @@
   left: 0px;
   width: 24px;
   height: 24px;
-  background: url(/resource/MO/images/mypage/ic_x24_coffee.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x24_coffee.svg) no-repeat;
   z-index: 3;
 }
 
@@ -1940,7 +1940,7 @@
 }
 
 .voucherT.cafePass .inner strong.tit.cupType:before {
-  background: url(/resource/MO/images/mypage/ic_x24_coffee_cup.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x24_coffee_cup.svg) no-repeat;
 }
 
 .voucherT.cafePass .inner .deadLine, .voucherT.cafePass .inner .time {
@@ -2275,7 +2275,7 @@
 .voucherT.cafePass.payBox .ticketBox:after {
   top: 10px;
   height: 90px;
-  background: url(/resource/MO/images/food/bg_coupon-on.svg) #F8F8F8;
+  background: url(/jejupass/resource/MO/images/food/bg_coupon-on.svg) #F8F8F8;
 }
 
 .voucherT.cafePass.payBox .sideArea {
@@ -2294,7 +2294,7 @@
   height: 80px;
   margin-top: -40px;
   margin-left: -7px;
-  background: url(/resource/MO/images/common/bi_logo_v.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/bi_logo_v.svg) no-repeat;
 }
 
 /*마이페이지-내자산-쿠폰함, 프로모션코드*/
@@ -2400,7 +2400,7 @@
   left: 0;
   width: 12px;
   height: 12px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -285px -55px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -285px -55px;
 }
 
 .couponTit {
@@ -2493,7 +2493,7 @@
   left: auto;
   right: 28px;
   margin-left: 0;
-  background: url(/resource/MO/images/mypage/ic_x18_copy.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x18_copy.svg) no-repeat;
 }
 
 .couponList.promotion > li .couponCont:before {
@@ -2575,7 +2575,7 @@
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  background: url(/resource/MO/images/common/spr_coupon.svg) no-repeat -78px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_coupon.svg) no-repeat -78px 0;
 }
 
 .flagList .allUse {
@@ -2638,7 +2638,7 @@
 
 /*마이페이지-알림함*/
 .wrapper header > button.btSetting:after {
-  background: url(/resource/MO/images/mypage/ic_x24_setting.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x24_setting.svg) no-repeat;
 }
 
 .grayList.height100 {
@@ -2728,7 +2728,7 @@
   width: 12px;
   height: 12px;
   margin-top: -6px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -28px -72px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -28px -72px;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
@@ -2746,7 +2746,7 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/MO/images/mypage/icon_gift.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/icon_gift.svg) no-repeat;
 }
 
 .noticeHis .inner .noticeBox .contArea .innerTxt .category.plane:before {
@@ -2756,7 +2756,7 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/MO/images/mypage/icon_plane.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/icon_plane.svg) no-repeat;
 }
 
 .noticeHis .inner .noticeBox .contArea .innerTxt .txt {
@@ -3049,7 +3049,7 @@
   left: 0;
   width: 36px;
   height: 36px;
-  background: url(/resource/MO/images/dummy/owner.png) no-repeat;
+  background: url(/jejupass/resource/MO/images/dummy/owner.png) no-repeat;
 }
 
 .reviewList .reviewCont .ownerView .toggleList {
@@ -3063,7 +3063,7 @@
 }
 
 .reviewList .reviewCont .ownerView .toggleList .toggleBtn[aria-expanded=true]:after {
-  background: url(/resource/MO/images/mypage/ic_x16_loadless.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x16_loadless.svg) no-repeat;
 }
 
 .reviewList .reviewCont .ownerView .toggleList .toggleBtn:before {
@@ -3084,7 +3084,7 @@
   border: none;
   -webkit-transform: none;
           transform: none;
-  background: url(/resource/MO/images/mypage/ic_x16_loadmore.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x16_loadmore.svg) no-repeat;
 }
 
 .reviewList .reviewCont .ownerView .toggleList .toggleCont {
@@ -3133,7 +3133,7 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/MO/images/mypage/ic_x18_delete.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x18_delete.svg) no-repeat;
 }
 
 /*마이페이지-북마크*/
@@ -3172,7 +3172,7 @@
   right: 0;
   width: 24px;
   height: 24px;
-  background: url(/resource/MO/images/mypage/ic_x24_bookmark.svg) no-repeat center center;
+  background: url(/jejupass/resource/MO/images/mypage/ic_x24_bookmark.svg) no-repeat center center;
 }
 
 .photoList.resultList.markList .txtInfo {
@@ -3405,7 +3405,7 @@
   width: 12px;
   height: 12px;
   margin-top: -6px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -42px -72px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -42px -72px;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
@@ -3468,7 +3468,7 @@
   width: 100%;
   height: 100%;
   font-size: 0;
-  background: url(/resource/MO/images/mypage/default_img.png);
+  background: url(/jejupass/resource/MO/images/mypage/default_img.png);
 }
 
 .photoArea .fileView.inpFrm label figure {
@@ -3491,7 +3491,7 @@
   bottom: 0;
   width: 24px;
   height: 24px;
-  background: url(/resource/MO/images/mypage/btn_photoplus.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/btn_photoplus.svg) no-repeat;
 }
 
 .infoEdit .myInfoFrm .inpFrm .inpA.inpBtns button {
@@ -3580,7 +3580,7 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/MO/images/common/bg_sorting.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/bg_sorting.svg) no-repeat;
 }
 
 .payment .paymentL li:last-child .cardWrap {
@@ -3635,7 +3635,7 @@
   height: 14px;
   margin-top: -7px;
   margin-left: -7px;
-  background: url(/resource/MO/images/common/spr_layout.svg) no-repeat -300px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_layout.svg) no-repeat -300px 0;
 }
 
 .payment .noData {
@@ -3645,12 +3645,12 @@
 
 .payment .noData.card p.txt:before {
   border-radius: 0;
-  background: url(/resource/MO/images/mypage/no_card.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/no_card.svg) no-repeat;
 }
 
 .payment .noData.account p.txt:before {
   border-radius: 0;
-  background: url(/resource/MO/images/mypage/no_account.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/mypage/no_account.svg) no-repeat;
 }
 
 .cardInfo .inputWrapper {
@@ -4115,7 +4115,7 @@
   right: 30px;
   bottom: 0;
   height: 10px;
-  background: url(/resource/MO/images/trip/bg_ticket.png) round 0 0/34px rgba(0, 0, 0, 0.8);
+  background: url(/jejupass/resource/MO/images/trip/bg_ticket.png) round 0 0/34px rgba(0, 0, 0, 0.8);
 }
 
 /*마이페이지-예약내역-예약취소*/

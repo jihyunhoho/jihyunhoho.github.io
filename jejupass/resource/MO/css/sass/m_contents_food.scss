@@ -523,7 +523,7 @@ ul + .icoMore{display:block;margin:20px auto 0}
     .searchIconBox{position:relative;width:calc(100%);
         .searchIcon{width:calc(100% - 56px)}
         .btnM{@extend %textHidden;position:absolute;top:0;right:0;width:48px;background-color:$col_p200;background-repeat:no-repeat;background-position:50% 50%;background-size:18px}
-        .btMapSch{background-image:url(/resource/MO/images/trip/img_btMapSch.png)}
+        .btMapSch{background-image:url(/jejupass/resource/MO/images/trip/img_btMapSch.png)}
     }
 }
 header>.searchIconBox{position:absolute;width:calc(100% - 86px);
@@ -543,8 +543,8 @@ header>.searchIconBox{position:absolute;width:calc(100% - 86px);
                 input[type=text]{height:48px;line-height:48px}
             }
             .btnM{@extend %textHidden;position:absolute;top:0;right:0;width:48px;background-color:$col_primary;background-repeat:no-repeat;background-position:50% 50%;background-size:18px}
-            .btMapChoice{background-image:url(/resource/MO/images/trip/img_mapW.png)}
-            .btMapCurrent{background-image:url(/resource/MO/images/common/ico_filter_list.svg)}
+            .btMapChoice{background-image:url(/jejupass/resource/MO/images/trip/img_mapW.png)}
+            .btMapCurrent{background-image:url(/jejupass/resource/MO/images/common/ico_filter_list.svg)}
          }
         ~ .layContainer{height:calc(100% - 116px);margin-top:116px;background:$col_g100;
             .passCompList{margin:0}

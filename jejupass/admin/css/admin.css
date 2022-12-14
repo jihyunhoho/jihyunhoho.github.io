@@ -441,7 +441,7 @@ td .inpPhoneWrap input{width:100px !important}
 	height: 12px;
 	margin-top: -6px;
 	margin-left: -6px;
-	background: url(/resource/PC/images/common/spr_ico.png) no-repeat;
+	background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat;
   }
   
   .swiperWrap .swiper-pagination .btAutoplays .btPlay {
@@ -480,7 +480,7 @@ td .inpPhoneWrap input{width:100px !important}
 	height: 12px;
 	margin-top: -6px;
 	margin-left: -6px;
-	background: url(/resource/PC/images/common/spr_ico.png) no-repeat -257px 0;
+	background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -257px 0;
   }
   
   .swiperWrap [class^=swiper-button].swiper-button-prev {
@@ -529,7 +529,7 @@ td .inpPhoneWrap input{width:100px !important}
 	height: 10px;
 	margin-top: -5px;
 	margin-left: -5px;
-	background: url(/resource/PC/images/common/spr_ico.png) no-repeat -270px 0;
+	background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -270px 0;
   }
   
   .swiperWrap .paging {

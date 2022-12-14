@@ -212,7 +212,7 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -66px -54px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -66px -54px;
 }
 
 .kf_payList > li strong.contR {
@@ -291,7 +291,7 @@
   height: 100%;
   display: block;
   border-left: 1px dashed #EAEAEA;
-  background: url(/resource/MO/images/common/bg_arr01.svg) no-repeat 50% 50%;
+  background: url(/jejupass/resource/MO/images/common/bg_arr01.svg) no-repeat 50% 50%;
   font-size: 0;
 }
 
@@ -346,7 +346,7 @@
 }
 
 .downloadWrap.downChange .link {
-  background-image: url(/resource/MO/images/common/bg_change.svg);
+  background-image: url(/jejupass/resource/MO/images/common/bg_change.svg);
 }
 
 .downloadWrap.downNone .kf_couponNum {
@@ -528,7 +528,7 @@
   margin-left: -13px;
   top: -1px;
   margin-top: 0;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -50px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -50px 0;
 }
 
 .kf_pointCharge .swiperAccount .kf_applyCont span {
@@ -935,7 +935,7 @@
   bottom: 0;
   width: 58px;
   border-left: 1px dashed #C5ABF9;
-  background: #F9F6FE url(/resource/MO/images/common/bi_logo_v.svg) no-repeat 50% 50%;
+  background: #F9F6FE url(/jejupass/resource/MO/images/common/bi_logo_v.svg) no-repeat 50% 50%;
   z-index: 1;
 }
 
@@ -990,7 +990,7 @@
   left: auto;
   right: 20px;
   margin-left: 0;
-  background: url(/resource/MO/images/common/spr_coupon.svg) no-repeat -104px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_coupon.svg) no-repeat -104px 0;
 }
 
 .couponList > li input {
@@ -1054,7 +1054,7 @@
   left: auto;
   right: 20px;
   margin-left: 0;
-  background: url(/resource/MO/images/common/spr_coupon.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/spr_coupon.svg) no-repeat;
   z-index: 10;
 }
 

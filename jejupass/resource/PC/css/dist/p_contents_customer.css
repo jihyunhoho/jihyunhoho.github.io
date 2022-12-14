@@ -212,7 +212,7 @@
   width: 40px;
   height: 40px;
   margin-top: -20px;
-  background: url(/resource/PC/images/customer/ic_x40_call.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/customer/ic_x40_call.png) no-repeat;
 }
 
 .contactM .infoBox .contactInfo a.kakao {
@@ -227,7 +227,7 @@
   width: 40px;
   height: 40px;
   margin-top: -20px;
-  background: url(/resource/PC/images/customer/ic_x40_kakao.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/customer/ic_x40_kakao.png) no-repeat;
 }
 
 .contactM .infoBox .contactInfo a.kakao:after {
@@ -455,7 +455,7 @@
   right: 0;
   width: 12px;
   height: 12px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat 0 -53px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat 0 -53px;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -467,7 +467,7 @@
   right: 0;
   width: 12px;
   height: 12px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat 0 -53px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat 0 -53px;
 }
 
 .pageMove {
@@ -514,7 +514,7 @@
   width: 9px;
   height: 14px;
   margin-top: -7px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -208px -29px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -208px -29px;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -532,7 +532,7 @@
   width: 9px;
   height: 14px;
   margin-top: -7px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -208px -29px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -208px -29px;
 }
 
 .pageMove a.num.now {
@@ -591,15 +591,15 @@
 }
 
 .noData.infoType .tit {
-  background-image: url(/resource/PC/images/common/bg_noData_01.png);
+  background-image: url(/jejupass/resource/PC/images/common/bg_noData_01.png);
 }
 
 .noData.noticeType .tit {
-  background-image: url(/resource/PC/images/common/bg_noData_02.png);
+  background-image: url(/jejupass/resource/PC/images/common/bg_noData_02.png);
 }
 
 .noData.search .tit {
-  background-image: url(/resource/PC/images/customer/no_search.png);
+  background-image: url(/jejupass/resource/PC/images/customer/no_search.png);
 }
 
 /*고객센터-공지사항*/
@@ -881,7 +881,7 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/PC/images/customer/ic_x18_more.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/customer/ic_x18_more.png) no-repeat;
 }
 
 .askFrm .inpFrm.photo .inpA, .partnerFrm .inpFrm.photo .inpA {
@@ -985,7 +985,7 @@
   height: 12px;
   margin-top: -6px;
   margin-left: -6px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat -69px -26px;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat -69px -26px;
 }
 
 .askFrm .inpFrm.photoAdd + .descBox, .partnerFrm .inpFrm.photoAdd + .descBox {
@@ -1083,13 +1083,13 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/PC/images/mypage/arr_x18_right.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/arr_x18_right.png) no-repeat;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .selectView .swiperWrap.swiperPaging .swiper-button-prev.swiper-button-disabled:before {
-  background: url(/resource/PC/images/mypage/arr_x18_right_g.png) no-repeat 0 0;
+  background: url(/jejupass/resource/PC/images/mypage/arr_x18_right_g.png) no-repeat 0 0;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
@@ -1124,7 +1124,7 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/PC/images/mypage/arr_x18_right.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/mypage/arr_x18_right.png) no-repeat;
 }
 
 .selectView .swiperWrap.swiperPaging .swiper-button-next:after {
@@ -1132,7 +1132,7 @@
 }
 
 .selectView .swiperWrap.swiperPaging .swiper-button-next.swiper-button-disabled:before {
-  background: url(/resource/PC/images/mypage/arr_x18_right_g.png) no-repeat 0 0;
+  background: url(/jejupass/resource/PC/images/mypage/arr_x18_right_g.png) no-repeat 0 0;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }

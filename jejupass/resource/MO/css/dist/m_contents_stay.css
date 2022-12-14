@@ -85,7 +85,7 @@
   height: 183px;
   padding: 32px 0 0 20px;
   margin: 32px -20px 0;
-  background: url(/resource/MO/images/stay/bg_theme.png) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/MO/images/stay/bg_theme.png) no-repeat 0 0/cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -145,14 +145,14 @@
   font-size: 1.2rem;
   font-weight: 900;
   text-align: center;
-  background: url(/resource/MO/images/common/bg_ranking.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/bg_ranking.svg) no-repeat;
   z-index: 100;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .typeRanking ul li + li + li + li:before {
-  background-image: url(/resource/MO/images/common/bg_ranking_low.svg);
+  background-image: url(/jejupass/resource/MO/images/common/bg_ranking_low.svg);
 }
 
 .typeRanking .tagList {
@@ -329,7 +329,7 @@
   margin-top: -6px;
   width: 12px;
   height: 12px;
-  background: url(/resource/MO/images/common/ico_deptharr.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_deptharr.svg) no-repeat;
 }
 
 .locationDepth + .txt {
@@ -1414,19 +1414,19 @@
 }
 
 .roominfo01 > span.ico-num:before {
-  background: url(/resource/MO/images/common/ico_num.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_num.svg) no-repeat;
 }
 
 .roominfo01 > span.ico-smoke:before {
-  background: url(/resource/MO/images/common/ico_nosmoking.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_nosmoking.svg) no-repeat;
 }
 
 .roominfo01 > span.ico-room:before {
-  background: url(/resource/MO/images/common/ico_bed.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_bed.svg) no-repeat;
 }
 
 .roominfo01 > span.ico-snack:before {
-  background: url(/resource/MO/images/common/ico_snack.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_snack.svg) no-repeat;
 }
 
 .roominfo01 > span.ico-num > span {
@@ -1865,7 +1865,7 @@
   width: 12px;
   height: 12px;
   margin-right: 6px;
-  background: url(/resource/MO/images/common/ico_plus.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_plus.svg) no-repeat;
 }
 
 .checkInOut {
@@ -1986,7 +1986,7 @@
 }
 
 .completePanel .message.stayMess {
-  background-image: url(/resource/MO/images/stay/ico_stay_reservation_complete.svg);
+  background-image: url(/jejupass/resource/MO/images/stay/ico_stay_reservation_complete.svg);
 }
 
 .stayTermsList li {
@@ -2049,7 +2049,7 @@
 }
 
 .completePanel .message.stayMess {
-  background: url(/resource/MO/images/common/ic_stay_complete.svg) no-repeat 50% 0;
+  background: url(/jejupass/resource/MO/images/common/ic_stay_complete.svg) no-repeat 50% 0;
 }
 
 .layPop.layBtm.popFilter .layContainer {
@@ -2066,7 +2066,7 @@
   width: 18px;
   height: 18px;
   margin-right: 6px;
-  background: url(/resource/MO/images/common/ico_super.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_super.svg) no-repeat;
   vertical-align: -3px;
 }
 
@@ -2168,11 +2168,11 @@
   display: inline-block;
   width: 22px;
   height: 20px;
-  background: url(/resource/MO/images/common/ico_star_gray.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_star_gray.svg) no-repeat;
 }
 
 .layPop.layBtm.popFilter .frmGrade input:checked + label:after {
-  background-image: url(/resource/MO/images/common/ico_star1.svg);
+  background-image: url(/jejupass/resource/MO/images/common/ico_star1.svg);
   background-size: 18px;
 }
 
@@ -2193,31 +2193,31 @@
   width: 48px;
   height: 24px;
   margin-left: -24px;
-  background: url(/resource/MO/images/common/ico_star1.svg) no-repeat center;
+  background: url(/jejupass/resource/MO/images/common/ico_star1.svg) no-repeat center;
 }
 
 .layPop.layBtm.popFilter .gradeMWrap .gradeMarke em:nth-of-type(1) {
-  background-image: url(/resource/MO/images/common/ico_star1.svg);
+  background-image: url(/jejupass/resource/MO/images/common/ico_star1.svg);
   left: 0%;
 }
 
 .layPop.layBtm.popFilter .gradeMWrap .gradeMarke em:nth-of-type(2) {
-  background-image: url(/resource/MO/images/common/ico_star2.svg);
+  background-image: url(/jejupass/resource/MO/images/common/ico_star2.svg);
   left: 25%;
 }
 
 .layPop.layBtm.popFilter .gradeMWrap .gradeMarke em:nth-of-type(3) {
-  background-image: url(/resource/MO/images/common/ico_star3.svg);
+  background-image: url(/jejupass/resource/MO/images/common/ico_star3.svg);
   left: 50%;
 }
 
 .layPop.layBtm.popFilter .gradeMWrap .gradeMarke em:nth-of-type(4) {
-  background-image: url(/resource/MO/images/common/ico_star4.svg);
+  background-image: url(/jejupass/resource/MO/images/common/ico_star4.svg);
   left: 75%;
 }
 
 .layPop.layBtm.popFilter .gradeMWrap .gradeMarke em:nth-of-type(5) {
-  background-image: url(/resource/MO/images/common/ico_star5.svg);
+  background-image: url(/jejupass/resource/MO/images/common/ico_star5.svg);
   left: 100%;
 }
 
@@ -2254,11 +2254,11 @@
 }
 
 .storyVisual .frmInp.like label:before {
-  background-image: url(/resource/MO/images/common/ico_like_w.svg);
+  background-image: url(/jejupass/resource/MO/images/common/ico_like_w.svg);
 }
 
 .storyVisual .frmInp.like input:checked + label:before {
-  background: transparent url(/resource/MO/images/common/spr_ico.svg) no-repeat -150px 0;
+  background: transparent url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -150px 0;
 }
 
 .storyVisual img {
@@ -2322,11 +2322,11 @@
 }
 
 .storyVisual.type02 .frmInp.like label:before {
-  background-image: url(/resource/MO/images/common/ico_like_w.svg);
+  background-image: url(/jejupass/resource/MO/images/common/ico_like_w.svg);
 }
 
 .storyVisual.type02 .frmInp.like input:checked + label:before {
-  background: transparent url(/resource/MO/images/common/spr_ico.svg) no-repeat -150px 0;
+  background: transparent url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -150px 0;
 }
 
 .storyVisual ~ .offerArea.storyInfo {
@@ -2420,7 +2420,7 @@
   margin-left: -9px;
   left: 0;
   margin-left: 0;
-  background: url(/resource/MO/images/common/ico_location.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_location.svg) no-repeat;
 }
 
 .storyCont .storyPointBox .pointNum {
@@ -2487,7 +2487,7 @@
   height: 40px;
   margin-top: -20px;
   margin-left: -20px;
-  background: url(/resource/MO/images/common/ico_play.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_play.svg) no-repeat;
 }
 
 .storyCont .contVid .vidTit {
@@ -2566,7 +2566,7 @@
   right: 20px;
   width: 12px;
   height: 12px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -14px -72px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -14px -72px;
 }
 
 .storyCont .stayBox figure {
@@ -2707,7 +2707,7 @@
   right: 20px;
   width: 12px;
   height: 12px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -14px -72px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -14px -72px;
 }
 
 .recAllList li figure {
@@ -2842,12 +2842,12 @@
 }
 
 .noData.noStay p.txt:before {
-  background: url(/resource/MO/images/stay/ic_x50_noData_s.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/stay/ic_x50_noData_s.svg) no-repeat;
   border-radius: 0;
 }
 
 .noData.noReview p.txt:before {
-  background: url(/resource/MO/images/common/ic_x50_noReview.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ic_x50_noReview.svg) no-repeat;
   border-radius: 0;
 }
 
@@ -2985,7 +2985,7 @@
   width: 18px;
   height: 18px;
   margin-right: 4px;
-  background: url(/resource/MO/images/common/ic_18_point.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ic_18_point.svg) no-repeat;
   vertical-align: middle;
 }
 

@@ -377,7 +377,7 @@
             .desc{margin-top:4px}
             & +li{margin-top:16px}
             &:before{@extend %pseudo_inab;top:0;left:0;width:72px;height:72px;padding:24px;border:solid 1px $col_g200;border-radius:50%;background-color:$col_white;z-index:1;box-sizing:border-box}
-            &:after{@extend %pseudo_inab;top:24px;left:24px;width:24px;height:24px;background:url(/resource/MO/images/common/spr_quick.svg) no-repeat;z-index:3}
+            &:after{@extend %pseudo_inab;top:24px;left:24px;width:24px;height:24px;background:url(/jejupass/resource/MO/images/common/spr_quick.svg) no-repeat;z-index:3}
             &:nth-child(2):after{background-position:-26px 0}
             &:nth-child(3):after{background-position:-78px 0}            
         }
@@ -642,8 +642,8 @@
         }
     }
 }
-.ambassador{min-height:862px;margin:20px 0;padding-top:36px;background:url(/resource/MO/images/esg/bg_ambassador.png) no-repeat 50% 0/100% 100%;
-    &:before{content:'';display:block;height:127px;background:url(/resource/MO/images/esg/img_bi.png) no-repeat 50% 50%/contain}
+.ambassador{min-height:862px;margin:20px 0;padding-top:36px;background:url(/jejupass/resource/MO/images/esg/bg_ambassador.png) no-repeat 50% 0/100% 100%;
+    &:before{content:'';display:block;height:127px;background:url(/jejupass/resource/MO/images/esg/img_bi.png) no-repeat 50% 50%/contain}
     .pageTit{margin-top:43px;font-size:rem(22px);text-align:center;
         &:after{display:none}
     }

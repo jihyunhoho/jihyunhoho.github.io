@@ -117,7 +117,7 @@
 }
 .icoMapView{overflow:hidden;position:relative;display:block;width:100%;height:48px;line-height:48px;text-align:center;border:1px solid $col_g500;border-radius:8px;background:$col_white;
     span{color:$col_g800;font-weight:$weight600;
-        &:before{content:'';display:inline-block;width:18px;height:18px;margin:0 8px -4px 0;background:url(/resource/MO/images/trip/img_map.png)}
+        &:before{content:'';display:inline-block;width:18px;height:18px;margin:0 8px -4px 0;background:url(/jejupass/resource/MO/images/trip/img_map.png)}
     }
 }
 .titLay.tLeft{padding-left:20px !important;text-align:left !important}
@@ -176,7 +176,7 @@
     .reservationDate{position:relative;width:100%;height:56px;margin:32px 0 32px;padding:0 20px;line-height:56px;text-align:left;border:1px solid $col_g200;border-radius:8px;
         &:before{@extend %pseudo_inab;top:24px;right:20px;width:6px;height:6px;border:solid $col_g800;border-width:2px 0 0 2px;@include prefix(transform,rotate(-135deg))}
         .date{color:$col_g900;font-weight:$weight600;
-            &:before{content:'';display:inline-block;width:18px;height:18px;margin:0 8px -4px 0;background:url(/resource/MO/images/trip/img_date.png)}
+            &:before{content:'';display:inline-block;width:18px;height:18px;margin:0 8px -4px 0;background:url(/jejupass/resource/MO/images/trip/img_date.png)}
         }
     }
 }
@@ -191,9 +191,9 @@
     .boxCompCont{margin-top:calc(-100%/5)}
 }
 .completePanel .message{
-    &.donateMess{background:url(/resource/MO/images/common/ic_esg_complete.svg) no-repeat 50% 0} //예약
-    &.paymentMess{background:url(/resource/MO/images/common/ic_trip_complete.svg) no-repeat 50% 0} //티켓결제완료
-    // &.ticketMess{background:url(/resource/MO/images/common/ic_ticket_complete.svg) no-repeat 50% 0} //티켓사용완료
+    &.donateMess{background:url(/jejupass/resource/MO/images/common/ic_esg_complete.svg) no-repeat 50% 0} //예약
+    &.paymentMess{background:url(/jejupass/resource/MO/images/common/ic_trip_complete.svg) no-repeat 50% 0} //티켓결제완료
+    // &.ticketMess{background:url(/jejupass/resource/MO/images/common/ic_ticket_complete.svg) no-repeat 50% 0} //티켓사용완료
 }
 .boxCompCont.esgComp{
     .bannerType{margin:40px 0 32px} 
@@ -264,7 +264,7 @@
     +.titDep4{padding-top:32px}
 }
 .descInfo{position:relative;margin:3px 0 14px;padding-left:22px;font-size:rem(14px);
-    &:before{content:'';position:absolute;top:2px;left:0;display:inline-block;width:18px;height:18px;background:url(/resource/MO/images/common/spr_ico.svg) no-repeat -14px -26px}
+    &:before{content:'';position:absolute;top:2px;left:0;display:inline-block;width:18px;height:18px;background:url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -14px -26px}
 }
 .foodRankingArea{
     li:nth-child(n+2){margin-top:12px}

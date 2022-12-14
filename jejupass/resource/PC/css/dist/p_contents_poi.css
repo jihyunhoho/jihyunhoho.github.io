@@ -143,7 +143,7 @@
   margin-top: -9px;
   border: none;
   border-radius: 0;
-  background: url(/resource/PC/images/food/spr_kind.png) no-repeat 0 -20px;
+  background: url(/jejupass/resource/PC/images/food/spr_kind.png) no-repeat 0 -20px;
 }
 
 .poiWrap .mapCont .cateWrap .frmInp.pass label:before {
@@ -227,7 +227,7 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/PC/images/common/ic_x18_mapview_zoom_out.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/ic_x18_mapview_zoom_out.png) no-repeat;
 }
 
 .poiWrap .mapCont .mapArea button.location {
@@ -244,7 +244,7 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/PC/images/common/ic_x18_mapmy.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/ic_x18_mapmy.png) no-repeat;
 }
 
 .poiWrap .rightCont {
@@ -320,7 +320,7 @@
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: url(/resource/PC/images/common/ico_flag.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/ico_flag.png) no-repeat;
   vertical-align: middle;
 }
 
@@ -410,7 +410,7 @@
   margin-left: -9px;
   left: 0;
   margin-left: 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -85px -30px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -85px -30px;
 }
 
 .poiWrap .kf_innergray .kf_flightInner .inpA.result {
@@ -445,7 +445,7 @@
   width: 18px;
   height: 18px;
   margin-right: 4px;
-  background: url(/resource/PC/images/food/spr_kind.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/spr_kind.png) no-repeat;
   vertical-align: -2px;
 }
 
@@ -575,7 +575,7 @@
   height: 31px;
   margin-top: -15.5px;
   margin-left: -14.5px;
-  background: url(/resource/PC/images/common/ic_x36_scrollDown.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/ic_x36_scrollDown.png) no-repeat;
 }
 
 .companyArea .companyInfo {
@@ -785,7 +785,7 @@
 .companyArea .comInfo.wideType .imgCont.bg {
   width: 100vw;
   height: 1016px;
-  background: url(/resource/PC/images/dummy/@com_img09.jpg) no-repeat top center/100% 1016px;
+  background: url(/jejupass/resource/PC/images/dummy/@com_img09.jpg) no-repeat top center/100% 1016px;
 }
 
 .companyArea .comInfo.wideType .imgCont.bg .wrapper {

@@ -323,7 +323,7 @@ body {
   height: 26px;
   margin-top: -13px;
   margin-left: -70px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat;
 }
 
 .wrapper header nav {
@@ -402,7 +402,7 @@ body {
   height: 24px;
   margin-top: -12px;
   margin-left: -12px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat 0 -26px;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat 0 -26px;
 }
 
 .wrapper header nav .quickSearchWrap .btSearch:hover:after {
@@ -452,7 +452,7 @@ body {
   width: 18px;
   height: 18px;
   margin-top: -10px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat -84px -26px;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat -84px -26px;
 }
 
 .wrapper header .topUtil > a.login:before {
@@ -667,7 +667,7 @@ body {
   font-size: 2.6rem;
   font-weight: 900;
   font-family: NanumSquareR, -apple-system, BlinkMacSystemFont, Open Sans, Helvetica Neue, sans-serif;
-  background: url(/resource/PC/images/common/bg_comp01.png) no-repeat 50% 0;
+  background: url(/jejupass/resource/PC/images/common/bg_comp01.png) no-repeat 50% 0;
 }
 
 .wrapper.completeWrapper .container .contents {
@@ -899,7 +899,7 @@ footer .footTop .footAppDown {
   padding: 43px 39px 0 39px;
   border: solid #EAEAEA;
   border-width: 0 1px;
-  background: url(/resource/PC/images/common/bg_appDown.png) no-repeat 265px 48px;
+  background: url(/jejupass/resource/PC/images/common/bg_appDown.png) no-repeat 265px 48px;
 }
 
 footer .footTop .footAppDown h5 {
@@ -947,7 +947,7 @@ footer .footTop .footAppDown .appLink > li button:before {
   height: 24px;
   margin: 0 2px 2px 0;
   vertical-align: middle;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat 0 -132px;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat 0 -132px;
 }
 
 footer .footTop .footAppDown .appLink > li button.ios:before {
@@ -1025,7 +1025,7 @@ footer .footTop .footCenter .snsList > a:after {
   height: 32px;
   margin-top: -16px;
   margin-left: -16px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat -52px -132px;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat -52px -132px;
 }
 
 footer .footTop .footCenter .snsList > a.insta:after {
@@ -1042,7 +1042,7 @@ footer .footTop .footCenter .snsList > a.blog:after {
 
 footer .footBtm {
   height: 304px;
-  background: #18225c url(/resource/PC/images/common/bg_footPattern.png) repeat-x;
+  background: #18225c url(/jejupass/resource/PC/images/common/bg_footPattern.png) repeat-x;
 }
 
 footer .footBtm .footInner {
@@ -1180,7 +1180,7 @@ footer .footBtm .footEtc span {
   width: 72px;
   height: 72px;
   margin-left: 16px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat 0 -165px;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat 0 -165px;
 }
 
 footer .footBtm .footEtc span + span {
@@ -1215,7 +1215,7 @@ aside button:after {
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat -24px -26px;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat -24px -26px;
 }
 
 aside .myViewGo {
@@ -1280,7 +1280,7 @@ aside.footON {
   height: 18px;
   margin-left: 6px;
   vertical-align: -2px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -185px -30px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -185px -30px;
 }
 
 .titDep1 {
@@ -1483,7 +1483,7 @@ textarea::placeholder {
   margin-left: -9px;
   left: 13px;
   margin-left: 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -12px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -12px 0;
   z-index: 2;
 }
 
@@ -2018,7 +2018,7 @@ input[type=text].inpL::placeholder, input[type=password].inpL::placeholder {
   margin-left: -9px;
   left: 2px;
   margin-left: 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -258px -30px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -258px -30px;
 }
 
 .frmInp.txt {
@@ -2128,7 +2128,7 @@ input[type=text].inpL::placeholder, input[type=password].inpL::placeholder {
 }
 
 .frmInp.frmTotal input:checked + label:before {
-  background: #fff url(/resource/PC/images/common/spr_ico.png) no-repeat -393px 0;
+  background: #fff url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -393px 0;
 }
 
 .frmInp.frmTotal input:checked + label .false {
@@ -2162,7 +2162,7 @@ input[type=text].inpL::placeholder, input[type=password].inpL::placeholder {
   top: 1px;
   margin: 0;
   border: none;
-  background: #fff url(/resource/PC/images/common/spr_ico.png) no-repeat -375px 0;
+  background: #fff url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -375px 0;
 }
 
 .frmInp.frmTotal label:after {
@@ -2539,7 +2539,7 @@ input[type=text].inpL::placeholder, input[type=password].inpL::placeholder {
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat;
 }
 
 .btIco.icoReset:after {
@@ -2623,7 +2623,7 @@ input[type=text].inpL::placeholder, input[type=password].inpL::placeholder {
   left: auto;
   right: 0;
   margin-left: 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -84px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -84px 0;
 }
 
 .icDel {
@@ -2680,7 +2680,7 @@ input[type=text].inpL::placeholder, input[type=password].inpL::placeholder {
   margin-left: -6px;
   left: auto;
   right: 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -392px -30px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -392px -30px;
 }
 
 .btLink.icArr.light {
@@ -2750,7 +2750,7 @@ input[type=text].inpL::placeholder, input[type=password].inpL::placeholder {
   left: auto;
   right: 24px;
   margin: -6px 0 0 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -14px -50px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -14px -50px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -2886,7 +2886,7 @@ p.listType01:before {
   top: 3px;
   left: 0;
   margin: 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -240px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -240px 0;
 }
 
 .listType02.small > li {
@@ -2907,7 +2907,7 @@ p.listType01:before {
   top: 4px;
   left: 0;
   margin: 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -226px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -226px 0;
 }
 
 p.listType02 {
@@ -2931,7 +2931,7 @@ p.listType02:before {
   top: 3px;
   left: 0;
   margin: 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -240px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -240px 0;
 }
 
 p.listType02.small {
@@ -2952,7 +2952,7 @@ p.listType02.small:before {
   top: 4px;
   left: 0;
   margin: 0;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -226px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -226px 0;
 }
 
 p.listType02.typePoint {
@@ -3026,7 +3026,7 @@ p.listType03:before {
   left: 0;
   width: 20px;
   height: 20px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -144px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -144px 0;
 }
 
 .guideInfo .listType01 {
@@ -3059,7 +3059,7 @@ p.listType03:before {
   left: 0;
   width: 16px;
   height: 16px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -164px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -164px 0;
 }
 
 .guideInfo.boxType01 .listType01 {
@@ -3581,7 +3581,7 @@ p.listType03:before {
   height: 24px;
   margin-top: -12px;
   margin-left: -12px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat -168px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat -168px 0;
 }
 
 .layPop .btnArea {
@@ -3816,7 +3816,7 @@ p.listType03:before {
   height: 12px;
   margin-top: -6px;
   margin-left: -6px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat;
 }
 
 .swiperWrap .swiper-pagination .btAutoplays .btPlay {
@@ -3855,7 +3855,7 @@ p.listType03:before {
   height: 12px;
   margin-top: -6px;
   margin-left: -6px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -257px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -257px 0;
 }
 
 .swiperWrap [class^=swiper-button].swiper-button-prev {
@@ -3904,7 +3904,7 @@ p.listType03:before {
   height: 10px;
   margin-top: -5px;
   margin-left: -5px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -270px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -270px 0;
 }
 
 .swiperWrap .paging {
@@ -3993,7 +3993,7 @@ p.listType03:before {
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -327px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -327px 0;
 }
 
 .tooltipWrap .tooltipCont {
@@ -4035,7 +4035,7 @@ p.listType03:before {
   height: 12px;
   margin-top: -6px;
   margin-left: -6px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -361px 0;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -361px 0;
 }
 
 .tooltipWrap.typeSmall .btnTool:after {

@@ -84,7 +84,7 @@
   margin-left: -50%;
   top: 0;
   padding-bottom: 5px;
-  background: #F8F8F8 url(/resource/PC/images/food/bg_main_search.png) repeat-x 0 100%;
+  background: #F8F8F8 url(/jejupass/resource/PC/images/food/bg_main_search.png) repeat-x 0 100%;
   z-index: -1;
 }
 
@@ -156,7 +156,7 @@
   height: 24px;
   margin-top: -12px;
   margin-left: -12px;
-  background: url(/resource/PC/images/common/spr_layout.png) no-repeat -44px -26px;
+  background: url(/jejupass/resource/PC/images/common/spr_layout.png) no-repeat -44px -26px;
 }
 
 .bgGray .sub_main_search_area {
@@ -562,7 +562,7 @@
   height: 48px;
   font-size: 2.1rem;
   line-height: 2.2;
-  background-image: url(/resource/PC/images/food/bg_rankWinB.png);
+  background-image: url(/jejupass/resource/PC/images/food/bg_rankWinB.png);
 }
 
 .foodRankingArea ol.rankList li:first-child .rankBox figure, .foodRankingArea ol.rankList li:nth-child(2) .rankBox figure {
@@ -608,7 +608,7 @@
 }
 
 .foodRankingArea ol.rankList li:nth-child(3) .rankBox .rankNum {
-  background-image: url(/resource/PC/images/food/bg_rankWinS.png);
+  background-image: url(/jejupass/resource/PC/images/food/bg_rankWinS.png);
 }
 
 .foodRankingArea ol.rankList li .rankBox {
@@ -644,7 +644,7 @@
   line-height: 2;
   text-align: center;
   z-index: 10;
-  background: url(/resource/PC/images/food/bg_rank.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/bg_rank.png) no-repeat;
 }
 
 .foodRankingArea ol.rankList li .rankBox figure {
@@ -847,7 +847,7 @@
   height: 18px;
   margin-right: 4px;
   vertical-align: middle;
-  background: url(/resource/PC/images/food/ico_eye.png) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/PC/images/food/ico_eye.png) no-repeat 0 0/cover;
 }
 
 .themeViewArea .themeVisual figure .pageInfo span {
@@ -879,7 +879,7 @@
   height: 24px;
   margin-top: -12px;
   margin-left: -12px;
-  background: url(/resource/PC/images/food/ico_share.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_share.png) no-repeat;
 }
 
 .themeViewArea .themeVisual figure:after {
@@ -1113,7 +1113,7 @@
   width: 18px;
   height: 18px;
   margin: 0 0 -3px 0;
-  background: url(/resource/PC/images/food/ico_like-on.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_like-on.png) no-repeat;
 }
 
 .icoScore {
@@ -1126,7 +1126,7 @@
   width: 18px;
   height: 18px;
   margin: 0 0 -3px 0;
-  background: url(/resource/PC/images/food/ico_starx18.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_starx18.png) no-repeat;
 }
 
 .icoScore i {
@@ -1443,7 +1443,7 @@
   height: 24px;
   margin-top: -12px;
   margin-left: -12px;
-  background: url(/resource/PC/images/food/ico_share.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_share.png) no-repeat;
 }
 
 .storyArea .visualPic figcaption .utilBox .btShare:before {
@@ -1474,11 +1474,11 @@
 }
 
 .storyArea .visualPic figcaption .utilBox .frmLike label:before {
-  background-image: url(/resource/PC/images/common/ico_like_w.png);
+  background-image: url(/jejupass/resource/PC/images/common/ico_like_w.png);
 }
 
 .storyArea .visualPic figcaption .utilBox .frmLike input:checked + label:before {
-  background-image: url(/resource/PC/images/esg/ico_like_on.png);
+  background-image: url(/jejupass/resource/PC/images/esg/ico_like_on.png);
 }
 
 .storyArea .storyCont {
@@ -1554,11 +1554,11 @@
 }
 
 .storyArea .storyCont.magazine .storyTit .utilBox .btWish.frmInp label:before {
-  background-image: url(/resource/PC/images/food/ico_wish-off_b.png);
+  background-image: url(/jejupass/resource/PC/images/food/ico_wish-off_b.png);
 }
 
 .storyArea .storyCont.magazine .storyTit .utilBox .btWish.frmInp input:checked + label:before {
-  background-image: url(/resource/PC/images/food/ico_wish-on.png);
+  background-image: url(/jejupass/resource/PC/images/food/ico_wish-on.png);
 }
 
 .storyArea .storyCont.magazine .storyTit .utilBox .btShare {
@@ -1579,7 +1579,7 @@
   height: 24px;
   margin-top: -12px;
   margin-left: -12px;
-  background: url(/resource/PC/images/food/ico_share_b.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_share_b.png) no-repeat;
 }
 
 .storyArea .storyCont.magazine .storyTit .utilBox .btShare:before {
@@ -1610,11 +1610,11 @@
 }
 
 .storyArea .storyCont.magazine .storyTit .frmLike label:before {
-  background-image: url(/resource/PC/images/common/ico_like_b.png);
+  background-image: url(/jejupass/resource/PC/images/common/ico_like_b.png);
 }
 
 .storyArea .storyCont.magazine .storyTit .frmLike input:checked + label:before {
-  background-image: url(/resource/PC/images/esg/ico_like_on.png);
+  background-image: url(/jejupass/resource/PC/images/esg/ico_like_on.png);
 }
 
 .storyArea .storyCont .compInfoBox {
@@ -1672,7 +1672,7 @@
   width: 18px;
   height: 18px;
   margin-top: -9px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -185px -30px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -185px -30px;
 }
 
 .storyArea .storyCont .compInfoBox .infoTxt .conUtil {
@@ -1825,7 +1825,7 @@
   height: 20px;
   margin: -2px 2px 0 0;
   vertical-align: middle;
-  background: url(/resource/PC/images/food/ico_location.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_location.png) no-repeat;
 }
 
 .storyArea .storyCont .recommend .pic {
@@ -1890,7 +1890,7 @@
   width: 18px;
   height: 18px;
   margin-top: -9px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -185px -30px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -185px -30px;
 }
 
 .recAllList li .infoTxt .conUtil {
@@ -2536,7 +2536,7 @@
   height: 24px;
   margin-top: -12px;
   margin-left: -12px;
-  background: url(/resource/PC/images/food/ico_wish-off.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_wish-off.png) no-repeat;
   border: none;
 }
 
@@ -2545,7 +2545,7 @@
 }
 
 .btWish.frmInp input:checked + label:before {
-  background: url(/resource/PC/images/food/ico_wish-on.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_wish-on.png) no-repeat;
 }
 
 .tagBox.frmBox li {
@@ -2626,7 +2626,7 @@
   height: 18px;
   margin-right: 4px;
   vertical-align: text-top;
-  background: url(/resource/PC/images/food/icon_notice.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/icon_notice.png) no-repeat;
 }
 
 .compNote.new {
@@ -2634,7 +2634,7 @@
 }
 
 .compNote.new:before {
-  background-image: url(/resource/PC/images/food/icon_new.png);
+  background-image: url(/jejupass/resource/PC/images/food/icon_new.png);
 }
 
 .compNote.sale {
@@ -2642,7 +2642,7 @@
 }
 
 .compNote.sale:before {
-  background-image: url(/resource/PC/images/food/icon_sale.png);
+  background-image: url(/jejupass/resource/PC/images/food/icon_sale.png);
 }
 
 .compNote.event {
@@ -2650,7 +2650,7 @@
 }
 
 .compNote.event:before {
-  background-image: url(/resource/PC/images/food/icon_gift.png);
+  background-image: url(/jejupass/resource/PC/images/food/icon_gift.png);
 }
 
 .compTit {
@@ -2724,11 +2724,11 @@
 }
 
 .compInfoWrap .compInfo dd a[href^=tel]:before {
-  background: url(/resource/PC/images/food/ico_tel.png) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/PC/images/food/ico_tel.png) no-repeat 0 0/cover;
 }
 
 .compInfoWrap .compInfo dd a[href^=www]:before {
-  background: url(/resource/PC/images/food/ico_site.png) no-repeat 0 0/cover;
+  background: url(/jejupass/resource/PC/images/food/ico_site.png) no-repeat 0 0/cover;
 }
 
 .compInfoWrap .compInfo dd.snsList .sns {
@@ -2749,19 +2749,19 @@
   left: 0;
   width: 32px;
   height: 32px;
-  background: url(/resource/PC/images/food/ico_sns-blog.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_sns-blog.png) no-repeat;
 }
 
 .compInfoWrap .compInfo dd.snsList .sns.bl:after {
-  background-image: url(/resource/PC/images/food/ico_sns-blog.png);
+  background-image: url(/jejupass/resource/PC/images/food/ico_sns-blog.png);
 }
 
 .compInfoWrap .compInfo dd.snsList .sns.fb:after {
-  background-image: url(/resource/PC/images/food/ico_sns-facebook.png);
+  background-image: url(/jejupass/resource/PC/images/food/ico_sns-facebook.png);
 }
 
 .compInfoWrap .compInfo dd.snsList .sns.in:after {
-  background-image: url(/resource/PC/images/food/ico_sns-instagram.png);
+  background-image: url(/jejupass/resource/PC/images/food/ico_sns-instagram.png);
 }
 
 .compInfoWrap .compInfo dt + dd {
@@ -2820,7 +2820,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: #fff url(/resource/PC/images/food/ico_proposal.png) no-repeat 50% 50%;
+  background: #fff url(/jejupass/resource/PC/images/food/ico_proposal.png) no-repeat 50% 50%;
 }
 
 .proposalBox .txt {
@@ -3163,7 +3163,7 @@
   display: inline-block;
   width: 53px;
   height: 45px;
-  background: url(/resource/PC/images/food/img_pig.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/img_pig.png) no-repeat;
 }
 
 .cpWrap .cpTxt {
@@ -3193,7 +3193,7 @@
   height: 24px;
   margin-right: 10px;
   vertical-align: top;
-  background: url(/resource/PC/images/food/ico_ticket.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_ticket.png) no-repeat;
 }
 
 .cpWrap.coupon.stayCp {
@@ -3215,7 +3215,7 @@
   height: 24px;
   margin-right: 10px;
   vertical-align: top;
-  background: url(/resource/PC/images/food/ico_pass.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_pass.png) no-repeat;
 }
 
 .ticketBox {
@@ -3250,7 +3250,7 @@
   bottom: 10px;
   right: 0;
   width: 6px;
-  background: url(/resource/PC/images/food/bg_coupon-off.png) repeat-y;
+  background: url(/jejupass/resource/PC/images/food/bg_coupon-off.png) repeat-y;
   z-index: 2;
 }
 
@@ -3283,7 +3283,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background: url(/resource/PC/images/common/bg_arr01.png) no-repeat 50% 50%;
+  background: url(/jejupass/resource/PC/images/common/bg_arr01.png) no-repeat 50% 50%;
   background-size: 12px 12px;
 }
 
@@ -3294,7 +3294,7 @@
   height: 24px;
   margin-right: 10px;
   vertical-align: top;
-  background: url(/resource/PC/images/food/ico_pass.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_pass.png) no-repeat;
 }
 
 .passOn .ticketBox {
@@ -3303,7 +3303,7 @@
 }
 
 .passOn .ticketBox:after {
-  background-image: url(/resource/PC/images/food/bg_coupon-on.png);
+  background-image: url(/jejupass/resource/PC/images/food/bg_coupon-on.png);
 }
 
 .passOn .ticketBox .rCont {
@@ -3371,11 +3371,11 @@
 }
 
 .coupon .ticketBox .rCont:after {
-  background-image: url(/resource/PC/images/common/bg_download.png);
+  background-image: url(/jejupass/resource/PC/images/common/bg_download.png);
 }
 
 .coupon .ticketBox.completed .rCont:after {
-  background-image: url(/resource/PC/images/common/bg_arr01.png);
+  background-image: url(/jejupass/resource/PC/images/common/bg_arr01.png);
 }
 
 .coupon .ticketBox .per {
@@ -3791,7 +3791,7 @@
   width: 160px;
   height: 39px;
   margin: 0 auto;
-  background: url(/resource/PC/images/food/ico_star.png) repeat-x;
+  background: url(/jejupass/resource/PC/images/food/ico_star.png) repeat-x;
   vertical-align: top;
 }
 
@@ -3801,19 +3801,19 @@
   left: 0;
   height: 32px;
   margin: 0 auto;
-  background: url(/resource/PC/images/food/ico_star-on.png) repeat-x;
+  background: url(/jejupass/resource/PC/images/food/ico_star-on.png) repeat-x;
 }
 
 .reviewSet .rating {
   width: 90px;
   height: 16px;
   margin: 0 0 4px;
-  background: url(/resource/PC/images/food/ico_starSlide.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_starSlide.png) no-repeat;
 }
 
 .reviewSet .rating .ratingOn {
   height: 16px;
-  background: url(/resource/PC/images/food/ico_starSlide-on.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_starSlide-on.png) no-repeat;
 }
 
 .reviewSet .rating + .date:before {
@@ -3830,12 +3830,12 @@
   width: 90px;
   height: 16px;
   margin-top: 3px;
-  background: url(/resource/PC/images/food/ico_starSlide.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_starSlide.png) no-repeat;
 }
 
 .ratingGroup .rating .ratingOn {
   height: 16px;
-  background: url(/resource/PC/images/food/ico_starSlide-on.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/food/ico_starSlide-on.png) no-repeat;
 }
 
 .rating ~ .icoScore {
@@ -3920,5 +3920,5 @@
 }
 
 .noData.noFood .tit {
-  background-image: url(/resource/PC/images/food/ic_x50_noData_f.png);
+  background-image: url(/jejupass/resource/PC/images/food/ic_x50_noData_f.png);
 }

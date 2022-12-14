@@ -113,23 +113,23 @@
 }
 
 .anotherChannel .list .btnChannel.kakaotalk {
-  background-image: url(/resource/PC/images/member/img_kakaotalk.png);
+  background-image: url(/jejupass/resource/PC/images/member/img_kakaotalk.png);
 }
 
 .anotherChannel .list .btnChannel.apple {
-  background-image: url(/resource/PC/images/member/img_apple.png);
+  background-image: url(/jejupass/resource/PC/images/member/img_apple.png);
 }
 
 .anotherChannel .list .btnChannel.naver {
-  background-image: url(/resource/PC/images/member/img_naver.png);
+  background-image: url(/jejupass/resource/PC/images/member/img_naver.png);
 }
 
 .anotherChannel .list .btnChannel.facebook {
-  background-image: url(/resource/PC/images/member/img_facebook.png);
+  background-image: url(/jejupass/resource/PC/images/member/img_facebook.png);
 }
 
 .anotherChannel .list .btnChannel.google {
-  background-image: url(/resource/PC/images/member/img_google.png);
+  background-image: url(/jejupass/resource/PC/images/member/img_google.png);
 }
 
 .btnArea + .anotherChannel {
@@ -402,7 +402,7 @@
   margin-left: -52px;
   top: 0;
   margin-top: 0;
-  background: url(/resource/PC/images/member/ico_screen.png);
+  background: url(/jejupass/resource/PC/images/member/ico_screen.png);
 }
 
 .signup-complete .compMsg small, .search-complete .compMsg small {
@@ -418,31 +418,31 @@
 }
 
 .search-complete.no-mail .compMsg:before {
-  background-image: url(/resource/PC/images/member/ico_mail.png);
+  background-image: url(/jejupass/resource/PC/images/member/ico_mail.png);
 }
 
 .search-complete.search-error .compMsg:before {
-  background-image: url(/resource/PC/images/member/ico_search.png);
+  background-image: url(/jejupass/resource/PC/images/member/ico_search.png);
 }
 
 .search-complete.pw-complete .compMsg:before {
-  background-image: url(/resource/PC/images/member/ico_sending.png);
+  background-image: url(/jejupass/resource/PC/images/member/ico_sending.png);
 }
 
 .search-complete.error-pw .compMsg:before {
-  background-image: url(/resource/PC/images/member/ico_lock.png);
+  background-image: url(/jejupass/resource/PC/images/member/ico_lock.png);
 }
 
 .signup-complete.combine-complete .compMsg:before {
-  background-image: url(/resource/PC/images/member/ico_complete.png);
+  background-image: url(/jejupass/resource/PC/images/member/ico_complete.png);
 }
 
 .signup-complete.sign-end .compMsg:before {
-  background-image: url(/resource/PC/images/member/ico_puzzle.png);
+  background-image: url(/jejupass/resource/PC/images/member/ico_puzzle.png);
 }
 
 .signup-complete.main-complete .compMsg:before {
-  background-image: url(/resource/PC/images/member/ico_travel.png);
+  background-image: url(/jejupass/resource/PC/images/member/ico_travel.png);
 }
 
 .loginChks {
@@ -553,19 +553,19 @@
 }
 
 .passConvertBox .step li:first-child {
-  background-image: url(/resource/PC/images/member/ico_pass-login.png);
+  background-image: url(/jejupass/resource/PC/images/member/ico_pass-login.png);
 }
 
 .passConvertBox .step li:nth-child(2) {
-  background-image: url(/resource/PC/images/member/ico_pass-certi.png);
+  background-image: url(/jejupass/resource/PC/images/member/ico_pass-certi.png);
 }
 
 .passConvertBox .step li:nth-child(3) {
-  background-image: url(/resource/PC/images/member/ico_pass-agree.png);
+  background-image: url(/jejupass/resource/PC/images/member/ico_pass-agree.png);
 }
 
 .passConvertBox .step li:last-child {
-  background-image: url(/resource/PC/images/member/ico_pass-complete.png);
+  background-image: url(/jejupass/resource/PC/images/member/ico_pass-complete.png);
 }
 
 .passConvertBox .step li:nth-child(n+2):before {
@@ -612,7 +612,7 @@
   margin-top: 80px;
   padding: 38px 0 32px;
   text-align: center;
-  background: url(/resource/PC/images/member/bg_passBanner.png);
+  background: url(/jejupass/resource/PC/images/member/bg_passBanner.png);
 }
 
 .memberWrapper .banner-wide.passBanner .txt {
@@ -712,27 +712,27 @@
 
 .memberWrapper .infoSet .txt.kakaotalk {
   padding-left: 24px;
-  background: url(/resource/PC/images/member/ic_kakaotalk_x20.png) no-repeat 0 2px;
+  background: url(/jejupass/resource/PC/images/member/ic_kakaotalk_x20.png) no-repeat 0 2px;
 }
 
 .memberWrapper .infoSet .txt.naver {
   padding-left: 24px;
-  background: url(/resource/PC/images/member/ic_naver_x20.png) no-repeat 0 2px;
+  background: url(/jejupass/resource/PC/images/member/ic_naver_x20.png) no-repeat 0 2px;
 }
 
 .memberWrapper .infoSet .txt.apple {
   padding-left: 24px;
-  background: url(/resource/PC/images/member/ic_apple_x20.png) no-repeat 0 2px;
+  background: url(/jejupass/resource/PC/images/member/ic_apple_x20.png) no-repeat 0 2px;
 }
 
 .memberWrapper .infoSet .txt.facebook {
   padding-left: 24px;
-  background: url(/resource/PC/images/member/ic_facebook_x20.png) no-repeat 0 2px;
+  background: url(/jejupass/resource/PC/images/member/ic_facebook_x20.png) no-repeat 0 2px;
 }
 
 .memberWrapper .infoSet .txt.google {
   padding-left: 24px;
-  background: url(/resource/PC/images/member/ic_google_x20.png) no-repeat 0 2px;
+  background: url(/jejupass/resource/PC/images/member/ic_google_x20.png) no-repeat 0 2px;
 }
 
 .layContainer.noticeTxt {
@@ -876,7 +876,7 @@
   width: 108px;
   height: 117px;
   margin: -50px 0 0 -54px;
-  background: url(/resource/PC/images/footer/ico_Qmark.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/footer/ico_Qmark.png) no-repeat;
   /*box-shadow:0 8px 12px 0 var(--black-10-8)*/
 }
 
@@ -940,15 +940,15 @@
   width: 72px;
   height: 72px;
   margin-top: -36px;
-  background: url(/resource/PC/images/footer/insurance01.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/footer/insurance01.png) no-repeat;
 }
 
 .footerCon .contIns .rangeInfo ul li .txt.carCase:before {
-  background-image: url(/resource/PC/images/footer/insurance02.png);
+  background-image: url(/jejupass/resource/PC/images/footer/insurance02.png);
 }
 
 .footerCon .contIns .rangeInfo ul li .txt.mybodyCase:before {
-  background-image: url(/resource/PC/images/footer/insurance03.png);
+  background-image: url(/jejupass/resource/PC/images/footer/insurance03.png);
 }
 
 .footerCon .contIns .rangeInfo ul li .txt strong {

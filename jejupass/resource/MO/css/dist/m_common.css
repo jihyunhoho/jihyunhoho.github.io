@@ -390,7 +390,7 @@ body > .wrapper {
   height: 20px;
   margin-top: -10px;
   margin-left: -55px;
-  background: url(/resource/MO/images/common/spr_layout.svg) no-repeat 0 -28px;
+  background: url(/jejupass/resource/MO/images/common/spr_layout.svg) no-repeat 0 -28px;
 }
 
 .wrapper header .btPrev {
@@ -411,7 +411,7 @@ body > .wrapper {
   height: 26px;
   margin-top: -13px;
   margin-left: -13px;
-  background: url(/resource/MO/images/common/spr_layout.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/spr_layout.svg) no-repeat;
 }
 
 .wrapper header .titDep1 {
@@ -445,7 +445,7 @@ body > .wrapper {
   height: 12px;
   margin-top: -6px;
   margin-left: -6px;
-  background: url(/resource/MO/images/common/spr_layout.svg) no-repeat -200px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_layout.svg) no-repeat -200px 0;
 }
 
 .wrapper header .menuWrap {
@@ -473,7 +473,7 @@ body > .wrapper {
   height: 26px;
   margin-top: -13px;
   margin-left: -13px;
-  background: url(/resource/MO/images/common/spr_layout.svg) no-repeat -28px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_layout.svg) no-repeat -28px 0;
 }
 
 .wrapper header > button, .wrapper header > a {
@@ -495,7 +495,7 @@ body > .wrapper {
   height: 26px;
   margin-top: -13px;
   margin-left: -13px;
-  background: url(/resource/MO/images/common/spr_layout.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/spr_layout.svg) no-repeat;
 }
 
 .wrapper header .btShare:after {
@@ -676,7 +676,7 @@ body > .wrapper {
   height: 26px;
   margin-top: -13px;
   margin-left: -13px;
-  background: url(/resource/MO/images/common/spr_layout.svg) no-repeat -244px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_layout.svg) no-repeat -244px 0;
 }
 
 .wrapper.floatingWrapper header {
@@ -717,7 +717,7 @@ body > .wrapper {
   color: #63a1ff;
   font-weight: 600;
   line-height: 47px;
-  background: url(/resource/MO/images/common/bg_quickTit.png) no-repeat 50% 100%/auto 44px;
+  background: url(/jejupass/resource/MO/images/common/bg_quickTit.png) no-repeat 50% 100%/auto 44px;
   z-index: 1;
 }
 
@@ -727,7 +727,7 @@ body > .wrapper {
   width: 14px;
   height: 14px;
   margin: 0 5px -2px 0;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -50px -54px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -50px -54px;
 }
 
 .quickSearch .quickInner .quickList {
@@ -771,7 +771,7 @@ body > .wrapper {
   margin-left: -12px;
   top: 18px;
   margin-top: 0;
-  background: url(/resource/MO/images/common/spr_quick.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/spr_quick.svg) no-repeat;
 }
 
 .quickSearch .quickInner .quickList > li.rentcar a:before {
@@ -819,7 +819,7 @@ aside div > button:after {
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/MO/images/common/spr_layout.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/spr_layout.svg) no-repeat;
 }
 
 aside div > button.btTop:after {
@@ -904,7 +904,7 @@ footer {
   padding-bottom: calc(constant(safe-area-inset-bottom) + 32px);
   padding-bottom: calc(env(safe-area-inset-bottom) + 32px);
   z-index: 100;
-  background: #18225c url(/resource/MO/images/common/bg_footer.png) no-repeat 50% 106px/100% auto;
+  background: #18225c url(/jejupass/resource/MO/images/common/bg_footer.png) no-repeat 50% 106px/100% auto;
 }
 
 footer img {
@@ -1049,7 +1049,7 @@ footer .snsList > a:after {
   height: 32px;
   margin-top: -16px;
   margin-left: -16px;
-  background: url(/resource/MO/images/common/spr_layout.svg) no-repeat -117px -29px;
+  background: url(/jejupass/resource/MO/images/common/spr_layout.svg) no-repeat -117px -29px;
   opacity: 0.4;
 }
 
@@ -1096,7 +1096,7 @@ footer .snsList .downList button:after {
   height: 32px;
   margin-top: -16px;
   margin-left: -16px;
-  background: url(/resource/MO/images/common/spr_layout.svg) no-repeat -253px -29px;
+  background: url(/jejupass/resource/MO/images/common/spr_layout.svg) no-repeat -253px -29px;
 }
 
 footer .snsList .downList button.ios:after {
@@ -1360,7 +1360,7 @@ footer .txtCopy {
   height: 24px;
   margin-top: -12px;
   margin-left: -12px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat;
 }
 
 .btIco.icoReset:after {
@@ -1402,7 +1402,7 @@ footer .txtCopy {
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/MO/images/air/spr_air.svg) no-repeat -116px -20px;
+  background: url(/jejupass/resource/MO/images/air/spr_air.svg) no-repeat -116px -20px;
 }
 
 .btIco.icModify:after {
@@ -1445,7 +1445,7 @@ footer .txtCopy {
   left: auto;
   right: 0;
   margin-left: 0;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -50px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -50px 0;
 }
 
 .icDel {
@@ -1463,7 +1463,7 @@ footer .txtCopy {
   height: 20px;
   margin-top: -10px;
   margin-left: -10px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -28px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -28px 0;
 }
 
 .btLink01 {
@@ -1482,7 +1482,7 @@ footer .txtCopy {
   width: 12px;
   height: 12px;
   margin-top: -6px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -14px -72px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -14px -72px;
 }
 
 .btLink02 {
@@ -1507,7 +1507,7 @@ footer .txtCopy {
   left: auto;
   right: 0;
   margin-left: 0;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -56px -72px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -56px -72px;
 }
 
 .btLink {
@@ -1534,7 +1534,7 @@ footer .txtCopy {
   width: 12px;
   height: 12px;
   margin-top: -6px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat 0 -72px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat 0 -72px;
 }
 
 .icAdd:before {
@@ -1543,7 +1543,7 @@ footer .txtCopy {
   width: 14px;
   height: 14px;
   margin: 0 5px -1px 0;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -204px -54px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -204px -54px;
 }
 
 .btnArea {
@@ -1774,7 +1774,7 @@ footer .txtCopy {
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -78px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -78px 0;
 }
 
 .floatingBtns.floatingCase05 .floatingInner .sortingArea {
@@ -1842,7 +1842,7 @@ footer .txtCopy {
   height: 16px;
   margin-top: -8px;
   margin-left: -8px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -32px -54px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -32px -54px;
 }
 
 .floatingBtns.floatingCase05 .floatingInner .sortingArea .btSort:before {
@@ -1855,7 +1855,7 @@ footer .txtCopy {
   height: 16px;
   margin-top: -8px;
   margin-left: -8px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -116px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -116px 0;
 }
 
 .floatingBtns.floatingCase05 .floatingInner .sortingArea .btFilter:before {
@@ -1868,7 +1868,7 @@ footer .txtCopy {
   height: 16px;
   margin-top: -8px;
   margin-left: -8px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -98px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -98px 0;
 }
 
 .floatingBtns.floatingCase05 .floatingInner .sortingArea .selOption {
@@ -1970,7 +1970,7 @@ footer .txtCopy {
   height: 16px;
   margin-top: -8px;
   margin-left: -8px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -116px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -116px 0;
 }
 
 .floatingBtns.floatingCase05 .floatingInner .sortingArea .selectWrap.selectSorting.txtBtn .ui-selectmenu-button {
@@ -2027,7 +2027,7 @@ footer .txtCopy {
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/MO/images/common/spr_layout.svg) no-repeat -140px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_layout.svg) no-repeat -140px 0;
 }
 
 .floatingBtns.floatingCase05 .floatingInner .myViewGo {
@@ -2152,7 +2152,7 @@ footer .txtCopy {
   height: 14px;
   margin-top: -7px;
   margin-left: -7px;
-  background: url(/resource/MO/images/air/spr_air.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/air/spr_air.svg) no-repeat;
 }
 
 .floatingBtns.floatingCase06 .floatingInner .selectData.place .fly.single:after {
@@ -2978,7 +2978,7 @@ input:-internal-autofill-selected {
   margin-left: -12px;
   left: 13px;
   margin-left: 0;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -285px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -285px 0;
   z-index: 2;
 }
 
@@ -3022,7 +3022,7 @@ input:-internal-autofill-selected {
   width: 12px;
   height: 12px;
   margin-top: -6px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -28px -72px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -28px -72px;
 }
 
 .selectWrap .ui-selectmenu-button .custom-customSelect-disabled span {
@@ -3149,7 +3149,7 @@ input:-internal-autofill-selected {
   height: 26px;
   margin-top: -13px;
   margin-left: -13px;
-  background: url(/resource/MO/images/common/spr_layout.svg) no-repeat -112px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_layout.svg) no-repeat -112px 0;
 }
 
 .scrollVArea {
@@ -3276,7 +3276,7 @@ input:-internal-autofill-selected {
   height: 26px;
   margin-top: -13px;
   margin-left: -13px;
-  background: url(/resource/MO/images/common/spr_layout.svg) no-repeat -84px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_layout.svg) no-repeat -84px 0;
 }
 
 .layPop.layBtm {
@@ -3523,7 +3523,7 @@ input:-internal-autofill-selected {
   height: 12px;
   margin-top: -6px;
   margin-left: -6px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat;
 }
 
 .swiperWrap .swiper-pagination .btAutoplays > button.btStop:after {
@@ -3593,7 +3593,7 @@ input:-internal-autofill-selected {
   height: 10px;
   margin-top: -5px;
   margin-left: -5px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -134px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -134px 0;
 }
 
 .swiperWrap .paging {
@@ -3690,7 +3690,7 @@ input:-internal-autofill-selected {
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -14px -26px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -14px -26px;
 }
 
 p.listType02 {
@@ -3709,7 +3709,7 @@ p.listType02:before {
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -14px -26px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -14px -26px;
 }
 
 p.listType02.small {
@@ -3745,7 +3745,7 @@ p.listType02.small:before {
   left: -1px;
   width: 22px;
   height: 22px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -311px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -311px 0;
 }
 
 .guideInfo .listType01 {
@@ -3777,7 +3777,7 @@ p.listType02.small:before {
   left: 0;
   width: 18px;
   height: 18px;
-  background: url(/resource/MO/images/common/ico_notice.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/ico_notice.svg) no-repeat;
 }
 
 .guideInfo.boxType01 .listType01 {
@@ -4051,7 +4051,7 @@ p.listType02.small:before {
   height: 12px;
   margin-top: -6px;
   margin-left: -6px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -56px -72px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -56px -72px;
 }
 
 .tabWrap button:before {
@@ -4206,7 +4206,7 @@ p.listType02.small:before {
   left: auto;
   right: 20px;
   margin: -6px 0 0 0;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -42px -72px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -42px -72px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }

@@ -90,7 +90,7 @@
   left: 24px;
   width: 24px;
   height: 24px;
-  background: url(/resource/PC/images/cafe/ico_cafepass.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/cafe/ico_cafepass.png) no-repeat;
 }
 
 .cafepassNone:after {
@@ -102,7 +102,7 @@
   width: 7px;
   height: 12px;
   margin-top: -5px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -394px -30px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -394px -30px;
 }
 
 .cafepassNone a {
@@ -153,15 +153,15 @@
   width: 7px;
   height: 12px;
   margin-top: -5px;
-  background: url(/resource/PC/images/common/spr_ico.png) no-repeat -394px -30px;
+  background: url(/jejupass/resource/PC/images/common/spr_ico.png) no-repeat -394px -30px;
 }
 
 .myCafepass.typeMug:before {
-  background: url(/resource/PC/images/cafe/ico_coffee.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/cafe/ico_coffee.png) no-repeat;
 }
 
 .myCafepass.typeTumbler:before {
-  background: url(/resource/PC/images/cafe/ico_tumblerx24.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/cafe/ico_tumblerx24.png) no-repeat;
 }
 
 .myCafepass.typeNone {
@@ -169,7 +169,7 @@
 }
 
 .myCafepass.typeNone:before {
-  background: url(/resource/PC/images/cafe/ico_cafepass.png);
+  background: url(/jejupass/resource/PC/images/cafe/ico_cafepass.png);
 }
 
 .myCafepass.typeNone a em {
@@ -784,7 +784,7 @@
 .tumblerGradeWrap .tumblerGrade .scoreBar .icons {
   width: 50px;
   height: 32px;
-  background: url(/resource/PC/images/cafe/ico_tumbler.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/cafe/ico_tumbler.png) no-repeat;
 }
 
 .tumblerGradeWrap .tumblerGrade .scoreBar .total {
@@ -871,7 +871,7 @@
   border-radius: 24px;
   background: #cde0ff;
   position: relative;
-  background: #cde0ff url(/resource/PC/images/cafe/ico_notice.png) no-repeat center center;
+  background: #cde0ff url(/jejupass/resource/PC/images/cafe/ico_notice.png) no-repeat center center;
 }
 
 .tumblerUserBadge .iconBadge:before {
@@ -902,7 +902,7 @@
 }
 
 .tumblerUserBadge .iconBadge[class$="lock"] {
-  background: #EAEAEA url(/resource/PC/images/cafe/ico_lock.png) no-repeat center center;
+  background: #EAEAEA url(/jejupass/resource/PC/images/cafe/ico_lock.png) no-repeat center center;
 }
 
 .tumblerUserBadge .iconBadge[class$="lock"]:before, .tumblerUserBadge .iconBadge[class$="lock"]:after {
@@ -910,59 +910,59 @@
 }
 
 .tumblerUserBadge .iconBadge.challenger {
-  background-image: url(/resource/PC/images/cafe/ico_challenger.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_challenger.png);
 }
 
 .tumblerUserBadge .iconBadge.challenger_lock {
-  background-image: url(/resource/PC/images/cafe/ico_challenger_lock.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_challenger_lock.png);
 }
 
 .tumblerUserBadge .iconBadge.beginner {
-  background-image: url(/resource/PC/images/cafe/ico_beginner.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_beginner.png);
 }
 
 .tumblerUserBadge .iconBadge.beginner_lock {
-  background-image: url(/resource/PC/images/cafe/ico_beginner_lock.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_beginner_lock.png);
 }
 
 .tumblerUserBadge .iconBadge.follower {
-  background-image: url(/resource/PC/images/cafe/ico_follower.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_follower.png);
 }
 
 .tumblerUserBadge .iconBadge.follower_lock {
-  background-image: url(/resource/PC/images/cafe/ico_follower_lock.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_follower_lock.png);
 }
 
 .tumblerUserBadge .iconBadge.pro {
-  background-image: url(/resource/PC/images/cafe/ico_pro.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_pro.png);
 }
 
 .tumblerUserBadge .iconBadge.pro_lock {
-  background-image: url(/resource/PC/images/cafe/ico_pro_lock.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_pro_lock.png);
 }
 
 .tumblerUserBadge .iconBadge.master {
-  background-image: url(/resource/PC/images/cafe/ico_master.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_master.png);
 }
 
 .tumblerUserBadge .iconBadge.master_lock {
-  background-image: url(/resource/PC/images/cafe/ico_master_lock.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_master_lock.png);
 }
 
 .tumblerUserBadge .iconBadge.legend {
-  background-image: url(/resource/PC/images/cafe/ico_legend.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_legend.png);
 }
 
 .tumblerUserBadge .iconBadge.legend_lock {
-  background-image: url(/resource/PC/images/cafe/ico_legend_lock.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_legend_lock.png);
 }
 
 .tumblerUserBadge .iconBadge.god {
-  background-image: url(/resource/PC/images/cafe/ico_god.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_god.png);
 }
 
 .tumblerUserBadge .iconBadge.god_lock {
-  background-image: url(/resource/PC/images/cafe/ico_god_lock.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_god_lock.png);
 }
 
 .tumblerGradeWrap + .titDep4 {
@@ -1340,11 +1340,11 @@
 }
 
 .cafeCouponBox > div.cafeC:after {
-  background-image: url(/resource/PC/images/cafe/ico_coffee.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_coffee.png);
 }
 
 .cafeCouponBox > div.userC:after {
-  background-image: url(/resource/PC/images/cafe/ico_coupon.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_coupon.png);
 }
 
 .cafeCouponBox > div button {
@@ -1363,11 +1363,11 @@
 }
 
 .cafeCouponBox.disabled .cafeC:after {
-  background-image: url(/resource/PC/images/cafe/ico_coffee-mono.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_coffee-mono.png);
 }
 
 .cafeCouponBox.disabled .userC:after {
-  background-image: url(/resource/PC/images/cafe/ico_coupon-mono.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_coupon-mono.png);
 }
 
 .cafePay.viewContents {
@@ -1502,11 +1502,11 @@
 }
 
 .cafe_paymentBox.floatingCont .descBox.mInfo .storeLink a.appstore {
-  background: #fff url(/resource/PC/images/cafe/ico_appstore.png) no-repeat 50% 50%/18px;
+  background: #fff url(/jejupass/resource/PC/images/cafe/ico_appstore.png) no-repeat 50% 50%/18px;
 }
 
 .cafe_paymentBox.floatingCont .descBox.mInfo .storeLink a.playstore {
-  background: #fff url(/resource/PC/images/cafe/ico_playstore.png) no-repeat 50% 50%/18px;
+  background: #fff url(/jejupass/resource/PC/images/cafe/ico_playstore.png) no-repeat 50% 50%/18px;
 }
 
 .cafe_paymentBox.floatingCont .descBox b {
@@ -1881,7 +1881,7 @@
 .caTitArea {
   height: 340px;
   margin-top: -64px;
-  background: url(/resource/PC/images/cafe/bg_cafeGuide.png) no-repeat;
+  background: url(/jejupass/resource/PC/images/cafe/bg_cafeGuide.png) no-repeat;
 }
 
 .caTitArea .titDep1 {
@@ -2144,7 +2144,7 @@
   height: 60px;
   margin-top: -30px;
   margin-left: -5px;
-  background: url(/resource/PC/images/common/bi_logo_v.png) no-repeat center/100% auto;
+  background: url(/jejupass/resource/PC/images/common/bi_logo_v.png) no-repeat center/100% auto;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
@@ -2175,7 +2175,7 @@
   margin-left: -74px;
   top: 0;
   margin-top: 0;
-  background: #F8F8F8 url(/resource/PC/images/cafe/ico_free.png) no-repeat center;
+  background: #F8F8F8 url(/jejupass/resource/PC/images/cafe/ico_free.png) no-repeat center;
   border-radius: 50%;
 }
 
@@ -2194,7 +2194,7 @@
 }
 
 .caBenefit li + li:before {
-  background-image: url(/resource/PC/images/cafe/ico_discount.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ico_discount.png);
 }
 
 .caUseGuide {
@@ -2242,18 +2242,18 @@
   bottom: 0;
   width: 278px;
   height: 369px;
-  background: url(/resource/PC/images/cafe/img_useGuide_step01.png) no-repeat 50% 0;
+  background: url(/jejupass/resource/PC/images/cafe/img_useGuide_step01.png) no-repeat 50% 0;
   -webkit-box-shadow: 10px 20px 40px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 10px 20px 40px 0 rgba(0, 0, 0, 0.12);
   border-radius: 24px 24px 0 0;
 }
 
 .caUseGuide .guideStep li:nth-child(2):after {
-  background-image: url(/resource/PC/images/cafe/img_useGuide_step02.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/img_useGuide_step02.png);
 }
 
 .caUseGuide .guideStep li:nth-child(3):after {
-  background-image: url(/resource/PC/images/cafe/img_useGuide_step03.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/img_useGuide_step03.png);
 }
 
 .caUseGuide .guideStep li .stepNum {
@@ -2296,9 +2296,9 @@
 }
 
 .wrapper.completeWrapper .container .completePanel .message.cafe {
-  background: url(/resource/PC/images/common/bg_comp_cafe.png) no-repeat 50% 0;
+  background: url(/jejupass/resource/PC/images/common/bg_comp_cafe.png) no-repeat 50% 0;
 }
 
 .noData.noCafe .tit {
-  background-image: url(/resource/PC/images/cafe/ic_x50_noData_c.png);
+  background-image: url(/jejupass/resource/PC/images/cafe/ic_x50_noData_c.png);
 }

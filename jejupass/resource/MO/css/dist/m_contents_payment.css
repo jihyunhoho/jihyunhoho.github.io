@@ -267,7 +267,7 @@
   height: 18px;
   margin-top: -9px;
   margin-left: -9px;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -66px -54px;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -66px -54px;
 }
 
 .kf_payList > li strong.contR {
@@ -634,7 +634,7 @@
   margin-left: -13px;
   top: -1px;
   margin-top: 0;
-  background: url(/resource/MO/images/common/spr_ico.svg) no-repeat -50px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_ico.svg) no-repeat -50px 0;
 }
 
 .swiperAccount .kf_applyCont span {
@@ -676,7 +676,7 @@
   height: 100%;
   display: block;
   border-left: 1px dashed #EAEAEA;
-  background: url(/resource/MO/images/common/bg_arr01.svg) no-repeat 50% 50%;
+  background: url(/jejupass/resource/MO/images/common/bg_arr01.svg) no-repeat 50% 50%;
   font-size: 0;
 }
 
@@ -733,7 +733,7 @@
 }
 
 .downloadWrap.downChange .link {
-  background-image: url(/resource/MO/images/common/bg_change.svg);
+  background-image: url(/jejupass/resource/MO/images/common/bg_change.svg);
 }
 
 .downloadWrap.downNone .kf_couponNum {
@@ -1318,7 +1318,7 @@
   bottom: 0;
   width: 58px;
   border-left: 1px dashed #abccff;
-  background: #f4f9ff url(/resource/MO/images/common/bi_logo_v.svg) no-repeat 50% 50%;
+  background: #f4f9ff url(/jejupass/resource/MO/images/common/bi_logo_v.svg) no-repeat 50% 50%;
   z-index: 1;
 }
 
@@ -1373,7 +1373,7 @@
   left: auto;
   right: 20px;
   margin-left: 0;
-  background: url(/resource/MO/images/common/spr_coupon.svg) no-repeat -104px 0;
+  background: url(/jejupass/resource/MO/images/common/spr_coupon.svg) no-repeat -104px 0;
 }
 
 .couponList > li input {
@@ -1442,7 +1442,7 @@
   left: auto;
   right: 20px;
   margin-left: 0;
-  background: url(/resource/MO/images/common/spr_coupon.svg) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/spr_coupon.svg) no-repeat;
   z-index: 10;
 }
 
@@ -1803,17 +1803,17 @@ p.listType02 + .couponList {
 }
 
 .arsWrap .arsInner.step1:before {
-  background: url(/resource/MO/images/common/img_ars1.png) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/img_ars1.png) no-repeat;
   background-size: 72px auto;
 }
 
 .arsWrap .arsInner.step2:before {
-  background: url(/resource/MO/images/common/img_ars2.png) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/img_ars2.png) no-repeat;
   background-size: 72px auto;
 }
 
 .arsWrap .arsInner.step3:before {
-  background: url(/resource/MO/images/common/img_ars3.png) no-repeat;
+  background: url(/jejupass/resource/MO/images/common/img_ars3.png) no-repeat;
   background-size: 72px auto;
 }
 
